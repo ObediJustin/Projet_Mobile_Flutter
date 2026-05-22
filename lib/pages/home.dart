@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projet1_tp/pages/mes_chants.dart';
+import 'accueil.dart';
 import 'collections.dart';
 import 'favoris.dart';
 import 'parametres.dart';
-import 'accueil.dart';
-import 'mes_chants.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -22,7 +20,6 @@ class _HomeState extends State<Home> {
     "Collections",
     "Favoris",
     "Paramètres",
-    "Mes Chants"
   ];
 
   // Pages
@@ -31,7 +28,6 @@ class _HomeState extends State<Home> {
     const CollectionPage(),
     const FavorisPage(),
     const ParametresPage(),
-    const MesChantsPage(),
   ];
 
   @override
@@ -43,8 +39,12 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.amber,
         title: Text(
           titles[currentIndex],
-          style: const TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
         ),
+        elevation: 2,
       ),
 
       // Drawer
@@ -57,24 +57,41 @@ class _HomeState extends State<Home> {
                 fit: StackFit.expand,
                 children: [
                   // Image de fond
-                  Image.asset("assets/images/image1.jpg", fit: BoxFit.cover),
-
+                  Image.asset(
+                    "assets/images/image1.jpg",
+                    fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Container(
+                        color: Colors.amber,
+                        child: const Center(
+                          child: Icon(
+                            Icons.music_note,
+                            size: 80,
+                            color: Colors.white,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
                   // Couche sombre
                   Container(color: Colors.black.withOpacity(0.5)),
-
                   // Contenu
                   const Padding(
                     padding: EdgeInsets.all(16),
-
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.start,
-
                       children: [
-                        CircleAvatar(radius: 28, child: Icon(Icons.music_note)),
-
+                        CircleAvatar(
+                          radius: 28,
+                          backgroundColor: Colors.amber,
+                          child: Icon(
+                            Icons.music_note,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                        ),
                         SizedBox(height: 10),
-
                         Text(
                           "Cantiques",
                           style: TextStyle(
@@ -83,7 +100,6 @@ class _HomeState extends State<Home> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-
                         Text(
                           "by objus",
                           style: TextStyle(color: Colors.white70, fontSize: 18),
@@ -100,62 +116,70 @@ class _HomeState extends State<Home> {
               child: ListView(
                 children: [
                   ListTile(
-                    leading: const Icon(Icons.favorite),
-                    title: const Text("Favoris"),
-
+                    leading: const Icon(Icons.home),
+                    title: const Text("Accueil"),
                     onTap: () {
                       setState(() {
-                        currentIndex = 2;
+                        currentIndex = 0;
                       });
-
                       Navigator.pop(context);
                     },
                   ),
-
                   ListTile(
                     leading: const Icon(Icons.library_books),
                     title: const Text("Collections"),
-
                     onTap: () {
                       setState(() {
                         currentIndex = 1;
                       });
-
                       Navigator.pop(context);
                     },
                   ),
-
+                  ListTile(
+                    leading: const Icon(Icons.favorite),
+                    title: const Text("Favoris"),
+                    onTap: () {
+                      setState(() {
+                        currentIndex = 2;
+                      });
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.settings),
+                    title: const Text("Paramètres"),
+                    onTap: () {
+                      setState(() {
+                        currentIndex = 3;
+                      });
+                      Navigator.pop(context);
+                    },
+                  ),
+                  const Divider(),
                   ListTile(
                     leading: const Icon(Icons.shuffle),
                     title: const Text("Cantique aléatoire"),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context);
+                      _showRandomCantiqueDialog(context);
+                    },
                   ),
-
                   ListTile(
                     leading: const Icon(Icons.info),
                     title: const Text("À propos"),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context);
+                      _showAboutDialog(context);
+                    },
                   ),
-                  Divider(),
-                  ListTile(
-                    leading: const Icon(Icons.front_hand),
-                    title: const Text("Soutenir"),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.star_border_rounded),
-                    title: const Text("Noter l'appli"),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.share),
-                    title: const Text("Partager l'appli"),
-                    onTap: () {},
-                  ),
+                  const Divider(),
                   ListTile(
                     leading: const Icon(Icons.contact_mail),
                     title: const Text("Nous contacter"),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context);
+                      _showContactDialog(context);
+                    },
                   ),
                 ],
               ),
@@ -163,29 +187,39 @@ class _HomeState extends State<Home> {
 
             const Divider(),
 
-            // Footer
+            // Footer avec icônes sociales
             Padding(
-              padding: const EdgeInsets.only(bottom: 20),
-
+              padding: const EdgeInsets.only(bottom: 20, top: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
                 children: [
                   IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.facebook),
+                    onPressed: () {
+                      _showSocialDialog(context, 'Facebook');
+                    },
+                    icon: const Icon(Icons.facebook, color: Colors.blue),
+                    iconSize: 28,
                   ),
-
                   IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.telegram),
+                    onPressed: () {
+                      _showSocialDialog(context, 'Telegram');
+                    },
+                    icon: const Icon(Icons.telegram, color: Colors.blue),
+                    iconSize: 28,
                   ),
-
-                  IconButton(onPressed: () {}, icon: const Icon(Icons.email)),
-
                   IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.play_circle_fill),
+                    onPressed: () {
+                      _showSocialDialog(context, 'Email');
+                    },
+                    icon: const Icon(Icons.email, color: Colors.red),
+                    iconSize: 28,
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      _showSocialDialog(context, 'YouTube');
+                    },
+                    icon: const Icon(Icons.play_circle_fill, color: Colors.red),
+                    iconSize: 28,
                   ),
                 ],
               ),
@@ -200,26 +234,25 @@ class _HomeState extends State<Home> {
       // Navigation du bas
       bottomNavigationBar: NavigationBar(
         selectedIndex: currentIndex,
-
         onDestinationSelected: (index) {
           setState(() {
             currentIndex = index;
           });
         },
-
+        backgroundColor: Colors.white,
+        elevation: 8,
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: "Accueil"),
-
+          NavigationDestination(
+            icon: Icon(Icons.home),
+            label: "Accueil",
+          ),
           NavigationDestination(
             icon: Icon(Icons.library_books),
             label: "Collections",
           ),
-
-          NavigationDestination(icon: Icon(Icons.favorite), label: "Favoris"),
-
           NavigationDestination(
-            icon: Icon(Icons.face_retouching_natural_sharp),
-            label: "Mes Chants",
+            icon: Icon(Icons.favorite),
+            label: "Favoris",
           ),
           NavigationDestination(
             icon: Icon(Icons.settings),
@@ -227,6 +260,155 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
+    );
+  }
+
+  // Dialogue pour cantique aléatoire
+  void _showRandomCantiqueDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Cantique aléatoire"),
+          content: const Text(
+            "Cette fonctionnalité sera bientôt disponible !\n\n"
+            "Vous pourrez découvrir des cantiques au hasard.",
+            style: TextStyle(fontSize: 16),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("OK"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  // Dialogue À propos
+  void _showAboutDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("À propos"),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.music_note, size: 50, color: Colors.amber),
+              const SizedBox(height: 10),
+              const Text(
+                "Cantiques",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                "Version 1.0.0",
+                style: TextStyle(fontSize: 14, color: Colors.grey),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                "Une application de cantiques pour vous aider à louer et adorer Dieu.",
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 10),
+              Text(
+                "© 2024 by objus",
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey.shade600,
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Fermer"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  // Dialogue Nous contacter
+  void _showContactDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Nous contacter"),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                "Pour toute question ou suggestion :",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 15),
+              ListTile(
+                leading: const Icon(Icons.email, color: Colors.blue),
+                title: const Text("Email"),
+                subtitle: const Text("contact@cantiques.com"),
+                dense: true,
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.phone, color: Colors.green),
+                title: const Text("Téléphone"),
+                subtitle: const Text("+243 XXX XXX XXX"),
+                dense: true,
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Fermer"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  // Dialogue réseaux sociaux
+  void _showSocialDialog(BuildContext context, String social) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(social),
+          content: Text(
+            "Suivez-nous sur $social\n\nCette fonctionnalité sera bientôt disponible.",
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("OK"),
+            ),
+          ],
+        );
+      },
     );
   }
 }
