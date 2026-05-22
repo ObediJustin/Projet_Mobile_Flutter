@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'accueil.dart';
 import 'collections.dart';
 import 'favoris.dart';
+import 'mes_chants.dart';
 import 'parametres.dart';
 
 class Home extends StatefulWidget {
@@ -19,6 +20,7 @@ class _HomeState extends State<Home> {
     "Accueil",
     "Collections",
     "Favoris",
+    "Mes Chants",
     "Paramètres",
   ];
 
@@ -27,6 +29,7 @@ class _HomeState extends State<Home> {
     const AccueilPage(),
     const CollectionPage(),
     const FavorisPage(),
+    const MesChantsPage(),
     const ParametresPage(),
   ];
 
@@ -93,16 +96,21 @@ class _HomeState extends State<Home> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Cantiques",
+                          "Cantiques du Message",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 28,
+                            fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        SizedBox(height: 5),
                         Text(
                           "by objus",
-                          style: TextStyle(color: Colors.white70, fontSize: 18),
+                          style: TextStyle(
+                            color: Colors.white70, 
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                            ),
                         ),
                       ],
                     ),
@@ -146,11 +154,21 @@ class _HomeState extends State<Home> {
                     },
                   ),
                   ListTile(
+                    leading: const Icon(Icons.face_retouching_natural_sharp),
+                    title: const Text("Mes Chants"),
+                    onTap: () {
+                      setState(() {
+                        currentIndex = 3;
+                      });
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
                     leading: const Icon(Icons.settings),
                     title: const Text("Paramètres"),
                     onTap: () {
                       setState(() {
-                        currentIndex = 3;
+                        currentIndex = 4;
                       });
                       Navigator.pop(context);
                     },
@@ -173,6 +191,30 @@ class _HomeState extends State<Home> {
                     },
                   ),
                   const Divider(),
+                  ListTile(
+                    leading: const Icon(Icons.front_hand),
+                    title: const Text("Soutenir"),
+                    onTap: () {
+                      Navigator.pop(context);
+                      _showSupportDialog(context);
+                    },
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.star_border_rounded),
+                    title: const Text("Noter l'appli"),
+                    onTap: () {
+                      Navigator.pop(context);
+                      _showRateDialog(context);
+                    },
+                  ),
+                  ListTile(
+                    leading: const Icon(Icons.share),
+                    title: const Text("Partager l'appli"),
+                    onTap: () {
+                      Navigator.pop(context);
+                      _showShareDialog(context);
+                    },
+                  ),
                   ListTile(
                     leading: const Icon(Icons.contact_mail),
                     title: const Text("Nous contacter"),
@@ -253,6 +295,10 @@ class _HomeState extends State<Home> {
           NavigationDestination(
             icon: Icon(Icons.favorite),
             label: "Favoris",
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.face_retouching_natural_sharp),
+            label: "Mes Chants",
           ),
           NavigationDestination(
             icon: Icon(Icons.settings),
@@ -375,6 +421,121 @@ class _HomeState extends State<Home> {
                 },
               ),
             ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Fermer"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  // Dialogue Soutenir
+  void _showSupportDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Soutenir"),
+          content: const Text(
+            "Merci de vouloir soutenir notre application !\n\n"
+            "Cette fonctionnalité sera bientôt disponible.\n\n"
+            "En attendant, vous pouvez partager l'application avec vos proches.",
+            style: TextStyle(fontSize: 16),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Fermer"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  // Dialogue Noter l'appli
+  void _showRateDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Noter l'appli"),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text(
+                "Si vous aimez cette application, "
+                "n'hésitez pas à la noter sur le store !",
+                style: TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: List.generate(5, (index) {
+                  return IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                      _showThankYouDialog(context, index + 1);
+                    },
+                    icon: Icon(
+                      Icons.star,
+                      color: Colors.amber,
+                      size: 40,
+                    ),
+                  );
+                }),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  // Dialogue Merci pour la note
+  void _showThankYouDialog(BuildContext context, int rating) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Merci !"),
+          content: Text(
+            "Merci d'avoir donné $rating étoile(s) à notre application !\n\n"
+            "Votre soutien nous est précieux.",
+            style: const TextStyle(fontSize: 16),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Fermer"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  // Dialogue Partager l'appli
+  void _showShareDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text("Partager l'appli"),
+          content: const Text(
+            "Partagez cette application avec vos amis et votre famille !\n\n"
+            "Cette fonctionnalité sera bientôt disponible.",
+            style: TextStyle(fontSize: 16),
           ),
           actions: [
             TextButton(

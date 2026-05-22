@@ -63,6 +63,7 @@ flutter:
   # Assets configuration
   assets:
     - assets/images/image1.jpg
+    - assets/images/image3.jpg
     # Décommentez ces lignes si vous ajoutez d'autres images
     # - assets/images/
     # - assets/icons/
