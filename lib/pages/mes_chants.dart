@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FavorisPage extends StatelessWidget {
-  const FavorisPage({super.key});
+class MesChantsPage extends StatelessWidget {
+  const MesChantsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
