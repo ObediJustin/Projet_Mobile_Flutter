@@ -27,6 +27,14 @@ class CantiqueService {
       numero: 1,
       auteur: 'Auteur inconnu',
     ),
+    Cantique(
+      id: '3',
+      titre: 'E YESU MSHINDAJI WA GOLGOTHA',
+      collection: 'Boanergès Tabernacle',
+      contenu: '''1. Hosanna, hosanna,\nHosanna in the highest.\nHosanna, hosanna,\nHosanna in the highest.''',
+      numero: 1,
+      auteur: 'Auteur inconnu',
+    ),
   ];
 
   List<Cantique> getAllCantiques() {
