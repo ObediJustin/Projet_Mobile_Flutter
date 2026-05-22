@@ -92,6 +92,13 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+            // Expanded(
+            //   child: ListView(
+            //     children: const[
+
+            //     ],
+            //   ),
+            // ),
             ListTile(
               leading: Icon(Icons.bookmark),
               title: Text("Favoris"),
@@ -162,26 +169,104 @@ class Home extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  IconButton(onPressed: () {}, icon: Icon(Icons.facebook)),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.telegram)),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.email)),
                   IconButton(
-                    onPressed: () {}, 
-                    icon: Icon(Icons.facebook),
-                  ),
-                  IconButton(
-                    onPressed: () {}, 
-                    icon: Icon(Icons.telegram),
-                  ),
-                  IconButton(
-                    onPressed: () {}, 
-                    icon: Icon(Icons.email),
-                  ),
-                  IconButton(
-                    onPressed: () {}, 
+                    onPressed: () {},
                     icon: Icon(Icons.play_circle_fill),
                   ),
                 ],
               ),
-            )
+            ),
           ],
+        ),
+      ),
+
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              //Barre de recherche
+              TextField(
+                decoration: InputDecoration(
+                  hintText: "Rechercher un chant, une collection...",
+                  prefixIcon: const Icon(Icons.search),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 30),
+
+              const Text(
+                "Collection des Cantiques",
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
+
+              const SizedBox(height: 30),
+
+              //Collections
+              collectionCard(
+                titre: "Crois seulement",
+                nombre: 25,
+                description: "caniqtes de foi et de confiance en Dieu ...",
+                couleur: Colors.blue,
+              ),
+
+              const SizedBox(height: 30),
+
+              //Collection 2
+              collectionCard(
+                titre: "Roc Seculaire",
+                nombre: 25,
+                description: "caniqtes sur le christ notre fondement...",
+                couleur: Colors.blue,
+              ),
+
+              const SizedBox(height: 30),
+
+              //Collections
+              collectionCard(
+                titre: "Hozanna",
+                nombre: 25,
+                description: "caniqtes de foi et de confiance en Dieu ...",
+                couleur: Colors.blue,
+              ),
+
+              const SizedBox(height: 30),
+
+              //Collections
+              collectionCard(
+                titre: "Nyimbo za wokovu",
+                nombre: 25,
+                description: "caniqtes de foi et de confiance en Dieu ...",
+                couleur: Colors.blue,
+              ),
+
+              const SizedBox(height: 30),
+
+              //Collections
+              collectionCard(
+                titre: "Nyimbo za Mungu",
+                nombre: 25,
+                description: "caniqtes de foi et de confiance en Dieu ...",
+                couleur: Colors.blue,
+              ),
+
+              const SizedBox(height: 30),
+
+              //Collections
+              collectionCard(
+                titre: "Nyimbo za Nabii",
+                nombre: 25,
+                description: "caniqtes de foi et de confiance en Dieu ...",
+                couleur: Colors.blue,
+              ),
+            ],
+          ),
         ),
       ),
 
@@ -196,4 +281,98 @@ class Home extends StatelessWidget {
       ),
     );
   }
+}
+
+Widget collectionCard({
+  required String titre,
+  required int nombre,
+  required String description,
+  required Color couleur,
+}) {
+  return Card(
+    elevation: 6,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadiusGeometry.circular(20),
+    ),
+    child: Column(
+      children: [
+        //haut coloré
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: couleur,
+            borderRadius: const BorderRadius.only(
+              // Radius.circular(20),
+              topLeft: Radius.circular(20),
+              topRight: Radius.circular(20),
+            ),
+          ),
+
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                titre,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  
+                ),
+              ),
+
+              const SizedBox(height: 5),
+
+              Text(
+                "$nombre chants",
+                style: const TextStyle(
+                  color: Colors.white70,
+                  fontSize: 18
+                ),
+              ),
+            ],
+          ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Column(
+              children: [
+                // Text(
+                //   description,
+                //   style: TextStyle(
+                //     // color: Colors.amber,
+                //     fontSize: 16,
+                //   ),
+                // ),
+
+                // const SizedBox(height: 20),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ElevatedButton.icon(
+                      onPressed: () {},
+                      icon: const Icon(Icons.file_open),
+                      label: const Text("Ouvrir"),
+                    ),
+                    ElevatedButton.icon(
+                      onPressed: () {},
+                      icon: const Icon(Icons.file_open),
+                      label: const Text("Rechercher"),
+                    ),
+                    ElevatedButton.icon(
+                      onPressed: () {},
+                      icon: const Icon(Icons.file_open),
+                      label: const Text("Favoris"),
+                    ),
+                  ],
+                )
+              ],
+            ),
+            )
+      ],
+    ),
+  );
 }
