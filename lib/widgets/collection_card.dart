@@ -7,6 +7,10 @@ class CollectionCard extends StatelessWidget {
   final Color couleur;
   final VoidCallback? onTap;
 
+  final VoidCallback? onOuvrir;
+  final VoidCallback? onChercher;
+  final VoidCallback? onFavoris;
+
   const CollectionCard({
     super.key,
     required this.titre,
@@ -14,6 +18,9 @@ class CollectionCard extends StatelessWidget {
     required this.description,
     required this.couleur,
     this.onTap,
+    this.onOuvrir,
+    this.onChercher,
+    this.onFavoris,
   });
 
   @override
@@ -23,9 +30,7 @@ class CollectionCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(20),
       child: Card(
         elevation: 6,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         child: Column(
           children: [
             Container(
@@ -52,10 +57,7 @@ class CollectionCard extends StatelessWidget {
                   const SizedBox(height: 5),
                   Text(
                     "$nombre chants",
-                    style: const TextStyle(
-                      color: Colors.white70,
-                      fontSize: 18,
-                    ),
+                    style: const TextStyle(color: Colors.white70, fontSize: 18),
                   ),
                 ],
               ),
@@ -66,17 +68,17 @@ class CollectionCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: onOuvrir,
                     icon: const Icon(Icons.file_open),
                     label: const Text("Ouvrir"),
                   ),
                   ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: onChercher,
                     icon: const Icon(Icons.search),
                     label: const Text("Chercher"),
                   ),
                   ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: onFavoris,
                     icon: const Icon(Icons.favorite),
                     label: const Text("Favoris"),
                   ),
@@ -89,4 +91,3 @@ class CollectionCard extends StatelessWidget {
     );
   }
 }
-
