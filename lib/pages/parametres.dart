@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
+import '../services/settings_service.dart';
 
 class ParametresPage extends StatefulWidget {
   const ParametresPage({super.key});
@@ -9,12 +10,42 @@ class ParametresPage extends StatefulWidget {
 }
 
 class _ParametresPageState extends State<ParametresPage> {
-  bool _notificationsEnabled = true;
-  String _selectedLanguage = 'Français';
-  double _fontSize = 16.0;
+  final SettingsService _settingsService = SettingsService();
+
+  bool _isLoading = true;
+  bool _notificationsEnabled = SettingsService.defaultNotificationsEnabled;
+  String _selectedLanguage = SettingsService.defaultLanguage;
+  double _fontSize = SettingsService.defaultLyricsFontSize;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSettings();
+  }
+
+  Future<void> _loadSettings() async {
+    final language = await _settingsService.getLanguage();
+    final notificationsEnabled =
+        await _settingsService.getNotificationsEnabled();
+    final fontSize = await _settingsService.getLyricsFontSize();
+
+    if (!mounted) return;
+    setState(() {
+      _selectedLanguage = language;
+      _notificationsEnabled = notificationsEnabled;
+      _fontSize = fontSize;
+      _isLoading = false;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
+    if (_isLoading) {
+      return const Center(
+        child: CircularProgressIndicator(color: Colors.amber),
+      );
+    }
+
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
@@ -27,10 +58,11 @@ class _ParametresPageState extends State<ParametresPage> {
           title: const Text('Notifications'),
           subtitle: const Text('Recevoir des notifications quotidiennes'),
           value: _notificationsEnabled,
-          onChanged: (value) {
+          onChanged: (value) async {
             setState(() {
               _notificationsEnabled = value;
             });
+            await _settingsService.saveNotificationsEnabled(value);
           },
         ),
         ListTile(
@@ -45,13 +77,15 @@ class _ParametresPageState extends State<ParametresPage> {
           title: const Text('Taille du texte'),
           subtitle: Slider(
             value: _fontSize,
-            min: 12,
-            max: 24,
-            divisions: 6,
-            onChanged: (value) {
+            min: SettingsService.minLyricsFontSize,
+            max: SettingsService.maxLyricsFontSize,
+            divisions: 14,
+            label: _fontSize.toStringAsFixed(0),
+            onChanged: (value) async {
               setState(() {
                 _fontSize = value;
               });
+              await _settingsService.saveLyricsFontSize(value);
             },
           ),
         ),
@@ -85,34 +119,34 @@ class _ParametresPageState extends State<ParametresPage> {
           children: [
             ListTile(
               title: const Text('Français'),
-              onTap: () {
-                setState(() {
-                  _selectedLanguage = 'Français';
-                });
-                Navigator.pop(context);
+              onTap: () async {
+                await _saveLanguage(SettingsService.defaultLanguage);
               },
             ),
             ListTile(
               title: const Text('English'),
-              onTap: () {
-                setState(() {
-                  _selectedLanguage = 'English';
-                });
-                Navigator.pop(context);
+              onTap: () async {
+                await _saveLanguage('English');
               },
             ),
             ListTile(
               title: const Text('Swahili'),
-              onTap: () {
-                setState(() {
-                  _selectedLanguage = 'Swahili';
-                });
-                Navigator.pop(context);
+              onTap: () async {
+                await _saveLanguage('Swahili');
               },
             ),
           ],
         ),
       ),
     );
+  }
+
+  Future<void> _saveLanguage(String language) async {
+    setState(() {
+      _selectedLanguage = language;
+    });
+    await _settingsService.saveLanguage(language);
+    if (!mounted) return;
+    Navigator.pop(context);
   }
 }

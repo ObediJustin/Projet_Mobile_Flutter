@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
-import 'pages/home.dart';
 
-void main() {
+import 'database/app_database.dart';
+import 'pages/home.dart';
+import 'services/cantique_service.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await AppDatabase.instance.initialize();
+  await CantiqueService.loadCacheFromDatabase();
   runApp(const MyApp());
 }
 

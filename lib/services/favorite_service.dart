@@ -1,47 +1,114 @@
-import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:convert';
+import '../database/app_database.dart';
 import '../models/cantique.dart';
+import '../models/chant_personnel.dart';
 import 'cantique_service.dart';
-
+import 'chant_personnel_service.dart';
 
 class FavoriteService {
-  static const String _favoritesKey = 'favorites';
-  List<String> _favoriteIds = [];
+  static const String favoritesKey = 'favorites';
+  static const String cantiquePrefix = AppDatabase.favoriteCantiqueType;
+  static const String chantPersonnelPrefix =
+      AppDatabase.favoriteChantPersonnelType;
+
+  final Set<String> _favoriteRefs = {};
 
   Future<void> loadFavorites() async {
-    final prefs = await SharedPreferences.getInstance();
-    final favoritesString = prefs.getString(_favoritesKey);
-    if (favoritesString != null) {
-      _favoriteIds = List<String>.from(jsonDecode(favoritesString));
-    }
+    final db = AppDatabase.instance;
+    final cantiqueIds = await db.getFavoriteIds(cantiquePrefix);
+    final chantPersonnelIds = await db.getFavoriteIds(chantPersonnelPrefix);
+
+    _favoriteRefs
+      ..clear()
+      ..addAll(cantiqueIds.map(_cantiqueRef))
+      ..addAll(chantPersonnelIds.map(_chantPersonnelRef));
   }
 
-  Future<void> _saveFavorites() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_favoritesKey, jsonEncode(_favoriteIds));
+  bool isCantiqueFavorite(String id) {
+    return _favoriteRefs.contains(
+      _cantiqueRef(CantiqueService.normalizeCantiqueId(id)),
+    );
   }
 
-  bool isFavorite(String id) {
-    return _favoriteIds.contains(id);
+  Future<void> toggleCantiqueFavorite(String id) async {
+    final normalizedId = CantiqueService.normalizeCantiqueId(id);
+    await _toggleRef(cantiquePrefix, normalizedId);
   }
 
-  Future<void> toggleFavorite(String id) async {
-    if (_favoriteIds.contains(id)) {
-      _favoriteIds.remove(id);
-    } else {
-      _favoriteIds.add(id);
-    }
-    await _saveFavorites();
+  bool isChantPersonnelFavorite(String id) {
+    return _favoriteRefs.contains(_chantPersonnelRef(id));
+  }
+
+  Future<void> toggleChantPersonnelFavorite(String id) async {
+    await _toggleRef(chantPersonnelPrefix, id);
+  }
+
+  List<String> getFavoriteCantiqueIds() {
+    return _idsForType(cantiquePrefix);
+  }
+
+  List<String> getFavoriteChantPersonnelIds() {
+    return _idsForType(chantPersonnelPrefix);
   }
 
   List<Cantique> getFavoriteCantiques(CantiqueService cantiqueService) {
-    return _favoriteIds
-        .map((id) => cantiqueService.getCantiqueById(id))
-        .where((cantique) => cantique != null)
-        .map((cantique) => cantique!)
+    return getFavoriteCantiqueIds()
+        .map(cantiqueService.getCantiqueById)
+        .whereType<Cantique>()
         .toList();
   }
 
+  Future<List<ChantPersonnel>> getFavoriteChantsPersonnels(
+    ChantPersonnelService chantPersonnelService,
+  ) async {
+    final all = await chantPersonnelService.getAllChants();
+    final favoriteIds = getFavoriteChantPersonnelIds().toSet();
+    return all.where((chant) => favoriteIds.contains(chant.id)).toList();
+  }
 
-  Stream<List<String>> get favoritesStream => Stream.value(_favoriteIds);
+  Future<void> _toggleRef(String type, String id) async {
+    final ref = _favoriteRef(type, id);
+    if (_favoriteRefs.contains(ref)) {
+      await AppDatabase.instance.deleteFavorite(type, id);
+      _favoriteRefs.remove(ref);
+    } else {
+      await AppDatabase.instance.insertFavorite(type, id);
+      _favoriteRefs.add(ref);
+    }
+  }
+
+  List<String> _idsForType(String type) {
+    final prefix = '$type:';
+    return _favoriteRefs
+        .where((ref) => ref.startsWith(prefix))
+        .map((ref) => ref.substring(prefix.length))
+        .toList();
+  }
+
+  String _favoriteRef(String type, String id) {
+    return '$type:$id';
+  }
+
+  String _cantiqueRef(String id) {
+    return _favoriteRef(cantiquePrefix, id);
+  }
+
+  String _chantPersonnelRef(String id) {
+    return _favoriteRef(chantPersonnelPrefix, id);
+  }
+
+  Stream<List<String>> get favoritesStream {
+    return Stream.value(_favoriteRefs.toList());
+  }
+
+  @Deprecated('Use isCantiqueFavorite or isChantPersonnelFavorite instead.')
+  bool isFavorite(String id) {
+    return isCantiqueFavorite(id);
+  }
+
+  @Deprecated(
+    'Use toggleCantiqueFavorite or toggleChantPersonnelFavorite instead.',
+  )
+  Future<void> toggleFavorite(String id) {
+    return toggleCantiqueFavorite(id);
+  }
 }

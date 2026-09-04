@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 
 /// Modèle représentant un chant personnel de l’utilisateur.
 class ChantPersonnel {
@@ -39,6 +38,15 @@ class ChantPersonnel {
         'dateModification': dateModification.toIso8601String(),
       };
 
+  Map<String, dynamic> toMap() => {
+        'id': id,
+        'titre': titre,
+        'auteur': auteur,
+        'paroles': contenu,
+        'created_at': dateCreation.toIso8601String(),
+        'updated_at': dateModification.toIso8601String(),
+      };
+
   /// Construction depuis un Map JSON.
   factory ChantPersonnel.fromJson(Map<String, dynamic> json) {
     return ChantPersonnel(
@@ -48,6 +56,17 @@ class ChantPersonnel {
       auteur: json['auteur'] as String?,
       dateCreation: DateTime.parse(json['dateCreation'] as String),
       dateModification: DateTime.parse(json['dateModification'] as String),
+    );
+  }
+
+  factory ChantPersonnel.fromMap(Map<String, dynamic> map) {
+    return ChantPersonnel(
+      id: map['id'] as String,
+      titre: map['titre'] as String,
+      contenu: map['paroles'] as String,
+      auteur: map['auteur'] as String?,
+      dateCreation: DateTime.parse(map['created_at'] as String),
+      dateModification: DateTime.parse(map['updated_at'] as String),
     );
   }
 

@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
                     },
                   ),
                   // Couche sombre
-                  Container(color: Colors.black.withOpacity(0.5)),
+                  Container(color: Colors.black.withValues(alpha: 0.5)),
                   // Contenu
                   const Padding(
                     padding: EdgeInsets.all(16),

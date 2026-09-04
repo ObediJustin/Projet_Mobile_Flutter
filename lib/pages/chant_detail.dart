@@ -32,7 +32,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
     await _favoriteService.loadFavorites();
     if (!mounted) return;
     setState(() {
-      _isFavorite = _favoriteService.isFavorite(widget.chant.id);
+      _isFavorite = _favoriteService.isChantPersonnelFavorite(widget.chant.id);
     });
   }
 
@@ -41,7 +41,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
     setState(() => _isBusy = true);
 
     try {
-      await _favoriteService.toggleFavorite(widget.chant.id);
+      await _favoriteService.toggleChantPersonnelFavorite(widget.chant.id);
       if (!mounted) return;
 
       setState(() {

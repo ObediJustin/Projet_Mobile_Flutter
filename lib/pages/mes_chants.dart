@@ -223,7 +223,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
               const SizedBox(width: 8),
               Expanded(
                 child: DropdownButtonFormField<bool>(
-                  value: _sortNewestFirst,
+                  initialValue: _sortNewestFirst,
                   decoration: InputDecoration(
                     contentPadding:
                         const EdgeInsets.symmetric(horizontal: 12),

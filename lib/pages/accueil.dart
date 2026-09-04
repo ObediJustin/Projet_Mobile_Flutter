@@ -134,7 +134,7 @@ class _AccueilPageState extends State<AccueilPage> {
               borderRadius: BorderRadius.circular(18),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.10),
+                  color: Colors.black.withValues(alpha: 0.10),
                   blurRadius: 18,
                   offset: const Offset(0, 8),
                 ),
@@ -155,7 +155,7 @@ class _AccueilPageState extends State<AccueilPage> {
                   width: 44,
                   height: 44,
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.85),
+                    color: Colors.white.withValues(alpha: 0.85),
                     borderRadius: BorderRadius.circular(14),
                   ),
                   child: Icon(_verseIcon, color: Colors.amber.shade800),

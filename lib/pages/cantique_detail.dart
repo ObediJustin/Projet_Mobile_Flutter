@@ -2,13 +2,13 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
+import '../services/settings_service.dart';
 
 class CantiqueDetailPage extends StatefulWidget {
   final Cantique cantique;
@@ -22,6 +22,7 @@ class CantiqueDetailPage extends StatefulWidget {
 class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     with SingleTickerProviderStateMixin {
   late final FavoriteService _favoriteService;
+  final SettingsService _settingsService = SettingsService();
 
   bool _isFavorite = false;
   double _fontSize = 16.0;
@@ -40,6 +41,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
     _favoriteService = FavoriteService();
     _initFavorites();
+    SettingsService.lyricsFontSizeNotifier.addListener(_syncFontSize);
     _loadFontSize();
 
     _fadeController = AnimationController(
@@ -55,34 +57,39 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
   @override
   void dispose() {
+    SettingsService.lyricsFontSizeNotifier.removeListener(_syncFontSize);
     _fadeController.dispose();
     _parolesScrollController.dispose();
     super.dispose();
+  }
+
+  void _syncFontSize() {
+    if (!mounted) return;
+    setState(() {
+      _fontSize = SettingsService.lyricsFontSizeNotifier.value;
+    });
   }
 
   Future<void> _initFavorites() async {
     await _favoriteService.loadFavorites();
     if (!mounted) return;
     setState(() {
-      _isFavorite = _favoriteService.isFavorite(widget.cantique.id);
+      _isFavorite = _favoriteService.isCantiqueFavorite(widget.cantique.id);
     });
   }
 
   Future<void> _loadFontSize() async {
-    final prefs = await SharedPreferences.getInstance();
-    final value = prefs.getDouble('chant_paroles_font_size');
-    if (value != null && mounted) {
-      setState(() => _fontSize = value);
-    }
+    final value = await _settingsService.getLyricsFontSize();
+    if (!mounted) return;
+    setState(() => _fontSize = value);
   }
 
   Future<void> _saveFontSize(double value) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setDouble('chant_paroles_font_size', value);
+    await _settingsService.saveLyricsFontSize(value);
   }
 
   Future<void> _toggleFavorite() async {
-    await _favoriteService.toggleFavorite(widget.cantique.id);
+    await _favoriteService.toggleCantiqueFavorite(widget.cantique.id);
     if (!mounted) return;
     setState(() => _isFavorite = !_isFavorite);
 
@@ -117,7 +124,12 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   }
 
   Future<void> _share() async {
-    await Share.share(_buildShareText(), subject: widget.cantique.titre);
+    await SharePlus.instance.share(
+      ShareParams(
+        text: _buildShareText(),
+        subject: widget.cantique.titre,
+      ),
+    );
   }
 
   void _showFontSizeSheet() {
@@ -261,11 +273,13 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
         decoration: BoxDecoration(
-          color: enabled ? Colors.white.withOpacity(0.9) : Colors.grey.shade200,
+          color: enabled
+              ? Colors.white.withValues(alpha: 0.9)
+              : Colors.grey.shade200,
           borderRadius: BorderRadius.circular(14),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.06),
+              color: Colors.black.withValues(alpha: 0.06),
               blurRadius: 10,
               offset: const Offset(0, 6),
             ),
