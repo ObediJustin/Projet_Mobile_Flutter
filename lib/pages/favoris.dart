@@ -32,8 +32,9 @@ class _FavorisPageState extends State<FavorisPage> {
 
   Future<void> _loadFavorites() async {
     await _favoriteService.loadFavorites();
-    final favoriteCantiques =
-        _favoriteService.getFavoriteCantiques(_cantiqueService);
+    final favoriteCantiques = _favoriteService.getFavoriteCantiques(
+      _cantiqueService,
+    );
     final favoriteChantsPersonnels = await _favoriteService
         .getFavoriteChantsPersonnels(_chantPersonnelService);
 
@@ -81,10 +82,7 @@ class _FavorisPageState extends State<FavorisPage> {
         padding: const EdgeInsets.all(16),
         children: [
           if (_favoriteCantiques.isNotEmpty) ...[
-            _SectionTitle(
-              icon: Icons.music_note,
-              title: 'Cantiques',
-            ),
+            _SectionTitle(icon: Icons.music_note, title: 'Cantiques'),
             const SizedBox(height: 12),
             ..._favoriteCantiques.map(
               (cantique) => CantiqueCard(cantique: cantique),
@@ -92,10 +90,7 @@ class _FavorisPageState extends State<FavorisPage> {
             const SizedBox(height: 12),
           ],
           if (_favoriteChantsPersonnels.isNotEmpty) ...[
-            _SectionTitle(
-              icon: Icons.edit_note,
-              title: 'Mes chants',
-            ),
+            _SectionTitle(icon: Icons.edit_note, title: 'Mes chants'),
             const SizedBox(height: 12),
             ..._favoriteChantsPersonnels.map(
               (chant) => _ChantPersonnelFavoriteTile(
@@ -114,10 +109,7 @@ class _SectionTitle extends StatelessWidget {
   final IconData icon;
   final String title;
 
-  const _SectionTitle({
-    required this.icon,
-    required this.title,
-  });
+  const _SectionTitle({required this.icon, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -167,9 +159,7 @@ class _ChantPersonnelFavoriteTile extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (_) => ChantDetailPage(chant: chant),
-            ),
+            MaterialPageRoute(builder: (_) => ChantDetailPage(chant: chant)),
           ).then((_) => onReturn());
         },
       ),

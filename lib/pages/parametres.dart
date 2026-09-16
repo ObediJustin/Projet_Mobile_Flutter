@@ -25,8 +25,8 @@ class _ParametresPageState extends State<ParametresPage> {
 
   Future<void> _loadSettings() async {
     final language = await _settingsService.getLanguage();
-    final notificationsEnabled =
-        await _settingsService.getNotificationsEnabled();
+    final notificationsEnabled = await _settingsService
+        .getNotificationsEnabled();
     final fontSize = await _settingsService.getLyricsFontSize();
 
     if (!mounted) return;

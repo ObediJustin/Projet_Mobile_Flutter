@@ -26,10 +26,7 @@ class _AccueilPageState extends State<AccueilPage> {
     "Car Dieu a tant aimé le monde qu'il a donné son Fils unique. — Jean 3:16",
   ];
 
-  static const List<IconData> _icons = [
-    Icons.menu_book,
-    Icons.auto_stories,
-  ];
+  static const List<IconData> _icons = [Icons.menu_book, Icons.auto_stories];
 
   String _query = '';
 
@@ -117,7 +114,9 @@ class _AccueilPageState extends State<AccueilPage> {
           ),
           const SizedBox(height: 12),
 
-          ...recentCantiques.map((cantique) => CantiqueCard(cantique: cantique)),
+          ...recentCantiques.map(
+            (cantique) => CantiqueCard(cantique: cantique),
+          ),
 
           const SizedBox(height: 20),
 
@@ -142,10 +141,7 @@ class _AccueilPageState extends State<AccueilPage> {
               gradient: const LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [
-                  Color(0xFFFDE6E9),
-                  Color(0xFFE3F2FD),
-                ],
+                colors: [Color(0xFFFDE6E9), Color(0xFFE3F2FD)],
               ),
             ),
             child: Row(
@@ -187,10 +183,7 @@ class _SearchBar extends StatelessWidget {
   final TextEditingController controller;
   final ValueChanged<String> onQueryChanged;
 
-  const _SearchBar({
-    required this.controller,
-    required this.onQueryChanged,
-  });
+  const _SearchBar({required this.controller, required this.onQueryChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -202,8 +195,10 @@ class _SearchBar extends StatelessWidget {
         prefixIcon: const Icon(Icons.search),
         filled: true,
         fillColor: Colors.grey.shade100,
-        contentPadding:
-            const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 14,
+          vertical: 14,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide.none,
@@ -212,4 +207,3 @@ class _SearchBar extends StatelessWidget {
     );
   }
 }
-

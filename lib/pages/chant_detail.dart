@@ -51,17 +51,18 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content:
-                Text(_isFavorite ? 'Ajouté aux favoris' : 'Retiré des favoris'),
+            content: Text(
+              _isFavorite ? 'Ajouté aux favoris' : 'Retiré des favoris',
+            ),
             duration: const Duration(seconds: 1),
           ),
         );
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur favoris: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Erreur favoris: $e')));
       }
     } finally {
       if (mounted) setState(() => _isBusy = false);
@@ -103,16 +104,16 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
       await _chantService.deleteChant(widget.chant.id);
       if (!mounted) return;
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Chant supprimé')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Chant supprimé')));
 
       Navigator.pop(context, true);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur suppression: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Erreur suppression: $e')));
       }
     } finally {
       if (mounted) setState(() => _isBusy = false);
@@ -136,16 +137,16 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
       await _chantService.updateChant(updated);
       if (!mounted) return;
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Chant mis à jour')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Chant mis à jour')));
 
       Navigator.pop(context, updated);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur modification: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Erreur modification: $e')));
       }
     } finally {
       if (mounted) setState(() => _isBusy = false);
@@ -158,10 +159,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
         '${dt.year}';
   }
 
-  Widget _infoChip({
-    required IconData icon,
-    required String label,
-  }) {
+  Widget _infoChip({required IconData icon, required String label}) {
     return Chip(
       backgroundColor: Colors.white,
       avatar: Icon(icon, size: 18, color: Colors.amber.shade800),
@@ -226,7 +224,8 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                         children: [
                           _infoChip(
                             icon: Icons.calendar_today_outlined,
-                            label: 'Création: ${_formatDate(chant.dateCreation)}',
+                            label:
+                                'Création: ${_formatDate(chant.dateCreation)}',
                           ),
                           _infoChip(
                             icon: Icons.update_outlined,
@@ -241,10 +240,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
                 const SizedBox(height: 18),
 
-                Text(
-                  'Contenu',
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
+                Text('Contenu', style: Theme.of(context).textTheme.titleLarge),
                 const SizedBox(height: 8),
 
                 Text(
@@ -304,4 +300,3 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
     );
   }
 }
-

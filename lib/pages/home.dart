@@ -42,10 +42,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.amber,
         title: Text(
           titles[currentIndex],
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-          ),
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         ),
         elevation: 2,
       ),
@@ -107,10 +104,10 @@ class _HomeState extends State<Home> {
                         Text(
                           "by objus",
                           style: TextStyle(
-                            color: Colors.white70, 
+                            color: Colors.white70,
                             fontSize: 13,
                             fontWeight: FontWeight.bold,
-                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -284,18 +281,12 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.white,
         elevation: 8,
         destinations: const [
-          NavigationDestination(
-            icon: Icon(Icons.home),
-            label: "Accueil",
-          ),
+          NavigationDestination(icon: Icon(Icons.home), label: "Accueil"),
           NavigationDestination(
             icon: Icon(Icons.library_books),
             label: "Collections",
           ),
-          NavigationDestination(
-            icon: Icon(Icons.favorite),
-            label: "Favoris",
-          ),
+          NavigationDestination(icon: Icon(Icons.favorite), label: "Favoris"),
           NavigationDestination(
             icon: Icon(Icons.face_retouching_natural_sharp),
             label: "Mes Chants",
@@ -348,10 +339,7 @@ class _HomeState extends State<Home> {
               const SizedBox(height: 10),
               const Text(
                 "Cantiques",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 10),
               const Text(
@@ -366,10 +354,7 @@ class _HomeState extends State<Home> {
               const SizedBox(height: 10),
               Text(
                 "© 2024 by objus",
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.grey.shade600,
-                ),
+                style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
               ),
             ],
           ),
@@ -405,7 +390,7 @@ class _HomeState extends State<Home> {
               ListTile(
                 leading: const Icon(Icons.email, color: Colors.blue),
                 title: const Text("Email"),
-                subtitle: const Text("contact@cantiques.com"),
+                subtitle: const Text("sadikiobedi@outlook.fr"),
                 dense: true,
                 onTap: () {
                   Navigator.pop(context);
@@ -414,7 +399,7 @@ class _HomeState extends State<Home> {
               ListTile(
                 leading: const Icon(Icons.phone, color: Colors.green),
                 title: const Text("Téléphone"),
-                subtitle: const Text("+243 XXX XXX XXX"),
+                subtitle: const Text("+243 892 821 544"),
                 dense: true,
                 onTap: () {
                   Navigator.pop(context);
@@ -485,11 +470,7 @@ class _HomeState extends State<Home> {
                       Navigator.pop(context);
                       _showThankYouDialog(context, index + 1);
                     },
-                    icon: Icon(
-                      Icons.star,
-                      color: Colors.amber,
-                      size: 40,
-                    ),
+                    icon: Icon(Icons.star, color: Colors.amber, size: 40),
                   );
                 }),
               ),

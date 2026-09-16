@@ -14,7 +14,8 @@ class AppDatabase {
   static const String databaseName = 'cantiques_du_message.db';
   static const int schemaVersion = 1;
   static const String favoritesMigrationKey = 'favorites_sqlite_migrated_v1';
-  static const String chantsMigrationKey = 'chants_personnels_sqlite_migrated_v1';
+  static const String chantsMigrationKey =
+      'chants_personnels_sqlite_migrated_v1';
   static const String favoriteCantiqueType = 'cantique';
   static const String favoriteChantPersonnelType = 'personnel';
 
@@ -58,14 +59,17 @@ class AppDatabase {
       },
       onCreate: (db, version) async {
         await _createSchema(db);
-        await _seedInitialData(db);
       },
       onOpen: (db) async {
         await _seedInitialData(db);
         await _migrateFavoritesFromSharedPreferences(db);
         await _migrateChantsPersonnelsFromSharedPreferences(db);
       },
-      onUpgrade: (db, oldVersion, newVersion) async {},
+      onUpgrade: (db, oldVersion, newVersion) async {
+        for (var version = oldVersion + 1; version <= newVersion; version++) {
+          await _migrateToVersion(db, version);
+        }
+      },
     );
   }
 
@@ -139,34 +143,41 @@ class AppDatabase {
     await db.execute(
       'CREATE INDEX idx_favorites_item_type ON favorites(item_type)',
     );
-    await db.execute('CREATE INDEX idx_favorites_item_id ON favorites(item_id)');
+    await db.execute(
+      'CREATE INDEX idx_favorites_item_id ON favorites(item_id)',
+    );
+  }
+
+  Future<void> _migrateToVersion(Database db, int version) async {
+    switch (version) {
+      default:
+        throw UnsupportedError('Migration SQLite inconnue: v$version');
+    }
   }
 
   Future<void> _seedInitialData(Database db) async {
     final now = initialDataTimestamp.toIso8601String();
-    final batch = db.batch();
+    await db.transaction((txn) async {
+      final batch = txn.batch();
 
-    for (final collection in initialCollections) {
-      batch.insert(
-        'collections',
-        collection.toMap(),
-        conflictAlgorithm: ConflictAlgorithm.ignore,
-      );
-    }
+      for (final collection in initialCollections) {
+        batch.insert(
+          'collections',
+          collection.toMap(),
+          conflictAlgorithm: ConflictAlgorithm.ignore,
+        );
+      }
 
-    for (final cantique in initialCantiques) {
-      batch.insert(
-        'cantiques',
-        {
+      for (final cantique in initialCantiques) {
+        batch.insert('cantiques', {
           ...cantique.toMap(),
           'created_at': now,
           'updated_at': now,
-        },
-        conflictAlgorithm: ConflictAlgorithm.ignore,
-      );
-    }
+        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+      }
 
-    await batch.commit(noResult: true);
+      await batch.commit(noResult: true);
+    });
   }
 
   Future<void> _migrateFavoritesFromSharedPreferences(Database db) async {
@@ -182,23 +193,23 @@ class AppDatabase {
     final decoded = jsonDecode(raw) as List<dynamic>;
     final now = DateTime.now().toIso8601String();
 
-    for (final value in decoded.whereType<String>()) {
-      final ref = _parseFavoriteRef(value);
-      await db.insert(
-        'favorites',
-        {
+    await db.transaction((txn) async {
+      for (final value in decoded.whereType<String>()) {
+        final ref = _parseFavoriteRef(value);
+        await txn.insert('favorites', {
           'item_type': ref.type,
           'item_id': ref.id,
           'created_at': now,
-        },
-        conflictAlgorithm: ConflictAlgorithm.ignore,
-      );
-    }
+        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+      }
+    });
 
     await prefs.setBool(favoritesMigrationKey, true);
   }
 
-  Future<void> _migrateChantsPersonnelsFromSharedPreferences(Database db) async {
+  Future<void> _migrateChantsPersonnelsFromSharedPreferences(
+    Database db,
+  ) async {
     final prefs = await SharedPreferences.getInstance();
     if (prefs.getBool(chantsMigrationKey) == true) return;
 
@@ -209,16 +220,18 @@ class AppDatabase {
     }
 
     final decoded = jsonDecode(raw) as List<dynamic>;
-    for (final row in decoded.whereType<Map>()) {
-      final chant = _legacyChantPersonnelFromJson(
-        Map<String, dynamic>.from(row),
-      );
-      await db.insert(
-        'chants_personnels',
-        chant.toMap(),
-        conflictAlgorithm: ConflictAlgorithm.ignore,
-      );
-    }
+    await db.transaction((txn) async {
+      for (final row in decoded.whereType<Map>()) {
+        final chant = _legacyChantPersonnelFromJson(
+          Map<String, dynamic>.from(row),
+        );
+        await txn.insert(
+          'chants_personnels',
+          chant.toMap(),
+          conflictAlgorithm: ConflictAlgorithm.ignore,
+        );
+      }
+    });
 
     await prefs.setBool(chantsMigrationKey, true);
   }
@@ -226,10 +239,7 @@ class AppDatabase {
   _FavoriteRef _parseFavoriteRef(String value) {
     if (value.startsWith('$favoriteCantiqueType:')) {
       final id = value.substring(favoriteCantiqueType.length + 1);
-      return _FavoriteRef(
-        favoriteCantiqueType,
-        normalizeLegacyCantiqueId(id),
-      );
+      return _FavoriteRef(favoriteCantiqueType, normalizeLegacyCantiqueId(id));
     }
 
     if (value.startsWith('$favoriteChantPersonnelType:')) {
@@ -261,6 +271,15 @@ class AppDatabase {
     return rows.map(CantiqueCollection.fromMap).toList();
   }
 
+  Future<void> insertCollection(CantiqueCollection collection) async {
+    final db = await database;
+    await db.insert(
+      'collections',
+      collection.toMap(),
+      conflictAlgorithm: ConflictAlgorithm.abort,
+    );
+  }
+
   Future<CantiqueCollection?> getCollectionById(String id) async {
     final db = await database;
     final rows = await db.query(
@@ -275,17 +294,23 @@ class AppDatabase {
 
   Future<List<Cantique>> getCantiques({String? collectionId}) async {
     final db = await database;
-    final rows = await db.rawQuery(
-      '''
+    final rows = await db.rawQuery('''
       SELECT c.*, collections.name AS collection
       FROM cantiques c
       INNER JOIN collections ON collections.id = c.collection_id
       ${collectionId == null ? '' : 'WHERE c.collection_id = ?'}
       ORDER BY collections.name COLLATE NOCASE, c.numero
-      ''',
-      collectionId == null ? null : [collectionId],
-    );
+      ''', collectionId == null ? null : [collectionId]);
     return rows.map(Cantique.fromMap).toList();
+  }
+
+  Future<void> insertCantique(Cantique cantique) async {
+    final db = await database;
+    await db.insert('cantiques', {
+      ...cantique.toMap(),
+      'created_at': DateTime.now().toIso8601String(),
+      'updated_at': DateTime.now().toIso8601String(),
+    }, conflictAlgorithm: ConflictAlgorithm.abort);
   }
 
   Future<Cantique?> getCantiqueById(String id) async {
@@ -362,15 +387,11 @@ class AppDatabase {
 
   Future<void> insertFavorite(String type, String id) async {
     final db = await database;
-    await db.insert(
-      'favorites',
-      {
-        'item_type': type,
-        'item_id': id,
-        'created_at': DateTime.now().toIso8601String(),
-      },
-      conflictAlgorithm: ConflictAlgorithm.ignore,
-    );
+    await db.insert('favorites', {
+      'item_type': type,
+      'item_id': id,
+      'created_at': DateTime.now().toIso8601String(),
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
   }
 
   Future<void> deleteFavorite(String type, String id) async {

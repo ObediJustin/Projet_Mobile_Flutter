@@ -125,10 +125,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
   Future<void> _share() async {
     await SharePlus.instance.share(
-      ShareParams(
-        text: _buildShareText(),
-        subject: widget.cantique.titre,
-      ),
+      ShareParams(text: _buildShareText(), subject: widget.cantique.titre),
     );
   }
 

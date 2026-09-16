@@ -43,9 +43,9 @@ class _MesChantsPageState extends State<MesChantsPage> {
       setState(() => _chants = all);
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur chargement: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Erreur chargement: $e')));
       }
     } finally {
       if (mounted) setState(() => _isLoading = false);
@@ -70,9 +70,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
   Future<void> _openAddForm() async {
     final result = await Navigator.push<ChantPersonnel>(
       context,
-      MaterialPageRoute(
-        builder: (context) => const ChantFormPage(),
-      ),
+      MaterialPageRoute(builder: (context) => const ChantFormPage()),
     );
 
     if (result == null) return;
@@ -80,15 +78,15 @@ class _MesChantsPageState extends State<MesChantsPage> {
     try {
       await _chantService.addChant(result);
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Chant ajouté')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Chant ajouté')));
       await _loadChants();
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur ajout: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Erreur ajout: $e')));
       }
     }
   }
@@ -106,15 +104,15 @@ class _MesChantsPageState extends State<MesChantsPage> {
     try {
       await _chantService.updateChant(updated);
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Chant mis à jour')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Chant mis à jour')));
       await _loadChants();
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur modification: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Erreur modification: $e')));
       }
     }
   }
@@ -148,15 +146,15 @@ class _MesChantsPageState extends State<MesChantsPage> {
     try {
       await _chantService.deleteChant(chant.id);
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Chant supprimé')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Chant supprimé')));
       await _loadChants();
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur suppression: $e')),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text('Erreur suppression: $e')));
       }
     }
   }
@@ -225,8 +223,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
                 child: DropdownButtonFormField<bool>(
                   initialValue: _sortNewestFirst,
                   decoration: InputDecoration(
-                    contentPadding:
-                        const EdgeInsets.symmetric(horizontal: 12),
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 12),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14),
                     ),
@@ -341,4 +338,3 @@ class _MesChantsPageState extends State<MesChantsPage> {
         '${dt.year}';
   }
 }
-

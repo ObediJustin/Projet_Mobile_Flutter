@@ -25,10 +25,15 @@ class _ChantFormPageState extends State<ChantFormPage> {
   void initState() {
     super.initState();
 
-    _titreController = TextEditingController(text: widget.initialChant?.titre ?? '');
-    _contenuController = TextEditingController(text: widget.initialChant?.contenu ?? '');
-    _auteurController =
-        TextEditingController(text: widget.initialChant?.auteur ?? '');
+    _titreController = TextEditingController(
+      text: widget.initialChant?.titre ?? '',
+    );
+    _contenuController = TextEditingController(
+      text: widget.initialChant?.contenu ?? '',
+    );
+    _auteurController = TextEditingController(
+      text: widget.initialChant?.auteur ?? '',
+    );
   }
 
   @override
@@ -124,7 +129,9 @@ class _ChantFormPageState extends State<ChantFormPage> {
                           ),
                         ),
                         icon: const Icon(Icons.save),
-                        label: Text(_isEditMode ? 'Enregistrer' : 'Enregistrer'),
+                        label: Text(
+                          _isEditMode ? 'Enregistrer' : 'Enregistrer',
+                        ),
                         onPressed: () async {
                           final form = _formKey.currentState;
                           if (form == null) return;
@@ -136,11 +143,14 @@ class _ChantFormPageState extends State<ChantFormPage> {
                           final auteur = _auteurController.text.trim();
 
                           final result = ChantPersonnel(
-                            id: widget.initialChant?.id ?? now.microsecondsSinceEpoch.toString(),
+                            id:
+                                widget.initialChant?.id ??
+                                now.microsecondsSinceEpoch.toString(),
                             titre: titre,
                             contenu: contenu,
                             auteur: auteur.isEmpty ? null : auteur,
-                            dateCreation: widget.initialChant?.dateCreation ?? now,
+                            dateCreation:
+                                widget.initialChant?.dateCreation ?? now,
                             dateModification: now,
                           );
 
@@ -170,4 +180,3 @@ class _ChantFormPageState extends State<ChantFormPage> {
     );
   }
 }
-
