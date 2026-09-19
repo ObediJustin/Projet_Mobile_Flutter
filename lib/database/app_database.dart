@@ -1,13 +1,13 @@
 import 'dart:convert';
-import 'dart:io';
 
 import 'package:path/path.dart' as p;
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+import 'package:sqflite/sqflite.dart';
 
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../models/collection.dart';
+import 'database_platform.dart';
 import 'initial_data.dart';
 
 class AppDatabase {
@@ -31,22 +31,34 @@ class AppDatabase {
 
   Database? _database;
   String? _databasePathOverride;
+  bool _useMemoryStore = false;
+  bool _memoryInitialized = false;
+  List<CantiqueCollection> _memoryCollections = [];
+  List<Cantique> _memoryCantiques = [];
+  final Map<String, ChantPersonnel> _memoryChants = {};
+  final Set<String> _memoryFavoriteRefs = {};
 
   Future<Database> get database async {
+    if (_useMemoryStore || shouldUseMemoryDatabase) {
+      throw UnsupportedError('SQLite indisponible sur cette plateforme');
+    }
     if (_database != null) return _database!;
     _database = await _open();
     return _database!;
   }
 
   Future<void> initialize() async {
+    if (shouldUseMemoryDatabase) {
+      _useMemoryStore = true;
+      await _initializeMemoryStore();
+      return;
+    }
+
     await database;
   }
 
   Future<Database> _open() async {
-    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-      sqfliteFfiInit();
-      databaseFactory = databaseFactoryFfi;
-    }
+    configureDatabaseFactory();
 
     final dbPath = await getDatabasesPath();
     final path = _databasePathOverride ?? p.join(dbPath, databaseName);
@@ -75,14 +87,80 @@ class AppDatabase {
 
   Future<void> close() async {
     final db = _database;
-    if (db == null) return;
-    await db.close();
+    if (db != null) await db.close();
     _database = null;
   }
 
   Future<void> useDatabasePathForTesting(String path) async {
     await close();
     _databasePathOverride = path;
+    _useMemoryStore = false;
+    _memoryInitialized = false;
+    _memoryCollections = [];
+    _memoryCantiques = [];
+    _memoryChants.clear();
+    _memoryFavoriteRefs.clear();
+  }
+
+  Future<void> _initializeMemoryStore() async {
+    if (_memoryInitialized) return;
+
+    _memoryCollections = List<CantiqueCollection>.of(initialCollections);
+    _memoryCantiques = List<Cantique>.of(initialCantiques);
+
+    final prefs = await SharedPreferences.getInstance();
+    final rawFavorites = prefs.getString('favorites');
+    if (rawFavorites != null && rawFavorites.isNotEmpty) {
+      final decoded = jsonDecode(rawFavorites) as List<dynamic>;
+      for (final value in decoded.whereType<String>()) {
+        final ref = _parseFavoriteRef(value);
+        _memoryFavoriteRefs.add(_favoriteKey(ref.type, ref.id));
+      }
+    }
+
+    final rawChants = prefs.getString('chants_personnels');
+    if (rawChants != null && rawChants.isNotEmpty) {
+      final decoded = jsonDecode(rawChants) as List<dynamic>;
+      for (final row in decoded.whereType<Map>()) {
+        final chant = _legacyChantPersonnelFromJson(
+          Map<String, dynamic>.from(row),
+        );
+        _memoryChants[chant.id] = chant;
+      }
+    }
+
+    _memoryInitialized = true;
+  }
+
+  Future<void> _persistMemoryFavorites() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('favorites', jsonEncode(_memoryFavoriteRefs.toList()));
+  }
+
+  Future<void> _persistMemoryChants() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(
+      'chants_personnels',
+      jsonEncode(_memoryChants.values.map((chant) => chant.toJson()).toList()),
+    );
+  }
+
+  String _favoriteKey(String type, String id) => '$type:$id';
+
+  Cantique _withCollectionName(Cantique cantique) {
+    final collection = _memoryCollections.where(
+      (item) => item.id == cantique.collectionId,
+    );
+    if (collection.isEmpty) return cantique;
+    return Cantique(
+      id: cantique.id,
+      titre: cantique.titre,
+      collectionId: cantique.collectionId,
+      collection: collection.first.name,
+      contenu: cantique.contenu,
+      numero: cantique.numero,
+      auteur: cantique.auteur,
+    );
   }
 
   Future<void> _createSchema(Database db) async {
@@ -266,12 +344,26 @@ class AppDatabase {
   }
 
   Future<List<CantiqueCollection>> getCollections() async {
+    if (_useMemoryStore) {
+      final rows = List<CantiqueCollection>.of(_memoryCollections);
+      rows.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+      return rows;
+    }
+
     final db = await database;
     final rows = await db.query('collections', orderBy: 'name COLLATE NOCASE');
     return rows.map(CantiqueCollection.fromMap).toList();
   }
 
   Future<void> insertCollection(CantiqueCollection collection) async {
+    if (_useMemoryStore) {
+      if (_memoryCollections.any((item) => item.id == collection.id)) {
+        throw StateError('Collection deja existante: ${collection.id}');
+      }
+      _memoryCollections.add(collection);
+      return;
+    }
+
     final db = await database;
     await db.insert(
       'collections',
@@ -281,6 +373,13 @@ class AppDatabase {
   }
 
   Future<CantiqueCollection?> getCollectionById(String id) async {
+    if (_useMemoryStore) {
+      for (final collection in _memoryCollections) {
+        if (collection.id == id) return collection;
+      }
+      return null;
+    }
+
     final db = await database;
     final rows = await db.query(
       'collections',
@@ -293,6 +392,24 @@ class AppDatabase {
   }
 
   Future<List<Cantique>> getCantiques({String? collectionId}) async {
+    if (_useMemoryStore) {
+      final rows = _memoryCantiques
+          .where(
+            (cantique) =>
+                collectionId == null || cantique.collectionId == collectionId,
+          )
+          .map(_withCollectionName)
+          .toList();
+      rows.sort((a, b) {
+        final collectionCompare = a.collection.toLowerCase().compareTo(
+          b.collection.toLowerCase(),
+        );
+        if (collectionCompare != 0) return collectionCompare;
+        return a.numero.compareTo(b.numero);
+      });
+      return rows;
+    }
+
     final db = await database;
     final rows = await db.rawQuery('''
       SELECT c.*, collections.name AS collection
@@ -305,6 +422,24 @@ class AppDatabase {
   }
 
   Future<void> insertCantique(Cantique cantique) async {
+    if (_useMemoryStore) {
+      if (_memoryCantiques.any((item) => item.id == cantique.id)) {
+        throw StateError('Cantique deja existant: ${cantique.id}');
+      }
+      final duplicateNumber = _memoryCantiques.any(
+        (item) =>
+            item.collectionId == cantique.collectionId &&
+            item.numero == cantique.numero,
+      );
+      if (duplicateNumber) {
+        throw StateError(
+          'Numero deja utilise dans la collection: ${cantique.numero}',
+        );
+      }
+      _memoryCantiques.add(cantique);
+      return;
+    }
+
     final db = await database;
     await db.insert('cantiques', {
       ...cantique.toMap(),
@@ -314,6 +449,14 @@ class AppDatabase {
   }
 
   Future<Cantique?> getCantiqueById(String id) async {
+    if (_useMemoryStore) {
+      final normalizedId = normalizeLegacyCantiqueId(id);
+      for (final cantique in _memoryCantiques) {
+        if (cantique.id == normalizedId) return _withCollectionName(cantique);
+      }
+      return null;
+    }
+
     final db = await database;
     final rows = await db.rawQuery(
       '''
@@ -333,6 +476,27 @@ class AppDatabase {
     final q = query.trim();
     if (q.isEmpty) return [];
 
+    if (_useMemoryStore) {
+      final needle = q.toLowerCase();
+      final rows = _memoryCantiques
+          .where(
+            (cantique) =>
+                cantique.titre.toLowerCase().contains(needle) ||
+                (cantique.auteur?.toLowerCase().contains(needle) ?? false) ||
+                cantique.contenu.toLowerCase().contains(needle),
+          )
+          .map(_withCollectionName)
+          .toList();
+      rows.sort((a, b) {
+        final collectionCompare = a.collection.toLowerCase().compareTo(
+          b.collection.toLowerCase(),
+        );
+        if (collectionCompare != 0) return collectionCompare;
+        return a.numero.compareTo(b.numero);
+      });
+      return rows;
+    }
+
     final db = await database;
     final like = '%$q%';
     final rows = await db.rawQuery(
@@ -351,6 +515,12 @@ class AppDatabase {
   }
 
   Future<void> insertChantPersonnel(ChantPersonnel chant) async {
+    if (_useMemoryStore) {
+      _memoryChants[chant.id] = chant;
+      await _persistMemoryChants();
+      return;
+    }
+
     final db = await database;
     await db.insert(
       'chants_personnels',
@@ -360,6 +530,12 @@ class AppDatabase {
   }
 
   Future<List<ChantPersonnel>> getChantsPersonnels() async {
+    if (_useMemoryStore) {
+      final rows = _memoryChants.values.toList();
+      rows.sort((a, b) => b.dateModification.compareTo(a.dateModification));
+      return rows;
+    }
+
     final db = await database;
     final rows = await db.query(
       'chants_personnels',
@@ -369,6 +545,8 @@ class AppDatabase {
   }
 
   Future<ChantPersonnel?> getChantPersonnelById(String id) async {
+    if (_useMemoryStore) return _memoryChants[id];
+
     final db = await database;
     final rows = await db.query(
       'chants_personnels',
@@ -381,11 +559,25 @@ class AppDatabase {
   }
 
   Future<void> deleteChantPersonnel(String id) async {
+    if (_useMemoryStore) {
+      _memoryChants.remove(id);
+      _memoryFavoriteRefs.remove(_favoriteKey(favoriteChantPersonnelType, id));
+      await _persistMemoryChants();
+      await _persistMemoryFavorites();
+      return;
+    }
+
     final db = await database;
     await db.delete('chants_personnels', where: 'id = ?', whereArgs: [id]);
   }
 
   Future<void> insertFavorite(String type, String id) async {
+    if (_useMemoryStore) {
+      _memoryFavoriteRefs.add(_favoriteKey(type, id));
+      await _persistMemoryFavorites();
+      return;
+    }
+
     final db = await database;
     await db.insert('favorites', {
       'item_type': type,
@@ -395,6 +587,12 @@ class AppDatabase {
   }
 
   Future<void> deleteFavorite(String type, String id) async {
+    if (_useMemoryStore) {
+      _memoryFavoriteRefs.remove(_favoriteKey(type, id));
+      await _persistMemoryFavorites();
+      return;
+    }
+
     final db = await database;
     await db.delete(
       'favorites',
@@ -404,6 +602,10 @@ class AppDatabase {
   }
 
   Future<bool> isFavorite(String type, String id) async {
+    if (_useMemoryStore) {
+      return _memoryFavoriteRefs.contains(_favoriteKey(type, id));
+    }
+
     final db = await database;
     final rows = await db.query(
       'favorites',
@@ -416,6 +618,14 @@ class AppDatabase {
   }
 
   Future<List<String>> getFavoriteIds(String type) async {
+    if (_useMemoryStore) {
+      final prefix = '$type:';
+      return _memoryFavoriteRefs
+          .where((key) => key.startsWith(prefix))
+          .map((key) => key.substring(prefix.length))
+          .toList();
+    }
+
     final db = await database;
     final rows = await db.query(
       'favorites',

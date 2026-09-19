@@ -55,58 +55,3767 @@ final List<Cantique> initialCantiques = [
     collectionId: 'crois_seulement',
     collection: 'Crois seulement',
     contenu:
-        '''1. Quand tout semble perdu,\nQue la nuit est venue,\nN'abandonne pas,\nCrois seulement.\n\nRefrain :\nCrois seulement,\nDieu est avec toi,\nIl ne te laissera pas,\nCrois seulement.''',
+        '''1. Crains point, petit troupeau, de la croix au trône,\nDe la mort à la vie, Il cherchait les Siens;\nTout pouvoir sur terre, tout pouvoir au Ciel,\nLui est donné pour Son troupeau bien-aimé.\n\nChoeur :\nCrois seulement, crois seulement,\nTout est possible, crois seulement;\nCrois seulement, crois seulement,\nTout est possible, crois seulement.\n(Seigneur, je crois...)\n(Dieu, je reçois...)\n(Jésus est là ...)\n\n2. Crains point, petit troupeau, Il t'a précédé,\nTon Berger a choisi le sentier à suivre;\nPour toi, Il rendra pure l'eau de Mara,\nIl but toute l'amertume à Gethsemané.\n\n3. Crains point, petit troupeau, peu importe ton sort,\nIl entre dans les chambres aux «portes fermées»;\nIl n'abandonne point, Il n'est point absent,\nAinsi, compte sur Sa présence le jour, la nuit.''',
     numero: 1,
     auteur: 'Auteur inconnu',
   ),
   Cantique(
     id: 'crois_seulement_002',
-    titre: 'Crois seulement',
+    titre: 'Grâce étonnante!',
     collectionId: 'crois_seulement',
     collection: 'Crois seulement',
     contenu:
-        '''1. Quand tout semble perdu,\nQue la nuit est venue,\nN'abandonne pas,\nCrois seulement.\n\nRefrain :\nCrois seulement,\nDieu est avec toi,\nIl ne te laissera pas,\nCrois seulement.''',
-    numero: 1,
+        '''1. Grâce étonnante! quel doux son, qui\nSauva un vil comme moi!\nJ'étais perdu, je suis retrouvé,\nAveugle, maintenant je vois.\n\n2. Cette grâce m'a enseigné la crainte,\nEt elle ôta mes peurs;\nCombien précieuse parut cette grâce\nAu moment où j'ai cru !\n\n3. Dans les dangers, peines et pièges,\nPar où je suis passé;\nCette grâce qui m'a gardé sain et sauf\nMe conduira au Ciel.\n\n4. Le Seigneur m'a promis du bien,\nSa Parole me soutient,\nIl sera mon Abri, ma Part\nTant que j'aurai la vie.\n\n5. Après dix mille ans passés là,\nBrillants comme le soleil,\nNous aurons plus de temps qu'avant\nPour louer notre Dieu.\n\n6. Quand tombera cette robe de chair,\nMa vie mortelle cessera;\nJe posséderai dans l'au-delà\nUne vie de joie et paix.''',
+    numero: 2,
     auteur: 'Auteur inconnu',
   ),
   Cantique(
     id: 'crois_seulement_003',
-    titre: 'Crois seulement',
+    titre: 'Ils viennent',
     collectionId: 'crois_seulement',
     collection: 'Crois seulement',
     contenu:
-        '''1. Grâce étonnante! quel doux son, qui Sauva un vil comme moi! J'étais perdu, je suis retrouvé, Aveugle, maintenant je vois. Cette grâce m'a enseigné la crainte, Et elle ôta mes peurs;
-Combien précieuse parut cette grâce Au moment où j'ai cru !
-Dans les dangers, peines et pièges, Par où je suis passé;
-Cette grâce qui m'a gardé sain et sauf Me conduira au Ciel.
-Le Seigneur m'a promis du bien, Sa Parole me soutient,
-sera mon Abri, ma Part Tant que j'aurai la vie. Après dix mille ans passés là, Brillants comme le soleil,
-Nous aurons plus de temps qu'avant Pour louer notre Dieu.
-Quand tombera cette robe de chair, Ma vie mortelle cessera;
-Je posséderai dans l'au-delà Une vie de joie et paix.Quand tout semble perdu,\nQue la nuit est venue,\nN'abandonne pas,\nCrois seulement.\n\nRefrain :\nCrois seulement,\nDieu est avec toi,\nIl ne te laissera pas,\nCrois seulement.''',
-    numero: 1,
+        '''1. Ils viennent de l'Est et l'Ouest,\nIls viennent de lointains pays,\nFêter avec le Roi comme Ses convives;\nOh! quels pèlerins bénis !\nContemplant Son saint visage\nQui brille d'éclat divin;\nParticipants de Sa grâce,\nJoyaux brillants de Sa couronne.\n\nChoeur :\nMon coeur est heureux depuis\nQue Jésus m'a libéré,\nJe ne porte plus le poids des soucis,\nSon joug est si doux pour moi.\nMon âme était noire comme nuit,\nMais les ténèbres ont fui;\nMaintenant je crie victoire,\nCar Jésus m'a libéré.\n\n2. Je regarde le grand trône blanc,\nDevant sont les rachetés;\nIl n'y a plus de larmes, ni chagrins connus\nNi mort dans ce beau pays.\nMon Sauveur m'a précédé,\nMe préparant la voie;\nBientôt nous serons ensemble,\nDans le temps ou l'éternité.\n\n3. Les portails de ce saint lieu\nDemeurent ouverts nuit et jour;\nRegarde au Seigneur qui donne plus de grâce,\nDont l'amour traça la voie;\nUne place dans ces belles demeures\nQu'Il réserva pour tous.\nPour te préparer aux noces,\nObéis à l'appel de grâce.\n\n4. Oh! Jésus revient bientôt,\nAlors nos peines sont finies.\nSi notre Seigneur venait maintenant\nPour ceux qui sont sans péché,\nAuriez-vous alors la joie,\nLa peine, le désespoir ?\nQuand Il viendra dans Sa gloire,\nNous Le rencontrerons dans les airs.''',
+    numero: 3,
     auteur: 'Auteur inconnu',
   ),
+  Cantique(
+    id: 'crois_seulement_004',
+    titre: 'Je l\'aime',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon coeur affranchi du monde et ses charmes;\nMaintenant, par le sang, libéré des peurs;\nAu pied de la croix, mon coeur s'incline là;\nLe sang précieux de Jésus rend plus blanc que neige.\n\nChoeur :\nOh! Je L'aime, oh! Je L'aime\nCar Il m'aima le premier\nEt acquit mon salut sur le\nBois du Calvaire.\n\n2. Jadis perdu, plongé dans le péché;\nJadis esclave de mes passions ardentes;\nJadis craignant de croire le Dieu d'amour;\nMaintenant je suis lavé par le sang de Jésus.\n\n3. Jadis lié mais maintenant libéré;\nJadis aveugle mais maintenant je peux voir;\nAutrefois mort, maintenant je vis en Christ,\nPour proclamer au monde entier la paix qu'Il donne.''',
+    numero: 4,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_005',
+    titre: 'Moment de prière',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Moment de prière, moment de prière\nQui m'appelle d'un monde de soucis\nEt m'invite au trône de mon Père\nPour faire connaître mes désirs;\nEn temps de peines et de chagrins,\nMon âme est souvent consolée,\nEchappe aux pièges du tentateur,\nPar ton retour, moment de prière.\n\n2. Moment de prière, moment de prière\nQuelle joie! quel bonheur je partage\nAvec ceux-là dont les coeurs brûlent\nD'ardents désirs pour ton retour!\nAvec eux je m'empresse là\nOù mon Sauveur révèle Sa face,\nEt joyeusement je me tiens là\nEt je t'attends, moment de prière.\n\n3. Moment de prière, moment de prière\nTes ailes porteront ma requête\nVers Celui dont la fidélité\nTient à bénir l'âme qui attend;\nIl m'invite à chercher Sa face,\nCroire Sa Parole, croire en Sa grâce;\nSur Lui je mets tous mes soucis,\nEt je t'attends, moment de prière.''',
+    numero: 5,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_006',
+    titre: 'Oh! combien j\'aime Jésus!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Il y a un Nom que j'aime entendre,\nJ'aime chanter Ses mérites;\nC'est une musique à mes oreilles,\nLe plus doux Nom sur terre.\n\nChoeur :\nOh! combien j'aime Jésus!\nOh! combien j'aime Jésus!\nOh! combien j'aime Jésus!\nCar Il m'aima le premier.\n(Je ne L'abandonnerai...)\n\n2. Il rappelle l'amour du Sauveur,\nMort pour me délivrer,\nMe parle de Son précieux Sang,\nPlaidoirie du pécheur.\n\n3. Il me dit ce que le Père garde\nEn réserve pour chaque jour,\nMême si je marche dans les ténèbres,\nIl éclaire mon chemin.\n\n4. Il parle d'un Homme plein d'amour\nQui peut sentir ma peine,\nPorter dans le chagrin, la part\nQue nul ne peut porter.''',
+    numero: 6,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_007',
+    titre: 'Quand les rachetés s\'y assembleront',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je pense à l'enlèvement vers notre maison bénie d'en haut,\nQuand les rachetés s'y assembleront;\nCombien nous chanterons l'hymne céleste dans cette ville là-haut,\nQuand les rachetés s'y assembleront.\n\nChoeur :\nQuand les rachetés s'y assembleront,\nBlancs comme neige et libres du péché;\nQue des cris! que des chants!\nQuand les rachetés s'y assembleront.\n\n2. Là, il y aura un grand défilé dans les rues pavées d'or,\nQuand les rachetés s'y assembleront;\nOh! quelle musique, oh! quel chant retentiront là dans la ville!\nQuand les rachetés s'y assembleront.\n\n3. Les saints chanteront la rédemption à vive et haute voix,\nQuand les rachetés s'y assembleront;\nLes anges l'écouteront seulement, ne pouvant pas la chanter,\nQuand les rachetés s'y assembleront.\n\n4. Le Sauveur donnera l'ordre de préparer le festin,\nQuand les rachetés s'y assembleront;\nNous entendrons Son appel: «Venez, vous bénis du Seigneur,»\nQuand les rachetés s'y assembleront.''',
+    numero: 7,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_008',
+    titre: 'Oh! je désire le voir!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''Choeur :\nJe désire Le voir, contempler Sa face!\nEt chanter pour toujours Sa grâce qui sauve;\nDans les rues de gloire, élever ma voix;\nLes soucis sont passés, joie sans fin au Ciel!\n\n1. Au service de mon Seigneur, même dans la nuit sombre,\nJe m'accrocherai à Lui, Il va m'éclairer;\nEt les pièges de Satan peuvent troubler mon âme\nMon Seigneur est devant, dirigeant le tout.\n\n2. Quand du fond de la vallée,\nJe vois mon Sauveur\nDebout sur la haute montagne, dirigeant la guerre,\nPar Sa tendre main tendue vers la basse vallée,\nIl me guide, je peux voir, marchant en avant.\n\n3. Quand devant moi les flots montent du fond de l'abîme,\nMon Seigneur dirige ma barque, Il prend soin de moi,\nIl me conduit tendrement à travers ce monde,\nIl est mon vrai Ami, oh! je L'aime tant.''',
+    numero: 8,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_009',
+    titre: 'Nous nous sentons si bien',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Nous nous sentons si bien en parlant du bon vieux Chemin,\nNous nous sentons si bien en parlant du Seigneur;\nContinuons, continuons à parler du bon vieux Chemin.\nContinuons, continuons à parler du Seigneur.\n\n2. Voyageant dans le pays, je chante en marchant,\nLe diable n'aime pas cela: parler de ce bon vieux Chemin,\nGuidant les âmes au Calvaire, au flot cramoisi;\nLe diable n'aime pas cela: parler du Seigneur;\nMon âme percée par les flèches, dedans et dehors,\nMon Seigneur me conduit, par Lui je vaincrai.\n(Ainsi) continuons, continuons à parler du bon vieux Chemin,\nContinuons, continuons à parler du Seigneur.''',
+    numero: 9,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_010',
+    titre: 'Apprends-moi Seigneur, à attendre',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Apprends-moi, Seigneur, à attendre\nA genoux jusqu'à ce que Tu m'exauces,\nA me défier de ce que font les autres,\nEt à attendre de Toi une réponse en prière.\n\nChoeur :\nCeux qui s'attendent au Seigneur, renouvellent leurs forces,\nIls prendront l'envol comme des aigles,\nIls courront sans se fatiguer, marcheront sans faiblir,\nApprends-moi, Seigneur, à attendre.\n\n2. Apprends-moi, Seigneur à patienter,\nAide-moi à m'humilier, à T'invoquer;\nRenouvelle ma foi et garde mes yeux sur Toi,\nAide-moi à être ce que Tu veux que je sois.''',
+    numero: 10,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_011',
+    titre: 'Alléluia, nous ressusciterons',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Au matin de résurrection,\nLa trompette de Dieu sonnera,\nNous vivrons, (Alléluia!), nous vivrons!\nLes saints viendront se réjouissant,\nAucune larme ne sera versée,\nNous vivrons, (Alléluia!), nous vivrons.\n\nChoeur :\nNous vivrons, (Alléluia!)\nNous vivrons! (Amen!)\nNous vivrons, (Alléluia!)\nAu matin de résurrection,\nLes liens de la mort sont brisés,\nNous vivrons, (Alléluia!), nous vivrons.\n\n2. Au matin de résurrection,\nOh! quelle rencontre ce sera!\nNous vivrons, (Alléluia!), nous vivrons!\nEt lorsque nous verrons nos pères,\nNos mères et tous nos bien-aimés,\nNous vivrons, (Alléluia!), nous vivrons.\n\n3. Au matin de résurrection,\nOh! quelle pensée bénie pour moi !\nNous vivrons, (Alléluia!), nous vivrons!\nJe verrai mon Seigneur béni,\nQui mourut librement pour moi,\nNous vivrons, (Alléluia!), nous vivrons.\n\n4. Au matin de résurrection,\nNous Le rencontrerons dans l'air,\nNous vivrons, (Alléluia!), nous vivrons!\nEtre enlevés dans la gloire,\nVers notre demeure pure et belle,\nNous vivrons, (Alléluia!), nous vivrons.''',
+    numero: 11,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_012',
+    titre: 'Porter une couronne!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Suis-je bien un soldat de la Croix,\nDisciple de l'Agneau,\nCraindrai-je de soutenir Sa cause,\nDe parler de Son Nom ?\n\nChoeur :\nA la fin de la bataille, nous serons couronnés!\nNous serons couronnés! nous serons couronnés!\nA la fin de la bataille, nous serons couronnés,\nDans la nouvelle Jérusalem.\nCouronnés, couronnés d'une brillante et belle couronne.\nA la fin de la bataille, nous serons couronnés\nDans la nouvelle Jérusalem.\n\n2. Dois-je être transporté au Ciel\nSur un beau lit d'aisance,\nQuand d'autres combattent, gagnent le prix,\nNaviguant sur le sang ?\n\n3. N'ai-je pas d'ennemis à combattre,\nDes vagues à surmonter ?\nCe monde se joint-il à la grâce\nPour m'amener à Dieu ?\n\n4. Oui, pour régner je dois combattre,\nRedonne courage, Seigneur;\nSouffrances et peines j'endurerai,\nAidé par Ta Parole.''',
+    numero: 12,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_013',
+    titre: 'Merveilleuse grâce',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Merveilleuse grâce du tendre Seigneur,\nGrâce qui dépasse nos péchés et torts.\nElle fut déversée au mont Calvaire,\nLà, le sang de l'Agneau fut versé.\n\nChoeur :\nGrâce, grâce, grâce de Dieu\nQui pardonnera, purgera l'âme;\nGrâce, grâce, grâce de Dieu,\nGrâce qui est plus grande que nos péchés.\n\n2. Désespoirs, péchés, comme des vagues froides,\nMenacent l'âme d'une perte infinie;\nGrâce qui est si grande, oui, grâce inouïe,\nConduit au refuge: la puissante Croix.\n\n3. Tache si noire qu'on ne peut la cacher,\nQu'y a-t-il d'efficace pour l'enlever?\nVoici couler un flot cramoisi;\nQui peut te rendre plus blanc que neige.\n\n4. Merveilleuse grâce incomparable,\nGratuitement accordée aux croyants;\nToi qui désires contempler Sa face,\nVeux-tu maintenant recevoir Sa grâce?''',
+    numero: 13,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_014',
+    titre: 'Mont Sion',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Là m'attend un joyeux lendemain,\nOù portes perlées s'ouvrent large,\nLa vallée de peines traversée,\nDe l'autre côté je camperai.\n\nChoeur :\nUn jour, hors de la portée des mortels,\nUn jour, Dieu seul sait juste où et quand,\nLes roues de la vie mortelle s'arrêteront\nEt j'irai habiter au mont Sion.\n\n2. Un jour, j'entendrai chanter les anges,\nLà, loin des ombres de la tombe;\nToutes les cloches du Ciel sonneront,\nQuand les Saints chantent : «Douce demeure».\n\n3. Un jour, je n'aurai plus de labeurs,\nMes errances seront finies,\nTerrestres liens brisés, rétablis,\nMes soupirs et pleurs cesseront.\n\n4. Les nuages sombres se fendront,\nEt la nuit obscure passera;\nTous les fardeaux de la vie ôtés,\nEt poindra le jour de repos.''',
+    numero: 14,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_015',
+    titre: 'Nous marchons vers Sion',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Laissons voir notre joie,\nNous qui aimons le Seigneur,\nJoignons au chant un doux accord,\nJoignons au chant un doux accord,\nEt environnons le trône,\nEt environnons le trône.\n\nChoeur :\nNous marchons vers Sion,\nMerveilleuse, merveilleuse Sion;\nNous montons tout droit vers Sion,\nLa merveilleuse Cité de Dieu.\n\n2. Qu'ils refusent de chanter\nCeux qui ne connaissent pas Dieu\nMais tous les enfants du Roi céleste,\nMais tous les enfants du Roi céleste,\nProclameront leur joie,\nProclameront leur joie.\n\n3. La colline de Sion\nProduit des délices sacrées\nAvant que nous atteignions le Ciel,\nAvant que nous atteignions le Ciel,\nOu marchions sur les rues d'or,\nOu marchions sur les rues d'or.\n\n4. Puissent nos chants abonder,\nEt chaque larme être séchée;\nNous marchons sur le sol d'Emmanuel,\nNous marchons sur le sol d'Emmanuel,\nVers les beaux pays d'En-haut,\nVers les beaux pays d'En-haut.''',
+    numero: 15,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_016',
+    titre: 'Purifie-moi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sonde-moi, ô Dieu, connais mon coeur ce jour,\nEprouve-moi, Sauveur, connais mes pensées;\nRegarde en moi, s'il y a des voies perverses;\nLave-moi de tout péché, délivre-moi.\n\n2. Seigneur, Je Te loue, Tu m'as purifié;\nHonore Ta Parole, et rends mon coeur pur;\nLà où j'avais honte, remplis-moi du feu;\nAgrée mon désir d'exalter Ton Nom.\n\n3. Seigneur, prends ma vie qu'elle soit toute à Toi,\nRemplis mon coeur de Ton amour divin;\nOte mes passions, mon moi et mon orgueil,\nJe m'abandonne, Seigneur, demeure en moi.\n\n4. O Saint-Esprit, le réveil vient de Toi;\nEnvoie-le, commence le travail en moi;\nTa Parole dit: Tu pourvois aux besoins;\nJ'implore, ô Seigneur, les bénédictions.''',
+    numero: 16,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_017',
+    titre: 'Mes brebis connaissent ma voix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mes brebis connaissent\nMa voix et Mon chemin,\nElles Me suivent partout où Je vais;\nElles connaissent Ma voix,\nEt viennent, quand J'appelle,\nElles ignorent la voix d'un étranger.\n\nChoeur :\nElles connaissent Ma voix,\nChaque jour elles sont\nLà, dans la bergerie\nEt ne s'égarent point;\nElles M'aiment parce que\nMon choix tomba sur elles,\nEt elles suivent Mon appel\nCar elles connaissent Ma voix.\n\n2. Mes brebis connaissent\nMa voix et le vert pré\nOù très souvent Je les mène paître;\nElles connaissent Ma voix\nEt les cours d'eau fraîche,\nJe les conduis près de ses eaux calmes.\n\n3. Elles connaissent Ma voix,\nLa vallée de la mort\nPar où Je les mènerai un jour;\nNi danger, ni mal\nN'en peut toucher une,\nCar Je serai toujours avec elles.''',
+    numero: 17,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_018',
+    titre: 'En avant soldats chrétiens!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. En avant soldats chrétiens!\nMarchant au combat,\nAvec la croix de Jésus,\nAllant de l'avant;\nChrist, le Royal Maître,\nMène contre l'ennemi;\nTout droit dans la bataille,\nRegardez Ses bannières.\n\nChoeur :\nEn avant, soldats chrétiens!\nMarchant au combat\nAvec la croix de Jésus,\nAllant de l'avant.\n\n2. Comme une puissante armée\nS'avance l'Eglise,\nFrères, nous sommes en marche\nSur les traces des Saints;\nNous ne sommes pas divisés,\nNous sommes un seul corps,\nUn dans l'espérance, la doctrine\nEt la charité.\n\n3. Couronnes et trônes peuvent périr\nEt royaumes tomber;\nMais l'Eglise de Jésus\nRestera constante;\nLes portes de l'enfer ne peuvent\nPrévaloir contre Elle;\nNous avons la promesse\nInfaillible de Christ.\n\n4. Au signal de triomphe,\nSatan s'enfuira;\nAlors soldats chrétiens,\nA nous la victoire!\nLes fondements de l'enfer\nS'ébranlent aux louanges;\nFrères, élevez vos voix et\nQue vos hymnes montent!\n\n5. En avant, vous les peuples,\nJoignez l'heureuse foule;\nMêlez vos voix aux nôtres,\nEn chants de victoire;\nChantent les hommes et les anges\n"Gloire, honneur et louange\nSoient à Christ le Roi,"\nDans les âges éternels.''',
+    numero: 18,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_019',
+    titre: 'Parlons de Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Parlons de Jésus,\nIl est le Roi des rois,\nLe Seigneur des seigneurs,\nDurant l'éternité;\nLe Grand JE SUIS, la Voie,\nLa Vie, la Vérité,\nParlons de Jésus de plus en plus.\n\n2. Parlons de Jésus,\nQue tout le monde proclame\nPuissance et majesté\nD'un tel merveilleux Nom.\nBébé de Bethlehem,\nL'Etoile du matin,\nChantons donc Ses louanges partout.\n\n3. Parlons de Jésus,\nIl est le Pain de Vie,\nC'est le Sauveur du monde,\nL'Homme de Galilée.\nProphète, Prêtre, Roi,\nIl est le Dieu-Puissant,\nLa Source de l'Eau de Vie gratuite.\n\n4. Parlons de Jésus,\nC'est le Prince de la Paix,\nIl est le Grand Médecin,\nA travers toute l'histoire.\nIl est le Lys pur, blanc,\nLa belle Rose de Sharon,\nIl est le Berger aux soins tendres.\n\n5. Parlons de Jésus,\nC'est le Rocher des Ages,\nAgneau, Homme du Calvaire,\nMort pour tous les pécheurs,\nLe Grand Emmanuel,\nParole de Dieu sublime,\nEt Il est notre Epoux si divin.''',
+    numero: 19,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_020',
+    titre: 'Quand notre Seigneur reviendra',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Lorsque sur les nuées du ciel,\nChrist reviendra sur la terre,\nLe monde sera-t-il dans la joie,\nQuand le Seigneur reviendra?\n\nChoeur :\n'Y aura des chants, 'y aura des cris,\n'Y aura souffrance, 'y aura tristesse,\n'Y aura des pleurs, 'y aura prières\nQuand le Seigneur reviendra.\n\n2. Sa venue apportera-t-elle\nLa joie, la peine ou des larmes?\nEs-tu prêt à Le recevoir,\nQuand le Seigneur reviendra?\n\n3. Toi, te joindras-tu à des pleurs\nOu au chant joyeux des Anges?\nLe couronneras-tu aussi,\nQuand le Seigneur reviendra?\n\n4. Travaille jusqu'à ce qu'Il t'appelle,\nAide à rassembler le grain,\nJoyeux, tu Le rencontreras,\nQuand le Seigneur reviendra.''',
+    numero: 20,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_021',
+    titre: 'C\'est la bataille',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. C'est la bataille, la trompette se fait entendre,\nLe cri «Aux armes!» est entendu partout;\nL'Eternel des armées marche vers la victoire,\nLe triomphe du juste apparaîtra.\n\nChoeur :\nC'est la bataille, ô soldats chrétiens!\nEt face à face en rangs serrés,\nAvec brillante armure, bannières flottantes,\nBien et mal s'affrontent aujourd'hui;\nC'est la bataille, ne vous lassez pas,\nSoyez forts et fermes par Sa force;\nSi Dieu est pour nous, Sa bannière sur nous,\nChant de victoire nous chanterons.\n\n2. C'est la bataille, levez-vous, fidèles braves soldats,\nJéhovah mène, assure la victoire;\nRevêtez l'armure qui vous est donnée par Dieu,\nEt par Sa force, endurez jusqu'au bout.\n\n3. Le Seigneur conduit à une victoire bien certaine,\nL'arc de la promesse couvre l'Orient;\nSon Nom glorieux sera exalté en tout lieu;\nLe matin vient, l'aube de la paix est proche.''',
+    numero: 21,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_022',
+    titre: 'Victoire en Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'ai appris une vieille histoire,\nComment vint de gloire un Sauveur,\nQui donna Sa vie là au Calvaire\nPour mon salut, moi vil;\nComment Il avait gémi,\nComment Son Précieux sang expie,\nAlors je me suis repenti,\nVictoire, j'ai remportée.\n\nChoeur :\nO la victoire en Jésus,\nMon Sauveur pour toujours,\nMe chercha, me racheta,\nPar Son sang rédempteur;\nM'aima quand je L'ignorais,\nTout mon amour est pour Lui,\nMe plongea dans la victoire,\nDans le flot purifiant.\n\n2. On m'a dit qu'Il guérissait,\nQue Sa puissance lave et révèle;\nComment Il fit marcher les boiteux\nEt fit voir les aveugles;\nPuis j'ai crié: «Cher Jésus,\nViens guérir mon esprit brisé.»\nJésus vint, je ne sais comment,\nM'apporter la victoire.\n\n3. J'entends parler d'une demeure\nQu'Il bâtit pour moi dans la gloire;\nJ'entends parler des rues pavées d'or\nPar delà la mer pure;\nEt aussi des chants des anges,\nDe la vieille histoire du rachat;\nUn jour je chanterai là-haut\nLe chant de la victoire.''',
+    numero: 22,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_023',
+    titre: 'Ma foi regarde à toi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Ma foi regarde à Toi,\nToi, Agneau du Calvaire,\nSauveur divin;\nEcoute-moi quand je prie,\nOte tous mes péchés,\nO laisse-moi dès ce jour\nEtre à Toi!\n\n2. Que Ta grâce infinie\nFortifie mon coeur faible,\nInspire mon zèle;\nComme Tu mourus pour moi,\nQue mon amour pour Toi\nPur, chaud, inchangé soit\nUn feu vivant!\n\n3. Durant ma sombre vie,\nLes épreuves m'environnent,\nSois mon seul Guide;\nChange les ténèbres en jours,\nEssuie mes larmes des peines,\nNe me laisse jamais\nM'éloigner de Toi.''',
+    numero: 23,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_024',
+    titre: 'Vivant par la foi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Aujourd'hui, je ne me soucie du lendemain,\nQu'il y ait ombre, pluie ou soleil,\nJe sais, le Seigneur règne sur toutes choses,\nEt toutes mes inquiétudes sont vaines.\n\nChoeur :\nEn Jésus-Christ, je vis par la foi,\nConfiant, croyant en Son grand amour;\nSon bras puissant me garde de tout mal,\nJe vis par la foi et je ne crains rien.\n\n2. Qu'il y ait tempête ou des nuages orageux,\nEclipsant l'éclat de la vie,\nLes cieux assombris ne me font jamais peur,\nLe Maître veille sur le combat.\n\n3. Je sais qu'Il me conduira sûrement au bout,\nQu'il survienne n'importe quel malheur,\nPourquoi alors me soucier de la tempête,\nSi Jésus marche à mes côtés.\n\n4. Un beau jour, le Seigneur viendra sur cette terre,\nAlors nos troubles cesseront,\nLe Maître nous conduira si tendrement\nAu delà de cette rive céleste.''',
+    numero: 24,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_025',
+    titre: 'J\'abandonne tout',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Tout à Jésus j'abandonne,\nJe Lui donne tout librement;\nJe L'aimerai, croirai en Lui,\nJe vivrai dans Sa présence.\n\nChoeur :\nJ'abandonne tout,\nJ'abandonne tout,\nTout à Toi, mon Sauveur béni,\nJ'abandonne tout.\n\n2. Tout à Jésus j'abandonne,\nJe me prosterne à Ses pieds,\nLes plaisirs du monde oubliés,\nJésus prends-moi, maintenant.\n\n3. Tout à Jésus j'abandonne,\nFais-moi, Sauveur, tout à Toi;\nLaisse-moi sentir le Saint-Esprit,\nSavoir que Tu es à moi.\n\n4. Tout à Jésus j'abandonne,\nSeigneur, je me donne à Toi;\nRemplis-moi de Ta puissance,\nEnvoie-moi Ta bénédiction.\n\n5. Tout à Jésus j'abandonne,\nEt je sens le feu sacré;\nOh! la joie du salut parfait!\nGloire, gloire à Son Nom!''',
+    numero: 25,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_026',
+    titre: 'Quand j\'atteindrai cette cité',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Au sommet du Mont Sion, ' y a une cité,\nEt la terre est remplie de sa gloire;\nUn matin, je contemplerai sa splendeur,\nQuand j'atteindrai cette cité sur le Mont.\n\nChoeur :\nOh! Cette cité sur Mont Sion,\nQuoique pèlerin, mais je t'aime;\nEt jamais je ne te quitterai,\nQuand j'atteindrai cette cité sur le Mont.\n\n2. On m'invite à retourner dans cette cité,\nLa Parole invite celui qui veut,\nLà, je trouverai un palais qui m'attend,\nQuand j'atteindrai cette cité sur le Mont.\n\n3. La mort ne m'affligera dans cette cité,\nNe me fera point gésir de froid;\nEt j'entrerai là pour vivre pour toujours,\nQuand j'atteindrai cette cité sur le Mont.\n\n4. J'attendrai ici l'appel de mon Sauveur,\nFaisant chaque jour Sa volonté;\nAlors là-haut, Il me dira: «C'est bien fait»,\nQuand j'atteindrai cette cité sur le Mont.''',
+    numero: 26,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_027',
+    titre: 'Plus tard',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Tentés, éprouvés, nous nous demandons\nPourquoi c'est ainsi le long du jour,\nPendant qu'il y en a d'autres autour de nous,\nQuoique dans le mal, sont impunis.\n\nChoeur :\nPlus tard nous saurons ce qu'il en est,\nPlus tard nous comprendrons le pourquoi,\nCourage, mon frère, vis dans la lumière,\nNous comprendrons tout dans peu de temps.\n\n2. Quand la mort vient et prend nos bien-aimés,\nLaissant notre maison solitaire;\nAlors nous nous demandons bien pourquoi\nLes méchants prospèrent jour après jour.\n\n3. Fidèles jusqu'à la mort, dit le Maître,\nNotre labeur est bientôt finie;\nLes peines du chemin seront oubliées\nQuand nous franchirons la belle porte.\n\n4. Nous verrons Jésus venir dans la gloire,\nQuand Il vient de Sa maison céleste,\nNous Le rencontrerons dans ce palais,\nNous comprendrons tout dans peu de temps.''',
+    numero: 27,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_028',
+    titre: 'Remplis-moi d\'amour',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Laisse-moi marcher, Seigneur, par où Tu es passé,\nChemin conduisant vers le ciel,\nPartout donnant la joie, aux gens abandonnés,\nRemplis-moi chaque jour d'Amour.\n\nChoeur :\nRemplis-moi chaque jour d'Amour,\nComme je marche avec la colombe;\nLaisse-moi marcher toujours, avec chant et sourire,\nRemplis-moi chaque jour d'Amour.\n\n2. Garde-moi à côté de mon Sauveur et Guide,\nNe me laisse pas dans les ténèbres,\nGarde-moi du courroux et satisfais mon âme,\nRemplis-moi chaque jour d'Amour.\n\n3. Bientôt finie la course, la fin de mon voyage,\nJ'habiterai au Ciel chez moi;\nQue je chante, Roi béni, sur la route vers la rive,\nRemplis-moi chaque jour d'Amour.''',
+    numero: 28,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_029',
+    titre: 'J\'ai résolu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'ai résolu de ne plus m'attarder,\nCaptivé par le monde;\nChoses qui sont plus hautes, choses qui sont plus nobles,\nOnt attiré ma vue.\n\nChoeur :\nJe me hâterai vers Lui,\nTout heureux et libre,\nJésus Le plus Grand, Le Très-Haut,\nJe viendrai à Toi.\n\n2. J'ai résolu d'aller vers le Sauveur,\nLaissant péchés et luttes;\nIl est le Fidèle, Il est le Juste,\nSes Paroles ont la vie.\n\n3. J'ai résolu de suivre le Sauveur,\nFidèle et vrai chaque jour;\nGardant ce qu'Il dit, faisant ce qu'Il veut\nIl est la Voie vivante.\n\n4. J'ai résolu d'entrer dans le Royaume,\nDélaissant les péchés;\nQu'amis s'opposent, qu'ennemis m'assaillent,\nJ'y entrerai quand même.\n\n5. J'ai résolu, qui ira avec moi ?\nAmi, viens sans tarder,\nInstruis par la Bible, conduits par l'Esprit,\nNous irons là au Ciel.''',
+    numero: 29,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_030',
+    titre: 'Lieux plus hauts',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je me presse sur la route du Ciel,\nNouvelles hauteurs, chaque jour je gagne;\nSur mon chemin, je prie toujours:\n«Place-moi, Seigneur, aux lieux plus hauts».\n\nChoeur :\nLève-moi, Seigneur, que je me tienne,\nPar la foi, sur le plateau du Ciel,\nLa plus haute plaine jamais trouvée;\nPlace-moi, Seigneur, aux lieux plus hauts.\n\n2. Mon coeur ne désire point rester\nOù doutes s'élèvent et peurs abattent;\nQue certains restent où ils abondent,\nJe prie, visant les lieux plus hauts.\n\n3. Je veux atteindre le sommet,\nEt voir luire la gloire éclatante;\nAvant de voir le Ciel je prie :\n«Seigneur, mène-moi aux lieux plus hauts».''',
+    numero: 30,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_031',
+    titre: 'Debout sur les promesses',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Debout sur les promesses de Christ, mon Roi,\nQue Ses louanges résonnent dans l'éternité;\nGloire dans les Lieux très-hauts je chanterai,\nDebout sur les promesses de Dieu.\n\nChoeur :\nDebout, debout,\nDebout sur les promesses de Dieu, mon Sauveur;\nDebout, debout,\nJe me tiens sur les promesses de Dieu.\n\n2. Debout sur les promesses infaillibles,\nQuand les tempêtes de doutes et de peurs assaillent,\nPar la Parole vivante de Dieu je vaincrai,\nDebout sur les promesses de Dieu.\n\n3. Debout sur les promesses, maintenant je vois,\nDans le sang, la purification pour moi;\nDebout dans la liberté qui vient de Christ,\nDebout sur les promesses de Dieu.\n\n4. Debout sur les promesses de Christ, Seigneur,\nAttaché à Lui par la corde d'amour,\nToujours victorieux par l'épée de l'Esprit,\nDebout sur les promesses de Dieu.\n\n5. Debout sur les promesses, je ne peux tomber,\nToujours écoutant la voix du Saint-Esprit;\nReposant en mon Sauveur, mon Tout en tout,\nDebout sur les promesses de Dieu.''',
+    numero: 31,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_032',
+    titre: 'Dans peu de temps, le matin viendra',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Nous sommes souvent ballottés sur la mer houleuse du temps,\nLes tempêtes et les cieux sombres succèdent au soleil brillant;\nAu Pays du jour parfait, quand les brumes sont dissipées,\nOui, nous le comprendrons mieux dans peu de temps.\n\nChoeur :\nDans peu de temps, le matin viendra\nQuand tous les saints de Dieu seront rassemblés,\nNous allons raconter comment nous vainquions,\nCar nous le comprendrons mieux dans peu de temps.\n\n2. Nous sommes souvent dépourvus des choses que cette vie demande\nAffamés et sans abri, terres arides, collines desséchées;\nNous nous confions au Seigneur, Et ce selon Sa Parole,\nOui, nous le comprendrons mieux dans peu de temps.\n\n3. Nous avons partout d'épreuves et nous ne comprenons pas\nLa manière dont notre Dieu nous conduit à la terre promise;\nMais Son oeil veille sur nous, nous Le suivrons jusqu'au bout,\nCar nous le comprendrons mieux dans peu de temps.\n\n4. Bien souvent les pièges cachés, les tentations nous surprennent,\nNos coeurs sont amenés à saigner à cause des paroles vaines;\nPourquoi sommes-nous éprouvés quand nous voulons faire le bien?\nMais nous le comprendrons mieux dans peu de temps.''',
+    numero: 32,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_033',
+    titre: 'Rocher d\'Ages',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Rocher d'âges, fendu pour moi,\nLaisse-moi me cacher en Toi;\nLaisse l'eau avec le sang,\nSortis de Ton flanc percé,\nEtre un double remède,\nMe sauver me rendre pur.\n\n2. Que mes larmes coulent à jamais,\nQue mon zèle ne s'éteigne point,\nCela n'ôte pas mon péché;\nC'est Toi seul qui dois sauver;\nEt ma main ne t'offre rien,\nJe ne m'attache qu'à Ta croix.\n\n3. Alors que j'aspire ce souffle,\nQuand mes yeux se fermeront,\nEt quand je me lèverai,\nJe Te verrai sur Ton trône,\nRocher d'âges, fendu pour moi,\nLaisse-moi me cacher en Toi.''',
+    numero: 33,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_034',
+    titre: 'Quand je verrai le sang',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Christ, Rédempteur, est mort sur la croix,\nPour le pécheur, paya toute sa dette;\nAspergez l'âme du sang de l'Agneau,\nEt je passerai par dessus vous.\n\nChoeur :\nQuand je verrai le sang,\nQuand je verrai le sang,\nQuand je verrai le sang,\nEt je passerai par dessus vous.\n\n2. Pire des pécheurs Jésus sauvera;\nIl fera tout ce qu'Il a promis;\nLavez-vous dans la fontaine ouverte,\nEt je passerai par dessus vous.\n\n3. Le jugement vient et tous seront là,\nChacun recevra juste son dû;\nCachez-vous dans le sang qui rend pur,\nEt je passerai par dessus vous.\n\n4. Grande compassion! Amour sans mesure!\nAmour bienveillant, fidèle, sincère!\nTrouvez paix et abri sous le sang,\nEt je passerai par dessus vous.''',
+    numero: 34,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_035',
+    titre: 'L\'amour m\'a sauvé',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dans le péché je sombrais,\nLoin de la rive de paix,\nAu dedans si fort souillé,\nAu point de non-retour;\nMais le Maître de la mer\nPerçut mon cri d'angoisse,\nDes eaux Il m'a tiré et\nJe suis sain et sauf.\n\nChoeur :\nL'amour m'a sauvé! l'amour m'a sauvé!\nQuand rien ne put m'aider, l'amour m'a sauvé.\nL'amour m'a sauvé! l'amour m'a sauvé!\nQuand rien ne put m'aider, l'amour m'a sauvé.\n\n2. Je Lui confie tout mon coeur,\nJe m'attache à Lui et\nVis dans Sa Présence bénie\nEn chantant Ses louanges.\nAmour si puissant, si vrai,\nMérite mes meilleurs chants;\nUn sincère et tendre\nCulte Lui revient.\n\n3. Ame en danger, lève les yeux,\nJésus sauve complètement;\nSon amour te tirera\nHors des vagues en furie.\nIl est Maître de la mer,\nLes flots Lui sont soumis;\nIl veut être ton Sauveur;\nEt sois sauvé.''',
+    numero: 35,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_036',
+    titre: 'Pluies de bénédiction',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. 'Y aura pluies de bénédiction,\nC'est la promesse d'amour;\nLe Sauveur nous enverra du Ciel\nLe temps de rafraîchissement.\n\nChoeur :\nPluies de bénédiction,\nOui, nous désirons ces pluies;\nLes gouttes de grâce tombent autour de nous,\nMais nous réclamons les pluies.\n\n2. 'Y aura pluies de bénédiction\nPrécieuses et vivifiantes;\nSur les collines, dans les vallées,\nLe bruit d'une pluie abondante.\n\n3. 'Y aura pluies de bénédiction,\nSeigneur, envoie-nous ces pluies,\nAccorde-nous un rafraîchissement,\nViens honorer Ta Parole.\n\n4. 'Y aura pluies de bénédiction,\nPuissent-elles tomber aujourd'hui,\nComme à Dieu nous nous confessons,\nEt nous invoquons Jésus !''',
+    numero: 36,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_037',
+    titre: 'Comme tu veux, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Comme Tu veux, Seigneur!\nComme Tu le veux!\nTu es le Potier,\nJe suis l'argile.\nTaille-moi, façonne-moi,\nSelon Ton gré,\nPendant que j'attends,\nCalme et soumis.\n\n2. Comme Tu veux, Seigneur!\nComme Tu le veux!\nEprouve-moi, sonde-moi,\nMaître, aujourd'hui!\nRends-moi maintenant\nPlus blanc que neige,\nComme je me prosterne\nDans Ta présence.\n\n3. Comme Tu veux, Seigneur!\nComme Tu le veux!\nBlessé, fatigué,\nAide-moi, je prie!\nPuissance, toute puissance,\nSûrement est Tienne!\nTouche et guéris-moi,\nSauveur divin!\n\n4. Comme Tu veux, Seigneur!\nComme Tu le veux!\nTiens tout mon être\nSous Ta puissance.\nRemplis-moi d'Esprit\nAu point qu'on ne voie\nQue Christ seul, vivant toujours en moi.''',
+    numero: 37,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_038',
+    titre: 'Attire-moi plus près',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je suis Tien, Seigneur, j'ai saisi Ta Voix,\nMe parlant de Ton amour;\nMon ardent désir: Grandir dans la foi\nEt être plus près de Toi.\n\nChoeur :\nAttire-moi plus près, Seigneur béni,\nDe la croix où Tu mourus;\nAttire-moi plus près, plus près, Seigneur béni,\nDe Ton précieux flanc saignant.\n\n2. Seigneur, consacre-moi à Ton service,\nPar la puissance de Ta grâce;\nQue mon âme T'invoque avec ferme espoir,\nQue Ta volonté soit mienne.\n\n3. Oh! les pures délices d'une heure de prière\nQue je passe devant Ton trône,\nAvec Toi mon Dieu, quand je m'agenouille,\nJe communie en ami.\n\n4. 'Y a des profondeurs d'amour que j'ignore\nTant que je ne passe la mer,\n'Y a degrés de joie que je ne peux atteindre\nQu'en me reposant en Toi.''',
+    numero: 38,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_039',
+    titre: 'Je suis marqué',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'ai perdu mon renom depuis que j'ai cessé de pécher,\nTant d'amis m'ont quitté depuis que j'ai reçu mon Sauveur;\nJadis souriants, maintenant ils me passent comme un inconnu;\nDisant que je suis vraiment un insensé, un démodé.\n\nChoeur :\nJe suis marqué, marqué, marqué;\nJe suis marqué, maintenant où que j'aille;\nJe suis marqué, marqué, marqué\nEt ce que je suis, tous semblent savoir.\nJe suis scellé, scellé, scellé,\nJe suis scellé par l'Esprit Divin;\nOh! Gloire à Dieu! Alléluia! Amen!\nJe suis Sien et je sais qu'Il est mien.\n\n2. Ils disent que ma vie est ruinée, que mon talent est gâché,\nIls ne comprennent pas cela, car j'avais des plans là-dessus;\nJe sais ce que j'ai laissé quand j'ai promis d'aller jusqu'au bout;\nEt j'ai eu beaucoup plus de gloire depuis que Dieu m'a changé.''',
+    numero: 39,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_040',
+    titre: 'Ne serait-ce pas merveilleux?',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand avec le Sauveur nous irons dans la Gloire,\nNe serait-ce pas merveilleux?\nFinis les ennuis et les soucis d'ici-bas,\nNe serait-ce pas merveilleux?\n\nChoeur :\nNe serait-ce pas merveilleux là?\nPlus de fardeaux à porter,\nChantant avec joie, les cloches du coeur sonnant,\nOh! ne serait-ce pas merveilleux?\n\n2. Marcher et parler avec Christ, le Céleste,\nNe serait-ce pas merveilleux ?\nLouer, adorer l'Incomparable Eternel,\nNe serait-ce pas merveilleux ?\n\n3. Là où la tempête ne nous emportera plus,\nNe serait-ce pas merveilleux ?\nSûrement le Seigneur nous gardera pour toujours,\nNe serait-ce pas merveilleux?''',
+    numero: 40,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_041',
+    titre: 'Sur les ailes d\'une colombe',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Noé avait navigué,\nSur les eaux plusieurs jours,\nIl chercha la terre ferme,\nDe plusieurs manières;\nDes ennuis, il en a eu\nMais non pas du Ciel,\nDieu lui donna Son signe\nSur les ailes d'une colombe.\n\nChoeur :\nSur les ailes d'une colombe blanche comme neige,\nDieu envoya Son amour doux, pur,\nUn signe du Ciel,\nSur les ailes d'une colombe.\n\n2. Jésus-Christ, notre Sauveur\nVint un jour sur la terre;\nNé dans une étable,\nDans une crèche de paille;\nIci-bas rejeté,\nMais non pas du Ciel,\nDieu nous donna Son signe\nSur les ailes d'une colombe.\n\n3. Bien qu'ayant beaucoup souffert\nDe bien des manières,\nJ'ai crié pour la guérison\nLa nuit comme le jour;\nLa foi ne fut pas oubliée\nPar le Père du Ciel,\nIl me donna Son Signe\nSur les ailes d'une colombe.''',
+    numero: 41,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_042',
+    titre: 'J\'ai envie d\'y aller',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Ma demeure céleste est splendide,\nJ'ai envie d'y aller;\nNi mort, ni peines n'y entreront,\nJ'ai envie d'y aller.\n\nChoeur :\nOui, j'ai envie d'y aller,\nJ'ai envie d'y aller;\nMa demeure céleste est splendide,\nJ'ai envie d'y aller.\n\n2. Et ses tours brillent plus que le soleil,\nJ'ai envie d'y aller;\nCe palais céleste sera mien,\nJ'ai envie d'y aller.\n\n3. D'autres cherchent une maison ici-bas,\nJ'ai envie d'y aller;\nQue des flammes dévorent, les vagues inondent,\nJ'ai envie d'y aller.\n\n4. Le Seigneur a été bon pour moi,\nJ'ai envie d'y aller;\nAvant de voir cette maison bénie,\nJ'ai envie d'y aller.''',
+    numero: 42,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_043',
+    titre: 'Viens dîner',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Jésus a une table où les saints de Dieu sont nourris,\nIl invite Son peuple élu: «Viens dîner»;\nIl nourrit avec Sa manne, pourvoit à tous nos besoins;\nC'est bon de souper avec Lui tout le temps!\n\nChoeur :\n«Viens dîner», le Maître appelle: «viens dîner»\nTu peux fêter à Sa table tout le temps;\nLui qui a nourri la foule et changé de l'eau en vin,\nIl appelle l'affamé: «Viens dîner».\n\n2. Les disciples débarquèrent, en obéissant à Christ,\nCar le Maître les appela: «Viens dîner»;\nLà, ils trouvèrent leur désir: pain et poisson sur le feu;\nIl satisfait les affamés tout le temps.\n\n3. Bientôt, l'Agneau prend l'Epouse pour toujours à Ses côtés,\nEt tous les hôtes du Ciel vont s'assembler;\nCe sera une vue glorieuse, tous les saints vêtus de blanc;\nAvec Jésus ils vont fêter pour toujours.''',
+    numero: 43,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_044',
+    titre: 'Dieu nous conduit',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dans de verts pâturages, si doux, si riches,\nDieu conduit Ses précieux enfants;\nLà où coule l'eau qui ravive les fatigués,\nDieu conduit Ses précieux enfants;\n\nChoeur :\nCertains par les eaux ou par les vagues,\nD'autres par le feu mais tous par le sang;\nCertains par les peines mais Dieu donne un chant,\nPendant la nuit et tout au long du jour.\n\n2. Des fois sur le mont où le soleil brille fort,\nDieu conduit Ses précieux enfants;\nDes fois dans la vallée au coeur de la nuit,\nDieu conduit Ses précieux enfants.\n\n3. Qu'il nous arrive des peines, que Satan s'oppose,\nDieu conduit Ses précieux enfants;\nPar la grâce nous pouvons vaincre l'ennemi,\nDieu conduit Ses précieux enfants.\n\n4. Bien loin de la boue et bien loin de l'argile,\nDieu conduit Ses précieux enfants;\nLà-haut dans la gloire, ô jour d'éternité!\nDieu conduit Ses précieux enfants.''',
+    numero: 44,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_045',
+    titre: 'Reposant sur les bras éternels',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Oh! quelle communion! oh! quelle joie divine !\nReposant sur les bras éternels;\nQuelle félicité ! quelle paix est la mienne !\nReposant sur les bras éternels.\n\nChoeur :\nReposant, reposant,\nA l'abri de toutes les terreurs;\nReposant, reposant,\nReposant sur les bras éternels.\n\n2. Qu'il est doux de marcher en pèlerin !\nReposant sur les bras éternels;\nLe sentier devient plus clair chaque jour !\nReposant sur les bras éternels.\n\n3. Que puis-je redouter? Que pourrais-je craindre?\nReposant sur les bras éternels?\nPrès de mon Seigneur j'ai la paix bénie,\nReposant sur les bras éternels.''',
+    numero: 45,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_046',
+    titre: 'Lumière',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'errais dans la nuit jusqu'à ce\nQue Jésus vînt à moi\nEt dissipa ma nuit par la\nLumière de Son amour.\n\nChoeur :\nLa lumière dans mon âme aujourd'hui,\nLumière, lumière, le long du chemin;\nLe Sauveur m'a trouvé, ôté mes péchés,\nDepuis, j'eus en moi lumière de Son Amour.\n\n2. Que les nuages s'assemblent\nOu que les vagues m'entourent;\nQue le monde soit si sombre, j'ai\nLa lumière dans mon âme.\n\n3. Marchant dans la lumière de Dieu,\nJ'ai la douce communion;\nJe m'empresse avec sainte vigueur,\nLaissant le monde derrière.\n\n4. Je traverse les champs étendus,\nJe parcours les plaines;\nDans la lumière de Son amour,\nJe moissonne le blé mûr.\n\n5. Bientôt je Le vois tel qu'Il est,\nLumière qui vint à moi;\nContemplant l'éclat de Sa face,\nDurant l'éternité.''',
+    numero: 46,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_047',
+    titre: 'Je sais en qui j\'ai cru',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je ne sais pourquoi Dieu me révèle\nSa grâce merveilleuse,\nNi pourquoi Christ dans Son amour\nM'a racheté pour Lui.\n\nChoeur :\nMais moi, je sais en qui j'ai cru,\nJe suis persuadé qu'Il est capable\nDe garder ce que je Lui ai soumis\nConfié pour ce jour-là.»\n\n2. Je ne sais comment Il m'a donné\nCette foi salvatrice,\nNi comment, croyant Sa Parole,\nJ'ai la paix dans mon coeur.\n\n3. Je ne sais comment l'Esprit se meut,\nConvainquant les pécheurs,\nRévèle Jésus par la Parole,\nEt crée la foi en Lui.\n\n4. Je ne sais pas quel bien ou quel mal\nPeut m'être réservé,\nDes jours de joie ou de tristesse,\nAvant de voir Sa face.\n\n5. Je ne sais quand mon Seigneur viendra,\nEn plein jour ou la nuit,\nSi je vais mourir avec Lui,\nOu Le rencontrer dans l'air.''',
+    numero: 47,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_048',
+    titre: 'Apportant les fruits',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Semant dès le matin, les semences d'amour,\nEn plein midi et dans la rosée du soir;\nAttendant la moisson, le temps de récolte,\nNous serons dans la joie, apportant les fruits,\n\nChoeur :\nApportant les fruits, apportant les fruits,\nNous serons dans la joie, apportant les fruits,\nApportant les fruits, apportant les fruits,\nNous serons dans la joie, apportant les fruits.\n\n2. Semant sous le soleil, semant dans les ombres,\nNe craignant ni nuages ni le froid d'hiver;\nBientôt la récolte et le travail finis,\nNous serons dans la joie apportant les fruits.\n\n3. Avançant avec des pleurs, semant pour le Maître,\nBien qu'endurant souffrances, nos esprits s'affligent;\nQuand nos pleurs finiront, Il nous accueillera,\nNous serons dans la joie, apportant les fruits.''',
+    numero: 48,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_049',
+    titre: 'Un matin doré',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Un glorieux matin, plus de tristesse,\nUn glorieux matin, tout sera paix;\nFinis les chagrins, finie l'école;\nLe Ciel s'ouvrira, Jésus viendra.\n\nChoeur :\nUn matin doré, Jésus viendra;\nUn matin doré, batailles gagnées;\n«Victoire» Il criera, perçant l'azur,\nUn matin doré, pour toi, pour moi.\n\n2. Coeurs tristes réjouis, tout est radieux,\nAdieu terrestres et sombres nuits;\nSoudainement changé à Son image,\nOh! glorieux matin, je vois Jésus!\n\n3. Oh! quelle rencontre là dans les cieux!\nPlus de pleurs ni larmes voilant nos yeux;\nLes bien-aimés unis à jamais,\nOh! quelle aube sera ce matin-là!''',
+    numero: 49,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_050',
+    titre: 'Pourrons-nous à la rivière',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Pourrons-nous, à la rivière,\nSortant du Trône de Dieu,\nNous rassembler sur la rive\nOù l'ange brillant a marché ?\n\nChoeur :\nOui, nous allons nous rassembler,\nA la merveilleuse rivière;\nAvec tous les Saints à la rivière\nQui coule du Trône de Dieu.\n\n2. Au sein de cette rivière,\nLe Roi Sauveur est à nous,\nNous serons là, plus de peines,\nSous la gloire du Trône.\n\n3. Aux bords de cette rivière,\nQui nous baigne de son eau,\nNous marcherons en adorant,\nCe sera un jour doré.\n\n4. Avant d'atteindre la rivière\nNous déposons tous fardeaux;\nLa grâce nous délivrera,\nNous donnera couronne et robe.\n\n5. A la source de la rivière,\nReflétant la face de Dieu,\nLes saints que la mort ne sépare\nChanteront la grâce qui sauve.\n\n6. Bientôt à la pure rivière,\nLe voyage est fini;\nEt tous nos coeurs se réjouiront\nDe la mélodie de paix.''',
+    numero: 50,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'crois_seulement_051',
+    titre: 'Bientôt et très bientôt',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Bientôt et très bientôt, nous allons voir le Roi,\nBientôt et très bientôt, nous allons voir le Roi,\nBientôt et très bientôt, nous allons voir le Roi.\n\nChoeur :\nAlléluia! Alléluia!\nNous allons voir le Roi.\n\n2. Plus de larmes là-bas, nous allons voir le Roi,\nPlus de larmes là-bas, nous allons voir le Roi,\nPlus de larmes là-bas, nous allons voir le Roi.\n\n3. Plus de mort là-bas, nous allons voir le Roi,\nPlus de mort là-bas, nous allons voir le Roi,\nPlus de mort là-bas, nous allons voir le Roi.''',
+    numero: 51,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_052',
+    titre: 'Mon Jésus, je T\'aime',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon Jésus, je T'aime, je sais Tu es mien,\nA Toi tous les plaisirs du péché je renonce;\nMon doux Rédempteur, mon Sauveur Tu es,\nSi jamais je T'aimai, mon Jésus, c'est bien maintenant.\n\n2. Je T'aime parce que Tu m'as aimé le premier,\nEt as acheté mon pardon sur le bois;\nJe T'aime pour la couronne d'épines sur Ton front;\nSi jamais je T'aimai, mon Jésus, c'est bien maintenant.\n\n3. Je T'aimerai pendant la vie, la mort,\nEt je Te louerai aussi longtemps que je vis;\nEt je dirai quand l'ombre de la mort me couvre:\nSi jamais je T'aimai, mon Jésus, c'est bien maintenant.\n\n4. Dans les demeures de gloire et délice éternel,\nJe T'adorerai toujours dans le Ciel lumineux;\nJe chanterai avec la couronne brillante sur mon front:\nSi jamais je T'aimai, mon Jésus, c'est bien maintenant.''',
+    numero: 52,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_053',
+    titre: 'La tempête fait rage',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Maître, la tempête fait rage!\nLes vagues déferlent sur nous!\nLe ciel est couvert de sombres nuages,\nAucun secours n'est en vue!\nSOUFFRES-TU QUE NOUS PERISSIONS ICI?\nPeux-Tu dormir ainsi,\nQuand chaque moment nous rapproche de la mort\nDans l'abîme en furie?\n\nChoeur :\n«Les vents et les flots obéiront à Ma voix:\nSois tranquille!\nQu'ils soient les fureurs de l'océan,\nOu démons ou hommes ou n'importe quoi,\nAucune eau ne peut engloutir la nef\nOù dort le Maître du Ciel et de la Terre;\nTous obéiront à Ma volonté:\nSois tranquille! Sois tranquille!\nTous obéiront à Ma volonté:\nSois tranquille!»\n\n2. Maître, l'angoisse m'oppresse,\nJe m'incline dans le chagrin;\nMon coeur brisé éprouve la détresse,\nOh! éveille-Toi pour m'aider!\nLes ténèbres du péché m'environnent,\nJe péris, cher Sauveur;\nOh! hâte-Toi de venir me sauver,\nNe me laisse pas mourir!\n\n3. Maître, la terreur est passée,\nLes éléments sont en paix!\nLe soleil brille sur la mer calme,\nLa paix s'établit dans mon coeur;\nSois avec moi, ô mon cher Sauveur,\nNe me laisse plus jamais;\nEt joyeux j'atteindrai le port désiré,\nOù je me reposerai.''',
+    numero: 53,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_054',
+    titre: 'Prends le Nom de Jésus avec toi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Prends le Nom de Jésus avec toi,\nEnfant de douleur et peines;\nIl te donnera la joie et la paix,\nPrends ce Nom où que tu ailles.\n\nChoeur :\nPrécieux Nom, oh! qu'il est doux!\nEspoir de la terre, joie du Ciel;\nPrécieux Nom, oh! qu'il est doux!\nEspoir de la terre, joie du Ciel.\n\n2. Prends le Nom de Jésus toujours,\nComme un bouclier contre les pièges;\nSi les tentations t'environnent,\nInvoque ce Saint Nom en prière.\n\n3. Oh! le précieux Nom de Jésus!\nCombien il réjouit nos coeurs,\nQuand Ses bras d'amour nous entourent,\nEt qu'Il nous accorde Sa paix!\n\n4. A la fin de notre voyage,\nProsternés au pied du Sauveur,\nRoi des rois au Ciel nous Le couronnerons,\nQuand la course sera finie.''',
+    numero: 54,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_055',
+    titre: 'Mon Dieu plus près de Toi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon Dieu, plus près de Toi, plus près de Toi!\nC'est la croix qui m'élève plus près de Toi;\nMon chant sera toujours: plus près de Toi, mon Dieu,\nPlus près de Toi, mon Dieu, plus près de Toi!\n\n2. Quoique comme un pèlerin, le soleil couché,\nTénèbres sur moi, une pierre pour oreiller;\nMême dans mes rêves je serai plus près de Toi, mon Dieu,\nPlus près de Toi, mon Dieu, plus près de Toi!\n\n3. Que la voie m'apparaisse comme une échelle,\nTout ce que Tu m'envoies est dispensé en grâce;\nDes anges m'invitent plus près de Toi, mon Dieu,\nPlus près de Toi, mon Dieu, plus près de Toi!\n\n4. Alors réveillé, je Te louerai,\nHors de mes peines, je bâtirai mon Béthel;\nAinsi par mes chagrins, plus près de Toi, mon Dieu,\nPlus près de Toi, mon Dieu, plus près de Toi!''',
+    numero: 55,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_056',
+    titre: 'Le Roi arrive',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le marché se vide, le travail s'arrête,\nLes marteaux ne frappent plus, le bruit a cessé;\nLes moissonneurs ont quitté leurs champs en friche,\nCar le Roi arrive, le Roi arrive!\n\nChoeur :\nOh! le Roi arrive, le Roi arrive!\nJ'ai entendu la trompette, Sa face je verrai;\nOh! le Roi arrive, le Roi arrive!\nBéni soit Son Nom, Il vient pour moi!\n\n2. Les enfants s'assemblent, leurs yeux brillent de joie,\nLes vieillards rajeunissent, leurs peines sont finies;\nLes malades sont guéris, les aveugles voient,\nCar le Roi arrive, le Roi arrive!\n\n3. J'entends des acclamations dans les lieux célestes,\nLes armées des cieux chantent la victoire de Christ;\nLe règne du péché et de la mort est fini,\nCar le Roi arrive, le Roi arrive!''',
+    numero: 56,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_057',
+    titre: 'N\'est-Il pas merveilleux?',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. N'est-Il pas merveilleux, merveilleux, merveilleux?\nN'est-Il pas merveilleux, notre Seigneur?\nLes yeux de la foi voient Sa gloire éclater,\nN'est-Il pas merveilleux, notre Seigneur?\n\n2. Il est le Roi des rois, le Seigneur des seigneurs,\nIl guérit les malades, Il ressuscite les morts;\nSa grâce est infinie, Son amour est sans fin,\nN'est-Il pas merveilleux, notre Seigneur?''',
+    numero: 57,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_058',
+    titre: 'Remplis mon coupe, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Comme la femme au puits, je cherchais des choses\nQui ne pouvaient satisfaire;\nMais j'entendis mon Sauveur dire:\n«Puise dans Ma source qui ne tarit pas».\n\nChoeur :\nRemplis ma coupe, Seigneur, je la tends,\nViens étancher la soif de mon âme;\nPain du Ciel, nourris-moi jusqu'à ce que je ne manque de rien,\nRemplis-la, rends-moi accompli.\n\n2. 'Y a des milliers dans ce monde qui cherchent\nLes plaisirs que la terre offre;\nMais rien ne peut se comparer aux trésors\nQue je trouve en Jésus mon Seigneur.''',
+    numero: 58,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_059',
+    titre: 'Un jour à la fois',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je ne demande qu'une chose de Toi, Seigneur:\nAide-moi chaque jour à faire de mon mieux;\nAccorde-moi la force de marcher dans Ta voie,\nApprends-moi à vivre un jour à la fois.\n\nChoeur :\nUn jour à la fois, doux Jésus,\nC'est tout ce que je demande de Toi;\nAide-moi aujourd'hui à faire ce que je dois,\nUn jour à la fois, doux Jésus.\n\n2. Rappelle-toi hier est passé, doux Jésus,\nEt demain ne m'appartient peut-être pas;\nAide-moi aujourd'hui, ne me laisse pas seul,\nEnseigne-moi à vivre un jour à la fois.''',
+    numero: 59,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_060',
+    titre: 'La vieille croix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sur une colline lointaine se tenait une vieille croix,\nLe symbole de souffrance et de honte;\nEt j'aime cette vieille croix où le Plus Beau et le Meilleur\nFut immolé pour un monde de pécheurs.\n\nChoeur :\nAlors je chérirai la vieille croix,\nJusqu'à ce que mes fardeaux soient déposés;\nJe m'attacherai à la vieille croix,\nEt l'échangerai un jour contre une couronne.\n\n2. Oh! cette vieille croix, si méprisée du monde,\nA pour moi une attraction merveilleuse;\nCar le cher Agneau de Dieu laissa Sa gloire là-haut,\nPour la porter au rugueux Calvaire.\n\n3. Dans cette vieille croix, teinte du sang si divin,\nUne beauté merveilleuse je vois;\nCar c'est sur cette croix que Jésus mourut pour moi,\nPour me pardonner et me sanctifier.''',
+    numero: 60,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_061',
+    titre: 'Où Il me conduira, je suivrai',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'entends mon Sauveur m'appeler,\nJ'entends mon Sauveur m'appeler,\nJ'entends mon Sauveur m'appeler:\n«Prends ta croix et viens, suis-Moi».\n\nChoeur :\nOù Il me conduira, je suivrai,\nOù Il me conduira, je suivrai,\nOù Il me conduira, je suivrai;\nJ'irai avec Lui, oui, partout.\n\n2. Je L'accompagnerai au jardin,\nJe L'accompagnerai au jardin,\nJe L'accompagnerai au jardin,\nJ'irai avec Lui, oui, partout.\n\n3. Je L'accompagnerai au jugement,\nJe L'accompagnerai au jugement,\nJe L'accompagnerai au jugement,\nJ'irai avec Lui, oui, partout.''',
+    numero: 61,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_062',
+    titre: 'Quel ami nous avons en Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quel ami nous avons en Jésus,\nPour porter nos peines et douleurs!\nQuel privilège de tout porter\nA Dieu dans la prière!\nOh! quelle paix nous perdons souvent,\nOh! quels chagrins inutiles nous portons,\nTout parce que nous ne portons pas\nTout à Dieu en prière!\n\n2. Avons-nous des épreuves et tentations?\nY a-t-il le trouble n'importe où?\nNous ne devrions jamais décourager:\nPortons tout au Seigneur en prière!\nPouvons-nous trouver un ami si fidèle,\nQui partagera toutes nos peines?\nJésus connaît nos faiblesses:\nPortons tout au Seigneur en prière!\n\n3. Sommes-nous faibles et chargés de fardeaux,\nAccablés de soucis et de soins?\nPrécieux Sauveur, encore notre refuge,\nPortons tout au Seigneur en prière!\nTes amis te méprisent-ils, te délaissent-ils?\nPorte tout au Seigneur en prière;\nDans Ses bras Il te prendra et te gardera,\nTu trouveras consolation là.''',
+    numero: 62,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_063',
+    titre: 'Sur le chemin du Calvaire',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Seul et méprisé, montant la colline,\nPortant le lourd bois de la croix;\nMon Sauveur marchait vers la mort cruelle,\nPour racheter mon âme perdue.\n\nChoeur :\nSur le chemin du Calvaire, Il allait,\nVers la douleur et vers la honte;\nPar Ses blessures nous sommes guéris,\nGloire et louange à Son doux Nom!\n\n2. Les clous ont percé Ses mains et Ses pieds,\nLa lance a ouvert Son saint flanc;\nC'est pour mes péchés qu'Il a tout souffert,\nPour me donner la vie éternelle.''',
+    numero: 63,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_064',
+    titre: 'Je m\'appuie sur Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand les vagues de la vie m'assaillent,\nEt que le doute tente mon coeur,\nJe regarde à mon Roi plein de grâce,\nEt je m'appuie sur Son bras fort.\n\nChoeur :\nJe m'appuie sur Jésus, mon Rocher,\nIl est mon refuge et ma paix;\nQue la tempête s'élève ou s'apaise,\nJe suis en sécurité en Lui.\n\n2. Il promet de ne jamais m'abandonner,\nSa fidélité dure à toujours;\nSur Ses promesses je me tiens ferme,\nRien ne peut me séparer de Lui.''',
+    numero: 64,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_065',
+    titre: 'Jésus paya tout',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'entends le Sauveur dire:\n«Ta force est bien petite;\nEnfant de faiblesse, veille et prie,\nTrouve en Moi ton Tout en tout».\n\nChoeur :\nJésus paya tout,\nTout je Lui dois;\nLe péché avait laissé une tache cramoisie,\nIl l'a lavée plus blanche que neige.\n\n2. Seigneur, maintenant je trouve\nQue Ta puissance seule\nPeut changer les taches du lépreux\nEt briser le coeur de pierre.\n\n3. Rien de bon n'est en moi\nPour réclamer Ta grâce;\nJe laverai mes vêtements\nDans le sang de l'Agneau du Calvaire.''',
+    numero: 65,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_066',
+    titre: 'La voix du Seigneur m\'appelle',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. La voix du Seigneur m'appelle:\n«Prends ta croix et viens, suis-Moi»;\nJe répondrai, fidèle:\n«Mon Sauveur, je viens à Toi».\n\nChoeur :\nJ'irai où Tu me conduiras,\nMon Jésus, je Te suivrai;\nTa grâce me suffira,\nJusqu'au bout je Te servirai.\n\n2. Le chemin est souvent étroit,\nMais Tu marcheras devant;\nJe garderai la sainte foi,\nEn restant Ton doux enfant.''',
+    numero: 66,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_067',
+    titre: 'Seigneur, attire mon âme',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Seigneur, attire mon âme à Toi,\nNe me laisse pas m'égarer;\nAccorde-moi la sainte foi,\nPour marcher dans Ta clarté.\n\nChoeur :\nAttire-moi, plus près de Toi,\nSauveur béni, divin Maître;\nQue je vive sous Ta loi,\nTout mon être à Toi consacré.\n\n2. Dans ce monde plein de douleurs,\nTu es mon unique abri;\nTu essuies toutes mes larmes,\nTu donnes la paix à mon esprit.''',
+    numero: 67,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_068',
+    titre: 'Oh! la grâce infinie',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Oh! la grâce infinie de notre Sauveur,\nQui s'est abaissé jusqu'à nous!\nIl a porté la honte et la douleur,\nPour nous sauver du courroux.\n\nChoeur :\nBéni soit le Nom de Jésus!\nBéni soit Son amour divin!\nPar Son sang nous sommes reçus,\nEt conduits vers le beau matin.\n\n2. Rien ne peut effacer mon péché,\nSinon le sang de Jésus;\nRien ne peut me rendre racheté,\nSinon le sang de Jésus.''',
+    numero: 68,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_069',
+    titre: 'Dieu soit avec vous',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dieu soit avec vous jusqu'à notre prochaine rencontre!\nPar Ses conseils Il vous soutienne,\nDans Son bercail Il vous maintienne;\nDieu soit avec vous jusqu'à notre prochaine rencontre!\n\nChoeur :\nJusqu'à ce que nous nous rencontrions,\nJusqu'à ce que nous nous rencontrions aux pieds de Jésus;\nJusqu'à ce que nous nous rencontrions,\nDieu soit avec vous jusqu'à notre prochaine rencontre!\n\n2. Dieu soit avec vous sous Ses ailes protectrices,\nVous cachant dans les tempêtes,\nPourvoyant à vos requêtes;\nDieu soit avec vous jusqu'à notre prochaine rencontre!''',
+    numero: 69,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_070',
+    titre: 'Je marcherai avec Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je marcherai avec Jésus sur le chemin étroit,\nGuidé par Sa clarté et soutenu par Sa foi;\nMême si le monde me rejette et se moque de moi,\nJe chanterai Ses louanges avec joie.\n\nChoeur :\nAvec Jésus je marcherai,\nChaque jour le long du chemin;\nSes promesses me soutiendront,\nJusqu'à l'aube du beau matin.\n\n2. Quand la nuit devient sombre et que le vent mugit,\nMon Berger attentionné me garde de l'ennemi;\nSa présence rassure mon coeur et dissipe la peur,\nJe suis en paix avec mon Sauveur.''',
+    numero: 70,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_071',
+    titre: 'Entends-tu l\'appel du Maître?',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Entends-tu l'appel du Maître qui te réclame aujourd'hui?\nIl te demande de venir et de te donner à Lui.\nPourquoi tarder dans le péché et dans l'obscurité,\nQuand Il t'offre le pardon et la liberté?\n\nChoeur :\nViens à Jésus sans tarder,\nIl t'attend les bras ouverts;\nLaisse Ton fardeau à Ses pieds,\nEt sois sauvé pour l'éternité.\n\n2. Sa voix est douce et tendre, elle parle à ton coeur;\nNe rejetais pas Sa grâce, accepte le Sauveur.\nDemain il sera peut-être trop tard pour répondre,\nViens maintenant avant que le monde ne s'effondre.''',
+    numero: 71,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_072',
+    titre: 'C\'est un si doux repos',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. C'est un si doux repos de s'appuyer sur Jésus,\nDe savoir qu'Il conduit tous nos pas ici-bas;\nLes soucis s'évanouissent, les craintes ne sont plus,\nQuand on habite à l'abri de Ses bras.\n\nChoeur :\nDoux repos, paix profonde,\nDonnés par le Sauveur!\nBien au-dessus du monde,\nJ'ai la joie dans mon coeur.\n\n2. En Lui j'ai la victoire sur la mort et la peur,\nMon âme est libérée par Son sang précieux;\nJe veux Le célébrer, Lui mon Roi, mon Seigneur,\nEn attendant d'entrer avec Lui dans les cieux.''',
+    numero: 72,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_073',
+    titre: 'La promesse du Père',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. La promesse du Père est descendue sur nous,\nLe Saint-Esprit de feu remplit tous nos esprits;\nNous chantons Sa victoire à genoux devant Tous,\nCar la puissance divine nous a affranchis.\n\nChoeur :\nEnvoie Ton feu, Seigneur,\nEnvoie Ton Esprit Saint!\nRemplis chaque croyant de ferveur,\nEt guide-nous par Ta main.\n\n2. Le Consolateur est là, Il demeure en nos coeurs,\nIl nous enseigne la vérité du Roi;\nPlus de doutes, plus de craintes, nous sommes victorieux,\nMarchant par l'Esprit et vivant par la foi.''',
+    numero: 73,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_074',
+    titre: 'Mon berger est le Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le Seigneur est mon Berger, je ne manquerai de rien,\nIl me fait reposer dans de verts pâturages;\nIl me dirige près des eaux paisibles du chemin,\nEt restaure mon âme à travers tous les âges.\n\nChoeur :\nOui, le bonheur et la grâce\nM'accompagneront toujours;\nEt je verrai Sa face\nDans Sa maison pour toujours.\n\n2. Quand je marche dans la vallée de l'ombre de la mort,\nJe ne crains aucun mal car Tu es avec moi;\nTa houlette et Ton bâton me rassurent et me rendent fort,\nTu dresses une table pour moi devant le Roi.''',
+    numero: 74,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_075',
+    titre: 'Vers la terre promise',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je voyage vers la terre de repos et de paix,\nOù les saintes demeures brilleront à jamais;\nLe pèlerinage est long mais mon coeur est joyeux,\nCar je sais que Jésus m'attend là dans les cieux.\n\nChoeur :\nMarchons vers le pays de gloire,\nOù les larmes cesseront;\nChantons l'hymne de la victoire,\nBientôt nous y arriverons!\n\n2. Plus de tristesse là-bas, plus de souffrance ni de mort,\nNous serons réunis autour du Trône d'or;\nLes anges et les rachetés élèveront leur voix,\nPour couronner Jésus, le grand Roi des rois.''',
+    numero: 75,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_076',
+    titre: 'Jésus est le Rocher',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Jésus est le Rocher de mon salut puissant,\nUne tour fortifiée au milieu de la tempête;\nQuand tout s'écroule autour, quand le vent est violent,\nEn Lui je trouve un abri sûr pour ma tête.\n\nChoeur :\nIl est mon Rocher, ma forteresse,\nMon libérateur en qui je me confie;\nIl transforme mes pleurs en allégresse,\nEt garde pour toujours ma vie.\n\n2. Fondé sur ce Rocher, je ne chancellerai pas,\nLes vagues de la mer peuvent bien se déchaîner;\nLa Parole de Dieu guidera chacun de mes pas,\nEt la victoire finale m'est assurée.''',
+    numero: 76,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_077',
+    titre: 'Reste avec nous, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Reste avec nous, Seigneur, le jour baisse déjà,\nLa nuit approche et l'ombre s'étend sur la terre;\nSois notre Compagnon, ne nous délaisse pas,\nEclaire notre route de Ta douce lumière.\n\nChoeur :\nReste avec nous, Jésus,\nQuand vient le soir sombre;\nQue nous ne soyons plus\nPerdus dans l'ombre.\n\n2. Ouvre nos yeux, Seigneur, pour Te reconnaître,\nBénis le pain de vie que Tu nous partages;\nFais brûler dans nos coeurs la flamme du Maître,\nPour chanter Ton amour de jour en âge.''',
+    numero: 77,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_078',
+    titre: 'Dans la présence du Roi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Entrons dans Ses parvis avec des chants de joie,\nCélébrons Sa grandeur et Son immense amour;\nProsternons-nous devant le trône de notre Roi,\nEt rendons-Lui hommage chaque jour.\n\nChoeur :\nDans la présence du Roi,\nIl y a de la joie sans fin;\nIl affermit notre foi,\nEt nous tient par la main.\n\n2. Sa sainteté remplit ce lieu de Sa lumière,\nLes cœurs brisés trouvent le baume et la guérison;\nInvoquons Son doux Nom en esprit et en prière,\nCar Il accorde la grâce et le pardon.''',
+    numero: 78,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_079',
+    titre: 'Sur le chemin de la croix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sur le chemin de la croix, je veux marcher toujours,\nOubliant le passé et ses vains attraits;\nFixant mes yeux sur Jésus, le Dieu de tout amour,\nQui me donne Sa force et Sa constante paix.\n\nChoeur :\nSuivons le chemin de la croix,\nC'est la voie de la vie;\nEcoutons la douce voix\nDu Sauveur qui nous convie.\n\n2. Même si les épreuves surviennent en chemin,\nJe sais que mon Seigneur ne m'abandonnera pas;\nIl me tient fermement par Sa puissante main,\nEt m'amènera au Ciel, étape par étape.''',
+    numero: 79,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_080',
+    titre: 'La grâce de Dieu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. La grâce de mon Dieu a touché mon pauvre coeur,\nAlors que j'étais perdu dans la nuit du péché;\nElle a guéri mon âme et banni la peur,\nEt sur le roc solide mes pieds a placés.\n\nChoeur :\nIncomparable grâce,\nQui me sauva un jour!\nDevant Ta sainte face,\nJe chante Ton amour.\n\n2. C'est cette grâce pure qui me garde chaque jour,\nMe fortifiant dans les moments de grande faiblesse;\nElle me conduira jusqu'au céleste séjour,\nOù je louerai mon Dieu dans la joie sans cesse.''',
+    numero: 80,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_081',
+    titre: 'J\'entends Ta douce voix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'entends Ta douce voix, Jésus, mon Sauveur,\nQui m'appelle à venir me laver dans Ton sang;\nJe viens à Toi, Seigneur, rempli de ferveur,\nPour être purifié par Ton amour puissant.\n\nChoeur :\nJe viens, Seigneur, à Toi,\nLave-moi dans Ton sang;\nAugmente en moi la foi,\nRends-moi pur et fervent.\n\n2. C'est Ton sang précieux qui purifie mon âme,\nQui me donne la paix et la pleine liberté;\nIl allume dans mon coeur une sainte flamme,\nPour Te servir, ô Dieu, toute l'éternité.''',
+    numero: 81,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_082',
+    titre: 'O Jésus, Tu es ma vie',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. O Jésus, Tu es ma vie, mon trésor le plus doux,\nSans Toi je ne peux rien, mon âme s'affaiblit;\nTu es mon Protecteur, mon Sauveur avant tout,\nEn Toi seul mon esprit trouve un parfait abri.\n\nChoeur :\nTu es ma vie, Seigneur,\nMon secours et mon Roi;\nJe Te donne mon coeur,\nJe n'espère qu'en Toi.\n\n2. Guide-moi par Ta main le long de mon parcours,\nFais de moi un témoin de Ta grande bonté;\nQue je proclame au monde Ton fidèle secours,\nEt la joie de vivre dans Ta sainte clarté.''',
+    numero: 82,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_083',
+    titre: 'La source d\'eau vive',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Il est une source d'eau vive et très pure,\nQui découle du trône du Dieu Très-Haut;\nElle désaltère l'âme et guérit les blessures,\nEt donne la force à celui qui a chaud.\n\nChoeur :\nViens boire à la source d'eau vive,\nElle coule gratuitement;\nQue Ton âme y arrive,\nEt vive éternellement.\n\n2. Celui qui en boira n'aura plus jamais soif,\nCar cette eau deviendra une source en lui;\nUne source d'eau jaillissante et créative,\nQui l'inondera de joie et de paix aujourd'hui.''',
+    numero: 83,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_084',
+    titre: 'Sainte cité',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je vois par la foi la Nouvelle Jérusalem,\nLa cité resplendissante préparée par Dieu;\nSes portes de perles et ses rues pavées d'or même,\nOù les rachetés chanteront tous sous les cieux.\n\nChoeur :\nSainte Cité, belle demeure,\nOù Dieu essuiera nos pleurs;\nJ'attends avec joie cette heure,\nFinis tous nos chagrins et douleurs.\n\n2. Là, le Soleil n'est plus besoin pour éclairer,\nCar l'Agneau est la lumière brillante du lieu;\nNous vivrons avec Lui sans plus jamais pleurer,\nEn adora pour toujours notre grand Roi Dieu.''',
+    numero: 84,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_085',
+    titre: 'Je sais que mon Rédempteur vit',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je sais que mon Rédempteur est vivant au Ciel,\nQu'Il se lèvera le dernier sur la terre;\nMême si la mort frappe ce corps mortel,\nJe verrai mon Dieu dans Sa haute lumière.\n\nChoeur :\nIl vit, Il vit, mon Rédempteur vivant!\nIl a vaincu la tombe et la mort;\nJe serai avec Lui au jour éclatant,\nHabitant pour toujours dans Son céleste port.\n\n2. Mon coeur tressaille de joie à cette pensée,\nCar mon salut est assuré en Jésus-Christ;\nSa promesse reste à jamais inchangée,\nEt Son amour remplit mon humble esprit.''',
+    numero: 85,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_086',
+    titre: 'A la croix où mourut mon Sauveur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. A la croix où mourut mon Sauveur,\nOù je criai pour me purifier du péché,\nLà le sang fut appliqué à mon coeur;\nGloire soit à Son Nom!\n\nChoeur :\nGloire soit à Son Nom!\nGloire soit à Son Nom!\nLà le sang fut appliqué à mon coeur;\nGloire soit à Son Nom!\n\n2. Je suis si merveilleusement sauvé du péché,\nJésus demeure si doucement en moi;\nLà à la croix où Il m'a accepté;\nGloire soit à Son Nom!''',
+    numero: 86,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_087',
+    titre: 'Mon âme bénis le Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon âme, bénis le Seigneur Tout-Puissant,\nN'oublie aucun de Ses nombreux bienfaits;\nIl pardonne tes fautes, te rend triomphant,\nEt te couronne de Sa tendre paix.\n\nChoeur :\nBénis le Seigneur, ô mon âme,\nCélèbre Son Nom très saint!\nQue Ton amour s'enflamme,\nAujourd'hui et demain.\n\n2. Il guérit toutes tes maladies de la vie,\nIl rachète ton être de la fosse obscure;\nSa bonté pour les siens est infinie,\nSa fidélité demeure éternelle et pure.''',
+    numero: 87,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_088',
+    titre: 'Quand le vol de la tempête',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand le vol de la tempête vient troubler ton ciel,\nQuand tu es découragé par les soucis du jour,\nCompte les bienfaits de Dieu, rappelle Son amour,\nEt tu verras en chantant le soin du Père éternel.\n\nChoeur :\nCompte les bienfaits de Dieu, mets-les tous devant tes yeux;\nTu verras, en adorant, combien le nombre en est grand;\nCompte les bienfaits de Dieu, mets-les tous devant tes yeux;\nTu verras en adorant combien le nombre en est grand.\n\n2. Es-tu chargé d'un lourd fardeau de chagrin,\nPenses-tu que la croix soit trop lourde à porter?\nCompte les bénédictions accordées en chemin,\nEt tous tes doutes s'en iront pour laisser place à la paix.''',
+    numero: 88,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_089',
+    titre: 'Jésus me tient par la main',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dans la nuit sombre ou sous le grand soleil,\nJésus me tient par la main;\nIl me conseille par Son regard merveilleux,\nEt sécurise mon lendemain.\n\nChoeur :\nIl me tient par la main,\nMon doux Sauveur divin;\nJe ne crains rien sur le chemin,\nCar Il me tient par la hand.\n\n2. Si mon pied glisse sur le sentier escarpé,\nSa puissante main me retient;\nPar Sa grande grâce je suis fortifié,\nEt je poursuis mon voyage serein.''',
+    numero: 89,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_090',
+    titre: 'Le sang purificateur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Il est une fontaine remplie du sang précieux,\nTiré des veines de Jésus le Sauveur;\nLes pécheurs plongés dans ce flot glorieux,\nPerdent toutes leurs taches et toute leur peur.\n\nChoeur :\nLe sang de Jésus purifie,\nLe sang de Jésus rend plus blanc que neige;\nIl donne la victoire et la vie,\nEt de tout mal Il nous protège.\n\n2. Le brigand mourant s'est réjoui de voir\nCette fontaine salutaire en son jour;\nEt là, malgré mes péchés du soir,\nJ'ai lavé mon âme dans Son grand amour.''',
+    numero: 90,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_091',
+    titre: 'Je viens à Ta croix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je viens à Ta croix, ô mon Sauveur,\nFatigué et chargé du poids du péché;\nPrends tout mon être, guéris mon coeur,\nEt donne-moi la paix que j'ai cherchée.\n\nChoeur :\nA Ta croix je me prosterne,\nJésus, accepte-moi;\nQue Ta grâce m'incarne,\nJe me donne tout à Toi.\n\n2. Tu as tout payé pour ma rançon,\nEn donnant Ta vie sur le bois maudit;\nJe reçois aujourd'hui le grand pardon,\nEt la vie éternelle que Tu as promise.''',
+    numero: 91,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_092',
+    titre: 'L\'amour de Dieu est si grand',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. L'amour de Dieu est si merveilleux,\nQu'aucun mot ne peut le décrire vraiment;\nIl surpasse la hauteur des cieux,\nEt s'étend plus loin que l'océan géant.\n\nChoeur :\nOh! l'amour de Dieu, si riche et si pur!\nIncommensurable et fort;\nIl durera éternellement et sûr,\nChanté par les saints et les anges d'or.\n\n2. Quand les empires s'effondreront tous,\nEt que les écrits des hommes passeront;\nL'amour de Dieu restera parmi nous,\nEt les rachetés le célébreront.''',
+    numero: 92,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_093',
+    titre: 'La trompette sonnera',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Bientôt la trompette de Dieu sonnera,\nAnnonçant le retour du Roi de gloire;\nChaque oeil Le verra, la terre tremblera,\nCe sera le jour de la grande victoire.\n\nChoeur :\nEs-tu prêt à rencontrer le Roi?\nEs-tu prêt pour ce grand jour?\nSera-ce la joie ou l'effroi,\nQuand Il viendra dans Son amour?\n\n2. Les morts en Christ ressusciteront d'abord,\nEt nous les vivants serons tous transformés;\nEnlevés ensemble au-dessus de la mort,\nPour vivre toujours avec le Bien-Aimé.''',
+    numero: 93,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_094',
+    titre: 'Demeure en moi, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Demeure en moi, Seigneur, heure après heure,\nSans Ta présence je ne puis marcher;\nFais de mon humble coeur Ta sainte demeure,\nEt garde-moi de tout péché.\n\nChoeur :\nDemeure en moi, Jésus mon Sauveur,\nSois ma lumière et mon soutien;\nRemplis ma vie de Ta sainte ferveur,\nEt tiens-moi fort sur le chemin.\n\n2. Quand le doute s'élève ou la nuit devient sombre,\nTa présence dissipe toute frayeur;\nTu es le Soleil qui chasse les ombres,\nEt qui apporte au coeur le bonheur.''',
+    numero: 94,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_095',
+    titre: 'Le grand Médecin est ici',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le grand Médecin est ici maintenant,\nLe compatissant Jésus;\nIl réconforte le coeur souffrant,\nEcoutez la voix de Jésus!\n\nChoeur :\nLe plus doux nom des lèvres humaines,\nLe plus doux chant des chœurs célestes;\nLe plus doux nom jamais chanté:\nJésus, béni Jésus!\n\n2. Vos nombreux péchés sont tous pardonnés,\nEcoutez la voix de Jésus;\nAllez en paix sur le chemin tracé,\nEt portez la couronne avec Jésus.''',
+    numero: 95,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_096',
+    titre: 'Vers les cieux je lève les yeux',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Vers les cieux je lève mes yeux languissants,\nD'où me viendra le secours désiré?\nLe secours me vient du Dieu Tout-Puissant,\nQui a fait la terre et le ciel éthéré.\n\nChoeur :\nIl ne permettra pas que ton pied chancelle,\nCelui qui te garde ne dormira point;\nL'Eternel est ton ombre fidèle,\nIl te protège à chaque coin.\n\n2. Il te gardera de tout mal sur la terre,\nIl gardera ton âme au long des jours;\nTes départs, tes arrivées sous Sa lumière,\nSont bénis dès maintenant et pour toujours.''',
+    numero: 96,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_097',
+    titre: 'Chantons les louanges de l\'Agneau',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Chantons tous ensemble les louanges du Roi,\nL'Agneau immolé qui nous a rachetés;\nIl est digne de recevoir la gloire et la foi,\nLa puissance et l'honneur pour l'éternité.\n\nChoeur :\nGloire, gloire à l'Agneau de Dieu!\nIl est assis sur le trône céleste;\nQue Son Nom retentisse en tout lieu,\nSur la terre et le reste.\n\n2. Par Son sang précieux Il nous a purifiés,\nFaisant de nous un royaume de sacrificateurs;\nCélébrons Son amour et Ses bontés régulières,\nEn Lui offrant nos louanges et nos coeurs.''',
+    numero: 97,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_098',
+    titre: 'Le matin de la résurrection',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Au matin glorieux de la résurrection,\nLes sépulcres s'ouvriront à la voix du Seigneur;\nLes saints sortiront vêtus d'incorruptibilité,\nPour régner avec Christ dans le parfait bonheur.\n\nChoeur :\nO mort, où est ton aiguillon?\nO tombe, où est ta victoire?\nChrist a brisé toutes tes chaînes,\nNous vivons pour Sa gloire!\n\n2. Ce jour-là plus de deuils, plus de cris, plus de peines,\nLes corps souffrants seront changés en un instant;\nNous serons comme Lui, affranchis de nos haines,\nDans la lumière divine du tout-puissant.''',
+    numero: 98,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_099',
+    titre: 'Je t\'appartiens, ô Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je t'appartiens, ô Jésus mon Sauveur,\nTu m'as acheté au prix de Ton sang;\nJe consacre ma vie, mes talents et mon coeur,\nA Ton service glorieux et puissant.\n\nChoeur :\nPrends ma vie, Seigneur Jésus,\nQu'elle soit entièrement à Toi;\nQue mes jours ne soient plus perdus,\nMais vécus dans Ta sainte foi.\n\n2. Utilise mes mains pour accomplir Ton oeuvre,\nMes pieds pour courir dans Tes saints sentiers;\nQue ma bouche proclame Ta grâce qui œuvre,\nEt Ton salut offert aux hommes entiers.''',
+    numero: 99,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_100',
+    titre: 'A Dieu soit la gloire!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. A Dieu soit la gloire par Son grand amour,\nIl donna Son Fils pour mourir à notre tour;\nIl livra Sa vie pour racheter le pécheur,\nEt ouvrit la porte du Ciel au croyant en fleur.\n\nChoeur :\nLouez le Seigneur! Que la terre entende Sa voix!\nLouez le Seigneur! Que le peuple se réjouisse!\nOh! venez au Père par Jésus le Roi,\nEt donnez-Lui la gloire pour Son grand sacrifice!\n\n2. Oh! parfait rachat acquis par le sang,\nPromesse divine à tout croyant sincère;\nLe plus vil pécheur qui croit en ce moment,\nReçoit le pardon du Sauveur de la terre.''',
+    numero: 100,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'crois_seulement_101',
+    titre: 'Sur le chemin du Ciel',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sur le chemin du Ciel je marche avec joie,\nMon Sauveur me guide et soutient ma foi;\nLes obstacles s'effacent devant Sa clarté,\nEt mon cœur exulte de Sa vérité.\n\nChoeur :\nEn route vers la Patrie,\nOù régnera la paix;\nEn Jésus j'ai la vie,\nPour toujours à jamais.\n\n2. Bientôt les travaux de la terre prendront fin,\nNous verrons se lever le céleste matin;\nDans la sainte cité nous chanterons en chœur,\nLes louanges éternelles de notre Sauveur.''',
+    numero: 101,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_102',
+    titre: 'Rois des rois, Seigneur des seigneurs',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Roi des rois, Seigneur des seigneurs,\nNous T'adorons d'un même cœur;\nTon nom est grand sur toute la terre,\nTa majesté est sans frontière.\n\nChoeur :\nGloire, gloire au Roi des rois!\nNous élevant notre voix;\nAlléluia au Sauveur,\nNotre puissant Rédempteur!\n\n2. Tu as vaincu la mort et le péché,\nPar Ton sang nous sommes rachetés;\nRègne en maître dans nos vies aujourd'hui,\nJusqu'au jour où Tu reviendras dans la nuit.''',
+    numero: 102,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_103',
+    titre: 'Reste avec moi, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Reste avec moi, le jour décline déjà,\nQuand vient la nuit, Seigneur, ne me quitte pas;\nQuand les appuis terrestres s'évanouissent,\nReste avec moi, ô Dieu, que Tes grâces m'unissent.\n\nChoeur :\nReste avec moi, heure par heure,\nSois mon abri et ma demeure;\nDans l'épreuve et la douleur,\nReste avec moi, doux Sauveur.\n\n2. J'ai besoin de Ta présence à chaque instant,\nSeul Ton amour peut vaincre le séducteur puissant;\nQui comme Toi sera mon guide et mon appui?\nDans la peine et la joie, reste avec moi aujourd'hui.''',
+    numero: 103,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_104',
+    titre: 'Je sais en qui j\'ai cru',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je ne sais pas pourquoi la grâce de Dieu\nM'a été révélée dans ce bas lieu;\nNi pourquoi le Sauveur dans Son amour infini\nA racheté mon âme et m'a donné la vie.\n\nChoeur :\nMais je sais en qui j'ai cru,\nEt je suis persuadé qu'Il a la puissance\nDe garder ce que je Lui ai confié\nJusqu'à ce grand jour de Sa présence.\n\n2. Je ne sais pas comment l'Esprit de vérité\nConvainc le cœur humain de Sa divinité;\nNi comment la foi naît en écoutant la voix\nQui transforme le pécheur au pied de la croix.''',
+    numero: 104,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_105',
+    titre: 'Debout, sainte cohorte',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Debout, sainte cohorte, soldats du Roi des rois!\nLevez l'étendard gagneur de la croix;\nDu Roi des armées suivez le chemin,\nLa victoire est certaine sous Sa sainte main.\n\nChoeur :\nDebout! Debout pour Jésus!\nSoldats de la croix;\nSoyez forts et fermes,\nObéissez à Sa voix.\n\n2. Debout pour Jésus! La trompette résonne;\nAu combat sacré le Seigneur vous ordonne;\nSaisissez les armes de la sainte foi,\nEt marchez en vainqueurs sous la loi du Roi.''',
+    numero: 105,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_106',
+    titre: 'C\'est mon histoire, c\'est mon chant',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Assurance bénie, Jésus est à moi!\nOh! quel avant-goût de la gloire en foi;\nHéritier du salut, racheté de Dieu,\nNé de Son Esprit, lavé dans Son sang radieux.\n\nChoeur :\nC'est mon histoire, c'est mon chant,\nLouant mon Sauveur tout le jour durant;\nC'est mon histoire, c'est mon chant,\nLouant mon Sauveur tout le jour durant.\n\n2. Soumission parfaite, parfait délice,\nLes visions de gloire éclatent à mes yeux;\nLes anges descendent apportant d'en haut,\nDes échos de grâce et d'amour plus haut.''',
+    numero: 106,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_107',
+    titre: 'Le rocher des siècles',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Rocher des siècles, fendu pour moi,\nLaisse-moi me cacher en Toi;\nQue l'eau et le sang découles de Ton flanc,\nSoient pour mon péché un remède puissant.\n\nChoeur :\nRocher des siècles, fendu pour moi,\nLaisse-moi me cacher en Toi.\n\n2. Que mes larmes coulent sans fin,\nQue mon zèle ne connaisse pas de déclin;\nCela ne saurait expier mon péché;\nToi seul peux sauver le pauvre égaré.''',
+    numero: 107,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_108',
+    titre: 'Il me conduit',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Il me conduit! Oh! pensée bénie!\nParoles de confort et de vie!\nQuoi que je fasse, où que je sois,\nC'est la main de Dieu qui me guide en foi.\n\nChoeur :\nIl me conduit, Il me conduit!\nPar Sa propre main Il me conduit;\nSon fidèle disciple je serai,\nCar par Sa main Il me conduit.\n\n2. Parfois dans les scènes de profond chagrin,\nParfois où les fleurs égaient le chemin;\nSur les eaux calmes ou mer agitée,\nPar Sa main ma vie est toujours guidée.''',
+    numero: 108,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_109',
+    titre: 'Sainte Bible, livre divin',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sainte Bible, livre divin,\nTrésor précieux dans ma main;\nTu me dis d'où je suis venu,\nEt où je vais par le Sauveur Jésus.\n\nChoeur :\nSainte Bible, livre d'amour,\nGuide mes pas chaque jour;\nLumière pure sur mon chemin,\nTu me conduis jusqu'à la fin.\n\n2. Tu me condamnes quand je m'égare,\nTu me consoles dans mes peines rares;\nTu me révèles le plan du salut,\nEt la grâce divine que Dieu a voulue.''',
+    numero: 109,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_110',
+    titre: 'Je T\'appartiens, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'ai entendu Ta voix qui me disait d'aimer,\nEt de suivre Tes pas sans jamais hésiter;\nMais je désire monter dans les bras de la foi,\nEt être plus près de Toi, mon Roi.\n\nChoeur :\nAttire-moi plus près, plus près, Seigneur,\nDe la croix où Tu es mort;\nAttire-moi plus près, plus près, Seigneur,\nA Ton précieux flanc fort.\n\n2. Consacre-moi maintenant à Ton service, Seigneur,\nPar la puissance de Ta grâce et ferveur;\nQue mon âme regarde en haut avec espérance,\nEt que ma volonté s'absorbe dans Ta présence.''',
+    numero: 110,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_111',
+    titre: 'Savoir que Jésus m\'aime',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Jésus m'aime, je le sais,\nCar la Bible me le dit;\nLes petits à Lui appartiennent,\nIls sont faibles, mais Il est fort.\n\nChoeur :\nOui, Jésus m'aime!\nOui, Jésus m'aime!\nOui, Jésus m'aime!\nLa Bible me le dit.\n\n2. Jésus m'aime, Il est mort,\nPour m'ouvrir les portes du Ciel;\nIl lavera mon péché,\nEt me gardera pur de tout mal.''',
+    numero: 111,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_112',
+    titre: 'Sur le roc solide je me tiens',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon espoir est bâti sur rien de moins\nQue le sang et la justice de Jésus;\nJe ne me fie à aucun doux soutien,\nMais je m'appuie sur le Nom de Jésus.\n\nChoeur :\nSur Christ, le Roc solide, je me tiens;\nTout autre terrain est du sable mouvant,\nTout autre terrain est du sable mouvant.\n\n2. Quand les ténèbres voilent Son doux visage,\nJe me repose sur Sa grâce immuable;\nDans chaque haute et violente tempête,\nMon ancre tient bon dans le voile secret.''',
+    numero: 112,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_113',
+    titre: 'A Jésus je m\'abandonne',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Tout à Jésus je m'abandonne,\nTout à Lui je donne librement;\nJe L'aimerai et me confierai en Lui,\nDans Sa présence je vivrai quotidiennement.\n\nChoeur :\nJe m'abandonne tout,\nJe m'abandonne tout;\nTout à Toi, mon béni Sauveur,\nJe m'abandonne tout.\n\n2. Tout à Jésus je m'abandonne,\nProsterné à Ses saints pieds;\nLes plaisirs mondains sont oubliés,\nPrends-moi, Jésus, prends-moi maintenant.''',
+    numero: 113,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_114',
+    titre: 'La paix comme un fleuve',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand la paix comme un fleuve accompagne ma voie,\nQuand les chagrins comme des vagues roulent;\nQuel que soit mon sort, Tu m'as appris à dire:\nTout est bien, tout est bien pour mon âme.\n\nChoeur :\nTout est bien (tout est bien),\nPour mon âme (pour mon âme);\nTout est bien, tout est bien pour mon âme.\n\n2. Que Satan m'assaille, que les épreuves surviennent,\nQue cette assurance contrôle mon cœur:\nChrist a regardé ma condition d'immamité,\nEt a versé Son propre sang pour mon âme.''',
+    numero: 114,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_115',
+    titre: 'Travailler pour le Maître',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Travaillons pour le Maître avec zèle et amour,\nProclamons la bonne nouvelle chaque jour;\nDans les champs du Seigneur la moisson est immense,\nEngageons-nous tous avec persévérance.\n\nChoeur :\nTravaillons, prions et veillons,\nJusqu'à ce que le Maître revienne;\nEnsemble Sa gloire nous chanterons,\nQuand la victoire sera sienne.\n\n2. Ne craignons ni la peine ni les travaux pénibles,\nCar la grâce du Sauveur nous rend invincibles;\nIl promet la couronne à Ses fidèles ouvriers,\nQui ont combattu le bon combat sans plier.''',
+    numero: 115,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_116',
+    titre: 'Dans le jardin',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je viens au jardin seul,\nPendant que la rosée est encore sur les roses;\nEt la voix que j'entends tomber sur mon oreille,\nLe Fils de Dieu la révèle.\n\nChoeur :\nEt Il marche avec moi, et Il parle avec moi,\nEt Il me dit que je suis Sien;\nEt la joie que nous partageons là,\nAucune autre n'a jamais connue.\n\n2. Il parle, et au son de Sa voix,\nSi douce que les oiseaux arrêtent leur chant;\nEt la mélodie qu'Il me donne,\nRésonne dans mon cœur d'enfant.''',
+    numero: 116,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_117',
+    titre: 'Conduis-moi, ô grand Éternel',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Conduis-moi, ô grand Éternel,\nPèlerin dans cette terre aride;\nJe suis faible, mais Tu es puissant,\nTiens-moi de Ta main puissante.\n\nChoeur :\nPain du Ciel, Pain du Ciel,\nNourris-moi jusqu'à ce que je ne manque de rien;\nNourris-moi jusqu'à ce que je ne manque de rien.\n\n2. Ouvre maintenant la fontaine cristalline,\nD'où coule le flot guérisseur;\nQue la colonne de nuée et de feu\nMe guide tout au long de mon voyage.''',
+    numero: 117,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_118',
+    titre: 'Viens, Source de toute bénédiction',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Viens, Source de toute bénédiction,\nAccorde mon cœur à chanter Ta grâce;\nDes flots de miséricorde sans fin\nAppellent des chants de louange éclatants.\n\nChoeur :\nEnseigne-moi quelque chant joyeux,\nChanté par les langues d'en haut;\nLouez la montagne! Je me tiens dessus,\nMontagne de Ton amour immuable.\n\n2. Ici je dresse mon Ében-Ézer,\nC'est par Ton secours que je suis venu;\nEt j'espère, par Ton bon plaisir,\nArriver en sécurité à la maison.''',
+    numero: 118,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_119',
+    titre: 'La grande joie dans mon cœur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'ai une joie immense dans mon cœur aujourd'hui,\nDepuis que Jésus a effacé mes péchés;\nUne paix profonde qui ne saurait finir,\nEt un chant de louange pour Son saint avenir.\n\nChoeur :\nJ'ai la joie, la joie au cœur,\nDonnée par le Sauveur;\nElle brille comme le soleil,\nC'est un don sans pareil!\n\n2. Le monde ne peut m'enlever cette paix,\nQue Jésus m'a donnée pour toujours et jamais;\nEn Lui je me confie, Il est mon vrai bonheur,\nJe chanterai Sa grâce de toute ma ferveur.''',
+    numero: 119,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_120',
+    titre: 'Béni soit le lien',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Béni soit le lien qui unit\nNos cœurs dans l'amour chrétien;\nLa communion des esprits frères\nEst semblable à celle d'en haut.\n\n2. Devant le trône de notre Père,\nNous versons nos prières ardentes;\nNos craintes, nos espoirs, nos buts sont un,\nNos consolations et nos soucis.\n\n3. Nous partageons nos peines mutuelles,\nNos fardeaux uns pour les autres;\nEt souvent pour l'autre coule\nLa larme de sympathie sincère.''',
+    numero: 120,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_121',
+    titre: 'Quand Jésus repassa sur la terre',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand Jésus marchait sur les routes de Judée,\nGuérissant les malades, consolant les affligés;\nSa parole apportait la lumière et la vie,\nA quiconque croyait et Le suivait sans envie.\n\nChoeur :\nIl est le même hier et aujourd'hui,\nJésus le Sauveur qui nous bénit;\nMettons notre confiance en Son saint Nom,\nEt reçois Sa grâce et Son grand pardon.\n\n2. Il appelle encore les pécheurs à Venir,\nPour trouver le repos et ne plus jamais souffrir;\nSa puissance est intacte, Son amour est sans fin,\nIl nous tend aujourd'hui Sa secourable main.''',
+    numero: 121,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_122',
+    titre: 'Le Sauveur nous appelle',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le Sauveur nous appelle à Le suivre aujourd'hui,\nA quitter les ténèbres pour vivre avec Lui;\nPourquoi chercher au loin ce que Lui seul nous donne,\nLa paix de l'âme pure et la sainte couronne?\n\nChoeur :\nRépondons à Son appel d'amour,\nDonnons-Lui notre cœur sans retour;\nEn Lui seul se trouve le salut,\nEt la vie éternelle qu'Il a voulue.\n\n2. Sa voix est si touchante, Son regard si rempli\nDe bonté, de tendresse pour le pauvre égaré;\nVenez tous à Jésus, Il efface nos peines,\nEt brise pour toujours nos plus lourdes chaînes.''',
+    numero: 122,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_123',
+    titre: 'Quelle réunion ce sera!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand nous serons tous rassemblés là-haut,\nAutour du Trône de l'Agneau sans défaut;\nQuelle réunion joyeuse et glorieuse ce sera,\nQuand l'Église rachetée enfin se réjouira!\n\nChoeur :\nOh! quelle réunion ce sera,\nQuand nous verrons Jésus notre Roi!\nPlus de larmes, plus de separation,\nMais des chants de triomphe et de bénédiction.\n\n2. Les saints de tous les âges seront tous réunis,\nChantant les louanges du Sauveur béni;\nNous reconnaîtrons nos bien-aimés partis avant,\nEt nous vivrons ensemble dans le Ciel éclatant.''',
+    numero: 123,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_124',
+    titre: 'Je m\'attends à Toi, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je m'attends à Toi, Seigneur, dans la Prière,\nRemplis mon âme de Ta douce lumière;\nJe suis indigent, faible et sans secours,\nMais je compte sur Ton fidèle amour.\n\nChoeur :\nMon âme s'attend à Toi,\nAugmente ma sainte foi;\nManifeste Ta puissance,\nDans ma vie et ma présence.\n\n2. Révèle-moi Ta volonté parfaite,\nFais de mon être Ton humble demeure nette;\nQue Ton Saint-Esprit me guide chaque jour,\nEt que je marche dans Ton divin amour.''',
+    numero: 124,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_125',
+    titre: 'Victoire en Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'ai entendu une histoire ancienne,\nComment un Sauveur vint de la gloire;\nComment Il donna Sa vie au Calvaire,\nPour sauver un misérable comme moi.\n\nChoeur :\nO victoire en Jésus, mon Sauveur pour toujours!\nIl m'a cherché et m'a acheté avec Son sang précieux;\nIl m'a aimé avant que je Le connaisse,\nEt tout mon amour Lui est dû.\n\n2. J'ai entendu parler de Son pouvoir de guérison,\nDe Ses miracles de grâce et de pardon;\nComment Il fit marcher les boiteux et voir les aveugles,\nEt crier louange à Dieu le Très-Haut.''',
+    numero: 125,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_126',
+    titre: 'Gloire à Son saint Nom!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Viens, pécheur, à la croix du Sauveur,\nLaisse là ton fardeau de douleur;\nJésus t'accueille avec Sa douceur,\nGloire à Son saint Nom!\n\nChoeur :\nGloire à Son saint Nom!\nGloire à Son saint Nom!\nLà le sang effaça mon péché,\nGloire à Son saint Nom!\n\n2. Quelle merveilleuse grâce reçue,\nQuand par la foi mon âme a vu\nLe sang versé par le Sauveur Jésus,\nGloire à Son saint Nom!''',
+    numero: 126,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_127',
+    titre: 'Je marcherai dans la clarté',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je marcherai dans la clarté de Dieu,\nLaissant derrière les ténèbres du lieu;\nMon Guide est fidèle, Il conduit mes pas,\nEt dans l'épreuve Il ne m'abandonne pas.\n\nChoeur :\nMarchons dans la lumière,\nDu Sauveur et du Père;\nSon amour nous éclaire,\nSur cette terre entière.\n\n2. Sa Parole est une lampe à mes pieds,\nUn flambeau brillant sur mes sentiers;\nJe n'ai plus peur des pièges du malin,\nCar le Seigneur me tient par la main.''',
+    numero: 127,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_128',
+    titre: 'Entends mon cri, ô Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Du fond de l'abîme je Crie à Toi,\nÉcoute ma voix, Seigneur mon Roi;\nPrête l'oreille à mes supplications,\nEt accorde-moi Ta bénédiction.\n\nChoeur :\nSeigneur, entends mon cri,\nRéponds-moi aujourd'hui;\nEn Ta grâce je m'assure,\nTu es ma retraite sûre.\n\n2. Si Tu gardais le souvenir des fautes,\nQui pourrait subsister devant Ta face haute?\nMais le pardon se trouve auprès de Toi,\nAfin qu'on Te craigne avec sainte foi.''',
+    numero: 128,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_129',
+    titre: 'La voix du sang de Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le sang de Jésus parle plus fort\nQue tous mes péchés et la mort;\nIl réclame grâce et liberté,\nPour mon âme en toute vérité.\n\nChoeur :\nPrécieux sang du Calvaire,\nSource de vie et de lumière;\nIl purifie mon cœur tremblant,\nEt me rend juste devant le Tout-Puissant.\n\n2. Plus de condamnation pour moi,\nCar je suis couvert par la foi;\nLe sang de l'Agneau m'a racheté,\nEt m'a donné l'éternité.''',
+    numero: 129,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_130',
+    titre: 'Jésus revient bientôt',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Les signes des temps nous l'annoncent haut,\nJésus le Roi revient très bientôt;\nSoyons prêts, veillons et prions toujours,\nCar l'heure approche de Son retour.\n\nChoeur :\nIl revient, oui, Il revient!\nDans les nuées le Roi vient;\nPréparons nos cœurs pour ce jour,\nOù nous régnerons dans Son amour.\n\n2. Les morts en Christ ressusciteront d'abord,\nVêtus de gloire, vainqueurs de la mort;\nEt nous serons enlevés avec eux,\nPour être à jamais dans les cieux.''',
+    numero: 130,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_131',
+    titre: 'Plus que vainqueur par Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Face au combat et à l'adversaire,\nNous n'avons rien à craindre sur terre;\nCar Christ a vaincu le mal et la mort,\nEt Son Esprit nous rend toujours forts.\n\nChoeur :\nPlus que vainqueurs par Jésus,\nNotre salut est accompli et vu;\nRien ne peut nous séparer de Son amour,\nIl nous garde fidèlement chaque jour.\n\n2. Que viennent les souffrances ou la douleur,\nNous gardons la foi dans le Sauveur;\nIl est notre force et notre bouclier,\nEt Son saint Nom nous fera triompher.''',
+    numero: 131,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_132',
+    titre: 'Je chanterai l\'amour de mon Sauveur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je chanterai l'amour de mon Sauveur,\nQui m'a cherché dans mon malheur;\nIl a brisé mes chaînes de péché,\nEt dans Son bercail m'a ramené.\n\nChoeur :\nChantons Son amour divin,\nAujourd'hui et jusqu'à la fin;\nIl est mon Roi, mon Libérateur,\nÀ Lui soit la gloire et l'honneur!\n\n2. Sa bonté m'accompagne chaque matin,\nIl pourvoit à tout sur mon chemin;\nJe veux Le servir d'un cœur joyeux,\nEn attendant le royaume des cieux.''',
+    numero: 132,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_133',
+    titre: 'Un abri dans la tempête',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le Seigneur est un Rocher dans ce monde agité,\nUn abri sûr contre la tempête et le vent;\nQue les vagues mugissent en toute furie,\nEn Lui nous trouvons le repos et la vie.\n\nChoeur :\nJésus est un abri dans la tempête,\nUn abri dans la tempête, un abri dans la tempête;\nJésus est un abri dans la tempête,\nUn refuge précieux pour toujours.\n\n2. Une ombre le jour contre la chaleur brûlante,\nUn secours présent dans l'épreuve menaçante;\nAucun ennemi ne peut nous arracher,\nDu bras puissant de notre Rocher.''',
+    numero: 133,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_134',
+    titre: 'Fais de moi un instrument de paix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Seigneur, fais de moi un canal de Ta paix,\nOù il y a la haine, que j'apporte Ton amour;\nOù il y a l'offense, le pardon jamais frais,\nOù est le doute, une foi sans détour.\n\nChoeur :\nÔ Maître, accorde-moi de ne pas tant chercher\nÀ être consolé qu'à consoler;\nÀ être compris qu'à comprendre,\nÀ être aimé qu'à aimer de mon cœur tendre.\n\n2. Car c'est en donnant que l'on reçoit vraiment,\nC'est en pardonnant qu'on est pardonné;\nC'est en mourant qu'on renaît puissamment,\nPour la vie éternelle que Tu as donnée.''',
+    numero: 134,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_135',
+    titre: 'La voix du Bon Berger',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'entends la voix du Bon Berger qui m'appelle,\nSes brebis connaissent Sa douce voix fidèle;\nIl les mène vers de verdoyants pâturages,\nEt les protège de tous les plus sombres orages.\n\nChoeur :\nSuivons le Bon Berger,\nIl ne peut nous tromper;\nSa main nous gardera,\nOù qu'Il nous conduira.\n\n2. Il donne Sa vie pour Ses chères brebis,\nEt nul ne peut les ravir de Ses mains bénies;\nEn Lui nous avons la paix et la sécurité,\nMaintenant et pour toute l'éternité.''',
+    numero: 135,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_136',
+    titre: 'Laisse-moi marcher avec Toi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Laisse-moi marcher avec Toi, Seigneur,\nDans les voies pures de Ta vérité;\nApprends-moi à porter les fardeaux de douleur,\nEt à servir avec humilité.\n\nChoeur :\nMarcher avec Toi, mon Sauveur,\nC'est la joie suprême de mon cœur;\nGuide mes pas jour après jour,\nDans la lumière de Ton amour.\n\n2. Enseigne-moi le secret de Ta paix,\nAfin que je puisse consoler les affligés;\nQue Ta douce présence ne me quitte jamais,\nJusqu'au bout du voyage accompli.''',
+    numero: 136,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_137',
+    titre: 'C`est au pied de la croix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. C'est au pied de la croix que j'ai trouvé la paix,\nLà où le sang du Sauveur a coulé pour moi;\nMes fardeaux sont tombés, mes craintes ont cessé,\nEt mon âme a été remplie de sainte foi.\n\nChoeur :\nAu pied de la croix, quelle grâce infinie!\nLà Jésus m'a donné Sa propre vie;\nJe veux y rester prosterné toujours,\nCélébrant le triomphe de Son grand amour.\n\n2. Regardant à Jésus agonisant sur le bois,\nMon cœur s'emplit d'une profonde reconnaissance;\nIl a tout supporté pour me donner le droit\nD'entrer un jour dans Sa glorieuse présence.''',
+    numero: 137,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_138',
+    titre: 'Oh! quel Sauveur est Jésus!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Oh! quel Sauveur merveilleux est Jésus mon Seigneur,\nUn Sauveur puissant pour moi;\nIl cache mon âme dans le creux du Rocher,\nOù des fleuves de plaisir je vois.\n\nChoeur :\nIl cache mon âme dans le creux du Rocher,\nQui ombre une terre aride et sèche;\nIl cache ma vie dans la profondeur de Son amour,\nEt me couvre de Sa propre main de jour.\n\n2. Oh! quel Sauveur merveilleux est Jésus mon Seigneur,\nIl ôte tout mon fardeau lourd;\nIl m'affermit pour que je ne chancelle pas,\nEt me donne la force chaque jour.''',
+    numero: 138,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_139',
+    titre: 'Brille, ô lumière divine',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Brille, ô lumière divine, dans mon cœur obscur,\nChasse les ombres du doute et de la peur;\nFais briller Ta vérité claire et pure,\nEt remplis ma vie de Ta sainte ferveur.\n\nChoeur :\nBrille sur moi, Seigneur Jésus,\nQue Tes rayons divins soient vus;\nÉclaire mon sentier chaque jour,\nDe la gloire de Ton amour.\n\n2. Que ma vie reflete Ta douce clarté,\nAfin que le monde voie Ta bonté;\nSois le Soleil qui guide tous mes pas,\nJusqu'au grand jour où Tu me prendras.''',
+    numero: 139,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_140',
+    titre: 'Écoute la voix du Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Écoute la voix du Seigneur qui t'appelle,\nIl veut te donner le salut éternel;\nPourquoi résister à Son amour si grand,\nQuand Il t'offre la paix en cet instant?\n\nChoeur :\nViens au Sauveur sans plus hésiter,\nIl est prêt à tout te pardonner;\nOuvre ton cœur à Sa sainte voix,\nEt trouve la vie au pied de la croix.\n\n2. Le temps passe vite et le jour va finir,\nN'attends pas demain pour te repentir;\nJésus tend Ses bras remplis de douceur,\nViens aujourd'hui trouver le vrai bonheur.''',
+    numero: 140,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_141',
+    titre: 'Je m\'abandonne à Ta grâce',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je m'abandonne à Ta grâce infinie,\nPrends mon cœur, Seigneur, et toute ma vie;\nJe ne veux plus vivre pour moi-même ici-bas,\nMais suivre fidelement chacun de Tes pas.\n\nChoeur :\nPrends tout ce que j'ai, Seigneur,\nSois le Maître de mon cœur;\nJe me donne à Toi sans réserve,\nPour que Ta volonté je serve.\n\n2. Purifie mon âme de tout vain désir,\nFais de moi un réceptacle de Ton saint plaisir;\nQue Ton Esprit m'inonde de Sa clarté,\nEt me garde pur dans Ta sainteté.''',
+    numero: 141,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_142',
+    titre: 'La beauté de Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Que la beauté de Jésus se voie en moi,\nToute Sa passion et Sa douce foi;\nÔ Toi Esprit divin, transforme tout mon être,\nJusqu'à ce que la beauté de Jésus paraisse en mon être.\n\nChoeur :\nQue la beauté de Jésus se voie en moi,\nDans mes mots, mes actes et ma foi;\nReflet de Sa grâce et de Son amour,\nAujourd'hui et pour toujours.\n\n2. De la fierté et de l'égocentrisme purifie-moi,\nRends-moi humble et doux comme Toi mon Roi;\nAfin que chaque jour le monde puisse voir\nLe visage du Sauveur briller dans mon soir.''',
+    numero: 142,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_143',
+    titre: 'Sainte présence de Dieu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sainte présence de Dieu dans ce lieu,\nNous nous inclinons devant le Roi des cieux;\nQue Ton Esprit descende avec puissance,\nEt remplisse nos cœurs de Ta douce grâce.\n\nChoeur :\nSois présent parmi nous, Seigneur,\nRemplis nos âmes de Ta ferveur;\nNous T'adorons en esprit et vérité,\nToi le Dieu de toute l'éternité.\n\n2. Que les malades soient guéris par Ton Nom,\nQue les pécheurs trouvent le vrai pardon;\nManifeste Ta gloire et Ta sainteté,\nEt renouvelle en nous Ta fidèle bonté.''',
+    numero: 143,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_144',
+    titre: 'Mon âme sois tranquille',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon âme, sois tranquille: le Seigneur est là;\nPorte patiemment la croix qu'Il te donne bas;\nLaisse Ton Dieu pourvoir et décider,\nDans chaque changement Il restera fidèle inchangé.\n\nChoeur :\nMon âme, sois tranquille,\nTon Dieu est aux commandes;\nSur la mer et sur la ville,\nC'est Sa paix qu'Il répand.\n\n2. Mon âme, sois tranquille: ton Jésus est ton Ami,\nIl a traversé avant toi le chemin obscur de la vie;\nConfie-Lui tes craintes et tous tes chagrins,\nCar Il te conduira vers un doux demain.''',
+    numero: 144,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_145',
+    titre: 'Je chanterai la bonté du Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je chanterai la bonté du Seigneur à toujours,\nDe ma bouche je ferai connaître Son amour;\nSa fidélité dure de génération en génération,\nEt Son saint Nom mérite toute notre adoration.\n\nChoeur :\nJe chanterai la bonté du Seigneur,\nDe tout mon cœur et de toute ma ferveur;\nIl est mon Roi, mon puissant Protecteur,\nLouanges à jamais au Sauveur!\n\n2. Ses œuvres sont grandes et admirables en tout lieu,\nIl fait des merveilles, notre puissant Dieu;\nProclamons Sa gloire parmi les nations,\nEt célébrons Ses saintes bénédictions.''',
+    numero: 145,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_146',
+    titre: 'Sur le chemin du Calvaire',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sur le rude chemin qui mène au Calvaire,\nLe Sauveur portait la croix solitaire;\nPour mes péchés Il a tout accepté,\nAfin de me donner la vraie liberté.\n\nChoeur :\nRegarde à la croix du Sauveur,\nLà coule le sang du Rédempteur;\nIl a tout payé pour ton salut,\nRends-Lui l'amour qu'Il a voulu.\n\n2. Les couronnes d'épines ont percé Son saint front,\nMais Il souffrit en silence sans aucun affront;\nPar Ses meurtrissures nous sommes guéris,\nEt par Sa mort nous avons la vie.''',
+    numero: 146,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_147',
+    titre: 'Dans la maison de mon Père',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dans la maison de mon Père il y a plusieurs demeures,\nJésus est allé nous préparer une place d'honneur;\nEt quand tout sera prêt, Il reviendra nous chercher,\nPour que là où Il est, nous soyons tous rassemblés.\n\nChoeur :\nBelle demeure là-haut dans les cieux,\nPréparée par le Sauveur glorieux;\nPlus de douleurs, plus de pleurs là-bas,\nMais la joie éternelle dans Ses bras.\n\n2. Nos yeux contempleront la cité d'or pur,\nOù l'Arbre de vie fleurit près du fleuve mûr;\nLes rachetés du Seigneur y chanteront en chœur,\nL'hymne de la victoire à notre Rédempteur.''',
+    numero: 147,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_148',
+    titre: 'Viens, Esprit du Dieu vivant',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Viens, Esprit du Dieu vivant, tombe sur moi;\nViens, Esprit du Dieu vivant, tombe sur moi;\nBrise-moi, fonds-moi, meule-moi, remplis-moi;\nViens, Esprit du Dieu vivant, tombe sur moi.\n\n2. Viens, Esprit du Dieu vivant, sanctifie-moi;\nViens, Esprit du Dieu vivant, sanctifie-moi;\nPurifie mon cœur, enlève tout effroi;\nViens, Esprit du Dieu vivant, sanctifie-moi.''',
+    numero: 148,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_149',
+    titre: 'Dieu tiendra Sa promesse',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand les montagnes s'effondreraient dans la mer,\nEt que la terre tremblerait sous nos pas divers;\nLa Parole de Dieu demeure ferme à jamais,\nSes promesses saintes ne failliront jamais.\n\nChoeur :\nDieu tiendra Sa promesse,\nCrois seulement en Sa grâce;\nIl est fidèle sans cesse,\nDevant Sa sainte face.\n\n2. Ce qu'Il a dit, Sa main l'accomplira,\nCe qu'Il a promis, Son amour le fera;\nConfie-toi en Lui au milieu de la nuit,\nEt tu verras briller l'aube de Sa vie.''',
+    numero: 149,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_150',
+    titre: 'Bénissons le Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Bénissons le Seigneur, ô mon âme chantante,\nCélébrons Son grand Nom d'une voix éclatante;\nIl nous a couronnés de grâce et de bonté,\nEt réjouit nos jours de Sa sainte vérité.\n\nChoeur :\nBéni soit le Seigneur,\nLe Dieu de notre salut;\nLouons Son Nom avec ferveur,\nPour tout ce qu'Il a fait et voulu!\n\n2. Que tout ce qui respire loue l'Éternel,\nDu levant au couchant, sous la voûte du ciel;\nÀ Lui soient la gloire, l'honneur et la puissance,\nMaintenant et toujours dans Sa sainte présence!''',
+    numero: 150,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'crois_seulement_151',
+    titre: 'Mon Dieu est si grand',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon Dieu est si grand, si fort et si puissant,\nIl n'est rien qu'Il ne puisse faire;\nLes montagnes sont à Lui, les rivières aussi,\nEt les étoiles qui brillent dans les cieux.\n\nChoeur :\nMon Dieu est si grand, si fort et si puissant,\nRien n'est impossible à mon Dieu!\n\n2. Il a créé la terre et les cieux par Sa voix,\nIl soutient l'univers d'un seul mot par Sa foi;\nSon amour pour nous est immense et sans fin,\nIl nous tient tous cachés dans le creux de Sa main.''',
+    numero: 151,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_152',
+    titre: 'Laisse couler Ton Esprit',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Laisse couler Ton Esprit comme un fleuve de vie,\nLaisse venir Ta puissance et Ta sainteté;\nVisite nos cœurs, ravive notre foi,\nQue Ton nom soit exalté parmi nous, ô Roi!\n\nChoeur :\nInonde-nous, Esprit de Dieu,\nRemplis-nous de Ton saint feu;\nQue Ta grâce sur nous descende,\nEt que Ton amour s'étende.\n\n2. Guéris les malades, libère les captifs,\nRends nos cœurs assoiffés de Toi plus attentifs;\nFais briller Ta lumière au milieu de la nuit,\nPour glorifier le Nom de Ton Fils Jésus-Christ.''',
+    numero: 152,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_153',
+    titre: 'Jésus est le Rocher de ma vie',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Jésus est le Rocher sur lequel je m'appuie,\nQuand la tempête gronde et que vient la nuit;\nIl est mon abri sûr, mon puissant bouclier,\nEn Lui mon cœur se confie sans jamais faillir.\n\nChoeur :\nJésus est le Rocher de mon salut,\nEn Lui je trouve la victoire voulue;\nIl est ma force et ma haute retraite,\nEn Sa présence ma joie est complète.\n\n2. Les fondations du monde peuvent s'ébranler,\nMais sur ce Roc divin je reste bien ancré;\nAucune force humaine ne peut me renverser,\nCar la main du Sauveur sait me protéger.''',
+    numero: 153,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_154',
+    titre: 'À la croix, à la croix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. À la croix où mourut mon Sauveur et mon Roi,\nOù je criai pour être purifié du péché;\nLà le sang fut appliqué à mon cœur par la foi,\nGloire à Son saint Nom pour toujours chanter!\n\nChoeur :\nGloire à Son saint Nom!\nGloire à Son saint Nom!\nLà le sang fut appliqué à mon cœur,\nGloire à Son saint Nom!\n\n2. Je suis si merveilleusement sauvé du mal,\nJésus demeure en moi de manière royale;\nÀ la croix où Il me reçut avec douceur,\nGloire à Son précieux Nom de Redempteur!''',
+    numero: 154,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_155',
+    titre: 'Seigneur, attire-moi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Seigneur, attire-moi plus près de Ton saint cœur,\nJe veux chercher Ta face et Ta douce ferveur;\nLaisse-moi reposer à l'ombre de Tes ailes,\nEt goûter aux douceurs de Ta grâce éternelle.\n\nChoeur :\nAttire-moi, Seigneur Jésus,\nQue je ne m'éloigne plus jamais de Toi;\nFais-moi marcher dans la vertu,\nEt garde-moi toujours dans la foi.\n\n2. Le monde offre des biens qui s'évanouissent vite,\nMais en Toi seul se trouve le bonheur qui me comble;\nTransforme ma pensée, sanctifie mon désir,\nPour que je ne cherche plus que Ton divin plaisir.''',
+    numero: 155,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_156',
+    titre: 'Oh! quelle grâce merveilleuse',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Merveilleuse grâce de notre Sauveur,\nPlus grande que tous nos péchés et chagrins;\nVersée au Calvaire avec tant d'ardeur,\nPour laver le cœur des pauvres humains.\n\nChoeur :\nGrâce, grâce,\nGrâce de Dieu qui pardonne et nettoie;\nGrâce, grâce,\nGrâce plus grande que mes choix!\n\n2. Merveilleuse grâce, infinie et pure,\nOfferte à quiconque s'approche par la foi;\nElle guérit l'âme et rend la vie sûre,\nEn nous conduisant au trône du Roi.''',
+    numero: 156,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_157',
+    titre: 'Combien Tu es grand!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand je contemple l'univers immense,\nCréé par Ta parole et Ton pouvoir;\nLes étoiles, la mer, la terre en silence,\nMon cœur tressaille d'un saint espoir.\n\nChoeur :\nMon âme chante à Toi, mon Dieu, mon Roi:\nCombien Tu es grand! Combien Tu es grand!\nMon âme chante à Toi, mon Dieu, mon Roi:\nCombien Tu es grand! Combien Tu es grand!\n\n2. Quand je pense au Sauveur qui sur la croix,\nA porté le fardeau de mes péchés;\nMon cœur s'incline et célèbre Sa voix,\nPour Sa grâce infinie et Sa bonté.''',
+    numero: 157,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_158',
+    titre: 'La trompette sonnera',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand la trompette du Seigneur sonnera pour l'éternité,\nEt que le jour éternel se lèvera sans fin;\nQuand les rachetés de la terre seront rassemblés en clarté,\nEt que mon nom sera appelé au matin.\n\nChoeur :\nQuand l'appel retentira là-haut,\nQuand l'appel retentira là-haut;\nQuand l'appel retentira là-haut,\nQuand l'appel retentira, je serai là!\n\n2. Travaillons pour le Maître depuis l'aube du matin,\nParlons de Son amour et de Sa grâce jusqu'à la fin;\nQuand notre tâche terrestre prendra fin à jamais,\nNous serons accueillis dans Sa gloire et Sa paix.''',
+    numero: 158,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_159',
+    titre: 'Quel ami fidèle et tendre',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quel ami fidèle et tendre nous avons en Jésus-Christ,\nToujours prêt à nous entendre, à répondre à notre cri;\nQuel repos pour notre peine, quelle douce consolation,\nQuand nous apportons sans peine tout à Dieu dans la prière!\n\n2. Avons-nous de l'amertume, des épreuves sur nos pas?\nNe perdons jamais courage, Jésus ne nous laisse pas;\nIl connaît notre faiblesse, nos secrets et nos soucis,\nDéposons dans Sa tendresse tout le poids de nos soucis.\n\n3. Si nous sommes en détresse, écrasés sous le fardeau,\nJésus demeure notre refuge, notre compagnon très haut;\nEn Lui seul la paix se trouve, confions-Lui tous nos besoins,\nEt Sa grâce nous prouve qu'Il prend de nous tous les soins.''',
+    numero: 159,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_160',
+    titre: 'Dans la présence du Roi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dans la présence du Roi des rois,\nMon cœur s'incline rempli d'effroi;\nSa majesté dépasse les cieux,\nSon regard brille comme un feu.\n\nChoeur :\nAdorons le Roi de gloire,\nProclamons Sa grand victoire;\nÀ Lui soient honneur et louange,\nQue toute la création chante en chœur sans mélange.\n\n2. Il a renversé la puissance de la mort,\nIl nous a rendus libres et forts;\nEntrons dans Ses parvis avec joie,\nCélébrant le triomphe de la croix.''',
+    numero: 160,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_161',
+    titre: 'Je suivrai mon Sauveur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je suivrai mon Sauveur où qu'Il me conduise,\nPar les vallées sombres ou les monts éclairés;\nSa voix est mon guide, Sa parole me suffise,\nJe marcherai avec Lui sans me détourner.\n\nChoeur :\nJe Le suivrai, je Le suivrai,\nMon Sauveur et mon Roi;\nPar Sa main Il me gardera,\nEt me soutiendra dans la foi.\n\n2. Même si le monde m'abandonne et me renie,\nMon Maître fidèle restera près de moi;\nEn Lui j'ai la force, l'espoir et la vie,\nJusqu'au jour de la couronne avec les rachetés du Roi.''',
+    numero: 161,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_162',
+    titre: 'Source d\'eau vive',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Source d'eau vive, coule dans mon âme,\nRends-moi pur et saint devant Ta face;\nViens éteindre en moi la mauvaise flamme,\nEt remplis mon cœur de Ta douce grâce.\n\nChoeur :\nCoule en moi, eau de vie,\nPurifie mon esprit;\nQue ma vie Te glorifie,\nAujourd'hui et à jamais.\n\n2. Mon âme a soif du Dieu vivant,\nComme une terre sèche attend la pluie;\nViens désaltérer Ton humble enfant,\nEt donne-moi Ta paix et Ta vie.''',
+    numero: 162,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_163',
+    titre: 'À Toi la gloire',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. À Toi la gloire, Ô Ressuscité!\nÀ Toi la victoire pour l'éternité!\nL'ange lumineux a roulé le roc,\nLe tombeau est vide, brisé est le choc.\n\nChoeur :\nÀ Toi la gloire, Ô Ressuscité!\nÀ Toi la victoire pour l'éternité!\n\n2. Vois-Le paraître, c'est Lui, c'est Jésus!\nSon amour dissipe tous nos doutes confus;\nQue l'Église chante avec un saint élan:\nLe Seigneur est vivant, Il règne à présent!''',
+    numero: 163,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_164',
+    titre: 'La joie du Seigneur est ma force',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. La joie du Seigneur est ma force au quotidien,\nQuand la route est dure, elle reste mon soutien;\nCette joie céleste que le monde ne peut donner,\nDans mon cœur fidèle continue de chanter.\n\nChoeur :\nLa joie du Seigneur est ma force!\nLa joie du Seigneur est ma force!\nElle me fait triompher dans la nuit,\nEt m'assure Sa grâce et Sa vie.\n\n2. Il me donne de l'eau aux sources du salut,\nIl guérit mes plaies et relève mon esprit abattu;\nJe marcherai en vainqueur sous Sa bannière,\nProclamant Sa bonté sur toute la terre.''',
+    numero: 164,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_165',
+    titre: 'Je viens à Ta croix',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je viens à Ta croix, chargé de péchés,\nSeigneur, regarde mon cœur brisé;\nLave-moi dans le sang que Tu as versé,\nEt donne-moi la liberté accordée.\n\nChoeur :\nAu pied de Ta croix, je dépose tout,\nMes craintes, mes peines, mes doutes jaloux;\nReçois mon hommage, ô Sauveur benin,\nEt guide mes pas jusqu'à la fin.\n\n2. Rien dans mes mains je n'apporte vers Toi,\nSimplement je m'accroche au bois de la croix;\nTa grâce me suffit, Ton amour me guérit,\nEn Toi seul mon âme trouve la vie.''',
+    numero: 165,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_166',
+    titre: 'Saint, Saint, Saint',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Saint, Saint, Saint est le Seigneur Dieu Tout-Puissant!\nDès le matin nos chants s'élèvent vers Toi;\nSaint, Saint, Saint, Merveilleux et Bâtissant,\nDieu en trois Personnes, béni dans la foi!\n\n2. Saint, Saint, Saint! Tous les saints T'adorent,\nJetant leurs couronnes près de la mer de cristal;\nLes anges et les archanges se prosternent encore,\nToi qui étais, qui es, et seras sans égal.\n\n3. Saint, Saint, Saint! Bien que les ténèbres Te cachent,\nQue l'œil de l'homme pécheur ne puisse Te voir;\nToi seul es Saint, nul autre à côté de Toi ne sache,\nParfait en puissance, en amour et devoir.''',
+    numero: 166,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_167',
+    titre: 'Remplis-moi, Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Remplis-moi, Seigneur, de Ton Esprit Saint,\nQue mon verre déborde de Ta grâce au matin;\nJe veux être purifié, sanctifié par Ta voix,\nEt vivre chaque jour en communion avec Toi.\n\nChoeur :\nRemplis-moi aujourd'hui,\nEsprit du Dieu vivant;\nRemplis-moi de Ta vie,\nEt rends-moi triomphant.\n\n2. Chasse tout l'orgueil et l'égoïsme de mon cœur,\nFais germer en moi les fruits de la douceur;\nQue mon témoignage brille avec éclat,\nPour amener les âmes perdues dans Tes bras.''',
+    numero: 167,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_168',
+    titre: 'Le grand Médecin est ici',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le grand Médecin est près de nous maintenant,\nLe compatissant Jésus;\nIl réconforte les cœurs brisés des croyants,\nÉcoutez la voix de Jésus!\n\nChoeur :\nLe plus doux nom des lèvres humaines,\nLe plus doux chant de la scène saintaine;\nLe plus doux nom jamais chanté en hauts lieux:\nJésus, béni Jésus!\n\n2. Vos nombreux péchés sont tous pardonnés,\nÉcoutez la voix de Jésus;\nAllez en paix sur le chemin balisé,\nEt gagnez la couronne avec Jésus.''',
+    numero: 168,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_169',
+    titre: 'Tenons nos lampes allumées',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Tenons nos lampes bien garnies et allumées,\nCar l'Époux vient au milieu de la nuit;\nQue nos réserves d'huile soient bien préparées,\nPour entrer avec Lui quand le banquet luit.\n\nChoeur :\nVeillons et prions sans cesse,\nL'Époux revient très bientôt;\nGardons la foi et la promesse,\nPour monter avec Lui là-haut.\n\n2. Les vierges sages seront accueillies avec joie,\nMais les folles frapperont à la porte en vain;\nNe nous endormons pas, soyons fermes dans la foi,\nAttendant le Sauveur jusqu'au glorieux matin.''',
+    numero: 169,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_170',
+    titre: 'Je chanterai la grâce',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je chanterai la grâce de Dieu mon Sauveur,\nQui m'a aimé quand j'étais dans la misère;\nIl m'a cherché et m'a sorti de l'erreur,\nPour faire de moi un enfant de Sa lumière.\n\nChoeur :\nOh! la grâce de Dieu est si grande et si douce,\nElle surpasse la hauteur du ciel le plus pur;\nElle guérit mon être et repousse le doute,\nEt prépare mon âme pour un avenir sûr.\n\n2. Tant que je vivrai, je bénirai Son Nom,\nJe raconterai Ses merveilles autour de moi;\nQue tout mon être s'unisse dans ce saint don,\nPour élever le Roi assis sur la croix.''',
+    numero: 170,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_171',
+    titre: 'Dans les bras de Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dans les bras de Jésus, mon âme trouve le repos,\nLoin du bruit de la terre et de ses lourds fardeaux;\nLà Sa douce présence me comble de paix,\nEt me donne la force de lutter sans jamais faillir.\n\nChoeur :\nDans les bras du Sauveur,\nSécurité et bonheur;\nRien ne peut me troubler,\nEn Jésus je suis caché.\n\n2. Quand les tempêtes grondent et que tout s'effondre autour,\nJe me réfugie dans Son éternel amour;\nIl essuie mes larmes et guérit mon chagrin,\nEt me conduit avec tendresse par la main.''',
+    numero: 171,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_172',
+    titre: 'Sur la terre étrangère',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sur cette terre étrangère je ne suis qu'un pèlerin,\nMon vrai pays se trouve au-delà des nues;\nJe marche par la foi, guidé par la divine main,\nVers la cité sainte promise par Jésus.\n\nChoeur :\nEn route vers la Patrie,\nOù régnera la vie;\nPlus de pleurs, plus de peine,\nDans la présence du Souverain.\n\n2. Bien que le chemin soit étroit et rude parfois,\nJe ne baisse pas les yeux, je regarde en haut;\nLa couronne m'attend, la victoire et la joie,\nQuand je verrai mon Roi dans Son trône si beau.''',
+    numero: 172,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_173',
+    titre: 'La bannière de l\'amour',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Levons la bannière de l'amour de Jésus,\nProclamons au monde qu'Il est le Salut;\nSa victoire est complète sur le mal et la mort,\nEn Son Nom Glorieux nous sommes rendus forts.\n\nChoeur :\nSous la bannière du Roi,\nMarchons tous unis dans la foi;\nProclamons la vérité,\nPour toute l'éternité.\n\n2. Que les peuples apprennent qu'Il pardonne et guérit,\nQu'Il apporte la paix à l'âme meurtrie;\nAnnonçons la grâce qui délivre du péché,\nEt réunissons les rachetés sous Sa charité.''',
+    numero: 173,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_174',
+    titre: 'Le Seigneur est mon Berger',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le Seigneur est mon Berger, je ne manquerai de rien;\nIl me fait reposer dans de verts pâturages;\nIl me dirige près des eaux paisibles avec soin,\nEt restaure mon âme à travers tous les âges.\n\nChoeur :\nOui, le bonheur et la grâce m'accompagneront,\nTous les jours de ma vie avec fidélité;\nEt j'habiterai dans la maison du Seigneur,\nPour la longueur des jours en toute sécurité.\n\n2. Quand je marche dans la vallée de l'ombre de la mort,\nJe ne crains aucun mal, car Tu es avec moi;\nTon bâton et Ta houlette me rassurent et me rendent fort,\nTu dresses une table devant mes ennemis en émoi.''',
+    numero: 174,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_175',
+    titre: 'Crois seulement, tout est possible',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Pourquoi douter quand Jésus est à tes côtés?\nIl a tout accompli pour ta liberté;\nSa parole est vivante, Sa puissance est sans fin,\nIl suffit de croire et de Lui tendre la main.\n\nChoeur :\nCrois seulement, crois seulement,\nTout est possible, crois seulement;\nCrois seulement, crois seulement,\nTout est possible, crois seulement.\n\n2. Si la montagne semble trop haute devant toi,\nParle-lui avec la simple force de la foi;\nElle se jettera dans le fond de la mer,\nEt tu verras la gloire du Dieu de l'univers.''',
+    numero: 175,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_176',
+    titre: 'Reste fidèle',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Reste fidèle au Seigneur dans la tempête,\nNe laisse pas le doute envahir ton cœur;\nIl a promis de garder ta tête,\nEt de te conduire jusqu'au grand bonheur.\n\nChoeur :\nSois fidèle jusqu'à la mort,\nEt Tu recevras la couronne de vie;\nLe Seigneur te rendra fort,\nDans Sa promesse infinie.\n\n2. Que les épreuves afinent ta sainte foi,\nComme l'or purifié au milieu du feu;\nRegarde à Jésus, le divin Roi,\nQui prépare pour toi le royaume des cieux.''',
+    numero: 176,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_177',
+    titre: 'Je T\'adore, ô mon Roi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je T'adore, ô mon Roi, Créateur des cieux,\nDevant Ta majesté je prosterne mes yeux;\nTu es digne de recevoir l'honneur et la gloire,\nCar Tu as remporté la plus grande victoire.\n\nChoeur :\nSois exalté, ô Seigneur Tout-Puissant,\nQue Ton Nom soit béni à jamais;\nSois exalté, ô Dieu compatissant,\nDans la gloire de Ta sainte paix.\n\n2. Reçois le parfum de ma louange sincère,\nQue mon cœur soit pour Toi une demeure chère;\nJe veux Te servir, T'aimer de toute mon âme,\nEnflammé pour Toi d'une éternelle flamme.''',
+    numero: 177,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_178',
+    titre: 'La source du Calvaire',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Il est une fontaine remplie du sang précieux,\nTiré des veines d'Emmanuel sous les cieux;\nLes pécheurs plongés dans ce flot purificateur,\nPerdent toutes leurs souillures et leur douleur.\n\nChoeur :\nJe crois, oui je crois,\nQue Jésus est mort pour moi sur le bois;\nPar Son sang versé au Calvaire,\nJe suis lavé et rendu lumière.\n\n2. Le brigand mourant s'est réjoui de voir\nCette fontaine de salut en ce sombre soir;\nEt là, bien que vil comme lui je sois,\nJ'ai lavé tous mes péchés par la foi.''',
+    numero: 178,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_179',
+    titre: 'L\'amour de Dieu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. L'amour de Dieu est si grand, si profond,\nQu'aucune langue ne peut le décrire à fond;\nIl va plus haut que les plus hautes étoiles,\nEt descend plus bas que le gouffre sans voiles.\n\nChoeur :\nOh! l'amour de Dieu, si riche et si pur,\nIncommensurable et fort;\nIl durera éternellement sûrement,\nLe chant des anges et des saints en accord.\n\n2. Si les océans étaient remplis d'encre pure,\nEt le ciel un parchemin déroulé sans mesure;\nSi chaque tige était une plume pour écrire,\nL'amour de Dieu assécherait la mer sans tout dire.''',
+    numero: 179,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_180',
+    titre: 'Quand je contemple Ta sainteté',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand je contemple Ta sainteté divine,\nEt que je réalise Ta beauté pure qui m'incline;\nQuand tout ce qui m'entoure devient ombre légère,\nDans la lumière claire de Ta présence chère.\n\nChoeur :\nJe T'adore, je T'adore,\nLa raison pour laquelle je vis c'est pour T'adorer;\nJe T'adore, je T'adore,\nMon cœur ne désire que Te célébrer.\n\n2. Devant Ton trône de grâce et de bonté,\nJe dépose mes craintes et toute ma vanité;\nTransforme-moi à Ton image, ô Seigneur Jésus,\nAfin que Ton amour brille sans être confus.''',
+    numero: 180,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_181',
+    titre: 'Mon Jésus, je T\'aime',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon Jésus, je T'aime, je sais Tu es à moi,\nPour Toi toutes les folies du péché je renie;\nMon doux Rédempteur, mon Sauveur et mon Roi,\nSi jamais je T'aimai, mon Jésus, c'est aujourd'hui.\n\n2. Je T'aime parce que Tu m'as aimé le premier,\nEt as acheté mon pardon sur le bois du Calvaire;\nJe T'aime pour les épines sur Ton front altier,\nSi jamais je T'aimai, mon Jésus, c'est aujourd'hui.\n\n3. Dans la vie et la mort je T'aimerai toujours,\nEt je Te louerai aussi longtemps que Tu me donnes le jour;\nEt quand la sueur froide de la mort sera sur mes joues,\nSi jamais je T'aimai, mon Jésus, c'est aujourd'hui.''',
+    numero: 181,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_182',
+    titre: 'C\'est l\'Esprit de Dieu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Ce n'est ni par la force, ni par la puissance,\nMais c'est par Mon Esprit, dit le Seigneur des armées;\nIl brise les chaînes, détruit l'ignorance,\nEt libère les âmes autrefois opprimées.\n\nChoeur :\nC'est l'Esprit de Dieu qui agit aujourd'hui,\nIl transforme les cœurs et donne la vie;\nC'est l'Esprit de Dieu qui nous rend vainqueurs,\nSois loué à jamais, ô divin Sauveur!\n\n2. Ouvrons nos cœurs à Son action bénie,\nLaissons-Le renouveler nos pensées et nos choix;\nIl répand sur nous une grâce infinie,\nEt nous remplit de joie sous l'ombre de la croix.''',
+    numero: 182,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_183',
+    titre: 'Bientôt le Roi vient',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Les jours sombres touchent à leur fin,\nLa promesse de Dieu s'accomplit au matin;\nOuvrez les yeux, contemplez les nuées,\nLe Roi des rois vient dans Sa majesté dorée.\n\nChoeur :\nBientôt le Roi vient, bientôt le Roi vient!\nNous allons monter à Sa rencontre dans l'air;\nFinies les douleurs, la tristesse et la terre,\nBientôt le Roi vient, oui Il vient!\n\n2. Soyons prêts, gardons nos vêtements purs,\nMarchons dans la vérité et la foi sûre;\nLe cri retentira au milieu de la nuit,\nEt nous serons ravis avec le Sauveur béni.''',
+    numero: 183,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_184',
+    titre: 'Je m\'appuie sur les promesses',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Debout sur les promesses de Christ mon Roi,\nPour toujours Sa louange retentira en moi;\nGloire au Très-Haut, je chante avec foi,\nSoutenu par Ses promesses saintes.\n\nChoeur :\nDebout, debout,\nDebout sur les promesses de Dieu mon Sauveur;\nDebout, debout,\nJe me tiens sur Ses promesses d'honneur.\n\n2. Debout sur les promesses qui ne sauraient faillir,\nQuand les tempêtes du doute cherchent à m'assaillir;\nPar le Verbe vivant de Dieu je veux triompher,\nSoutenu par Ses promesses pour l'éternité.''',
+    numero: 184,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_185',
+    titre: 'Quelle joie d\'être sauvé!',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quelle joie immense d'être enfant de Dieu,\nD'avoir son nom écrit dans le livre des cieux;\nMis à part pour la gloire, racheté par le sang,\nMon cœur déborde de chants pour le Tout-Puissant.\n\nChoeur :\nSauvé par grâce, sauvé pour toujours!\nMon âme jubile dans Son divin amour;\nJ'étais perdu, mais Jésus m'a trouvé,\nQuelle joie ineffable d'être sauvé!\n\n2. Le monde ne peut donner cette douce liberté,\nQue Christ a payée par Sa grande bonté;\nEn Lui j'ai l'assurance, la paix et l'avenir,\nEt la vie éternelle qui ne saurait finir.''',
+    numero: 185,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_186',
+    titre: 'Sur le chemin du réveil',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Seigneur, envoie le réveil dans nos cœurs aujourd'hui,\nFais descendre le feu de Ton Esprit béni;\nNous humilions nos âmes, nous cherchons Ta face,\nRéponds à nos prières, déverse Ta grâce.\n\nChoeur :\nEnvoie le feu, Seigneur, envoie le feu!\nAllume dans nos cœurs Ton saint pieux;\nPurifie nos vies, donne-nous la puissance,\nPour proclamer Ton Nom avec assurance.\n\n2. Que les cœurs endurcis soient touchés par Ta voix,\nQue les pécheurs soumis se tournent vers la croix;\nQue Ton Église se lève, revêtue de clarté,\nPour accomplir Ta volonté avec fidélité.''',
+    numero: 186,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_187',
+    titre: 'Dans la vallée de la décision',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Tu es dans la vallée de la décision aujourd'hui,\nJésus t'appelle doux, prends le parti de la vie;\nPourquoi tarder encore quand le temps s'enfuit?\nOuvre ton cœur au Sauveur qui te bénit.\n\nChoeur :\nChoisis Jésus aujourd'hui,\nIl te donne la paix et la vie;\nNe repousse pas Sa grâce d'amour,\nCar Il t'attend sans aucun détour.\n\n2. Les promesses du monde sont trompeuses et vaines,\nMais le pardon de Christ brise toutes tes chaînes;\nViens à Lui maintenant avec confiance et foi,\nEt tu régneras un jour avec le grand Roi.''',
+    numero: 187,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_188',
+    titre: 'Dieu fera un chemin',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dieu fera un chemin là où il n'y en a pas,\nIl agit d'une manière que nous ne voyons pas;\nIl sera mon guide, se tenant près de moi,\nAvec amour et force pour chaque jour de foi.\n\nChoeur :\nIl fera un chemin, Il fera un chemin;\nDans le désert des fleuves Il trapera,\nSa parole demeurera, le ciel et la terre passeront,\nMais Dieu fera un chemin pour mes pas.\n\n2. Par Sa main puissante Il me conduira,\nDans les sentiers arides Il me soutiendra;\nSon amour et Sa grâce m'entourent chaque jour,\nJe marcherai sans crainte sous Son fidèle amour.''',
+    numero: 188,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_189',
+    titre: 'Béni soit le Nom du Seigneur',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Béni soit le Nom du Seigneur Tout-Puissant,\nIl est digne de louange et de gloire au présent;\nSa fidélité dure à toujours sans déclin,\nProclamons Sa grandeur du matin au destin.\n\nChoeur :\nBéni soit le Nom! Béni soit le Nom!\nBéni soit le Nom du Seigneur!\nBéni soit le Nom! Béni soit le Nom!\nBéni soit le Nom du Seigneur!\n\n2. Son Nom est une tour forte et un abri sûr,\nLe juste y trouve refuge et un avenir pur;\nExaltons le Nom précieux de Jésus le Sauveur,\nQui nous a rachetés par Son amour majeur.''',
+    numero: 189,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_190',
+    titre: 'Je renonce au monde',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. J'ai décidé de suivre Jésus-Christ,\nJ'ai décidé de suivre Jésus-Christ;\nJ'ai décidé de suivre Jésus-Christ,\nSans retour en arrière, sans retour en arrière.\n\n2. Le monde est derrière moi, la croix est devant moi,\nLe monde est derrière moi, la croix est devant moi;\nLe monde est derrière moi, la croix est devant moi;\nSans retour en arrière, sans retour en arrière.\n\n3. Si personne ne vient, moi je Le suivrai,\nSi personne ne vient, moi je Le suivrai;\nSi personne ne vient, moi je Le suivrai;\nSans retour en arrière, sans retour en arrière.''',
+    numero: 190,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_191',
+    titre: 'Regarde à Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand les doutes t'assaillent et que faiblit ta foi,\nQuand le chemin est sombre et difficile pour toi;\nNe baisse pas les yeux sur tes propres faiblesses,\nRegarde à Jésus, la source de tendresse.\n\nChoeur :\nRegarde à Jésus, regarde à Jésus,\nFixe tes yeux sur le Sauveur béni;\nLes choses de la terre s'évanouiront de plus,\nÀ la lumière de Sa gloire infinie.\n\n2. Il est l'auteur de la foi et Celui qui l'accomplit,\nSur la croix Il a tout payé pour ta vie;\nMet ta confiance en Lui, Il ne faillira pas,\nEt dans Sa sainte paix Il conduira tes pas.''',
+    numero: 191,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_192',
+    titre: 'Comme une biche soupire',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Comme une biche soupire après des courants d'eau,\nAinsi mon âme soupire après Toi, ô Dieu haut;\nMon être a soif du Dieu vivant et vrai,\nQuand irai-je et paraîtrai-je devant Sa face de paix?\n\nChoeur :\nToi seul es le désir de mon cœur,\nEt je désire T'adorer avec ardeur;\nToi seul es ma force et mon bouclier,\nÀ Toi seul mon esprit veut se confier.\n\n2. Pourquoi t'affailles-tu, mon âme, au dedans de moi?\nEspère en Dieu, car je Le louerai encore avec foi;\nIl est mon salut, mon Dieu et mon soutien,\nEn Sa présence sainte je ne manque de rien.''',
+    numero: 192,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_193',
+    titre: 'L\'amour du Père',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Voyez quel amour le Père nous a témoigné,\nPour que nous soyons appelés enfants de Dieu!\nCet amour inconditionnel nous a été donné,\nPar le sacrifice de Jésus venu des cieux.\n\nChoeur :\nOh! quel amour, quel immense amour!\nLe Père a versé sur nous sans détour;\nNous sommes enfants du Roi des cieux,\nHéritiers de Son royaume glorieux.\n\n2. Le monde ne nous connaît pas car il ne L'a pas connu,\nMais nous savons qu'un jour Christ paraîtra vu;\nNous Lui serons semblables en le voyant tel qu'Il est,\nEt nous régnerons avec Lui pour toujours en paix.''',
+    numero: 193,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_194',
+    titre: 'Je m\'élève par la foi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je m'élève sur les hauteurs par la foi en Jésus,\nLaissant derrière moi la vallée des doutes confus;\nMon pied se pose ferme sur un terrain plus haut,\nGuidé par la lumière du trône le plus beau.\n\nChoeur :\nSeigneur, élève-moi plus haut,\nPar la foi sur les sommets très beaux;\nUn terrain plus haut que j'ai trouvé,\nSeigneur, établis mes pieds sur le Rocher.\n\n2. Mon cœur ne désire pas rester dans les bas-fonds,\nOù le doute et la peur jettent leurs sombres affronts;\nBien que certains choisissent d'y résider toujours,\nMon but est la hauteur dans Ton divin amour.''',
+    numero: 194,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_195',
+    titre: 'Ta parole est une lampe',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Ta parole est une lampe à mes pieds vacillants,\nUne lumière pure sur mon sentier hésitant;\nQuand la nuit m'environne et me remplit d'effroi,\nTa vérité me guide et fortifie ma foi.\n\nChoeur :\nTa parole est vérité,\nElle demeure pour l'éternité;\nSeigneur, gravés dans mon cœur,\nTes enseignements sont mon bonheur.\n\n2. Les cieux et la terre passeront un jour,\nMais Tes promesses durent avec Ton éternel amour;\nJe m'attache à Tes lois, je serre Ton Verbe en moi,\nAfin de ne point pécher contre Toi, mon Roi.''',
+    numero: 195,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_196',
+    titre: 'Racheté par le sang',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Racheté, oh! combien j'aime le proclamer!\nRacheté par le sang de l'Agneau immolé;\nRacheté par Sa grâce infinie et Sa bonté,\nSon enfant pour toujours je suis devenu en vérité.\n\nChoeur :\nRacheté, racheté,\nRacheté par le sang de l'Agneau;\nRacheté, racheté,\nSon enfant je suis pour le monde nouveau.\n\n2. Je pense à mon Redempteur tout au long du jour,\nJe chante Son saint Nom et Son immense amour;\nIl transforme ma vie et comble tous mes vœux,\nEn me préparant une place dans les cieux.''',
+    numero: 196,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_197',
+    titre: 'Viens, ô Jésus, nous T\'attendons',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Viens, ô Jésus, nous T'attendons dans la prière,\nTon Église soupire après Ta sainte lumière;\nLe monde se meurt dans la nuit du péché,\nSeul Ton retour apporte la vraie liberté.\n\nChoeur :\nMaranatha! Viens, Seigneur Jésus!\nL'Épouse Te réclame, ne tarde plus;\nDans les nuées viens chercher Tes rachetés,\nPour les introduire dans l'éternité.\n\n2. Les signes annoncés s'accomplissent sous nos yeux,\nLa création gémît, attendant le Roi des cieux;\nSoyons prêts et vigilants, purifions nos cœurs,\nCar l'heure est proche du retour du Sauveur.''',
+    numero: 197,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_198',
+    titre: 'Jésus est le Roi de gloire',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Jésus est le Roi de gloire, couronnons-Le ce jour!\nIl a vaincu les ténèbres par Son puissant amour;\nLes portes de l'enfer ne sauraient prévaloir,\nCar Christ règne en Maître avec tout le pouvoir.\n\nChoeur :\nGloire, gloire au Roi des rois!\nExaltons Sa majesté d'une même voix;\nÀ Lui la puissance et le règne éternel,\nChantons Alléluia au Dieu du ciel!\n\n2. Proclamons Sa victoire dans toutes les nations,\nAnnonçons la délivrance et le salut des hommes;\nQue tout genou fléchisse devant le Sauveur,\nEt que toute langue confesse Son honneur.''',
+    numero: 198,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_199',
+    titre: 'Mon espoir est en Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon espoir repose uniquement sur Jésus,\nNon sur mes propres mérites ou mes efforts confus;\nSa justice est mon vêtement, Son sang ma sécurité,\nEn Lui je me confie pour toute l'éternité.\n\nChoeur :\nMon espoir est en Jésus,\nEn Lui seul se trouve le salut;\nIl est mon Roc indestructible,\nEt par Sa grâce tout me devient possible.\n\n2. Quand tout s'écroule autour de mon être tremblant,\nSa fidélité reste mon ferme appuyant;\nIl ne m'abandonne pas au milieu du danger,\nCar Il est mon Berger, mon Sauveur inchangé.''',
+    numero: 199,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_200',
+    titre: 'Je chanterai Son amour à jamais',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Plus haut que les montagnes, plus profond que la mer,\nL'amour de Jésus s'étend sur tout l'univers;\nIl a lavé mon âme, Il me donne Sa paix,\nEt je chanterai Ses louanges à jamais.\n\nChoeur :\nJe chanterai Son amour à jamais,\nJe chanterai Son amour à jamais;\nMon cœur déborde de joie et de reconnaissance,\nPour le Sauveur qui m'a donné Sa présence.\n\n2. Je veux danser de joie, louer Son saint Nom,\nCar Il m'a délivré de toute condamnation;\nSa lumière a chassé les ténèbres de ma vie,\nEt en Lui j'ai trouvé l'éternelle patrie.''',
+    numero: 200,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_201',
+    titre: 'Laisse venir le feu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Comme au jour de la Pentecôte dans le haut lieu,\nNous attendons la promesse du Saint-Esprit de Dieu;\nEnvoie un vent impétueux, enflamme nos esprits,\nEt répands sur Tes serviteurs le feu promis.\n\nChoeur :\nLaisse venir le feu, laisse venir le feu!\nBaptise nos âmes du Saint-Esprit de Dieu;\nQue Ta puissance agisse au milieu de nous,\nEt que nous soyons témoins consacrés en tout.\n\n2. Brûle le bois, le foin et la paille de nos cœurs,\nPurifie-nous de toute vanité et erreur;\nRends-nous des vases d'honneur utiles au Maître,\nPour proclamer la grâce qui nous a fait renaître.''',
+    numero: 201,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_202',
+    titre: 'Seigneur, Tu es ma force',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Quand mes forces faiblissent et que tombe mon cœur,\nC'est vers Toi que je crie, ô mon divin Sauveur;\nTu es mon abri sûr, mon refuge très fort,\nCelui qui me relève et me mène au bon port.\n\nChoeur :\nSeigneur, Tu es ma force et mon bouclier,\nEn Toi mon cœur se confie sans hésiter;\nTu me réjouis et je Te loue d'un chant joyeux,\nToi le Dieu de ma vie assis dans les cieux.\n\n2. Tu donnes de la puissance à celui qui est las,\nTu augmentes la vigueur de celui qui est bas;\nCeux qui s'attendent à Toi renouvelleront leur élan,\nEt voleront comme les aigles dans le ciel éclatant.''',
+    numero: 202,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_203',
+    titre: 'Jésus, le Nom au-dessus de tout nom',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Jésus, le Nom au-dessus de tout autre nom,\nGlorieux en majesté, rempli de compassion;\nAucun autre nom sur terre ne peut sauver l'humain,\nNi apporter la paix et le pardon divin.\n\nChoeur :\nJésus, Nom glorieux!\nJésus, Sauveur merveilleux!\nTout genou fléchira devant Ton autorité,\nEt toute langue confessera Ta divinité.\n\n2. À la seule mention de ce Nom redouté,\nLes démons s'enfuient et les malades sont guéris;\nIl apporte la vie, brise la captivité,\nEt remplit le croyant de l'Esprit béni.''',
+    numero: 203,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_204',
+    titre: 'Marche dans la vérité',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Marche dans la vérité, ne te détourne pas,\nSuis le sentier étroit tracé par le Roi des rois;\nLes séductions du monde passeront en un jour,\nMais la Parole de Dieu demeure pour toujours.\n\nChoeur :\nMarche avec fermeté,\nDans la sainte vérité;\nLe Seigneur est ton Guide,\nSur la route aride.\n\n2. Garde ton cœur plus que toute autre chose en ce bas lieu,\nCar de lui jaillissent les sources de la vie de Dieu;\nFixe tes yeux sur Christ, l'Auteur de ton salut,\nEt tu atteindras le but qu'Il a pour toi voulu.''',
+    numero: 204,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_205',
+    titre: 'Le sang qui purifie',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Il y a une puissance miracle dans le sang de l'Agneau,\nQui lave la plus vile souillure et rend le cœur beau;\nCe sang versé au Calvaire guérit toutes nos plaies,\nEt nous donne l'accès au Trône de la paix.\n\nChoeur :\nIl y a puissance, puissance, merveilleuse puissance,\nDans le sang de l'Agneau;\nIl y a puissance, puissance, merveilleuse puissance,\nDans le précieux sang de l'Agneau.\n\n2. Veux-tu être libéré du fardeau du péché?\nIl y a puissance dans le sang de l'Agneau;\nVeux-tu vaincre le mal et vivre sanctifié?\nViens trouver la victoire sous ce saint drapeau.''',
+    numero: 205,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_206',
+    titre: 'C\'est l\'heure de l\'adoration',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. C'est l'heure de lever nos mains vers le Ciel,\nD'offrir à notre Dieu un culte spirituel;\nEntrons dans Son temple avec des chants d'amour,\nExaltant Sa bonté renouvelée chaque jour.\n\nChoeur :\nNous T'adorons, ô Père saint,\nNous T'adorons, Sauveur divin;\nReçois nos cœurs en sacrifice vivant,\nEt manifeste Ta présence en cet instant.\n\n2. Que Ton Esprit s'abatte comme une douce rosée,\nSur chaque âme présente en Ta maison rassemblée;\nQue Ton Nom soit glorifié et Ton règne établi,\nAu milieu de Ton peuple que Ta grâce a béni.''',
+    numero: 206,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_207',
+    titre: 'Mon âme bénis l\'Éternel',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Mon âme, bénis l'Éternel et n'oublie aucun de Ses bienfaits,\nC'est Lui qui pardonne toutes tes iniquités sans jamais;\nIl guérit toutes tes maladies et te couronne de bonté,\nEt rassasie de biens ta vieillesse réconfortée.\n\nChoeur :\nBénis l'Éternel, ô mon âme,\nQue tout ce qui est en moi célèbre Son saint Nom!\nBénis l'Éternel, ô mon âme,\nCar Il est bon, digne de toute adoration!\n\n2. L'Éternel est compatissant, lent à la colère et riche en grâce,\nIl ne nous traite pas selon nos fautes devant Sa face;\nAutant l'orient est éloigné de l'occident vermeil,\nAutant Il éloigne de nous nos péchés sous le soleil.''',
+    numero: 207,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_208',
+    titre: 'Le Dieu de toute grâce',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le Dieu de toute grâce nous a appelés en Jésus-Christ,\nÀ participer à Sa gloire éternelle et à Son Esprit;\nAprès que nous aurons souffert un peu de temps ici-bas,\nIl nous perfectionnera, nous fermera et affermira nos pas.\n\nChoeur :\nÀ Lui soit la gloire et la puissance,\nDans tous les siècles des siècles sans fin!\nProclamons Sa grâce et Sa présence,\nQui nous accompagnent sur le chemin.\n\n2. Confions-Lui nos soucis, Il prend soin de chacun de nous,\nSoyons sobres et veillons contre le dévoreur jaloux;\nFermes dans la foi, résistons à tous ses pièges sombres,\nCar le Seigneur est notre ombre contre les sombres ombres.''',
+    numero: 208,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_209',
+    titre: 'Je sais que mon Rédempteur est vivant',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je sais que mon Rédempteur est vivant sur les cieux,\nEt qu'Il se lèvera le dernier sur la terre aux yeux de tous;\nMême si la maladie détruit ce corps miséreux,\nDans ma chair je verrai Dieu, mon Sauveur si doux.\n\nChoeur :\nIl est vivant, oui mon Rédempteur vit!\nEt par Sa résurrection Il me donne la vie;\nJe ne mourrai pas, je vivrai à jamais,\nDans Sa sainte présence remplie de paix.\n\n2. La mort a été engloutie dans Sa victoire éclatante,\nLe tombeau n'a plus d'aiguillon sur l'âme croyante;\nGrâce soit rendue à Dieu qui nous donne le triomphe fort,\nPar notre Seigneur Jésus-Christ, Vainqueur de la mort.''',
+    numero: 209,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_210',
+    titre: 'Lumière du monde',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Lumière du monde venue dans nos ténèbres,\nTu as ouvert mes yeux pour contempler Ta beauté;\nL'amour de Ton cœur rendu mon âme si libre,\nEt Ta présence a changé toute ma réalité.\n\nChoeur :\nMe voici pour T'adorer, me voici pour me prosterner,\nMe voici pour dire que Tu es mon Dieu;\nTu es toute beauté, tout à fait digne,\nTout à fait merveilleux pour mes yeux.\n\n2. Roi de tous les jours, exalté dans les hauts lieux,\nTa gloire resplendit sur la terre et dans les cieux;\nHumblement Tu es venu sur cette terre créante,\nPar amour Tu T'es fait pauvre pour l'âme croyante.''',
+    numero: 210,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_211',
+    titre: 'En Jésus seul est mon espoir',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. En Jésus seul est mon espoir tout entier,\nIl est ma lumière, ma force, mon chant premier;\nCe Roc, cette Pierre d'angle, ce sol solide et sûr,\nSoutient ma vie à travers les tempêtes et le mur.\n\nChoeur :\nCombien haute est la profondeur de Son amour,\nCombien forte est Sa paix au fil de mes jours;\nMon Consolateur, mon Tout en tout puissant,\nEn Son amour je me tiens confiant.\n\n2. Là, dans la tombe, Son corps reposa un temps,\nLumière du monde brisée par des hommes méchants;\nPuis émergeant dans la gloire au matin béni,\nIl est ressuscité de la mort et m'a franchi!''',
+    numero: 211,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_212',
+    titre: 'Toi qui disposes de toutes choses',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Toi qui disposes de toutes choses et les conduis avec amour,\nMon cœur repose sur Tes promesses chaque jour;\nJe ne crains rien car Tu es mon Père et mon Gardien,\nTu connais mes besoins et Tu pourvois à mon bien.\n\nChoeur :\nEntre Tes mains je remets mon être,\nFais de moi ce que Tu veux, ô Maître;\nQue Ta volonté soit faite en moi,\nDans l'obéissance et la sainte foi.\n\n2. Si la douleur m'atteint ou si l'épreuve devient lourde,\nJe sais que Ta grâce infinie à mon cri réponde;\nTu changes le mal en bien pour ceux qui T'aiment d'ardeur,\nEt Tu conduis Tes enfants vers le vrai bonheur.''',
+    numero: 212,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_213',
+    titre: 'Le nom de Jésus est si doux',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Le nom de Jésus est si doux, Il apporte la paix au cœur,\nIl guérit les âmes brisées et chasse toute la peur;\nC'est le nom le plus précieux que les hommes puissent chanter,\nSur la terre et dans les cieux pour toute l'éternité.\n\nChoeur :\nJésus, nom merveilleux!\nJésus, Roi des cieux!\nNom plein de grâce et de pouvoir,\nEn Lui se trouve tout notre espoir.\n\n2. Ce nom précieux me réconforte dans mes moments de peine,\nIl brise le pouvoir du mal et détruit toutes mes chaînes;\nJe veux le louer chaque jour et le faire connaître autour,\nAfin que tous découvrent le salut de Son amour.''',
+    numero: 213,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_214',
+    titre: 'À Toi soit la gloire',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. À Toi soit la gloire dans les lieux très hauts,\nCréateur du monde, Sauveur de nos maux;\nLes cieux racontent Ta grandeur et Ta puissance,\nEt l'humanité rachetée chante Ta présence.\n\nChoeur :\nGloire à Dieu au plus haut des cieux!\nPaix sur la terre aux hommes qu'Il aime d'amour pieux!\nQue Ton Nom soit sanctifié et exalté,\nAujourd'hui et pour toute l'éternité.\n\n2. Reçois l'adoration de nos cœurs reconnaissants,\nPour Ton salut gratuit et Tes dons abondants;\nNous Te célébrons, Agneau immolé et glorieux,\nAssis pour toujours sur le trône céleste radieux.''',
+    numero: 214,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_215',
+    titre: 'Marchons dans la lumière de Dieu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Marchons dans la lumière de Dieu, abandonnons la nuit,\nSuivons le chemin de la vérité que le Sauveur produit;\nEn Lui il n'y a point de ténèbres ni d'ombre de changement,\nSa clarté nous guide avec assurance à chaque instant.\n\nChoeur :\nMarchons dans la lumière,\nLumière pure du Père;\nDans la communion et l'amour,\nSoyons fidèles chaque jour.\n\n2. Si nous marchons dans la lumière comme Il est dans la lumière,\nNous sommes en communion les uns avec les autres sur terre;\nEt le sang de Jésus Son Fils nous purifie de tout péché,\nEt nous garde irréprochables sous Son regard sanctifié.''',
+    numero: 215,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_216',
+    titre: 'Dieu est mon refuge',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dieu est pour nous un refuge et un appui très puissant,\nUn secours qui ne manque jamais dans la détresse du croyant;\nC'est pourquoi nous sommes sans crainte quand la terre est ébranlée,\nEt que les montagnes se chancellent au cœur des mers agitées.\n\nChoeur :\nLe Seigneur des armées est avec nous,\nLe Dieu de Jacob est notre haute retraite partout;\nIl fait cesser les combats jusqu'au bout de la terre,\nIl brise l'arc et rompt la lance dans la prière.\n\n2. Arrêtez, et sachez que Je suis le Dieu Très-Haut,\nJe domine sur les nations et sur le monde si beau;\nSoyez tranquilles, gardez la foi et la paix dans le cœur,\nCar l'Éternel est votre Protecteur et votre Redempteur.''',
+    numero: 216,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_217',
+    titre: 'Mon cœur Te cherche, ô Dieu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dès le matin mon cœur Te cherche, ô Dieu vivant,\nMon âme a soif de Ta présence et de Ton Esprit saint;\nViens me remplir de Ta joie et de Ta sainte lumière,\nAfin que je marche selon Ta volonté sur cette terre.\n\nChoeur :\nJe cherche Ta face, Seigneur,\nRemplis-moi de Ta ferveur;\nSois le Guide de mes pas,\nEt ne me délaisse pas.\n\n2. Ta bonté vaut mieux que la vie, mes lèvres Te loueront,\nJe Te bénirai toute ma vie et mes mains s'élèveront;\nEn Ton Nom précieux je trouve la paix et le secours,\nEt je me réjouis sous l'ombre de Tes ailes chaque jour.''',
+    numero: 217,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_218',
+    titre: 'Il y a un nom que j\'aime entendre',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Il y a un nom que j'aime entendre et chanter avec ferveur,\nC'est de la musique à mes oreilles, le plus doux nom du Sauveur;\nIl me parle de l'amour d'un Dieu qui est mort pour me racheter,\nEt qui a versé Son sang précieux pour m'accorder la liberté.\n\nChoeur :\nOh! combien j'aime Jésus!\nOh! combien j'aime Jésus!\nOh! combien j'aime Jésus!\nParce Qu'Il m'aima le premier.\n\n2. Il me parle d'un Père aimant qui veille sur tous mes pas,\nEt qui ne m'abandonnera jamais au milieu du combat;\nCe nom dissipe mes craintes et sèche toutes mes larmes,\nIl est ma force et mon abri contre toutes les alarmes.''',
+    numero: 218,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_219',
+    titre: 'Fais luire Ta face sur nous',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Fais luire Ta face sur Tes serviteurs, ô Éternel Dieu,\nAccorde-nous Ta grâce et Ta paix descendues des cieux;\nQue Ton Esprit repose sur notre assemblée aujourd'hui,\nEt que Ton saint Nom soit glorifié par nos chants de vie.\n\nChoeur :\nBénis-nous, Seigneur Jésus,\nQue Ton amour soit vu;\nRemplis nos cœurs de Ta clarté,\nEt de Ta sainte vérité.\n\n2. Révèle-nous Ta volonté, sanctifie nos cœurs brisés,\nQue nous soyons des témoins fidèles pour le monde égaré;\nConduis-nous dans Tes sentiers de justice et de bonté,\nJusqu'à ce que nous entrions dans Ton royaume d'éternité.''',
+    numero: 219,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_220',
+    titre: 'Sur les ailes de la foi',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sur les ailes de la foi je m'élève vers les cieux,\nDélaissant les doutes clairs et les soucis miséreux;\nMon regard se fixe sur Jésus, mon puissant Libérateur,\nQui me donne la victoire et remplit mon cœur de ferveur.\n\nChoeur :\nPlus haut, toujours plus haut,\nSur les ailes du Saint-Esprit si beau;\nJe vole vers le Seigneur Jésus,\nOù mes chagrins ne seront plus.\n\n2. Rien ne peut m'arrêter quand le Sauveur me tient la main,\nIl fraie un chemin dans le désert et assure mon demain;\nSa grâce me suffit et Sa promesse est mon soutien,\nJe marcherai en vainqueur en ne manquant de aucun bien.''',
+    numero: 220,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_221',
+    titre: 'Je célébrerai l\'Éternel',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je célébrerai l'Éternel de tout mon cœur dans la réunion,\nJe raconterai toutes Ses merveilles avec adoration;\nJe ferai de Lui le sujet de ma joie et de mon élan,\nEt je chanterai Ton Nom, ô Dieu Très-Haut et Éclatant!\n\nChoeur :\nLouons l'Éternel car Il est bon,\nSa miséricorde dure à toujours dans Sa maison;\nIl est le Dieu de notre salut,\nExaltons Sa grandeur et Sa vertu!\n\n2. Il a délivré mon âme de la mort et mes pieds de la chute,\nAfin que je marche devant Dieu dans la lumière sans lutte;\nÀ Lui soient la gloire, l'honneur et toute la puissance,\nMaintenant et à jamais dans Sa glorieuse présence.''',
+    numero: 221,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_222',
+    titre: 'Jésus est le bon Berger',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Jésus est le bon Berger qui donne Sa vie pour Ses brebis,\nIl les connaît chacune par leur nom et les conduit sans faillir;\nElles ne suivront point un étranger car elles connaissent Sa voix,\nEt trouvent auprès de Lui un abri sûr et la sainte paix de la croix.\n\nChoeur :\nLe Bon Berger me guide avec amour,\nDans Ses verds pâturages chaque jour;\nRien ne pourra me ravir de Sa main,\nCar Il est mon Gardien jusqu'à la fin.\n\n2. Si une brebis s'égare loin du troupeau dans la nuit,\nLe Bon Berger va la chercher jusqu'à ce qu'Il l'ait franchie;\nIl la charge sur Ses épaules avec joie et grand bonheur,\nEt la ramène en sécurité au bercail du Sauveur.''',
+    numero: 222,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_223',
+    titre: 'L\'Agneau sur le trône',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Entendez les milliers d'anges chanter autour du trône haut:\nDigne est l'Agneau qui a été immolé pour nos maux!\nIl est digne de recevoir la puissance, la richesse et la sagesse,\nLa force, l'honneur, la gloire et la louange sans cesse!\n\nChoeur :\nÀ Celui qui est assis sur le trône,\nEt à l'Agneau sans tache qui pardonne,\nSoient la louange, l'honneur et la gloire,\nDans tous les siècles de la victoire!\n\n2. Les vingt-quatre vieillards se prosternent devant Lui,\nEt jettent leurs couronnes d'or au pied du Trône béni;\nToute la création dans les cieux et sur la terre entière,\nProclame la majesté du Roi dans une joyeuse prière.''',
+    numero: 223,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_224',
+    titre: 'Je marcherai avec Jésus',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Je marcherai avec Jésus chaque jour de ma vie ici-bas,\nQu'importe le chemin qu'Il choisit, je suivrai Ses saints pas;\nIl est la Voie, la Vérité et la Vie pour mon être entier,\nEt en Lui seul mon âme trouve le repos désiré.\n\nChoeur :\nAvec Jésus je marcherai,\nJamais seul je ne serai;\nIl tient ma main avec amour,\nEt me protège chaque jour.\n\n2. Quand viendra la fin de mon voyage sur la terre des hommes,\nJe verrai Sa face glorieuse et j'entrerai dans Son royaume;\nIl essuiera toute larme de mes yeux pour l'éternité,\nEt je régnerai avec Lui dans Sa sainte félicité.''',
+    numero: 224,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_225',
+    titre: 'Sois exalté, ô Dieu',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Sois exalté, ô Dieu, au-dessus des cieux les plus hauts,\nQue Ta gloire resplendisse sur toute la terre sans défauts;\nMon cœur est affermi, ô Dieu, mon cœur est bien affermi,\nJe chanterai et je ferai retentir mes hymnes de vie.\n\nChoeur :\nSois exalté, ô Seigneur Tout-Puissant,\nQue Ta bonté s'élève jusqu'aux nues au présent;\nTa fidélité atteint les cieux radieux,\nEt Ton Nom est vénéré par tous les hommes pieux.\n\n2. Réveille-toi, mon âme, réveillez-vous, mon luth et ma harpe,\nJe réveillerai l'aurore pour célébrer Ta grâce qui m'harpe;\nJe Te louerai parmi les peuples, je Te chanterai parmi les nations,\nCar Ton amour est grand et digne de toute adoration.''',
+    numero: 225,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'crois_seulement_226',
+    titre: 'Jésus, la Lumière du monde',
+    collectionId: 'crois_seulement',
+    collection: 'Crois seulement',
+    contenu:
+        '''1. Dans la nuit du péché le monde gémit et cherche l'espoir,\nMais Jésus est venu apporter la clarté dans le soir;\nIl est la Lumière de la vie qui chasse toutes les ténèbres,\nEt donne à quiconque croit en Lui des bénédictions célèbres.\n\nChoeur :\nJésus est la Lumière du monde!\nEn Lui brille la grâce féconde;\nQuiconque Le suit ne marche plus dans le noir,\nMais possède la lumière de la vie et du soir.\n\n2. Levons nos lampes et brillons dans ce monde sombre et perdu,\nReflétons la beauté et l'amour de notre Sauveur Jésus;\nJusqu'au jour où la cité céleste n'aura plus besoin du soleil,\nCar l'Agneau sera Son flambeau éternel et sans pareil.''',
+    numero: 226,
+    auteur: 'Auteur inconnu',
+  ),
+
   Cantique(
     id: 'only_believe_001',
     titre: 'Only Believe',
     collectionId: 'only_believe',
     collection: 'Only Believe',
     contenu:
-        '''1. Only believe, only believe,\nAll things are possible, only believe.\nOnly believe, only believe,\nAll things are possible, only believe.''',
+        '''1. Fear not, little flock, from the cross to the throne,\nFrom death into life He went for His own;\nAll power in earth, all power above,\nIs given to Him for the flock of His love.\n\nRefrain:\nOnly believe, only believe,\nAll things are possible, only believe;\nOnly believe, only believe,\nAll things are possible, only believe.\n(Lord, I believe...)\n(Lord, I receive...)\n(Jesus is here...)\n\n2. Fear not, little flock, He goeth ahead,\nYour Shepherd selecteth the path you must tread;\nThe waters of Marah He'll sweeten for thee,\nHe drank all the bitter in Gethsemane.\n\n3. Fear not, little flock, whatever your lot,\nHe enters all rooms, "the doors being shut;"\nHe never forsakes, He never is gone,\nSo count on His presence in darkness and dawn.''',
     numero: 1,
     auteur: 'Paul Rader',
   ),
   Cantique(
-    id: 'hosanna_001',
-    titre: 'Hosanna',
-    collectionId: 'hosanna',
-    collection: 'Hosanna',
+    id: 'only_believe_002',
+    titre: 'Amazing Grace',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
     contenu:
-        '''1. Hosanna, hosanna,\nHosanna in the highest.\nHosanna, hosanna,\nHosanna in the highest.''',
-    numero: 1,
-    auteur: 'Auteur inconnu',
+        '''1. Amazing grace! how sweet the sound,\nThat saved a wretch like me!\nI once was lost, but now am found,\nWas blind, but now I see.\n\n2. 'Twas grace that taught my heart to fear,\nAnd grace my fears relieved;\nHow precious did that grace appear\nThe hour I first believed!\n\n3. Through many dangers, toils and snares,\nI have already come;\n'Tis grace hath brought me safe thus far,\nAnd grace will lead me home.\n\n4. When we've been there ten thousand years,\nBright shining as the sun;\nWe've no less days to sing God's praise\nThan when we first begun.''',
+    numero: 2,
+    auteur: 'John Newton',
   ),
+  Cantique(
+    id: 'only_believe_003',
+    titre: 'They Come',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. They come from East and West,\nThey come from the lands afar,\nTo feast with King, to dine as His guest;\nHow blessed these pilgrims are!\nBeholding His hallowed face\nAglow with light divine;\nBlest partakers of his grace,\nAs gems in His crown to shine\n\nRefrain:\nSince Jesus has set me free,\nI'm happy as heart can be;\nNo longer I bear the burden of care,\nHis yoke is so sweet to me.\nMy soul was as black as night,\nBut darkness has taken flight;\nNow I shout the victory,\nFor Jesus has set me free.\n\n2. I look on the great white throne, Before it the ransomed stand;\nNo longer are tears, no sorrow is known\nNor death in that goodly land.\nMy Saviour has gone before,\nPreparing the way for me;\nSoon we'll meet to part no more\nThrough time or eternity.\n\n3. The gates of that holy place\nStand open by night and day\nO look to the Lord who "giveth more grace"\nWhose love has prepared the way.\nA home in those mansions fair\nHis hand hath reserved for all.\nFor the wedding feast prepare,\nObeying the gracious call.\n\n4. Oh, Jesus is coming soon,\nOur trials will then be o'er.\nWhat if our Lord this moment should come\nFor those who are free from sin?\nThen would it bring you joy,\nOr sorrow and deep despair?\nWhen our Lord in glory comes,\nWe'll meet him up in the air.''',
+    numero: 3,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_004',
+    titre: 'I Love Him',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Gone from my heart the world and all It's charms;\nNow, through the blood, I'm saved from All alarms;\nDown at the cross my heart is bending low;\nThe precious blood of Jesus cleanses white as snow.\n\nRefrain:\nI love Him, I love Him\nBecause He first loved me\nAnd purchased my salvation\nOn Calvary's tree.\n\n2. Once I was lost, and 'way down deep in sin;\nOnce was a slave to passions fierce within;\nOnce was afraid to trust a loving God;\nBut now I'm cleansed from every stain through Jesus' blood.\n\n3. Once I was bound, but now I am set free;\nOnce I was blind, but now the light I see;\nOnce I was dead, but now in Christ I live,\nTo tell the world around the peace that He doth give.''',
+    numero: 4,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_005',
+    titre: 'Sweet Hour Of Prayer',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Sweet hour of prayer, sweet hour of prayer,\nThat calls me from a world of care,\nAnd bids me at my Father's throne,\nMake all my wants and wishes known;\nIn seasons of distress and grief,\nMy soul has often found relief,\nAnd oft escaped the tempter's snare,\nBy thy return, sweet hour of prayer.\n\n2. Sweet hour of prayer, sweet hour of prayer,\nThe joy I feel, the bliss I share,\nOf those whose anxious spirits burn\nWith strong desires for thy return!\nWith such I hasten to the place\nWhere God, my Saviour, shows His face,\nAnd gladly take my station there,\nAnd wait for thee, sweet hour of prayer.\n\n3. Sweet hour of prayer, sweet hour of prayer,\nThy wings shall my petition bear\nTo Him whose truth and faithfulness\nEngage the waiting soul to bless;\nAnd since He bids me seek His face,\nBelieve His Word and trust His grace,\nI'll cast on Him my every care,\nAnd wait for thee, sweet hour of prayer.''',
+    numero: 5,
+    auteur: 'William W. Walford',
+  ),
+  Cantique(
+    id: 'only_believe_006',
+    titre: 'Oh, How I Love Jesus',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. There is a name I love to hear,\nI love to sing its worth;\nIt sounds like music in mine ear,\nThe sweetest name on earth.\n\nRefrain:\nOh, how I love Jesus,\nOh, how I love Jesus,\nOh, how I love Jesus,\nBecause He first loved me.\n(I'll never forsake Him...)\n\n2. It tells me of a Saviour's love,\nWho died to set me free;\nIt tells me of His precious blood;\nThe sinner's perfect plea.\n\n3. It tells me what my Father hath\nIn store for every day,\nAnd though I tread a darksome path,\nYields sunshine all the way.\n\n4. It tells of One whose loving heart\nCan feel my deepest woe,\nWho in each sorrow bears a part,\nThat one can bear below.''',
+    numero: 6,
+    auteur: 'Frederick Whitfield',
+  ),
+  Cantique(
+    id: 'only_believe_007',
+    titre: 'When The Redeemed Gather',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I am thinking of the rapture in our blessed home on high,\nWhen the redeemed are gathering in;\nHow we'll raise the heavenly anthem in that city in the sky,\nWhen the redeemed are gathering in.\n\nRefrain:\nWhen the redeemed are gathering in,\nWashed like the snow, and free from all sin;\nHow we will shout, and how we will sing,\nWhen the redeemed are gathering in.\n\n2. There will be a great procession over on the streets of gold,\nWhen the redeemed are gathering in;\nO what music, O what singing, o'er the city will be rolled,\nWhen the redeemed are gathering in.\n\n3. Saints will sing redemption's story with their voices clear and strong,\nWhen the redeemed are gathering in;\nThen the angels all will listen,\nFor they cannot join that song,\nWhen the redeemed are gathering in.\n\n4. Then the Saviour will give orders to prepare the banquet board,\nWhen the redeemed are gathering in;\nAnd we'll hear His invitation, "Come, ye blessed of the Lord,"\nWhen the redeemed are gathering in.''',
+    numero: 7,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_008',
+    titre: 'Oh, I Want To See Him',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. As I journey through the land, singing as I go,\nPointing souls to Calvary, to the crimson flow,\nMany arrows pierce my soul from without, within;\nBut my Lord leads me on, through Him I must win.\n\nRefrain:\nOh, I want to see Him, look upon His face,\nThere to sing forever of His saving grace;\nOn the streets of Glory let me lift my voice;\nCares all past, home at last, ever so rejoice.\n\n2. When in service for my Lord, dark may be the night,\nBut I'll cling more close to Him, He will give me light;\nSatan's snares may vex my soul, turn my thoughts aside;\nBut my Lord goes ahead, leads whate'er betide.\n\n3. When in valleys low I look toward the mountain height,\nAnd behold my Saviour there, leading in a fight,\nWith a tender hand outstretched toward the valley low;\nGuiding me, I can see, as I onward go.\n\n4. When before me billows rise from the mighty deep,\nThen my Lord directs my bark, He doth safely keep,\nAnd He leads me gently on through this world below;\nHe's real Friend to me, O I love Him so.''',
+    numero: 8,
+    auteur: 'R. H. Cornelius',
+  ),
+  Cantique(
+    id: 'only_believe_009',
+    titre: 'Feeling So Much Better',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Feeling so much better talking about this good old Way,\nFeeling so much better talking about the Lord;\nLet's go on, let's go on talking about this good old Way,\nLet's go on, let's go on talking about the Lord.\n\n2. The devil he don't like it, talking about this good old Way,\nThe devil he don't like it, talking about the Lord;\nSo, let's go on, let's go on talking about this good old Way,\nLet's go on, let's go on talking about the Lord.''',
+    numero: 9,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_010',
+    titre: 'Teach Me, Lord, To Wait',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Teach me, Lord, to wait down on my knees\nTill in Your own good time You answer my pleas;\nTeach me not to rely on what others do,\nBut to wait in prayer for an answer from You.\n\nRefrain:\nThey that wait upon the Lord, shall renew their strength,\nThey shall mount up with wings as an eagle,\nThey shall run and not be weary, they shall walk and not faint;\nTeach me, Lord, teach me, Lord, to wait.\n\n2. Teach me, Lord, to wait while hearts are aflame,\nHelp me humble my pride and call on your name;\nKeep my faith renewed, keep my eyes on Thee\nHelp me be on this earth what You want me to be.''',
+    numero: 10,
+    auteur: 'Stuart Hamblen',
+  ),
+  Cantique(
+    id: 'only_believe_011',
+    titre: 'Hallelujah, We Shall Rise',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. In the resurrection morning,\nWhen the trump of God shall sound,\nWe shall rise, (Hallelujah!) we shall rise!\nThen the saints will come rejoicing\nAnd no tears will e'er be found,\nWe shall rise, (Hallelujah!) we shall rise.\n\nRefrain:\nWe shall rise, (Hallelujah!)\nWe shall rise, (Amen!)\nWe shall rise, (Hallelujah!)\nIn the resurrection morning,\nWhen death's prison bars are broken,\nWe shall rise, (Hallelujah!) we shall rise.\n\n2. In the resurrection morning,\nWhat a meeting it will be,\nWe shall rise, (Hallelujah!) we shall rise!\nWhen our fathers and our mothers,\nAnd our loved ones we shall see,\nWe shall rise, (Hallelujah!) we shall rise.\n\n3. In the resurrection morning,\nBlessed thought it is to me,\nWe shall rise, (Hallelujah!) we shall rise!\nI shall see my blessed Saviour,\nWho so freely died for me,\nWe shall rise, (Hallelujah!) we shall rise.\n\n4. In the resurrection morning,\nWe shall meet Him in the air,\nWe shall rise, (Hallelujah!) we shall rise!\nAnd be carried up to glory,\nTo our home so bright and fair,\nWe shall rise, (Hallelujah!) we shall rise.''',
+    numero: 11,
+    auteur: 'J. E. Thomas',
+  ),
+  Cantique(
+    id: 'only_believe_012',
+    titre: 'Wear A Crown',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Am I a soldier of the cross,\nA follower of the lamb,\nAnd shall I fear to own His cause,\nOr blush to speak His name?\n\nRefrain:\nAnd when the battle's over, we shall wear a crown!\nYes, we shall wear a crown! Yes, we shall wear a crown!\nAnd when the battle's over, we shall wear a crown\nIn the new Jerusalem.\nWear a crown, wear a crown, a bright and shining crown.\nAnd when the battle's over, we shall wear a crown\nIn the new Jerusalem.\n\n2. Must I be carried to the skies\nOn flow'ry beds of ease,\nWhile others fought to win the prize,\nAnd sailed through bloody seas?\n\n3. Are there no foes for me to face?\nMust I not stem the flood?\nIs this vile world a friend to grace\nTo help me on to God?\n\n4. Sure I must fight if I would reign,\nIncrease my courage, Lord;\nI'll bear the toil, endure the pain,\nSupported by Thy Word.''',
+    numero: 12,
+    auteur: 'Isaac Watts',
+  ),
+  Cantique(
+    id: 'only_believe_013',
+    titre: 'Marvellous Grace',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Marvellous grace of our loving Lord,\nGrace that exceeds our sin and our guilt.\nYonder on Calvary's mount outpoured.\nThere where the Blood of the Lamb was split.\n\nRefrain:\nGrace, grace, God's grace,\nGrace that will pardon and cleanse within;\nGrace, grace, God's grace,\nGrace that is greater than all our sin.\n\n2. Sin and despair like the sea waves cold,\nThreaten the soul with infinite loss;\nGrace that is greater, yes, grace untold,\nPoints to the refuge, the Mighty Cross.\n\n3. Dark is the stain that we cannot hide,\nWhat can avail to wash it away?\nLook! There is flowing a crimson tide;\nWhiter than the snow you may be today.\n\n4. Marvelous, infinite, matchless grace,\nFreely bestowed on all who believe;\nYou that are longing to see His face,\nWill you this moment His grace receive?''',
+    numero: 13,
+    auteur: 'Julia H. Johnston',
+  ),
+  Cantique(
+    id: 'only_believe_014',
+    titre: 'Zion\'s Hill',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. There waits for me a glad tomorrow,\nWhere gates of pearl swing open wide,\nAnd when I've passed this vale of sorrow,\nI'll camp upon the other side.\n\nRefrain:\nSome day beyond the reach of mortal ken,\nSome day, God only knows just where and when,\nThe wheels of mortal life shall all stand still,\nAnd I shall go to dwell on Zion's hill.\n\n2. Some day I'll hear the angels singing,\nBeyond the shadows of the tomb;\nAnd while all the bells of heaven ringing,\nWhile saints are singing, "Home, sweet Home."\n\n3. Some day my labours will be ended,\nAnd all my wand'rings will be o'er,\nAnd all earth's broken ties be mended,\nAnd I shall sigh and weep no more.\n\n4. Some day the dark clouds will be rifted,\nAnd all the night of gloom be past;\nAnd all life's burdens will be lifted,\nThe day of rest shall dawn at last.''',
+    numero: 14,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_015',
+    titre: 'We\'re Marching To Zion',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Come, we that love the Lord,\nAnd let our joys be known,\nJoin in a song with sweet accord,\nJoin in a song with sweet accord,\nAnd thus surround the throne,\nAnd thus surround the throne.\n\nRefrain:\nWe're marching to Zion,\nBeautiful, beautiful Zion;\nWe're marching upward to Zion,\nThe beautiful city of God.\n\n2. Let those refuse to sing\nWho never knew our God;\nBut children of the heavenly King,\nBut children of the heavenly King,\nMay speak their joys abroad,\nMay speak their joys abroad.\n\n3. The hill of Zion yields\nA thousand sacred sweets\nBefore we reach the heavenly fields,\nBefore we reach the heavenly fields,\nOr walk the golden streets,\nOr walk the golden streets.\n\n4. Then let our songs abound,\nAnd every tear be dry;\nWe're marching thru Immanuel's ground,\nWe're marching to Immanuel's ground,\nTo fairer worlds on high,\nTo fairer worlds on high.''',
+    numero: 15,
+    auteur: 'Isaac Watts',
+  ),
+  Cantique(
+    id: 'only_believe_016',
+    titre: 'Cleanse Me',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Search me, O God, and know my heart today;\nTry me, O Saviour, know my thoughts, I pray\nSee if there be some wicked way in me;\nCleanse me from every sin, and set me free.\n\n2. I praise Thee, Lord, for cleansing me from sin;\nFulfil Thy Word, make me pure within;\nFill me with fire, where once I burned with shame;\nGrant my desire to magnify Thy name.\n\n3. Lord, take my life, and make it wholly Thine;\nFill my poor heart with Thy great love divine;\nTake all my will, my passion, self and pride;\nI now surrender; Lord, in me abide.\n\n4. O Holy Ghost, revival comes from Thee;\nSend a revival, start the work in me;\nThy Word declares Thou wilt supply our need;\nFor blessing now, O Lord, I humbly plead.''',
+    numero: 16,
+    auteur: 'J. Edwin Orr',
+  ),
+  Cantique(
+    id: 'only_believe_017',
+    titre: 'My Sheep Know My Voice',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. My sheep know My voice,\nAnd the path that I take,\nThey follow wherever I go;\nMy sheep know My voice\nAnd come at My call,\nBut a stranger's voice do they not know.\n\nRefrain:\nMy sheep know My voice,\nAnd day by day\nThey abide in the fold,\nAnd go not astray;\nThey love Me because\nI have made them My choice,\nAnd they follow My call,\nFor My sheep know My voice.\n\n2. My sheep know My voice,\nAnd the pastures of green,\nWhere I lead them so often to feed;\nMy sheep know My voice,\nAnd the cool sparkling stream,\nWhere beside its still waters I lead.\n\n3. My sheep know My voice,\nAnd the valley of death,\nThru which I shall lead them some day;\nBut no danger nor harm\nCan touch one of them,\nFor I will be with them always.''',
+    numero: 17,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_018',
+    titre: 'Onward, Christian Soldier',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Marching as to war,\nWith the cross of Jesus\nGoing on before;\nChrist, the royal Master,\nLeads against the foe;\nForward into battle,\nSee, His banners go!\n\nRefrain:\nOnward, Christian soldiers!\nMarching as to war,\nWith the cross of Jesus\nGoing on before.\n\n2. Like a mighty army\nMoves the Church of God;\nBrothers, we are treading\nWhere the saints have trod;\nWe are not divided.\nAll one body we;\nOne in hope and doctrine,\nOne in charity.\n\n3. Crowns and thrones may perish,\nKingdoms rise and wane;\nBut the Church of Jesus\nConstant will remain;\nGates of hell can never\n'Gainst that Church prevail;\nWe have Christ's own promise,\nWhich can never fail.\n\n4. At the sign of triumph,\nSatan's host doth flee;\nOh, then, Christian soldiers,\nOn to victory!\nHell's foundations quiver\nAt the shout of praise;\nBrothers, lift your voices,\nLoud your anthems raise!\n\n5. Onward, then, ye people!\nJoin our happy throng;\nBlend with ours your voices\nIn the triumph song;\nGlory, laud, and honor,\nUnto Christ the King;\nThis though countless ages\nMen and angels sing.''',
+    numero: 18,
+    auteur: 'Sabine Baring-Gould',
+  ),
+  Cantique(
+    id: 'only_believe_019',
+    titre: 'Let\'s Talk About Jesus',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Let's talk about Jesus,\nThe King of kings is He,\nThe Lord of lords, Supreme\nThroughout Eternity;\nThe great I AM, the Way,\nThe Truth, the Life, the Door;\nLet's talk about Jesus\nMore and more...''',
+    numero: 19,
+    auteur: 'Euan Morton',
+  ),
+  Cantique(
+    id: 'only_believe_020',
+    titre: 'When Our Lord Shall Come',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. When upon the clouds of heaven,\nChrist shall come to earth again,\nWill the world be glad to see Him,\nWhen our Lord shall come again?\n\nRefrain:\nThere'll be singing, there'll be shouting,\nThere'll be sorrow, there'll be pain,\nThere'll be weeping, there'll be praying,\nWhen our Lord shall come again.\n\n2. Will His coming bring rejoicing?\nOr will it bring tears and pain?\nAre you ready to receive Him,\nWhen our Lord shall come again?\n\n3. Will you join in lamentation?\nOr the angel's glad refrain?\nWill you help His people crown Him,\nWhen our Lord shall come again?\n\n4. Work and pray till Jesus calls you,\nHelp to gather in the grain,\nThen with joy you'll meet the Saviour,\nWhen our Lord shall come again.''',
+    numero: 20,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_021',
+    titre: 'The Fight Is On',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. The fight is on, the trumpet sound is ringing out,\nThe cry "to arms" is heard afar and near;\nThe Lord of hosts is marching on to victory,\nThe triumph of the right will soon appear.\n\nRefrain:\nThe fight is on, O Christian soldiers,\nAnd face to face in stern array,\nWith armor gleaming, and colors streaming,\nThe right and wrong engage today;\nThe fight is on, but be not weary,\nBe strong and in His mighty hold fast;\nIf God be for us, His banner o'er us,\nWe'll sing the victor's song at last.\n\n2. The fight is on, arouse ye soldiers brave and true,\nJehovah leads, and vict'ry will assure;\nGo buckle on the armor God has given you,\nAnd in His strength unto the end endure.\n\n3. The Lord is leading on to certain victory,\nThe bow of promise spans the eastern sky;\nHis glorious name in every land shall honoured be,\nThe morn will break, the dawn of peace is nigh.''',
+    numero: 21,
+    auteur: 'Lelia N. Morris',
+  ),
+  Cantique(
+    id: 'only_believe_022',
+    titre: 'Victory In Jesus',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I heard an old, old story,\nHow a Saviour came from glory,\nHow He gave His life on Calvary\nTo save a wretch like me;\nI heard about his groaning,\nOf His precious blood's atoning,\nThen I repented of my sins\nAnd won the victory.\n\nRefrain:\nO victory in Jesus,\nMy Saviour, forever,\nHe sought me and bought me\nWith His redeeming blood;\nHe loved me ere I knew him\nAnd all my life is due Him,\nHe plunged me to victory,\nBeneath the cleansing flood.\n\n2. I heard about His healing,\nOf His cleansing pow'r revealing,\nHow He made the lame to walk again\nAnd cause the blind to see;\nAnd then I cried, "Dear Jesus,\nCome and heal my broken spirit,"\nAnd somehow Jesus came and brought\nTo me the victory.\n\n3. I heard about a mansion\nHe has built for me in glory,\nAnd I heard about the streets of gold\nBeyond the crystal seas;\nAbout the angels singing,\nAnd the old redemption story,\nAnd some sweet day I'll sing up there\nThe song of victory.''',
+    numero: 22,
+    auteur: 'E. M. Bartlett',
+  ),
+  Cantique(
+    id: 'only_believe_023',
+    titre: 'My Faith Looks Up To Thee',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. My faith looks up to thee,\nThou Lamb of Calvary,\nSaviour divine;\nNow hear me while I pray;\nTake all my sin away,\nO let me from this day\nBe wholly Thine!\n\n2. May Thy rich grace impart\nStrength to my fainting heart,\nMy zeal inspire;\nAs Thou hast died for me,\nO may my love to Thee,\nPure, warm, and changeless be,\nA living fire!\n\n3. While life's dark maze I tread,\nAnd griefs around me spread,\nBe Thou my Guide;\nBid darkness turn to day,\nWipe sorrow's tears away,\nNor let me ever stray\nFrom Thee aside.''',
+    numero: 23,
+    auteur: 'Ray Palmer',
+  ),
+  Cantique(
+    id: 'only_believe_024',
+    titre: 'Living By Faith',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I care not today what the morrow may bring,\nIf shadow or sunshine or rain,\nThe Lord I know ruleth o'er everything,\nAnd all of my worry is vain.\n\nRefrain:\nLiving by faith, in Jesus above,\nTrusting, confiding in His great love;\nFrom all harm safe in His sheltering arm,\nI'm living by faith and feel no alarm.\n\n2. Though tempest may blow and the storm clouds arise,\nObscuring the brightest of life,\nI'm never alarmed at the overcast skies,\nThe Master looks on at the strife.\n\n3. I know that He safely will carry me through,\nNo matter what evils betide,\nWhy should I then care, though the tempest may blow,\nIf Jesus walks close to my side.\n\n4. Our Lord will return to this earth some sweet day,\nOur troubles will then be o'er,\nThe Master so gently will lead us away,\nBeyond that blest heavenly shore.''',
+    numero: 24,
+    auteur: 'James Wells',
+  ),
+  Cantique(
+    id: 'only_believe_025',
+    titre: 'I Surrender All',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. All to Jesus I Surrender,\nAll to Him I freely give;\nI will ever love and trust Him,\nIn His presence daily live.\n\nRefrain:\nI surrender all,\nI surrender all,\nAll to Thee, my Blessed Saviour,\nI surrender all.\n\n2. All to Jesus I surrender,\nHumbly at His feet I bow,\nWorldly pleasures all forsaken,\nTake me, Jesus, take me now.\n\n3. All to Jesus I surrender,\nMake me, Saviour, wholly Thine;\nLet me feel the Holy Spirit.\nTruly know that Thou art mine.\n\n4. All to Jesus I surrender,\nLord, I give myself to Thee;\nFill me with Thy love and power,\nLet Thy blessing fall on me.\n\n5. All to Jesus I surrender,\nNow I feel the sacred flame;\nOh, the joy of full salvation!\nGlory, glory to His name!''',
+    numero: 25,
+    auteur: 'Judson W. Van DeVenter',
+  ),
+  Cantique(
+    id: 'only_believe_026',
+    titre: 'When I Reach That City',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. On the top of Mount Zion is a city\nAnd the earth with glory it doth fill;\nI shall look on its beauty in the morning\nWhen I reach that city on the hill.\n\nRefrain:\nOh, that city on Mount Zion,\nTho' a pilgrim, yet I love thee still;\nI'll not leave thee, through the ages,\nWhen I reach that city on the hill.\n\n2. I'm invited to come home to that city,\nFor the Word says, "Whosoever will,"\nAnd I'll find there a mansion for me waiting\nWhen I reach that city on the hill.\n\n3. Death will never molest me in that city,\nNever leave me lying cold and chill;\nAnd I'll enter to live up there forever\nWhen I reach that city on the hill.\n\n4. So I'll stay here until my Saviour calls me,\nTrying daily to perform His will;\nThen He'll say unto to me, "Well done," up yonder\nWhen I reach that city on the hill.''',
+    numero: 26,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_027',
+    titre: 'Farther Along',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Tempted and tried we're oft made to wonder\nWhy it should be thus all the day long,\nWhile there are others living about us,\nNever molested though in the wrong.\n\nRefrain:\nFarther along we'll know all about it,\nFarther along we'll understand why;\nCheer up, my brother, live in the sunshine,\nWe'll understand it all by and by.\n\n2. When death has come and taken our loved ones,\nIt leaves our home so lonely and drear;\nThen do we wonder why others prosper,\nLiving so wicked year after year.\n\n3. Faithful till death, said our loving Master,\nA few more days to labor and wait;\nToils of the road will then seem as nothing,\nAs we sweep through the beautiful gate.\n\n4. When we see Jesus coming in glory,\nWhen He comes from His home in the sky;\nThen we shall meet Him in that bright mansion,\nWe'll understand it all by and by.''',
+    numero: 27,
+    auteur: 'W. B. Stevens',
+  ),
+  Cantique(
+    id: 'only_believe_028',
+    titre: 'Fill My Way With Love',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Let me walk, blessed Lord, in the way Thou hast gone,\nLeading straight to the land above;\nGiving cheer everywhere, to the sad and the lone,\nFill my way every day with love.\n\nRefrain:\nFill my way every day with love,\nAs I walk with the heavenly Dove;\nLet me go all the while, with a song and a smile,\nFill my way every day with love.\n\n2. Keep me close to the side of my Saviour and Guide,\nLet me never in darkness rove;\nKeep my path free from wrath, and my soul satisfied,\nFill my way every day with love.\n\n3. Soon the race will be o'er, and I'll travel no more,\nBut abide in my home above;\nLet me sing blessed King, all the way to the shore,\nFill my way every day with love.''',
+    numero: 28,
+    auteur: 'G. E. Wright',
+  ),
+  Cantique(
+    id: 'only_believe_029',
+    titre: 'I Am Resolved',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I am resolved no longer to linger,\nCharmed by the world's delight;\nThings that are higher, things that are nobler,\nThese have allured my sight.\n\nRefrain:\nI will hasten to Him,\nHasten so glad and free,\nJesus, greatest, highest,\nI will come to thee.\n\n2. I am resolved to go to the Saviour,\nLeaving my sin and strife;\nHe is the true one, He is the just one,\nHe hath the words of life.\n\n3. I am resolved to follow the Saviour,\nFaithful and true each day;\nHeed what He sayeth, do what He willeth,\nHe is the living way.\n\n4. I am resolved to enter the kingdom,\nLeaving the paths of sin;\nFriends may oppose me, foes may beset me,\nStill will I enter in.\n\n5. I am resolved, and who will go with me,\nCome, friends, without delay,\nTaught by the Bible, led by the Spirit,\nWe'll walk the heavenly way.''',
+    numero: 29,
+    auteur: 'Palmer Hartsough',
+  ),
+  Cantique(
+    id: 'only_believe_030',
+    titre: 'Higher Ground',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I'm pressing on the upward way,\nNew heights I'm gaining every day;\nStill praying as I'm onward bound,\n"Lord, plant my feet on higher ground."\n\nRefrain:\nLord, lift me up and let me stand,\nBy faith, on heaven's table land,\nA higher plane than I have found;\nLord, plant my feet on higher ground.\n\n2. My heart has no desire to stay\nWhere doubts arise and fears dismay;\nTho' some may dwell where these abound,\nMy prayer, my aim, is higher ground.\n\n3. I want to scale the utmost height,\nAnd catch a gleam of glory bright;\nBut still I'll pray till heav'n I've found,\n"Lord, lead me on to higher ground."''',
+    numero: 30,
+    auteur: 'Johnson Oatman, Jr.',
+  ),
+  Cantique(
+    id: 'only_believe_031',
+    titre: 'Standing On The Promises',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Standing on the promises of Christ my King,\nThrough eternal ages let His praises ring;\nGlory in the highest I will shout and sing,\nStanding on the promises of God.\n\nRefrain:\nStanding, standing,\nStanding on the promises of God my Saviour;\nStanding, standing,\nI'm standing on the promises of God.\n\n2. Standing on the promises that cannot fail,\nWhen the howling storms of doubt and fear assail,\nBy the living Word of God I shall prevail,\nStanding on the promises of God.\n\n3. Standing on the promises I now can see\nPerfect, present cleansing in the blood for me;\nStanding in the liberty where Christ makes free,\nStanding on the promises of God.\n\n4. Standing on the promises of Christ the Lord,\nBound to Him eternally by love's strong cord,\nOvercoming daily with the Spirit's sword,\nStanding on the promises of God.\n\n5. Standing on the promises I cannot fall,\nList'ning every moment to the Spirit's call,\nResting in my Saviour, as my all in all,\nStanding on the promises of God.''',
+    numero: 31,
+    auteur: 'Russell Kelso Carter',
+  ),
+  Cantique(
+    id: 'only_believe_032',
+    titre: 'By And By, Morning Comes',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. We are often tossed and driven on the restless sea of time,\nSomber skies and howling tempests oft succeed a bright sunshine;\nIn that land of perfect day, when the mists have rolled away,\nWe will understand it better by and by.\n\nRefrain:\nBy and by when the morning comes,\nWhen all the saints of God are gathered home,\nWe will tell the story how we overcome,\nFor we'll understand it better by and by.\n\n2. We are often destitute of the things that life demands,\nWant of food and want of shelter, thirsty hills and barren lands;\nBut we're trusting in the Lord, and according to His Word,\nWe will understand it better by and by.\n\n3. Trials dark on every hand, and we cannot understand,\nAll the ways that God would lead us to that blessed Promise Land;\nBut He guides us with His eye and we'll follow till we die,\nFor we'll understand it better by and by.\n\n4. Temptations, hidden snares often take us unawares,\nAnd our hearts are made to bleed for many a thoughtless word or deed,\nAnd we wonder why the test when we try to do our best,\nBut we'll understand it better by and by.''',
+    numero: 32,
+    auteur: 'Charles Albert Tindley',
+  ),
+  Cantique(
+    id: 'only_believe_033',
+    titre: 'Rock Of Ages',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Rock of Ages, cleft for me,\nLet me hide myself in Thee;\nLet the water and the blood,\nFrom thy wounded side which flowed\nBe of sin the double cure,\nSave from wrath and make me pure.\n\n2. Could my tears forever flow,\nCould my zeal no languor know,\nThese for sin could not atone;\nThou must save, and Thou alone,\nIn my hand no price I bring,\nSimply to Thy cross I cling.\n\n3. While I draw this fleeting breath,\nWhen my eyes shall close in death,\nWhen I rise to worlds unknown,\nAnd behold Thee on Thy throne,\nRock of Ages, cleft for me,\nLet me hide myself in Thee.''',
+    numero: 33,
+    auteur: 'Augustus Toplady',
+  ),
+  Cantique(
+    id: 'only_believe_034',
+    titre: 'When I See The Blood',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Christ our Redeemer died on the cross,\nDied for the sinner, paid all His due;\nSprinkle your soul with the blood of the Lamb,\nAnd I will pass, will pass over you.\n\nRefrain:\nWhen I see the blood, When I see the blood,\nWhen I see the blood, I will pass, I will pass over you.\n\n2. Chiefest of sinners, Jesus will save;\nAll He has promised, that will He do;\nWash in the fountain opened for sin,\nAnd I will pass, will pass over you.\n\n3. Judgment is coming, all will be there,\nEach one receiving justly his due;\nHide in the saving sin-cleansing blood,\nAnd I will pass, will pass over you.\n\n4. Oh, great compassion! O boundless love!\nO loving kindness, faithful and true!\nFind peace and shelter under the blood,\nAnd I will pass, will pass over you.''',
+    numero: 34,
+    auteur: 'John Foote',
+  ),
+  Cantique(
+    id: 'only_believe_035',
+    titre: 'Love Lifted Me',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I was sinking deep in sin,\nFar from the peaceful shore,\nVery deeply stained within,\nSinking to rise no more;\nBut the Master of the sea\nHeard my despairing cry,\nFrom the waters lifted me,\nNow safe am I.\n\nRefrain:\nLove lifted me! Love lifted me!\nWhen nothing else could help, love lifted me.\nLove lifted me! Love lifted me!\nWhen nothing else could help, love lifted me.\n\n2. All my heart to Him I give,\nEver to Him I'll cling,\nIn His blessed presence live,\nEver His praises sing,\nLove so mighty and so true\nMerits my soul's best songs;\nFaithful, loving service, too,\nTo Him belongs.\n\n3. Souls in danger, look above,\nJesus completely saves;\nHe will lift you by His love\nOut of the angry waves,\nHe's the Master of the sea,\nBillows His will obey;\nHe your Saviour wants to be;\nBe saved today.''',
+    numero: 35,
+    auteur: 'James Rowe',
+  ),
+  Cantique(
+    id: 'only_believe_036',
+    titre: 'Showers Of Blessing',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. There shall be showers of blessing,\nThis is the promise of love;\nThere shall be seasons refreshing,\nSent from the Saviour above.\n\nRefrain:\nShowers of blessing,\nShowers of blessing we need;\nMercy drops round us are falling,\nBut for the showers we plead.\n\n2. There shall be showers of blessing"\nPrecious reviving again;\nOver the hills and the valleys,\nSound of abundance of rain.\n\n3. There shall be showers of blessing,"\nSend them upon us, O Lord;\nGrant to us now a refreshing,\nCome, and now honor thy Word.\n\n4. There shall be showers of blessing,"\nOh, that today they might fall,\nNow as to God we're confessing,\nNow as on Jesus we call!''',
+    numero: 36,
+    auteur: 'Daniel W. Whittle',
+  ),
+  Cantique(
+    id: 'only_believe_037',
+    titre: 'Have Thine Own Way, Lord',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Have Thine own way, Lord!\nHave Thine own way!\nThou art the Potter;\nI am the clay.\nMould me and make me\nAfter Thy will,\nWhile I am waiting,\nYielded and still.\n\n2. Have Thine own way, Lord!\nHave Thine own way!\nSearch me and try me,\nMaster, today!\nWhiter than snow, Lord,\nWash me just now,\nAs in Thy presence\nHumbly I bow.\n\n3. Have Thine own way, Lord!\nHave Thine own way!\nWounded and weary,\nHelp me, I pray!\nPower, all power,\nSurely is Thine!\nTouch me and heal me,\nSaviour divine!\n\n4. Have Thine own way, Lord!\nHave Thine own way!\nHold o'er me being!\nAbsolute sway!\nFill with Thy Spirit\nTill all shall see\nChrist only, always,\nLiving in me!''',
+    numero: 37,
+    auteur: 'Adelaide A. Pollard',
+  ),
+  Cantique(
+    id: 'only_believe_038',
+    titre: 'Draw Me Nearer',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I am Thine, O Lord, I have heard Thy voice,\nAnd it told Thy love to me;\nBut I long to rise in the arms of faith,\nAnd be closer drawn to Thee.\n\nRefrain:\nDraw me nearer, nearer, blessed Lord,\nTo the cross where Thou hast died;\nDraw me nearer, nearer, nearer, blessed Lord,\nTo Thy precious, bleeding side.\n\n2. Consecrate me now Thy service, Lord,\nBy the pow'r of grace divine;\nLet my soul look up with a steadfast hope,\nAnd my will be lost in Thine.\n\n3. Oh, the pure delight of a single hour\nThat before Thy throne I spend,\nWhen I kneel in prayer, and with Thee, my God,\nI commune as friend with friend.\n\n4. There are depths of love that I cannot know\nTill I cross the narrow sea,\nThere are height of joy that I may not reach,\nTill I rest in peace with Thee.''',
+    numero: 38,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_039',
+    titre: 'I Am Marked',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I have lost my reputation since I turned my back on sin,\nAnd a lot of friends went from me, since I let my Saviour in;\nNow they pass me by unknown, when they once passed with a smile;\nNow they say I'm very foolish, and they say I'm out of style.\n\nRefrain:\nI am marked, marked, marked,\nI am marked now wherever I go;\nI am marked, marked, marked,\nJust what I am everyone seems to know.\nI am sealed, sealed, sealed,\nI am sealed by His Spirit Divine;\nO glory to God! Hallelujah! Amen!\nI am His, and I know He is mine.\n\n2. Well, they say my life is ruined, and my talent thrown away,\nAnd they cannot understand it, for I had such plans one day;\nBut I know what I surrendered when I promised I'd go through;\nAnd I gained far more glory since God made me over new.''',
+    numero: 39,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_040',
+    titre: 'Won\'t It Be Wonderful?',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. When with Saviour we enter the glory land,\nWon't it be wonderful there?\nEnded the troubles and cares of the story land,\nWon't it be wonderful there?\n\nRefrain:\nWon't it be wonderful there,\nHaving no burdens to bear?\nJoyously singing with heart-bells all ringing,\nWon't it be wonderful there?\n\n2. Walking and talking with Christ, the supernatural One,\nWon't it be wonderful there?\nPraising, adoring the matchless eternal One,\nWon't it be wonderful there?\n\n3. There where the tempest will never be sweeping us,\nWon't it be wonderful there?\nSure that forever the Lord will be keeping us,\nWon't it be wonderful there?''',
+    numero: 40,
+    auteur: 'Elisha Hoffman',
+  ),
+  Cantique(
+    id: 'only_believe_041',
+    titre: 'Wings Of A Dove',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Noah had drifted\nOn the floods many days,\nHe search for land\nIn various ways;\nTroubles he had some,\nBut not from above,\nGod gave him His sign\nOn the wings of a dove.\n\nRefrain:\nOn the wings of a snow-white dove,\nGod sends down His pure, sweet love,\nA sign from above,\nOn the wings of a dove.\n\n2. Jesus, our Saviour\nCame to earth one day;\nHe was born in a stable,\nIn a manger of hay;\nThough here rejected,\nBut not from above,\nGod gave us His sign\nOn the wings of a dove.\n\n3. Though I have suffered\nIn many a way,\nI cried for healing\nBoth night and day;\nFaith wasn't forgotten\nBy the Father above,\nHe gave me His sign\nOn the wings of a dove.''',
+    numero: 41,
+    auteur: 'Bob Ferguson',
+  ),
+  Cantique(
+    id: 'only_believe_042',
+    titre: 'I Feel Like Traveling On',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. My heavenly home is bright and fair,\nI feel like travelling on,\nNo pain, nor death can enter there,\nI feel like travelling on.\n\nRefrain:\nYes, I feel like travelling on,\nI feel like travelling on;\nMy heavenly home is bright and fair,\nI feel like travelling on.\n\n2. Its glittering towers the sun outshine,\nI feel like travelling on;\nThat heavenly mansion shall be mine,\nI feel like travelling on.\n\n3. Let others seek a home below,\nI feel like travelling on,\nWhich flames devour, or waves o'er flow,\nI feel like travelling on.\n\n4. The Lord has been so good to me,\nI feel like travelling on;\nUntil that blessed home I see,\nI feel like travelling on.''',
+    numero: 42,
+    auteur: 'William Hunter',
+  ),
+  Cantique(
+    id: 'only_believe_043',
+    titre: 'Come And Dine',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Jesus has a table spread where the saints of God are fed,\nHe invites His chosen people "Come and dine,"\nWith His manna He doth feed and supplies our every need;\nO, 'tis sweet to sup with Jesus all the time!\n\nRefrain:\n"Come and dine," the Master calleth, "Come and dine,"\nYou may feast at Jesus' Table all the time;\nHe who fed the multitude, turned the water into wine,\nTo the hungry calleth now, "Come and dine."\n\n2. The disciples came to land, thus obeying Christ's command,\nFor the Master called to them, "Come in dine,"\nThere they found their hearts' desire bread and fish upon the fire,\nThus He satisfies the hungry every time.\n\n3. Soon the Lamb will take His bride to be ever at His side,\nAll the host of heaven will assembled be;\nO, 'twill be a glorious sight; all the saints in spotless white;\nAnd with Jesus they will feast eternally.''',
+    numero: 43,
+    auteur: 'Charles B. Widmeyer',
+  ),
+  Cantique(
+    id: 'only_believe_044',
+    titre: 'God Leads Us Along',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. In shady, green pastures, so rich and so sweet,\nGod leads His dear children along;\nWhere the water's cool flow bathes the weary one's feet,\nGod leads His dear children along.\n\nRefrain:\nSome through the waters, some through the flood\nSome through the fire, but all through the Blood;\nSome through great sorrow, but God gives a song,\nIn the night season and all the day long.\n\n2. Sometimes on the mount where the sun shines so bright,\nGod leads His dear children along;\nSometimes in the valley in the darkest of night,\nGod leads His dear children along.\n\n3. Tho' sorrow befall us, and Satan oppose,\nGod leads His dear children along;\nThrough grace we can conquer, defeat all our foes,\nGod leads His dear children along.\n\n4. Away from the mire, and away from the clay,\nGod leads His dear children along;\nAway up in glory, eternity's day,\nGod leads His dear children along.''',
+    numero: 44,
+    auteur: 'George A. Young',
+  ),
+  Cantique(
+    id: 'only_believe_045',
+    titre: 'Leaning On Lasting Arms',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. What a fellowship, what a joy divine,\nLeaning on the everlasting arms;\nWhat a blessedness, what a peace is mine.\nLeaning on the everlasting arms.\n\nRefrain:\nLeaning, leaning,\nSafe and secure from all alarms;\nLeaning, leaning,\nLeaning on the everlasting arms.\n\n2. Oh, how sweet to walk in this pilgrim way,\nLeaning on the everlasting arms;\nOh, how bright the path grows from day to day,\nLeaning on the everlasting arms.\n\n3. What have I to dread, what have I to fear,\nLeaning on the everlasting arms;\nI have blessed peace with my Lord so near,\nLeaning on the everlasting arms.''',
+    numero: 45,
+    auteur: 'Elisha Hoffman',
+  ),
+  Cantique(
+    id: 'only_believe_046',
+    titre: 'Sunlight',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I wandered in the shades of night\nTill Jesus came to me,\nAnd with the sunlight of His love\nBid all my darkness flee\n\nRefrain:\nSunlight, sunlight in my soul today,\nSunlight, sunlight all along the way;\nSince the Saviour found me, took away my sin,\nI have had the sunlight of His love within.\n\n2. Though clouds may gather In the sky,\nAnd billows 'round me roll,\nHowever dark the world may be,\nI've sunlight in my soul.\n\n3. While walking in the light of God,\nI sweet communion find;\nI press with holy vigor on,\nAnd leave the world behind.\n\n4. I cross the wide extended fields,\nI journey o'er the plains,\nAnd in the sunlight of His love\nI reap the golden grain.\n\n5. Soon I shall see Him as He is,\nThe light that came to me;\nBehold the brightness of His face,\nThroughout eternity.''',
+    numero: 46,
+    auteur: 'Judson W. Van DeVenter',
+  ),
+  Cantique(
+    id: 'only_believe_047',
+    titre: 'I Know Whom I Believed',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I know not why God's wondrous grace\nTo me He hath made known,\nNor why, unworthy, Christ in love\nRedeemed me for His own.\n\nRefrain:\nBut "I know whom I have believed,\nAnd am persuaded that He is able\nTo keep that which I've committed\nUnto Him against that day."\n\n2. I know not how this saving faith\nTo me He did impart,\nNor how believing in His Word\nWrought peace within my heart.\n\n3. I know not how the Spirit moves,\nConvincing men of sin,\nRevealing Jesus through the Word,\nCreating faith in Him.\n\n4. I know not what of good or ill\nMay be reserved for me,\nOf weary ways or golden days,\nBefore His face I see.\n\n5. I know not when my Lord may come,\nAt night or noonday fair,\nNor if I'll walk the vale with Him,\nOr "meet Him in the air."''',
+    numero: 47,
+    auteur: 'Daniel W. Whittle',
+  ),
+  Cantique(
+    id: 'only_believe_048',
+    titre: 'Bringing In The Sheaves',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Sowing in the morning, sowing seeds of kindness,\nSowing in the noontide and the dewy eve;\nWaiting for the harvest and the time of reaping,\nWe shall come rejoicing, bringing in the sheaves.\n\nRefrain:\nBringing in the sheaves, bringing in the sheaves,\nWe shall come rejoicing, bringing in the sheaves;\nBringing in the sheaves, bringing in the sheaves,\nWe shall come rejoicing, bringing in the sheaves.\n\n2. Sowing in the sunshine, sowing in the shadows,\nFearing neither clouds nor winter's chilling breeze;\nBy and by the harvest and the labor ended,\nWe shall come rejoicing, bring in the sheaves.\n\n3. Going forth with weeping, sowing for the Master,\nThough the loss sustained, our spirit often grieves;\nWhen our weeping's over, He will bid us welcome,\nWe shall come rejoicing, bringing in the sheaves.''',
+    numero: 48,
+    auteur: 'Knowles Shaw',
+  ),
+  Cantique(
+    id: 'only_believe_049',
+    titre: 'Some Golden Daybreak',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Some glorious morning sorrow will cease,\nSome glorious morning all will be peace;\nHeartaches all ended, schooldays all done,\nHeaven will open, Jesus will come.\n\nRefrain:\nSome golden daybreak, Jesus will come;\nSome golden daybreak, battles all won,\nHe'll shout the victory, break through the blue,\nSome golden daybreak, for me, for you.\n\n2. Sad heart will gladden, all shall be bright,\nGood-bye forever to earth's dark night;\nChanged in a moment, like Him to be,\nOh, glorious daybreak, Jesus I'll see.\n\n3. Oh, what a meeting, there in the skies,\nNo tears nor crying shall dim our eyes;\nLoved ones united eternally,\nOh, what a daybreak that morn will be.''',
+    numero: 49,
+    auteur: 'Carl A. Blackmore',
+  ),
+  Cantique(
+    id: 'only_believe_050',
+    titre: 'Shall We Gather At River',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Shall we gather at the river,\nWhere bright angel feet have trod,\nWith its crystal tide forever,\nFlowing by the throne of God?\n\nRefrain:\nYes, we'll gather at the river,\nThe beautiful, the beautiful river;\nGather with the saints at the river\nThat flows by the throne of God.\n\n2. On the bosom of the river,\nWhere the Saviour-King we own,\nWe shall meet and sorrow never,\n'Neath the glory of the throne.\n\n3. On the margin of the river,\nWashing up its silver spray,\nWe will walk and worship ever,\nAll the happy, golden day.\n\n4. Ere we reach the shining river,\nLay we every burden down;\nGrace our spirits will deliver,\nAnd provide a robe and crown.\n\n5. At smiling of the river,\nMirror of the Saviour's face,\nSaints whom death will never sever\nLift their songs of saving grace.\n\n6. Soon we'll reach the shining river,\nSoon our pilgrimage will cease;\nSoon our happy hearts will quiver\nWith the melody of peace.''',
+    numero: 50,
+    auteur: 'Robert Lowry',
+  ),
+
+  Cantique(
+    id: 'only_believe_051',
+    titre: 'Blessed Assurance',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Blessed assurance, Jesus is mine!\nO what a foretaste of glory divine!\nHeir of salvation, purchase of God,\nBorn of His Spirit, washed in His blood.\n\nRefrain:\nThis is my story, this is my song,\nPraising my Saviour all the day long;\nThis is my story, this is my song,\nPraising my Saviour all the day long.\n\n2. Perfect submission, perfect delight,\nVisions of rapture now burst on my sight;\nAngels descending, bring from above\nEchoes of mercy, whispers of love.\n\n3. Perfect submission, all is at rest,\nI in my Saviour am happy and blest;\nWatching and waiting, looking above,\nFilled with His goodness, lost in His love.''',
+    numero: 51,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_052',
+    titre: 'Hold To God\'s Unchanging Hand',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Time is filled with swift transition,\nNaught of earth unmoved can stand,\nBuild your hopes on things eternal,\nHold to God's unchanging hand.\n\nRefrain:\nHold to God's unchanging hand,\nHold to God's unchanging hand;\nBuild your hopes on things eternal,\nHold to God's unchanging hand.\n\n2. Trust in Him who will not leave you,\nAltho' your earthly friends may fail;\nIf by earthly friends forsaken,\nStill to Him be true and faithful.\n\n3. Covet not this world's vain riches,\nThat so rapidly decay,\nSeek to gain the heavenly treasures,\nThey will never pass away.\n\n4. When your journey is completed,\nIf to God you have been true,\nFair and bright the home in glory,\nYour enraptured soul shall view.''',
+    numero: 52,
+    auteur: 'Jennie Wilson',
+  ),
+  Cantique(
+    id: 'only_believe_053',
+    titre: 'What A Friend We Have In Jesus',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. What a Friend we have in Jesus,\nAll our sins and griefs to bear!\nWhat a privilege to carry\nEverything to God in prayer!\nO what peace we often forfeit,\nO what needless pain we bear,\nAll because we do not carry\nEverything to God in prayer!\n\n2. Have we trials and temptations?\nIs there trouble anywhere?\nWe should never be discouraged,\nTake it to the Lord in prayer.\nCan we find a friend so faithful\nWho will all our sorrows share?\nJesus knows our every weakness,\nTake it to the Lord in prayer.\n\n3. Are we weak and heavy laden,\nCumbered with a load of care?\nPrecious Saviour, still our refuge,\nTake it to the Lord in prayer.\nDo thy friends despise, forsake thee?\nTake it to the Lord in prayer;\nIn His arms He'll take and shield thee,\nThou wilt find a solace there.''',
+    numero: 53,
+    auteur: 'Joseph M. Scriven',
+  ),
+  Cantique(
+    id: 'only_believe_054',
+    titre: 'Softly And Tenderly',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Softly and tenderly Jesus is calling,\nCalling for you and for me;\nSee, on the portals He's waiting and watching,\nWatching for you and for me.\n\nRefrain:\nCome home, come home,\nYe who are weary, come home;\nEarnestly, tenderly, Jesus is calling,\nCalling, O sinner, come home!\n\n2. Why should we tarry when Jesus is pleading,\nPleading for you and for me?\nWhy should we linger and heed not His mercies,\nMercies for you and for me?\n\n3. Time is now fleeting, the moments are passing,\nPassing from you and from me;\nShadows are gathering, deathbeds are coming,\nComing for you and for me.\n\n4. O for the wonderful love He has promised,\nPromised for you and for me;\nTho' we have sinned, He has mercy and pardon,\nPardon for you and for me.''',
+    numero: 54,
+    auteur: 'Will L. Thompson',
+  ),
+  Cantique(
+    id: 'only_believe_055',
+    titre: 'The Old Rugged Cross',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. On a hill far away stood an old rugged cross,\nThe emblem of suff'ring and shame;\nAnd I love that old cross where the dearest and best\nFor a world of lost sinners was slain.\n\nRefrain:\nSo I'll cherish the old rugged cross,\nTill my trophies at last I lay down;\nI will cling to the old rugged cross,\nAnd exchange it some day for a crown.\n\n2. Oh, that old rugged cross, so despised by the world,\nHas a wondrous attraction for me;\nFor the dear Lamb of God left His glory above\nTo bear it to dark Calvary.\n\n3. In the old rugged cross, stained with blood so divine,\nA wondrous beauty I see;\nFor 'twas on that old cross Jesus suffered and died,\nTo pardon and sanctify me.\n\n4. To the old rugged cross I will ever be true,\nIts shame and reproach gladly bear;\nThen He'll call me some day to my home far away,\nWhere His glory forever I'll share.''',
+    numero: 55,
+    auteur: 'George Bennard',
+  ),
+  Cantique(
+    id: 'only_believe_056',
+    titre: 'Count Your Blessings',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. When upon life's billows you are tempest-tossed,\nWhen you are discouraged, thinking all is lost,\nCount your many blessings, name them one by one,\nAnd it will surprise you what the Lord hath done.\n\nRefrain:\nCount your blessings, name them one by one;\nCount your blessings, see what God hath done;\nCount your blessings, name them one by one;\nCount your many blessings, see what God hath done.\n\n2. Are you ever burdened with a load of care?\nDoes the cross seem heavy you are called to bear?\nCount your many blessings, every doubt will fly,\nAnd you will be singing as the days go by.\n\n3. When you look at others with their lands and gold,\nThink that Christ has promised you His wealth untold;\nCount your many blessings, money cannot buy\nYour reward in heaven, nor your home on high.\n\n4. So, amid the conflict, whether great or small,\nDo not be discouraged, God is over all;\nCount your many blessings, angels will attend,\nHelp and comfort give you to your journey's end.''',
+    numero: 56,
+    auteur: 'Johnson Oatman, Jr.',
+  ),
+  Cantique(
+    id: 'only_believe_057',
+    titre: 'To God Be The Glory',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. To God be the glory, great things He hath done,\nSo loved He the world that He gave us His Son,\nWho yielded His life an atonement for sin,\nAnd opened the life-gate that all may go in.\n\nRefrain:\nPraise the Lord, praise the Lord,\nLet the earth hear His voice!\nPraise the Lord, praise the Lord,\nLet the people rejoice!\nO come to the Father, through Jesus the Son,\nAnd give Him the glory, great things He hath done.\n\n2. O perfect redemption, the purchase of blood,\nTo every believer the promise of God;\nThe vilest offender who truly believes,\nThat moment from Jesus a pardon receives.\n\n3. Great things He hath taught us, great things He hath done,\nAnd great our rejoicing through Jesus the Son;\nBut purer, and higher, and greater will be\nOur wonder, our transport, when Jesus we see.''',
+    numero: 57,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_058',
+    titre: 'Pass Me Not, O Gentle Saviour',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Pass me not, O gentle Saviour,\nHear my humble cry;\nWhile on others Thou art calling,\nDo not pass me by.\n\nRefrain:\nSaviour, Saviour, hear my humble cry;\nWhile on others Thou art calling,\nDo not pass me by.\n\n2. Let me at Thy throne of mercy\nFind a sweet relief;\nKneeling there in deep contrition,\nHelp my unbelief.\n\n3. Trusting only in Thy merit,\nWould I seek Thy face;\nHeal my wounded, broken spirit,\nSave me by Thy grace.\n\n4. Thou the Spring of all my comfort,\nMore than life to me,\nWhom have I on earth beside Thee?\nWhom in heav'n but Thee?''',
+    numero: 58,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_059',
+    titre: 'Is Not This The Land Of Beulah?',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I am dwelling on the mountain,\nWhere the golden sunlight shines,\nWhere the chilled breeze of winter never blows;\nFor I've left the lowland valley,\nWith its mists and dark designs,\nAnd I'm living where the living water flows.\n\nRefrain:\nIs not this the land of Beulah?\nIs not this the land of Canaan?\nWhere the flowers bloom forever,\nAnd the sun is always shining?\nYes, 'tis Beulah land, sweet Beulah land,\nWhere the living waters flow.\n\n2. I can hear the angels singing\nIn the sunny land above,\nWhere the redeemed ones in glory ever stand;\nAnd my soul is filled with gladness,\nAs I contemplate His love,\nWhile I'm dwelling in this fair and happy land.\n\n3. I have reached the land of corn and wine,\nAnd all its riches mine,\nHere the Lord has promised every good to give;\nI can feed on heavenly manna,\nDrink the fresh and living wine,\nAnd in fullness of His Spirit ever live.''',
+    numero: 59,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_060',
+    titre: 'Nearer, My God, To Thee',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Nearer, my God, to Thee, nearer to Thee!\nE'en though it be a cross that raiseth me,\nStill all my song shall be, nearer, my God, to Thee;\nNearer, my God, to Thee, nearer to Thee!\n\n2. Though like the wanderer, the sun gone down,\nDarkness be over me, my rest a stone;\nYet in my dreams I'd be nearer, my God, to Thee;\nNearer, my God, to Thee, nearer to Thee!\n\n3. There let the way appear, steps unto heav'n;\nAll that Thou sendest me, in mercy giv'n;\nAngels to beckon me nearer, my God, to Thee;\nNearer, my God, to Thee, nearer to Thee!\n\n4. Then, with my waking thoughts bright with Thy praise,\nOut of my stony griefs Bethel I'll raise;\nSo by my woes to be nearer, my God, to Thee;\nNearer, my God, to Thee, nearer to Thee!''',
+    numero: 60,
+    auteur: 'Sarah Flower Adams',
+  ),
+  Cantique(
+    id: 'only_believe_061',
+    titre: 'The Great Physician',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. The great Physician now is near,\nThe sympathizing Jesus;\nHe speaks the drooping heart to cheer,\nOh! hear the voice of Jesus.\n\nRefrain:\nSweetest note in seraph song,\nSweetest name on mortal tongue;\nSweetest carol ever sung,\nJesus, blessed Jesus.\n\n2. Your many sins are all forgiven,\nOh! hear the voice of Jesus;\nGo on your way in peace to heaven,\nAnd wear a crown with Jesus.\n\n3. All glory to the dying Lamb!\nI now believe in Jesus;\nI love the blessed Saviour's name,\nI love the name of Jesus.''',
+    numero: 61,
+    auteur: 'William Hunter',
+  ),
+  Cantique(
+    id: 'only_believe_062',
+    titre: 'Where He Leads Me',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I can hear my Saviour calling,\nI can hear my Saviour calling,\nI can hear my Saviour calling,\n"Take thy cross and follow, follow Me."\n\nRefrain:\nWhere He leads me I will follow,\nWhere He leads me I will follow,\nWhere He leads me I will follow,\nI'll go with Him, with Him all the way.\n\n2. I'll go with Him through the garden,\nI'll go with Him through the garden,\nI'll go with Him through the garden,\nI'll go with Him, with Him all the way.\n\n3. I'll go with Him through the judgment,\nI'll go with Him through the judgment,\nI'll go with Him through the judgment,\nI'll go with Him, with Him all the way.\n\n4. He will give me grace and glory,\nHe will give me grace and glory,\nHe will give me grace and glory,\nAnd go with me, with me all the way.''',
+    numero: 62,
+    auteur: 'E. S. Lorenz',
+  ),
+  Cantique(
+    id: 'only_believe_063',
+    titre: 'It Is Well With My Soul',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. When peace, like a river, attendeth my way,\nWhen sorrows like sea billows roll;\nWhatever my lot, Thou hast taught me to say,\nIt is well, it is well with my soul.\n\nRefrain:\nIt is well (it is well)\nWith my soul (with my soul),\nIt is well, it is well with my soul.\n\n2. Though Satan should buffet, though trials should come,\nLet this blest assurance control,\nThat Christ has regarded my helpless estate,\nAnd hath shed His own blood for my soul.\n\n3. My sin, oh, the bliss of this glorious thought!\nMy sin, not in part but the whole,\nIs nailed to the cross, and I bear it no more,\nPraise the Lord, praise the Lord, O my soul!\n\n4. And Lord, haste the day when my faith shall be sight,\nThe clouds be rolled back as a scroll;\nThe trump shall resound, and the Lord shall descend,\nEven so, it is well with my soul.''',
+    numero: 63,
+    auteur: 'Horatio Spafford',
+  ),
+  Cantique(
+    id: 'only_believe_064',
+    titre: 'I\'m Going That Way',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I've heard of a land of joy and peace and light,\nWhere dwell the redeemed, talk of Jesus and write;\nWhere no sorrow shall enter, no grief, no decay,\nAnd I'm going that way, yes, I'm going that way.\n\nRefrain:\nI'm going that way, I'm going that way,\nTo a city where Jesus is light of the day;\nI am singing His praise as I travel each day,\nAnd I'm going that way, yes, I'm going that way.\n\n2. The glorious path where the saints ever trod,\nIs leading me straight to the city of God;\nWhere the river of life flows so crystal and clear,\nAnd I'm going that way with my Saviour so dear.\n\n3. I'll sing of His grace while the moments speed by,\nI'm looking for Him to descend from the sky;\nWhen the troubles of life shall have all passed away,\nI'm going that way, yes, I'm going that way.''',
+    numero: 64,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_065',
+    titre: 'The Unclouded Day',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. O they tell me of a home far beyond the skies,\nO they tell me of a home far away;\nO they tell me of a home where no storm clouds rise,\nO they tell me of an unclouded day.\n\nRefrain:\nO the land of cloudless day,\nO the land of an unclouded sky;\nO they tell me of a home where no storm clouds rise,\nO they tell me of an unclouded day.\n\n2. O they tell me of a home where my friends have gone,\nO they tell me of that land far away,\nWhere the tree of life in its beauty blooms,\nAnd the thirsty shall thirst nevermore.\n\n3. O they tell me of a King in His beauty there,\nAnd they tell me that mine eyes shall behold\nWhere He sits on the throne that is whiter than snow,\nIn the city that is made of gold.''',
+    numero: 65,
+    auteur: 'J. K. Alwood',
+  ),
+  Cantique(
+    id: 'only_believe_066',
+    titre: 'Grace Greater Than Our Sin',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Marvelous grace of our loving Lord,\nGrace that exceeds our sin and our guilt!\nYonder on Calvary's mount outpoured,\nThere where the blood of the Lamb was spilt.\n\nRefrain:\nGrace, grace, God's grace,\nGrace that will pardon and cleanse within;\nGrace, grace, God's grace,\nGrace that is greater than all our sin!\n\n2. Sin and despair, like the sea-waves cold,\nThreaten the soul with infinite loss;\nGrace that is greater, yes, grace untold,\nPoints to the refuge, the mighty cross.\n\n3. Dark is the stain that we cannot hide,\nWhat can avail to wash it away?\nLook! There is flowing a crimson tide,\nWhiter than snow you may be today.''',
+    numero: 66,
+    auteur: 'Julia H. Johnston',
+  ),
+  Cantique(
+    id: 'only_believe_067',
+    titre: 'Old-Time Religion',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Give me that old-time religion,\nGive me that old-time religion,\nGive me that old-time religion,\nIt's good enough for me.\n\n2. It was good for Paul and Silas,\nIt was good for Paul and Silas,\nIt was good for Paul and Silas,\nAnd it's good enough for me.\n\n3. It will take us all to heaven,\nIt will take us all to heaven,\nIt will take us all to heaven,\nAnd it's good enough for me.\n\n4. It was good for the Prophet Daniel,\nIt was good for the Prophet Daniel,\nIt was good for the Prophet Daniel,\nAnd it's good enough for me.''',
+    numero: 67,
+    auteur: 'Traditionnel',
+  ),
+  Cantique(
+    id: 'only_believe_068',
+    titre: 'There Is Power In The Blood',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Would you be free from the burden of sin?\nThere's pow'r in the blood, pow'r in the blood;\nWould you o'er evil a victory win?\nThere's wonderful pow'r in the blood.\n\nRefrain:\nThere is pow'r, pow'r, wonder-working pow'r\nIn the blood of the Lamb;\nThere is pow'r, pow'r, wonder-working pow'r\nIn the precious blood of the Lamb.\n\n2. Would you be free from your passion and pride?\nThere's pow'r in the blood, pow'r in the blood;\nCome for a cleansing to Calvary's tide;\nThere's wonderful pow'r in the blood.\n\n3. Would you be whiter, much whiter than snow?\nThere's pow'r in the blood, pow'r in the blood;\nSin-stains are lost in its life-giving flow;\nThere's wonderful pow'r in the blood.''',
+    numero: 68,
+    auteur: 'Lewis E. Jones',
+  ),
+  Cantique(
+    id: 'only_believe_069',
+    titre: 'Just As I Am',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Just as I am, without one plea,\nBut that Thy blood was shed for me,\nAnd that Thou bid'st me come to Thee,\nO Lamb of God, I come, I come!\n\n2. Just as I am, and waiting not\nTo rid my soul of one dark blot,\nTo Thee whose blood can cleanse each spot,\nO Lamb of God, I come, I come!\n\n3. Just as I am, though tossed about\nWith many a conflict, many a doubt,\nFightings and fears within, without,\nO Lamb of God, I come, I come!\n\n4. Just as I am, Thou wilt receive,\nWilt welcome, pardon, cleanse, relieve;\nBecause Thy promise I believe,\nO Lamb of God, I come, I come!''',
+    numero: 69,
+    auteur: 'Charlotte Elliott',
+  ),
+  Cantique(
+    id: 'only_believe_070',
+    titre: 'He Abides',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I'm rejoicing night and day,\nAs I walk the narrow way,\nFor the hand of God in all my life I see;\nAnd the reason of my bliss,\nYes, the secret all is this:\nThe Comforter abides with me.\n\nRefrain:\nHe abides, He abides,\nHallelujah, He abides with me!\nI'm rejoicing night and day,\nAs I walk the narrow way,\nFor the Comforter abides with me.\n\n2. Once my heart was full of sin,\nOnce I had no peace within,\nTill I heard how Jesus died upon the tree;\nThen I fell before His feet,\nAnd He made my joy complete,\nFor the Comforter abides with me.\n\n3. He is with me everywhere,\nAnd He knows my every care,\nI'm as happy as a bird and just as free;\nFor the Spirit has control,\nAnd there's gladness in my soul,\nFor the Comforter abides with me.''',
+    numero: 70,
+    auteur: 'Herbert Buffum',
+  ),
+  Cantique(
+    id: 'only_believe_071',
+    titre: 'The Haven Of Rest',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. My soul in sad exile was out on the sea,\nSo burdened with sin and distressed,\nTill I heard a sweet voice saying, "Make Me your choice;"\nAnd I entered the Haven of Rest.\n\nRefrain:\nI've anchored my soul in the Haven of Rest,\nI'll sail the wide seas no more;\nThe tempest may sweep o'er the wild stormy deep,\nIn Jesus I'm safe evermore.\n\n2. I yielded my life to His tender control,\nAnd a heavenly peace filled my breast;\nThe billows of care cannot frighten my soul,\nFor I'm safe in the Haven of Rest.\n\n3. How precious the thought that we all may recline,\nLike John the beloved and blest,\nOn Jesus' own bosom where peace is divine,\nIn the sweet, blessed Haven of Rest.''',
+    numero: 71,
+    auteur: 'Henry L. Gilmour',
+  ),
+  Cantique(
+    id: 'only_believe_072',
+    titre: 'I Shall Not Be Moved',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Jesus is my Saviour, I shall not be moved;\nIn His love and favor, I shall not be moved,\nJust like a tree that's planted by the waters,\nI shall not be moved.\n\nRefrain:\nI shall not be, I shall not be moved;\nI shall not be, I shall not be moved;\nJust like a tree that's planted by the waters,\nI shall not be moved.\n\n2. In my Christ abiding, I shall not be moved;\nIn His love confiding, I shall not be moved,\nJust like a tree that's planted by the waters,\nI shall not be moved.\n\n3. Though the tempest rages, I shall not be moved;\nOn the Rock of Ages, I shall not be moved,\nJust like a tree that's planted by the waters,\nI shall not be moved.''',
+    numero: 72,
+    auteur: 'Traditionnel',
+  ),
+  Cantique(
+    id: 'only_believe_073',
+    titre: 'I Know It Was The Blood',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I know it was the blood,\nI know it was the blood,\nI know it was the blood for me;\nOne day when I was lost,\nHe died upon the cross,\nAnd I know it was the blood for me.\n\n2. They whipped Him up the hill,\nThey whipped Him up the hill,\nThey whipped Him up the hill for me;\nOne day when I was lost,\nHe died upon the cross,\nAnd I know it was the blood for me.\n\n3. He died upon the cross,\nHe died upon the cross,\nHe died upon the cross for me;\nOne day when I was lost,\nHe died upon the cross,\nAnd I know it was the blood for me.''',
+    numero: 73,
+    auteur: 'Traditionnel',
+  ),
+  Cantique(
+    id: 'only_believe_074',
+    titre: 'Near The Cross',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Jesus, keep me near the cross,\nThere a precious fountain\nFree to all, a healing stream\nFlows from Calvary's mountain.\n\nRefrain:\nIn the cross, in the cross,\nBe my glory ever;\nTill my raptured soul shall find\nRest beyond the river.\n\n2. Near the cross, a trembling soul,\nLove and mercy found me;\nThere the Bright and Morning Star\nSheds its beams around me.\n\n3. Near the cross! O Lamb of God,\nBring its scenes before me;\nHelp me walk from day to day,\nWith its shadows o'er me.''',
+    numero: 74,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_075',
+    titre: 'Revive Us Again',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. We praise Thee, O God!\nFor the Son of Thy love,\nFor Jesus Who died,\nAnd is now gone above.\n\nRefrain:\nHallelujah! Thine the glory.\nHallelujah! Amen.\nHallelujah! Thine the glory.\nRevive us again.\n\n2. We praise Thee, O God!\nFor Thy Spirit of light,\nWho has shown us our Saviour,\nAnd scattered our night.\n\n3. All glory and praise\nTo the Lamb that was slain,\nWho has borne all our sins,\nAnd has cleansed every stain.''',
+    numero: 75,
+    auteur: 'William P. Mackay',
+  ),
+  Cantique(
+    id: 'only_believe_076',
+    titre: 'The Lily Of The Valley',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I have found a Friend in Jesus, He's everything to me,\nHe's the fairest of ten thousand to my soul;\nThe Lily of the Valley, in Him alone I see\nAll I need to cleanse and make me fully whole.\nIn sorrow He's my comfort, in trouble He's my stay;\nHe tells me every care on Him to roll.\n\nRefrain:\nHe's the Lily of the Valley, the Bright and Morning Star,\nHe's the fairest of ten thousand to my soul.\n\n2. He all my grief has taken, and all my sorrows borne;\nIn temptation He's my strong and mighty tow'r;\nI have all for Him forsaken, and all my idols torn\nFrom my heart, and now He keeps me by His pow'r.\n\n3. He will never, never leave me, nor yet forsake me here,\nWhile I live by faith and do His blessed will;\nA wall of fire about me, I me have nothing to fear,\nWith His manna He my hungry soul shall fill.''',
+    numero: 76,
+    auteur: 'Charles W. Fry',
+  ),
+  Cantique(
+    id: 'only_believe_077',
+    titre: 'Where The Gates Swing Out Never',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Just a few more days to be filled with tears and praise,\nAnd to tell the old, old story till we die;\nThen the dark night will pass and the day will dawn at last,\nAnd we'll meet in that bright city in the sky.\n\nRefrain:\nWhere the gates swing out never, we'll be happy forever,\nIn that city where the light is the Lamb;\nNo more sickness or pain, we shall with Jesus reign,\nWhere the gates swing out never, praise His Name!\n\n2. Just a few more trials here, just a few more lonely tears,\nThen we'll lay our heavy burdens down at last;\nAnd we'll see Jesus' face in that holy, happy place,\nWhen the storms of this life are all past.''',
+    numero: 77,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_078',
+    titre: 'He Lives',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I serve a risen Saviour, He's in the world today;\nI know that He is living, whatever men may say;\nI see His hand of mercy, I hear His voice of cheer,\nAnd just the time I need Him He's always near.\n\nRefrain:\nHe lives, He lives, Christ Jesus lives today!\nHe walks with me and talks with me along life's narrow way.\nHe lives, He lives, salvation to impart!\nYou ask me how I know He lives?\nHe lives within my heart.\n\n2. In all the world around me I see His loving care,\nAnd though my heart grows weary I never will despair;\nI know that He is leading, through all the stormy blast,\nThe day of His appearing will come at last.\n\n3. Rejoice, rejoice, O Christian, lift up your voice and sing\nEternal hallelujahs to Jesus Christ the King!\nThe Hope of all who seek Him, the Help of all who find,\nNone other is so loving, so good and kind.''',
+    numero: 78,
+    auteur: 'A. H. Ackley',
+  ),
+  Cantique(
+    id: 'only_believe_079',
+    titre: 'At The Cross',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Alas! and did my Saviour bleed,\nAnd did my Sovereign die?\nWould He devote that sacred head\nFor such a worm as I?\n\nRefrain:\nAt the cross, at the cross where I first saw the light,\nAnd the burden of my heart rolled away,\nIt was there by faith I received my sight,\nAnd now I am happy all the day!\n\n2. Was it for crimes that I had done\nHe groaned upon the tree?\nAmazing pity! grace unknown!\nAnd love beyond degree!\n\n3. Well might the sun in darkness hide,\nAnd shut his glories in,\nWhen Christ, the mighty Maker died,\nFor man the creature's sin.''',
+    numero: 79,
+    auteur: 'Isaac Watts',
+  ),
+  Cantique(
+    id: 'only_believe_080',
+    titre: 'Is My Name Written There?',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Lord, I care not for riches, neither silver nor gold;\nI would make sure of heaven, I would enter the fold;\nIn the book of Thy kingdom, with its pages so fair,\nTell me, Jesus, my Saviour, is my name written there?\n\nRefrain:\nIs my name written there,\nOn the page white and fair?\nIn the book of Thy kingdom,\nIs my name written there?\n\n2. Lord, my sins were as scarlet, like the crimson in dye,\nBut the blood of Atonement has washed them away;\nAnd Thy promise is written in the pages of light,\n"Though your sins be as scarlet, I will make them as snow."\n\n3. Oh, that beautiful city, with its mansions of light,\nWith its glorified beings, in pure garments of white;\nWhere no evil oppresses, and no sin enters in,\nWhere the Saviour in glory forever shall reign.''',
+    numero: 80,
+    auteur: 'Mary A. Kidder',
+  ),
+  Cantique(
+    id: 'only_believe_081',
+    titre: 'There Is A Fountain',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. There is a fountain filled with blood\nDrawn from Immanuel's veins;\nAnd sinners plunged beneath that flood\nLose all their guilty stains.\n\n2. The dying thief rejoiced to see\nThat fountain in his day;\nAnd there may I, though vile as he,\nWash all my sins away.\n\n3. Dear dying Lamb, Thy precious blood\nShall never lose its pow'r,\nTill all the ransomed church of God\nBe saved to sin no more.\n\n4. E'er since, by faith, I saw the stream\nThy flowing wounds supply,\nRedeeming love has been my theme,\nAnd shall be till I die.''',
+    numero: 81,
+    auteur: 'William Cowper',
+  ),
+  Cantique(
+    id: 'only_believe_082',
+    titre: 'Glory To His Name',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Down at the cross where my Saviour died,\nDown where for cleansing from sin I cried,\nThere to my heart was the blood applied;\nGlory to His name!\n\nRefrain:\nGlory to His name,\nGlory to His name;\nThere to my heart was the blood applied;\nGlory to His name!\n\n2. I am so wondrously saved from sin,\nJesus so sweetly abides within;\nThere at the cross where He took me in;\nGlory to His name!\n\n3. Oh, precious fountain that saves from sin,\nI am so glad I have entered in;\nHere Jesus saves me and keeps me clean;\nGlory to His name!''',
+    numero: 82,
+    auteur: 'Elisha Hoffman',
+  ),
+  Cantique(
+    id: 'only_believe_083',
+    titre: 'The Way Of The Cross Leads Home',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I must needs go home by the way of the cross,\nThere's no other way but this;\nI shall ne'er get sight of the gates of light,\nIf the way of the cross I miss.\n\nRefrain:\nThe way of the cross leads home,\nThe way of the cross leads home;\nIt is sweet to know as I onward go,\nThe way of the cross leads home.\n\n2. I must needs go on in the blood-sprinkled way,\nThe path that the Saviour trod,\nIf I ever climb to the heights sublime,\nWhere the soul is at home with God.\n\n3. Then I'll bid farewell to the way of the world,\nTo walk in the narrow way;\nFor my Lord will lead till the path shall end\nIn the light of a perfect day.''',
+    numero: 83,
+    auteur: 'Jessie Brown Pounds',
+  ),
+  Cantique(
+    id: 'only_believe_084',
+    titre: 'Blessed Be The Name',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. All praise to Him who dwells in bliss,\nWho made the world and all that is;\nTo Him who saved us from distress,\nBlessed be the name of the Lord!\n\nRefrain:\nBlessed be the name, blessed be the name,\nBlessed be the name of the Lord!\nBlessed be the name, blessed be the name,\nBlessed be the name of the Lord!\n\n2. His name shall be the Counsellor,\nThe Mighty Prince of Peace is He;\nHe ruleth over land and sea,\nBlessed be the name of the Lord!\n\n3. I'll praise my Maker with my breath,\nAnd when my voice is lost in death,\nPraise shall employ my nobler pow'rs,\nBlessed be the name of the Lord!''',
+    numero: 84,
+    auteur: 'William H. Clark',
+  ),
+  Cantique(
+    id: 'only_believe_085',
+    titre: 'What A Day That Will Be',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. There is coming a day when no heartaches shall come,\nNo more clouds in the sky, no more tears to dim the eye;\nAll is peace forevermore on that happy golden shore,\nWhat a day, glorious day that will be!\n\nRefrain:\nWhat a day that will be when my Jesus I shall see,\nAnd I look upon His face, the One who saved me by His grace;\nWhen He takes me by the hand and leads me through the Promised Land,\nWhat a day, glorious day that will be!\n\n2. There'll be no sorrow there, no more burdens to bear,\nNo more sickness, no pain, no more parting over there;\nAnd forever I will be with the One who died for me,\nWhat a day, glorious day that will be!''',
+    numero: 85,
+    auteur: 'Jim Hill',
+  ),
+  Cantique(
+    id: 'only_believe_086',
+    titre: 'Looking To Thee',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Thou art my portion, O Lord, my desire;\nFill me with power and holy pure fire;\nGrant me Thy presence wherever I go,\nLooking to Thee in this world here below.\n\nRefrain:\nLooking to Thee, looking to Thee,\nSaviour Divine, I am looking to Thee;\nGuiding my steps through the night and the day,\nKeep me from falling along life's rough way.\n\n2. When I am weary and heavy with care,\nThou art my comfort, Thou answerest prayer;\nStrength for my weakness Thou freely wilt give,\nLooking to Thee I am happy to live.''',
+    numero: 86,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_087',
+    titre: 'Jesus Paid It All',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I hear the Saviour say,\n"Thy strength indeed is small;\nChild of weakness, watch and pray,\nFind in Me thine all in all."\n\nRefrain:\nJesus paid it all,\nAll to Him I owe;\nSin had left a crimson stain,\nHe washed it white as snow.\n\n2. Lord, now indeed I find\nThy pow'r, and Thine alone,\nCan change the leper's spots\nAnd melt the heart of stone.\n\n3. For nothing good have I\nWhereby Thy grace to claim;\nI'll wash my garments white\nIn the blood of Calv'ry's Lamb.''',
+    numero: 87,
+    auteur: 'Elvina M. Hall',
+  ),
+  Cantique(
+    id: 'only_believe_088',
+    titre: 'When The Roll Is Called Up Yonder',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. When the trumpet of the Lord shall sound, and time shall be no more,\nAnd the morning breaks, eternal, bright and fair;\nWhen the saved of earth shall gather over on the other shore,\nAnd the roll is called up yonder, I'll be there.\n\nRefrain:\nWhen the roll is called up yonder,\nWhen the roll is called up yonder,\nWhen the roll is called up yonder,\nWhen the roll is called up yonder, I'll be there.\n\n2. On that bright and cloudless morning when the dead in Christ shall rise,\nAnd the glory of His resurrection share;\nWhen His chosen ones shall gather to their home beyond the skies,\nAnd the roll is called up yonder, I'll be there.\n\n3. Let us labor for the Master from the dawn till setting sun,\nLet us talk of all His wondrous love and care;\nThen when all of life is over, and our work on earth is done,\nAnd the roll is called up yonder, I'll be there.''',
+    numero: 88,
+    auteur: 'James M. Black',
+  ),
+  Cantique(
+    id: 'only_believe_089',
+    titre: 'Redeemed',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Redeemed, how I love to proclaim it!\nRedeemed by the blood of the Lamb;\nRedeemed through His infinite mercy,\nHis child, and forever, I am.\n\nRefrain:\nRedeemed, redeemed,\nRedeemed by the blood of the Lamb;\nRedeemed, redeemed,\nHis child, and forever, I am.\n\n2. Redeemed, and so happy in Jesus,\nNo language my rapture can tell;\nI know that the light of His presence\nWith me doth continually dwell.\n\n3. I think of my blessed Redeemer,\nI think of Him all the day long;\nI sing, for I cannot be silent;\nHis love is the theme of my song.''',
+    numero: 89,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_090',
+    titre: 'He Set Me Free',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Once I was bound by the chains of my sin,\nDarkness and sorrow were dwelling within;\nThen Jesus came and He broke every chain,\nNow I am living and free once again.\n\nRefrain:\nHe set me free, yes, He set me free,\nHe broke the bonds of my prison for me;\nI'm glory-bound for the kingdom above,\nWalking each day in the light of His love.\n\n2. Now I am walking the heaven-bound way,\nPraising my Lord as I travel each day;\nNo more in bondage or sorrow to dwell,\nHe set me free, and with me all is well.''',
+    numero: 90,
+    auteur: 'Albert E. Brumley',
+  ),
+  Cantique(
+    id: 'only_believe_091',
+    titre: 'I Will Sing Of My Redeemer',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I will sing of my Redeemer,\nAnd His wondrous love to me;\nOn the cruel cross He suffered,\nFrom the curse to set me free.\n\nRefrain:\nSing, oh, sing of my Redeemer,\nWith His blood He purchased me;\nOn the cross He sealed my pardon,\nPaid the debt, and made me free.\n\n2. I will tell the wondrous story,\nHow my lost estate to save,\nIn His boundless love and mercy,\nHe the ransom freely gave.\n\n3. I will sing of my Redeemer,\nAnd His heavenly love for me;\nHe from death to life hath brought me,\nSon of God, with Him to be.''',
+    numero: 91,
+    auteur: 'Philip P. Bliss',
+  ),
+  Cantique(
+    id: 'only_believe_092',
+    titre: 'Close To Thee',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Thou, my everlasting Portion,\nMore than friend or life to me,\nAll along my pilgrim journey,\nSaviour, let me walk with Thee.\n\nRefrain:\nClose to Thee, close to Thee,\nClose to Thee, close to Thee;\nAll along my pilgrim journey,\nSaviour, let me walk with Thee.\n\n2. Not for ease or worldly pleasure,\nNor for fame my prayer shall be;\nGladly will I toil and suffer,\nOnly let me walk with Thee.\n\n3. Lead me through the vale of shadows,\nBear me o'er life's fitful sea;\nThen the gate of life eternal\nMay I enter, Lord, with Thee.''',
+    numero: 92,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_093',
+    titre: 'I\'ll Fly Away',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Some glad morning when this life is o'er,\nI'll fly away;\nTo a home on God's celestial shore,\nI'll fly away.\n\nRefrain:\nI'll fly away, O Glory,\nI'll fly away;\nWhen I die, hallelujah, by and by,\nI'll fly away.\n\n2. When the shadows of this life have grown,\nI'll fly away;\nLike a bird from prison bars has flown,\nI'll fly away.\n\n3. Just a few more weary days and then,\nI'll fly away;\nTo a land where joy shall never end,\nI'll fly away.''',
+    numero: 93,
+    auteur: 'Albert E. Brumley',
+  ),
+  Cantique(
+    id: 'only_believe_094',
+    titre: 'The Great Judgment Morning',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I dreamed that the great judgment morning\nHad dawned, and the trumpet had blown;\nI dreamed that the nations had gathered\nTo judgment before the white throne;\nFrom the throne came a bright shining angel,\nAnd stood on the land and the sea,\nAnd swore with his hand raised to Heaven,\nThat time was no longer to be.\n\nRefrain:\nAnd oh, what a weeping and wailing,\nAs the lost were told of their fate;\nThey cried for the rocks and the mountains,\nThey prayed, but their prayer was too late.\n\n2. The rich man was there, but his money\nHad melted and vanished away;\nA pauper he stood at the judgment,\nHis debts were too heavy to pay.\n\n3. The moral man came to the judgment,\nBut self-righteous rags would not do;\nThe men who had crucified Jesus\nHad passed as the moralist through.''',
+    numero: 94,
+    auteur: 'Bertram H. Shadduck',
+  ),
+  Cantique(
+    id: 'only_believe_095',
+    titre: 'Where The Roses Never Fade',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I am going to a city,\nWhere the streets with gold are laid;\nWhere the tree of life is blooming,\nAnd the roses never fade.\n\nRefrain:\nHere they bloom but for a season,\nThen their beauty doth decay;\nI am going to a city,\nWhere the roses never fade.\n\n2. Loved ones gone to be with Jesus,\nIn their robes of white arrayed;\nThey are waiting there to greet me,\nWhere the roses never fade.''',
+    numero: 95,
+    auteur: 'Jack and Elsie Osborn',
+  ),
+  Cantique(
+    id: 'only_believe_096',
+    titre: 'I Am Bound For The Promised Land',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. On Jordan's stormy banks I stand,\nAnd cast a wishful eye\nTo Canaan's fair and happy land,\nWhere my possessions lie.\n\nRefrain:\nI am bound for the promised land,\nI am bound for the promised land;\nOh, who will come and go with me?\nI am bound for the promised land.\n\n2. O'er all those wide extended plains\nShines one eternal day;\nThere God the Son forever reigns,\nAnd sweeps the night away.\n\n3. When shall I reach that happy place,\nAnd be forever blest?\nWhen shall I see my Father's face,\nAnd in His bosom rest?''',
+    numero: 96,
+    auteur: 'Samuel Stennett',
+  ),
+  Cantique(
+    id: 'only_believe_097',
+    titre: 'Take The Name Of Jesus With You',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Take the name of Jesus with you,\nChild of sorrow and of woe;\nIt will joy and comfort give you,\nTake it then where'er you go.\n\nRefrain:\nPrecious name, O how sweet!\nHope of earth and joy of heav'n;\nPrecious name, O how sweet!\nHope of earth and joy of heav'n.\n\n2. Take the name of Jesus ever,\nAs a shield from every snare;\nIf temptations round you gather,\nBreathe His holy name in prayer.\n\n3. O the precious name of Jesus!\nHow it thrills our souls with joy,\nWhen His loving arms receive us,\nAnd His songs our tongues employ!''',
+    numero: 97,
+    auteur: 'Lydia Baxter',
+  ),
+  Cantique(
+    id: 'only_believe_098',
+    titre: 'Whispering Hope',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Soft as the voice of an angel,\nWhispering a message of peace,\nTokens of hope for the weary,\nBidding all sorrow to cease.\n\nRefrain:\nWhispering hope, O how welcome thy voice,\nMaking my heart in its sorrow rejoice!\n\n2. If in the dusk of the twilight,\nDim be the region afar,\nWill not the deepening darkness\nBrighten the shimmering star?\n\n3. Hope as an anchor so steadfast,\nRendeth the dark veil in twain,\nLooking beyond to the glory,\nWhere with the Lord we shall reign.''',
+    numero: 98,
+    auteur: 'Septimus Winner',
+  ),
+  Cantique(
+    id: 'only_believe_099',
+    titre: 'Room At The Cross For You',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. The cross upon which Jesus died\nIs a shelter in which we can hide;\nAnd its grace so free is sufficient for thee,\nAnd its deep clear stream is a tide.\n\nRefrain:\nThere's room at the cross for you,\nThere's room at the cross for you;\nThough millions have come, there's still room for one,\nYes, there's room at the cross for you.\n\n2. Though millions have found at the cross\nA salvation from sorrow and loss,\nThe Savior still waits to open the gates,\nAnd to cleanse you from all of your dross.''',
+    numero: 99,
+    auteur: 'Ira Stanphill',
+  ),
+  Cantique(
+    id: 'only_believe_100',
+    titre: 'The Meeting In The Air',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. You've heard of little Moses in the bulrush,\nYou've heard of fearlessness of David's sling,\nYou've heard of Daniel in the den of lions,\nAnd the story of the great and mighty King.\nBut I'm gonna tell you 'bout a meeting\nThat is coming by and by,\nWhere the saints of God will gather in the air.\n\nRefrain:\nThere's going to be a meeting in the air,\nIn the sweet, sweet by and by;\nI'm going to meet you, meet you over there,\nIn that home beyond the sky;\nSuch singing you have never heard before,\nAs the redeemed ones gather on that shore;\nWe'll be with Jesus forevermore,\nAt the meeting in the air.\n\n2. There'll be no weeping, no sorrow at that meeting,\nNo broken hearts, no farewell tears to shed;\nFor we'll be transformed in the twinkling of an eye,\nAnd we'll rise to meet our Saviour in the sky.''',
+    numero: 100,
+    auteur: 'May Taylor Roberts',
+  ),
+
+  Cantique(
+    id: 'only_believe_101',
+    titre: 'Standing On The Promises',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Standing on the promises of Christ my King,\nThrough eternal ages let His praises ring;\nGlory in the highest, I will shout and sing,\nStanding on the promises of God.\n\nRefrain:\nStanding, standing,\nStanding on the promises of God my Saviour;\nStanding, standing,\nI'm standing on the promises of God.\n\n2. Standing on the promises that cannot fail,\nWhen the howling storms of doubt and fear assail,\nBy the living Word of God I shall prevail,\nStanding on the promises of God.\n\n3. Standing on the promises of Christ the Lord,\nBound to Him eternally by love's strong cord,\nOvercoming daily with the Spirit's sword,\nStanding on the promises of God.''',
+    numero: 101,
+    auteur: 'Russell K. Carter',
+  ),
+  Cantique(
+    id: 'only_believe_102',
+    titre: 'Power In The Blood',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Would you be free from the burden of sin?\nThere's pow'r in the blood, pow'r in the blood;\nWould you o'er evil a victory win?\nThere's wonderful pow'r in the blood.\n\nRefrain:\nThere is pow'r, pow'r, wonder-working pow'r\nIn the blood of the Lamb;\nThere is pow'r, pow'r, wonder-working pow'r\nIn the precious blood of the Lamb.\n\n2. Would you be free from your passion and pride?\nThere's pow'r in the blood, pow'r in the blood;\nCome for a cleansing to Calvary's tide;\nThere's wonderful pow'r in the blood.\n\n3. Would you be whiter, much whiter than snow?\nThere's pow'r in the blood, pow'r in the blood;\nSin-stains are lost in its life-giving flow;\nThere's wonderful pow'r in the blood.''',
+    numero: 102,
+    auteur: 'Lewis E. Jones',
+  ),
+  Cantique(
+    id: 'only_believe_103',
+    titre: 'Love Lifted Me',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I was sinking deep in sin, far from the peaceful shore,\nVery deeply stained within, sinking to rise no more;\nBut the Master of the sea heard my despairing cry,\nFrom the waters lifted me, now safe am I.\n\nRefrain:\nLove lifted me! Love lifted me!\nWhen nothing else could help, Love lifted me.\nLove lifted me! Love lifted me!\nWhen nothing else could help, Love lifted me.\n\n2. All my heart to Him I give, ever to Him I'll cling,\nIn His blessed presence live, ever His praises sing.\nLove so mighty and so true merits my soul's best songs;\nFaithful, loving service, too, to Him belongs.\n\n3. Souls in danger, look above, Jesus completely saves;\nHe will lift you by His love out of the angry waves.\nHe's the Master of the sea, billows His will obey;\nHe your Saviour wants to be, be saved today.''',
+    numero: 103,
+    auteur: 'James Rowe',
+  ),
+  Cantique(
+    id: 'only_believe_104',
+    titre: 'Where The Redner Flows',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. There is a place of quiet rest,\nNear to the heart of God;\nA place where sin cannot molest,\nNear to the heart of God.\n\nRefrain:\nO Jesus, blest Redeemer,\nSent from the heart of God,\nHold us who wait before Thee\nNear to the heart of God.\n\n2. There is a place of comfort sweet,\nNear to the heart of God;\nA place where we our Saviour meet,\nNear to the heart of God.\n\n3. There is a place of full release,\nNear to the heart of God;\nA place where all is joy and peace,\nNear to the heart of God.''',
+    numero: 104,
+    auteur: 'Cleland B. McAfee',
+  ),
+  Cantique(
+    id: 'only_believe_105',
+    titre: 'When We All Get To Heaven',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Sing the wondrous love of Jesus,\nSing His mercy and His grace;\nIn the mansions bright and blessed\nHe'll prepare for us a place.\n\nRefrain:\nWhen we all get to heaven,\nWhat a day of rejoicing that will be!\nWhen we all see Jesus,\nWe'll sing and shout the victory!\n\n2. While we walk the pilgrim pathway,\nClouds may overcast the sky;\nBut when traveling days are over,\nNot a shadow, not a sigh.\n\n3. Let us then be true and faithful,\nTrusting, serving every day;\nJust one glimpse of Him in glory\nWill the toils of life repay.''',
+    numero: 105,
+    auteur: 'Eliza E. Hewitt',
+  ),
+  Cantique(
+    id: 'only_believe_106',
+    titre: 'Victory In Jesus',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I heard an old, old story, how a Saviour came from glory,\nHow He gave His life on Calvary to save a wretch like me;\nI heard about His groaning, of His precious blood's atoning,\nThen I repented of my sins and won the victory.\n\nRefrain:\nO victory in Jesus, my Saviour forever!\nHe sought me and bought me with His redeeming blood;\nHe loved me ere I knew Him, and all my love is due Him;\nHe plunged me to victory beneath the cleansing flood.\n\n2. I heard about His healing, of His cleansing pow'r revealing,\nHow He made the lame to walk again and caused the blind to see;\nAnd then I cried, "Dear Jesus, come and heal my broken spirit,"\nAnd somehow Jesus came and brought to me the victory.\n\n3. I heard about a mansion He has built for me in glory,\nAnd I heard about the streets of gold beyond the crystal sea;\nAbout the angels singing and the old redemption story,\nAnd some sweet day I'll sing up there the song of victory.''',
+    numero: 106,
+    auteur: 'E. M. Bartlett',
+  ),
+  Cantique(
+    id: 'only_believe_107',
+    titre: 'Sweet By And By',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. There's a land that is fairer than day,\nAnd by faith we can see it afar;\nFor the Father waits over the way\nTo prepare us a dwelling place there.\n\nRefrain:\nIn the sweet by and by,\nWe shall meet on that beautiful shore;\nIn the sweet by and by,\nWe shall meet on that beautiful shore.\n\n2. We shall sing on that beautiful shore\nThe melodious songs of the blest;\nAnd our spirits shall sorrow no more,\nNot a sigh for the blessing of rest.\n\n3. To our bountiful Father above,\nWe will offer our tribute of praise\nFor the glorious gift of His love\nAnd the blessings that hallow our days.''',
+    numero: 107,
+    auteur: 'Sanford F. Bennett',
+  ),
+  Cantique(
+    id: 'only_believe_108',
+    titre: 'Leaning On The Everlasting Arms',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. What a fellowship, what a joy divine,\nLeaning on the everlasting arms;\nWhat a blessedness, what a peace is mine,\nLeaning on the everlasting arms.\n\nRefrain:\nLeaning, leaning, safe and secure from all alarms;\nLeaning, leaning, leaning on the everlasting arms.\n\n2. O how sweet to walk in this pilgrim way,\nLeaning on the everlasting arms;\nO how bright the path grows from day to day,\nLeaning on the everlasting arms.\n\n3. What have I to dread, what have I to fear,\nLeaning on the everlasting arms?\nI have blessed peace with my Lord so near,\nLeaning on the everlasting arms.''',
+    numero: 108,
+    auteur: 'Elisha A. Hoffman',
+  ),
+  Cantique(
+    id: 'only_believe_109',
+    titre: 'I Am Thine, O Lord',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I am Thine, O Lord, I have heard Thy voice,\nAnd it told Thy love to me;\nBut I long to rise in the arms of faith,\nAnd be closer drawn to Thee.\n\nRefrain:\nDraw me nearer, nearer, blessed Lord,\nTo the cross where Thou hast died;\nDraw me nearer, nearer, blessed Lord,\nTo Thy precious, bleeding side.\n\n2. Consecrate me now to Thy service, Lord,\nBy the pow'r of grace divine;\nLet my soul look up with a steadfast hope,\nAnd my will be lost in Thine.\n\n3. O the pure delight of a single hour\nThat before Thy throne I spend,\nWhen I kneel in prayer, and with Thee, my God,\nI commune as friend with friend!''',
+    numero: 109,
+    auteur: 'Fanny Crosby',
+  ),
+  Cantique(
+    id: 'only_believe_110',
+    titre: 'Rock Of Ages',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Rock of Ages, cleft for me,\nLet me hide myself in Thee;\nLet the water and the blood,\nFrom Thy wounded side which flowed,\nBe of sin the double cure,\nSave from wrath and make me pure.\n\n2. Not the labor of my hands\nCan fulfill Thy law's demands;\nCould my zeal no respite know,\nCould my tears forever flow,\nAll for sin could not atone;\nThou must save, and Thou alone.\n\n3. Nothing in my hand I bring,\nSimply to Thy cross I cling;\nNaked, come to Thee for dress;\nHelpless, look to Thee for grace;\nFoul, I to the fountain fly;\nWash me, Saviour, or I die.''',
+    numero: 110,
+    auteur: 'Augustus M. Toplady',
+  ),
+  Cantique(
+    id: 'only_believe_111',
+    titre: 'Crown Him With Many Crowns',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Crown Him with many crowns,\nThe Lamb upon His throne;\nHark! how the heavenly anthem drowns\nAll music but its own;\nAwake, my soul, and sing\nOf Him who died for thee,\nAnd hail Him as thy matchless King\nThrough all eternity.\n\n2. Crown Him the Lord of love;\nBehold His hands and side,\nRich wounds, yet visible above,\nIn beauty glorified;\nNo angel in the sky\nCan fully bear that sight,\nBut downward bends his burning eye\nAt mysteries so bright.\n\n3. Crown Him the Lord of life,\nWho triumphed o'er the grave,\nAnd rose victorious in the strife\nFor those He came to save;\nHis glories now we sing\nWho died, and rose on high,\nWho died, eternal life to bring,\nAnd lives, that death may die.''',
+    numero: 111,
+    auteur: 'Matthew Bridges',
+  ),
+  Cantique(
+    id: 'only_believe_112',
+    titre: 'Stand Up, Stand Up For Jesus',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Stand up, stand up for Jesus,\nYe soldiers of the cross;\nLift high His royal banner,\nIt must not suffer loss;\nFrom victory unto victory\nHis army shall He lead,\nTill every foe is vanquished,\nAnd Christ is Lord indeed.\n\n2. Stand up, stand up for Jesus,\nThe trumpet call obey;\nForth to the mighty conflict,\nIn this His glorious day;\nYe that are men now serve Him\nAgainst unnumbered foes;\nLet courage rise with danger,\nAnd strength to strength oppose.\n\n3. Stand up, stand up for Jesus,\nStand in His strength alone;\nThe arm of flesh will fail you,\nYe dare not trust your own;\nPut on the Gospel armor,\nEach piece put on with prayer;\nWhere duty calls, or danger,\nBe never wanting there.''',
+    numero: 112,
+    auteur: 'George Duffield Jr.',
+  ),
+  Cantique(
+    id: 'only_believe_113',
+    titre: 'When The Roll Is Called',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. When the trumpet of the Lord shall sound, and time shall be no more,\nAnd the morning breaks, eternal, bright and fair;\nWhen the saved of earth shall gather over on the other shore,\nAnd the roll is called up yonder, I'll be there.\n\nRefrain:\nWhen the roll is called up yonder,\nWhen the roll is called up yonder,\nWhen the roll is called up yonder,\nWhen the roll is called up yonder, I'll be there.\n\n2. On that bright and cloudless morning when the dead in Christ shall rise,\nAnd the glory of His resurrection share;\nWhen His chosen ones shall gather to their home beyond the skies,\nAnd the roll is called up yonder, I'll be there.''',
+    numero: 113,
+    auteur: 'James M. Black',
+  ),
+  Cantique(
+    id: 'only_believe_114',
+    titre: 'Holy, Holy, Holy',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Holy, holy, holy! Lord God Almighty!\nEarly in the morning our song shall rise to Thee;\nHoly, holy, holy, merciful and mighty!\nGod in three Persons, blessed Trinity!\n\n2. Holy, holy, holy! All the saints adore Thee,\nCasting down their golden crowns around the glassy sea;\nCherubim and seraphim falling down before Thee,\nWhich wert, and art, and evermore shalt be.\n\n3. Holy, holy, holy! Though the darkness hide Thee,\nThough the eye of sinful man Thy glory may not see;\nOnly Thou art holy; there is none beside Thee,\nPerfect in pow'r, in love, and purity.''',
+    numero: 114,
+    auteur: 'Reginald Heber',
+  ),
+  Cantique(
+    id: 'only_believe_115',
+    titre: 'Fairest Lord Jesus',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Fairest Lord Jesus, Ruler of all nature,\nO Thou of God and man the Son,\nThee will I cherish, Thee will I honor,\nThou, my soul's glory, joy, and crown.\n\n2. Fair are the meadows, fairer still the woodlands,\nRobed in the blooming garb of spring;\nJesus is fairer, Jesus is purer,\nWho makes the woeful heart to sing.\n\n3. Fair is the sunshine, fairer still the moonlight,\nAnd all the twinkling starry host;\nJesus shines brighter, Jesus shines purer\nThan all the angels heaven can boast.''',
+    numero: 115,
+    auteur: 'Traditionnel allemand',
+  ),
+  Cantique(
+    id: 'only_believe_116',
+    titre: 'Take Time To Be Holy',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Take time to be holy, speak oft with thy Lord;\nAbide in Him always, and feed on His Word.\nMake friends of God's children, help those who are weak,\nIn forgetting in nothing His blessing to seek.\n\n2. Take time to be holy, the world rushes on;\nSpend much time in secret, with Jesus alone.\nBy looking to Jesus, like Him thou shalt be;\nThy friends in thy conduct His likeness shall see.\n\n3. Take time to be holy, let Him be thy Guide;\nAnd run not before Him, whatever betide.\nIn joy or in sorrow, still follow the Lord,\nAnd, looking to Jesus, still trust in His Word.''',
+    numero: 116,
+    auteur: 'William D. Longstaff',
+  ),
+  Cantique(
+    id: 'only_believe_117',
+    titre: 'He Leadeth Me',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. He leadeth me: O blessed thought!\nO words with heavenly comfort fraught!\nWhate'er I do, where'er I be,\nStill 'tis God's hand that leadeth me.\n\nRefrain:\nHe leadeth me, He leadeth me,\nBy His own hand He leadeth me;\nHis faithful follower I would be,\nFor by His hand He leadeth me.\n\n2. Sometimes 'mid scenes of deepest gloom,\nSometimes where Eden's bowers bloom,\nBy waters still, o'er troubled sea,\nStill 'tis His hand that leadeth me.\n\n3. Lord, I would clasp Thy hand in mine,\nNor ever murmur nor repine;\nContent, whatever lot I see,\nSince 'tis my God that leadeth me.''',
+    numero: 117,
+    auteur: 'Joseph H. Gilmore',
+  ),
+  Cantique(
+    id: 'only_believe_118',
+    titre: 'The Solid Rock',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. My hope is built on nothing less\nThan Jesus' blood and righteousness;\nI dare not trust the sweetest frame,\nBut wholly lean on Jesus' name.\n\nRefrain:\nOn Christ, the solid Rock, I stand;\nAll other ground is sinking sand,\nAll other ground is sinking sand.\n\n2. When darkness seems to hide His face,\nI rest on His unchanging grace;\nIn every high and stormy gale,\nMy anchor holds within the veil.\n\n3. His oath, His covenant, His blood\nSupport me in the whelming flood;\nWhen all around my soul gives way,\nHe then is all my hope and stay.''',
+    numero: 118,
+    auteur: 'Edward Mote',
+  ),
+  Cantique(
+    id: 'only_believe_119',
+    titre: 'Come Thou Fount Of Every Blessing',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Come, Thou Fount of every blessing,\nTune my heart to sing Thy grace;\nStreams of mercy, never ceasing,\nCall for songs of loudest praise.\nTeach me some melodious sonnet,\nSung by flaming tongues above;\nPraise the mount! I'm fixed upon it,\nMount of Thy redeeming love.\n\n2. Here I raise my Ebenezer;\nHither by Thy help I'm come;\nAnd I hope, by Thy good pleasure,\nSafely to arrive at home.\nJesus sought me when a stranger,\nWandering from the fold of God;\nHe, to rescue me from danger,\nInterposed His precious blood.\n\n3. O to grace how great a debtor\nDaily I'm constrained to be!\nLet Thy goodness, like a fetter,\nBind my wandering heart to Thee.\nProne to wander, Lord, I feel it,\nProne to leave the God I love;\nHere's my heart, O take and seal it,\nSeal it for Thy courts above.''',
+    numero: 119,
+    auteur: 'Robert Robinson',
+  ),
+  Cantique(
+    id: 'only_believe_120',
+    titre: 'Guide Me, O Thou Great Jehovah',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Guide me, O Thou great Jehovah,\nPilgrim through this barren land;\nI am weak, but Thou art mighty;\nHold me with Thy powerful hand;\nBread of heaven, Bread of heaven,\nFeed me till I want no more,\nFeed me till I want no more.\n\n2. Open now the crystal fountain,\nWhence the healing stream doth flow;\nLet the fire and cloudy pillar\nLead me all my journey through;\nStrong Deliverer, strong Deliverer,\nBe Thou still my strength and shield,\nBe Thou still my strength and shield.\n\n3. When I tread the verge of Jordan,\nBid my anxious fears subside;\nDeath of death, and hell's Destruction,\nLand me safe on Canaan's side;\nSongs of praises, songs of praises\nI will ever give to Thee,\nI will ever give to Thee.''',
+    numero: 120,
+    auteur: 'William Williams',
+  ),
+  Cantique(
+    id: 'only_believe_121',
+    titre: 'A Mighty Fortress Is Our God',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. A mighty fortress is our God,\nA bulwark never failing;\nOur helper He amid the flood\nOf mortal ills prevailing.\nFor still our ancient foe\nDoth seek to work us woe;\nHis craft and power are great,\nAnd armed with cruel hate,\nOn earth is not his equal.\n\n2. Did we in our own strength confide,\nOur striving would be losing;\nWere not the right Man on our side,\nThe Man of God's own choosing.\nDost ask who that may be?\nChrist Jesus, it is He;\nLord Sabaoth His name,\nFrom age to age the same,\nAnd He must win the battle.\n\n3. And though this world, with devils filled,\nShould threaten to undo us,\nWe will not fear, for God hath willed\nHis truth to triumph through us.\nThe Prince of Darkness grim,\nWe tremble not for him;\nHis rage we can endure,\nFor lo! his doom is sure,\nOne little word shall fell him.''',
+    numero: 121,
+    auteur: 'Martin Luther',
+  ),
+  Cantique(
+    id: 'only_believe_122',
+    titre: 'Jesus Loves Me',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Jesus loves me! This I know,\nFor the Bible tells me so;\nLittle ones to Him belong;\nThey are weak, but He is strong.\n\nRefrain:\nYes, Jesus loves me!\nYes, Jesus loves me!\nYes, Jesus loves me!\nThe Bible tells me so.\n\n2. Jesus loves me! He who died\nHeaven's gate to open wide;\nHe will wash away my sin,\nLet His little child come in.\n\n3. Jesus loves me! He will stay\nClose beside me all the way;\nThou hast bled and died for me,\nI will henceforth live for Thee.''',
+    numero: 122,
+    auteur: 'Anna B. Warner',
+  ),
+  Cantique(
+    id: 'only_believe_123',
+    titre: 'Blessed Be The Tie That Binds',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Blest be the tie that binds\nOur hearts in Christian love;\nThe fellowship of kindred minds\nIs like to that above.\n\n2. Before our Father's throne\nWe pour our ardent prayers;\nOur fears, our hopes, our aims are one,\nOur comforts and our cares.\n\n3. We share our mutual woes,\nOur mutual burdens bear;\nAnd often for each other flows\nThe sympathizing tear.\n\n4. When we asunder part,\nIt gives us inward pain;\nBut we shall still be joined in heart,\nAnd hope to meet again.''',
+    numero: 123,
+    auteur: 'John Fawcett',
+  ),
+  Cantique(
+    id: 'only_believe_124',
+    titre: 'Joy To The World',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Joy to the world! the Lord is come;\nLet earth receive her King;\nLet every heart prepare Him room,\nAnd heaven and nature sing,\nAnd heaven and nature sing,\nAnd heaven, and heaven and nature sing.\n\n2. Joy to the earth! the Saviour reigns;\nLet men their songs employ;\nWhile fields and floods, rocks, hills and plains\nRepeat the sounding joy,\nRepeat the sounding joy,\nRepeat, repeat the sounding joy.\n\n3. He rules the world with truth and grace,\nAnd makes the nations prove\nThe glories of His righteousness,\nAnd wonders of His love,\nAnd wonders of His love,\nAnd wonders, wonders of His love.''',
+    numero: 124,
+    auteur: 'Isaac Watts',
+  ),
+  Cantique(
+    id: 'only_believe_125',
+    titre: 'Silent Night',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Silent night, holy night!\nAll is calm, all is bright\n'Round yon virgin mother and Child.\nHoly Infant, so tender and mild,\nSleep in heavenly peace,\nSleep in heavenly peace.\n\n2. Silent night, holy night!\nShepherds quake at the sight;\nGlories stream from heaven afar,\nH heavenly hosts sing Alleluia!\nChrist the Saviour is born,\nChrist the Saviour is born.\n\n3. Silent night, holy night!\nSon of God, love's pure light\nRadiant beams from Thy holy face\nWith the dawn of redeeming grace,\nJesus, Lord, at Thy birth,\nJesus, Lord, at Thy birth.''',
+    numero: 125,
+    auteur: 'Joseph Mohr',
+  ),
+  Cantique(
+    id: 'only_believe_126',
+    titre: 'Hark! The Herald Angels Sing',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Hark! the herald angels sing,\n"Glory to the newborn King;\nPeace on earth, and mercy mild,\nGod and sinners reconciled!"\nJoyful, all ye nations rise,\nJoin the triumph of the skies;\nWith th' angelic host proclaim,\n"Christ is born in Bethlehem!"\n\nRefrain:\nHark! the herald angels sing,\n"Glory to the newborn King!"\n\n2. Christ, by highest heaven adored;\nChrist, the everlasting Lord;\nLate in time behold Him come,\nOffspring of a virgin's womb.\nVeiled in flesh the Godhead see;\nHail th' incarnate Deity,\nPleased as man with men to dwell,\nJesus, our Emmanuel.\n\n3. Hail the heaven-born Prince of Peace!\nHail the Sun of Righteousness!\nLight and life to all He brings,\nRisen with healing in His wings.\nMild He lays His glory by,\nBorn that man no more may die,\nBorn to raise the sons of earth,\nBorn to give them second birth.''',
+    numero: 126,
+    auteur: 'Charles Wesley',
+  ),
+  Cantique(
+    id: 'only_believe_127',
+    titre: 'O Come, All Ye Faithful',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. O come, all ye faithful, joyful and triumphant,\nO come ye, O come ye to Bethlehem;\nCome and behold Him, born the King of angels;\n\nRefrain:\nO come, let us adore Him,\nO come, let us adore Him,\nO come, let us adore Him,\nChrist the Lord!\n\n2. Sing, choirs of angels, sing in exultation,\nSing, all ye citizens of heaven above;\nGlory to God, in the highest;\n\n3. Yea, Lord, we greet Thee, born this happy morning,\nJesus, to Thee be glory given;\nWord of the Father, now in flesh appearing;''',
+    numero: 127,
+    auteur: 'John Francis Wade',
+  ),
+  Cantique(
+    id: 'only_believe_128',
+    titre: 'O Little Town Of Bethlehem',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. O little town of Bethlehem, how still we see thee lie!\nAbove thy deep and dreamless sleep the silent stars go by;\nYet in thy dark streets shineth the everlasting Light;\nThe hopes and fears of all the years are met in thee tonight.\n\n2. For Christ is born of Mary, and gathered all above,\nWhile mortals sleep, the angels keep their watch of wondering love.\nO morning stars, together proclaim the holy birth!\nAnd praises sing to God the King, and peace to men on earth.\n\n3. How silently, how silently, the wondrous gift is given!\nSo God imparts to human hearts the blessings of His heaven.\nNo ear may hear His coming, but in this world of sin,\nWhere meek souls will receive Him still, the dear Christ enters in.''',
+    numero: 128,
+    auteur: 'Phillips Brooks',
+  ),
+  Cantique(
+    id: 'only_believe_129',
+    titre: 'The First Noel',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. The first Noel the angel did say\nWas to certain poor shepherds in fields as they lay;\nIn fields where they lay keeping their sheep,\nOn a cold winter's night that was so deep.\n\nRefrain:\nNoel, Noel, Noel, Noel,\nBorn is the King of Israel.\n\n2. They looked up and saw a star\nShining in the east, beyond them far;\nAnd to the earth it gave great light,\nAnd so it continued both day and night.\n\n3. Then entered in those Wise Men three,\nFull reverently upon their knee,\nAnd offered there, in His presence,\nTheir gold and myrrh and frankincense.''',
+    numero: 129,
+    auteur: 'Traditionnel anglais',
+  ),
+  Cantique(
+    id: 'only_believe_130',
+    titre: 'Away In A Manger',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Away in a manger, no crib for a bed,\nThe little Lord Jesus laid down His sweet head.\nThe stars in the sky looked down where He lay,\nThe little Lord Jesus, asleep on the hay.\n\n2. The cattle are lowing, the Baby awakes,\nBut little Lord Jesus, no crying He makes.\nI love Thee, Lord Jesus! Look down from the sky,\nAnd stay by my cradle till morning is nigh.\n\n3. Be near me, Lord Jesus, I ask Thee to stay\nClose by me forever, and love me, I pray.\nBless all the dear children in Thy tender care,\nAnd fit us for heaven, to live with Thee there.''',
+    numero: 130,
+    auteur: 'Inconnu',
+  ),
+  Cantique(
+    id: 'only_believe_131',
+    titre: 'Angels We Have Heard On High',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Angels we have heard on high\nSweetly singing o'er the plains,\nAnd the mountains in reply\nEchoing their joyous strains.\n\nRefrain:\nGloria, in excelsis Deo!\nGloria, in excelsis Deo!\n\n2. Shepherds, why this jubilee?\nWhy your joyous strains prolong?\nWhat the gladsome tidings be\nWhich inspire your heavenly song?\n\n3. Come to Bethlehem and see\nHim whose birth the angels sing;\nCome, adore on bended knee,\nChrist the Lord, the newborn King.''',
+    numero: 131,
+    auteur: 'Traditionnel français',
+  ),
+  Cantique(
+    id: 'only_believe_132',
+    titre: 'It Came Upon The Midnight Clear',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. It came upon the midnight clear,\nThat glorious song of old,\nFrom angels bending near the earth\nTo touch their harps of gold:\n"Peace on the earth, good will to men,\nFrom heaven's all-gracious King."\nThe world in solemn stillness lay\nTo hear the angels sing.\n\n2. Still through the cloven skies they come\nWith peaceful wings unfurled,\nAnd still their heavenly music floats\nO'er all the weary world;\nAbove its sad and lowly plains\nThey bend on hovering wing,\nAnd ever o'er its Babel sounds\nThe blessed angels sing.\n\n3. For lo! the days are hastening on,\nBy prophet seen of old,\nWhen with the ever-circling years\nShall come the time foretold,\nWhen the new heaven and earth shall own\nThe Prince of Peace their King,\nAnd the whole world send back the song\nWhich now the angels sing.''',
+    numero: 132,
+    auteur: 'Edmund Sears',
+  ),
+  Cantique(
+    id: 'only_believe_133',
+    titre: 'Go Tell It On The Mountain',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''Refrain:\nGo, tell it on the mountain,\nOver the hills and everywhere;\nGo, tell it on the mountain,\nThat Jesus Christ is born.\n\n1. While shepherds kept their watching\nO'er silent flocks by night,\nBehold throughout the heavens\nThere shone a holy light.\n\n2. The shepherds feared and trembled,\nWhen lo! above the earth,\nRang out the angel chorus\nThat hailed our Saviour's birth.\n\n3. Down in a lonely manger\nThe humble Christ was born,\nAnd God sent us salvation\nThat blessed Christmas morn.''',
+    numero: 133,
+    auteur: 'John W. Work Jr.',
+  ),
+  Cantique(
+    id: 'only_believe_134',
+    titre: 'Christ The Lord Is Risen Today',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. "Christ the Lord is risen today," Alleluia!\nSons of men and angels say: Alleluia!\nRaise your joys and triumphs high, Alleluia!\nSing, ye heavens, and earth reply, Alleluia!\n\n2. Lives again our glorious King, Alleluia!\nWhere, O death, is now thy sting? Alleluia!\nOnce He died our souls to save, Alleluia!\nWhere thy victory, O grave? Alleluia!\n\n3. Love's redeeming work is done, Alleluia!\nFought the fight, the battle won, Alleluia!\nDeath in vain forbids Him rise, Alleluia!\nChrist has opened Paradise, Alleluia!''',
+    numero: 134,
+    auteur: 'Charles Wesley',
+  ),
+  Cantique(
+    id: 'only_believe_135',
+    titre: 'Low In The Grave He Lay',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Low in the grave He lay, Jesus my Saviour,\nWaiting the coming day, Jesus my Lord!\n\nRefrain:\nUp from the grave He arose,\nWith a mighty triumph o'er His foes;\nHe arose a Victor from the dark domain,\nAnd He lives forever, with His saints to reign.\nHe arose! He arose!\nHallelujah! Christ arose!\n\n2. Vainly they watch His bed, Jesus my Saviour;\nVainly they seal the dead, Jesus my Lord!\n\n3. Death cannot keep his Prey, Jesus my Saviour;\nHe tore the bars away, Jesus my Lord!''',
+    numero: 135,
+    auteur: 'Robert Lowry',
+  ),
+  Cantique(
+    id: 'only_believe_136',
+    titre: 'Crown Him With Crown Of Glory',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Look, ye saints! the sight is glorious;\nSee the Man of Sorrows now;\nFrom the fight returned victorious,\nEvery knee to Him shall bow;\nCrown Him! Crown Him!\nCrowns become the Victor's brow.\n\n2. Crown the Savior, angels crown Him;\nRich the trophies Jesus brings;\nIn the seat of pow'r enthrone Him,\nWhile the vault of heaven rings;\nCrown Him! Crown Him!\nCrown the Savior King of kings.\n\n3. Sinners in derision crowned Him,\nMocking thus the Savior's claim;\nSaints and angels crowd around Him,\nOwn His title, praise His name;\nCrown Him! Crown Him!\nSpread abroad the Victor's fame.''',
+    numero: 136,
+    auteur: 'Thomas Kelly',
+  ),
+  Cantique(
+    id: 'only_believe_137',
+    titre: 'Crown Him Lord Of All',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. All hail the power of Jesus' name!\nLet angels prostrate fall;\nBring forth the royal diadem,\nAnd crown Him Lord of all;\nBring forth the royal diadem,\nAnd crown Him Lord of all!\n\n2. Ye chosen seed of Israel's race,\nYe ransomed from the fall,\nHail Him who saves you by His grace,\nAnd crown Him Lord of all;\nHail Him who saves you by His grace,\nAnd crown Him Lord of all!\n\n3. Let every kindred, every tribe\nOn this terrestrial ball,\nTo Him all majesty ascribe,\nAnd crown Him Lord of all;\nTo Him all majesty ascribe,\nAnd crown Him Lord of all!''',
+    numero: 137,
+    auteur: 'Edward Perronet',
+  ),
+  Cantique(
+    id: 'only_believe_138',
+    titre: 'The Day Of Resurrection',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. The day of resurrection!\nEarth, tell it out abroad;\nThe Passover of gladness,\nThe Passover of God.\nFrom death to life eternal,\nFrom earth unto the sky,\nOur Christ hath brought us over\nWith hymns of victory.\n\n2. Our hearts be pure from evil,\nThat we may see aright\nThe Lord in rays eternal\nOf resurrection light;\nAnd, listening to His accents,\nMay hear so calm and plain\nHis own "All hail!" and, hearing,\nMay raise the victor strain.\n\n3. Now let the heavens be joyful,\nAnd earth her song begin,\nThe round world keep high triumph,\nAnd all that is therein;\nLet all things seen and unseen\nTheir notes together blend,\nFor Christ the Lord hath risen,\nOur joy that hath no end.''',
+    numero: 138,
+    auteur: 'Jean Damascène',
+  ),
+  Cantique(
+    id: 'only_believe_139',
+    titre: 'He Is Lord',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. He is Lord, He is Lord!\nHe is risen from the dead and He is Lord!\nEvery knee shall bow, every tongue confess\nThat Jesus Christ is Lord!\n\n2. He is King, He is King!\nHe is risen from the dead and He is King!\nEvery knee shall bow, every tongue confess\nThat Jesus Christ is King!\n\n3. He is Love, He is Love!\nHe is risen from the dead and He is Love!\nEvery knee shall bow, every tongue confess\nThat Jesus Christ is Love!''',
+    numero: 139,
+    auteur: 'Traditionnel',
+  ),
+  Cantique(
+    id: 'only_believe_140',
+    titre: 'I Know That My Redeemer Liveth',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I know that my Redeemer lives,\nAnd ever prays for me;\nA token of His love He gives,\nA pledge of liberty.\n\nRefrain:\nI know, I know that my Redeemer lives,\nAnd ever prays for me;\nI know, I know that my Redeemer lives,\nAnd ever prays for me.\n\n2. I find Him lifting up my head,\nHe brings salvation near;\nHis presence makes my spirit glad,\nHe drives away my fear.\n\n3. He wills that I should holy be;\nWho can resist His will?\nThe counsel of His grace to me\nHe surely shall fulfill.''',
+    numero: 140,
+    auteur: 'Charles Wesley',
+  ),
+  Cantique(
+    id: 'only_believe_141',
+    titre: 'Because He Lives',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. God sent His Son, they called Him Jesus;\nHe came to love, heal and forgive;\nHe lived and died to buy my pardon,\nAn empty grave is there to prove my Savior lives!\n\nRefrain:\nBecause He lives, I can face tomorrow,\nBecause He lives, all fear is gone;\nBecause I know He holds the future,\nAnd life is worth the living, just because He lives!\n\n2. How sweet to hold a newborn baby,\nAnd feel the pride and joy he gives;\nBut greater still the calm assurance:\nThis child can face uncertain days because He lives!\n\n3. And then one day, I'll cross the river,\nI'll fight life's final war with pain;\nAnd then, as death gives way to victory,\nI'll see the lights of glory and I'll know He lives!''',
+    numero: 141,
+    auteur: 'Bill & Gloria Gaither',
+  ),
+  Cantique(
+    id: 'only_believe_142',
+    titre: 'Hallelujah, What A Savior',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. "Man of Sorrows!" what a name\nFor the Son of God, who came\nRuined sinners to reclaim!\nHallelujah! What a Savior!\n\n2. Bearing shame and scoffing rude,\nIn my place condemned He stood;\nSealed my pardon with His blood:\nHallelujah! What a Savior!\n\n3. Guilty, vile, and helpless we;\nSpotless Lamb of God was He;\n"Full atonement!" can it be?\nHallelujah! What a Savior!\n\n4. Lifted up WAS He to die;\n"It is finished!" WAS His cry;\nNow in Heav'n exalted high:\nHallelujah! What a Savior!''',
+    numero: 142,
+    auteur: 'Philip P. Bliss',
+  ),
+  Cantique(
+    id: 'only_believe_143',
+    titre: 'Thine Be The Glory',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Thine be the glory, risen, conquering Son;\nEndless is the victory Thou o'er death hast won.\nAngels in bright raiment rolled the stone away,\nKept the folded grave clothes where Thy body lay.\n\nRefrain:\nThine be the glory, risen, conquering Son;\nEndless is the victory Thou o'er death hast won.\n\n2. Lo! Jesus meets us, risen from the tomb;\nLovingly He greets us, scatters fear and gloom;\nLet His church with gladness hymns of triumph sing,\nFor her Lord now liveth; death hath lost its sting.\n\n3. No more we doubt Thee, glorious Prince of life!\nLife is naught without Thee; aid us in our strife;\nMake us more than conquerors, through Thy deathless love;\nBring us safe through Jordan to Thy home above.''',
+    numero: 143,
+    auteur: 'Edmond Budry',
+  ),
+  Cantique(
+    id: 'only_believe_144',
+    titre: 'The Strife Is O\'er',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''Refrain:\nAlleluia! Alleluia! Alleluia!\n\n1. The strife is o'er, the battle done;\nThe victory of life is won;\nThe song of triumph has begun.\nAlleluia!\n\n2. The powers of death have done their worst,\nBut Christ their legions hath dispersed;\nLet shout of holy joy outburst.\nAlleluia!\n\n3. The three sad days are quickly sped,\nHe rises glorious from the dead;\nAll glory to our risen Head!\nAlleluia!''',
+    numero: 144,
+    auteur: 'Traditionnel latin',
+  ),
+  Cantique(
+    id: 'only_believe_145',
+    titre: 'Welcome, Happy Morning',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. "Welcome, happy morning!" age to age shall say;\nHell today is vanquished, heaven is won today!\nLo! the Dead is living, Lord for evermore!\nHim their true Creator, all His works adore!\n\nRefrain:\n"Welcome, happy morning!" age to age shall say.\n\n2. Earth her joy confesses, clothing her for spring,\nAll fresh gifts returned with her returning King;\nBloom in every meadow, leaves on every bough,\nSpeak His sorrow ended, hail His triumph now.\n\n3. Maker and Redeemer, Life and Lord of all,\nThou from heaven beholding human nature's fall,\nThou as Man art vanquished, Thou as God dost save;\nThou who diedst for sinners, triumphst o'er the grave.''',
+    numero: 145,
+    auteur: 'Venance Fortunat',
+  ),
+  Cantique(
+    id: 'only_believe_146',
+    titre: 'I Know My Redeemer Lives',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I know that my Redeemer lives!\nWhat comfort this sweet sentence gives!\nHe lives, He lives, who once was dead;\nHe lives, my ever-living Head.\n\n2. He lives to bless me with His love,\nHe lives to plead for me above,\nHe lives my hungry soul to feed,\nHe lives to help in time of need.\n\n3. He lives to grant me rich supply,\nHe lives to guide me with His eye,\nHe lives to wipe away my tears,\nHe lives to calm my troubled fears.''',
+    numero: 146,
+    auteur: 'Samuel Medley',
+  ),
+  Cantique(
+    id: 'only_believe_147',
+    titre: 'Christ Arose',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Low in the grave He lay, Jesus my Saviour,\nWaiting the coming day, Jesus my Lord!\n\nRefrain:\nUp from the grave He arose,\nWith a mighty triumph o'er His foes;\nHe arose a Victor from the dark domain,\nAnd He lives forever, with His saints to reign.\nHe arose! He arose!\nHallelujah! Christ arose!\n\n2. Vainly they watch His bed, Jesus my Saviour;\nVainly they seal the dead, Jesus my Lord!''',
+    numero: 147,
+    auteur: 'Robert Lowry',
+  ),
+  Cantique(
+    id: 'only_believe_148',
+    titre: 'Crown Him With Many Crowns (Risen)',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. Crown Him with many crowns,\nThe Lamb upon His throne;\nHark! how the heavenly anthem drowns\nAll music but its own;\nAwake, my soul, and sing\nOf Him who died for thee,\nAnd hail Him as thy matchless King\nThrough all eternity.\n\n2. Crown Him the Lord of peace,\nWhose power a scepter sways\nFrom pole to pole, that wars may cease,\nAnd all be prayer and praise.\nHis reign shall know no end,\nAnd round His pierced feet\nFair flowers of paradise extend\nTheir fragrance ever sweet.''',
+    numero: 148,
+    auteur: 'Matthew Bridges',
+  ),
+  Cantique(
+    id: 'only_believe_149',
+    titre: 'He Lives, He Lives',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. I serve a risen Saviour, He's in the world today;\nI know that He is living, whatever men may say;\nI see His hand of mercy, I hear His voice of cheer,\nAnd just the time I need Him He's always near.\n\nRefrain:\nHe lives, He lives, Christ Jesus lives today!\nHe walks with me and talks with me along life's narrow way.\nHe lives, He lives, salvation to impart!\nYou ask me how I know He lives?\nHe lives within my heart.''',
+    numero: 149,
+    auteur: 'A. H. Ackley',
+  ),
+  Cantique(
+    id: 'only_believe_150',
+    titre: 'The Lord Is Risen Indeed',
+    collectionId: 'only_believe',
+    collection: 'Only Believe',
+    contenu:
+        '''1. "The Lord is risen indeed!"\nNow is His work performed;\nNow is the mighty Captive freed,\nAnd death's strong castle stormed.\n\n2. "The Lord is risen indeed!"\nThen hell has lost its prey;\nWith Him is risen the ransomed seed\nTo reign in endless day.\n\n3. "The Lord is risen indeed!"\nHe lives to die no more;\nHe lives His people's cause to plead,\nWhose curse and shame He bore.''',
+    numero: 150,
+    auteur: 'Thomas Kelly',
+  ),
+
   Cantique(
     id: 'boanerges_tabernacle_001',
     titre: 'E YESU MSHINDAJI WA GOLGOTHA',
@@ -117,6 +3826,5124 @@ Je posséderai dans l'au-delà Une vie de joie et paix.Quand tout semble perdu,\
     numero: 1,
     auteur: '',
   ),
+  Cantique(
+    id: 'hosanna_001',
+    titre: 'GRAND DIEU, NOUS TE BENISSONS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Grand Dieu, nous Te bénissons,
+Nous célébrons Tes louanges !
+Eternel, nous T’exaltons,
+De concert avec les anges,
+Et prosternés devant Toi,
+Nous T’adorons, ô grand Roi !
+Et prosternés devant Toi,
+Nous T’adorons, ô grand Roi !
+
+2. Les saints et les bienheureux,
+Les trônes et les puissances,
+Toutes les vertus des cieux
+Disent Tes magnificences,
+Proclamant dans leurs concerts
+Le grand Dieu de l’Univers,
+Proclamant dans leurs concerts
+Le grand D’eu de l’Univers
+
+3. Saint, saint, saint, est l’Eternel,
+Le Seigneur, Dieu des armées ;
+Son pouvoir est immortel ;
+Ses oeuvres partout semées
+Font éclater Sa grandeur,
+Sa majesté, Sa splendeur,
+Font éclater Sa grandeur!
+Sa majesté, Sa splendeur
+
+4. Sauve Ton peuple, Seigneur,
+Et bénis Ton héritage ;
+Que Ta gloire et Ta splendeur
+Soient à jamais son partage,
+Conduis-le par Ton amour
+Jusqu au céleste séjour!
+Conduis-le par Ton amour
+Jusqu au céleste Séjour !
+
+5. Gloire soit au Saint-Esprit!
+Gloire soit à Dieu le Père!
+Gloire soit à Jésus-Christ,
+Notre Sauveur, notre Frère !
+Son immense charité
+Dure à perpétuité.
+Son immense charité
+Dure à perpétuité.''',
+    numero: 1,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_002',
+    titre: 'GLOIRE, GLOIRE A L’ETERNEL',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Gloire, gloire à l’Eternel!
+Qu’un cantique solennel,
+Qu’un cantique solennel
+De nos coeurs monte à son trône!
+Quand il crée, oh! qu’Il est grand!
+Quand Il crée, oh! qu’ll est grandi
+Qu’Il est juste en punissant !
+Qu’Il est bon quand il pardonne !
+
+2. Il parle… et cet Univers
+Se lève aux puissants concerts
+Se lève aux puissants concerts
+De Sa parole vivante ;
+Et des astres radieux,
+Et des astres radieux,
+Sa main jette dans les cieux
+La poussière étincelante!
+
+3. II accuse !... et le pécheur
+Devant cet accusateur,
+Devant cet accusateur,
+Sent sa profonde misère,
+Et s’écrie en son effroi,
+Et s’écrie en son effroi,
+Montagnes, tombez sur moi,
+Cachez-moi de Sa colère!
+
+4. Mais l’âme à qui le Seigneur
+S’est donné pour Rédempteur,
+S’est donné pour Rédempteur,
+Goûte une paix ineffable,
+Objet d un si grand amour,
+Objet d’un si grand amour,
+Elle éprouve un doux retour
+Pour ce Sauveur adorable.
+
+5. Ô Dieu, que Tes rachetés
+Toujours chantent les bontés,
+Toujours chantent les bontés,
+De Celui qui leur pardonne!
+Gloire, gloire à l’Eternel!
+Gloire, gloire à l’Eternel!
+Ce cantique solennel
+Montera jusqu’à son trône.''',
+    numero: 2,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_003',
+    titre: 'JE VEUX CHANTER, LOUER MON DIEU',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Je veux chanter, louer mon Dieu!
+Dans tous es temps, dans tous les lieux
+Que dans ma vie tout glorifie
+Le nom puissant d’Emmanuel !
+Alléluia ! Alléluia !
+Avec les anges dans le ciel
+Alléluia ! Alléluia !
+Célébrons tous Emmanuel!
+
+2. Je veux chanter mon Rédempteur.
+L’amour profond de mon Sauveur!
+Sa mort sanglante et triomphante
+M’affranchit du joug du péché.
+Alléluia ! Alléluia !
+Gloire à Jésus je suis sauvé
+Alléluia ! Alléluia !
+Oui ! sauvé pour l’éternité !
+
+3. Exaltons tous et célébrons
+Le nom de notre Dieu; chantons!
+Dans l’allégresse, soyons sans cesse!
+Vous tous qui souffrez, malheureux,
+Alléluia ! Alléluia !
+Non! plus de armes dans vos yeux !
+Alléluia ! Alléluia !
+Venez, Il veut vous rendre heureux!''',
+    numero: 3,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_004',
+    titre: 'JESUS, JESUS, JESUS, JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Jésus, Jésus, Jésus, Jésus,
+Seul nom que mon coeur aime,
+Je voudrais ne prononcer plus
+Q’un seul mot, ce nom même.
+
+Choeur
+Oh ! combien j’aime ce beau Nom!
+Oh ! combien j’aime ce beau Nom!
+Oh! combien j’aime ce beau Nom!
+Ce beau Nom de Jésus.
+
+2. Jésus, Jésus, ce nom si beau!
+C est celui dont les anges,
+Prosternés autour de l’Agneau,
+Remplissent leurs louanges,
+
+3. Jésus, c’est le nom de Celui
+Qui descendit du Père,
+Dont l’amour sur la croix lui,
+En qui la terre espère.
+
+4. Jésus, c’est le nom du Sauveur
+Favorable à toute âme,
+Et qu’aujourd’hui plus d’un pécheur,
+De tout son coeur acclame.
+
+5. Jésus, Jésus, Jésus, Jésus,
+Bientôt mon coeur qui T’aime,
+Auprès de Toi ne dira plus
+Qu’un seul mot, Ton nom même.''',
+    numero: 4,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_005',
+    titre: 'A DEU SOIT LA GLOIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. A Dieu soit la gloire!
+Par Son grand Amour
+Dans mon âme noire
+S’est levé le jour,
+Jésus, à ma place,
+Mourut sur la Croix,
+Il m’offre Sa Grâce
+Et je la reçois!
+
+Choeur
+Gloire à Dieu ! Gloire à Dieu !
+Terre, écoute Sa voix!
+Gloire à Dieu! Gloire à Dieu!
+Monde, réjouis-toi!
+Oh! venez au Père,
+Jésus est vainqueur ;
+Que toute a terre
+Chante en Son honneur!
+
+2. De Jésus la joie
+Remplit notre cœur ;
+Qu’importe qu’on voie
+Tout notre bonheur,
+Selon Sa promesse
+Jésus changera
+Deuil en allégresse,
+Quand Il reviendra.''',
+    numero: 5,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_006',
+    titre: 'A CELUI QUI NOUS A LAVES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. A Celui qui nous a laves
+Qui nous s tant aimés,
+Par Son Sang nous a rachetés,
+Soit gloire, gloire, gloire,
+Louange à jamais !
+
+2. Chantons le cantique nouveau
+A l’honneur de l’Agneau,
+Qui sortit vainqueur du tombeau
+Oui, gloire, gloire, gloire,
+Louange à jamais !
+
+3. Adorons le Triomphateur,
+Jésus notre Sauveur,
+Sur tous Ses ennemis vainqueur,
+Oui, gloire, gloire, gloire,
+Louange à jamais !
+
+4. Du ciel bientôt Il reviendra,
+Et tout oeil Le verra,
+Le monde entier L’adorera,
+Oui, gloire, gloire, gloire,
+Louange à jamais!''',
+    numero: 6,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_007',
+    titre: 'MON SAUVEUR SOUFFRIT SUR LA CROIX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Mon Sauveur souffrit sur la croix.
+Gloire à l’Agneau de Dieu!
+Oh! viens Le louer avec moi ;
+Gloire à l’Agneau de Dieu!
+
+L’Agneau! l’Agneau! l’Agneau de Dieu !
+J’aime l’écho de Son saint Nom ;
+Ce Nom brillera sur mon front,
+Gloire à l’Agneau de Dieu !
+
+2. Je veux dire à chaque pécheur,
+Gloire à l’Agneau de Dieu !
+Qu’enfin j’ai trouvé mon Sauveur,
+Gloire à l’Agneau de Dieu!
+
+3. Oui, je veux chanter plein de foi,
+Gloire à l’Agneau de Dieu!
+Que mon Sauveur est mort pour moi,
+Gloire à l’Agneau de Dieu!
+
+4. Du monde je fais l’abandon;
+Gloire à l’Agneau de Dieu!
+De mes péchés j’ai le pardon!
+Gloire à l’Agneau de Dieu !
+
+5. Parmi les sauvés j’ai mon rang ;
+Gloire à l’Agneau de Dieu!
+Mon coeur est lavé dans Son sang ;
+Gloire à l’Agneau de Dieu !''',
+    numero: 7,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_008',
+    titre: 'NOUS T’ADORONS...',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Nous T’adorons, Toi que notre coeur aime,
+Ô Rabboni !
+Nous avons soif de Ta sainteté même,
+Maître béni!
+Verse en nos coeurs ô Christ, Ta charité,
+Et mets sur nous Ta sublime beauté,
+
+2. Partait Modèle, incomparable Maître,
+Bénis-nous tous!
+Comme Tu fus, nous voulons toujours être,
+Humbles et doux!
+Verse en nos coeurs, ô Christ, Ta chante!
+Et mets sur nous Ta sublime beauté.
+
+3. Oh! donnes-nous Ton amour inlassable
+Pour les perdus!
+Cet amour vrai qui cherche le coupable,
+Loin de Jésus.
+Verse en nos coeurs, ô Christ, Ta charité!
+Et mets sur nous Ta sublime beauté
+
+4. Qu’en nous voyant, oublieux de nous mêmes,
+Tous pour chacun,
+Le monde ému dise: « Oh! combien ils s’aiment !
+Ils sont tous un ! »
+Verse en nos cœurs, ô Christ, Ta charité.
+Et mets sur nous Ta sublime beauté!
+
+5. Ouvre le ciel, réponds à la prière
+Que nous T’offrons !
+Imprime enfin Ton divin caractère
+Sur tous nos fronts!
+Rien ne surpasse, ô Christ, Ta charité,
+Rien, ici-bas, n’égale Ta beauté''',
+    numero: 8,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_009',
+    titre: 'JE L’AI TROUVE...',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Je l’ai trouvé, je lai trouvé,
+Le bonheur ineffable!
+Je suis sauvé, je suis sauvé,
+Ô joie inexprimable!
+Tous mes péchés sont effacés:
+Le sang de Christ me lave.
+Les jours des armes sont passés:
+Je ne suis plus esclave!
+
+2. Oh! quel bonheur! Oh! quel bonheur!
+D’avoir Jésus pour Maître!
+Ô mon Sauveur, mon seul sauveur!
+A Toi seul je veux être!
+Tu vins briser, puissant Vainqueur,
+Du mal la tyrannie,
+Affranchissant mon pauvre coeur
+Et me donnant la vie!
+
+3. Dans Ton amour, Tu m’as cherché,
+Errant bien loin du Père!
+Tu m’as sauvé de mon péché,
+Tu fis de moi Ton frère:
+Et maintenant, et pour jamais,
+Sous Ton joug Je me plie,
+Je ne puis vivra désarmais,
+Jésus, que de Ta vie!
+
+4. Ah! laissez-moi chanter mon Roi;
+Oui, qu’à genoux, je chante!
+Jésus n’est-Il pas tout pour moi?
+Gloire à Sa croix sanglante!
+Sans se lasser, jour après jour,
+Il m’aime, Il m’aime encore...
+Comment répondre à tant d’amour?
+Je crois, j’aime et j’adore''',
+    numero: 9,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_010',
+    titre: 'LES RAYONS DE L’AMOUR DIVIN',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Les rayons de l’amour divin
+Ont brille sur ma route,
+Dès lors l’ennemi cherche en vain
+A mettre en moi le doute.
+De toutes mes obscurités,
+Il ne reste plus trace,
+J’ai vu les célestes clartés,
+Le Seigneur ma fait grâce.
+
+Choeur
+Oui, Ton amour, amour divin,
+Ô mon Sauveur, s’est révélé.
+Il est pour moi, Ton racheté,
+Ton amour, Ton amour divin!
+
+2. Alléluia! mon faible coeur
+Peut aujourd’hui comprendre
+Que I’amour de mon Rédempteur
+En Lui veut se répandre.
+Il a bien longtemps méconnu
+Cette grâce suprême,
+Mais maintenant il est vaincu
+Et se donne Lui-même.
+
+3. Qui dira de l’amour divin
+La grandeur insondable?
+Il est le baume souverain,
+Le seul bienfait durable.
+Jésus, pour ce don précieux,
+Que toujours je T’adore!
+Que mes accents jusques aux cieux
+Retentissent encore.''',
+    numero: 10,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_011',
+    titre: 'ETRE A TES PIEDS, COMME MARIE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Etre à Tes pieds, comme Marie,
+Laissant les heures s’écouler
+Dans un silence qui s’oublie,
+Jésus, pour Te laisser parler.
+
+2. Etre à Tes pieds dans la tristesse,
+Trouvant pour toutes mes douleurs
+Ta sympathie et Ta tendresse,
+Ta bonté qui tarit mes peurs.
+
+3. Sur Tes pieds saints, à Ta louange,
+Répandre, ô Sauveur méprisé,
+Le parfum pur et Sans mélange
+D’un vaste d’albâtre brisé.
+
+4. Culte béni d’un coeur qui T’aime,
+Encens dont le ciel est rempli,
+Gardé pour le moment suprême
+De Ton sacrifice accompli…
+
+5. Ah! qu’à Tes pieds, Seigneur, je reste,
+Et qu’ici-bas, ma faible voix
+Exalte, unie au choeur céleste,
+Le Fils de Dieu mort sur la croix.''',
+    numero: 11,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_012',
+    titre: 'JESUS SORT DE LA TOMBE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Jésus sort de la tombe;
+Il vit, Il est vainqueur;
+Déjà la mort succombe
+Devant le Rédempteur.
+Mortels, chantons Sa gloire
+Célébrons Sa grandeur.
+Où donc est ta victoire,
+Sépulcre destructeur ?
+
+2. Pourrais-je craindre encore
+Le sommeil du tombeau?
+Non, la mort est l’aurore
+D’un jour pur et nouveau.
+Christ est a délivrance
+Du malheureux pécheur.
+Triomphante assurance
+Pour qui croit au Sauveur!
+
+3. Que dans la vigilance
+Je maintienne mon coeur
+Par la ferme espérance
+D’un éternel bonheur;
+Et qu’à ma dernière heure
+Jésus soit mon appui;
+Qu’en Son amour je meure
+Pour revivre avec Lui!''',
+    numero: 12,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_013',
+    titre: 'TU M’AS AIME, SEIGNEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Tu m’as aimé Seigneur !
+Avant que la lumière
+Brillât sur l’univers que Ta voix a formé,
+Et que l’astre du jour,
+Parcourant sa carrière
+Versât la vie à flots sur la nature entière,
+Mon Dieu, Tu m’as aimé!
+Mon Dieu, Tu mas aimé !
+
+2. Mon Dieu! tu mas aimé
+Quand sur la croix infâme
+On vit de Jésus-Christ le corps inanimé;
+Quand pour me racheter
+De l’éternelle flamme
+Ton saint Fils a porté les crimes de mon âme,
+Mon Dieu, Tu m’as aimé!
+Mon Dieu, tu mas aimé!
+
+3. Mon Dieu! Tu m’as aimé,
+Quand par l’Esprit de vie,
+Le feu de Ton amour, en mon coeur allumé,
+Ouvrit les nouveaux cieux à mon âme ravie;
+Quand la paix fut, en moi, de sainteté suivie,
+Mon Dieu, Tu m’as aimé!
+Mon Dieu, tu mas aimé!
+
+4. Tu m’aimeras toujours!
+Ni l’enfer ni le monde
+De Tes dons généreux n’arrêteront le cours;
+Où le mal abonda Ta grâce surabonde;
+A Ton amour, ô Dieu, que mon amour réponde
+Toi qui m’aimes toujours!
+Toi qui m’aimes toujours!''',
+    numero: 13,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_014',
+    titre: 'ROI COUVERT DE BLESSURES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Roi couvert de blessures,
+Meurtri pour mon péché,
+Roi tout couvert d’injures,
+A la croix attaché,
+Des splendeurs éternelles
+Autrefois couronné
+C’est d’épines cruelles
+Que je Te vois orné.
+
+2. Ainsi Ton sang expie
+Mes péchés odieux;
+Pour me donner la vie
+Tu meurs en ces bas lieux.
+Rebelle et misérable,
+Je m’abats devant Toi;
+Rédempteur charitable,
+Ah! prends pitié de moi!
+
+3. Tourne vers moi ta face,
+Fidèle et bon Sauveur!
+Oh! quel trésor de grâce
+Je trouve en Ta douleur!
+Mourant pour mon offense,
+Tu m’acquis, ô Jésus!
+Du coeur la renaissance
+Et la paix des élus.
+
+4. Oui, pour Ton agonie,
+Pour ta vive douleur,
+Je veux, toute ma vie,
+Te bénir, bon Sauveur !...
+Ta grâce est éternelle,
+Et rien jusqu’à la fin,
+Ne pourra, Dieu fidèle,
+Me ravir de ta main.''',
+    numero: 14,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_015',
+    titre: 'AGNEAU DE DIEU, MESSAGER',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Agneau de Dieu, Messager de la grâce
+Je veux entendre Ta voix,
+Le langage de la croix:
+Pour toi je fus livré, méprisé, maltraité,
+Battu, meurtri, blessé, pour ton iniquité.
+
+2. Agneau de Dieu, Messager de la grâce
+J’ai péché, je viens à Toi,
+Je T’invoque, réponds-moi!
+Pour toi je fus brisé, d’épines couronné,
+De tous abandonné, frappé pour ton pêché.
+
+3. Agneau de Dieu! Messager de la grâce
+Oh ! fais passer sur mon coeur
+Tout ton sang divin Sauveur!
+Mon côté fut percé, et Mon sang fut versé;
+Dans ce sang, ton passé,
+Pécheur, est effacé.
+
+4. Agneau de Dieu! Messager de la grâce,
+Je me confie et je crois;
+Ton pardon, je le reçois!
+Sur l’enfant racheté qui fait Ma volonté
+Je mets Ma sainteté, Ma divine beauté.''',
+    numero: 15,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_016',
+    titre: 'JESUS-CHRIST EST MA SAGESSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Jésus-Christ est ma sagesse,
+Il éclaire mon chemin,
+Et je marche, en ma faiblesse,
+Conduit par Sa sûre main.
+
+Choeur
+Il éclaire mon chemin,
+Il éclaire mon chemin,
+Et je marche, en ma faiblesse,
+Conduit par Sa sûre main.
+
+2. Jésus-Christ est ma justice;
+Son sang a coulé pour moi;
+Je trouve en Son sacrifice
+Paix et pardon par la foi.
+
+Choeur
+Son sang a coulé pour moi;
+Son sang a coulé pour moi:
+Je trouve en Son sacrifice
+Paix et pardon par la foi.
+
+3. Jésus-Christ me sanctifie,
+Au divin Cep attaché,
+Je reçois de Lui la vie
+Qui m’affranchit du péché.
+
+Choeur
+A Toi, Jésus, attaché,
+A Toi, Jésus, attaché,
+Je reçois de Toi la vie
+Qui m’affranchit du péché.
+
+4. Jésus, en payant ma dette,
+A grand prix m’a racheté,
+Et déjà ma place est prête
+Vers Lui, pour l’éternité.
+
+Choeur
+Jésus, Tu m’as racheté,
+Jésus, Tu m’as racheté,
+Et déjà ma place est prête
+Au ciel, pour l’éternité.''',
+    numero: 16,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_017',
+    titre: 'BIEN LOIN DE TOI, MON PERE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Bien loin de toi, mon Père,
+J’ai dissipé mes biens;
+Dans ma douleur amère,
+Je reviens, je reviens,
+Vois, mon âme est souffrante,
+Et mon corps épuisé;
+Saisis ma main tremblante,
+Guéris mon coeur brisé!
+
+2. La honte et la misère
+Ont sillonné mon front;
+J’ai pêché, tendre Père,
+J’implore Ton pardon!
+Non je rie suis pas digne
+D’être appelé Ton fils;
+De tes grâces, indigne,
+J’ai méconnu je prix.
+
+3. Traite-moi, je Te prie,
+Comme ton serviteur;
+Mon passé m’humilie,
+Grâce pour moi, pêcheur!
+Mais que vos-je à cette heure?
+Père, ô Père, c’est Toi!
+Du seuil ce Ta demeure
+Tu T’avances vers moi!
+
+4. Ô bonheur! Tu me donnes
+Le baiser paternel,
+Ô bonheur! Tu pardonnes:
+Et Tu m’ouvres le ciel!''',
+    numero: 17,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_018',
+    titre: 'Ô VOUS QUI N’AVEZ PAS LA PAIX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Ô vous qui n’avez pas la paix.
+Venez, Jésus la donne
+Pure, profonde et pour jamais;
+Venez, Jésus pardonne.
+
+Chœur
+Quand toi seul remplis un cœur,
+Il déborde de bonheur,
+Et l’effroi ne l’atteint plus,
+Jésus, Jésus, Jésus!
+
+2. Vous qui tombez à chaque pas
+Venez, Jésus délivre;
+Celui qui se jette en Ses bras
+Peut toujours Le suivre.
+
+Quand Jésus remplit un coeur
+Il déborde de bonheur,
+Car il ne chancelle plus,
+Jésus, Jésus, Jésus!
+
+3. Vous qui doutez du lendemain,
+Venez, Jésus rassure,
+Pas à pas, la main dans Sa main,
+La route devient sûre.
+
+Quand Toi seul remplis un coeur
+Il déborde de bonheur,
+La crainte ne l’atteint plus,
+Jésus, Jésus, Jésus!
+
+4. Vous tous qui souffrez isolés,
+Venez, Jésus vous aime,
+Pour le troupeau des désolés
+Il s’est offert Lui-même.
+
+Quand Tu viens remplir un cœur,
+Il déborde de bonheur,
+Seul, oh non! Il ne l’est plus,
+Jésus, Jésus, Jésus!
+
+5. Vous qui tremblez sous la terreur
+Que la mort vous inspire,
+Venez, votre Libérateur,
+A détruit son empire.
+
+Avec Toi nous revivrons,
+Avec Toi nous régnerons
+Et la mort ne sera plus,
+Jésus, Jésus, Jésus!''',
+    numero: 18,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_019',
+    titre: 'LE MAITRE EST LA QUI T’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Le Maître est là qui t’appelle;
+Lève-toi donc, ô pécheur!
+Réponds à Sa voix fidèle;
+C’est ton Dieu, c’est ton Sauveur.
+
+Chœur
+Viens à Lui, viens à Lui,
+Viens à Jésus aujourd’hui!
+
+2. Ah! pourquoi Le taire attendre?
+Depuis trop longtemps déjà
+Tu refuses de L’entendre;
+Ne tarde plus: Il est là.
+
+3. II est là, t’offrant Sa grâce
+Son pardon, Sa sainteté,
+Sa paix qui jamais ne passe,
+Son ciel, Sa félicité.
+
+4. Sa main vers toi s’est tendue,
+Son coeur s’ouvre avec amour,
+Hâte-toi, brebis perdue,
+Viens sans délai, sans détour.
+
+5. Le Maître est là nui t’appelle
+Mais bientôt li passera,
+Réponds à Sa voix fidèle,
+Avant qu li ne soit plus là.''',
+    numero: 19,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_020',
+    titre: 'OU TROUVER UNE RETRAITE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Où trouver une retraite,
+Où trouver un sûr abri,
+Quand, du sein de la tempête
+Dieu me parle au Sinaï?
+Vois la mort que J’ai soufferte
+Pour devenir ton Sauveur!
+Entre par la plaie ouverte,
+Et cache-toi dans Mon cœur!
+
+2. Quelle cité de refuge
+S’offre pour l’homme perdu,
+Quand, fuyant devant son Juge,
+Il tremble et pleure, éperdu?
+Vers Moi, sans repos ni trêve
+Accours, c’est ton seul espoir!
+Mon coeur qu’a percé le glaive,
+S’ouvre pour te recevoir.
+
+3. Quand il faudra rendre compte,
+Ô Dieu! qui T’affrontera?
+Où cacherai-je ma honte,
+Quand Ton oeil me sondera?
+Si tu veux fuir Ma colère,
+Cache-toi dans Mon amour!
+Approche-toi du Calvaire,
+Et ne crains plus la grand jour.
+
+4. Mais mes fautes, plus nombreuses
+Que le sable au bord des mers,
+Rendent mes nuits trop affreuses
+Et mes regrets trop amers!
+Pauvre âme, sois rassurée!
+Mon sang, à flots, épanché,
+Couvre comme une marée,
+Le sable de ton péché.
+
+5. A son banquet misérable
+Le monde m’appelle en vain.
+Oh! fais-moi place à Ta table
+Et donne-moi de Ton pain,
+Prends! Je suis le Pain de vie,
+Prends ta place à ce festin
+Où Dieu même te convie,
+Et qui n’aura point de fin.''',
+    numero: 20,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_021',
+    titre: 'TOI DONT L’AME EST TOURMENTEE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Toi dont l’âme est tourmentée
+Aux approches de la mort,
+Toi dont la nef ballottée
+Ne sait où trouver le port,
+Regarde à travers tes larmes,
+Ce phare, qui tant de fois,
+A brillé dans tes alarmes:
+C’est la croix!
+C’est la croix!
+
+2. Ô toi qu’assaille le doute,
+Toi que le monde a séduit,
+Toi qui marches sur la route,
+Dans la nuit et vers la nuit,
+Même en doutant, prie, adore
+Celui qui meurt sur le bois;
+Regarde, oh! regarde encore
+Vers la croix!
+Vers la croix!
+
+3. Sur la Croix où Christ expire,
+La mort succombe avec Lui:
+C’en est fait de son empire,
+Le jour de la vie a lui!
+Péchés, doutes et souffrance
+Demeurent cloués au bois:
+Ô sublime délivrance
+De la croix!
+De la croix!
+
+4. A Tes pieds, ô croix bénie,
+Signe auguste et méprisé
+De triomphe et d’agonie,
+J’apporte mon cœur brisé
+Désormais, sois ma bannière
+Je veux vivre sous Tes lois
+Et mourir sous Ta Lumière
+Sainte croix!
+Sainte croix!''',
+    numero: 21,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_022',
+    titre: 'VIENS, VIENS A JESUS!',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Viens, viens a Jésus! Il est l’Ami fidèle,
+Il pardonne au rebelle,
+Oh! viens à Jésus!
+
+2. Viens, viens à Jésus! Il est Amour suprême,
+Viens à Celui qui t’aime,
+Oh! viens à Jésus!
+
+3. Viens, viens à Jésus! Il veut sauver ton âme,
+Que ton coeur Le réclame,
+Oh! viens à Jésus!
+
+4. Viens, viens à Jésus! Lui-même te convie,
+Lui seul donne la vie,
+Oh! viens à Jésus!
+
+5. Viens, viens à Jésus! Sa promesse est fidèle,
+Fuis la mort éternelle,
+Oh! viens à Jésus!''',
+    numero: 22,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_023',
+    titre: 'IL VA FINIR, LE BEAU JOUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Il va finir, le beau jour de la grâce;
+Ne tardez plus, accourez au Sauveur,
+Aujourd’hui même,
+Avant que le temps passe,
+Sans hésiter, donnez-Lui votre cœur.
+
+2. Pour vous sauver, Il s’est donné Lui-même,
+Mourant pour vous sur un infâme bois ;
+Croyez, pécheurs à cette oeuvre suprême
+Confiez-vous à Jésus mis en croix.
+
+3. Pour vous, perdus,
+Sans Dieu, sans espérance,
+Il a souffert la mort d’un criminel;
+Mais son trépas est votre délivrance;
+Il vous acquiert le bonheur éternel.
+
+4. Hâtez-vous donc
+Quand Sa voix vous appelle;
+Venez à Lui; ah! ne renvoyez pas;
+Il offre à tous, pardon, vie éternelle,
+Paix et bonheur déjà dès ici-bas.''',
+    numero: 23,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_024',
+    titre: 'Ô TOI QUI SOUFFRES SOLITAIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Ô toi qui souffres solitaire,
+Dieu te cherche dans cet instant,
+Toi qui gémis dans ta misère,
+Dieu te cherche et Son coeur t’attend
+
+Choeur
+Dieu te cherche, pour te guérir.
+Dieu te cherche, veux-tu venir?
+
+2. Et si ton âme est altérée
+Dieu te cherche pour l’abreuver;
+Si du péché tu I’as souillée,
+Dieu te cherche pour la sauver.
+
+3. Si ton désire la vie,
+Dieu te cherche, Il est infini,
+Si tu veux la gloire infinie,
+Dieu te cherche Il t’ouvre le ciel.
+
+4. Ouvre ton coeur à la grâce,
+Dieu te cherche, viens donc à Lui,
+Oh! n’attends pas que ce jour passe,
+Dieu te cherche, viens aujourd’hui!''',
+    numero: 24,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_025',
+    titre: 'AUJOURD’HUI JESUS T’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''1. Aujourd’hui, Jésus t’appelle,
+Ne tarde plus, ô pécheur,
+Pourquoi rester si rebelle
+Aux appels de ton Sauveur?
+
+Chœur
+Viens à Lui
+Car Jésus sauve aujourd’hui
+Viens à Lui
+Car Jésus sauve aujourd’hui
+
+2. Maintenant Il parle en grâce,
+Son coeur déborde d’amour,
+Oh! crois avant qu’Il ne passe:
+Viens à Jésus en ce jour!
+
+3. Veux-tu donc toujours entendre,
+Et rester dans ton péché?
+Ne le fais donc plus attendre,
+A la mort sois arraché!
+
+4. Ô pécheur Jésus t’appelle;
+Hâte-toi, saisis Sa main,
+Ecoute Sa voix fidèle,
+Ne remets pas à demain.''',
+    numero: 25,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_026',
+    titre: 'VIENS, AME PERDUE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Viens, âme perdue, viens à ton Sauveur!\nVois Sa main tendue, Saisis-la sans peur.\nC’est Lui qui t’invite ; réponds à Sa voix;\nSi ton coeur hésite, regarde à Sa croix!\n\nOui, la victoire, Tu l’auras,\nEt pour Sa gloire Tu vivras,\nJésus t’appelle: En avant!\nIl est fidèle et puissant.\n\n2. Viens, Son sang expie ton iniquité,\nEt donne la vie pour l’éternité.\nIl meurt à ta place, Il souffrit pour toi;\nAccepte Sa grâce et dis avec foi:\n\nOui, la victoire, je l’aurai\nEt pour Sa gloire je vivrai.\nJésus m’appelle: En avant!\nIl est fidèle et puissant.\n\n3. A Toi e veux être, A Toi pour toujours!\nJésus, sois mon Maître,\nMa Paix, mon Secours,\nMa seule Espérance, Mon unique Bien;\nSois ma Délivrance, Mon ferme Soutien!\n\nOui, la victoire, Nous l’aurons,\nNous vivrons.\nUne couronne Nous attend;\nJésus la donne: En avant!''',
+    numero: 26,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_027',
+    titre: 'TOUS MES PECHES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Tous mes péchés, tous mes péchés,\nSon sang les a lavés!\nTous mes péchés, tous mes péchés\nSon sang les a lavés!\n\n2. Tous mes soucis, tous mes soucis,\nMon Sauveur les a pris!\nTous mes soucis, tous mes soucis,\nMon Sauveur les a pris!\n\n3. C’est à la croix, c’est à la croix,\nQu’il en ôta le poids;\nC’est à la croix, c’est à la croix,\nQu’il en ôta le poids.\n\n4. L’éternité ! L’éternité !\nOù vas-tu la passer?\nL’éternité ! L’éternité !\nOù vas-tu la passer?\n\n5. Jésus t’attend, Jésus t’attend,\nOh! viens en ce moment\nJésus t’attend, Jésus t’attend,\nOh viens en ce moment!''',
+    numero: 27,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_028',
+    titre: 'A LA CROIX, OU MOURUT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. A la croix où mourut mon Sauveur,\nJe suis venu, brisé de douleur;\nLà Son sang purifia mon cœur,\nA Son nom la gloire!\n\nA Son nm la gloire! A Son nom la gloire!\nLà Son sang purifia mon cœur,\nA Son nom la gloire!\n\n2. Quelle merveille! Il vint me sauver;\nQuand de Sa croix je me fus chargé,\nEn moi Jésus vint pour demeurer.\nA Son nom la gloire!\n\nA Son nom la gloire! A Son non la gloire!\nEn moi Jésus vint pour demeurer,\nA Son nom la gloire!\n\n3. Ô fontaine effaçant le péché,\nDonna la vie au coeur desséché!\nLà, Jésus me retient attaché,\nA Son nom la gloire!\n\nA Son nom la gloire! A Son non la gloire!\nLà, Jésus me retient attaché,\nA Son nom la gloire!\n\n4. Pauvre âme, viens aux pieds du Sauveur\nA la source ouverte a tout pécheur;\nViens t’y plonger, trouver le bonheur,\nA Son nom la gloire!\n\nA Son nom la gloire! A Son non la gloire!\nViens t’y plonger, trouver le bonheur,\nA Son nom la gloire!''',
+    numero: 28,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_029',
+    titre: 'Ô PECHEUR HESITANT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Ô pécheur hésitant,\nExhorté dès longtemps,\nVoudrais-tu repousser la grâce?\nCet instant solennel où retentit l’appel,\nVoudrais-tu qu’à jamais il passe?\n\nChoeur\nA peu près convaincu,\nMais à jamais perdu!\nA peu près convaincu,\nMais à jamais perdu!\nA peu près convaincu\nMais à jamais perdu!\n\n2. Pourquoi tant regretter,\nSans jamais confesser\nLe péché qui ronge ton âme?\nHélas pourquoi souffrir,\nEt ne jamais ouvrir\nTon coeur à Christ, qui le réclame?\n\n3. Pourrais-tu t’excuser?\nVoudrais-tu refuser\nLa paix et la vie éternelle?\nJésus, dans Son amour,\nTe poursuit nuit et jour\nPour sauver ton âme rebelle.\n\n4. Viens donc à ton sauveur,\nReçois le nouveau coeur\nQu’à tous ses élus donne.\nPar le sang de la croix,\nAujourd’hui, si tu crois,\nAujourd’hui ton Dieu te pardonne.\n\nA jamais convaincu,\nA jamais convaincu,\nA jamais convaincu,\nGloire, gloire à Jésus!''',
+    numero: 29,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_030',
+    titre: 'PAUVRE ENFANT, AU BORD',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Pauvre enfant, au bord de I’abîme\nPécheur égaré dans la nuit!\nToi qui cherches à cacher ton crime,\nRegarde à ce flambeau qui luit.\n\nChoeur\nSi tu voulais venir ce soir!\nSi tu voulais venir ce Soir!\nA ce bon Sauveur qui t’appelle!\nSi tu voulais venir ce soir!\nSi tu voulais venir ce soir!\nViens! reçois la Vie éternelle!\n\n2. Comme autrefois, la pécheresse\nVint pleurer aux pieds du Seigneur,\nRépands tes larmes, ta détresse\nDevant ce Maître humble de coeur.\n\n3. Coeur angoissé, qui sens ta chaîne\nSe resserrer de jour en jour:\nEn Christ la victoire est certaine;\nOh! viens implorer Son secours.\n\n4. Souvent hélas! I’appel de grâce\nEn vain a retenti pour toi,\nAvant que Jésus ne se lasse,\nOh! viens à Lui, viens avec foi!\n\nPourquoi ne pas venir ce soir!\nPourquoi ne pas venir ce soir!\nA ce bon Sauveur qui t’appelle!\nPourquoi ne pas venir ce soir!\nPourquoi ne pas venir ce soir!\nViens! reçois la vie éternelle!''',
+    numero: 30,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_031',
+    titre: 'Ô MON DIEU, DANS MA SOUFFRANCE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Ô mon Dieu, dans ma souffrance,\nMa misère et mon péché,\nTu me parles d’espérance\nEn Jésus qui m’a cherché.\nOui, je crois que tu pardonnes\nA celui qui vient à Toi,\nJe reçois ce que Tu donnes\nEt l’accepte par la foi.\n\n2. Je ne suis pas digne d’être\nTon enfant, Ton racheté,\nCar j’ai fait d’un autre maître\nTrop longtemps la volonté.\nMais j’ai vu sur la Calvaire\nResplendir Ton grand amour.\nDans Tes bras, mon Dieu, mon Père,\nJe me jette sans retour.\n\n3. Tu le vois, je suis encore\nIncapable pour le bien,\nDieu puissant, Dieu que j’adore,\nSois mon aide et mon soutien.\nLoin de Toi, ce n’est pas vivre,\nEt j’ai soif du vrai bonheur;\nC’est Jésus que je veux suivre;\nFais de moi Ton serviteur.''',
+    numero: 31,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_032',
+    titre: 'Ô JOUR HEUREUX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. O jour heureux, jour de bonheur,\nLumière, paix, joie ineffable!\nAu Fils de Dieu, saint, adorable,\nA Jésus, j’ai donné mon coeur.\n\nChoeur\nQuel beau jour! Quel beau jour!\nOù d’un sauveur j’ai su I’amour.\nOui, dans ma nouvelle patrie,\nJésus m’attend et pour moi prie,\nQuel beau jour! Que beau jour,\nOù d’un Sauveur j’ai su I’amour!\n\n2. Oh! comprenez mon heureux sort:\nC’est en Jésus que Dieu pardonne;\nLa vie éternelle II la donne;\nPourquoi donc te craindrais-je, ô mort?\n\n3. Au ciel des chants ont retenti:\nAlléluia! Disent les anges,\nEntonnons de saintes louanges,\nCar un pécheur est converti.\n\n4. C’en est fait, tout est accompli,\nLe Fils de Dieu m’appelle frère;\nSon sang coula sur le Calvaire;\nIl est à moi, je suis à Lui.''',
+    numero: 32,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_033',
+    titre: 'TEL QUE JE SUIS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Tel que je suis, sans rien en moi\nSinon Ton sang versé pour moi\nEt Ta voix qui m’appelle à Toi,\nAgneau de Dieu, je viens, je viens!\n\n2. Tel que je suis, bien vaillant,\nEn proie au doute à chaque instant,\nLutte au dehors, crainte au-dedans,\nAgneau de Dieu, je viens, je viens!\n\n3. Te que je suis, Ton coeur est prêt\nA prendre le mien tel qu’il est,\nPour tout changer, Sauveur parfait!\nAgneau de Dieu, je viens, je viens!\n\n4. Tel que je suis, Ton grand amour\nA tout pardonné sans retour.\nJe veux être à Toi dès ce jour;\nAgneau de Dieu, je viens, je viens!''',
+    numero: 33,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_034',
+    titre: 'SEIGNEUR TA GRACE M’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Seigneur Ta grâce m’appelle,\nPar mon nom Tu me connais,\nEt mon coeur longtemps rebelle,\nSe donne à Toi pour jamais.\nC’est pour Toi que je veux vivre,\nCar Toi seul es mon Berger,\nC’est Toi seul que je veux suivre,\nEt non plus un étranger.\n\n2. N’as-Tu pas donné Ta vie\nPour me sauver, bon Pasteur?\nGloire à Ta grâce infinie!\nGloire à Toi, mon Rédempteur!\nAinsi, mon âme, courage!\nJésus marche devant toi,\nEt, jusqu’au bout du voyage,\nSon amour veille sur moi.\n\n3. Ne crains pas qu’Il abandonne\nSa brebis dans le chemin;\nIl est fidèle, et personne\nNe I’ôtera de Sa main.''',
+    numero: 34,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_035',
+    titre: 'JE SUIS SAUVE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Je suis sauvé! Dieu m’a fait grâce.\nJésus pour moi s’est donné,\nEt sur la croix, prenant ma place,\nPour toujours m’a pardonné,\nVoilà pourquoi je chante!\n\n2. Je suis sauvé! L’Agneau sans tache,\nDe tout péché m’affranchit,\nA la mort Son amour m’arrache,\nDans Sang, Il me blanchit,\nVoilà pourquoi je chante!\n\n3. Je suis sauve! J’ai la victoire,\nMon trésor est dans les cieux,\nBientôt le sera dans la gloire,\nJe Le verrai de mes yeux,\nVoilà pourquoi je chante!\n\n4. Je suis sauvé, tout mon coeur chante\nUn hymne saint au Seigneur,\nD’amour mon âme est palpitante,\nGloire à Jésus, mon Sauveur,\nVoilà pourquoi je chante!\n\n5. Es-tu sauvé? Jésus Lui-même\nDans Son sang t’a-t-Il lavé?\nSa douce voix te dit : «Je t’aime,\nOh ! viens et crois, sois sauvé!»\nVoilà pourquoi je chante!''',
+    numero: 35,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_036',
+    titre: 'MISERICORDE INSONDABLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Miséricorde insondable!\nDieu peut-Il tout pardonner?\nAbsoudre un si grand coupable,\nEt mes péchés oublier?\n\nChoeur\nJésus, je viens! je viens à Toi!\nTel que je suis, je viens à Toi!\nJésus, je viens! je viens à Toi!\nTel que je suis, prends-moi.\n\n2. Longtemps j’ai, loin de Sa face,\nProvoqué Son saint courroux,\nFermé mon coeur à Sa grâce,\nBlessé le Sien devant tout.\n\n3. O Jésus ! à Toi je cède,\nJe veux être libéré;\nDe tout péché qui m’obsède\nEt à jamais délivré.\n\n4. Alléluia! plus de doute,\nMon fardeau m’est enlevé;\nPour le ciel je suis en route,\nHeureux pour l’éternité.''',
+    numero: 36,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_037',
+    titre: 'TORRENTS D’AMOUR ET DE GRADE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Torrents d’amour et de grâce,\nAmour du Saveur en croix!\nA ce grand fleuve qui passe,\nJe m’abandonne et je crois.\n\nChoeur\nJe crois à Ton sacrifice,\nÔ Jésus, Agneau de Dieu,\nEt couvert par Ta justice,\nJ’entrerai dans le saint lieu.\n\n2. Ah! Que partout se répandre\nCe fleuve à la grande voix;\nQue tout l’univers entende\nL’appel qui vient de la croix.\n\n3. Que toute âme condamnée\nPour qui tu versas Ton sang,\nSoit au Père ramenée\nPar Ton amour tout-puissant.''',
+    numero: 37,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_038',
+    titre: 'AUJOURD’HUI TU M’APPELLES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Aujourd’hui Tu m’appelles,\nTu veux laver mon cœur;\nEt mes pensées rebelles,\nTu veux changer, Seigneur.\nLoin de Ta bergerie\nJ’errais dans le péché:\nPour me sauver la vie,\nJésus, Tu m’as cherché.\n\n2. Aujourd’hui Ta grâce ouvre\nLa porte du salut:\nTous ceux que Ton sang couvre\nSont parmi les élus.\nEt le Père, avec joie,\nPardonne au pauvre enfant,\nQui, délaissant sa voie,\nVient à Lui, repentant.\n\n3. Oui, le Père m’appelle,\nLe Saint-Esprit descend,\nLe ciel aujourd’hui scelle\nLe bonheur qui m’attend.\nAu portail de la grâce,\nNul ne s’informera\nSi j’ai droit à ma place:\nJésus me recevra!\n\n4. La maison de mon Père,\nJe ne puis m’en passer;\nIl l’ouvre à ma prière,\nSans jamais se lasser.\nJésus, c’est Lui la porte,\nMe connaît par mon nom:\nSi tout passe, qu’importe!\nJ’ai place en Sa maison!''',
+    numero: 38,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_039',
+    titre: 'IL M’A SAUVE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Il m’a sauvé, Il m’a sauvé,\nIl m’a sauvé, Il m’a sauvé,\nII m’a sauvé, Il m’a sauvé,\nEt dans Son sang Il m’a lavé!\nLe Fils de Dieu vit ma misère,\nIl quitta, pour me secourir,\nSon trône au ciel, et vint mourir\nSur la croix du Calvaire!\n\n2. Il m’a sauvé, Il m’a sauvé,\nIl m’a sauvé, Il m’a sauvé,\nIl m’a sauvé, Il m’a sauvé,\nEt dans Son sang Il m’a lavé!\nJésus, le bien-aimé du Père,\nPour moi le pécheur révolté,\nS’immole, ô divine bonté,\nSur la croix du Calvaire!\n\n3. Il m’a sauvé, Il m’a sauvé,\nIl m’a sauvé, Il m’a sauvé,\nIl m’a sauvé, Il m’a sauvé,\nEt dans Son sang Il m’a lavé!\nOui, le monde a vu ce mystère.\nLe juste par Dieu condamné\nEt le coupable pardonné\nSur la croix du Calvaire.\n\n4. Il m’a sauvé, Il m’a sauvé,\nIl m’a sauvé, Il m’a sauvé,\nil ma sauvé, li m’a sauvé,\nEt dans Son sang li m’a lavé!\nA Toi, Jésus, ma vie entière,\nA Toi tout l’amour de mon coeur’\nEn mourant Tu fus mon vainqueur\nSur la croix du Calvaire.''',
+    numero: 39,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_040',
+    titre: 'SEIGNEUR DU SEIN DE LA POUSSIERE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Seigneur du sein de la poussière,\nMon âme crie à Toi,\nDescends, ô Dieu! Dans ma prière;\nQue je Te sente en moi.\n\n2. Je ne veux plus l’ombre qui passe,\nL’image qui pâlit;\nMais la substance de Ta grâce,\nToi-même, Ton Esprit.\n\n3. C’est assez et trop se répandre\nEn long et vague espoir;\nJe veux Te parler et T’entendre,\nTe toucher et Te voir.\n\n4. Je veux brûler, mais de Ta flamme,\nLuire, mais de Ton jour,\nDe Ton âme animer mon âme,\nAimer de Ton amour.\n\n5. Voilà le seul bien que j’envie,\nQue j’implore, ô mon roi!\nNe plus vivre que de Ta vie,\nQue par Toi, que pour Toi.''',
+    numero: 40,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_041',
+    titre: 'Ô SEIGNEUR, BENIS LA PAROLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Ô Seigneur, bénis la Parole\nQue nous venons d’ouïr, (*)\n* Que nous allons ouïr\nNe permets pas qu’elle s’envole\nDe notre souvenir!\n\n2. Jaloux de Ta sainte influence,\nTrop souvent le Malin\nAccourt et ravit la semence\nQue répandit Ta main.\n\n3. Trop souvent elle est sans racine\nEn un terrain pierreux;\nLe soleil vient: elle décline\nSous l’ardeur de ses feux.\n\n4. Trop souvent les soucis du monde\nOu ses biens sans valeur,\nDétruisant sa vertu féconde,\nL’étouffent dans le coeur.\n\n5. Ah! plutôt que Ton Evangile\nS’emparant de mon coeur,\nChaque grain en rapporte mille,\nA Ta gloire, ô Seigneur!''',
+    numero: 41,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_042',
+    titre: 'POUR TRIOMPHER DANS LES COMBATS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Pour triompher dans les combats,\nQuelle est notre force ici-bas?\nQuelle est la divine lumière,\nQui nous dirige et nous éclaire\nDans la sombre nuit de l’erreur?\nC’est la Parole du Seigneur.\n\n2. Quel est le glaive à deux tranchants\nDont les coups sont assez puissants\nPour briser l’arme la plus dure,\nEt, malgré la plus forte armure,\nPour pénétrer jusques au coeur?\nC’est la Parole du Seigneur.\n\n3. Quel est le vent impétueux\nQui mugit et descend des cieux,\nEt dont la voix grave et sévère,\nSemblable à celle du tonnerre,\nFait trembler l’âme du pécheur?\nC’est la Parole du Seigneur.\n\n4. Quel est ce chant suave et doux\nQui, d’en haut venant jusqu’à nous,\nParle de grâce et de clémence,\nRéveille en nos coeurs l’espérance\nEt calme partout la douleur?\nC’est la Parole du Seigneur.\n\n5. Sainte Parole, habite en moi;\nEclaire et ranime ma foi!\nDans les combats, sois ma défense,\nDans les dangers, ma délivrance,\nEt que par Toi je sois vainqueur,\nSainte Parole du Seigneur!''',
+    numero: 42,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_043',
+    titre: 'ROMPS-NOUS LE PAIN DE VIE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Romps-nous le pain de vie.\nQue Ta bonté, Seigneur, nous rassasie\nDe vérité! Amour qui nous fait vivre,\nRévèle-Toi! Parle dans le saint Livre\nA notre foi!\n\n2. Ô Toi dont la clémence créa du pain\nPour une foule immense mourant de faim,\nVois, Ton peuple se presse autour de Toi...\nSecours notre détresse et notre foi!\n\n3. C’est Toi le Pain de vie, Verbe puissant!\nC’est de Ta chair meurtrie,\nC’est de Ton sang\nQue notre âme doit vivre...\nAh! donne-Toi par l’Esprit et le Livre\nA notre foi!\n\n4. Tu bénis Tes apôtres,\nPuis, à leur tour,\nIls portèrent à d’autres\nTon grand amour...\nÔ Parole féconde,\nQue notre foi\nT’offre à ce pauvre monde\nQui meurt sans Toi!''',
+    numero: 43,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_044',
+    titre: 'A TES PIEDS, Ô DIVIN MAITRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. A Tes pieds, ô divin Maître!\nJe me place avec bonheur,\nEn T’adorant, je veux être\nTon disciple, ô mon Sauveur!\nParle! j’ai soif de T’entendre;\nParle! je n’ai qu’un désir:\nQue Ta voix puissante et tendre\nA mon coeur se fasse ouïr.\nParle! j’ai soif de T’entendre;\nParle! je n’ai qu’un désir:\nQue Ta voix puissante et tendre\nA mon coeur se fasse ouïr.\n\n2. Faites place, ô voix humaines,\nA la voix de mon Sauveur!\nPensées vaines et choses vaines,\nEloignez-vous de mon coeur!\nTous les bruits, faites silence!\nToi, mon Maître parle-moi!\nRecueillie en Ta présence,\nMon âme n’entend que Toi.\nTous les bruits, faites silence!\nToi, mon Maître, parle-moi!\nRecueillie en Ta présence,\nMon âme n’entend que Toi.\n\n3. Parle-moi, témoin fidèle!\nDécouvre-moi le trésor\nDe Ta sagesse éternelle;\nParie, ô Maître! Parle encor.\nTa Parole, c’est la vie,\nC’est la lumière et la paix.\nA Ton école bénie\nJe veux rester à jamais.\nTa Parole, c’est la vie,\nC’est la lumière et la paix\nA Ton école bénie\nJe veux rester à jamais.\n\n4. Parle! et pour que je comprenne\nTon enseignement divin,\nDans Ta grâce souveraine,\nInstruis-moi par I’Esprit Saint.\nParle! et pour que j’obéisse\nA Tes ordres aussitôt,\nForme-moi pour Ton service.\nPour Te suivre, saint Agneau!\nParle! et pour que j’obéisse\nA Tes ordres aussitôt,\nForme-moi pour Ton service,\nPour Te suivre, saint Agneau!''',
+    numero: 44,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_045',
+    titre: 'OH! QUE TON JOUG EST FACILE!',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Oh! que Ton Joug est facile\nOh! combien j’aime Ta loi!\nDieu saint, Dieu de l’Evangile!\nElle est toujours devant moi.\nDe mes pas c’est la lumière,\nC’est le repos de mon coeur;\nMais pour la voir tout entière,\nOuvre mes yeux, bon Sauveur!\n\n2. Non, Ta loi n’est point pénible\nPour quiconque est né de Toi;\nToute victoire est possible\nA qui combat avec foi.\nSeigneur! dans Ta forteresse\nAucun mal ne m’atteindra;\nSi je tremble, en ma faiblesse,\nTa droite me soutiendra.\n\n3. D’un triste et rude esclavage\nAffranchi par Jésus-Christ,\nJ’ai part à Ton héritage,\nAux secours de Ton Esprit.\nAu lieu d’un maître sévère\nPrêt à juger, à punir,\nJe sers le plus tendre Père,\nToujours prêt à me bénir.\n\n4. Dieu qui guides, qui consoles!\nJ’ai connu que le bonheur\nEst de garder Tes Paroles,\nEt je les serre en mon coeur.\nFais-moi marcher dans Ta voie\nEt me plaire en Tes statuts.\nSi je cherche en Toi ma joie,\nJe ne serai pas confus.''',
+    numero: 45,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_046',
+    titre: 'MON AME EN SILENCE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Mon âme en silence\nSe tient devant Toi,\nOh! rends Ta présence\nSensible à ma foi.\nJe ne veux connaître\nAucune autre voix\nQue la Tienne, ô Maître,\nToi seul, parle-moi!\n\n2. Parole bénie\nDe mon Rédempteur,\nParole de vie,\nPénètre en mon coeur.\nC’est Toi la lumière\nQui brille en la nuit,\nL’eau qui désaltère,\nLe pain qui nourrit.\n\n3. Seigneur je T’écoute\nSeigneur, parie-moi!\nSans crainte, ni doute,\nJe m’attends à Toi.\nOui, daigne m’instruire\nEt dis tout, Seigneur,\nCe que Tu dois dire\nA Ton serviteur.\n\n4. Qu’en moi Ta voix fasse\nAbonder toujours\nLes fruits de la grâce,\nLes fruits de l’amour.''',
+    numero: 46,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_047',
+    titre: 'QUE TA LUMIERE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Que Ta lumière, dès le matin,\nLuise, ô bon Père! Sur mon chemin.\nOh! vivifie dès maintenant,\nEt sanctifie Ton cher enfant.\n\n2. Sauveur fidèle, livré pour moi,\nTa voix m’appelle, Je viens à Toi;\nA ma faiblesse pense aujourd’hui;\nDans la détresse Sois mon appui.\n\n3. Donne à mon âme, jour après jour,\nLa pure flamme de Ton amour.\nQu’elle conduise auprès de Toi\nL’âme indécise qui vit sans foi.\n\n4. Toute ma joie Ô mon Sauveur!\nC’est que l’on voie Ton Nom vainqueur;\nC’est que l’impie, sauvé par Toi,\nEnfin s’écrie: “Je suis à Toi!”''',
+    numero: 47,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_048',
+    titre: 'DEJA L’ETOILE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Déjà l’étoile s’allume aux cieux\nEt la nuit voile tout à mes yeux.\nMais, tendre Père, quand tout s’endort,\nDans Ta lumière je suis encor\n\n2. Cette journée qui déjà meurt\nJe I’ai donnée à Toi, Seigneur.\nJ’ai pris’ sans crainte, serrant Ta main,\nDe Ta loi sainte l’étroit chemin.\n\n3. Sonde mes voies et mon amour,\nMes pleurs, mes joies pendant ce jour;\nEt purifie, Sauveur puissant,\nToute ma vie avec Ton sang.\n\n4. Jusqu’à l’aurore du jour qui vient,\nOh! sois encore mon sûr gardien!\nEt jusqu’à l’heure de mon départ,\nJésus, demeure Mon seul rempart.''',
+    numero: 48,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_049',
+    titre: 'JESUS, TA SAINTE PRESENCE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Jésus, Ta sainte présence\nEst la source du bonheur.\nDans la joie et la souffrance\nElle est le repos du coeur.\n\nChoeur\nFais briller sur moi Ta face,\nÔ Jésus Agneau de Dieu!\nA Tes pieds, c’est là ma place,\nPrès de Toi mon ciel est bleu.\n\n2. Sur celui qui Te contemple\nDescend un rayon divin\nTu fais de son coeur Ton temple,\nTon doigt pointe son chemin.\n\n3. Ah! que mon âme ravie\nTe rencontre, ô mon Sauveur!\nCar Ton regard c’est la vie,\nC’est la richesse du coeur!\n\n4. Il faut aussi Ta présence\nPour Ton service, ô Jésus!\nCar elle est une puissance\nPour relever les perdus!\n\n5. Quand dans l’étendue immense,\nÔ Jésus, Tu paraîtras,\nC’est encor par Ta présence\nQue Tu nous attireras!''',
+    numero: 49,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_050',
+    titre: 'SEIGNEUR, CE QUE JE RECLAME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Seigneur, ce que je réclame,\nC’est ce riche don d’amour!\nQue cette céleste flamme\nEn moi brûle toujours!\n\n2. Cet amour si fort, si tendre,\nAmour qui supporte tout,\nQui ne veut pas se défendre,\nPrêt à souffrir jusqu’au bout.\n\n3. Pour les autres, il s’oublie,\nII ne peut être envieux,\nTout éloge l’humilie,\nJamais il n’est orgueilleux.\n\n4. Cet amour peut vaincre et fondre\nLes coeurs méchants, durs, glacés:\nIls ne peuvent rien répondre,\nL’amour les a terrassés.\n\n5. Devant la vaste souffrance\nQui s’étend de jour en jour,\nIl faut un remède immense,\nIl faut un immense amour.\n\n6. Que jusqu’à la mort, fidèle,\nPriant, luttant en tout lieu,\nMa vie entière révèle\nL’amour sublime de Dieu.''',
+    numero: 50,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_051',
+    titre: 'GRACE INFINIE!',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Grâce infinie! Christ est ma Vie,\nMa Justice et ma Sainteté;\nQue la mort vienne et me surprenne,\nTout sera félicité.\n\n2. Sauveur fidèle, Divin modèle,\nSeul digne de guider mes pas.\nTa voix m’attire, et je n’aspire\nQu’à T’imiter ici-bas.\n\n3. L’objet suprême que mon coeur aime,\nC’est Toi, le Bien-aimé de Dieu.\nPour voir Ta face, quand donc sera-ce\nQue j’irai dans Ton saint lieu?\n\n4. Heureuse voie, grande est ma joie:\nSous Ton regard, Sauveur clément\nMon âme éprouve qu’en Toi se trouve\nSon parfait contentement.''',
+    numero: 51,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_052',
+    titre: 'TOI QUI DISPOSES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Toi qui disposes de toutes choses\nEt nous les donnes chaque jour,\nReçois, ô Père! Notre prière\nDe reconnaissance et d’amour.\n\n2. Le don suprême que Ta main sème\nC’est notre pardon, c’est Ta paix;\nEt Ta clémence, Trésor immense,\nEst le plus grand de Tes bienfaits.\n\n3. Que, par Ta grâce, l’instant qui passe\nServe à nous rapprocher de Toi!\nEt qu’à chaque heure, vers Ta demeure\nNos coeurs s’élèvent par la foi!''',
+    numero: 52,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_053',
+    titre: 'Ô MON SAUVEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Ô mon Sauveur! Ouvre mon coeur\nA Ta douce lumière; Seigneur, mon Dieu,\nDe Ton saint lieu, écoute ma prière.\n\n2. Dieu Tout-puissant! Dieu bienfaisant!\nJ’ai besoin de Ta grâce;\nEclaire-moi, soutiens ma foi,\nJe viens chercher Ta face.\n\n3. Ta vérité, ta charité, brillent dans Ta Parole;\nSeule, elle instruit, soutient, conduit\nNotre âme et la console.\n\n4. Que Ton Esprit, témoin de Christ,\nRègne seul dans notre âme;\nQue Ton amour, et nuit et jour,\nL’embrase de sa flamme.''',
+    numero: 53,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_054',
+    titre: 'DEMEURE PAR TA GRACE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Demeure par Ta grâce\nAvec nous, Dieu Sauveur!\nQuoi que l’ennemi fasse,\nVeille sur notre coeur.\n\n2. Que Ta sainte Parole,\nChaque jour, ici-bas\nSoit la seule boussole\nQui dirige nos pas.\n\n3. Eternelle Lumière,\nQue ta vive splendeur\nNous guide, nous éclaire\nEt nous garde d’erreur.\n\n4. Etends sur nous Ton aile\nEt demeure à jamais\nAvec nous, Dieu fidèle!\nRépands sur nous Ta paix.''',
+    numero: 54,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_055',
+    titre: 'SEIGNEUR, TU DONNES TA GRACE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Seigneur, Tu donnes Ta grâce\nAu coeur qui s’attend à Toi;\nAh! que sa douce efficace\nSe répande aussi sur moi!\nOui, sur moi!\nOui, sur moi!\nSe répande aussi sur moi!\n\n2. Père tendre et secourable,\nJ’ai souvent enfreint Ta loi;\nQuoique impur et misérable,\nOh! pardonne et bénis-moi!\nBénis-moi!\nBénis-moi!\nOh! pardonne et bénis-moi!\n\n3. Ô Sauveur toujours propice,\nFais que je m’attache à Toi!\nJ’ai faim, j’ai soif de justice;\nJe T’appelle, réponds-moi!\nRéponds-moi!\nRéponds-moi!\nJe T’appelle, réponds-moi!\n\n4. Par Ton amour, ô bon Père,\nPar le sang versé pour moi,\nPar l’Esprit qui seul opère,\nDieu trois fois saint, sauve-moi!\nSauve-moi!\nSauve-moi!\nDieu trois fois saint, sauve-moi!''',
+    numero: 55,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_056',
+    titre: 'PRIEZ TOUJOURS, PRIEZ SANS CESSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Priez toujours, priez sans cesse!\nPriez, le Seigneur entendra!\nIl est fidèle à Sa promesse,\nPriez, priez, Il répondra.\n\n2. Priez, si vos coeurs se déchirent.\nLa main qui blesse guérira\nIl entend tous ceux qui soupirent:\nIl a souffert, Il guérira!\n\n3. Priez dans la fournaise ardente,\nQuand Satan gronde autour de vous\nJésus sait calmer la tourmente,\nPriez, triomphez à genoux’\n\n4. Priez, priez lorsque le doute\nObscurcira votre horizon!\nPriez! Jésus connaît la route,\nIl ouvrira votre prison.\n\n5. Priez, pour rendre témoignage,\nPriez! Pour confesser Jésus,\nDieu bénira votre langage,\nPour sauver les pécheurs perdus.\n\n6. Priez, quand votre âme hésitante\nNe sait où choisir son chemin.\nMême à travers la mer bruyante\nJésus vous tiendra par la main.\n\n7. Priez! si votre ciel est sombre,\nSi vous tremblez devant la mort!\nJésus vous couvrant de Son ombre,\nVous ouvrira les portes d’or.''',
+    numero: 56,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_057',
+    titre: 'LE CRI DE MON AME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Le cri de mon âme s’élève vers Toi.\nElle Te réclame, Jésus, pour son Roi.\nTon joug est facile, Ton fardeau léger;\nSur mon coeur docile, règne, ô bon Berger!\n\n2. Jésus, sois mon guide, dirige mes pas\nEt sois mon égide dans tous mes combats.\nDans la nuit profonde\nTiens-moi par la main;\nLumière du monde, luis sur mon chemin!\n\n3. Source de l’eau vive, Pain venu des cieux,\nQue par Toi je vive paisible et joyeux!\nQuand luira l’aurore du jour éternel,\nQue je vive encore pour Toi, dans le ciel!''',
+    numero: 57,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_058',
+    titre: 'LA VOIX DE CHRIST NOUS APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. La voix de Christ nous appelle;\nIl est temps de s’éveiller:\n“La moisson est vaste et belle!\nQui veut pour Moi travailler?”\nC’est ton Sauveur, ô mon frère,\nDont l’appel s’adresse à toi.\nRéponds-Lui, d’un coeur sincère\n“Me voici, Maître, prends-moi!”\n\n2. Sans franchir les mers bruyantes,\nTu peux annoncer Jésus.\nQue d’âmes insouciantes,\nDe coeurs souffrants et perdus!\nAutour de nous l’oeuvre est grande,\nMais petite est notre foi.\nA Jésus qui nous commande\nRépondons: “Maître, aide-moi!”\n\n3. Si d’un sublime langage\nTu n’as pas reçu le don,\nTu peux rendre témoignage\nQu’en Jésus est le pardon;\nA ton frère tu peux dire\nCe que Christ a fait pour toi.\nPour que Lui-même t’inspire,\nDis-Lui: “Maître, enseigne-moi!”\n\n4. Mais que nul ne nous entende\nDire encor: “Je ne puis rien!”\nLorsque Jésus nous commande\nDe faire et d’aimer le bien.\nPoursuivons l’oeuvre bénie\nAvec zèle, amour et foi;\nPuis notre tâche finie,\nNous dirons: “Maître, prends-moi!”''',
+    numero: 58,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_059',
+    titre: 'PRENDS MA VIE...',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Prends ma vie, elle doit être\nA Toi seul, ô divin Maître.\nQue sur le flot de mes jours.\nTon regard brille toujours!\n\n2. Que mes mains à Ton service\nS’offrent pour le sacrifice,\nQu’à Te suivre pas à pas\nMes pieds ne faiblissent pas!\n\n3. Prends ma voix et qu’elle chante\nTa grâce auguste et touchante:\nPar mes lèvres que Ton Nom\nParle au pécheur de pardon!\n\n4. Que mon esprit s’illumine\nDe Ta sagesse divine;\nPrends mon argent et mon or\nEt Toi seul, sois mon trésor\n\n5. Que ma volonté devienne\nLa servante de la Tienne;\nFais Ton trône de mon cœur:\nIl T’appartient, bon Sauveur.\n\n6. Qu’ainsi mon amour répande\nA Tes pieds son humble offrande\nPrends-moi, dès mes premiers jours!\nTout à Toi seul, pour toujours!''',
+    numero: 59,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_060',
+    titre: 'PRECIEUX JESUS, JE T’AIME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Précieux Jésus, je T’aime,\nRemplis-moi de Ton amour;\nJe Te donne mon coeur même,\nAccepte-le sans retour.\n\nChoeur\nSeigneur Jésus, ô mon Sauveur,\nSois le trésor de mon coeur!\nSeigneur Jésus, ô mon Sauveur,\nSois le trésor de mon coeur!\n\n2. Prends pour Toi, Sauveur aimable,\nTout mon coeur mes volontés;\nQue Ton Esprit adorable\nRemplisse mes facultés.\n\n3. J’avance ma main sans crainte\nPour saisir Ton vêtement;\nDe Toi sort la vertu sainte\nQui guérit entièrement.\n\n4. L’amour qui remplit mon âme\nM’est si doux, ô mon Sauveur!\nViens en moi, je Te réclame,\nAccomplis tout dans mon cœur.\n\n5. Oh! Sainte et nouvelle aurore\nQui déjà vient luire en moi;\nJoyeux, je répète encore:\nMon Sauveur! Je suis à Toi.''',
+    numero: 60,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_061',
+    titre: 'DIVIN SAUVEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Divin Sauveur, Toi qui vins sur la terre\nPour y mourir sur un infâme bois,\nLe coeur ému, j’approche du Calvaire;\nQue Ton Esprit m’enseigne à contempler Ta croix.\n\nChoeur\nTa grâce infinie\nVaut mieux que la vie\nMon coeur s’attache à Toi\nPour Te suivre avec foi!\n\n2. Là, je puis voir la grandeur de l’abîme\nOù, par amour, Jésus est descendu,\nEt les tourments de la sainte Victime\nMe disent qu’à jamais, sans Christ,\nj’étais perdu\n\n3. Mon seul refuge est dans Sa meurtrissure;\nLà, j’ai trouvé le pardon et la paix,\nEt, sous le sang qui lava ma souillure,\nJe puis de tout péché rester libre à jamais.\n\n4. Autrefois seul, tombant de chute en chute,\nJ’étais vaincu par le grand tentateur,\nMais aujourd’hui, mon Sauveur pour moi lutte,\nEt Son bras tout-puissant me rend plus que vainqueur\n\n5. Jusqu’à la fin, Jésus, ma confiance\nSera toujours dans le sang de Ta croix;\nScelle en mon coeur cette ferme assurance\nEt que toujours aussi j’obéisse à Ta Voix\n\nA Toi je me livre,\nPour Toi je veux vivre;\nJésus, de Ton amour\nRemplis-moi chaque jour!''',
+    numero: 61,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_062',
+    titre: 'MA VIE ENFIN JE TE DONNE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Ma vie enfin le Te donne,\nÔ Jésus, Agneau de Dieu!\nPrends-la, je Te l’abandonne,\nA cette heure et dans ce lieu.\nJe T’apporte mes souillures,\nMon péché, mon mauvais coeur.\nDans le sang de Tes blessures,\nBlanchis-moi, divin Sauveur!\n\n2. Tu connais mes luttes vaines\nPour triompher de mon coeur;\nTu sais le poids de mes chaînes\nEt ma secrète douleur.\nQue Ta puissance infinie\nM’affranchisse du péché,\nEt que par l’Esprit de vie\nDu mal je sois détaché!\n\n3. Sans réserve, je me livre,\nJe ne garde rien pour moi.\nMon désir est de Te suivre,\nD’être à Tes ordres, mon Roi!\nJoyeux dans l’obéissance\nQue Tu donnes, que je veux,\nSans plus tarder, je m’élance\nD’un coup d’aile vers les cieux!\n\n4. Scelle à jamais l’alliance\nQue je traite maintenant,\nEt dans mon coeur immense\nViens la signer de Ton sang.\nS je regarde à moi-même\nUn instant, je suis perdu!\nMais Tu sauras, Ton coeur m’aime,\nMe tenir debout, Jésus!''',
+    numero: 62,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_063',
+    titre: 'JESUS, JE TE SUIVRAI PARTOUT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Jésus, je Te suivrai partout;\nJésus, je Te suivrai partout;\nSoit dans la tristesse\nSoit dans l’allégresse,\nJésus, je Te suivrai partout!\n\n2. Jésus, je Te suivrai toujours;\nJésus, je Te suivrai toujours:\nSi l’épreuve abonde,\nTa paix est profonde,\nJésus, je Te suivrai toujours\n\n3. Je Te suivrai dès aujourd’hui!\nJe Te suivrai dès aujourd’hui!\nMon âme affranchie,\nVivra de Ta vie,\nJe Te suivrai dès aujourd’hui!\n\n4. Je Te suivrai jusques au bout,\nJe Te suivrai jusques au bout,\nSi pour moi Tu plaides,\nSeigneur, si Tu m’aides,\nJe Te suivrai jusques au bout!''',
+    numero: 63,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_064',
+    titre: 'A TOI, MON DIEU',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. A Toi, mon Dieu, je m’abandonne,\nOh! fais de moi ce que Tu veux:\nDe l’argile que je Te donne,\nFais un’ diamant précieux!\n\nChoeur\nPrends, Seigneur, prends toute ma vie,\nA Toi seul je veux obéir.\nPar l’Esprit qui me sanctifie!\nSur Ton autel je viens m’offrir.\n\n2. Tu connais ma grande faiblesse,\nMon impuissance à Te servir\nS’il le faut que Ta main me blesse,\nTon amour saura me guérir!\n\n3. Oh! ne m’épargne ni la flamme,\nNi le ciseau, divin Sculpteur!\nQue Ton Esprit forme mon âme\nA l’image de son Sauveur!''',
+    numero: 64,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_065',
+    titre: 'ENTRE TES MAINS J’ABANDONNE.',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Entre Tes mains j'abandonne
+Tout ce que j'appelle mien.
+Oh! ne permets à personne,
+Seigneur d'en reprendre rien!
+
+Choeur
+Oui, prends tout, Seigneur!
+Oui, prends tout, Seigneur!
+Entre Tes mains j'abandonne
+Tout avec bonheur.
+
+Je n'ai pas peur de Te suivre
+Sur le chemin de la croix.
+C'est pour Toi que je veux vivre,
+Je connais, j'aime Ta voix.
+
+Choeur
+Oui, prends tout, Seigneur!
+Oui, prends tout, Seigneur!
+Sans rien garder, je Te livre
+Tout avec bonheur.
+
+Tu connais mieux que moi-même
+Tous les besoins de mon coeur;
+Et pour mon bonheur suprême,
+Tu veux me rendre vainqueur.
+
+Choeur
+Oui, prends tout, Seigneur!
+Oui, prends tout, Seigneur!
+Je ne vis plus pour moi-même,
+Mais pour mon Sauveur.
+
+Prends mon corps et prends mon âme,
+Que tout en moi soit à Toi.
+Que par Ta divine flamme
+Tout mal soit détruit en moi!
+
+Choeur
+Oui, prends tout, Seigneur!
+Oui, prends tout, Seigneur!
+Prends mon corps et prends mon âme:
+Règne sur mon coeur!''',
+    numero: 65,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_066',
+    titre: 'AU PIEDS DE LA CROIX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Au pied de la croix sanglante,\nOù Tu T’es donné pour moi,\nMon âme émue et tremblante,\nÔ Jésus se livre à Toi.\n\nChoeur\nLe parfait bonheur,\nLe parfait bonheur,\nC’est de mettre\nTout mon être A Tes pieds, Seigneur!\n\n2. Me voici pour Ton service,\nJe ne garde rien pour moi,\nSur l’autel du sacrifice,\nJe me place par la foi.\n\n3. A la gloire, aux biens du monde\nJe renonce pour jamais,\nQue le saint-Esprit m’inonde,\nDe Ta joie et de Ta paix\n\n4. Si ma faiblesse est bien grande,\nTa force est plus grande encor,\nÔ Jésus, qu’elle me rende\nFidèle jusqu’à la mort.\n\n5. Ô félicité suprême,\nTa grâce est mon bouclier,\nEt je T’appartiens, je T’aime,\nToi qui m’aimas le premier.''',
+    numero: 66,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_067',
+    titre: 'SEUL REFUGE DE MON ÂME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Seul refuge de mon âme,\nJe veux m’appuyer sur Toi;\nLa paix que mon coeur réclame\nEst à Tes pieds, divin Roi!\n\nChoeur\nJésus, Sauveur, que je T’aime,\nÔ Toi qui mourus pour moi,\nEt qui veux, dans le ciel même,\nQu’un jour je règne avec Toi!\n\n2. Sur Ta croix, Victime sainte,\nMon péché fut expié.\nPlus d’angoisse, plus de crainte:\nTon sang m’a purifié.\n\n3. Il n’est aucune autre chose\nQui puisse apaiser mon coeur;\nEn Toi seul je me repose,\nEn Toi, mon puissant Sauveur.\n\n4. A Toi, Jésus, j’abandonne\nMon coeur, mon âme et mes jours.\nQu’en moi Ton amour rayonne!\nJe veux te servir toujours.''',
+    numero: 67,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_068',
+    titre: 'ES-TU LASSE, REMPLI DE TRISTESSE?',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Es-tu lassé, rempli de tristesse?...\nDis tout à Jésus!\nDis tout à Jésus!\nSon coeur est ouvert à ta voix sans cesse,\nOh! Dis tout à Jésus!\n\nChoeur\nDis tout à Jésus!\nOh! Dis-Lui tout!\nCombien Son accueil est doux.\nIl peut comprendre, Il aime à t’entendre:\nDis-Lui simplement tout!\n\n2. Il voit tes yeux rougis par les larmes,\nDis tout à Jésus!\nDis tout à Jésus!\nIl connaît ton coeur, Il sait tes alarmés.\nOh! Dis tout à Jésus!\n\n3. Si ton passé surgit comme une ombre,\nDis tout à Jésus!\nDis tout à Jésus!\nIl peut effacer tes péchés sans nombre\nOh! Dis tout à Jésus!\n\n4. Et pour demain ce que tu redoutes:\nDis tout à Jésus!\nDis tout à Jésus!\nIl est près de toi le long de la route.\nOh! Dis tout à Jésus!''',
+    numero: 68,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_069',
+    titre: 'PECHEUR, JE VOUDRAIS TE GUERIR.',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Pécheur, Je voudrais te guérir;\nJ’ai vu tes larmes, ta souffrance,\nMais pour avoir la délivrance,\nIl faut apprendre à M’obéir.\nVoici, Je Me tiens à la porte,\nJe suis Ton Maître et Ton Sauveur;\nC’est le bonheur que Je T’apporte:\nNe veux-tu pas M’ouvrir ton coeur?\n\n2. Sais-tu que Je suis né pour toi,\nQue pour toi J’ai donné ma vie?\nTon coeur est-il l’hôtellerie\nSans place même pour ton Roi?\nSouvent, année après année,\nChez toi J’ai frappé, mais en vain,\nVoici le soir de la journée,\nNe veux-tu pas M’ouvrir enfin?\n\n3. N’auras-tu pas besoin de Moi,\nBientôt, dans la nuit éternelle?\nDès aujourd’hui, viens sous aile,\nJe serai tout, oui, tout pour toi.\nLe temps rapidement t’emporte;\nPourquoi renvoyer à demain?\nTrop tard, un jour devant ma porte,\nTu frapperas peut être, en vain.\n\n4. Si tu n’as pas besoin de Moi,\nEcoute, obéis sans comprendre.\nJusques à quand devrai-Je attendre?\nTon Seigneur a besoin de toi.\nVoici, Je Me tiens à la porte,\nJe suis ton Maître et ton Sauveur;\nC’est le bonheur que Je t’apporte:\nNe veux-tu pas m’ouvrir ton cœur?''',
+    numero: 69,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_070',
+    titre: 'POUR MOI CHRETIEN',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Pour moi chrétien la terre exil;\nMais tout est bien Mais tout est bien.\nIl faut marcher de péril en péril;\nMais tout est bien. Mais tout est bien.\nPourquoi les pleurs, la terre ou l’ennui?\nChrist est à moi demain comme aujourd’hui;\nAu ciel bientôt je serai tout à Lui\nOui, tout est bien. Oui, tout est bien.\n\n2. Larmes, travail, deuil, tristes ici-bas;\nMais tout est bien. Mais tout est bien.\nDe Canaan j’approche à chaque pas;\nOui, tout est bien. Oui, tout est bien.\nEn vain le monde et son charme trompeur\nDans ses liens veut retenir mon coeur\nJ’avance en paix les yeux sur Sauveur.\nOui, tout est bien, oui tout est bien.\n\n3. Encore un jour, et j’atteindrai le but;\nOui, tout est bien. Oui, tout est bien.\nEt je verrai le pays du salut;\nOui, tout est bien. Oui, tout est bien.\nEncore un jour, le monde va passer\nÔ pèlerin, marche sans te lasser:\nBientôt en Dieu tu vas te reposer.\nOui, tout est bien. Oui, tout est bien.''',
+    numero: 70,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_071',
+    titre: 'PUBLIEZ BIEN HAUT!',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Publiez bien haut la grande Nouvelle:\nLe ciel est ouvert à tout être humain.\nLa route est tracée, un Guide fidèle\nVous conduira par la main.\n\nChoeur\nLe salut pour tous, le salut par grâce,\nA tous est offert, à tous est donné.\nOh! venez, pécheurs, venez, le temps passe:\nEt vous serez pardonnés.\n\n2. Publiez bien haut la grande Nouvelle:\nLe sang de Jésus a tout effacé.\nOù que vous soyez, c’est vous qu’Il appelle,\nVous qui L’avez offensé.\n\n3. Publiez bien haut la grande Nouvelle:\nAu loin comme au près faites-La courir,\nPartout où se trouve une âme rebelle,\nUn pécheur à secourir.''',
+    numero: 71,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_072',
+    titre: 'SANS ATTENDRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Sans attendre, je veux tendre\nAu bonheur promis;\nQui se lance, qui s’avance\nObtiendra le prix.\nQuand je prie, Dieu m’entend;\nOn m’attaque Il me défend,\nDonc en route, point de doute,\nLe but est si grand!\n\n2. Près du trône la couronne\nAttend le vainqueur,\nNulle trêve! Qu’on se lève!\nA dit le Seigneur.\nD’obéir soyons heureux;\nPoint de tièdes, de peureux.\nLe Fidèle nous appelle\nA régner aux cieux.\n\n3. D’un pas ferme, jusqu’au terme\nIl faut s’avancer\nDieu m’observe, Qu’il préserve\nMon pied de glisser!\nQue ce monde et ses attraits\nNe me séduisent jamais!\nSi sa haine se déchaîne,\nQue je sois en paix!\n\n4. Dieu de grâce, que Ta face\nLuise en mon chemin!\nPère tendre, viens me prendre.\nPar Ta forte main.\nToute puissance est à Toi,\nSubviens à ma faible foi;\nMa victoire, c’est Ta gloire,\nJésus, Roi des rois.''',
+    numero: 72,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_073',
+    titre: 'LA VOIX DU SEIGNEUR M’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. La voix du Seigneur m’appelle:\nPrends ta croix et viens, suis-moi!\nJe réponds: «Sauveur fidèle,\nMe voici, je suis à Toi!»\n\nChoeur\nJusqu’au bout je veux Te suivre,\nDans les bons, les mauvais jours,\nA Toi pour mourir et vivre,\nA Toi, Jésus, pour toujours.\n\n2. Mais le chemin du Calvaire\nEst étroit et périlleux,\nC’est un chemin solitaire,\nDifficile et ténébreux.\n\n3. Il faut quitter ceux qu’on aime,\nSavoir être mal jugé,\nEndurer l’injure même,\nDu monde être méprisé.\n\n4. Oui, perdre sa propre vie,\nConsentir à n’être rien,\nN’avoir qu’une seule envie:\nAimer Jésus, le seul bien!\n\n5. Jésus donne grâce et gloire\nPour Le suivre pas à pas,\nAvec Lui, joie et victoire,\nPaix et bonheur ici-bas!''',
+    numero: 73,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_074',
+    titre: 'JESUS QUITTA LE TRONE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Jésus quitta le trône de Son Père\nEt descendit ici-bas sur la terre;\nIl accepta la crèche pour berceau,\nLui, Roi des rois, le Fils du Dieu Très haut!\n\nChoeur\nOh! oui, c’est vrai! Je sais que c’est vrai!\n«II est écrit»: cela suffit!\nQue Jésus m’aime! Oh! bonheur suprême!\nLa Bible me le dit!\n\n2. En tous les lieux portant la délivrance,\nFaisant le bien, guérissant la souffrance,\nIl pardonnait au pécheur repentant,\nIl bénissait jusqu’au petit enfant.\n\n3. Il fut cloué sur la croix méprisable,\nLui, Juste et Saint, mourut pour moi coupable.\nPour me sauver, Son sang fut répandu;\nC’est pourquoi j’aime le Seigneur Jésus!\n\n4. Plus que vainqueur Il sortit de la tombe,\nGloire à l’Agneau, divin Sauveur du monde!\nIl règne au ciel, intercède pour moi,\nEt vient bientôt me chercher: je le crois!''',
+    numero: 74,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_075',
+    titre: 'LE NOM DE JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Le Nom de Jésus est si doux!\nDe Dieu désarmant le courroux,\nIl nous appelle au rendez-vous,\nPrécieux Nom de Jésus!\n\nChoeur\nJésus! Béni soit Ton Nom!\nJésus! Oh! merveilleux don!\nJésus! Suprême rançon,\nSois adoré pour toujours.\n\n2. J’aime ce Nom dans le chagrin,\nIl me soutient sur le chemin,\nSa musique est un Son divin,\nPrécieux Nom de Jésus!\n\n3. J’aime le Nom de mon Sauveur,\nCar Lui seul connaît tout mon coeur,\nLui seul me rend plus que vainqueur:\nPrécieux Nom de Jésus!\n\n4. Et si parfois j’ai succombé,\nSi dans le mal je suis tombé,\nSon Nom puissant m’a relevé:\nPrécieux Nom de Jésus!\n\n5. Et lorsque avec Lui je serai,\nEt lorsque enfin je Le verrai,\nAlors sans fin je redirai:\nPrécieux Nom de Jésus!''',
+    numero: 75,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_076',
+    titre: 'J’AI SOIF DE TA PRESENCE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. J’ai soif de Ta présence,\nDivin Chef de ma foi;\nDans ma faiblesse immense\nQue ferais-je sans Toi?\n\nChoeur\nChaque jour, à chaque heure,\nOh! j’ai besoin de Toi;\nViens Jésus, et demeure\nAuprès de moi.\n\n2. Des ennemis, dans l’ombre,\nRôdent autour de moi,\nAccablé par le nombre,\nQue ferais-je sans Toi?\n\n3. Pendant les jours d’orage,\nD’obscurité, d’effroi,\nQuand faiblit mon courage,\nQue ferais-je sans Toi?\n\n4. Ô Jésus! Ta présence\nC’est la vie et la paix;\nLa paix dans la souffrance,\nEt la vie à jamais,''',
+    numero: 76,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_077',
+    titre: 'PELERIN SUR CETTE TERRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Pèlerin sur cette terre,\nJe m’avance vers le ciel,\nVers le pays de lumière,\nSéjour éternel!\nIci d’ennemis sans nombre\nJe me vois environné,\nMa route souvent est sombre,\nMais je suis aimé.\n\n2. Aimé du plus tendre Père\nQui m’a conduit en chemin,\nEt dirigé ma carrière\nPar Sa sûre Main.\nPendant l’épreuve et l’orage,\nDans l’angoisse et la douleur,\nSa voix me dit: «Prends courage,\nJe suis Ton Sauveur!»\n\n3. Travailler pour un tel Maître,\nLe servir en L’attendant,\nApprendre à Le mieux connaître\nEn Le contemplant!\nQuel bonheur incomparable,\nEt qu’il est heureux mon sort!\nOui, mon Sauveur adorable\nMe conduit au port!\n\n4. Le port, c’est le doux rivage\nOù cesseront tous nos pleurs,\nOù de Jésus-Christ l’image\nRavira nos coeurs.\nQu’importe donc la souffrance,\nJésus vient! levons les yeux!\nBien près est la délivrance.\nIls s’ouvrent les cieux!''',
+    numero: 77,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_078',
+    titre: 'QUEL SAUVEUR MERVEILLEUX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Quel Sauveur merveilleux je possède!\nIl s’est sacrifié pour moi,\nEt Sa vie innocente Il cède\nPour mourir sur l’infâme bois\n\nChoeur\nAttaché à la croix pour moi,\nAttaché à la croix pour moi,\nIl a pris mon péché,\nIl m’a délivré\nAttaché à la croix pour moi.\n\n2. Il renonce à la gloire céleste\nPour le plan rédempteur de Dieu,\nHumble et d’apparence modeste\nOh! quel prix pour me rendre heureux!\n\n3. Maltraité pour mon indigne vie,\nBrisé pour mes iniquités,\nIl prit sur Lui mes maladies\nEt mourut pour me libérer.\n\n4. Le salut accompli pour Ses frères,\nLe Sauveur fut reçu au ciel,\nIl revient ô profond mystère!\nMon bonheur sera éternel.''',
+    numero: 78,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_079',
+    titre: 'OÙ CHERCHEZ-VOUS LE BONHEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Où cherchez-vous le bonheur?\nDans ce monde où tout passe?\nAvez-vous en votre coeur\nPour Jésus une place?\nA votre porte Il se tient;\nSans se lasser Il revient...\nPour Jésus, votre Sauveur,\nN’avez-vous point de place?\n\nChoeur\nN’avez-vous point de place?\nN’avez-vous point de place?\nPour Jésus, votre Sauveur,\nN’avez-vous point de place?\n\n2. S’Il a souffert, c’est pour vous,\nOh! merveilleuse grâce!\nLorsqu’il luttait à genoux,\nDieu Lui voilant Sa face.\nAh! de Sa sublime croix,\nN’entendez-vous pas la voix\nQui vous dit: Pauvre pécheur,\nN’as-tu donc point de place?\n\nN’avez-vous point de place?\nN’avez-vous point de place?\nAh! pour l’Homme de douleur\nN’avez-vous point de place?\n\n3. Si le monde a votre coeur,\nCroyez-vous donc qu’il fasse\nJusqu’au bout votre bonheur?\nVous savez que tout passe.\nOh! pendant qu’il en est temps,\nEcoutez les doux accents\nDe la voix du grand Vainqueur,\nEt faites-Lui donc place!\n\nN’avez-vous point de place?\nN’avez-vous point de place?\nPour Jésus, le grand Vainqueur,\nN’avez-vous point de place?''',
+    numero: 79,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_080',
+    titre: 'ROC SECULAIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Roc séculaire, frappé pour moi\nSur le Calvaire, je viens à Toi.\nTu sais mes chutes, Ô mon Sauveur!\nTu vois mes luttes et ma douleur.\n\nChoeur\nRoc séculaire, frappé pour moi\nSur le Calvaire, je viens à Toi.\n\n2. Oh! Purifie, lave, Seigneur,\nEt sanctifie mon pauvre coeur.\nMa main tremblante ne T’offre rien;\nTa croix sanglante est mon seul bien.\n\n3. Dans la détresse sois mon Berger,\nMa forteresse dans le danger,\nEt qu’à toute heure, que chaque jour\nMon coeur demeure en Ton amour.''',
+    numero: 80,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_081',
+    titre: 'DEBOUT, SAINTE COHORTE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Debout, sainte cohorte,\nSoldats du Roi des rois!\nTenez d’une main forte\nL’étendard de la croix!\nAu sentier de la gloire\nJésus-Christ vous conduit;\nDe victoire en victoire\nIl mène qui Le suit.\n\n2. La trompette résonne;\nDebout! vaillants soldats!\nL’immortelle couronne\nEst le prix des combats.\nSi l’ennemi fait rage,\nSoyez fermes et forts;\nRedoublez de courage,\nS’il redouble d’efforts.\n\n3. Debout pour la bataille,\nPartez, n’hésitez plus!\nPour que nul ne défaille,\nRegardez à Jésus!\nDe l’armure invincible,\nSoldats, revêtez-vous!\nLe triomphe est possible\nPour qui lutte à genoux.\n\n4. Debout, debout encore!\nLuttez jusqu’au matin;\nDéjà brille l’aurore\nA l’horizon lointain.\nBientôt jetant nos armes\nAux pieds du Roi des rois!\nLes chants après les larmes,\nLe trône après la croix!''',
+    numero: 81,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_082',
+    titre: 'NE CRAINS RIEN, JE T’AIME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Ne crains rien, Je t’aime!\nJe suis avec toi!\nPromesse suprême,\nQui soutient ma foi.\nLa sombre vallée\nN’a plus de terreur,\nL’âme consolée,\nJe marche avec mon Sauveur.\n\nChoeur\nNon, jamais tout seul,\nNon, jamais tout seul,\nJésus, mon Sauveur me garde,\nJamais ne me laisse seul!\nNon, jamais tout seul,\nNon, jamais tout seul,\nJésus, mon Sauveur me garde,\nJe ne suis jamais tout seul.\n\n2. Laube matinière\nNe luit qu’aux beaux jours,\nJésus, ma lumière,\nM’éclaire toujours\nQuand je perds de vue\nL’astre radieux,\nA travers la nue,\nJésus me montre les Cieux!\n\n3. Les dangers accourent,\nSubtils, inconnus:\nDe près ils m’entourent,\nPlus près est Jésus,\nQui dans le voyage,\nMe redit: «C’est moi!\nNe crains rien: courage!\nJe suis toujours avec toi!»''',
+    numero: 82,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_083',
+    titre: 'BON SAUVEUR, BERGER FIDELE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Bon Sauveur, Berger fidèle,\nConduis-moi par Ton amour;\nEt, de Ta main paternelle,\nNourris-nous au jour le jour.\n\nChoeur\nBéni sois-Tu, tendre Maître,\nJésus nous sommes à Toi,\nA Toi seul nous voulons être,\nBéni sois-Tu, notre Roi!\n\n2. Dans Tes riches pâturages,\nApprends-nous à Te chercher;\nQue sous Tes divins ombrages\nNous sachions toujours marcher.\n\n3. Toi qui nous reçus par grâce,\nBien que faibles et pécheurs,\nPar Ta puissance efficace\nPurifie encore nos coeurs.\n\n4. Enfants, nous voulons Te plaire,\nT’obéir, garder Ta loi.\nOh! pour cela daigne faire\nQue nous vivions par la foi!\n\n5. Bon Sauveur, Berger fidèle,\nPour que nous suivions Tes pas,\nRemplis-nous d’un nouveau zèle\nEt porte-nous dans Tes bras.''',
+    numero: 83,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_084',
+    titre: 'J’ENTENDS TA DOUCE VOIX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. J’entends Ta douce voix,\nJésus, je viens à Toi.\nJe viens, ô Sauveur, lave-moi\nDans le sang de Ta croix!\n\nChoeur\nJésus, Roi des rois,\nQui mourus pour moi,\nJe veux mourir avec Toi,\nAvec Toi sur la croix.\n\n2. J’entends Ta douce voix,\nQui me dit: «Crois en moi!»\nJe crois, Seigneur, soutiens ma foi,\nTiens-moi près de Ta croix!\n\n3. J’entends Ta douce voix,\nElle pénètre en moi,\nEt me dit d’aimer comme Toi\nDe l’amour de la croix!\n\n4. J’entends Ta douce voix,\nToi qui mourus pour moi,\nSeigneur, que je m’unisse à Toi\nDans Ta mort, par la foi!''',
+    numero: 84,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_085',
+    titre: 'RESTE AVEC NOUS, SEIGNEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Reste avec nous, Seigneur, le jour décline,\nLa nuit s’approche et nous menace tous;\nNous implorons Ta présence divine:\nReste avec nous, Seigneur, reste avec nous.\n\n2. En Toi nos coeurs ont salué leur Maître,\nEn Toi notre âme a trouvé son Epoux;\nA Ta lumière elle se sent renaître,\nReste avec nous, Seigneur, reste avec nous.\n\n3. Dans nos combats si Ta main nous délaisse,\nSatan vainqueur nous tiendra sous ses coups;\nQue Ta puissance arme notre faiblesse;\nReste avec nous, Seigneur, reste avec nous.\n\n4. Sous Ton regard la joie est sainte et bonne,\nPrès de Ton coeur les pleurs même sont doux;\nSoit que Ta main nous frappe ou nous couronne,\nReste avec nous, Seigneur, reste avec nous.''',
+    numero: 85,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_086',
+    titre: 'AUSSI LONGTEMPS QU’ETRANGER',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Aussi longtemps qu’étranger sur la terre,\nJe foulerai les sentiers douloureux,\nFais qu’en tout temps, à tout bien je préfère\nCe que Tu veux, Seigneur! ce que Tu veux!\n\n2. Oui, qu’en tout temps, sous la croix la plus dure,\nAux jours mauvais comme aux jours radieux,\nJe puisse dire, éloignant tout murmure:\nComme Tu veux, Seigneur! Comme Tu veux!\n\n3. Je ne demande, ô mon Dieu! qu’une chose:\nSois mon trésor, mon appui précieux;\nPour tout le reste ordonne, fais, dispose\nComme Tu veux, Seigneur! comme Tu veux!\n\n4. Etablis donc sur mon coeur Ton empire;\nRègne si bien et par de si doux noeuds,\nQue rien jamais ne m’empêche de dire.\nComme Tu veux, Seigneur! comme Tu veux!\n\n5. Et puis un jour sans trouble, sans alarmes,\nJe chanterai, sur des bords plus heureux,\nL’hymne qu’ici je mêle avec mes larmes;\nComme Tu veux, Seigneur! comme Tu veux!''',
+    numero: 86,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_087',
+    titre: 'J’AI LONGTEMPS ERRE SANS GUIDE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. J’ai longtemps erré sans guide,\nAltéré de vrai bonheur.\nMais, hélas! mon coeur avide\nNe trouvait que la douleur.\nOù sera la Main puissante\nQui pourra, par Son effort,\nM’arrêter sur cette pente\nOù déjà je vois la mort?\n\n2. Un Sauveur, Jésus Lui-même,\nEut pitié de mon effroi.\nIl me dit: «Pécheur, je t’aime,\nJ’ai versé Mon sang pour toi.»\nÔ Jésus Ta main puissante\nM’a sauvé de mon tombeau,\nEt Tu combles mon attente\nPar le don d’un coeur nouveau.\n\n3. J’ai saisi cette assurance,\nCe pardon qu’il m’apportait\nJ’ai livré sans résistance\nTout mon coeur: Il le voulait.\nÔ Jésus Ta main puissante\nM’a sauvé de mon tombeau,\nEt Tu combles mon attente\nPar le don d’un coeur nouveau.\n\n4. Dans mon coeur impur, infirme\nJe reçus le Saint-Esprit,\nEt ce sceau divin m’affirme\nQue je suis à Jésus Christ.\nÔ Jésus Ta main puissante\nM’a sauvé de mon tombeau,\nEt Tu combles mon attente\nPar le don d’un coeur nouveau.\n\n5. Maintenant, de joie en joie\nMon Sauveur me fait marcher,\nCar la paix que Christ m’envoie,\nNul ne peut me l’arracher.\nA ce Jésus qui me donne\nEt Sa paix et Son amour,\nA Jésus je m’abandonne\nDésormais et sans retour.''',
+    numero: 87,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_088',
+    titre: 'VERS TOI MONTE NOTRE HOMMAGE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Vers Toi monte notre hommage,\nFils de Dieu, puissant Sauveur,\nQui demeures d’âge en âge\nLe refuge du pécheur.\n\nChoeur\nLoué soit Ton amour, loués soient à jamais\nTon nom, Jésus, Ta gloire et Tes bienfaits;\nLoué soit amour, loués soient à jamais\nTon nom, Ta gloire et Tes bienfaits!\n\n2. De Toi vient la délivrance:\nTu payas notre rançon.\nC’est en Toi qu’est l’espérance,\nLa paix et la guérison.\n\n3. Oh! qu’heureux sous Ta bannière\nEst le peuple racheté\nQui marche, dans Ta lumière,\nVers la céleste cité.\n\n4. Par Ta divine Parole,\nTu l’enseignes, Tu l’instruis,\nEt, par l’Esprit qui console,\nSûrement Tu le conduis.\n\n5. Bientôt - glorieuse attente!\nTu combleras tous nos voeux;\nSur la nue étincelante,\nTu viendras à nous des cieux.''',
+    numero: 88,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_089',
+    titre: 'QUI ME RELEVE DANS MES CHUTES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Qui me relève dans mes chutes?\nC’est Jésus Christ;\nQui combat pour moi dans mes luttes?\nC’est Jésus Christ.\nJésus a parlé, je veux croire\nQue je puis lutter pour Sa gloire,\nCar mon Bouclier, ma Victoire,\nC’est Jésus-Christ.\n\n2. Je vais à mon Père, et ma voie\nC’est Jésus Christ;\nJe suis bienheureux, et ma joie\nC’est Jésus-Christ.\nEt si, même dans la souffrance,\nMon cœur parle d’espérance,\nC’est que j’ai mis ma confiance\nEn Jésus-Christ.\n\n3. Sauvé, je ne me glorifie\nQu’en Jésus-Christ;\nPour la terre et le ciel, ma vie\nC’est Jésus-Christ\nBientôt adieu, choses mortelles!\nLoin de vous je prendrai des ailes\nVers les demeures éternelles,\nVers Jésus Christ.''',
+    numero: 89,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_090',
+    titre: 'C’EST MON JOYEUX SERVICE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. C’est mon joyeux service\nD’offrir à Jésus Christ,\nEn vivant sacrifice,\nMon corps et mon esprit.\n\nChoeur\nAccepte mon offrande,\nBien-aimé Fils Dieu!\nEt que sur moi descende\nla flamme du saint lieu\n\n2. J’abandonne ma vie,\nSans regret, ni frayeur,\nA Ta grâce infinie,\nÔ mon libérateur!\n\n3. Qu’un feu nouveau s’allume\nPar Ton amour en moi,\nEt dans mon cœur consume\nCe qui n’est pas à toi!\n\n4. Vient, Jésus! Soit mon maître;\nPar Ton Sang racheté,\nA Toi seul je veux être\nEt pour l’éternité.''',
+    numero: 90,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_091',
+    titre: 'SENTINELLE VIGILANTE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. «Sentinelle vigilante,\nQu’en est-il donc de la nuit?»\n«Dis à l’âme somnolente\nQue déjà le matin luit!»\n\nChoeur\nLa nuit passe, le matin du grand jour luit!\nSentinelle, sois au poste jour et nuit,\nSentinelle, sois au poste jour et nuit.\n\n2. Les gardes sur la muraille\nNous l’ont dit, entendez-vous?\nAu loin gronde la bataille,\nTout est sombre autour de nous,\n\n3. Point de repos, de relâche,\nRachetés de l’Eternel.\nTravaillez à votre tâche,\nCar Jésus revient du ciel!''',
+    numero: 91,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_092',
+    titre: 'LE SIGNAL DE LA VICTOIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Le signal de la victoire\nDéjà brille aux cieux,\nLa couronne de la gloire\nParaît à nos yeux.\n\nChoeur\nJe viens, combattez encore!\nDit Jésus â tous.\nOui mon Sauveur, je T’implore,\nJe lutte à genoux.\n\n2. Que l’ennemi, plein de rage,\nRedouble ses coups,\nNous ne perdons point courage:\nChrist est avec nous.\n\n3. Suivons, amis, la bannière\nDu Sauveur en croix,\nEt que notre armée entière\nSe range à Sa voix.\n\n4. Rude et longue est la mêlée:\nVoici le secours !\nDans nos mains prenons l’épée\nQui vainquit toujours!''',
+    numero: 92,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_093',
+    titre: 'COMME UN FLEUVE IMMENSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Comme un fleuve immense,\nEst la paix de Dieu.\nParfaite elle avance\nVainqueur en tout lieu;\nParfaite elle augmente\nConstamment son cours;\nParfaite sa pente\nS’abaisse toujours.\n\nChoeur\nFondés sur Dieu même,\nNos coeurs à jamais\nOnt pour bien suprême\nSa parfaite paix.\n\n2. Sous Ta main meurtrie,\nSe brise, ô mon Roi!\nToute arme ennemie\nQu’on forge pour moi!\nRien ne peut me nuire,\nNi troubler mon cœur;\nTu veux me conduire,\nTu seras Vainqueur.\n\n3. Tu traces ma voie.\nJ’y marche avec foi;\nL’épreuve et la joie\nMe viennent de Toi!\nCadran de nos vies,\nMarque, chaque jour,\nLes heures bénies\nDu soleil d’amour!\n\n4. Océan de gloire,\nPaix de mon Sauveur!\nGage de victoire!\nTrésor de bonheur!\nTa grâce infinie,\nCoulant nuit et jour,\nInonde ma vie\nDe vagues d’amour!\n\nChoeur\nSelon, Ta promesse,\nO Jésus, mon Roi!\nJe trouve sans cesse\nPaix parfaite en Toi!''',
+    numero: 93,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_094',
+    titre: 'QUEL REPOS CELESTE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Quel repos céleste, Jésus d’être à Toi!\nA Toi pour la mort et la vie.\nDans les jours mauvais de chanter avec foi:\nTout est bien, ma paix est infinie!\n\nChoeur\nQuel repos, quel repos, quel repos,\nquel céleste repos!\n\n2. Quel repos céleste, mon fardeau n’est plus!\nLibre par le Sang du Calvaire,\nTous mes ennemis, Jésus les a Vaincus,\nGloire et louange à Dieu notre Père!\n\n3. Quel repos céleste, Tu conduis mes pas,\nTu me combles de Tes richesses,\nDans Ton grand amour, chaque jour Tu sauras\nDéployer envers moi Tes tendresses.\n\n4. Quel repos céleste, quand enfin, Seigneur.\nAuprès de Toi j’aurai ma place!\nAprès les travaux, les combats, la douleur,\nA jamais je pourrai voir Ta face!''',
+    numero: 94,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_095',
+    titre: 'VOIR MON SAUVEUR FACE À FACE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Voir mon Sauveur face à face.\nVoir Jésus dans Sa beauté,\nÔ joie! ô suprême grâce!\nÔ bonheur! félicité!\n\nChoeur\nOui, dans Ta magnificence\nJe Te verrai, divin Roi!\nPour toujours en Ta présence\nJe serai semblable à Toi!\n\n2. Ta gloire est encore voilée,\nAh! d’un voile ensanglanté!...\nBientôt sera révélée\nTon ineffable beauté!\n\n3. Oh! quels transports d’allégresse,\nQuand Tes yeux baissés sur moi,\nMe diront avec tendresse:\n«Je mourus aussi pour toi.»''',
+    numero: 95,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_096',
+    titre: 'IL EST UN ESPOIR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Il est un espoir, qui toujours soulage\nLes coeurs fatigués et lassés du Chemin;\nIl est un repos au bout du voyage;\nA toutes nos luttes, il est une fin.\n\nChoeur\nC’est la cité du ciel,\nLe bonheur éternel,\nSéjour où les élus\nContempleront Jésus!\n\n2. Il est un Séjour ou tout est lumière,\nOù rien de souillé, ni d’impur n’entrera,\nOù ne seront plus ni mort, ni misère,\nOù le racheté pour toujours chantera.\n\n3. Dans la cité sainte, il n’est plus de Temple:\nLe Seigneur et l’Agneau seront avec nous.\nPour I’éternité, l’Eglise contemple\nSon bien-aimé Sauveur, Son Chef, Son Epoux.\n\n4. Ô Jérusalem! Céleste patrie!\nTout mon coeur s’enflamme, quand je pense à Toi\nAgneau mis à mort, Prince de la Vie.\nEntends mes soupirs et l’appel de ma foi\n\nChoeur\nBientôt, bientôt au ciel,\nOh! bonheur éternel,\nAvec tous les élus,\nJe Te verrai, Jésus!''',
+    numero: 96,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_097',
+    titre: 'LE SEIGNEUR M’AIME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Le Seigneur m’aime, bonheur suprême,\nLe Seigneur m’aime, Il est amour!\n\nChoeur\nJe redirai toujours: Le Seigneur m’aime,\nLe Seigneur m’aime, Il est amour.\n\n2. Dans la misère, la plus amère,\nDans la misère, j’étais plongé.\nDans la souffrance sans espérance,\nDans la souffrance je gémissais.\n\n3. Portant ma peine, ma lourde chaîne,\nPortant ma peine, j’étais perdu.\nDieu, dans Sa grâce, prit à ma place,\nDieu dans Sa grâce, prit Son cher Fils.\n\n4. En sacrifice, à la justice,\nEn sacrifice, Il vint s’offrir.\nLe poids immense, de mon offense,\nLe poids immense, tomba sur Lui.\n\n5. Sur le Calvaire, loin de Son Père,\nSur le Calvaire, Il vint mourir.\nIl purifie, toute ma vie,\nIl purifie, avec Son sang.\n\n6. A Toi la gloire, et la victoire,\nA Toi la gloire, Agneau de Dieu!''',
+    numero: 97,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_098',
+    titre: 'A TOI LA GLOIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. A Toi la gloire, Ô Ressuscité!\nA Toi la victoire, pour l’éternité!\nBrillant de lumière, l’ange est descendu,\nIl roule la pierre du tombeau vaincu\n\nChoeur\nA Toi la gloire, Ô Ressuscité!\nA Toi la victoire, pour l’éternité!\n\n2. Vois-Le paraître: C’est Lui, c’est Jésus,\nTon Sauveur, Ton Maître\nOh! ne doute plus!\nSois dans l’allégresse,\nPeuple du Seigneur\nEt redis sans cesse\nQue Christ est vainqueur\n\n3. Craindrais-je encore?\nIl vit à jamais,\nCelui que j’adore,\nLe Prince de paix;\nIl est ma victoire\nMon puissant Soutien,\nMa vie et ma gloire:\nNon, je ne crains rien.''',
+    numero: 98,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_099',
+    titre: 'VEILLE AU MATIN',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Veille au matin, quand un ciel sans nuage\nSemble annoncer un jour calme et serein,\nC’est dans ton coeur que peut gronder l’orage\nQui fait tomber le pèlerin.\n\nChoeur\nVeille au matin, veille le soir\nVeille et prie... toujours.\n\n2. Veille à midi, quand les bruits de la terre\nFont oublier le céleste séjour:\nTrouve un instant pour être solitaire\nDans la prière et dans l’amour.\n\n3. Veille le soir, quand se fait le silence;\nPense aux bienfaits de Ton céleste Ami;\nCherche avec soin Sa divine présence,\nVerse en son coeur tout ton souci.\n\n4. Veille toujours, en tous lieux, à toute heure,\nCar l’ennemi te guette a chaque instant,\nPour se glisser dans la sainte demeure\nOù doit régner le Tout-Puissant''',
+    numero: 99,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_100',
+    titre: 'QU’IL FAIT BON A TON SERVICE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''1. Qu’il fait bon à Ton service,\nJésus Mon Sauveur!\nQu’il est doux le sacrifice\nQue T’offre mon coeur!\n\nChoeur\nPrends, ô Jésus, prends ma vie,\nElle est toute à Toi!\nEt dans Ta grâce infinie,\nDu mal garde-moi!\n\n2. Mon désir, mon voeu suprême;\nC’est Ta volonté!\nRien je ne veux et je n’aime\nQue Ta volonté!\n\n3. Comme I’ange au vol rapide,\nJe veux Te servir!\nLes yeux fixés sur mon Guide,\nToujours obéir!\n\n4. Travail, douleur et souffrance,\nNon, je ne crains rien!\nToi, Jésus, mon Espérance,\nVoilà mon seul bien!\n\n5. Ensemble donc vers la gloire,\nMarchons en avant!''',
+    numero: 100,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_101',
+    titre: 'MON DIEU, PLUS PRES DE TOI',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Mon Dieu, plus près de Toi,\nPlus près de Toi!\nC’est le mot de ma foi:\nPlus près de Toi!\nDans le jour où l’épreuve\nDéborde comme un fleuve,\nGarde-moi près de Toi,\nPlus près de Toi.\n\nPlus près de Toi, Seigneur,\nPlus près de Toi!\nTiens-moi dans ma douleur\nTout près de Toi!\nAlors que la souffrance\nFait son oeuvre en silence,\nToujours plus près de Toi,\nSeigneur, tiens moi!\n\nPlus près de Toi, toujours,\nPlus près de Toi!\nDonne-moi Ton secours,\nSoutiens ma foi!\nQue Satan se déchaîne,\nTon amour me ramène\nToujours plus près de Toi,\nPlus près de Toi!\n\nMon Dieu, plus près de Toi!\nDans le désert\nJ’ai vu, Ton ciel ouvert,\nPlus près de Toi.\nPèlerin, bon courage!\nTon chant brave l’orage.\nMon Dieu, plus près de Toi,\nPlus près de Toi!''',
+    numero: 101,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_102',
+    titre: 'JESUS FRAPPE A VOTRE PORTE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Jésus frappe à votre porte:\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nC’est le ciel Qu’il tous apporte!\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nChez vous il veut prendre place;\nOuvrez avant qu’il se lasse!\nLe temps presse, le temps passe\nOuvrez-Lui! (Ouvrez aujourd’hui!)\n\nOuvrez! C’est Lui qui pardonne;\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nAcceptez ce qu’il vous donne;\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nSes promesses sont certaines;\nSa main va briser vos chaînes;\nBientôt finiront vos peines.\nOuvrez-Lui! (Ouvrez aujourd’hui!)\n\nSeul il ôte les souillures:\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nSeul il bande les blessures:\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nSi Satan vient vous surprendre,\nSeul il pourra vous défendre\nEt sous Son aile vous prendre:\nOuvrez-Lui! (Ouvrez aujourd’hui!)\n\nEcoutez l’appel si tendre!\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nC’est assez Le faire attendre:\nOuvrez-Lui! (Ouvrez aujourd’hui!)\nCar le Sauveur vous implore!\nComment résister encore!\nOh! que votre âme L’adore!\nOuvrez-Lui! (Ouvrez aujourd’hui!)''',
+    numero: 102,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_103',
+    titre: 'BIENTOT LE SEGNEUR VA VENIR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Bientôt le Seigneur va venir!\nEs-tu prêt?\nBientôt le Ciel II veut t’ouvrir!\nEs-tu prêt?\n\nChoeur\nEs-tu prêt? Es-tu prêt?\nEs-tu prêt pour l’éternité?\nEs-tu prêt? Es-tu prêt?\nLe Sauveur T’a-t-il racheté?\n\nBientôt l’appel retentira!\nEs-tu prêt?\nBientôt la mort te surprendra!\nEt-tu prêt?\n\nBientôt Jésus va te juger?\nEs-tu prêt?\nOh! devra-t-il te condamner?\nEs-tu prêt?\n\nBientôt dans le ciel enlevés!\nEs-tu prêt?\nTous les élus seront sauvés.\nEs-tu prêt?''',
+    numero: 103,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_104',
+    titre: 'L’AMOUR DE JESUS-CHRIST',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''L’amour de Jésus-Christ nous presse:\nIl s’est livré pour Son troupeau;\nA suivre les pas de l’Agneau,\nL’un l’autre animons-nous sans cesse.\n\nAu nom du Rédempteur, chers frères!\nDonnons-nous tous ici la main,\nPour ne marcher jusqu’à la fin\nQue sous Ses regards tutélaires.\n\nVois Tes enfants, Dieu notre Père!\nQui se consacrent à Ton Fils.\nViens à notre aide et nous remplis\nD’amour, de zèle et de lumière.\n\nQu’en nous quittant, Sauveur fidèle!\nNous demeurions unis en Toi;\nHabite en nos coeurs par la foi,\nEt que I’Esprit nus renouvelle!''',
+    numero: 104,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_105',
+    titre: 'OUI, JESUS, C’EST VERS TOI.',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Oui, Jésus, c’est vers Toi,\nToujours plus haut!\nQue s’élève ma foi,\nToujours plus haut!\nLibre de tout lien,\nPoursuivant le seul bien,\nMon regard sur le Tien,\nToujours plus haut!\n\nTu calmes la douleur,\nToujours plus haut!\nTu satisfais le cœur,\nToujours plus haut!\nDans les rudes combats,\nLes clameurs d’ici-bas,\nTu diriges mes pas\nToujours plus haut!\n\nOui, c’est là mon soupir,\nToujours plus haut!\nTu connais mon désir,\nToujours plus haut!\nPerçant l’obscurité,\nMontre nous Ta clarté,\nTa divine beauté,\nToujours plus haut!\n\nMarche, me dit Jésus,\nToujours plus haut!\nOh! ne t’arrête plus,\nToujours plus haut!\nBientôt je reviendrai\nEt te délivrerai,\nOui je t’introduirai,\nChez Moi, là-haut!''',
+    numero: 105,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_106',
+    titre: 'AH! DONNE A MON AME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Ah! donne à mon âme\nPlus de sainteté,\nPlus d’ardente flamme,\nDe sérénité;\nPlus de confiance,\nPour rester debout,\nPlus de patience,\nPour supporter tout!\n\nFais que je contemple\nSans cesse l’Agneau,\nSon vivant exemple,\nSa croix, Son tombeau,\nSa grâce fidèle,\nSon immense amour,\nSa gloire éternelle,\nSon prochain retour!\n\nJésus, à mes larmes\nTu veux compatir;\nDe toutes Tes armes\nViens me revêtir;\nPar plus de prière,\nDe zèle et de foi,\nQue dans la lumière\nJe marche avec Toi!\n\nDonne à ton service\nUn coeur plus joyeux,\nPrompt au sacrifice,\nToujours sous Tes yeux;\nQui chante et qui tremble,\nHumble en sa ferveur,\nUn coeur qui ressemble\nAu Tien, mon Sauveur.''',
+    numero: 106,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_107',
+    titre: 'QUE TOUT GENOU FLECHISSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Que tout genou fléchisse,\nDevant Ta majesté,\nEt qu’aujourd’hui je puisse\nLâcher ma volonté.\nEt qu’aujourd’hui je puisse\nLâcher ma volonté.\n\nOui, devant Toi je plie,\nJe me courbe, ô mon Roi,\nJe pleure et m’humilie,\nEt c’est un don de Toi!\nJE pleure et m’humilie,\nEt c’est un don de Toi!\n\nQue tout ce qui s’élève\nEn moi soit abaissé!\nQue mon coeur de Ton glaive,\nS il le faut, soit percé!\nQue mon coeur de Ton glaive,\nS’il le faut, soit percé!\n\nMourir, mais c’est renaître\nEt vivre désormais,\nOh! courbe tout mon être\nA Tes pieds pour jamais!\nOh! courbe tout mon être\nA Tes pieds pour jamais!''',
+    numero: 107,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_108',
+    titre: 'JESUS, JESUS MON SAUVEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Jésus, Jésus mon Sauveur,\nA I’ombre de Ta croix,\nJ’ai trouvé le repos du cœur,\nGloire à Toi, Roi ces rois!\nUne retraite dans I’orage,\nUn refuge assuré,\nPour moi, pécheur, quel doux partage,\nLà je T’ai contemplé!\n\nJésus, Jésus mon Sauveur,\nA I’ombre de Ta croix,\nDevant Ton immense douleur\nJe T’adore et je crois.\nLà, mes ténèbres sont lumière,\nEt mon fardeau n’est plus!\nHumble à Tes pieds, dans la poussière,\nTiens-moi toujours, Jésus!\n\nJésus, Jésus mon Sauveur,\nA I’ombre de Ta croix,\nExauce le cri de mon cœur,\nEntends ma faible voix:\nDonne-moi Ton obéissance,\nTon support, Ton amour,\nCéleste Agneau, Ton endurance,\nJusqu’à mon dernier jour!''',
+    numero: 108,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_109',
+    titre: 'ENFIN JESUS A TRIOMPHE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Enfin Jésus a triomphé\nDe tant de résistance,\nEt du joug il m’a libéré,\nOh! gloire a Sa puissance!\n\nChoeur\nPrince de la Victoire,\nJésus, Ressuscité,\nA Toi seul est la gloire,\nEt pour l’éternité!\n\nOh! par quel douloureux chemin\nDe retard et de luttes,\nCelui qui repousse Ta main\nS’égare, et que de chutes!\n\nMon Berger, dans Son grand amour,\nM’a remis sur la voie;\nII m’a pardonné… quel beau jour!\nEt je chante avec joie:\n\nMon seul désir, Dieu Tout-Puissant,\nPour mon âme ravie :\nC’est qu’elle soit dès maintenant,\nToujours à Christ unie!''',
+    numero: 109,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_110',
+    titre: 'JESUS AUJOURD’HUI M’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Jésus aujourd’hui m’appelle,\nJ’entends Sa voix dans mon cœur,\nOh! rends-toi donc, coeur rebelle,\nOuvre la porte au Sauveur.\n\nSeigneur, je Te l’abandonne,\nCe coeur indigne de Toi.\nViens y régner! Que personne\nNe le soustraie à Ta loi!\n\nDe moi librement dispose,\nDe ma santé, de mes biens;\nA Tes pieds je les dépose,\nÔ Maître à qui j’appartiens!\n\nDe ma vie, heure après heure,\nQue Ta main, règle le cours!\nCar désormais je demeure\nA Tes ordres pour toujours.''',
+    numero: 110,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_111',
+    titre: 'C’EST UN REMPART',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''C’est un rempart que notre Dieu,\nUne invisible armure,\nNotre délivrance en tout lieu,\nNotre défense sûre.\nL’ennemi contre nous\nRedouble de courroux;\nVaine colère!\nQue pourrait l’adversaire\nL’Eternel détourne ses coups.\n\nSeuls, nous bronchons à chaque pas,\nNotre force est faiblesse;\nMais un Héros dans les combats.\nPour nous lutte sans cesse.\nQuel est ce défenseur?\nC’est Toi, divin Sauveur!\nDieu des Armées!\nTes tribus opprimées\nConnaissent leur Libérateur.\n\nQue les démons forgent des fers\nPour accabler l’Eglise;\nTa Sion brave les enfers,\nSur Ton rocher assise\nConstant dans son effort,\nEn vain avec la mort\nSatan conspire:\nPour ruiner son empire.\nIl suffit d’un mot du Dieu fort.\n\nDis-le ce mot victorieux,\nDans toutes nos détresses;\nRépands sur nous du haut des cieux,\nTes divines largesses.\nQu’on ôte nos biens,\nQu’on serre nos liens,\nTa grâce est la plus forte,\nEt Ton royaume est pour les tiens.''',
+    numero: 111,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_112',
+    titre: 'PLUS QUE VAINQUEURS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Plus que vainqueurs! telle est notre devise,\nPlus que vainqueurs, bien que persécutés!\nCar la victoire à la foi fut acquise\nPar le Sauveur qui nous a rachetés,\nCar la victoire à la foi fut acquise\nPar le Sauveur qui nous a rachetés,\n\nSuivons le Christ jusque sur le Calvaire;\nAyons toujours Sa mort devant nos yeux.\nSi nous souffrons avec Lui sur la terre,\nNous régnerons avec Lui dans les cieux.\nSi nous souffrons avec Lui sur la terre,\nNous régnerons avec Lui dans les cieux.\n\nOsons braver les injures du monde\nPour confesser le beau Nom de Jésus,\nQue sur Lui seul tout notre espoir se fonde,\nEt notre espoir ne sera pas confus,\nQue sur Lui seul tout notre espoir se fonde,\nEt notre espoir ne sera pas confus.\n\nAmis croyons au pouvoir invisible\nQue le Sauveur a caché dans Sa croix;\nSaisissons-la comme une arme invincible,\nPour triompher au Nom du Roi des rois.\nSaisissons-la comme une arme invincible,\nPour triompher au Nom du Roi des rois.''',
+    numero: 112,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_113',
+    titre: 'JUSQU’A LA MORT…',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Jusqu’à la mort nous Te serons fidèles;\nJusqu à la mort Tu seras notre Roi;\nSous Ton drapeau, Jésus, Tu nous appelles;\nNous y mourrons en luttant avec foi!\n\nChoeur\nJusqu’à la mort! c’est notre cri de guerre,\nLe libre cri d’un peuple racheté;\nJusqu’à la mort, nous aurons pour bannière\nTa croix sanglante, ô Christ ressuscité!\n\nPour Toi Jésus, on est heureux de vivre;\nTous les chemins avec Toi semblent doux.\nAgneau de Dieu, qui ne voudrait Te suivre\nJusqu’à la mort, Toi qui mourus pour nous?\n\nJusqu’à la mort, soumis à Ta puissance,\nNous voulons vivre et mourir sous Tes lois,\nToi qui pour nous poussas I’obéissance\nJusqu’à la mort, et la mort de la croix.\n\nMais, ô Sauveur! Tu sais notre faiblesse;\nNous tomberons sûrement en chemin\nSi Tu ne viens accomplir Ta promesse,\nJusqu à la mort nous tenant par la main.\n\nQue Ton Esprit nous guide et nous anime!\nEt que, sa flamme embrasant tous nos coeurs,\nNous devenions par Toi, sainte victime,\nSur la mort même un peuple de vainqueurs!''',
+    numero: 113,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_114',
+    titre: 'TES SAINTS, DANS LA LUTTE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Tes saints, dans la lutte,\nEt de tous côtés\nIci-bas en butte\nAux infirmités,\nSont, dans le ciel même,\nPortés sur Ton coeur,\nÔ notre suprême\nSacrificateur!\n\nPlein de sympathie,\nDe tendre bonté,\nJamais Tu n’oublies\nAucun racheté\nC’est Toi qui nous aides\nDans chaque combat,\nEt pour nous Tu plaides,\nDivin Avocat!\n\nPour toute souillure,\nC’est Toi qui Te ceins;\nEt lavant d’eau pure\nLes pieds de Tes saints,\nTu dis au fidèle:\n«Sois l’imitateur\nDu parfait Modèle,\nDu vrai Serviteur.»''',
+    numero: 114,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_115',
+    titre: 'DEBOUT POUR LA SAINTE GUERRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Debout pour la sainte guerre!\nLe mal est grand encore;\nPlus d’un ami, plus d’un frère\nSuit un chemin de mort.\n\nChoeur\nEn avant! tous en avant!\nNotre Chef est tout-puissant.\nNos armes sont la prière,\nL’amour persévérant.\n\nDebout pour la sainte guerre!\nRanimons notre ardeur,\nAvec la croix pour bannière,\nQui ne serait vainqueur?\n\nDebout pour la sainte guerre!\nSoyons unis et forts!\nQu’une charité sincère\nPréside à nos efforts.\n\nÔ Dieu! pour la sainte guerre\nRevêts-nous tous en Christ\nDes armes de la lumière,\nDes dons de ton Esprit''',
+    numero: 115,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_116',
+    titre: 'NON, NOUS NE SAURIONS NOUS TAIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Non, nous ne saurions nous taire\nDevant tant de coeurs souffrants,\nResterez-vous sans rien faire?\nSeriez-vous indifférents?\n\nChoeur\nSous la croix rien n’est pénible,\nEn avant! Frères, debout!\nPar la foi tout est possible,\nEt la couronne est au bout.\n\nEn tous lieux pleins d’espérance,\nTraçons un sillon d’amour\nSemons avec confiance;\nNous moissonnerons un jour.\n\nAu monde sans repentance\nPrêchons Jésus mort pour tous.\nPourquoi tant d’insouciance?\nIl en est temps levons-nous!\n\nLaissons là notre paresse,\nEt l’amour triomphera\nOui, malgré notre faiblesse,\nLa vérité prévaudra.''',
+    numero: 116,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_117',
+    titre: 'A CELUI QUI SERA VAINQUEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''A celui qui sera vainqueur\nEt qui Me glorifie,\nJe donnerai, dit le Seigneur,\nAu ciel l’arbre de Vie!\n\nChoeur\nVictoire, force honneur et louanges,\nGloire, gloire, puissance à Toi, Jésus!\n\nUn caillou blanc, un Nom nouveau\nEt la manne cachée\nLui seront donnés par I’Agneau\nSa promesse est scellée!\n\nRevêtu d’un vêtement blanc,\nResplendissant de gloire,\nSera celui qui par le sang\nRemportera la victoire!\n\nAvec Christ, celui qui vaincra\nS’assiéra sur Son trône,\nEt de Ses mains Il recevra\nL’immortelle couronne.''',
+    numero: 117,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_118',
+    titre: 'REVETONS NOTRE ARMURE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Revêtons notre armure\nEt partons en vainqueurs!\nOui, la victoire est sûre,\nEn haut, en haut les coeurs!\nCelui qui nous appelle\nEt nous dit : En avant!\nEst le Sauveur fidèle,\nLe Seigneur tout-puissant.\n\nRevêtons notre armure\nEt luttons en vainqueurs!\nLe secours se mesure\nAux besoins de nos coeurs!\nPlus grande est la faiblesse,\nSeigneur, de Tes soldats,\nPlus riche est Ta promesse\nEt plus ferme est Ton bras.\n\nRevêtons notre armure\nEt souffrons en vainqueurs?\nDe plainte et de murmure\nSachons garder nos cœurs,\nL’épreuve aura son terme,\nEt, dans le mauvais jour,\nLe chrétien reste ferme\nDans la foi, dans l’amour.\n\nRevêtons notre armure\nEt mourons en vainqueurs!\nSi la bataille est dure,\nL’espoir soutient nos coeurs.\nAux rives éternelles,\nIl nous montre le port.\nNous Te serons fidèles,\nSeigneur, jusqu’à la mort.''',
+    numero: 118,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_119',
+    titre: 'VIENS, AME QUI PLEURES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Viens, âme qui pleures,\nViens à Ton Sauveur:\nDans tes tristes heures,\nDis-Lui ta douleur:\nDis tout bas ta plainte\nAu Seigneur Jésus,\nParle-Lui sans crainte,\nEt ne pleure plus.\n\nDis tout à ce Frère,\nA ce tendre Ami,\nTon épreuve amère,\nTon deuil, ton souci.\nIl aime, Il console\nLes coeurs abattus;\nCrois à Sa parole\nEt ne pleure plus.\n\nAux coeurs en détresse\nPloyant sous le faix,\nDis que Dieu les presse\nDe chercher Sa paix.\nCalme leurs alarmes;\nDis-leur que Jésus\nA séché nos larmes…\nVa, ne pleure plus.''',
+    numero: 119,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_120',
+    titre: 'OH QUELLE PAIX PARFAITE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Oh! quelle paix parfaite\nDans Tes bras, ô Jésus!\nMon âme satisfaite,\nLà ne s’alarme plus.\nTon amour me console,\nC’est Toi qui me défends;\nDe Ta douce parole\nJ’écoute les accents.\n\nL’ennemi ne peut nuire\nA qui reste en Ton sein,\nTout son effort expire\nSous Ton pouvoir divin.\nOui, mon coeur est sans crainte,\nJe suis en sûreté;\nDe Ton amour l’étreinte\nMe tient bien abrité.''',
+    numero: 120,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_121',
+    titre: 'A JESUS JE M’ABANDONNE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''A Jésus je m’abandonne;\nCe qu’Il me dit, je le crois,\nEt je prends ce qu’Il me donne,\nLa couronne avec la croix\n\nChoeur\nCompter sur Lui d’heure en heure,\nTant que dure le combat;\nQue l’on vive ou que l’on meure,\nCompter sur Lui, tout est là.\n\nQue si l’ennemi se montre,\nMon coeur n’en est point troublé;\nAvec Christ, à Sa rencontre\nJe puis aller sans trembler.\n\nSuis-je en paix, vers la lumière\nMon chant s’élève attendri,\nPour se changer en prière\nSi l’horizon s’assombrit.\n\nQu’on m’approuve ou qu’on me blâme,\nEt demain comme aujourd’hui,\nJe ne veux, quoi qu’on réclame,\nJamais compter que sur Lui.''',
+    numero: 121,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_122',
+    titre: 'OH! LE MEILLEUR AMI',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Oh! le meilleur ami, c’est Jésus!\nC’est le Sauveur des hommes perdus!\nPar Sa mort expiatoire,\nIl nous donne la victoire,\nOui, le meilleur ami, c’est Jésus!\n\nChoeur\nLe meilleur ami, c’est Jésus!\nLe meilleur ami, c’est Jésus!\nIl nous préserve de chutes,\nCombat pour nous dans nos luttes,\nQui, le meilleur ami, c’est Jésus!\n\nOh! le meilleur ami, c’est Jésus!\nGrâce à Lui, nos fardeaux ne sont plus!\nSa paix remplace la crainte,\nLe chant succède à la plainte,\nOui, le meilleur ami, c’est Jésus!\n\nOh! le meilleur ami, c’est Jésus!\nQuand aux bords du Jourdain parvenu\nJésus, de Sa main puissante,\nTarit la vague écumante,\nOui, le meilleur ami, c’est Jésus!\n\nLà-haut, pour toujours, avec Jésus!\nDans le grand cortège des élus,\nTransformés à Son image,\nNous chanterons d’âge en âge:\nOui, le meilleur ami, c’est Jésus!''',
+    numero: 122,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_123',
+    titre: 'JAMAIS DIEU NE DELAISSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Jamais Dieu ne délaisse\nQui se confie en Lui.\nSi le monde m’oppresse,\nJésus est mon appui.\nCe Dieu bon et fidèle\nGarde en Sa paix les siens\nPour la vie éternelle,\nEt les comble de biens.\n\nJe veux, sachant qu’il m’aime,\nMe remettre à Ses soins:\nBeaucoup mieux que moi-même\nIl connaît mes besoins.\nCe Dieu plein de tendresse\nConfondrait-Il ma foi?\nNon, plus le mal me presse,\nPlus Il est près de moi.\n\nMonde! ce qui t’enchante,\nBiens, honneurs, volupté,\nN’est plus ce qui me tente:\nTout n’est que vanité!\nMon trésor, mon partage,\nMon tout, c’est Jésus-Christ,\nQui me donne pour gage\nLe sceau de son Esprit.\n\nSeigneur! par l’efficace\nDu sang versé pour moi,\nAccorde-moi la grâce\nDe vivre tout pour Toi.\nC’est la vie éternelle\nDéjà dès ici-bas,\nJusqu’au jour qui m’appelle\nA passer dans Tes bras.''',
+    numero: 123,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_124',
+    titre: 'UN CHRETIEN JE CROIYAIS ETRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Un chrétien je croyais être,\nMais j’ignorais le bonheur,\nQue Jésus, mon divin Maître,\nVient apporter dans mon coeur.\n\nChoeur\nOh! la paix que Jésus donne,\nJe ne la connaissais pas,\nTout sur mon chemin rayonne,\nDepuis qu’il conduit mes pas!\n\nSa puissance souveraine\nMaintenant règne sur moi\nDu péché brise la chaîne,\nMe rend vainqueur par la foi.\n\nEt, tranquillement j’avance,\nM’appuyant sur mon Sauveur\nSon adorable présence\nMe donne le vrai bonheur!''',
+    numero: 124,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_125',
+    titre: 'NON, RIEN EN MA PERSONNE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Non, rien en ma personne,\nN’est digne d’être aimé,\nCe que Jésus me donne\nPeut seul être estimé.\nJésus est ‘ma justice,\nMa gloire, mon appui;\nIl m’aime, Il m’est propice,\nEt je puis tout par Lui.\n\nNul ne peut à mon âme\nDisputer son bonheur;\nDe l’enfer, de sa flamme,\nJe ne sens nulle peur.\nLe Seigneur, juste juge,\nEst mon plus tendre ami\nSon coeur est le refuge,\nOù je fuis l’ennemi.\n\nOui, malgré la tempête,\nJésus, à qui je suis,\nToujours sous Sa houlette\nGardera Sa brebis.\nDussé-je pour mon Maître\nPerdre tout ici-bas,\nA Lui seul je veux être,\nJe ne Le quitte pas.''',
+    numero: 125,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_126',
+    titre: 'QUAND JE CRAINDRAI SUR…',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Quand je craindrai sur la route,\nSeigneur, tiens ma main!\nQuand m’assaillira le doute,\nSeigneur, tiens ma main!\n\nChoeur\nSeigneur, tiens ma main!\nSeigneur, tiens ma main!\nOh! Sauveur incomparable,\nToujours tiens ma main!\n\nQuand le péché m’environne,\nSeigneur, tiens ma main!\nLa victoire Tu la donnes,\nSeigneur, tiens ma main!\n\nDans la joie ou la tristesse,\nSeigneur, tiens ma main!\nDans la paix ou la détresse.\nSeigneur, tiens ma main!\n\nDans la nuit d’épreuve amère,\nSeigneur tiens ma main!\nConduis-moi vers la lumière!\nSeigneur tiens ma man’\n\nJe verrai Ta main meurtrie,\nPour toujours là-haut!\nDans la céleste patrie,\nOh! Divin Agneau!''',
+    numero: 126,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_127',
+    titre: 'JE NE SAIS POURQUOI',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Je ne sais pourquoi dans Sa grâce\nJésus m’a tant aimé,\nPourquoi par Son sang il efface\nMa dette, mon pèche.\n\nChoeur\nMais, je sais qu’en Lui j’ai la vie,\nIl m’a sauvé dans Son amour;\nEt gardé par Sa main meurtrie,\nJ’attends l’heure de Son retour.\n\nJe ne sais comment la lumière\nEclaire tout mon coeur,\nComment je compris ma misère\nEt reçus mon Sauveur!\n\nJe ne sais quelle est la mesure\nDe joie et de douleur\nQue pour moi, faible créature,\nRéserve mon Sauveur.\n\nJe ne sais quand de la victoire\nL’heure enfin sonnera,\nQuand l’Agneau, l’Epoux, dans Sa gloire\nAvec Lui me prendra.''',
+    numero: 127,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_128',
+    titre: 'QUEL AMI FIDELE ET TENDRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Quel ami fidèle et tendre\nNous avons en Jésus-Christ,\nToujours prêt à nous entendre,\nA répondre à notre cri!\nIl connaît nos défaillances,\nNos chutes de chaque jour.\nSévère en Ses exigences,\nIl est riche en Son amour.\n\nQuel ami fidèle et tendre\nNous avons en Jésus-Christ,\nToujours prêt à nous comprendre\nQuand nous sommes en souci!\nDisons Lui toutes nos craintes,\nOuvrons-Lui tout notre coeur,\nBientôt Ses Paroles saintes\nNous rendrons le vrai bonheur.\n\nQuel ami fidèle et tendre\nNous avons en Jésus-Christ\nToujours prêt à nous défendre\nQuand nous presse l’ennemi!\nIl nous suit dans la mêlée,\nNous entoure de Ses bras,\nEt c’est Lui qui tient l’épée\nQui décide des combats.\n\nQuel ami fidèle et tendre\nNous avons en Jésus-Christ,\nToujours prêt à nous apprendre\nA vaincre en comptant sur Lui!\nS’Il nous voit vrais et sincères\nA chercher la sainteté,\nIl écoute nos prières\nEt nous met en liberté.\n\nQuel ami fidèle et tendre\nNous avons en Jésus-Christ!\nBientôt II viendra nous prendre\nPour être au ciel avec Lui.\nSuivons donc l’étroite voie\nEn comptant sur Son secours\nBientôt nous aurons la joie\nDe vivre avec Lui toujours''',
+    numero: 128,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_129',
+    titre: 'TANT QU’IL VIT, TANT QU’IL REGNE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Tant qu’il vit, tant qu’Il règne,\nMon tout-puissant Ami,\nIl n’est rien que mon âme craigne;\nJe me sens è l’abri.\nBerger fidèle et tendre,\nIl conduit Ses agneaux\nDans les prés où viennent s’épandre\nLes célestes ruisseaux.\n\nQu’importe la nuit sombre,\nLe lion qui rugit?\nJe sais que mon Berger dans l’ombre\nMe regarde et me suit.\nSi ma route est glissante\nEt mon pas incertain,\nJe m’appuie à Sa main puissante\nEt poursuis mon chemin.\n\nA Toi seul je regarde,\nÔ Berger des brebis!\nTon coeur m’aime et Ton oeil me regarde\nVoilà mon paradis.''',
+    numero: 129,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_130',
+    titre: 'Ô JOUR BENI JOUR DE VICTORE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Ô jour béni, jour de victoire\nQue je ne saurais oublier,\nJ’ai vu, i’ai vu le Roi de gloire,\nApparaissant sur mon sentier!\nSa beauté, Sa gloire infinie\nDe tous les côtés m’entourait;\nSon regard qui porte la vie,\nSur ma pauvre âme s’abaissait.\n\nSon manteau couvrait ma misère,\nSes bras me serraient sur Son cœur\nIl me portait dans la lumière,\nLoin du péché, de la douleur,\nDe Sa main essuyant mes larmes;\nIl me parlait de Son amour:\nViens mon enfant, ses saris alarme\nJe te prends à Moi sans retour.\n\nEt je suis dans cette retraite,\nDont je ne sortirai Jamais;\nE je goûte une paix parfaite,\nOù ma foi s’abreuve à longs traits.\nNon, tout ceci n’est point un rêve,\nMais la grande réalité;\nC’est un jour nouveau qui se lève,\nQui doit durer l’éternité.\n\nEn avant donc, avec courage,\nAvec espoir, avec bonheur.\nJe me consacre sans partage\nA mon Dieu, mon Roi, mon Sauveur.\nIl dit à mon âme ravie:\nNe t’occupe plus que de Moi,\nEt Je dirigerai ta vie\nEt je m’occuperai de toi.\n\nIl a saisis mes mains tremblantes,\nJ’ai dit amen à ce contrat!\nIl étend Ses mains bénissantes,\nC’est en effet Lui qui combat.\nEt, les yeux fermés, je m’avance,\nTranquille, sur le droit chemin.\nJ’entonne un chant de délivrance;\nIl peut tout, car je suis rien!''',
+    numero: 130,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_131',
+    titre: 'OUI, SELON TA PROMESSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Oui, selon Ta promesse,\nÔ Jésus, mon Sauveur!\nJ’ai trouvé l’allégresse\nAuprès de la douleur,\nLe rayon qui assure\nDans la plus sombre nuit,\nUn baume à la blessure,\nDans l’épreuve un appui.\nUn baume à la blessure,\nDans l’épreuve un appui.\n\nDans le désert aride,\nSous un ciel embrasé,\nUne eau fraîche et limpide\nJaillissant du rocher,\nL’ombre de la nuée\nAbritant le chemin,\nLa céleste rosée\nQui remplace le pain:\nLa céleste rosée\nQui remplace le pain.\n\nJésus, mon divin Maître,\nN’es-Tu pas tout pour moi?\nLa Source de mon être,\nLe Rocher de ma foi,\nLe Soleil qui m’éclaire,\nLe Ciel qui me sourit,\nL’Eau qui me désaltère,\nLe Pain qui me nourrit.\nL Eau qui me désaltère,\nLe Pain qui me nourrit.''',
+    numero: 131,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_132',
+    titre: 'SUR TOI JE ME REPOSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Choeur\nSur Toi je me repose,\nO Jésus, mon Sauveur!\nFaut-il donc autre chose\nPour un pauvre pécheur?\n\nConduit par Ta lumière,\nGardé par Ton amour,\nVers la maison du Père\nMarchant de jour en jour...\n\nAh! ma misère est grande!\nMais Tu m’as pardonné;\nSainte et vivante offrande\nPour moi Tu T’es donné;\nEt de toute souillure,\nPar le sang de Ta croix,\nMon âme devient pure;\nTu l’as dit, je le crois!\n\nMoi-même en sacrifice\nImmolé désormais,\nSeigneur, à Ton service\nMe voici pour jamais!\nQu’importe ma faiblesse,\nPuisque je T’appartiens:\nTu n’as point de richesse\nQui ne soit pour les Tiens.\n\nAu plus fort de l’orage\nTu Te tiens près de moi,\nRanimant mon courage\nEt soutenant ma foi;\nC’est dans Ton coeur qui m’aime\nQue Tu sais me cacher;\nEn vain Satan lui-même\nVoudrait m’en arracher...\n\nEn Toi j’ai la victoire,\nLa paix, la liberté;\nA Toi je rendrai gloire\nDurant l’éternité;\nSi du bonheur qui passe\nLa source doit tarir,\nC’est assez de Ta grâce\nPour vivre et pour mourir...''',
+    numero: 132,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_133',
+    titre: 'C’EST A L’OMBRE DE TES AILES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''C’est à l’ombre de Tes ailes\nQu’est le vrai repos;\nLà plus de douleurs cruelles,\nLà plus d’angoisses mortelles,\nLà plus d’écrasants fardeaux:\nC’est le vrai repos!\nLà plus d’écrasants fardeaux:\nC’est le vrai repos!\n\nChoeur\nVrai repos, paix parfaite et bonheur,\nSous les ailes du Seigneur!\nVrai repos, paix parfaite et bonheur,\nSous les ailes du Seigneur!\n\nC’est à l’ombre de Tes ailes\nQu’on trouve la paix...\nLes oiseaux dans leurs nids frêles,\nSous les plumes maternelles,\nNe s’épouvantent jamais:\nIls dorment en paix!\nNe s’épouvantent jamais:\nIls dorment en paix!\n\nC’est à l’ombre de Tes ailes\nQu’est le vrai bonheur.\nToutes choses sont nouvelles.\nEt c est la vie éternelle,\nQue d être près de Ton coeur!\nC’est le vrai bonheur!\nQue d’être près de Ton coeur!\nC’est le vrai bonheur!''',
+    numero: 133,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_134',
+    titre: 'ECCUTEZ PETITS ETGRANDS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Ecoutez, petits et grands,\nDe Jésus-Christ la parole,\nIl rend confus les méchants,\nNous instruit et nous console,\nApprochez-vous du Sauveur,\nIl vous porte sur Son cœur.\nApprochez-vous du Sauveur,\nIl vous porte sur Son cœur.\n\nDans peu de temps Il viendra\nEnlever sa chère Eglise ;\nDans Son ciel, Il la prendra:\nDès longtemps elle est acquise.\nPour goûter ce vrai bonheur\nII faut venir au Sauveur.\nPour goûter ce vrai bonheur\nII faut venir au Sauveur.\n\nLa part de tous ici-bas,\nEst une part de souffrance;\nDe ce combat je suis las,\nMais une douce espérance\nVient fortifier mon coeur\nEt l’inonder de bonheur.\nVient fortifier mon coeur\nEt l’inonder de bonheur.\n\nPlus haut que ces tristes lieux,\nDans une joie éternelle,\nBien au delà du ciel bleu\nEt des cités, la plus belle,\nC’est la cité du Dieu fort\nOù ne règne plus la mort.\nC’est la cité du Dieu fort\nOù ne règne plus la mort.\n\nLà, réunis tous un jour\nEt pour toujours dans le gloire,\nDans le paix et dans l’amour,\nChantant l’hymne de victoire,\nAvec Jésus dans les cieux,\nNous serons toujours joyeux.\nAvec Jésus dans les cieux,\nNous serons toujours joyeux.''',
+    numero: 134,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_135',
+    titre: 'OR, VERS MINUIT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Or, vers minuit, se fit entendre\nUn cri disant : « Voici l’Epoux! »\nC’est Jésus ! voyez-Le descendre!\nAutour de Lui rallions-nous.\n\nChoeur\nQue l’Eglise aujourd’hui s’apprête\nPour I’heure de ce rendez-vous;\nC’est la veille d’un jour de fête:\n«Voici l’Epoux! voici l’Epoux!»\n\nCette espérance glorieuse\nRanime nos coeurs abattus\nOh! quelle perspective heureuse,\nD’être bientôt avec Jésus!\n\nCeux qui dorment, de leur poussière\nEntendront Sa voix comme nous;\nEt, comme nous, loin de la terre,\nIrons au-devant de I’Epoux.''',
+    numero: 135,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_136',
+    titre: 'DANS LA PATRIE ETERNELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Dans la patrie éternelle\nLe repos enfin m’attend,\nJésus I’a pour moi, rebelle,\nConquis au prix de son sang.\n\nChoeur\nJais, Jésus m’y convie,\nPrès de l’arbre de la vie\nIl promet une partie,\nUn repos pour moi.\n\nAu péché je suis en butte,\nLà plus de mal, plus de chute,\nLe repos après la lutte.\nLe repos pour moi.\n\nIl prépare ma demeure\nPour toute l’éternité.\nQuand viendra ma dernière heure,\nTout sera félicité.\n\nJamais ni douceur ni tristesse\nNe seront près du Sauveur,\nTout sera chant d’allégresse,\nTout sainteté, tout bonheur.\n\nNous verrons de Christ la gloire\nEt a mort ne sera plus.\nTriomphez de sa victoire,\nÔ rachetés de Jésus!\n\nChantez, éclatez de joie,\nHeureux héritiers du ciel!\nCar au terme de la voie\nEst un repos éternel!''',
+    numero: 136,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_137',
+    titre: 'AVEC ALLEGRESSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Avec allégresse\nMarcher vers le ciel,\nRegarder sans cesse\nNotre Emmanuel;\nPuiser foi nouvelle\nDans ce doux regard,\nDe l’âme fidèle,\nC’est la sûre part.\n\nChoeur\nFrères, Frères!\nLes coeurs en haut!\nJésus nous appelle,\nIl viendra bientôt.\nJésus nous appelle,\nIl viendra bientôt.\n\nLes anges fidèles,\nLes saints rachetés,\nTroupes immortelles,\nDisent tes bontés.\nJésus, Roi de gloire!\nTon amour vainqueur,\nGage de victoire,\nSauve le pécheur.\n\nLà, tout est lumière,\nPaix et sainteté;\nLà, plus de misère,\nTout est charité!\nSur ce doux rivage\nOnt cessé les pleurs;\nJésus, ton image\nEst dans tous les coeurs.\n\nAmis, bon courage!\nL’étoile qui luit\nDissipe l’orage\nEt la sombre nuit.\nVeillons sur notre âme,\nJésus vient bientôt!\nLui seul nous réclame:\nTous les coeurs en haut!\n\nFrères, Frères!\nLe ciel est près!\nJésus, Roi de gloire,\nY règne à jamais!\nJésus, Roi de gloire,\nY règne à jamais!''',
+    numero: 137,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_138',
+    titre: 'VERS LE CIEL',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Vers le ciel, vers le ciel,\nJ’entends, Jésus, Ton appel,\nEt mon coeur vers Toi s’élance,\nDans la joyeuse espérance\nDe Te voir, Emmanuel!\n\nQuel bonheur! quel bonheur\nD’être auprès de Toi, Seigneur!\nD’entrer dans la cité sainte,\nDélivré de toute crainte,\nA l’abri du Tentateur.\n\nIci-bas, ici-bas\nTout se flétrit sous nos pas.\nDe Toi mon âme est avide;\nJe voudrais d’un vol rapide,\nAller, ô Dieu! dans Tes bras.\n\nHeureux jour, heureux jour\nOù s’ouvrira le séjour\nDe mon Sauveur que j’adore.\nQuand brillera Ton aurore?\nJe I’attends, ô Dieu d’amour!''',
+    numero: 138,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_139',
+    titre: 'DANS LE CIEL, SEJOUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Dans le ciel, séjour de la gloire,\nSeigneur Jésus, nous verrons Ta beauté.\nLà, nous chanterons Ta victoire,\nNous exalterons Ta bonté.\n\nChoeur\nRegardons à Jésus\nEn marchant vers le ciel.\nRegardons à Jésus.\nIl est le Sauveur éternel.\n\nSouvent les ennuis de la terre\nNous font désirer le repos du ciel.\nOui, c’est près de Toi, notre Père,\nQu’est notre héritage éternel.\n\nDevant nous brille la lumière\nAnnonçant l’aurore d’un jour nouveau.\nEn nous envolant de la terre\nNous entrerons dans le repos.\n\nEn avant! avec confiance,\nLevons les yeux au ciel, Jésus est là;\nD’un pas ferme, avec assurance,\nMarchons! marchons! hâtons nos pas.''',
+    numero: 139,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_140',
+    titre: 'BIENTOT SEIGNEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Bientôt, Seigneur, Tu reviendras!\nToi, notre Chef, notre Espérance!\nJour de bonheur, de délivrance!\nAu ciel Tu nous introduiras:\nTu reviendras!\n\nTu l’as promis: plus qu’un instant,\nJe viens vous prendre dans Ma gloire;\nJusqu’au signal de la victoire,\nVeillez, priez, en combattant,\nPlus qu’un instant!\n\nNe tarde plus: reviens, Seigneur!\nC’est le soupir de Ton Eglise;\nElle est à Toi, Tu l’as acquise,\nMourant pour Elle, ô Rédempteur!\nReviens, Seigneur!\n\nPour Ton retour, oh! tiens-nous prêts!\nQue Ton Esprit nous sanctifie,\nQue nul des Tiens, manquant de vie,\nNe soit confus à Ton aspect.\nOui, tiens-nous prêts!''',
+    numero: 140,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_141',
+    titre: 'LE TEMPS S’ENVOLE...',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Le temps s’envole… et nous emporte,\nEn vain voulons-nous l’arrêter,\nSa course toujours la plus forte,\nSans trêve, rapide nous porte...\nInutile de regretter.\n\nLe temps s’envole… et tout s’efface...\nLe monde n’est que vanité!\nSa gloire, ses faveurs, tout passe.\nDe ses attraits le coeur se lasse\nSur le seuil de l’Eternité.\n\nLe temps s’envoie... et tout rayonne\nSur ton chemin, sainte cité!\nDu Sauveur l’amour qui pardonne,\nInonde le coeur et l’étonne...\nIneffable félicité!\n\nLe temps s’envole... et notre Père\nNous prépare pour Son séjour.\nDans tous nos coeurs Sa grâce opère\nIl recueille notre prière.\nFrères, croyons à Son amour.\n\nLe temps s’envole... et la souffrance,\nLes pleurs, le désespoir, la mort,\nVont disparaître, en la présence\nDe Jésus-Christ notre espérance,\nQuand nous entrerons dans le port.\n\nLe temps s’envole… et sur la nue\nNos yeux contempleront Jésus.\nOh! quel jour pour l’Eglise émue\nQue la gloire de Sa venue!\nQuel triomphe pour les élus!''',
+    numero: 141,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_142',
+    titre: 'CONTEMPLER MON DIEU…',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Contempler mon Dieu sur Son trône,\nVivre avec Jésus dans le ciel,\nJeter à Ses pieds ma couronne,\nC’est là le bonheur éternel.\n\nChoeur\nDans le ciel,\nDans le ciel,\nVivre avec Jésus dans le ciel,\nDans le ciel, dans le ciel, dans le ciel\nC’est là le bonheur éternel.\n\nUnir ma voix aux choeurs des anges,\nBénir, louer Emmanuel,\nChanter à jamais Ses louanges,\nC’est là le bonheur éternel.\n\nJouir d’une paix infinie,\nRevoir mes amis dans le ciel,\nPosséder l’immortelle vie,\nC’est là le bonheur éternel.\n\nRetrouver les saints dans la gloire,\nPrès du trône de l’Eternel,\nCélébrer la même victoire,\nC’est là le bonheur éternel.''',
+    numero: 142,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_143',
+    titre: 'AH! QU’IL EST BEAU DEVOIR...',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Ah qu’il est beau de voir des frères\nD’un même amour unis entre eux\nEsprit de Dieu! Tu les éclaires,\nTu les embrases de Te feux.\nLeurs chants pieux et leurs prières\nComme un encens monte aux cieux.\nLeurs chants pieux et leurs prières\nComme un encens monte aux cieux.\n\nÔ Rédempteur! en Ta présence,\nDans Ta sainte communion,\nIls savourent la jouissance\nD’une céleste affection.\nAussi leurs coeurs en assurance\nT’offrent leur adoration.\nAussi leurs coeurs en assurance\nT’offrent leur adoration.\n\nDans tous les lieux la même vie\nAnime tous Tes rachetés,\nPartout leur âme est réjouie\nDe Tes douces gratuités.\nOui, Ton Eglise est enrichie\nDe Tes magnifiques bontés.\nOui, Ton Eglise est enrichie\nDe Tes magnifiques bontés.\n\nRépands sur nous, Dieu chantable!\nTon Esprit de grâce et de paix.\nAccueillis à la même table\nEt goûtant les mêmes bienfaits,\nQu’un amour saint et véritable\nNous unisse en Toi pour jamais.\nQu’un amour saint et véritable\nNous unisse en Toi pour jamais.''',
+    numero: 143,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_144',
+    titre: 'QU’ILS SONT BEAUX…',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Qu’ils sont beaux sur les montagnes\nLes pieds de Tes serviteurs,\nQui parcourent les campagnes,\nPrêchant la grâce aux pêcheurs!\n\nÔ délicieuse vie\nD’un serviteur de Jésus,\nQui pour son Maître s’oublie,\nEn annonçant Ses vertus!\n\nLibre de toute autre chaîne,\nLe chrétien qui sert son Dieu,\nDans la souffrance et la peine\nSuit son modèle en tout lieu.\nIl faut qu’en vivante offrande\nIl se donne à son Sauveur; \nC’est là ce que Dieu demande\nD’un fidèle serviteur.\n\nAu pécheur qui désespère\nAnnoncez la guérison,\nPrêchez la mort salutaire\nQui paya notre rançon.\nDans le coeur le plus aride,\nDieu fait jaillir en un jour\nLa source fraîche et limpide\nDe Son éternel amour.\n\nParlez du Dieu qui console\nA tous les coeurs affligés;\nQu’aux accents de Sa parole\nLes pêcheurs soient réveillés.\nMontrez-leur, dans leur misère,\nCelui qui veut les sauver,\nEt que partout sur la terre\nOn apprenne à L’invoquer.''',
+    numero: 144,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_145',
+    titre: 'SEIGNEUR, QUE LA TERRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Seigneur, que la terre entière\nS’éveille à Ta grande voix,\nElle se lève à la lumière\nQui rayonne de Ta croix!\nQui rayonne de Ta croix!\n\nChoeur\nAprès la nuit vient l’aurore:\nVoici l’heure du réveil.\nQue toute âme, ô divin Soleil,\nTe contemple et T’adore!\nAprès la nuit vient l’aurore:\nVoici I’heure du réveil.\nQue toute âme, ô divin Soleil,\nTe contemple et T’adore!\n\nTon sang lave notre crime\nEt dissipe nos remords;\nEn mourant, sainte Victime,\nTu fais renaître les morts.\nTu fais renaître les morts.\n\nArrache à enfer sa proie,\nTout-puissant Ressuscité!\nSème à pleines mains la joie\nSur ce monde dévasté.\nSur ce monde dévasté.\n\nQue la source soit tarie\nDe vos pleurs, vous qui pleurez,\nPar l’espoir de la patrie\nOù bientôt vous entrerez!\nOù bientôt vous entrerez!\n\nErreur, péché, nuit mortelle,\nFuyez dans le noir passé!\nPour moi la vie éternelle\nPar Jésus a commencé.\nPar Jésus a commence.''',
+    numero: 145,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_146',
+    titre: 'Ô TOI, SEIGNEUR JESUS…',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Ô Toi, Seigneur Jésus, intarissable source\nDe la paix, de la joie\nEt du seul vrai bonheur,\nViens, Jésus, viens remplir\nMon coeur qui dans sa course\nDepuis longtemps déjà Te désire,\nSeigneur.\n\nDaigne seul, en tout temps,\nOccuper mes pensées.\nTiens-les, ô mon sauveur!\nSur Toi seul attachées,\nCar nul autre que Toi,\nNe peut, ô Rédempteur,\nDans ce triste désert, satisfaire\nmon cœur.\n\nDe Ton trône éternel,\nRayonnant de lumière,\nÔ Dieu! Ton oeil sonda\nMon immense malheur,\nEt d’en haut, mesurant\nMa profonde misère,\nSur la terre Tu vins,\nPour me sauver, Seigneur,\n\nPour me donner du ciel\nLes splendeurs éternelles,\nPour me faire goûter des délices\nnouvelles,\nPour partager Ton trône\nEt Ta gloire avec moi,\nPour ouvrir l’espérance\nAux regards de ma foi.\n\nSeigneur, que désormais,\nMa constante devise,\nJusqu’au moment béni\nDe Ton prochain,\nPour m’introduire enfin dans la terre\npromise\nSoit de vivre pour Toi,\nDe croître en Ton amour.''',
+    numero: 146,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_147',
+    titre: 'JESUS ME DEMANDE D’ETRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Jésus me demande d’être\nUn rayon de soleil,\nQui gaîment fasse connaître\nSon amour sans pareil.\n\nChoeur\nUn rayon de joie,\nUn doux rayon ce soleil,\nQue Jésus envoie!\nOh! quel bonheur sans pareil!\n\nJésus me demande d’être\nUn rayon bienfaisant,\nComme un reflet de ce Maître,\nAimable et complaisant.\n\nOui, Seigneur, donne-moi d’être\nComme un rayon d’espoir,\nParaissant à la fenêtre\nQuand le ciel est tout noir.\n\nOh! que m’oubliant moi-même,\nJe ne m’efforce plus\nQue d’être pour ceux que j’aime,\nUn reflet de Jésus.\n\nQue partout mon gai sourire\nEt ma joyeuse humeur\nSoit un baume à qui soupire\nEt réjouisse un cœur!\n\nChoeur\nQue Jésus m’emploie\nEt qu’il me rende pareil\nAux rayons de joie,\nAux doux rayons du soleil!''',
+    numero: 147,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_148',
+    titre: 'CHAQUE JOUR DE MA VIE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Chaque jour de ma vie,\nJe veux dire au Seigneur:\nApprends-moi, je Te prie,\nA Te donner mon coeur.\n\nDès que le jour commence,\nJe veux dire au Seigneur:\nTiens-moi dans Ta présence,\nMon Dieu, mon Rédempteur!\n\nSouvent dans la journée,\nJe veux dire au Seigneur:\nToi qui me l’as donnée\nSois-en le bienfaiteur.\n\nEt quand vient la nuit sombre,\nJe veux dire au Seigneur:\nTu me vois sous Ton ombre,\nGarde-moi Ta faveur.''',
+    numero: 148,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_149',
+    titre: 'IL EST UN PAYS MAGNIFIQUE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Il est un pays magnifique,\nSans péché, sans maux ni chagrins,\nOù des élus le saint cantique\nS’unit aux choeurs des séraphins.\n\nChoeur\nAllons tous, allons tous,\nAllons dans ce beau pays promis;\nAllons tous, allons tous,\nAllons dans le paradis.\n\nC’est le pays de la lumière,\nDu vrai repos et de la paix;\nC’est là que la gloire du Père\nBrille toujours dans Son palais.\n\nC’est la cité sainte et bénie,\nBrillante d’or et de cristal,\nOù croît aussi l’arbre de vie,\nEt d’où l’Agneau chasse tout mal.\n\nC’est le pays de la promesse\nQue la foi nous fait entrevoir.\nAh! puissions-nous louer sans cesse\nJésus, pour ce précieux espoir!''',
+    numero: 149,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_150',
+    titre: 'DES AUJOURD’HUI JE VEUX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Dès aujourd’hui je veux aimer\nDe tout mon coeur le bon Berger;\nPuisqu’en Son amour Il m’appelle,\nJe veux saisir Sa main fidèle.\nSeigneur Jésus, je viens à Toi,\nDu mal pour toujours garde-moi!\nDu mal pour toujours garde-moi!\n\nDès ce jour je veux obéir\nA mon Sauveur et Le servir;\nPuisqu’à Le suivre Il me convie,\nJe veux Lui consacrer ma vie.\nSeigneur Jésus, je viens à Toi,\nA Ton service accepte-moi!\nA Ton service accepte-moi!\n\nDès aujourd’hui je suis heureux,\nMon nom est écrit dans les cieux.\nBientôt je quitterai la terre\nPour le pays de la lumière.\nSeigneur Jésus, je suis a Toi,\nJusqu’à Ton trône porte-moi!\nJusqu’à Ton trône porte-moi!''',
+    numero: 150,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_151',
+    titre: 'DAVID N’AVAIT RIEN QUE SA FRONDE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''David n’avait rien que sa fronde\nPour lutter contre le géant;\nMais au fond de son coeur d’enfant\nHabitait une foi profonde.\nIl savait bien que l’Eternel\nCombattrait avec lui pour sauver Israël!\n\nIl avançait ferme et tranquille\nContre le Philistin puissant,\nQui, l’oeil hautain et méprisant,\nRiait de son air juvénile,\nEt se moquait de l’Eternel,\nQui choisissait David pour sauver Israël!\n\nMais, sans trembler, d’une main sûre,\nL’enfant que son Dieu dirigeait,\nFit au colosse, d’un seul jet,\nUne inguérissable blessure.\nEt c’est ainsi que l’Eternel,\nSelon Son bon plaisir, délivrait Israël!\n\nComme David, Tu nous appelles\nA de grands combats, ô Seigneur!\nPour en sortir à Ton honneur,\nComme David, rends-nous fidèles,\nEt l’on verra que l’Eternel\nSe tient auprès de nous, comme auprès d’Israël.\n\nEt si le mal nous environne,\nEt s’il devient plus fort que nous,\nNous T’implorerons à genoux\nToi qui ne rejettes personne!\nEt, répondant à notre appel,\nTu lutteras pour nous, ô Sauveur Eternel!''',
+    numero: 151,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_152',
+    titre: 'JESUS PAR TON SANG PRECIEUX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Jésus, par Ton sang précieux,\nEnlève mon iniquité,\nRegarde-moi du haut des cieux,\nDis-moi que Tu m’as pardonné...\nJ’ai longtemps erré, coeur rebelle,\nMais j’entends Ta voix qui m’appelle,\nAu pied de Ta croix maintenant,\nTout confus, brisé, je me rends.\n\nChoeur\nBlanc, plus blanc que neige,\nBlanc, plus blanc que neige\nLavé dans le sang de l’Agneau,\nJe serai plus blanc que la neige.\n\nOh! le fardeau de mon péché,\nDieu très saint est trop grand pour moi.\nJe veux en être délivré,\nA cette heure, Oh! révèle-Toi\nJésus, viens, sois ma délivrance,\nSeul Tu peux calmer ma souffrance!\nAu pied de Ta croix maintenant,\nTout confus, brisé, je me rends.\n\nOh! Jésus Ton sang précieux\nA lavé mon iniquité,\nOui, Tu m’as répondu des cieux,\nTon amour m’a tout pardonné.\nJe Te contemple et je puis croire\nQu’en Toi j’ai complète victoire...\nAu pied de Ta croix maintenant,\nJe me relève, triomphant!\n\nBlanc, plus blanc que neige,\nBlanc, plus blanc que neige\nLavé dans le sang de l’Agneau,\nMon coeur est plus blanc que la neige!''',
+    numero: 152,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_153',
+    titre: 'OH! QUE TA MAIN PATERNELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu:
+        '''Oh! que Ta main paternelle\nBénisse Ton enfant!\nSur moi, garde fidèlement\nUn œil toujours attentif,\nPère céleste et compassionné.\n\nChoeur\nGarde-moi, Jésus, mon Sauveur,\nDans Tes bras d'amour,\nProtège-moi de tout danger,\nChaque jour, toujours.\n\nSeigneur, pardonne mes fautes,\nPurifie mon cœur,\nÉloigne de moi le mal,\nAccorde-moi Ta paix,\nPour que je marche avec Joie\nDans Ta vérité.\n\nQuand viendra le soir de la vie,\nReçois-moi dans Ton ciel,\nOù je pourrai Te louer\nPour l'éternité,\nAvec tous les rachetés\nDans Ta sainte présence.''',
+    numero: 153,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_154',
+    titre: 'MON AME EST LIBEREE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Mon âme est libérée
+Du pouvoir de Satan;
+Ton bras l’a délivrée,
+O Sauveur Tout-puissant!
+
+Choeur
+Alléluia! Alléluia!
+Gloire à Toi, mon Sauveur!
+Alléluia! Alléluia!
+Gloire à mon Rédempteur!
+
+Tu payas de Ta vie
+Le prix de ma rançon,
+Et mon âme affranchie
+Exalte Ton grand Nom.
+
+Libre de toute entrave,
+Ma gloire et mon bonheur
+C’est d’être Ton esclave,
+Ô mon Libérateur!
+
+Ma vie et tout mon être
+Sont à Toi désormais;
+Tu seras seul mon Maître,
+Mon Sauveur à jamais.''',
+    numero: 154,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_155',
+    titre: 'LA CROIX QUE DIEU ME DONNE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''La croix que Dieu me donne
+A porter ici-bas
+Est jointe à la couronne
+Qui ne se flétrit pas.
+Celui qui me l’impose
+Se nomme mon Sauveur;
+En Son sein je dépose
+Le soupir de mon coeur.
+
+Le premier, sur Lui-même
+Il a chargé la croix.
+Après Lui, puisqu’Il m’aime,
+Dois-je en craindre le poids?
+Jésus, en qui j’espère
+Et qui la prit sur Lui,
+Me la rendra légère:
+Il est mon sûr appui.
+
+Il sait, ce Dieu tout sage,
+Il sait, bien mieux que moi,
+Régler ce court voyage
+Où s’avance ma foi.
+Ma route m’est tracée
+Par Sa main chaque jour;
+Peut-Elle être placée
+Ailleurs qu’en Son amour?
+
+Prends donc, prends sans tristesse,
+O mon âme! ta croix!
+Du Seigneur la sagesse
+En mesura le poids.
+Ton Dieu, ton Dieu fidèle,
+Te tient sous Son regard;
+A souffrir s’il t’appelle,
+Ah ! sache aimer ta part.''',
+    numero: 155,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_156',
+    titre: 'SEIGNEUR! SANCTIFIE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Seigneur! sanctifie
+Nos jours, nos moments;
+Fais que notre vie
+T’honore en tout temps.
+Que de Ta présence,
+Au milieu de nous,
+L’heureuse influence
+Nous pénètre tous.
+
+Nous voulons sans cesse
+Marcher par la foi
+Et, dans la détresse,
+Regarder à Toi.
+Heureux qui repose
+Sur Ton bras puissant!
+On a toute chose
+En Te possédant.''',
+    numero: 156,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_157',
+    titre: 'EN AVANT SOLDATS CHRETIENS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''En avant! soldats chrétiens,
+Marchant comme à la guerre,
+Avec la croix de Jésus,
+Allons tous en avant.
+Christ, le Maître royal,
+Mène contre l’ennemi,
+Tout droit dans la bataille,
+Regardez Ses bannières.
+
+Choeur
+En avant! soldats chrétiens,
+Marchant comme à la guerre,
+Avec la croix de Jésus.
+Allons tous en avant.
+
+Comme une armée puissante,
+Debout, Eglise de Dieu,
+Frères, nous sommes en marche
+Sur les traces des Saints.
+Nous ne sommes pas divisés,
+Tous nous sommes un seul corps;
+Un dans l’espoir et doctrine,
+Un dans la charité.
+
+Couronnes et trônes périront,
+Les royaumes tomberont,
+Mais l’Eglise de Jésus
+Demeurera constante.
+Même les portes de l’enfer
+Ne prévaudront contre Elle;
+Nous avons la promesse
+Infaillible de Christ.
+
+Par le signe du triomphe,
+Fuit l’armée de satan;
+Oh! alors, soldats chrétiens,
+Marchez vers la victoire.
+L’enfer est tout ébranlé
+Par le cri de louange;
+Oh! frères, élevez vos voix
+Que votre hymne monte.
+
+En avant vous les peuples,
+Joignez notre heureuse foule,
+Mêlez vos voix aux nôtres
+Dans le chant de triomphe.
+Eloge, gloire et honneur,
+A Christ, le Roi des rois,
+Dans les âges éternels,
+Chantent les hommes et les anges.''',
+    numero: 157,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_158',
+    titre: 'DANS MON BONHEUR IMMENSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Dans mon bonheur immense,
+Je veux avec ferveur
+Célébrer la clémence,
+Ô mon Sauveur!
+Pour moi, sur le Calvaire,
+Ton sang fut répandu,
+Et l’amour de ton Père
+M’est apparu.
+
+Ton sanglant sacrifice,
+Expiant mes forfaits,
+Me valut Ta justice,
+Ta douce paix.
+Ce divin héritage,
+Je le prends par la foi,
+Et mon coeur sans partage
+Se donne à Toi.
+
+A Toi dans l’abondance
+Ou dans la pauvreté,
+A Toi dans la souffrance
+Ou la santé.
+A Toi sur cette terre,
+Où j’attends Ton retour,
+Et bientôt, près du Père,
+A Toi toujours.''',
+    numero: 158,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_159',
+    titre: 'ADORABLE MYSTERE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Adorable mystère,
+Le Fils du Roi des rois
+Descendit sur la terre,
+Mourut sur une croix.
+Honneur, honneur,
+Au Sauveur, au Seigneur!
+Honneur, honneur,
+Honneur, gloire au Sauveur!
+
+Adorable mystère,
+C’est pour moi qu’Il mourut!
+Il a pris ma misère,
+Il m’offre e salut.
+Honneur. honneur,
+Au Sauveur, au Seigneur!
+Honneur, honneur,
+Honneur, gloire au Sauveur!
+
+Adorable mystère,
+Vous tous qui connaissez
+Son pouvoir salutaire,
+Adorez, bénissez!
+Honneur, honneur,
+Au Sauveur, au Seigneur!
+Honneur, honneur,
+Honneur, gloire au Sauveur!''',
+    numero: 159,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_160',
+    titre: 'REDEMPTEUR ADORABLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Rédempteur adorable.
+Sur la croix attaché,
+Traité comme un coupable,
+Brisé pour mon péché,
+Ton angoisse suprême,
+Ta douleur, Ton tourment
+Me disent : Vois, Je t’aime,
+J’ai pris ton châtiment.
+
+Abandonné du Père
+Dans Mon âme troublé,
+Buvant la coupe amère
+Pour ton iniquité,
+De l’éternelle flamme,
+Mon amour te sauva,
+Je mourus pour ton âme,
+Pécheur, à Golgotha!
+
+Le sang de Mes blessures,
+Ma couronne de Roi,
+Toutes ces meurtrissures,
+Comprends-le, c’est pour toi!
+J’ai subi ta souffrance,
+J’ai porté ta langueur,
+Contemple en assurance
+Ton grand Libérateur!
+
+Ton amour me réclame
+Me voici, cher Sauveur!
+Prends mon corps et mon âme
+Pour prix de Ta douleur.
+Oui, mon âme ravie,
+Désormais ne veut plus
+Que vivre de Ta vie,
+A Ta gloire, ô Jésus!''',
+    numero: 160,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_161',
+    titre: 'PORTANT SA CROIX, IL MONTE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Portant Sa croix, Il monte
+Le sinistre coteau;
+Dans l’opprobre et la honte,
+Muet comme un agneau.
+Ce Sauveur débonnaire,
+Pour le pécheur mortel,
+Va trouver au Calvaire,
+La mort d’un criminel.
+
+Sur cette croix sanglante,
+Sous le divin courroux,
+Regarde, âme tremblante,
+L’Agneau souffrant pour nous.
+Il porte sur Sa tête
+Nos pêchés odieux;
+Il veut payer ta dette,
+Pour t’introduire aux cieux.
+
+Oh! charité profonde!
+Insondable grandeur!
+Le Créateur du monde
+Veut être ton Sauveur.
+Ainsi, plus de détresse,
+Jésus est ton recours!
+Il est ta forteresse!
+Il t’aime pour toujours!''',
+    numero: 161,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_162',
+    titre: 'JESUS, DIVIN MODELE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Jésus, divin modèle,
+De douceur et de paix,
+Ta sainte voix m’appelle
+A marcher désormais
+Dans ce sentier de grâce,
+De support, de bonté,
+Où Tu laissas la trace
+De Ton humilité.
+
+Tu passas sur la terre
+Dans l’ineffable amour
+Que toute Ta carrière
+A montré chaque jour;
+Et Tu dis : «Je vous aime,
+Nul n’aime comme Moi;
+Enfants, faites de même,
+Car l’amour est Ma loi.»
+
+Que mon esprit se range
+A cette loi d’amour,
+Pour vivre à Ta louange,
+D’un coeur droit, sans détour;
+Comme Toi, charitable,
+Patient, humble et doux,
+Saint, pur, irréprochable,
+Faisant du bien à tous.''',
+    numero: 162,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_163',
+    titre: 'ARRETE, O PECHEUR, ARRETE!',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Arrête, ô pécheur, arrête!
+Il est sombre le chemin
+Où tu vas, baissant la tête,
+N’osant penser à ta fin.
+
+Choeur
+Reviens au Dieu qui pardonne,
+Qui relève le pécheur.
+Il ne repousse personne;
+Viens, c’est un Libérateur.
+
+Trop longtemps, dans la misère,
+Dans la honte et le remords,
+Tu t’es débattu, mon frère;
+Laisse là ces vains efforts!
+
+Ah! pour toi quelle autre vie,
+Si ton péché n’était plus!
+De la chaîne qui te lie
+Que les anneaux soient rompus!
+
+Tu pourras, dans la lumière,
+Marcher libre avec ton Dieu,
+Et le bon regard du Père
+Te guidera du saint lieu.
+
+Puis, au terme du voyage,
+Là-haut, dans l’éternité,
+Tu recevras l’héritage
+Que Dieu donne au racheté.
+
+Arrête, ô pécheur, arrête!
+Ton Dieu t’appelle aujourd’hui;
+A te sauver Il s’apprête.
+Ne tarde pas, viens à Lui.''',
+    numero: 163,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_164',
+    titre: 'VIENS A JESUS, IL T’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Viens à Jésus, Il t’appelle;
+Il t’appelle aujourd’hui.
+Trop longtemps tu fus rebelle:
+Aujourd’hui viens à Lui.
+
+Jésus t’aime, Jésus t’aime,
+Jésus t’aime aujourd’hui.
+Malgré ta misère extrême,
+Aujourd’hui viens à Lui.
+
+Il pardonne, Il pardonne,
+Il pardonne aujourd’hui.
+Reçois le salut qu’il donne:
+Aujourd’hui viens à Lui.
+
+Il efface, Il efface
+Tes péchés aujourd’hui.
+Ce jour est un jour de grâce;
+Aujourd’hui viens à Lui.''',
+    numero: 164,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_165',
+    titre: 'VIENS AU PERE QUI T’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Viens au Père qui t’appelle,
+Oh! reviens à la maison!
+Voici, l’heure est solennelle,
+Où Dieu t’offre Son pardon.
+
+Choeur
+Aujourd’hui, viens à Lui!
+Ah! pourquoi tarderais-tu?
+Aujourd’hui, viens à Lui,
+Viens, reçois Son grand salut!
+
+Trop longtemps, dans la misère,
+Tu vécus sans vrai bonheur!
+Se peut-il que tu préfères,
+Fuir encor loin du Sauveur?
+
+Ah! ton âme est angoissée,
+En vain tu cherchas la paix;
+Par Sa croix qui fut dressée,
+Christ la donne et pour jamais.
+
+A Jésus dit ta souffrance,
+Parle-Lui de ton péché,
+Mets en Lui ton espérance,
+Car en Lui Dieu t’a cherché.''',
+    numero: 165,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_166',
+    titre: 'PECHEUR ! VOUS VENEZ D’ENTENDRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Pécheurs! vous venez d’entendre,
+Ce beau message de paix;
+Ouvrez vos coeurs pour comprendre
+Ce que le Sauveur a fait.
+
+Choeur:
+Venez à Lui, venez à Lui,
+Pourquoi donc tant hésiter?
+Approchez-vous tous aujourd’hui,
+Oh venez sans plus tarder!
+
+Pour nous tous il souffrit la croix,
+La honte et l’ignominie;
+Serait-ce en vain que sur ce bois
+Il endura l’agonie?
+
+Oh! que nul ne désespère.
+Aucun péché n’est si grand,
+Nulle peine si amère,
+Qu’il n’efface par Son sang.
+
+Dieu pardonne encore aujourd’hui
+Au plus coupable pécheur.
+Qui vient à Jésus trouve en Lui
+Pardon, paix, repos, bonheur.''',
+    numero: 166,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_167',
+    titre: 'NOTRE CHEF ET MAITRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Notre Chef et Maître, c’est le Roi des rois;
+Portant ferme Sa bannière,
+Sans craintes ni doutes, soldats de la Croix,
+Avançons dans la lumière.
+
+Choeur:
+En avant! En avant!
+Pour Jésus-christ, le Roi des rois!
+Nous Le couronnons et marchons
+Sous la bannière de la Croix!
+
+Que l’ennemi vienne comme l’ouragan,
+Déployons notre bannière!
+Sous Sa garde sainte, jamais de Satan
+Notre âme n’est prisonnière.
+
+Par mer et par terre, qu’à tout être humain
+Soit annoncé l’Evangile!
+La sainte bannière de l’Agneau divin
+Plantons dans l’arène hostile!
+
+Et le jour de gloire bientôt paraîtra:
+L’aube, nous la voyons luire,
+Où, sous la bannière de la Croix, vaincra
+De Christ l’éternel Empire.''',
+    numero: 167,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_168',
+    titre: 'ILVAVENIR LE SEIGNEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Il va venir le Seigneur que j’adore,
+Bientôt Sa voix retentira du ciel.
+A mes regards l’horizon se colore
+Des purs rayons du soleil éternel.
+
+Choeur:
+Gloire à Toi seul, Seigneur Jésus!
+Gloire à jamais, gloire à Ton Nom!
+De Ton beau ciel, je ne sortirai plus
+Et pour toujours j’exalterai Ton Nom.
+
+Qu’autour de moi s’élève la tempête,
+Je suis en paix car Tu veilles sur moi;
+Je puis, ô mon Sauveur, lever la tête,
+Tu vas venir me prendre auprès de Toi.
+
+Maison du Père, où Ton amour m’appelle,
+Sainte cité, demeure des élus,
+Les lieux qu’éclaire une gloire Eternelle,
+Me sont ouverts par Toi-même, ô Jésus!
+
+Bonheur ineffable! Quand dans Ta gloire,
+Aux yeux des rachetés Tu paraîtras,
+Jésus, avec le cri de la victoire,
+Près de Toi, pour toujours Tu me prendras.''',
+    numero: 168,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_169',
+    titre: 'TOUT JOYEUX BENISSONS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Tout joyeux bénissons le Seigneur
+Chantons et célébrons Ses louanges,
+Adorons avec foi le Sauveur,
+Nous joignant aux célestes phalanges.
+
+choeur
+Gloire à Dieu! Gloire a Dieu!
+Que ce chant retentisse en tout lieu!
+Que ce chant retentisse en tout lieu!
+Gloire à Dieu! Gloire à Dieu!
+Que ce chant retentisse en tout lieu!
+Que ce chant retentisse en tout lieu!
+
+Dieu, dans Son incomparable amour,
+Du ciel envoya Son Fils unique,
+Et la terre et les cieux, dans ce jour,
+S’unissent pour chanter ce cantique:
+
+Le châtiment qui produit la paix,
+Jésus-Christ l’a subi pour mon âme;
+Il voulut expier nos forfaits,
+En mourant, Lui, sur le bois infâme.
+
+Nous voulons en retour, bon Sauveur,
+T’aimer par-dessus toute autre chose;
+Forme Ton amour dans notre coeur,
+Et puis, de chacun de nous dispose!''',
+    numero: 169,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_170',
+    titre: 'ENTENDS-TU? JÉSUS T’APPELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Entends-tu? Jésus t’appelle;
+Viens, ô pécheur! Il t’attend
+A cette voix si fidèle
+Tu résistas trop souvent.
+
+Choeur
+Laisse entrer la Roi de gloire;
+Ouvre ton coeur à Jésus!
+Laisse entrer le Roi de gloire,
+Hâte-toi, ne tarde plus.
+
+Pour le péché, pour le monde,
+Tu trouves place en ton coeur
+Point pour le Sauveur du monde,
+Rien pour l’homme de douleur!
+
+Jésus frappe, il frappe encore;
+Ouvre à ton Libérateur,
+Et pour toi luira l’aurore
+Du véritable bonheur.
+
+Aujourd’hui, c’est jour de grâce;
+Ne compte pas sur demain.
+Pendant que ton Sauveur passe,
+Saisis sa puissante main!''',
+    numero: 170,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_171',
+    titre: 'COMME UN PHARE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Comme un phare sur la plage,
+Perçant l’ombre de la nuit,
+L’amour de Dieu, dans l’orage,
+Cherche l’homme et Le conduit.
+
+Choeur
+O Sauveur! que Ta lumière
+Resplendisse sur les flots,
+Et, vers le ciel, qu’Elle éclaire
+Et sauve les matelots.
+
+Nulle étoile n’étincelle
+Pour vous guider, ô nochers!
+Qui gardera la nacelle
+Des écueils et des rochers?
+
+Dans la nuit qui m’environne,
+De Ton amour, ô Jésus!
+Que par moi l’éclat rayonne
+Aux yeux des marins perdus.''',
+    numero: 171,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_172',
+    titre: 'COMPTE LES BIENFAITS DE DIEU',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Quand le vol de la tempête
+Vient assombrir ton ciel bleu,
+Au lieu de baisser la tête,
+Compte les bienfaits de Dieu.
+
+Choeur
+Compte les bienfaits de Dieu,
+Mets-les tous devant tes yeux,
+Tu verras, en adorant,
+Combien le nombre en est grand.
+
+Quand sur la route glissante
+Tu chancelles sur la croix,
+Pense â cette Main puissante
+Qui t’a bénie tant de fois.
+
+Si tu perds dans le voyage
+Plus d’un cher et doux trésor,
+Pense au divin héritage
+Qui là-haut te reste encor.
+
+Bénis donc, bénis sans cesse
+Ce Père qui chaque jour
+Répand sur toi la richesse
+De Son merveilleux amour.''',
+    numero: 172,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_173',
+    titre: 'NOUS ATTENDONS LE SAUVEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Nous attendons le Sauveur glorieux
+D’un coeur joyeux, rempli de confiance.
+Il va régner sur la terre et les cieux,
+Dans le beau jour de notre délivrance.
+
+Choeur
+Voir face à face—Notre Sauveur,
+Oh! quelle grâce,—Quel parfait bonheur!
+Voir face à face—Notre Sauveur,
+Oh! quel parfait bonheur!
+
+Autour de Lui nous nous retrouverons
+En un clin d’oeil, formés à Son image:
+A Sa rencontre, ensemble nous irons,
+Et Le servir sera notre partage.
+
+Là, le soleil chasse l’obscurité,
+Un jour sans fin succède à la nuit sombre
+Plus d’ouragan dans ce port abrité,
+Oh! le bonheur sera pur et sans ombre.
+
+Tout près de Lui nous pourrons approcher,
+Et notre main par la sienne tenue,
+Dans les lieux saints
+Qu’il fera beau marcher,
+Après la foi, pour toujours par la vue!''',
+    numero: 173,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_174',
+    titre: 'CHRIST EST RESSUSCITE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Christ est ressuscité,
+Qu’en des chants joyeux,
+Son triomphe en tous lieux soit exalté
+
+Choeur:
+A Toi la gloire et l’honneur,
+O Sauveur, ô puissant Rédempteur!
+Du sépulcre Tu sortis vainqueur,
+Prince de vie et Prince de paix.
+Gloire à Toi,
+Gloire à Toi,
+Gloire à toi, gloire à jamais!
+
+Christ est ressuscité,
+Cherche en Lui toujours,
+O peuple racheté,
+Force et secours!
+
+Christ est ressuscité,
+Par Lui nous vivrons
+Et dans l’éternité
+Nous régnerons.''',
+    numero: 174,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_175',
+    titre: 'OH! QUEL BONHEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Oh! quel bonheur de le connaître,
+Ami qui ne saurait changer,
+De l’avoir ici-bas pour Maître,
+Pour défenseur et pour berger!
+
+Choeur:
+Chantons, chantons d’un coeur joyeux
+Le grand amour du Rédempteur,
+Qui vint à nous du haut des cieux,
+Et nous sauva du destructeur!
+
+Dans la misère et l’ignorance
+Nous nous débattions sans espoir,
+La mort au coeur, l’âme en souffrance,
+Quand à nos yeux il se fit voir.
+
+Il nous apporta la lumière,
+La victoire et la liberté; 
+L’ennemi mordit la poussière,
+Pour toujours Satan fut dompté.
+
+Vers l’avenir marchons sans crainte
+Et sans souci du lendemain,
+Pas à pas, nos pieds dans l’empreinte,
+De Ses pieds sur notre chemin.''',
+    numero: 175,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_176',
+    titre: 'LA TROMPETTE A RETENTI:',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''La trompette a retenti: Ecoutez, écoutez,
+Du ciel résonne ce cri:
+Le Seigneur revient!
+Oh! toi qui sommeilles: Ecoutez, écoutez,
+Viens et te réveille:
+Le Seigneur revient!
+
+Entendez-vous le clairon?
+Ecoutez, écoutez,
+L’Epouse, en connaît le son:
+Jésus vient bientôt!
+Et dans l’allégresse
+Ecoutez, écoutez,
+Son coeur dit sans cesse:
+Jésus viens bientôt!
+
+La trompette retentit: Ecoutez, écoutez,
+Levez-vous, il est minuit,
+Voici, l’Epoux vient!
+Au banquet de fête: Ecoutez, écoutez,
+Que chacun s’apprête:
+Voici, l’Epoux vient!''',
+    numero: 176,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_177',
+    titre: 'MERCI JESUS AMEN',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Merci Jésus, Amen;
+Merci Jésus, Amen;
+Merci Jésus, Amen;
+O alléluia, Amen.''',
+    numero: 177,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_178',
+    titre: 'PERE CELESTE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Père Céleste, comme je T’apprécie,
+Père Céleste, comme je T’apprécie.
+Je T’aime, je T’adore,
+Je m’incline devant Toi,
+Père Céleste, comme je T’apprécie.
+
+Saint-Esprit, Toi ma consolation,
+Saint-Esprit, Toi ma consolation,
+Tu me guides, me conduis,
+Et Tu demeures en moi,
+Saint-Esprit, Toi ma consolation.''',
+    numero: 178,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_179',
+    titre: 'C’EST BIEN LE TEMPS DU SOIR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''C’est bien le temps du soir,
+Le temps est avancé.
+L’Epouse se prépare maintenant
+A rencontrer l’Epoux.
+Tout est fin prêt maintenant
+Et j’entends l’Epoux.
+Que donc toute oreille entende,
+C’est bien le temps du soir.''',
+    numero: 179,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_180',
+    titre: 'LE SANG DE JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Le sang de Jésus ne perdra jamais
+Sa puissance; non jamais!
+Il est efficace contre le péché,
+Et ne perdra point sa puissance.''',
+    numero: 180,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_181',
+    titre: 'DIEU ESTSI BON',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Dieu est si bon,
+Dieu est si bon,
+Dieu est si bon,
+Si bon envers moi.
+
+Il a sauvé mon âme,
+Libéré mon esprit,
+Guéri mon coeur brisé,
+Il est bon envers moi.
+
+Il exauce les prières,
+Il exauce les prières,
+Il exauce les prières,
+Il est bon envers moi.
+
+Oh, je L’aime tant,
+Oh, je L’aime tant
+Oh je L’aime tant,
+Il est bon envers moi.
+
+Il vient bientôt,
+Il vient bientôt,
+Il vient bientôt,
+Il est bon envers moi.''',
+    numero: 181,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_182',
+    titre: 'QUEL JOUR DE JOIE !',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Quel jour de joie! Quel jour de joie!
+Le jour de ma nouvelle naissance
+Quel jour de joie! Quel jour de joie!
+Quel jour de joie! jour de ma nouvelle
+naissance
+
+Les péchés du passé je ne les
+commets plus,
+Les péchés du passé je ne les
+commets plus.
+Les péchés du passe je ne les
+commets plus.
+Quel jour de joie! jour de ma nouvelle
+naissance.''',
+    numero: 182,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_183',
+    titre: 'HOSANNA',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Hosanna! béni soit le Roc,
+Béni soit le Rocher de mon salut!
+Hosanna! béni soit le Roc,
+Béni soit le Rocher de mon salut.
+
+Glorifions le Seigneur ensemble,
+Car Il est digne de louange.
+Glorifions le Seigneur ensemble,
+Car Il est digne de louange.
+
+Gloire à Son nom, Gloire à Son nom,
+Il vit et règne éternellement.
+Gloire à Son nom, Gloire à Son nom,
+Il vit et règne éternellement.
+
+Jéhovah Jiré est Son nom
+Car Il pourvoit à mes besoins.
+Jéhovah Jiré est S&i nom
+Car Il pourvoit à mes besoins.
+
+Jéhovah Rapha est Son nom
+Car II guérit mes maladies
+Jéhovah Rapha est Son nom
+Car Il guérit mes maladies
+
+Jéhovah Shalom est Son nom
+Car Il me donne de Sa Paix
+Jéhovah Shalom est Son nom
+Car Il me donne de Sa Paix
+
+Jéhovah Nissi est Son nom
+Car l’Eternel est ma bannière
+Jéhovah Nissi est Son nom
+Car l’Eternel est ma bannière
+
+Jéhovah Shammah est Son nom
+Car Il est ici avec nous
+Jéhovah Shammah est Son nom
+Car Il est ici avec nous.''',
+    numero: 183,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_184',
+    titre: 'NE SAIS-TU PAS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Ne sais-tu pas que tu es un temple,
+Ne sais tu pas que tu es un temple,
+Ne sais-tu pas que tu es un temple,
+Tu es un temple du Saint-Esprit.
+
+Oui, je sais; oui, je sais, je suis un temple,
+Oui, je sais; oui, je sais, je suis un temple,
+Oui, je sais; oui, je sais, je suis un temple,
+Je suis un temple du Saint-Esprit.
+
+Plein de gloire, de puissance et de
+louanges,
+Plein de gloire, de puissance et de
+louanges,
+Plein de gloire, de puissance et de
+louanges,
+Je suis un temple du Saint-Esprit.''',
+    numero: 184,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_185',
+    titre: 'QUEL DIEU PUISSANT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Quel Dieu puissant nous servons,
+Quel Dieu puissant nous servons,
+Anges s’inclinent devant Lui,
+Ciel et terre L’adorent,
+Quel Dieu puissant nous servons.''',
+    numero: 185,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_186',
+    titre: 'NE, NE DE NOUVEAU',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Né, né de nouveau,
+Dieu, je Te remercie,
+Né, né de nouveau,
+Dieu, je Te remercie.
+
+Né d’eau, d’Esprit et de sang,
+Dieu, je Te remercie,
+Né d’eau, d’Esprit et de sang,
+Dieu, je Te remercie.''',
+    numero: 186,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_187',
+    titre: 'NOUS SERONS CHANGES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Nous serons changés,
+Nous serons changés,
+Changés du mortel à l’immortel,
+Ce sera en un clin d’œil.''',
+    numero: 187,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_188',
+    titre: 'PSAUME 122 : 1',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''J’étais joyeux quand on m’avait dit,
+J’étais joyeux quand on m’avait dit,
+J’étais joyeux quand on m’avait dit:
+«Allons à la maison du Seigneur.»''',
+    numero: 188,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_189',
+    titre: 'LE SAUVEUR DE MON ÂME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''C’est le Sauveur de mon âme,
+Mon Jésus, mon Jésus.
+C’est le Sauveur de mon âme,
+C’est le Sauveur de mon âme.
+
+Jésus, Jésus, Jésus, Jésus,
+Toi le Sauveur de mon âme,
+Toi le Sauveur de mon âme.''',
+    numero: 189,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_190',
+    titre: 'IL NE PEUT FAILLIR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Il ne peut faillir car Il est Dieu,
+Il ne peut faillir : Il l’a promis.
+Il ne peut faillir : Il t’aidera,
+Il ne peut faillir : Il répondra.''',
+    numero: 190,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_191',
+    titre: 'LA BONTE DE JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Quand je pense à la bonté de Jésus,
+Tout ce qu’Il a fait pour moi,
+Alors mon âme s’écrie : «Alléluia!
+Gloire à Dieu pour mon salut.»''',
+    numero: 191,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_192',
+    titre: 'BENIS DIEU!',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Ô mon âme, bénis Dieu
+Et que tout ce qui est en moi
+Bénisse Son Saint Nom.
+Ô mon âme, bénis Dieu
+Et que tout ce qui est en moi
+Bénisse Son Saint Nom.
+
+Car Il a fait des prodiges,
+Il a fait des prodiges,
+Il a fait des prodiges,
+Bénis Son Saint Nom.''',
+    numero: 192,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_193',
+    titre: 'OUI, LA BONTE ET LA GRACE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Oui, la bonté et la grâce
+M’accompagneront,
+Tous les jours,
+Tous es jours de ma vie.
+
+Oui, la bonté et la grâce
+M’accompagneront
+Tous les jours, tous les jours de ma vie.
+
+Pour toujours je vivrai dans la maison du
+Seigneur,
+Je fêterai à la table dressée pour moi,
+Oui, la bonté et la grâce
+M’accompagneront
+Tous les jours, tous les jours de ma vie.''',
+    numero: 193,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_194',
+    titre: 'REMPLIS MA LAMPE D’HUILE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Remplis ma lampe d’huile.
+Laisse-moi brûler;
+Remplis ma lampe d’huile, je prie.
+Remplis ma lampe d’huile,
+Laisse-moi brûler,
+Laisse-moi brûler jusqu’au point du jour.
+
+Chante «Hosanna!» Chante Hosanna!
+Chante «Hosanna!» pour le Roi des rois!
+Chante «Hosanna!»
+Chante «Hosanna!» Chante «Hosanna!»
+Pour le Roi!''',
+    numero: 194,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_195',
+    titre: 'JE MONTERAI',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Je monterai, je monterai,
+Monterai â la première résurrection;
+Je monterai, je monterai,
+A la rencontre du Seigneur.
+
+Les uns vont venir de l’Est,
+D’autres de l’Ouest,
+Et d’autres viendront,
+Ils viendront du Nord, du Sud.
+
+Je monterai, je monterai,
+A la rencontre du Seigneur.''',
+    numero: 195,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_196',
+    titre: 'JE L’AIME BIEN MIEUX CHAQUE JOUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Je L’aime bien mieux chaque jour,
+Je L’aime bien mieux chaque jour.
+A Ses côtés je resterai,
+Je L’aime bien mieux chaque jour.''',
+    numero: 196,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_197',
+    titre: 'JESUS EST VIVANT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Jésus est vivant, Jésus est vivant,
+Sien est le sang qui m’a racheté,
+Sienne est la puissance qui me libère,
+Sienne est la vie qui m’a été donnée,
+Car Jésus est vivant.''',
+    numero: 197,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_198',
+    titre: 'EXALTE AVEC MOI LE SEIGNEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Exalte avec moi le Seigneur,
+Béni Agneau du Calvaire,
+Pour Sa grâce riche et gratuite,
+Exalte avec moi le Seigneur.
+
+Exalte avec moi le Seigneur,
+Béni Agneau du Calvaire,
+Jésus nous donne la victoire,
+Exalte avec moi le Seigneur.''',
+    numero: 198,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_199',
+    titre: 'JE VIS SUR LA MONTAGNE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Oh! je vis sur la montagne,
+Je vis sous un ciel d’azur.
+Je bois à la fontaine
+Qui jamais ne tarira.
+Oh! oui, je me régale de la manne
+Venant d’abondantes réserves,
+Car je demeure dans la terre Epouse.''',
+    numero: 199,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_200',
+    titre: 'SANS REBROUSSER CHEMIN',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Je me suis décidé à suivre Jésus,
+Je me suis décidé à suivre Jésus,
+Je me suis décidé à suivre Jésus,
+Sans jamais rebrousser chemin.
+
+La croix devant moi, le monde derrière moi,
+La croix devant moi, le monde derrière moi,
+La croix devant moi, le monde derrière moi,
+Sans jamais rebrousser chemin.
+
+Prenez le monde, donnez-moi Jésus,
+Prenez le monde, donnez-moi Jésus,
+Prenez le monde, donnez-moi Jésus,
+Je ne rebrousserai pas chemin.
+
+Je me suis mis en marche, vers le
+Royaume,
+Je me suis mis en marche, vers le
+Royaume,
+Je me suis mis en marche, vers le
+Royaume,
+Je ne rebrousserai pas chemin.
+
+Même seul, je continuerai la marche,
+Même seul, je continuerai la marche,
+Même seul, je continuerai la marche,
+Sans jamais rebrousser chemin.''',
+    numero: 200,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_201',
+    titre: 'LA PROMESSE DE DIEU EST VRAIE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''La promesse de Dieu est vraie,
+Cette merveilleuse promesse est vraie,
+Je l’ai crue, je l’ai aussi éprouvée,
+Je sais que cette promesse est vraie.''',
+    numero: 201,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_202',
+    titre: 'OH! SEIGNEUR, JE VIENS A TOI',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Oh! Seigneur, je viens à Toi,
+Pose sur moi Ta main percée.
+Que Ta puissance guérissante
+Coule et je serai guéri.''',
+    numero: 202,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_203',
+    titre: 'JESUS, JE N’OUBLIERAI JAMAIS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Je n’oublierai jamais,
+Jésus, Tes bienfaits.
+Je n’oublierai jamais:
+Tu m’as libéré.
+Je n’oublierai jamais,
+Que Tu m’as sauvé.
+Jésus, je ne l’oublierai jamais.''',
+    numero: 203,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_204',
+    titre: 'NE DE NOUVEAU',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Né de nouveau,
+Y a vraiment un changement en moi!
+Né de nouveau, juste comme Jésus l’a dit.
+Né de nouveau,
+Et tout, grâce au Calvaire,
+Je suis heureux
+D’être né de nouveau.''',
+    numero: 204,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_205',
+    titre: 'CHAQUE PROMESSE EST MIENNE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Chaque promesse dans le Livre est mienne,
+Chaque chapitre, chaque verset et chaque ligne.
+Oui, je crois en Son amour divin,
+Chaque promesse dans le Livre est mienne.''',
+    numero: 205,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_206',
+    titre: 'AU NOM DE JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Au Nom de Jésus, au Nom de Jésus
+Nous avons la victoire;
+Au Nom de Jésus, au Nom de Jésus,
+Les démons doivent s’enfuir.
+Si nous marchons au Nom de Jésus,
+Dites-moi qui peut résister ?
+Au Nom précieux de Jésus-Christ,
+Nous avons la victoire.''',
+    numero: 206,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_207',
+    titre: 'EMMANUEL',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Emmanuel, Emmanuel;
+Et Il S’appelle Emmanuel.
+Dieu avec nous,
+Révélé en nous,
+Et Il S’appelle Emmanuel.''',
+    numero: 207,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_208',
+    titre: 'SI LE MEME ESPRIT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Si le même Esprit
+Qui ressuscita Christ
+Demeure en vous, demeure en vous;
+Si le même Esprit
+Qui ressuscita Christ
+Demeure en vous, demeure en vous.
+
+Vie Il donnera à votre corps mortel
+Si cet Esprit demeure en vous;
+Vie Il donnera à votre corps mortel
+Si cet Esprit demeure en vous.''',
+    numero: 208,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_209',
+    titre: 'COULE EN MOI',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Coule en moi, ô Saint-Esprit,
+Coule en moi;
+Coule en moi, ô Saint-Esprit,
+Coule en moi.
+Levant mes mains pour adorer
+Et pour glorifier Ton Nom,
+Coule en moi, ô Saint-Esprit,
+Coule en moi.''',
+    numero: 209,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_210',
+    titre: 'IL NE COMMENCERA RIEN',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Il ne commencera rien s’il ne peut l’achever,
+Il ne commencera rien s’il ne peut l’achever.
+S’il a sauvé ton âme,
+Il va donc te guérir;
+Il ne commencera rien s’il ne peut l’achever.''',
+    numero: 210,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_211',
+    titre: 'LA VIE ORIGINELLE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Ses attributs Dieu manifeste
+A l’Epouse du dernier âge.
+Révélation nous avons
+Par le Message du prophète.
+Nous savons qui nous sommes et
+Ce à quoi nous tendons,
+Gloire à Dieu pour la Vie originelle.
+
+Choeur
+Vie et Semence originelles,
+Parole originelle, je crois,
+Le Fils de l’Homme est révélé,
+Le septième sceau est dévoilé,
+Vie et Semence originelles.
+
+Nous sommes, ce jour, Parole faite chair,
+Ce que disent les Ecritures,
+Et nous y voyons nos noms.
+Maintenant nous sommes rachetés,
+Nous sommes parfaits, sans péché.
+Nous sommes oints, inspirés,
+Par notre Dieu, Lui, Vie originelle.
+
+Nos yeux de la compréhension
+Il a finalement ouvert.
+Et douce victoire est à nous
+Qui, hier, étions enchaînés.
+Au son du vrai Jubilé
+Nous avons répondu
+A notre Dieu; Lui, Vie originelle.
+
+Nous sommes choisis pour l’adoption,
+Pleine autorité et puissance;
+Saints qui dorment nous rejoindrons
+Pour la translation de cette heure
+Jours des Gentils s’achèvent
+Oh! gloire, alléluia!
+A notre Dieu, Lui, Vie originelle.''',
+    numero: 211,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_212',
+    titre: 'PLUS, PLUS ENCORE SUR JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Je veux savoir plus sur Jésus,
+Montrer aux autres plus de Sa grâce;
+Voir la plénitude du salut,
+L’amour de Qui est mort pour moi.
+
+Choeur
+Plus encore sur Jésus,
+Plus encore sur Jésus,
+Voir la plénitude du salut,
+L’amour de qui est mort pour moi.
+
+Laisse-moi savoir plus sur Jésus,
+Discerner plus Sa volonté;
+Esprit de Dieu enseigne-moi,
+Montre-moi les affaires de Christ
+
+Plus sur Jésus dans Sa Parole,
+Communiant avec mon Seigneur,
+Ecoutant Sa voix dans chaque ligne,
+Et faire mienne chaque déclaration.
+
+Plus sur Jésus sur Son trône,
+Toutes richesses dans la gloire sont
+Siennes;
+Certes, Son Royaume va de l’avant;
+Plus sur Sa venue, Prince de Paix.''',
+    numero: 212,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_213',
+    titre: 'IL EST SEIGNEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''II est Seigneur, II est Seigneur.
+Et ressuscité des morts, II est Seigneur;
+Chaque genou fléchit, chaque langue
+confesse que
+Jésus-Christ est Seigneur.''',
+    numero: 213,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_214',
+    titre: 'COHERITIERS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Cohéritiers avec le Fils,
+Nous sommes héritiers du Père.
+Nous sommes peuple de Son Royaume,
+Nous sommes une famille, nous sommes un.
+
+Nous sommes lavés et sanctifiés,
+Nous sommes laves par Son sang,
+Et nous sommes nés, nés de l’Esprit.
+Nous sommes les enfants du Seigneur.
+
+Nous sommes l’objet de Son amour,
+Nous sommes membres de Son Corps.
+Nous partageons Sa sainteté,
+Nous sommes les citoyens du Ciel.
+
+Nous partageons Sa souffrance
+Et nous partageons Sa grâce.
+Nous Le verrons étant comme Lui,
+Et nous Le verrons face à face.
+
+Nous désirons tant Sa venue!
+Nous regardons vers les cieux;
+Nous surveillons, nous attendons,
+Nous allons vivre avec Lui.
+
+Nous allons régner avec Lui;
+Hommes, anges vont crier, chanter.
+Car, à toute la famille du Roi,
+La domination est donnée.''',
+    numero: 214,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_215',
+    titre: 'DOUX JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Doux Jésus, doux Jésus,
+Que Tu es merveilleux!
+Tu brilles plus que l’étoile du matin;
+Tu es si beau, plus beau
+Que le Lys qui pousse en bordure de route,
+Précieux, plus précieux que I’or;
+Juste comme la rose de Sharon,
+Tu demeures le plus beau,
+Tu es tout le désir de mon coeur
+Doux Jésus, doux Jésus,
+Que Tu es merveilleux!
+Tu es précieux, plus précieux que l’or.''',
+    numero: 215,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_216',
+    titre: 'VOICI LE JOUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Voici le jour, voici le jour
+Fait par le Seigneur,
+Fait par le Seigneur.
+Oh, oui! nous allons nous réjouir,
+Et nous serons tout heureux, tout heureux.
+Voici le jour fait par le Seigneur.
+Oh! oui! nous allons nous réjouir,
+Voici le jour, voici le jour
+Fait par le Seigneur.''',
+    numero: 216,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_217',
+    titre: 'CHERCHEZ DABORD LE ROYAUME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Cherchez d’abord le Royaume de Dieu
+Ainsi que Sa justice.
+Et toutes ces choses, vous seront données,
+Alléluia! Amen! Amen!
+
+L’homme ne vivra pas de pain seulement
+Mais de toute Parole
+Qui sort de la bouche de Dieu.
+Alléluia! Amen! Amen!
+
+Demandez, et il vous sera donné.
+Cherchez, vous trouverez.
+Frappez à la porte, on vous ouvrira.
+Alléluia! Amen! Amen!''',
+    numero: 217,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_218',
+    titre: 'J’AIME LA VIEILLE MANIERE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''J’aime la vieille manière de chanter,
+J’aime la vieille manière.
+J’aime la vieille manière de crier
+Prêcher, prier,
+J’aime la vieille manière.
+
+Je loue, je loue mon Sauveur partout où
+je vais;
+Partout où je vais, partout où je vais;
+Je loue je loue mon Sauveur partout où
+je vais.
+Car il y a joie dans mon âme.''',
+    numero: 218,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_219',
+    titre: 'JESUS, NOM AU-DESSUS DE TOUS NOMS.',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Jésus, Nom au-dessus de tous,
+Merveilleux Sauveur, glorieux Seigneur
+des seigneurs,
+Emmanuel, Dieu avec nous,
+Rédempteur béni, Parole vivante.''',
+    numero: 219,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_220',
+    titre: 'QUEL CHARMANT NOM',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Quel charmant nom est le Nom de Jésus!
+Il est plus haut que
+La radieuse étoile.
+Plus doux que les chants
+Que l’on chante au ciel.
+Que les saints proclament,
+Oh! quel charmant Nom!
+
+Il vient sur les nuées de gloire,
+Les Saints de chaque race
+Verront bien Sa face.
+Foule avec Lui la ville céleste
+Pour proclamer toujours:
+Quel charmant Nom!''',
+    numero: 220,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_221',
+    titre: 'LA TROMPETTE SONNERA',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''La trompette sonnera
+Les morts vivront
+Et le Seigneur attendra dans les cieux.
+Puis nous les vivants nous serons
+changés en un instant, en un clin
+d’oeil.
+
+Gloire! Gloire! Gloire! Gloire!
+Alléluia à Son Nom!
+Hier, aujourd’hui, éternellement,
+Notre Jésus est Le même!''',
+    numero: 221,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_222',
+    titre: 'J’AI QUELQUE CHOSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''J’ai ce que le monde ne peut offrir,
+Et le monde ne peut le ravir.
+J’ai ce que le monde ne peut offrir.
+Et Cette chose me garde chaque jour.
+
+Ce que j’ai, vaut la peine d’en parler.
+Cela me fait chanter et crier:
+J’ai ce que le monde ne peut offrir.
+Et le monde ne peut le ravir.''',
+    numero: 222,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_223',
+    titre: 'QUAND SUR LES VAGUES',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Quand l’orage t’agite sur les vagues de
+la vie,
+Quand, découragé, tout te semble
+perdu,
+Compte tes bénédictions, cite-les une à
+une,
+Tu seras surpris par ce que Dieu a fait.
+
+Choeur
+Compte, énumère tes bénédictions,
+Compte-les et vois ce que Dieu a fait,
+Compte, énumère tes bénédictions,
+Tu seras surpris par ce que Dieu a fait.
+
+Es-tu toujours chargé du poids des soucis?
+Ta croix semble-t-elle trop lourde à porter?
+Compte tes bénédictions, les doutes
+s’en iront
+Et ton coeur chantera tout au long des
+jours.
+
+Quand tu verras les autres avec or et
+terre,
+Pense aux richesses ineffables que
+Christ promit,
+Compte tes nombreuses bénédictions
+sans un prix:
+Ta récompense au ciel, ta maison d’en
+haut.
+
+Ainsi dans tous les conflits grands ou
+petits
+Ne sois pas découragé, Dieu règne sur
+tout,
+Compte tes nombreuses bénédictions
+et les anges
+T’apporteront aide et consolation.''',
+    numero: 223,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_224',
+    titre: 'SEIGNEUR, QUE N’AI-JE MILLE VOIX',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Seigneur, que n’ai-je mille voix
+Pour chanter Tes louanges,
+Pour chanter Tes louanges.
+Et faire monter jusqu’aux anges
+Les gloires de Ta croix!
+Les gloires de Ta croix!
+
+Jésus, mon Seigneur et mon Dieu,
+Que Ton souffle m’anime,
+Que Ton souffle m’anime
+Pour que par moi Ton Nom sublime
+Retentisse en tout lieu!
+Retentisse en tout lieu!
+
+Doux Nom qui fait tarir nos pleurs,
+Ineffable harmonie;
+Ineffable harmonie;
+Tu répands la joie et la vie
+Et la paix dans nos coeurs!
+Et la paix dans nos coeurs!
+
+Désormais, je n’ai plus d’effroi
+Aucun mal ne m’accable;
+Aucun mal ne m’accable;
+Ton sang rend pur le plus coupable;
+Ton sang coula pour moi!
+Ton sang coula pour moi!''',
+    numero: 224,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_225',
+    titre: 'REDITES-MOI L’HISTOIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Redites-moi l’histoire de l’amour de
+Jésus,
+Parlez moi de la gloire qu’Il promet aux
+élus.
+J’ai besoin qu’on m’instruise,
+Car je suis ignorant,
+Qu’à Christ on me conduise
+comme un petit enfant.
+
+Choeur
+Redites-moi l’histoire,
+Redites-moi l’histoire,
+Redites-moi l’histoire de l’amour
+de Jésus!
+
+Redites-moi l’histoire de la crèche à la
+croix,
+Eveillez ma mémoire, oublieuse parfois.
+Cette histoire si belle, dites-la
+simplement;
+Elle est toujours nouvelle; répétez-la
+souvent.
+
+Redites-moi l’histoire de mon divin Sauveur;
+C’est Lui dont la victoire affranchit le
+pécheur.
+Ce glorieux message, oh! redites-le moi,
+Lorsque je perds courage, lorsque faiblit
+ma foi.
+
+Redites-moi l’histoire, quand le monde
+trompeur
+Me vend sa vaine gloire au prix de mon
+bonheur,
+Et quand, loin de la terre, je prendrai
+mon essor,
+En fermant la paupière, que je L’entende
+encor.''',
+    numero: 225,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_226',
+    titre: 'LA LUTTE SUPREME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''La lutte suprême
+Nous appelle tous,
+Et Jésus Lui-même
+Marche devant nous.
+Que Sa vue enflamme
+Tous ses combattants,
+Et soutienne l’âme
+De plus hésitants.
+
+Choeur
+Du Christ la bannière
+Se déploie au vent,
+Pour la sainte guerre
+Soldats en avant.
+
+L’ennemi redoute
+Le nom seul du Roi;
+Il fait en déroute
+Au cri de la foi
+Acclamons ensemble
+Jésus d’un seul coeur
+Et que l’enfer tremble
+A ce Nom vainqueur.
+
+Nous suivons les traces
+Des saints d’autrefois;
+Par la même grâce,
+Sous les mêmes lois,
+Vivant de miracles
+L’Eglise de Dieu,
+De tous les obstacles
+Triomphe en lieu.
+
+Que les ans s’écoulent
+Que de toute part
+A grand bruit s’écroulent
+Trônes et remparts;
+Notre citadelle,
+Ferme contre tout,
+L’église fidèle
+Restera debout.
+
+Reçois Chef suprême
+Monarque Eternel
+D’un peuple qui T’aime
+Le voeu solennel
+Gloire, amour, hommage
+Au Ressuscité,
+Qu’il soit d’âge en âge,
+Partout exalté.''',
+    numero: 226,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_227',
+    titre: 'MON JESUS JE T’AIME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Mon Jésus je T’aime,
+Je Te sais à moi.
+Oh! quel charme extrême,
+Me retient à Toi!
+Les plaisirs du monde
+Ne m’atterrent plus,
+Ton amour m’inonde,
+Je T’aime, ô Jésus.
+
+Mon Jésus, je T’aime,
+Car Tu m’as sauvé.
+En T’offrant Toi-même,
+Ton Sang m’as lavé!
+Sur la croix bénie,
+Pour moi Tu mourus.
+Ta mort est ma vie,
+Je T’aime, ô Jésus.
+
+Qu’ici bas je T’aime
+Jusques dans la mort,
+A I’heure suprême
+Du dernier effort
+Ma voix expirante
+Ne s’entendra plus,
+Sachez que je chante:
+«Je T’aime, ô Jésus!»
+
+Je verrai Ta face,
+Quel ravissement!
+Je louerai Ta grâce
+Eternellement,
+Et dirai sans cesse
+Avec les élus
+L’hymne d’allégresse:
+«Je T’aime, ô Jésus!»''',
+    numero: 227,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_228',
+    titre: 'NOUS AVONS DECOUVERT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Nous avons découvert
+La joie de vivre et de chanter
+Nous avons trouve le bonheur.
+Le secret merveilleux
+Qui permet de tout espérer
+Nous avons rencontré le Seigneur.
+
+C’est pourquoi nous chantons
+Tout joyeux le long du chemin
+En espérant que vous aussi;
+Vous aurez découvert
+La joie de vivre et de chanter
+Vous aurez trouvé le bonheur
+Le secret merveilleux
+Qui permet de tout espérer
+Vous aurez rencontré le Seigneur.''',
+    numero: 228,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_229',
+    titre: 'JERICHO',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Tout le peuple d’Israël
+Dirigé par l’Eternel
+Vient de franchir le Jourdain
+Par un miracle divin;
+Mais un obstacle puissant,
+Juste au seuil du Canaan,
+Vient arrêter leur entrain
+C’est la pierre Jéricho.
+
+Choeur
+Jéricho! Jéricho!
+Proclamez joyeux échos!
+La louange fait crouler
+Tous les murs les plus épais.
+
+Tout le peuple est circoncis,
+Consacré, sans compromis,
+Et les milices du ciel
+Sont aux cotés d’Israël;
+Et Dieu dit à Josué:
+«Cette ville du pêché,
+Avec ses soldats, son roi
+Je vais la vaincre avec toi.»
+
+Tout le peuple obéissant,
+Au son du clairon puissant,
+Avec l’arche a fait le tour
+De ces murs durant sept jours;
+Et soudain Josué dit:
+«Cette ville, poussant des cris,
+L’Eternel nous a livré
+Cette arrogante cité.»
+
+Tout le peuple d’un seul coeur,
+Cria: «Gloire au Dieu vainqueur,
+Et dans un puissant fracas,
+La muraille s’écroula;
+Et c’est la divine loi,
+L’obéissance, c’est la foi.
+Les louanges d’un coeur pur
+Font crouler les plus hauts murs.''',
+    numero: 229,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_230',
+    titre: 'LE GRAND JOUR S’EST LEVE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Le grand jour s’est levé,
+Dieu nous a visités.
+Voici des temps nouveaux,
+Chantons gloire à l’Agneau.
+Nous recevons de Christ
+Ce qu’il avait promis:
+Le Saint-Esprit est là.
+
+Choeur
+Le Saint-Esprit est là!
+Le Saint-Esprit est là!
+La mort a disparu!
+Dieu donne un plein salut.
+Et sur le monde entier,
+Le grand jour s’est levé:
+Le Saint-Esprit est là!
+
+L’obscurité s’enfuit,
+La lumière a jailli,
+Chassée des coeurs troublés
+Toute incrédulité,
+Car Christ, le Roi des rois,
+Répand l’Esprit de foi:
+Le Saint-Esprit est là!
+
+Le Grand Consolateur
+Vient remplir tous les coeurs.
+L’Esprit de vérité
+Nous met en liberté;
+Il ouvre les prisons,
+Répand la guérison:
+Le Saint-Esprit est là.
+
+Que tous les rachetés
+Chantent leur liberté,
+Christ a tout accompli,
+Il a donné l’Esprit
+Voyez trembler l’enfer
+Car dans tout l’univers
+Le Saint-Esprit et là.''',
+    numero: 230,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_231',
+    titre: 'A L’OUEST LE SOLEIL SE COUCHE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''A l’Ouest le Soleil se couche,
+Il arrive à la fin de sa course.
+Et je vois bien que le temps est là,
+Oh! le temps du coucher du soleil!
+
+Choeur
+C’est la fin, c’est la fin,
+C’est la fin de la course.
+C’est la fin, c’est la fin,
+C’est la fin de toutes choses.
+
+Et voici que la Lumière du soir,
+A l’ouest pour moi a paru.
+Elle manifeste le Fils de l’Homme.
+Je le crois, c’est vrai, je le crois.
+
+Pèlerin, c’est la fin de la course,
+Il faut vaincre le monde et partir.
+Attention! Monsieur quelle heure est-il?
+Il faut vaincre le monde et partir.''',
+    numero: 231,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_232',
+    titre: 'AMOUR REDEMPTEUR',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Si riche, si profond, insondable
+Est l’Amour divin,
+L’Amour rédempteur.
+
+Chœur
+Pour moi, pour moi,
+Indigne, sauvé par grâce,
+Pour moi, pour moi.
+L’Amour rédempteur.
+
+Immuable, incomparable,
+inexprimable,
+Est l’Amour divin;
+L’Amour rédempteur.
+
+Comme c’est beau,
+comme c’est doux,
+De fredonner de l’Agneau divin,
+L’Amour rédempteur.''',
+    numero: 232,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_233',
+    titre: 'SOURIANT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Souriant, souriant,
+Le chrétien croit tout
+Et accepte tout.
+Souriant, souriant,
+Le chrétien prend tout
+Par le bon bout.''',
+    numero: 233,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_234',
+    titre: 'VILLE DE PERLES ET DE LUMIERE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Ville de pertes et de lumière
+Existant sur les hauteurs.
+Personne n’a encore sur terre
+Pu contempler ta splendeur.
+
+Choeur
+Là, l’Amour de Dieu éclaire,
+Ce sera l’Agneau Lui-même,
+Dans cette ville hospitalière
+La Nouvelle Jérusalem.
+
+C’est là où la gloire abonde,
+Où l’arbre de Vie fleurit,
+Où le fleuve de Vie inonde
+De ses flots ce saint abri.
+
+Quand les pèlerins arrivent,
+Epuisés de grands déserts
+Aux fontaines des eaux vives,
+Quel repos leur est offert!
+
+Oh! quelle joie bientôt sur terre!
+Quand Jésus sera présent!
+Cette ville aux mille lumières
+Y sera éternellement!''',
+    numero: 234,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_235',
+    titre: 'C’EST LA PROMESSE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''C’est la promesse de la dernière pluie!
+Lève les yeux et vois le blé mûr,
+Signes, puissants miracles au Nom
+de Jésus,
+Bois, oh! bois, mon peuple: C’est la
+dernière pluie.''',
+    numero: 235,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_236',
+    titre: 'OH! QUEL BEAU SOLEIL',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Dans mon âme, un beau soleil brille;
+Son rayon doux et joyeux.
+Répand un éclat qui scintille:
+C’est le sourire de Dieu.
+
+Choeur
+Oh! quel beau soleil dans mon âme!
+Il resplendit, illuminant tout!
+A ses rayons, mon coeur s’enflamme,
+Et je vais chantant partout.
+
+Mon coeur était plein de ténèbres,
+Quand parut un jour nouveau.
+Au loin, fuyez, ombres funèbres,
+Devant un soleil si beau.
+
+Ô mon âme, éclate en louange!
+Pour toi le soleil a lui;
+Je serai parmi les phalanges
+Qui loueront Dieu Jour et nuit!
+
+Nuages des plaintes, du doute
+Gaîment je vous dis adieu!
+Voici resplendir sur ma route
+Le soleil dans un ciel bleu!''',
+    numero: 236,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_237',
+    titre: 'LE DIEU PUISSANT C’EST JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Le Dieu Puissant, c’est Jésus;
+C’est le Prince de Paix,
+Le Père de l Eternité
+Et le Roi de beauté;
+Le Merveilleux en sagesse
+Par Qui toute chose est faite.
+La plénitude divine
+En Jésus incarnée.
+
+Choeur
+Tout est en Lui, tout est en Lui,
+La plénitude divine est toute en Lui
+Tout est en Lui, tout est en Lui;
+Jésus est Dieu Tout-Puissant
+Et tout est en Lui.
+
+Emmanuel : Dieu en nous,
+Jéhovah l’Eternel,
+L’Esprit tout omniprésent
+Qui remplit l’univers;
+Le grand Sacrificateur
+Et l’Agneau des pécheurs,
+L’Auteur de la rédemption,
+Que béni soit Son Nom!
+
+Le Commencement et la Fin,
+L’Alpha et IOmega,
+La vraie Parole incarnée.
+L’Ami des rachetés,
+La Sagesse et Perfection,
+Ma Justice et Puissance,
+Et tout ce dont j’ai besoin
+Je le trouve en Sa main.
+
+Le Dieu que nous attendions
+Sera la gaie chanson
+De l’Israël revenu;
+Quand paraîtra Jésus,
+Il viendra pour délivrer.
+Notre Agneau immolé,
+La plénitude est en Lui.
+Le Vainqueur d e la nuit''',
+    numero: 237,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_238',
+    titre: 'LE FEU DIVIN',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Le feu divin brûle en mon coeur,
+Le feu divin brûle en mon coeur,
+Le feu divin brûle en mon coeur,
+Le feu divin brûle en mon coeur.
+
+(J’aime Jésus de tout mon cœur…)
+(Mon coeur Le loue avec ferveur...)
+(Alléluia! Gloire à Son Nom...)
+(Jésus revient pour me chercher...)
+Oh, reçois-Le de tout ton coeur!...)
+(Je Le reçois avec bonheur...)''',
+    numero: 238,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_239',
+    titre: 'A LA CROIX, AUX PIEDS DU MAITRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''A la croix, aux pieds du Maître
+A genoux, j’ai fait mon choix,
+Son disciple je veux être,
+Tout près de Lui, par la foi.
+Brebis de Sa bergerie,
+Nul ne m’ôte de Sa main,
+Sur les monts, dans les prairies,
+Oui, mon bonheur est divin.
+
+Choeur
+A la croix, aux pieds du Maître
+A genoux, j’ai fait mon choix,
+Son disciple, je veux être,
+Tout près de Lui, par la foi.
+
+Depuis lors, ô choix splendide,
+La joie demeure dans mon coeur,
+Adieu, mes soucis perfides
+Par Jésus, je suis vainqueur.
+Adieu, vaines convoitises
+Du monde qui me tenta,
+J’ai trouvé la paix promise
+Dans le Sang de Golgotha.
+
+Bientôt, ma tâche accomplie,
+J’entrerai tout droit au port
+Où m’attend, douce patrie,
+Le grand Vainqueur de la mort.
+Là, je chanterai Ta gloire
+O Toi qui m’as tant aimé
+Et dont l’oeuvre expiatoire
+Pour toujours m’a racheté.''',
+    numero: 239,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_240',
+    titre: 'ETRE COMME JESUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Etre comme Jésus,
+Etre comme Jésus,
+Tout au long du voyage de ma vie;
+De la terre à la gloire,
+Je demande seulement à être comme Lui.
+
+(Vivre comme Jésus)
+(Marcher comme Jésus)
+(Aimer comme Jésus)
+(Croire comme Jésus)
+(Prier comme Jésus)''',
+    numero: 240,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_241',
+    titre: 'CE MONDE N’EST PAS CHEZ MOI.',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Ce monde n’est pas chez moi,
+Je suis juste un passant
+Et mes trésors s’entassent
+Quelque part là au ciel,
+Les anges me font signe
+Depuis la porte du ciel,
+Et je ne me sens jamais
+Comme chez-moi dans ce monde.
+
+Choeur
+Seigneur Tu sais,
+N’y a point d’amis comme Toi.
+Si le ciel n’est pas chez-moi
+Alors que ferais-je?
+Les anges me font signe
+Depuis la porte du ciel.
+Et je ne me sens jamais
+Comme chez-moi dans ce monde.
+
+Tous sont à mon attente,
+C’est tout ce que je sais,
+Y a longtemps avec Christ
+J’ai bien tout arrangé,
+Bien que faible et pauvre,
+Je sais qu’Il me soutient.
+Et je ne me sens jamais
+Comme chez-moi dans ce monde.
+
+Dans le pays de gloire,
+Nous vivrons à jamais;
+De tous côtés les saints
+Crient “Victoire”, dans des chants
+De la plus douce louange
+Qui montent depuis le ciel
+Et je ne me sens jamais
+Comme chez-moi dans ce monde.''',
+    numero: 241,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_242',
+    titre: 'OH ! JE LAIME',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Oh! je L’aime, Oui je L’aime
+Parce qu’il m’a aimé
+Et a donné Sa vie pour moi
+A Golgotha.''',
+    numero: 242,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_243',
+    titre: 'LE CONSOLATEUR EST LÀ',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Oh! répands la nouvelle
+Partout où l’homme se trouve,
+Et partout où abondent
+Les coeurs et peines humains;
+Que tout chrétien proclame:
+Joyeux son de sa langue:
+Le Consolateur est là
+
+Choeur
+Le consolateur est là,
+Le consolateur est là,
+Le Saint Esprit du ciel
+Que le Père a promis;
+Oh! répands la nouvelle
+Partout où l’homme se trouve,
+Le Consolateur est là.
+
+La nuit longue est passée,
+Enfin point le matin,
+Finis les cris d’angoisse
+Et la fureur du vent.
+Comme sur des collines d’or,
+Si vite approche le jour,
+Le Consolateur est là.
+
+Vois le grand Roi des rois,
+Guérison sous Ses ailes,
+Pleine délivrance apporte
+A toute âme captive;
+Chant de victoire résonne
+De la prison vacante,
+Le Consolateur est là
+
+Oh! grand Amour divin!
+Comment ma langue peut-elle
+Dire aux mortels sceptiques
+L’infinie grâce divine?
+Que moi fils de l’enfer,
+Je brille de Son image,
+Le Consolateur est là.''',
+    numero: 243,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_244',
+    titre: 'SUR LE CONGO',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Sur le Congo solitaire, je vais chantant;
+Voix du ciel, voix de la terre
+Rendent mon coeur content
+Car tout parle de Ta grâce,
+Divin Rédempteur!
+Qui vins T’unir à ma race
+Pour me sauver, moi pécheur
+
+Choeur:
+Oh! la merveilleuse histoire!
+Christ est mort pour moi!
+Jésus est le Roi de gloire
+Et je suis frère du Roi.
+
+Fini, l’horrible esclavage! Le Dieu d’amour
+Transforme l’homme sauvage,
+Change la nuit en jour!
+Plus de fétiches, d’idoles,
+Plus de mauvais sort
+Pour qui croit cette Parole:
+Jésus a vaincu la mort!
+
+Choeur:
+Oh! la glorieuse histoire!
+Christ est mort pour moi!
+Jésus est le Roi de gloire
+Et je suis frère du Roi.
+
+Là-bas, Loualaba chante: Il est venu!
+Congo, que ta voix puissante
+Proclame : «Il a vaincu!»
+Toi, large, Oubangui, murmure
+«Il revient bientôt!»
+Et que toute la nature
+Redise comme un écho:
+
+Choeur:
+La miraculeuse histoire!
+Du christ mort pour moi.
+Jésus est le Roi de gloire
+Et je suis frère du Roi.''',
+    numero: 244,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_245',
+    titre: 'MON SAUVEUR ME CONDUIT',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Mon Sauveur me conduit partout;
+Quoi désirer d’avantage?
+Douterais-je de Sa grâce
+Qui me guide dans la vie?
+Paix du ciel, réconfort divin
+Par la foi constante en Lui;
+Car je sais, quoi qu’il m’arrive
+Jésus le transforme en bien;
+Car je sais, quoi qu’il m’arrive
+Jésus le transforme en bien.
+
+Mon Sauveur me conduit partout,
+Me console dans les tourments;
+Me donne grâce dans les épreuves;
+Me nourrit du Pain de vie
+Même si parfois mes trébuchent
+Et mon âme est assoiffée;
+Du Rocher qui va devant moi
+Jaillit une fontaine de joie;
+Du Rocher qui va devant moi
+Jaillit une fontaine de joie.
+
+Mon Sauveur me conduit partout;
+Plénitude de Son amour!
+Un repos complet m’est promis,
+A la maison de mon père;
+Revêtu d’immortalité
+Mon esprit s’envolera;
+Et mon chant de l’Eternité:
+Jésus ma conduit partout.
+Et mon chant de l’Eternité:
+Jésus ma conduit partout.''',
+    numero: 245,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_246',
+    titre: 'JE SUIS DU NOMBRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Je suis du nombre, Je suis du nombre,
+De ceux qui sont vêtus de blanc;
+Je suis du nombre, Je suis du nombre,
+De ceux qui sont vêtus de blanc.
+
+Du nombre des gens, lavés par le Sang,
+Je suis du nombre de ceux là;
+Du nombre des gens, lavés par le Sang,
+Je suis du nombre de ceux là.
+
+Jean vit ces gens-là, lavés par le Sang,
+Jean les vit tous vêtus de blanc;
+Jean vit ces gens-là, lavés par le Sang,
+Jean les vit tous vêtus de blanc.''',
+    numero: 246,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_247',
+    titre: 'MA RICHESSE, MA GLOIRE',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Ma richesse, ma gloire
+Et ma félicité,
+O Jésus! c’est de croire
+Que Tu m’as acheté,
+Rempli de confiance
+En Toi, divin Sauveur,
+Je vis dans l’espérance
+Et Je marche sans peur.
+
+Rien n’ôte les souillures,
+Rien ne guérit le cœur,
+Sinon les meurtrissures
+Et le sang du sauveur.
+Oui, Jésus seul nous lave
+De tout iniquité,
+Et procure à l’esclave
+L’heureuse liberté.
+
+Oh! que toute la terre
+Apporte à ce Sauveur
+Ses pêchés, sa misère,
+Il fait grâce au pêcheur,
+Son amour insondable
+Il fit quitter le ciel,
+Pou donner au coupable
+Un salut éternel.''',
+    numero: 247,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'hosanna_248',
+    titre: 'ACCLAMEZ TOUS LE ROI JÉSUS',
+    collectionId: 'hosanna',
+    collection: 'Hosanna',
+    contenu: '''Acclamez tous le Roi, Jésus Emmanuel!
+Le Seigneur, Roi des rois,
+Etoile du matin.
+A travers I’éternité, Je vais Le louer
+Et pour toujours, Je vais régner avec Lui.''',
+    numero: 248,
+    auteur: 'Auteur inconnu',
+  ),
+
   Cantique(
     id: 'nyimbo_za_wokovu_001',
     titre: 'E’ YESU MSHINDAJI WA GOLGOTHA',
@@ -8411,6 +17238,9050 @@ Je posséderai dans l'au-delà Une vie de joie et paix.Quand tout semble perdu,\
     contenu:
         '''1. J’étais errant plus loin de Dieu,\nMaintenant je reviens,\nLe péché longtemps,\nj’ai suivi, Seigneur, je reviens\n\nChœur\nJe reviens, je reviens\nPour ne plus errer,\nOuvre Tes larges bras d’amour\nSeigneur, je reviens.\n\n2. Oui j’ai perdu beaucoup d’années\nMaintenant je reviens\nJe me repens avec des larmes\nSeigneur, je reviens.\n\n3. Fatigué du péché, Seigneur\nMaintenant je reviens\nJe me confie en ton amour\nSeigneur, je reviens.\n\n4. Mon âme malade\nMon cœur touché,\nMaintenant je reviens\nRedonne la force,\nRestaure l’espoir\nSeigneur je reviens.\n\n5. Mon seul espoir, ma seule prière,\nMaintenant je reviens\nEst que Jésus mourut pour moi\nSeigneur, je reviens\n\n6. Je sais, j’ai besoin\nDe ton sang\nMaintenant je reviens\nOh! Lave-moi\nPlus blanc que la neige,\nSeigneur je reviens.''',
     numero: 86,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_087',
+    titre: 'QUEL MERVEILLEUX AMOUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Dieu dut aimer\nUn pécheur comme moi !\nIl a changé ma tristesse en joie\nJ’étais sans repos, Il m’a ramené.\nQuel est ce merveilleux Amour.\n\nChœur\nOh! Quel merveilleux amour!\nOh! Quel merveilleux amour!\nQue Dieu aima\nUn pécheur tel que moi\nQuel est ce merveilleux amour.\n\n2. Et Christ S’est donné\nLibrement pour moi\nCela coûta\nSa mort sur le Calvaire\nLa langue humaine\nN’a pas de noble thème\nComme cet amour\nQui me sauva.\n\n3. Pour un perdu\nCondamné comme moi !\nLe Père pourvut\nEt le Sauveur mourut\nC’est le rachat\nPour un esclave indigne\nQui longtemps méprisa la grâce.\n\n4. Et maintenant Il m’a pris comme un fils\nMe dit que je ne suis pas serviteur\nLes cloches sonnent non loin du pays\nSes bras sont largement ouverts.''',
+    numero: 87,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_088',
+    titre: 'MERVEILLEUX, MERVEILLEUX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Mon cœur chante aujourd’hui\nDe joie, de l’allégresse\nJésus sauve, satisfait\nBannit ma tristesse\nPlus de condamnation\nJ’ai lu paix en moi\nJésus est merveilleux\nPuissant pour sauver.\n\nChœur\nMerveilleux, merveilleux\nJésus est pour moi\nConseiller, Dieu Puissant\nPrince de la paix\nIl me sauve\nII me garde du péché honteux\nMerveilleux est mon Rédempteur\nGloire à Lui !\n\n2. Moi esclave,\nLibéré de la condamnation,\nJésus donne liberté,\nAussi un plein salut\nTous les péchés passés\nMe sont pardonnés\nMon nom est écrit\nDans le Livre du Ciel.\n\n3. Avec mon Seigneur\nVivant dans la sainte union,\nJour après jour\nJe vis dans la douce communion\nOh Sa grâce a gravé\nUn changement en moi\nQuand mon âme reçu plein\nEt libre salut.''',
+    numero: 88,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_089',
+    titre: 'NOUS NOUS RASSEMBLERONS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Pourrons-nous à la rivière\nSortant du trône de Dieu\nNous rassembler sur la rive\nOù les anges ont marché.\n\nChœur\nOui, nous allons nous rassembler\nA la merveilleuse rivière\nAvec tous les saints à la rivière\nQui coule du Trône de Dieu.\n\n2. Au sein de cette rivière\nLe Roi Sauveur est à nous\nNous serons là, plus de peine\nSous la gloire du Trône.\n\n3. Aux bords de cette rivière\nNous nous baignons de son eau\nNous marcherons en adorant\nCe sera un jour doré.\n\n4. Arrivés à la rivière\nDéposons tous nos fardeaux\nLa grâce nous délivrera\nNous donnera une couronne.\n\n5. Tout près de cette rivière\nReflétant la face de Dieu\nLes saints qui sont immortels\nChanteront leurs chants de grâce.\n\n6. Bientôt à cette rivière\nLe voyage est fini\nEt tous nos cœurs se réjouiront\nDe la mélodie de paix''',
+    numero: 89,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_090',
+    titre: 'AMEN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Chœur\nAmen, Amen,\nAmen, Amen Amen!\n\n1. Allez-vous bien L’aimer ?\nAmen,\nAllez-vous L’adorer?\nAmen Allez-vous le louer?\nAmen, Amen, Amen ! Alléluia!\n\n2. Est-ce que vous L’aimez ? Amen\nAllez-vous Le servir ? Amen\nEt croyez-vous en Lui ?\nAmen, Amen, Amen! Alléluia!\n\n3. Oui, la Bible est vraie !\nAmen\nEt moi je crois en elle !\nAmen\nC’est Parole de Dieu !\nAmen, Amen, Amen!\nAlléluia!\n\n4. Nous croyons que Tu viens\nAmen\nNous Te rencontrerons\nAmen Viens Seigneur Jésus\nAmen! Amen, Amen !\nAlléluia!''',
+    numero: 90,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_091',
+    titre: 'PLUS DE VIEILLESSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. J’ai entendu parler\nD’un pays si lointain\nC’est une belle maison pour l’âme\nEdifiée par Jésus\nLà nous ne mourrons point\nLà-bas nous ne vieillirons jamais.\n\nChœur\nPlus de vieillesse.\nPlus de vieillesse\nLà-bas nous ne vieillirons jamais\n(x2)\n\n2. Dans la belle cité,\nNous n’allons plus errer,\nNous serons bientôt\nDans la douceur,\nNous louerons le Roi\nDans les âges éternels\nDans ce pays\nNous ne mourrons point.\n\n3. Notre tâche accomplie\nNous serons couronnés\nEt nos troubles\nEt nos épreuves passés\nEt nos peines finies\nNos voix seront mêlées\nA celles de nos frères qui sont partis.''',
+    numero: 91,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_092',
+    titre: 'NE M’OUBLIE PAS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ne m’oublie pas, ô doux Sauveur,\nEcoute ma voix\nQuand Tu répondras aux autres\nNe m’oublie pas.\n\nChœur\nSauveur, Sauveur\nEcoute ma voix\nQuand les autres Tu appelles,\nNe m’oublie pas.\n\n2. Laisse-moi près\nDe Ton Trône de grâce\nTrouver du repos\nA genoux dans la contrition\nOte tous mes doutes.\n\n3. Comptant seulement\nSur Tes mérites\nJe cherche Ta face\nGuéris mon esprit affligé\nSauve-moi par Ta grâce\n\n4. Toi fontaine de mon réconfort,\nPlus que vie pour moi\nQui d’autre sur terre\nOu là au ciel\nAi je à part Toi ?''',
+    numero: 92,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_093',
+    titre: 'NOUS TRAVAILLERONS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Terre de repos, je te désire\nQuand viendra-t-il le temps\nOu je déposerai mes armes\nPour vivre en paix chez moi ?\n\nChœur\nNous travaillerons\nJusqu’à ce que Jésus vienne\nNous travaillerons,\nNous irons à la Maison.\n\n2. En Jésus Christ je me repose,\nIl m’a tranquillisé,\nEt je m’appuie sur sa poitrine\nIl me conduit au Ciel.\n\n3. J’ai cherché la face\nDu Sauveur\nJe ne vais plus errer\nAvec Lui je défie la mort\nJ’arriverai au Ciel.''',
+    numero: 93,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_094',
+    titre: 'CROIS SEULEMENT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Crois seulement,\nCrois seulement\nTout est possible\nCrois seulement (bis)\nJésus est là (...)\nSeigneur je crois (…)''',
+    numero: 94,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_095',
+    titre: 'QUAND L’APPEL, RETENTIRA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Quand la Trompette du Seigneur\nSonnera et le temps n’est plus,\nEt viendra l’éternel matin radieux\nQuand les sauvés de la terre\nS’assembleront sur l’autre rive,\nQuand l’appel retentira, je serai là.\n\nChœur\nQuand l’appel retentira là-haut\nQuand l’appel retentira là-haut\nQuand l’appel retentira,\nQuand l’appel retentira, je serai là.\n\n2. En ce beau matin\nQuand les morts en Christ\nRessusciteront,\nPartageant la gloire\nDe sa résurrection,\nQuand ses élus\nSe rassembleront\nDans leur maison du ciel,\nQuand l’appel retentira, je serai là.\n\n3. Ainsi travaillons pour notre Maître\nDu matin au soir,\nParlons de Son merveilleux\nAmour et soins,\nAlors quand la vie s’en va,\nEt notre tâche est accomplie\nQuand l’appel retentira, je serai là.''',
+    numero: 95,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_096',
+    titre: 'JESUS LA LUMIERE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Saints de lumière proclamez\nJésus la lumière du monde,\nMiséricorde en son Nom,\nJésus la lumière du monde.\n\nChœur\nOui, nous marcherons\nDans la lumière\nLà où la miséricorde\nEst versée\nBrille autour de nous\nLe jour et la Nuit\nJésus la lumière du monde.\n\n2. Ecoute l’appel du Sauveur,\nJésus la lumière du monde,\nAmène l’Evangile à tous,\nJésus la lumière du monde.\n\n3. Pourquoi ne pas Le chercher,\nJésus la lumière du monde,\nMarche avec la Vérité,\nJésus la lumière du monde.\n\n4. Viens confesse-Le\nComme ton Roi\nJésus la lumière du monde,\nLes cloches du Ciel sonneront\nJésus la lumière du monde.''',
+    numero: 96,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_097',
+    titre: 'ESPRIT DU DIEU VIVANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Esprit Saint du Dieu Vivant Viens,\nDemeure en moi\nBrise-moi !\nFaçonne-moi !\nTaille-moi !\nRemplis-moi !\nEsprit Saint du Dieu Vivant\nViens, demeure en moi.''',
+    numero: 97,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_098',
+    titre: 'EN AVANT, CHRETIENS SOLDATS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. En avant, chrétiens soldats,\nMarchant au combat\nPortant la croix de Jésus\nAllant de l’avant Christ le Royal Maître\nPremier au combat\nNous montre le chemin\nVoyez sa bannière.\n\nChœur\nEn avant, chrétiens soldats\nMarchant au combat\nPortant la croix de Jésus\nAllant de l’avant.\n\n2. Comme une puissante armée\nS’avance l’Epouse frères,\nNous sommes en marche\nSur les traces des saints\nNous ne sommes pas divisés\nNous sommes un seul corps\nNous sommes un dans la foi\nEt un dans l’amour.\n\n3. Les couronnes et trônes périssent\nEt les royaumes tombent\nMais l’Eglise de Jésus,\nConstante, demeure\nLes portes de l’enfer\nNe la vaincront point\nDe Christ nous avons la promesse\nQui ne peut faillir.\n\n4. Oui, au signe du triomphe\nSatan s’enfuira\nEt alors, chrétiens soldats\nA nous la victoire\nLes fondations de l’enfer\nS’effondront soudain\nCe sont nos louanges\nQui les ont fait s’écrouler.\n\n5. En avant, vous les peuples\nUnissez vos voix\nAux nôtres en ce grand jour\nChantant la victoire Gloire,\nPuissance et honneur\nA Christ noire Roi\nTous les hommes et les anges\nChanteront pour toujours.''',
+    numero: 98,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_099',
+    titre: 'PLUS PRES DE TOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Mon Dieu, plus près de Toi,\nPlus près de Toi\nC’est le mot de ma foi:\nPlus près de Toi\nDans le jour où l’épreuve\nDéborde comme un fleuve,\nGarde-moi près de Toi,\nPlus près de Toi.\n\n2. Plus près de Toi, Seigneur,\nPlus près de Toi\nTiens-moi dans ma douleur\nPlus près de Toi\nAlors que la souffrance\nFait son œuvre en silence,\nToujours plus près de Toi\nSeigneur, tiens-moi.\n\n3. Plus près de Toi toujours,\nPlus près de Toi\nDonne-moi ton secours.\nSoutiens ma foi\nQue Satan se déchaîne,\nTon amour me ramène\nToujours plus près de Toi,\nPlus près de Toi.\n\n4. Mon Dieu, plus près de Toi\nDans le désert\nJ’ai vu ton Ciel ouvert\nPlus près de Toi.\nPèlerin, bon courage\nTon chant brave l’orage\nMon Dieu plus près de Toi,\nPlus près de Toi.''',
+    numero: 99,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_100',
+    titre: 'VILLE DE PERLES ET DE LUMIERE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ville de perles et de lumière\nExistant sur les hauteurs,\nPersonne n’a encore sur terre\nPu contempler Sa splendeur.\n\nChœur\nLà, l’Amour de Dieu éclaire,\nCe sera l’Agneau lui-même\nDans cette ville hospitalière\nLa nouvelle Jérusalem.\n\n2. C’est là où la gloire abonde,\nOù l’arbre de Vie fleurit\nOù le fleuve de Vie inonde\nDe ses flots, ce saint abri.\n\n3. Quand les pèlerins arrivent\nEpuisés de grands déserts\nAux fontaines des eaux vives\nQuel repos leur est offert.\n\n4. Oh! Quelle joie bientôt sur terre,\nQuand Jésus sera présent\nCette ville aux mille lumières\nY sera éternellement.''',
+    numero: 100,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_101',
+    titre: 'C’EST LA PROMESSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''C’est la promesse\nDe la dernière pluie !\nLève les yeux et vois le blé mûr\nSignes puissants,\nMiracles au nom de Jésus\nBois, oh ! Bois, mon peuple\nC’est la dernière pluie.''',
+    numero: 101,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_102',
+    titre: 'OH! QUEL BEAU SOLEIL',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Dans mon âme, un beau soleil brille,\nSon rayon doux et joyeux\nRépand un éclat qui scintille\nC’est le sourire de Dieu.\n\nChœur\nOh! Quel beau soleil\nDans mon âme!\nIl resplendit, illuminant tout !\nA ses rayons, mon cœur\nS’‘enflamme,\nEt je vais chantant partout.\n\n2. Mon cœur était plein de ténèbres,\nQuand parut un jour nouveau\nAu loin, fuyez, ombres funèbres\nDevant un soleil si beau.\n\n3. O mon âme, éclate en louange\nPour tout le soleil a lui\nJe serai parmi les phalanges\nQui loueront Dieu jour et nuit.''',
+    numero: 102,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_103',
+    titre: 'LE DIEU PUISSANT C’EST JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Le Dieu Puissant c’est Jésus\nC’est le Prince de Paix,\nLe Père de l’Eternité\nEt le Roi de beauté\nLe merveilleux en Sagesse\nPar qui toute chose est faite\nLa plénitude divine\nEn Jésus incarnée.\n\nChœur\nTout et en Lui,\nTout est en Lui\nLa plénitude divine\nEst toute en Lui.\nTout est en Lui,\nTout est en Lui Jésus\nEst Dieu Tout-Puissant\nEt tout est Lui.\n\n2. Emmanuel: Dieu en nous,\nJéhovah, l’Eternel,\nL’Esprit tout omniprésent.\nQui remplit l’Univers\nLe Grand Sacrificateur\nEt l’Agneau des pécheurs.\nL’Auteur de la Rédemption.\nQue béni soit Son Nom.\n\n3. Le Commencement et la fin,\nL’Alpha et l’Oméga\nLa vraie Parole incarnée,\nL’Ami des rachetés,\nLa Sagesse et Perfection,\nMa Justice et Puissance.\nTout ce dont j’ai le besoin\nJe le trouve en Sa main.\n\n4. Le Dieu que nous attendions\nSera la gaie chanson\nDe l’Israël revenu\nQuand paraîtra Jésus\nIl viendra pour délivrer\nNotre Agneau immolé\nLa plénitude est en Lui,\nLe Vainqueur de la Nuit.''',
+    numero: 103,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_104',
+    titre: 'BENI SOIT LE NOM',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Béni soit le merveilleux nom\nDe Jésus (x3)\nJe ne connais d’autre nom.''',
+    numero: 104,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_105',
+    titre: 'LE FEU DIVIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Le feu divin brûle en mon cœur (x4)\nJ’aime Jésus de tout mon cœur (x4)\nMon cœur Le loue avec ferveur (x4)\nAlléluia ! Gloire à Son Nom (x4)\nJésus revient\nPour me chercher (x4)\nOh reçois-Le\nDe tout ton cœur (x4)''',
+    numero: 105,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_106',
+    titre: 'A LA CROIX AUX PIEDS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A la croix, aux pieds du Maître\nA genoux, j’ai fait mon choix\nSon disciple, je veux être\nTout près de Lui, par la foi\nBrebis de Sa bergerie\nNul ne m’ôte de Sa main\nSur les monts,\nDans les prairies\nOui, mon bonheur est divin.\n\nChœur\nA la croix, aux pieds du Maître\nA genou, je fais mon choix\nSon disciple je vais être\nTout près de Lui, par la foi.\n\n2. Depuis lors,\nÔ choix splendide\nLa joie demeure dans mon cœur\nAdieu, mes soucis perfides\nPar Jésus, je suis vainqueur\nAdieu, vaines convoitises\nDu monde qui me tenta\nJ’ai trouvé la paix promise\nDans le Sang de Golgotha.\n\n3. Bientôt, ma tâche accomplie\nJ’entrerai tout droit au port\nOù m’attend, douce patrie\nLe grand vainqueur\nDe la mort Là,\nJe chanterai Ta gloire\nO Toi qui m’a tant aimé\nEt dont l’œuvre expiatoire\nPour toujours m’a racheté.''',
+    numero: 106,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_107',
+    titre: 'ETRE COMME JÉSUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Etre comme Jésus (x2)\nTout au long du voyage de ma vie de la terre à la gloire\nJe demande seulement\nÀ être comme Lui\n(Vivre comme Jésus)''',
+    numero: 107,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_108',
+    titre: 'L’AMOUR DE DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. L’amour de Dieu de loin surpasse\nCe qu’en peut dire un cœur humain\nIl est plus grand que les espaces\nMême en l’abîme il nous atteint\nPour le péché de notre monde,\nDieu nous donna Jésus\nIl nous pardonne, ô paix profonde\nIl sauve les perdus.\n\nChœur\nL’amour de Dieu, si fort, si tendre;\nEst un amour sans fin\nTel est le chant que font entendre\nLes anges et les saints.\n\n2. Versez de l’encre dans les ondes,\nChangez le ciel en parchemin,\nTendez la plume à tout le monde\nEt que chacun soit écrivain:\nVous dire tout l’amour du Père\nFerait tarir les eaux\nEt remplirait la place entière\nSur ces divins rouleaux.\n\n3. Et que le monde un jour chancelle\nAvec ses trônes et ses rois:\nQuand trembleront\nTous les rebelles\nSoudain saisis\nD’un grand effroi\nDe Dieu l’amour\nQue rien ne laisse\nPour nous encore vivra:\nC’est le miracle\nDe la grâce Amen ! Alléluia !''',
+    numero: 108,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_109',
+    titre: 'JE VEUX CHANTER, LOUER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Je veux chanter, louer mon Dieu,\nDans tous les temps,\nDans tous les lieux !\nQue dans ma vie tout glorifie\nLe nom Puissant d’Emmanuel!\nAlléluia ! Alléluia\nAvec les anges dans le ciel,\nAlléluia ! Alléluia !\nCélébrons tous Emmanuel !\n\n2. Je veux chanter mon Rédempteur\nL’amour profond de mon Sauveur\nSa mort sanglante\nEt triomphante\nM’affranchit du joug du péché\nAlléluia ! Alléluia Gloire à Jésus,\nJe suis sauvé\nAlléluia ! Alléluia\nOui ! Sauvé pour l’éternité.\n\n3. Exaltons tous et célébrons\nLe nom de notre Dieu\nChantons dans l’allégresse\nSoyons sans cesse !\nVous tous qui souffrez,\nMalheureux,\nAlléluia ! Alléluia Non ;\nPlus de larmes dans vos yeux!\nAlléluia ! Alléluia !\nVenez, il veut vous rendre heureux.''',
+    numero: 109,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_110',
+    titre: 'A DIEU SOIT LA GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A Dieu soit la Gloire!\nPar son Grand Amour\nDans mon âme noire\nS’est levé le jour\nJésus, à ma place\nMourut sur la Croix\nIl m’offre sa Grâce\nEt je la reçois\n\nChœur\nGloire à Dieu ! Gloire à Dieu !\nTerre écoute Sa Voix!\nGloire à Dieu ! Gloire à Dieu !\nMonde réjouis-toi!\nOh ! Venez au Père,\nJésus est vainqueur:\nQue toute la terre\nChante en son honneur!\n\n2. De Jésus, la joie,\nRemplit notre cœur;\nQu’importe qu’on voie\nTout notre bonheur,\nSelon Sa promesse\nJésus changera\nDeuil en allégresse,\nQuand Il reviendra.''',
+    numero: 110,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_111',
+    titre: 'LE NOM DE JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Le nom de Jésus est si doux\nDe Dieu désarmant le courroux,\nIl nous appelle au rendez-vous,\nPrécieux nom de Jésus.\n\nChœur\nJésus ! Béni soit ton nom !\nJésus ! Oh merveilleux don !\nJésus ! Suprême rançon,\nSois adoré pour toujours.\n\n2. J’aime ce nom dans le chagrin,\nIl me soutient sur le chemin,\nSa musique est un son divin,\nPrécieux nom de Jésus.\n\n3. J’aime le nom de mon Sauveur,\nCar Lui Seul connaît\nTout mon cœur,\nLui seul me rend plus que vainqueur\nPrécieux nom de Jésus.\n\n4. Et si parfois j’ai succombé,\nSi dans le mal je suis tombé,\nSon nom puissant m’a relevé:\nPrécieux nom de Jésus.\n\n5. Et lorsqu’avec Lui je serai,\nEt lorsqu’enfin je Le verrai,\nAlors sans fin je redirai:\nPrécieux nom de Jésus.''',
+    numero: 111,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_112',
+    titre: 'ADORABLE MYSTERE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Adorable mystère,\nLe fils du Roi des rois,\nDescendit sur la terre,\nMourut sur une croix.\n\nChœur\nHonneur, honneur\n(Honneur, honneur et gloire)\nAu Sauveur au Seigneur\nHonneur, honneur,\n(Honneur, joie et victoire)\nHonneur; gloire au Sauveur!\n\n2. Adorable mystère,\nC’est pour moi qu’Il mourut!\nIl a pris ma misère,\nIl m’offre le salut\n\n3. Adorable mystère,\nVous tous qui connaissez\nSon pouvoir salutaire,\nAdorez, bénissez.''',
+    numero: 112,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_113',
+    titre: 'A CELUI QUI NOUS A LAVES!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A celui qui nous a lavés,\nQui nous a tant aimés,\nPar Son sang nous a rachetés,\nSoit gloire, gloire, gloire,\nLouange à jamais.\n\n2. Chantons le cantique nouveau\nA l’honneur de l’Agneau\nQui sortit vainqueur du tombeau\nOui, gloire, gloire, gloire\nLouange à jamais.\n\n3. Adorons le Triomphateur,\nJésus notre Sauveur,\nSur tous Ses ennemis\nVainqueur,\nOui, gloire, gloire, gloire,\nLouange à jamais !\n\n4. Du ciel bientôt Il reviendra,\nEt tout œil le verra,\nLe monde entier l’adorera\nOui gloire, gloire, gloire.\nLouange à jamais.''',
+    numero: 113,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_114',
+    titre: 'VERS TOI MONTE NOTRE HOMMAGE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Vers Toi monte notre hommage,\nFils de Dieu,\nPuissant Sauveur,\nQui demeures d’âge en âge\nLe refuge du pécheur.\n\nChœur\nLoué soit Ton amour,\nLoués soient à jamais\nTon nom, Jésus, Ta gloire\nEt Tes bienfaits;\nLoué soit Ton amour,\nLoués soient à jamais\nTon nom, Ta gloire et Tes bienfaits\n\n2. De Toi vient la délivrance:\nTu payas notre rançon\nC’est en Toi qu’est l’espérance,\nLa paix et la guérison.\n\n3. Oh ! Qu’heureux sous la bannière\nEst le peuple racheté\nQui marche, dans Ta lumière,\nVers la céleste cité.\n\n4. Par Ta divine Parole\nTu l’enseignes,\nTu l’instruis,\nEt par l’Esprit qui console,\nSûrement Tu le conduis.\n\n5. Bientôt glorieuse attente\nTu combleras tous nos vœux:\nSur la nue étincelante,\nTu viendras à nous des cieux.''',
+    numero: 114,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_115',
+    titre: 'N0US T’ADORONS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Nous t’adorons\nToi que notre cœur aime,\nO Rabboni !\nNous avons soif\nDe Ta sainteté même,\nMaître béni ! Verse en nos cœurs,\nÔ Christ, Ta charité\nEt mets sur nous Ta sublime beauté.\n\n2. Parfait Modèle\nIncomparable Maître,\nBénis-nous tous !\nComme Tu fus,\nNous voulons toujours être,\nHumbles et doux !\nVerse en nos cœurs,\nO Christ, Ta charité\nEt mets sur nous Ta sublime beauté.\n\n3. Oh ! Donne-nous\nTon amour insondable\nPour les perdus !\nCet amour vrai\nQui cherche le coupable,\nLoin de Jésus\nVerse en nos cœurs,\nO Christ, Ta charité\net mets sur nous\nTa sublime beauté.\n\n4. Qu’en nous voyant,\nOublieux de nous-mêmes,\nTous pour chacun,\nLe monde ému dise:\nOh combien ils s’aiment\nIls sont tous un !\nVerse en nos cœurs,\nÔ Christ, Ta charité,\nEt mets sur nous\nTa sublime beauté.\n\n5. Ouvre le ciel, réponds à la prière\nQue nous t’offrons !\nImprime enfin ton divin caractère\nSur tous nos fronts !\nRien ne surpasse,\nô Christ, ta charité,\nRien, ici-bas,\nN’égale ta beauté.''',
+    numero: 115,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_116a',
+    titre: 'CHANTONS DU SAUVEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Chantons du Sauveur\nLa tendresse:\nSur la croix\nIl est mort pour nous\nIl remplit nos cœurs d’allégresse,\nAu ciel Il nous invite tous.\n\nChœur\nJe veux, (oui, je veux)\nChanter (mon Sauveur),\nJe veux dire à tous mon bonheur,\n(Mon bonheur),\nChantons (le Sauveur),\nChantons (le Sauveur),\nChatons l’amour du Rédempteur.\n\n2. Chantons du Sauveur la puissance :\nC’est Lui qui brisa nos liens ;\nPerdus, sans Dieu, sans espérance,\nIl nous racheta, nous fit siens.\n\nChœur\nJe veux, (oui, je veux)\nChanter (mon Sauveur),\nJe veux dire à Toi mon bonheur,\n(mon bonheur),\nChantons (le Sauveur),\nChantons (le Sauveur),\nChantons l’amour du Rédempteur\n\n3. Chantons, remplis de confiance !\nChantons sans peur du lendemain,\nEn paix, gardés par sa puissance\nConduit chaque jour par sa main.\n\nChœur\nJe veux, (oui, je veux)\nChanter (mon Sauveur),\nJe veux dire à tous mon bonheur,\n(mon bonheur),\nChantons (le Sauveur),\nChantons (le Sauveur),\nChantons l’amour du Rédempteur.\n\n4. Chantons du Rédempteur\nLa gloire !\nCelui qui nous aime\nEst le Roi, le Roi couronné\nDe victoire ;\nA lui notre amour, notre foi !\n\nChœur\nJe veux, (oui, je veux)\nChanter (mon Sauveur),\nJe veux dire à tous mon bonheur,\n(Mon bonheur),\nChantons (le Sauveur),\nChantons (le Sauveur),\nChantons l’amour du Rédempteur.''',
+    numero: 116,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_116b',
+    titre: 'BENISSONS DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Bénissons Dieu par nos cantiques\nExaltons-Le d’un même cœur\nChantons Ses exploits magnifiques\nSon grand amour,\nSon bras vainqueur.\n\nChœur\nLouons, (Et chantons) chantons ;\n(Chantons)\nLouons le grand nom du Seigneur\n(Du Seigneur)\nLouons (et chantons)\nChantons (chantons) ;\nLouons notre Dieu Rédempteur !\n\n2. C’est Sa main qui nous fait naître\nNous sommes Son peuple à jamais\nLe troupeau que Lui Seul doit paître\nEt qu’Il comble de Ses bienfaits.\n\n3. Ensemble donnons gloire au Père\nQui des cieux nous a visité\nAu Sauveur qui, sur le Calvaire\nPar Son sang nous a racheté.\n\n4. Que les accents de notre joie\nFassent tressaillir le saint lieu !\nQu’en ce jour le monde nous voie\nNous égayer en notre Dieu.\n\n5. Reçois, ô Dieu !\nNotre humble hommage ;\nReste à jamais notre secours\nTon amour dur d’âge en âge ;\nTa bonté subsiste à toujours.''',
+    numero: 116,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_117',
+    titre: 'LES RAYONS DE L’AMOUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Les rayons de l’amour divin\nOnt brillé sur ma route\nDès lors l’ennemi cherche en vain\nA mettre en moi de doute\nDe toutes mes obscurités,\nIl ne reste plus trace\nJ’ai vu les célestes clartés\nLe Seigneur m’a fait grâce.\n\nChœur\nOui, Ton amour (x2)\nAmour divin, (x2)\nO mon Sauveur (x2)\nS’est révélé (x2)\nIl est pour moi (x2)\nTon racheté (x2)\nTon amour, Ton amour divin\n\n2. Alléluia ! Mon faible cœur\nPeut aujourd’hui comprendre\nQue l’amour de mon Rédempteur\nEn Lui veut se répandre\nIl a bien longtemps méconnu\nCette grâce suprême\nMais maintenant Il est vaincu\nEt Se donne Lui-même.\n\n3. Qui dira de l’amour divin\nLa grandeur insondable ?\nIl est le baume souverain\nLe Seul bienfait durable\nJésus, pour ce don précieux\nQue toujours je T’adore !\nQue mes accents jusques aux cieux\nRetentissent encore.''',
+    numero: 117,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_118',
+    titre: 'OH ! QUE TOUTE LA TERRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh ! Que toute la terre entonne\nUn hymne à Ton honneur\nQue l’univers entier résonne\nDe Ta gloire, ô Sauveur !\n\nChœur\nA Toi, louange, honneur et gloire\nA Ton nom, ô Jésus !\nTa crois remporte la victoire\nEt sauves les perdus.\n\n2. Ton nom, c’est l’amour et la vie\nLa grâce et le pardon\nEt l’âme écoute et se confie\nA Toi dans l’abandon.\n\n3. Ce nom divin c’est comme\nUn baume, Un parfum qui guérit\nUn doux zéphire de Ton royaume\nChargé de Ton Esprit.\n\n4. Ce nom fait trembler les abimes,\nFait fuir tous les démons\nIls lâchent leurs pauvres victimes\nIls ouvrent leurs prisons.\n\n5. O Christ, que tout genou fléchisse\nA Ton nom glorieux\nPour T’adorer, que tout s’unisse\nSur terre et dans les cieux.''',
+    numero: 118,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_119',
+    titre: 'MA RICHESSE, MA GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ma richesse, ma gloire\nEt ma félicité\nO Jésus ! C’est de croire\nQue Tu m’as racheté,\nRempli de confiance\nEn Toi, divin Sauveur\nJe vis dans l’espérance\nEt je marche sans peur.\n\n2. Rien n’ôte les souillures,\nRien ne guérit le cœur,\nSinon les meurtrissures\nEt le sang du Sauveur\nOui, Jésus Seul nous lave\nE toute iniquité\nEt procure à l’esclave\nL’heureuse liberté.\n\n3. Oh ! Que toute la terre\nApporte à ce Sauveur\nSes péchés, sa misère,\nIl fait grâce au pécheur\nSon amour insondable\nLui fit quitter le ciel\nPour pardonner au coupable\nUn salut éternel.''',
+    numero: 119,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_120a',
+    titre: 'PORTANT SA CROIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Portant Sa croix,\nIl monte le sinistre coteau ;\nDans l’opprobre et la honte ;\nMuet comme un agneau\nCe Sauveur débonnaire,\nPour le pécheur mortel ;\nVa trouver au Calvaire ;\nLa mort d’un criminel.\n\n2. Sur cette croix sanglante,\nSous le divin courroux\nRegarde âme tremblante,\nL’agneau souffrant pour nous\nIl porte sur Sa tête nos péchés odieux ;\nIl veut payer ta dette ;\nPour t’introduire aux cieux\n\n3. Oh ! Charité profonde !\nInsondable grandeur !\nLe Créateur du monde\nVeut être ton Sauveur\nAinsi, plus de détresse,\nJésus est ton secours !\nIl est ta forteresse !\nIl t’aime pour toujours !''',
+    numero: 120,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_120b',
+    titre: 'JÉSUS, DIVIN MODELE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus, divin modèle,\nDe douceur et de paix\nTa sainte voix m’appelle\nA marcher désormais\nDans ce sentier de grâce\nDe support, de bonté\nOù Tu laisse la trace\nDe Ton humilité.\n\n2. Tu passas sur la terre\nDans l’ineffable amour\nQue toute ta carrière\nA montré chaque jour\nEt tu dis : Je vous aime,\nNul n’aime comme Moi ;\nEnfants, faites de même\nCar l’amour est ma loi.\n\n3. Que mon esprit se range\nÀ cette loi d’amour\nPour vivre à Ta louange\nD’un cœur droit, sans détour\nComme Toi, charitable,\npatient Humble et doux,\nsaint, pur, Irréprochable,\nfaisant du bien à tous.''',
+    numero: 120,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_121a',
+    titre: 'JESUS EST NOTRE AMI SUPREME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus est notre ami suprême\nOh quel amour !\nMieux qu’un tendre frère,\nIl nous aime\nOh ! Quel amour !\nIci famille, amis, tout passe,\nSeul Il demeure, et, dans Sa grâce\nDe nous jamais Il ne Se lasse\nOh ! Quel amour\n\n2. Il est notre vie éternelle ;\nOh ! Quel amour !\nCélébrons son œuvre immortelle ;\nOh quel amour !\nPar Son sang notre âme est lavée\nAu désert Il l’avait trouvée\nDans Son bercail Il l’a sauvée\nOh quel amour !\n\n3. Il s’est offert en sacrifice\nOh quel amour !\nNous bénir est tout Son délice,\nOh ! Quel amour\nQu’à Sa voix notre âme attentive\nToujours en paix, jamais craintive\nPrès de Son cœur\nSaintement vive en Son amour !\n\n4. Seigneur Jésus !\nFais-nous comprendre\nTout Ton amour !\nDans nos cœurs,\nOh : Daigne répandre\nTout Ton amour !\nQue cet amour\nSoit notre vie !\nQu’à jamais notre âme ravie\nSavoure une joie infinie\nEn Ton amour !''',
+    numero: 121,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_121b',
+    titre: 'L’AMOUR ETERNEL, INSONDABLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. L’amour éternel, insondable\nDe Jésus-Christ,\nLe sang versé pour moi\nCoupable par Jésus-Christ,\nMe rachète de ma misère\nM’arrache à la mort,\nA la terre en moi\nS’accomplit le mystère\nDe Jésus-Christ.\n\n2. Qu’en mon âme,\nJe sente l’âme\nDe Jésus-Christ ;\nQue dans mon cœur\nBrûle la flamme de Jésus-Christ\nLe péché m’attaque à toute heure\nMais, pour qu’à tout péché je meure,\nFais qu’en Toi toujours\nJe demeure ô Jésus-Christ.\n\n3. O mon âme ! Redis sans cesse\nRien que Jésus\nPrends pour force dans la faiblesse :\nRien que Jésus\nSois en paix, sous la croix adore !\nAttend la céleste aurore\nOù les saints répètent encore :\nRien que Jésus.''',
+    numero: 121,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_122',
+    titre: 'AU PIED DE TA CROIX PROSTERNE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Au pied de Ta croix prosterné,\nD’un amour sans partage,\nSauveur qui pour moi t’es donné\nJe viens Te rendre hommage\nJe n’ai rien qui ne soit à Toi !\nA Ton gré dispose de moi,\nCar je suis Ton ouvrage\n\n2. Avant que je visse le jour,\nMon âme Te fut chère\nTu me prévins par Ton amour\nEn m’appelant Ton frère\nAvant que Ta main m’eût formé\nTu t’engageas, ô bien-aimé :\nA porter ma misère.\n\n3. Jette un tendre regard sur moi\nEt m’accorde une grâce ;\nC’est qu’inséparable de Toi,\nA jamais je t’embrasse\nChoisis donc mon cœur\nDès ce jour\nPour Ta demeure et Ton séjour\nAh viens y prendre place.''',
+    numero: 122,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_123',
+    titre: 'O CHRIST! QUELLE IMMENSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh Christ ! Quelle immense douleur\nQuelle angoisse T’accable\nQuel poids de honte et de malheur\nSur ta tête adorable\nToutes mes fautes sont sur Toi\nTu les portes pour moi !\n\n2. O Christ ! Que n’as-tu pas souffert\nPour expier mon crime !\nPour mon âme Tu T’es offert,\nInnocente victime !\nEt les coups dont Tu fus meurtri\nA jamais m’ont guéri.\n\n3. C’est pour toi, frère, qu’Il mourut\nSur cette croix maudite\nC’est Ton âme qu’Il secourut\nEt c’est toi qu’Il invite\nIl t’offre avec Lui dans le ciel\nUn bonheur éternel.''',
+    numero: 123,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_124',
+    titre: 'DEVANT MON AME CONFONDU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Devant mon âme confondue\nS’étend un océan d’amour !\nEt d’En Haut la paix descendue\nInonde mon cœur en ce jour.\n\nChœur\nSur la croix,\nChrist a porté toute mon iniquité\nA Lui je m’abandonne enfin\nPour être à ce Sauveur divin.\n\n2. Je cherchais, luttais avec larmes\nJe voulais vaincre, mais en vain\nQuand lassé, je rendis les armes,\nLa paix brilla sur mon chemin.\n\n3. Sur moi posant Sa main bénie\nIl me lava complètement\nEt mon âme trouva la vie\nSa justice est mon vêtement.\n\n4. Le Prince de paix passe encore\nEn cet instant, pour me bénir\nEt dans mon âme à Lui l’aurore\nD’un beau jour, qui ne peut finir.''',
+    numero: 124,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_125',
+    titre: 'JESUS-CHRIST EST MA SAGESSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus-Christ est ma sagesse,\nIl éclaire mon chemin,\nEt je marche, en ma faiblesse,\nConduit par Sa sûre main.\n\nChœur\nIl éclaire mon chemin,\nIl éclaire mon chemin,\nEt je marche en ma faiblesse,\nConduit par sa sûre main.\n\n2. Jésus-Christ est ma justice;\nSon sang a coulé pour moi;\nJe trouve en son sacrifice\nPaix et pardon par la foi,\n\nChœur\nSon sang a coulé pour moi;\nSon sang a coulé pour moi;\nJe trouve en son sacrifice\nPaix et pardon par la foi.\n\n3. Jésus-Christ me sanctifie\nAu divin Cep attaché\nJe reçois de lui la vie\nQui m’affranchit du péché.\n\nChœur\nA Toi Jésus, attaché,\nA toi Jésus attaché\nJe reçois de Toi la vie\nQui m’affranchit du péché.\n\n4. Jésus en payant ma dette,\nA grand prix m’a racheté,\nEt déjà ma place est prête\nVers Lui pour l’éternité.\n\nChœur\nJésus Tu m’as racheté\nJésus, Tu m’as racheté !\nEt déjà ma place est prête\nVers Toi, pour l’éternité.''',
+    numero: 125,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_126',
+    titre: 'A TOI LA GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A Toi la gloire,\nO Ressuscité\nA toi la victoire\nPour l’éternité\nBrillant de lumière,\nL’ange est descendu,\nIl roule la pierre\nDu tombeau vaincu.\n\nChœur\nA Toi la gloire,\nO Ressuscité !\nA toi la victoire\nPour l’éternité!\n\n2. Vois-le paraître:\nC’est Lui, c’est Jésus,\nTon Sauveur, Ton Maître\nOh ! Ne doute plus\nSois dans l’allégresse,\nPeuple du Seigneur,\nEt redis sans cesse\nQue Christ est vainqueur.\n\n3. Craindrai-je encore ?\nIl vit à jamais,\nCelui que j’adore\nLe Prince de paix:\nIl est ma victoire,\nMon puissant soutient,\nMa vie et ma gloire:\nNon, je ne crains rien''',
+    numero: 126,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_127',
+    titre: 'RIEN O JÉSUS ! QUE TA GRACE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Rien, ô Jésus que Ta grâce,\nRien que Ton sang précieux\nQui Seul mes pêchés efface,\nNe me rend saint, juste, heureux,\nNe me rend saint, juste, heureux,\n\n2. Ne me dites autre chose,\nSinon qu’Il est mon Sauveur,\nL’auteur, la source et la cause\nDe mon éternel bonheur.''',
+    numero: 127,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_128',
+    titre: 'ENTENDS-TU JÉSUS T’APPELLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Entends-tu ? Jésus t’appelle;\nViens, ô pécheur !\nIl t’attend...\nA cette voix si fidèle\nTu résistas trop souvent.\n\nChœur\nLaisse entrer le Roi de gloire,\nOuvre ton cœur à Jésus !\nLaisse entrer le Roi de gloire,\nHâte-toi ne tarde plus.\n\n2. Pour le péché, pour le monde\nTu trouves place en ton cœur...\nPoint pour le Sauveur du monde\nRien pour l’Homme de douleur.\n\n3. Jésus frappe,\nIl frappe encore:\nOuvre à ton Libérateur,\nEt pour toi luira l’aurore\nDu véritable bonheur.\n\n4. Aujourd’hui, c’est jour de grâce;\nNe compte pas sur demain\nPendant que ton Sauveur passe,\nSaisis sa puissante main.''',
+    numero: 128,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_129',
+    titre: 'O VOUS QUI N’AVEZ PAS LA PAIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. O vous qui n’avez pas la paix,\nVenez, Jésus la donne\nPure, profonde et pour jamais\nVenez, Jésus pardonne.\n\nChœur\nQuand Toi seul remplit un cœur\nIl déborde de bonheur\nEt l’effroi ne l’atteint plus,\nJésus, Jésus, Jésus !\n\n2. Vous qui tombez à chaque pas,\nVenez, Jésus délivre;\nCelui qui se jette en Ses bras\nPeut à toujours Le suivre.\n\nChœur\nQuand Jésus remplit un cœur\nIl déborde de bonheur,\nCar Il ne chancelle plus,\nJésus, Jésus, Jésus !\n\n3. Vous qui doutez\nDu lendemain\nVenez, Jésus rassure\nPas à pas: la main dans sa main,\nLa route devient sûre.\n\nChœur\nQuand toi seul remplit un cœur\nIl déborde de bonheur,\nLa crainte ne l’atteint plus,\nJésus, Jésus, Jésus !\n\n4. Vous tous qui souffrez isolés\nVenez, Jésus vous aime\nPour le troupeau des désolés\nIl s’est offert Lui-même.\n\nChœur\nQuand tu viens remplir un cœur\nIl déborde de bonheur,\nSeul, oh non !\nIl ne l’est plus\nJésus, Jésus, Jésus !\n\n5. Vous qui tremblez sous la terreur\nQue la mort vous inspire\nVenez votre libérateur\nA détruit Son empire.\n\nChœur\nAvec toi nous revivrons\nAvec toi nous régnerons\nEt la mort ne sera plus\nJésus, Jésus, Jésus !''',
+    numero: 129,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_130',
+    titre: 'LE MAITRE EST LA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Le Maître est là qui t’appelle\nLève-toi donc, ô pécheur!\nRéponds à sa voix fidèle\nC’est ton Dieu\nC’est ton Sauveur.\n\nChœur\nViens à Lui, viens à Lui,\nViens à Jésus aujourd’hui !\n\n2. Ah ! Pourquoi le faire attendre?\nDepuis trop longtemps déjà\nTu refuses de l’entendre;\nNe tarde plus; il est là.\n\n3. Il est là, t’offrant Sa grâce,\nSon pardon, Sa sainteté,\nSa paix qui jamais ne passe,\nSon ciel, Sa félicité.\n\n4. Sa main vers Toi\nS’est tendue,\nSon cœur s’ouvre avec amour;\nHâte-toi, brebis perdue,\nViens sans délai, sans détour.\n\n5. Le Maître est là qui t’appelle,\nMais bientôt Il passera,\nRéponds à Sa voix fidèle,\nAvant qu’Il ne soit plus là.''',
+    numero: 130,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_131a',
+    titre: 'VENEZ CONTEMPLER AU CALVAIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Venez contempler\nAu Calvaire Le Christ\nSouffrant et méprisé:\nVoyez le Bien-aimé du Père,\nLe corps meurtri, te cœur brisé.\n\nChœur\nIl meurt pour nous\nII meurt sur la croix!\nO mon âme adore et crois !\nExalte ô peuple du Seigneur,\nTon Roi, ton Dieu,\nTon Rédempteur !\n\n2. Voyez-Le, couronné d’épines;\nIl est navré pour nos forfaits.\nO grâce, ô charité divines,\nQui pourra vous sonder jamais !\n\n3. Ecoutez Sa voix qui supplie:\n“Père, dit-Il, pardonne-leur !“\nAh ! C’est pour nous aussi qu’Il prie,\nC’est pour moi qui suis un pécheur.\n\n4. Ecoutez ce cri, cette plainte\nQui sort de Son cœur oppressé:\nMon Dieu, mon Dieu !\nDit la voix sainte,\nMon Dieu pourquoi m’as-Tu laissé ?\n\n5. Ecoutez encor sa Parole:\nMaintenant tout est accompli\nEt quand Son âme à Dieu s’envole:\nReçois, ô Père, mon esprit !\n\n6. L’église à tes pieds abattue\nTe rend hommage,\nO Christ Sauveur;\nTout l’univers en Toi salue\nL’unique et parfait Rédempteur.\nQue mon âme te soit unie\nPar une ardente et sainte foi,\nEt dans la mort et dans la vie,\nSois tout, Jésus,\nSois tout pour moi.''',
+    numero: 131,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_131b',
+    titre: 'EN CONTEMPLANT LA CROIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. En contemplant la croix bénie\nOù mourut le Prince de paix\nTout mon orgueil, mes biens, ma vie\nSont abandonnés à jamais.\n\nChœur\nOh ! Sur la croix Son sang fut versé,\nII fut là crucifie’!\nMaintenant Il vit dans mon cœur,\nOù tout est paix,\nParfait bonheur.\n\n2. Que toujours je me glorifie\nDans Ta mort seule, ô mon Sauveur;\nTout autre but je sacrifie\nPour suivre l’homme de douleur.\n\n3. Oh ! Regardez tous Sa couronne,\nSes mains,\nSes pieds pour nous percés,\nD’où coule un fleuve\nQui nous donne pardon,\nPaix, joie et sainteté.\n\n4. Si je possédais tout le monde\nCe serait un don trop petit;\nAmour divin, Grâce profonde\nTout est à Toi dès aujourd’hui.''',
+    numero: 131,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_132',
+    titre: 'J’AI LONGTEMPS ERRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. J’ai longtemps erré sans guide,\nAltéré de vrai bonheur\nMais, hélas ! Mon cœur avide\nNe trouvait que la douleur\nOù sera la main puissante\nQui pourra, par son effort,\nM’arrêter sur cette pente\nOù déjà je vois la mort ?\n\n2. Un Sauveur, Jésus Lui-même,\nEut pitié de mon effroi\nIl me dit: “Pécheur, Je t’aime,\nJ’ai versé Mon sang pour toi\nO Jésus, Ta main puissante\nM’a sauvé de mon tombeau\nEt Tu combles mon attente\nPar le don d’un cœur nouveau\n\n3. J’ai saisi cette assurance,\nCe pardon qu’Il m’apportait\nJ’ai livré sans résistance\nTout mon cœur: Il le voulait\nO Jésus, Ta main puissante\nM’a sauvé de mon tombeau,\nEt lu combles mon attente\nPar le don d’un cœur nouveau.\n\n4. Dans mon cœur impur infirme\nJe reçus le Saint-Esprit\nEt ce sceau divin m’affirme\nQue je suis à Jésus-Christ\nO Jésus Ta main puissante\nM’a sauvé de mon tombeau,\nEt Tu combles mon attente\nPar le don\nD’un cœur nouveau.\n\n5. Maintenant, de joie en joie\nMon Sauveur\nMe fait marcher,\nCar la paix que Christ m’envoie\nNul ne peut me l’arracher\nA ce Jésus qui me donne\nEt Sa paix et Son amour\nA Jésus je m’abandonne\nDésormais et sans retour.''',
+    numero: 132,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_133',
+    titre: 'OH! QUEL BONHEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh ! Quel bonheur de Le connaître,\nL’Ami qui ne saurait changer\nDe l’avoir ici-bas pour Maître\nPour défenseur et pour berger.\n\nChœur\nChantons, chantons\nD’un cœur joyeux\nLe grand amour du Rédempteur\n(Du Rédempteur)\nQui vint à nous du haut des cieux,\nEt nous sauva\nDu destructeur !\n(Du destructeur)\n\n2. Dans la misère et l’ignorance\nNous nous débattions sans espoir,\nLa mort au cœur,\nL’âme en souffrance\nQuand à nos yeux Il Se fit voir\n\n3. Il nous apporta la lumière,\nLa victoire et la liberté;\nL ‘ennemi mordit la poussière\nPour toujours, Satan fut dompté.\n\n4. Vers l’avenir marchons sans crainte\nEt sans souci du lendemain,\nPas à pas, nos pieds dans l’empreinte\nDe ses pieds sur notre chemin.''',
+    numero: 133,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_134',
+    titre: 'CŒURS FATIGUES!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Cœurs fatigués et lassés du péché,\nAssez souffert !\nAssez cherché ! Je puis donner\nla paix et le repos,\nMe charger de vos fardeaux.\n\nChœur\nVenez à lui ! Venez à Lui !\nVenez à Jésus,\nVenez à Jésus aujourd’hui !\n\n2. Vous tous pécheurs\nCondamnés par la loi,\nVenez à moi ! Venez à moi!\nVous recevrez en vos cœurs\nDès ce jour\nLe pardon du Dieu d’amour.\n\n3. Vous qui souffrez, par le mal asservis,\nSoyez par Moi Tous affranchis,\nOh ! Venez tous, travaillés et chargés,\nEt vous serez soulagés.''',
+    numero: 134,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_135',
+    titre: 'REVIENS!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Reviens ! Reviens !\nTu dissipas Tes biens\nSur la terre étrangère,\nLoin des yeux de ton père:\n\nChœur\nO pauvre enfants !\nPerdit, Reviens !\nO viens ! Viens ! Viens !\nViens ! Ô reviens (Reviens !)\n\n2. Reviens ! Reviens !\nLoin de tous les faux biens,\nVois briller la lumière\nDans ta sombre misère.\n\n3. Reviens ! Reviens !\nDu péché fuis les biens;\nQue ton âme souffrante\nSoit aussi repentante.\n\n4. Reviens ! Reviens !\nCar pour toi sont des biens\nQu’aucun bien ne dépasse,\nLe salut et la grâce.''',
+    numero: 135,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_136',
+    titre: 'VOUDRAIS-TU GOUTER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Voudrais-tu goûter le parfait bonheur?\nO toi que le monde enlace,\nViens, réponds à la voix du Rédempteur,\nReçois humblement sa grâce!\n\nChœur\nA la grâce. Par la croix,\nViens, mon frère, viens et crois!\nLe sang de Jésus efface\nTous tes péchés à la fois !\n\n2. Laisse la folie et la vanité\nC’est une ivresse qui passe;\nMais bois à longs traits la félicité\nA la source de sa grâce.\n\n3. Puis vole au secours\nDe ces malheureux\nQu’une horrible mort menace;\nDis-leur que Jésus a souffert pour eux\nEt qu’Il offre à tous Sa grâce !''',
+    numero: 136,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_137',
+    titre: 'DEMAIN PEUT-ETRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Demain, peut-être,\nJe Te croirai\nEt pour mon Maître,\nJe Te prendrai”\nAinsi quand Dieu l’invite,\nL’âme répond: “Attends! “\nPécheur entre de suite,\nViens, il est temps\n\n2. Demain, peut-être,\nPlus de pardon\nQuoi? Méconnaître\nUn si beau don!\nDieu t’offre, dans Sa grâce,\nLe bonheur des élus;\nAvant que l’heure passe\nViens à Jésus !\n\n3. Demain, peut-être,\nDu châtiment\nTu vas connaître l’affreux tourment\nJésus t’appelle, Il t’aime;\nIl est le seul chemin !\nViens, c’est l’instant suprême!\nPourquoi demain?''',
+    numero: 137,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_138',
+    titre: 'SI VOUS SAVIEZ',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Si vous saviez\nQuel Sauveur je possède !\nIl est l’ami le plus tendre de tous;\nPour moi devant le Père\nIl intercède: Oh je voudrais\nQU’IL fût aussi pour vous !\n\nChœur\nMon Sauveur vous aime;\nAh ! Cherchez en lui\nVotre ami suprême,\nVotre seul appui !\n\n2. Si vous saviez la paix douce\nEt profonde\nQue le Sauveur\nEn mon âme apporta!\nPour cette paix,\nQue peut donner le monde ?\nElle jaillit pour vous de Golgotha.\n\n3. Si vous saviez quelle douce espérance\nLe Dieu de paix\nFait rayonner de cieux !\nCombien Sa voix sait\nCalmer la souffrance\nEt Son regard rendre\nle cœur joyeux.\n\n4. Quand vous saurez combien\nJésus vous aime\nQuand vous saurez combien\nSon joug est doux\nNe gardez pas ce trésor\nPour vous-même,\nMais avec mois dites autour de vous.''',
+    numero: 138,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_139',
+    titre: 'IL VA FINIR LE JOUR DE LA GRACE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Il va finir, le beau jour de la grâce;\nNe tardez plus, accourez au Sauveur ;\nAujourd’hui même,\nAvant que le temps passe\nSans hésiter,\nDonnez-Lui votre cœur.\n\n2. Pour vous sauver,\nIl s’est donné Lui-même,\nMourant pour vous\nSur un infâme bois:\nCroyez, pécheurs,\nÀ cette œuvre suprême;\nConfiez-vous à Jésus mis en croix.\n\n3. Pour vous, perdus,\nSans Dieu, sans espérance,\nIl a souffert la mort d’un criminel;\nMais Son trépas est votre délivrance;\nIl vous acquiert le bonheur éternel.\n\n4. Hâtez vous donc quand\nSa voix vous appelle;\nVenez à Lui;\nAh! Ne renvoyez- pas\nIl offre à tous, pardon, vie éternelle\nPaix et bonheur déjà dès ici-bas.''',
+    numero: 139,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_140',
+    titre: 'IL EST UN ROC SECULAIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Il est un roc séculaire,\nQue Dieu, pour mon cœur lassé,\nComme un abri tutélaire\nAu sein des flots placés.\n\nChœur\nMon rocher, ma forteresse,\nMon asile protecteur,\nMon recours dans la détresse,\nC’est Jésus, le Rédempteur !\n\n2. A mes pieds l’océan gronde\nLe vent siffle autour de moi:\nSur Christ mon rocher,\nJe fonde mon espérance et ma foi.\n\n3. En vain l’ouragan fait rage\nEt nulle clarté ne luit ;\nPaisible au sien de l’orage,\nJ’attends l’aube après la nuit.\n\n4. Jouet de l’onde agitée,\nCet abri l’as trouvé?\nViens, pauvre âme tourmentée,\nAu rocher qui m’a sauvé.''',
+    numero: 140,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_141',
+    titre: 'NOUS VOGUONS VERS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Nous voguons vers un beau rivage\nQue Jésus nous prépara;\nNous ne craignons aucun naufrage,\nSa grâce nous conduira.\n\nChœur\nViens avec nous, la voile est prête;\nFrère, viens; que rien ne t’arrête\nPlus l’ouragan, de tempête,\nAu séjour du Dieu d’amour,\nPlus d’ouragan, de tempête\nAu séjour du Dieu d’amour.\n\n2. Pour notre céleste patrie\nVoici l’heure du départ;\nA venir Jésus te convie;\nDemain il serait trop tard.\n\n3. Sur cette rive hospitalière\nDieu réunit ses enfants;\nAprès les luttes de la terre,\nNous irons grossir leurs rangs.\n\n4. Devant nous, de la cité sainte\nBientôt va s’ouvrir le port;\nDe nos cœurs bannissant la crainte,\nChantons dans un saint transport.''',
+    numero: 141,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_142',
+    titre: 'VENEZ AU SAUVEUR!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Venez au Sauveur qui vous aime,\nVenez, Il a brisé vos fers;\nIl veut recevoir Lui-même\nSes bras vous sont ouverts.\n\nChœur\nOh ! Quel beau jour,\nSauveur fidèle,\nQuand, nous appuyant\nSur Ton bras\nDans la demeure paternelle\nNous porterons nos pas.\n\n2. Venez, pécheurs, Il vous appelle,\nLe bonheur est dans Son amour\nAh ! Donnez-Lui ce cœur rebelle,\nDonnez-Le sans retour.\n\n3. Le temps s’enfuit, l’heure s’écoule,\nQui sait si nous virons demain ?\nJésus est ici dans la foule ;\nAh ! Saisissez Sa main !''',
+    numero: 142,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_143',
+    titre: 'LOIN DU SAUVEUR, POURQUOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Loin du Sauveur, pourquoi, mon frère\nResterais-tu, dans le péché ?\nAs-tu trouvé sur cette terre\nLe bonheur si longtemps cherché ?\n\nChœur\nAh ! Sans tarder reviens, mon frère\nAu Sauveur qui t’a racheté ;\nIl a pitié de ta misère,\nIl t’aime pour l’éternité.\n\n2. Assez longtemps,\nDans l’esclavage\nSans succès tu t’es débattu\nVaincu toujours, perdant courage\nContre Satan que pouvais-tu ?\n\n3. Jamais le Seigneur ne repousse\nL’infortuné qui vient à Lui.\nN’entends-tu pas Sa voix si douce,\nQui te dit : Viens, aujourd’hui !''',
+    numero: 143,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_144',
+    titre: 'TOUS MES PECHES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Tous mes péchés,\nTous mes péchés\nSon sang les a lavés!\nTous mes péchés,\nTous mes péchés\nSon sang les a lavés.\n\n2. Tous mes soucis,\nTous mes soucis,\nMon Sauveur les a pris!\nTous mes soucis\nTous mes soucis,\nMon Sauveur les a pris.\n\n3. C’est à la croix,\nC’est à la croix\nQu’il en ôta le poids;\nC’est à la croix\nC’est à la croix qu’Il en ôta le poids.\n\n4. L’éternité! L’éternité!\nOù vas-tu la passer ?\nL’éternité! L’éternité\nOù vas-tu la passer ?\n\n5. Jésus t’attend, Jésus t’attend,\nOh viens en ce moment\nJésus t’attend, Jésus t’attend\nOh ! Viens en ce moment !''',
+    numero: 144,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_145',
+    titre: 'VOUS TOUS DONT L’AME EST ENVAHIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Vous tous dont l’âme est envahie\nPar le dégoût de la vie\nToujours triomphés, toujours\nDéçu, venez, venez, venez à Jésus\n\n2. Voyageurs lassés de la route\nEt tourmentés par le doute,\nVous qui déjà ne luttez plus,\nVenez, venez à Jésus !\n\n3. Vous qui pleurez sans espérance\nVous qui souffrez en silence\nLevez les yeux,\nNe pleurez plus ;\nVenez, venez,\nVenez à Jésus !''',
+    numero: 145,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_146',
+    titre: 'MORTELS, VOULEZ-VOUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Mortels, voulez-vous savoir\nQuel est mon unique espoir,\nMa sagesse et ma science,\nMon trésor, ma récompense ?\nMon trésor, ma récompense ?\nC’est Jésus crucifié\nC’est Jésus, c’est Jésus,\nC’est Jésus crucifié.\n\n2. Quelle est l’ancre de ma foi ?\nDe mon cœur, quelle est la loi\nQuel est mon seul sacrifice,\nMa sainteté, ma justice ?\nMa sainteté, ma justice ?\nC’est Jésus crucifié\nC’est Jésus, c’est Jésus,\nC’est Jésus crucifié.\n\n3. De mon esprit languissant\nQui tait cesser le tourment ?\nDans la peine et la souffrance,\nQui soutient ma confiance ?\nQui soutient ma confiance ?\nC’est Jésus ressuscité,\nC’est Jésus, c’est Jésus,\nC’est Jésus ressuscité.\n\n4. Quel est celui dont la mort\nMe prépare un nouveau sort ?\nQuel est cet ami fidèle\nQui sans cesse à Lui m’appelle\nQui sans cesse\nA Lui m’appelle?\nC’est Jésus glorifié,\nC’est Jésus, c’est Jésus,\nC’est Jésus glorifié.''',
+    numero: 146,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_147',
+    titre: 'COMME UN DOUX MURMURE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Comme un doux murmure,\nLa voix de Jésus appelle\nEt conjure tous les perdus.\n\nChœur\nDonne-moi ton cœur:\nJe mourus pour toi\nViens ! Viens !\nÀ Ton Sauveur: Viens !\nViens à Moi !\n\n2. Par Sa voix si tendre,\nLaisse-toi gagner;\nTa peine Il veut prendre\nEt S’en charger\n\n3. Il est ton Refuge,\nPourquoi t’affliger ?\nIl n’est plus ton juge,\nMais Ton Berger.\n\n4. Ton fardeau dépose,\nJ’en porte le poids:\nSans crainte, repose\nPrès de Ma Croix.''',
+    numero: 147,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_148',
+    titre: 'PECHEURS! VOUS VENEZ',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Pécheurs! Vous venez d’entendre,\nCe beau message de paix;\nOuvrez vos cœurs\nPour comprendre\nCe que le Sauveur a fait.\n\nChœur\nVenez à Lui, (venez)\nVenez à Lui, (venez)\nPourquoi donc tant hésiter?\n(Venez) Approchez-vous\nTous aujourd’hui\n(Venez) Oh venez sans\nPlus tarder!\n\n2. Pour nous tous Il souffrit la croix,\nLa honte et l’ignominie ;\nSerait-ce en vain que sur ce bois\nIl endura l’agonie ?\n\n3. Oh ! Que nul ne désespère\nAucun péché n’est si grand,\nNulle peine si amère,\nQu’il n’efface par Son sang.\n\n4. Dieu pardonne encore aujourd’hui\nAu plus coupable pécheur\nQui vient à Jésus\nTrouve en Lui Pardon, paix,\nbonheur.''',
+    numero: 148,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_149',
+    titre: 'UNE BONNE NOUVELLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Une bonne nouvelle\nDescend des cieux:\nPécheur, Jésus, t’appelle,\nLève les yeux\nChargé de ta misère,\nDe tes péchés confus,\nViens à Jésus, mon frère,\nViens à Jésus!\n\n2. Le fils de Dieu Lui-même\nTe racheta;\nVois Son amour suprême\nEn Golgotha! Au sang qui purifie\nLes cœurs souillés, perdus,\nQue ton cœur se confie;\nViens à Jésus!\n\n3. Celui que Jésus lave\nDe son péché,\nAu dur joug de l’esclave est arraché\nDans son âme affranchie\nLe mal ne règne plus,\nL’Esprit le sanctifie\nViens à Jésus!\n\n4. Viens, que rien ne t’arrête,\nViens à l’instant;\nTa délivrance est pré- te:\nJésus t’attend\nSi tu crois- ô victoire!\nTes péchés ne sont plus,\nEt tu peux chanter:\nGloire ! Gloire à Jésus.''',
+    numero: 149,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_150',
+    titre: 'DIS TOUT A JESUS !',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Es-tu lassé,\nRempli de tristesse ?\nDis tout à Jésus!\nDis tout à Jésus!\nSon cœur est ouvert\nA ta voix sans cesse\nOh! Dis tout à Jésus.\n\nChœur\nDis tout à Jésus!\nOh! Dis-Lui tout !\nCombien Son accueil est doux\nIl peut comprendre\nIl aime à t’entendre:\nDis-Lui simplement tout !\n\n2. Il voit tes yeux rougis par les larmes:\nDis tout à Jésus!\nDis tout à Jésus!\nII connaît ton cœur,''',
+    numero: 150,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_151',
+    titre: 'TOI SEUL',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Pour Toi seul en qui j’espère,\nPour Toi seul, d’un cœur joyeux,\nJe fais monter de la terre\nMon cantique vers les cieux\nPour Toi seul,\nPour Toi seul, oui, mon Sauveur,\nPour Toi seul.\n\n2. A Toi seul, sainte victime,\nAgneau mis à mort pour moi,\nDont le sang lava mon crime,\nA Toi seul s’attend ma foi\nA Toi seul, à Toi seul,\nOui, mon Sauveur,\nA Toi seul,\n\n3. A Toi seul,\nA Toi seul dans la détresse.\nA Toi seul, j’aurai recours,\nA Toi seul, ma forteresse,\nLe Rocher de mon secours\nA Toi seul oui mon Sauveur,\nA Toi seul.''',
+    numero: 151,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_152',
+    titre: 'PUBLIEZ BIEN HAUT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Publiez bien haut la grande nouvelle:\nLe ciel est ouvert à tout être humain\nLa route est tracée,\nUn guide fidèle\nVous conduira par la main.\n\nChœur\nLe salut pour tous,\nLe salut par grâce,\nA tous est offert, à tous est donné\nOh ! Venez, pécheurs,\nVenez, le temps passe:\nEt vous serez pardonnés\n\n2. Publiez bien haut la grande nouvelle:\nLe sang de Jésus a tout effacé\nOù que vous soyez,\nC’est vous qu’il appelle,\nVous qui l’avez offensé.\n\n3. Publiez bien haut la grande nouvelle:\nAu loin comme au près faites-la courir,\nPartout où se trouve une âme rebelle\nUn pécheur à secourir.''',
+    numero: 152,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_153',
+    titre: 'JÉSUS FRAPPE A VOTRE PORTE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus frappe à votre porte:\nOuvrez- lui !\n(Ouvrez aujourd’hui x2)\nC’est le ciel qu’il vous apporte!\nOuvrez-lui !\n(Ouvrez aujourd’hui x2)\nChez vous Il veut prendre place;\nOuvrez avant qu’Il se lasse\nLe temps presse, le temps passe:\nOuvrez-Lui!\n(Ouvrez aujourd’hui x2)\n\n2. Ouvrez ! C’est Lui qui pardonne\nOuvrez-Lui!\n(Ouvrez aujourd’hui x2)\nAcceptez ce qu’Il vous donne;\nOuvrez-Lui!\n(Ouvrez aujourd’hui x2)\nSes promesses sont certaines\nSa main va briser vos chaînes :\nBientôt finiront vos peines\nOuvre-Lui\n(Ouvre aujourd’hui! x2)\n\n3. Seul Il ôte les souillures: Ouvrez-Lui!\n(Ouvrez aujourd’hui! x2)\nSeul Il bande les blessures:\nOuvrez-lui!\n(Ouvrez aujourd’hui! x2)\nSi Satan vient vous surprendre,\nSeul Il pourra vous défendre\nEt sous son aile vous prendre:\nOuvrez-Lui!\n(Ouvrez aujourd’hui! x2)\n\n4. Ecoutez l’appel si tendre\nOuvrez-Lui\n(Ouvrez aujourd’hui! x2)\nC’est assez le faire attendre:\nOuvrez-lui!\n(Ouvrez aujourd’hui! x2)\nCar le Sauveur vous implore:\nComment résister encore\nOh ! Que votre âme l’adore !\nOuvrez-Lui !\n(Ouvrez aujourd’hui! x2)''',
+    numero: 153,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_154',
+    titre: 'O MON DIEU, DANS MA SOUFFRANCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. O mon Dieu, dans ma souffrance,\nMa misère et mon péché,\nTu me parles d’espérance\nEn Jésus Qui m’a cherché\nOui, je crois que\nTu pardonne à celui\nQui vient à Toi,\nJe reçois ce que Tu donnes\nEt l’accepte par la foi.\n\n2. Je ne suis pas digne\nD’être Ton enfant, Ton racheté,\nCar j’ai fait d’un autre maître\nTrop longtemps la volonté\nMais j’ai vu sur le Calvaire\nResplendir Ton grand amour\nDans les bras,\nMon Dieu, mon Père\nJe me jette sans retour.\n\n3. Tu le vois, je suis encore\nIncapable:\nPour le bien\nDieu puissant ;\nDieu que j’adore,\nSois mon aide\nEt mon soutient\nLoin de Toi ce n’est pas vivre\nEt j’ai soif du vrai bonheur\nC’est Jésus que je veux suivre\nFais de moi Ton serviteur.''',
+    numero: 154,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_155',
+    titre: 'O JOUR HEUREUX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. O jour heureux, jour de bonheur,\nLumière, paix, joie ineffable\nAu Fils de Dieu, saint, adorable,\nA Jésus, j’ai donné mon cœur.\n\nChœur\nQuel beau jour !\nQuel beau jour !\nOu d’un Sauveur, j’ai su l’amour\nOui, dans ma nouvelle patrie\nJésus m’attend et pour moi prie,\nQuel beau jour! Que] beau jour!\nOù d’un Sauveur j’ai su l’amour !\n\n2. Oh ! Comprenez,\nMon heureux sort:\nC’est en Jésus que Dieu pardonne;\nLa vie éternelle Il la donne;\nPourquoi donc\nTe craindrai-je, ô mort?\n\n3. Au ciel des chants\nOnt retenti: Alléluia !\nDisent les anges,\nEntonnons de saintes louanges,\nCar un pécheur s’est converti.\n\n4. C’en est fait, tout est accompli\nLe Fils de Dieu m’appelle frère;\nSon sang coula\nSur le Calvaire: Il est à moi,\nJe suis à lui.''',
+    numero: 155,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_156',
+    titre: 'ROC SECULAIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Roc séculaire, Frappé pour\nSur le Calvaire, Je viens à toi.\nTu sais mes chutes, O mon Sauveur\nTu vois mes luttes et ma douleur.\n\nChœur\nRoc séculaire,\nFrappé pour moi\nSur le Calvaire,\nJe viens à Toi.\n\n2. Oh! Purifie, Lave, Seigneur,\nEt sanctifie mon pauvre cœur.\nMa main tremblante\nNe t’offre rien,\nTa croix sanglante\nEst mon seul bien.\n\n3. Dans la détresse\nSois mon berger,\nMa forteresse dans le danger\nEt qu’à toute heure,\nQue chaque jour mon cœur demeure\nEn ton amour.''',
+    numero: 156,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_157',
+    titre: 'SEIGNEUR, TA GRACE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Seigneur Ta grâce m’appelle.\nPar mon nom tu me connais,\nEt mon cœur longtemps rebelle,\nSe donne à Toi pour jamais.\nC’est pour toi que je veux vivre,\nCar toi seul est mon Berger,\nC’est toi seul que je veux suivre,\nNon plus un étranger.\n\n2. N’as-tu pas donné ta vie\nPour me sauver, bon Pasteur?\nGloire à ta grâce infinie\nGloire à toi, mon Rédempteur.\nAinsi, mon âme,\nCourage Jésus marche devant toi,\nEt, jusqu’au bout du voyage,\nSon amour veille sur toi.\n\n3. Ne crains pas\nQu’Il abandonne\nSa brebis pas dans le chemin\nEst fidèle, et personne\nNe l’ôtera de sa main.''',
+    numero: 157,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_158',
+    titre: 'JE SUIS SAUVE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Je suis sauvé ! Dieu m’a fait grâce.\nJésus pour moi s’est donné.\nEt sur la Croix, prenant ma place,\nPour toujours m’a pardonné.\nVoilà pourquoi je chant.\n\n2. Je suis sauvé !\nL’Agneau sans tâche,\nDe tout péché m’affranchit,\nA la mort son amour m’arrache.\nDans Son sang,\nIl me blanchit.\nVoilà pourquoi je chante.\n\n3. Je suis sauvé !\nJ’ai la victoire\nMon trésor est dans les cieux\nBientôt je serai dans la gloire\nJe le verrai de mes yeux.\nVoilà pourquoi je chante.\n\n4. Je suis sauvé,\nTout mon cœur chante,\nUn hymne saint au Seigneur,\nD’amour mon âme est palpitante,\nGloire A Jésus mon Sauveur\nVoilà pourquoi je chante!\n\n5. Es-tu sauvé ?\nJésus lui-même\nDans Son sang t’a-t-il lavé ?\nSa douce voix te dit:\n“Je T’aime, Oh! viens et crois,\nSois sauvé\nVoilà pourquoi je chante''',
+    numero: 158,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_159',
+    titre: 'MISERICORDE INSONDABLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Miséricorde insondable\nDieu peut-il tout pardonner?\nAbsoudre un si grand coupable.\nEt mes péchés oublier?\n\nChœur\nJésus, je viens ! (Jésus, je viens !)\nJe viens à Toi ! (Je viens à Toi ! )\nTel que je suis (tel que je suis !)\nJe viens à Toi ! (Je viens Toi!)\nJésus, je viens ! (Jésus je viens!)\nJe viens à Toi ! (Je viens à toi !)\nTel que je suis, prends-moi.\n\n2. Longtemps j’ai loin de Ta face,\nProvoqué son saint courroux\nFermé mon cœur à sa grâce,\nBlessé le sien devant tous.\n\n3. O Jésus ! À toi, je cède,\nJe veux être libéré;\nDe tout péché\nQui m’obsède\nÊtre à jamais délivré\n\n4. Alléluia ! Plus de doute,\nMon fardeau m’est enlevé ;\nPour le ciel je suis en route.\nHeureux pour l’éternité.''',
+    numero: 159,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_160a',
+    titre: 'SEIGNEUR! DU SEIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh Seigneur !\nDu sein de la poussière,\nMon âme crie\nÀ Toi Descends, ô Dieu !\nDans ma prière;\nQue je te sente en moi.\nJe ne veux plus l’ombre qui passe,\nL’image qui pâlit;\nMais la substance de Ta grâce,\nToi-même, ton Esprit.\n\n2. C’est assez et trop se répandre\nEn long et vague espoir:\nJe veux te parler\nEt t’entendre,\nTe loucher et te voir.\nJe veux brûler, mais de ta flamme\nLuire, niais de ton jour\nDe ton âme animer mon âme\nAimer de ton amour.\n\n3. Voilà le seul bien que j’envie\nQue j’implore, ô mon Roi\nNe plus vivre que de Ta vie.\nQue par toi, que pour toi.''',
+    numero: 160,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_160b',
+    titre: 'O SEIGNEUR, BENIS LA PAROLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Seigneur, bénis la Parole\nQue nous venons d’ouïr;\nQue nous allons ouïr;\nNe permets pas\nQu’elle s’envole de notre souvenir.\n\n2. Jaloux de la sainte influence,\nTrop souvent le malin\nAccourt et ravit la Semence\nQue répandit Ta main.\n\n3. Trop souvent elle est sans racine\nEn un terrain pierreux:\nLe soleil vient: elle décline\nSous l’ardeur de ses feux.\n\n4. Trop souvent les soucis\nDu monde\nOu ses biens sans valeur,\nDétruisant sa vertu féconde,\nL’étouffent dans le cœur.\n\n5. Ah ! Plutôt que Ton Evangile\nS’emparant de mon cœur,\nChaque grain en remporte mille,\nA ta gloire, ô Seigneur.''',
+    numero: 160,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_161',
+    titre: 'POUR TRIOMPHER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Pour triompher dans les combats.\nQuelle est notre force ici-bas?\nQuelle est la divine lumière\nQui nous dirige\nEt nous éclaire\nDans la sombre nuit de l’erreur\nC’est la parole du Seigneur.\n\n2. Quel est le glaive à deux tranchants\nDont les coups sont assez puissants\nPour briser larme la plus dure,\nEt, malgré la plus forte armure,\nPour pénétrer jusques au cœur ?\nC’est la parole du seigneur.\n\n3. Quel est le vent impétueux\nQui mugit et descend des cieux,\nEt dont la voix grave et sévère,\nSemblable à celle du tonnerre,\nFait trembler l’âme du pécheur ?\nC’est la parole du seigneur.\n\n4. Quel est ce chant suave et doux\nQui, d’en haut venant\nJusqu’à nous,\nParle de grâce\nEt de clémence,\nRéveille en nos cœurs l’espérance\nEt calme partout la douleur ?\nC’est la parole du Seigneur.\n\n5. Sainte parole, habite en moi;\nEclaire et ranime ma foi\nDans les combats, sois ma défense,\nDans les dangers, ma délivrance,\nEt que par toi je sois vainqueur,\nSainte parole du Seigneur.''',
+    numero: 161,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_162',
+    titre: 'ROMPS-NOUS LE PAIN DE VIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Romps-nous le pain de vie.\nQue Ta bonté, Seigneur, nous rassasie\nDe vérité ! Amour qui nous fait vivre.\nRévèle-toi parle\nDans le saint livre à notre foi.\n\n2. O Toi dont la clémence\nCréa du pain pour une foule immense\nMourant de faim\nVois, Ton peuple presse\nAutour de Toi\nSecours notre détresse et notre foi.\n\n3. C’est toi le Pain de vie,\nVerbe puissant !\nC’est de ta chair meurtrie,\nC’est de ton sang\nQue notre âme doit vivre...\nAh ! Donne-toi Par l’Esprit\nEt le Livre A notre foi!\n\n4. Tu bénis tes apôtres,\nPuis, à leur tour,\nLis portèrent à d’autres\nTon grand amour,\nO Parole féconde,\nQue notre foi\nT’offre à ce pauvre monde\nQui meurt sans toi !''',
+    numero: 162,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_163',
+    titre: 'A TES PIEDS, O DIVIN MAITRE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A tes pieds. Ô divin Maître!\nJe me place avec bonheur,\nEn t’adorant, je veux être\nTon disciple, ô mon Sauveur\nParle j’ai soif de T’entendre;\nParle je n’ai qu’un désir:\nQue Ta voix puissante et tendre;\nA mon cœur se fasse ouïr.\n\nChœur\nParle ! J’ai soif de t’entendre;\nParle ! Je n’ai qu’un désir:\nQue la voix puissante et tendre\nA mon cœur se fasse ouïr.\n\n2. Faites place, ô voix humaines\nA la voix de mon Sauveur!\nPensées vaines et choses vaines,\nEloignez-vous de mon cœur!\nTous les bruits, faites silence!\nToi, mon Maître, parle-moi!\nRecueillie en ta présence,\nMon âme n’entend que toi.\n\nChœur\nTous les bruits, faites silence!\nToi, mon Maître, parle-moi !\nRecueillie en ta présence\nMon âme n ‘entend que Toi.\n\n3. Parle-moi, témoin fidele\nDécouvre-moi le trésor\nDe ta sagesse éternelle\nParle, ô Maître !\nParle encor Ta parole,\nC’est la vie, la lumière et la paix.\nA ton école bénie\nJe veux rester à jamais.\n\nChœur\nTa parole, c’est la vie,\nC’est la lumière et la paix\nA ton école bénie\nJe veux rester à jamais.\n\n4. Parle! Et pour que je comprenne\nTon enseignement divin,\nDans Ta grâce souveraine,\nInstruis-moi par l’Esprit-Saint\nparle! Et pour que j’obéisse\nA Tes ordres aussitôt,\nForme-moi pour ton service,\nPour Te suivre, saint Agneau !\n\nChœur\nParle ! Et pour que j’obéisse,\nA tes ordres aussitôt,\nForme-moi pour ton service,\nPour te suivre, saint Agneau !''',
+    numero: 163,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_164',
+    titre: 'OH! QUE TON JOUG EST FACILE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh ! Que ton joug est facile\nOh ! Combien j’aime ta loi !\nDieu saint, Dieu de l’Evangile\nElle est toujours devant moi.\nDe mes pas c’est la lumière,\nC’est le repos de mon cœur;\nMais pour la voir tout entière,\nOuvre mes yeux, bon Sauveur.\n\n2. Non, Ta loi n’est point pénible\nPour quiconque est né de Toi;\nToute victoire est possible\nA qui combat avec foi\nSeigneur ! Dans Ta forteresse\nAucun mal ne m’atteindra;\nSi je tremble en ma faiblesse,\nTa droite me soutiendra.\n\n3. D’un triste et rude esclavage\nAffranchi par Jésus-Christ\nJ’ai part à Ton héritage.\nAux secours de ton Esprit\nAu lieu d’un maure sévère\nPrêt à juger, à punir,\nJe sers le plus tendre Père,\nToujours prêt à me bénir.\n\n4. Dieu qui guides, qui consoles!\nJ’ai connu que le bonheur\nEst de garder tes paroles,\nEt je les serre en mon cœur\nFais-moi marcher dans ta voie\nEt me plaire en tes statuts.\nSi je cherche en toi ma joie,\nJe ne serai pas confus.''',
+    numero: 164,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_165',
+    titre: 'FRAICHES ROSEES (Deut. 32,2)',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Comme une terre altérée\nSoupire après l’eau du ciel,\nNous appelons la rosée\nDe Ta grâce, Emmanuel.\n\nChœur\nFraîches rosées,\nDescendez sur nous tous !\nO divines ondées,\nVenez, arrosez-nous !\n\n2. Descends, ô pluie abondante,\nCoule à flots dans notre cœur,\nDonne à l’âme languissante\nUne nouvelle fraîcheur.\n\n3. Ne laisse en nous rien d’aride\nQui ne soit fertilisé:\nQue le cœur le plus avide\nSoit pleinement arrosé.\n\n4. Oui, que les déserts fleurissent\nSous tes bienfaisantes eaux\nQue les lieux secs reverdissent\nEt portent des fruits nouveaux.\n\n5. Viens, ô salutaire pluie,\nEsprit de grâce et de paix\nRépands en nous une vie\nQui ne tarisse jamais.''',
+    numero: 165,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_166',
+    titre: 'O DIEU DE VERITE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. O Dieu de vérité,\nPour qui seul je soupire,\nUnis mon cœur à Toi\nPar de forts et doux nœuds\nJe me lasse d’ouïr,\nJe me lasse de lire,\nMais non pas de te dire:\nC’est toi seul que je veux,\nMais non pas de te dire:\nC’est toi seul que je veux.\n\n2. Parle seul à mon cœur,\nEt qu’aucune prudence,\nQu’aucun autre docteur\nNe m’explique tes lois;\nQue toute créature\nEn Ta sainte présence,\nS’impose le silence\nEt laisse agir la voix\nS’impose le silence\nEt laisse agir ta voix.\n\n3. Tiens-toi près de mon âme,\nEt, dans ma solitude.\nViens remplir de ta paix\nLe vide de mon cœur\nDissipe mes ennuis\nEt toute inquiétude,\nEt que ma seule étude,\nSoit de t’aimer, Seigneur !\nEt que ma seule étude\nSoit de t’aimer, Seigneur.\n\n4. Tu me réponds, mon Dieu:\nMais encor des nuages\nMe voilent tes splendeurs,\nCéleste Vérité !\nQue ne puis-je\nSur de plus purs rivage.\nPar de- là tous les âges\nContempler la beauté !\nPar de-là tous les âges\nContempler la beauté !''',
+    numero: 166,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_167a',
+    titre: 'PRIERE DU MATIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Que ta lumière,\nDès le matin,\nLuise, ô bon Père!\nSur mon chemin.\nOh! Vivifie Dès maintenant\nEt sanctifie Ton cher enfant.\n\n2. Sauveur fidèle,\nLivré pour moi,\nTa voix m’appelle,\nJe viens à toi;\nA ma faiblesse\nPense aujourd’hui;\nDans la détresse\nSois mon appui.\n\n3. Donne à mon âme,\nJour après jour\nLa pure flamme\nDe ton amour.\nQu’elle conduise\nAuprès de toi\nL’âme indécise\nQui vit sans foi.\n\n4. Toute ma joie,\nO mon Sauveur\nC’est que l’on voie\nTon nom vainqueur:\nC’est que l’impie\nSauvé par toi,\nEnfin s’écrie:\n“Je suis à toi!”''',
+    numero: 167,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_167b',
+    titre: 'PRIERE DU SOIR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Déjà l’étoile S’allume aux cieux,\nEt la nuit voile Tout à mes yeux.\nMais, tendre Père,\nQuand tout s’endort,\nDans ta lumière Je suis encore,\n\n2. Cette journée\nQui déjà meurt\nJe l’ai donnée à Toi, Seigneur\nJ’ai pris sans crainte,\nSerrant Ta main,\nDe Ta loi sainte l’étroit chemin.\n\n3. Sonde mes voies\nEt mon amour, Mes pleurs.\nMes joies Pendant ce jour;\nEt purifie, Sauveur puissant,\nToute ma vie\nAvec ton sang.\n\n4. Jusqu’à l’aurore\nDu jour qui vient\nOh! Sois encore\nMon sûr gardien\nEt jusqu’à l’heure\nDe mon départ\nJésus, demeure\nMon seul rempart.''',
+    numero: 167,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_168a',
+    titre: 'JESUS, TA SAINTE PRESENCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus, ta sainte présence\nEst la source du bonheur\nDans la joie et la souffrance\nElle est le repos du cœur.\n\nChœur\nFais briller sur moi ta face,\nO Jésus, Agneau de Dieu!\nA tes pieds, c’est là ma place,\nPrès de toi mon ciel est bleu.\n\n2. Sur celui qui te contemple\nDescend un rayon divin,\nTu fais de son cœur ton temple,\nTon doigt pointe son chemin.\n\n3. Ah que mon âme ravie\nTe rencontre, ô mon Sauveur\nCar ton regard c’est la vie,\nC’est la richesse du cœur!\n\n4. Il faut aussi ta présence\nPour ton service, ô Jésus\nCar elle est une puissance\nPour relever les perdus.\n\n5. Quand dans l’étendue immense,\nO Jésus, tu paraîtras,\nC’est encor par ta présence\nQue tu nous attireras.''',
+    numero: 168,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_168b',
+    titre: 'SEIGNEUR, CE QUE JE RECLAME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Seigneur, ce que je réclame,\nC’est ce riche don d’amour\nQue cette céleste flamme\nEn moi brûle nuit et jour\nCet amour si fort, si tendre,\nAmour qui supporte tout,\nQui ne veut pas se défendre,\nPrêt à souffrir r jusqu’au bout.\n\n2. Pour les autres Il s’oublie,\nIl ne peut être envieux.\nTout éloge l’humilie,\nJamais il n’est orgueilleux.\nCet amour peut vaincre\nEt fondre les cœurs méchants,\nDurs, glacés;\nIls ne peuvent rien répondre,\nL’amour les a terrassés.\n\n3. Devant la vaste souffrance\nQui s’étend de jour en jour,\nIl faut un remède immense,\nIl faut un immense amour.\nQue jusqu’à la mort, fidèle,\nPriant, luttant en tout lieu,\nMa vie entière révèle\nL’amour sublime de Dieu.''',
+    numero: 168,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_169',
+    titre: 'JÉSUS EST AU MILIEU DE NOUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus est au milieu de nous,\nSon regard s’abaisse sur nous,\nSa douce voix l’entendez-vous\nJe veux vous bénir tous\nJe veux vous bénir tous\nSa douce voix l’entendez-vous ?\nJe veux vous bénir tous !\n\n2. Jésus est au milieu de nous,\nSon regard s’abaisse sur nous,\nSa douce voix l’entendez-vous ?\nJe veux vous sauver tous\nJe veux vous sauver tous\nSa douce voix l’entendez-vous ?\nJe veux vous sauver tous !\n\n3. Jésus est au milieu de nous,\nSon regard s’abaisse sur nous\nSa douce voix l’entendez-vous ?\nOh I je vous aime tous\nOh je vous aime tous\nSa douce voix l’entendez-vous ‘?\nOh ! Je vous aime tous.''',
+    numero: 169,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_170',
+    titre: 'TOI QUI DISPOSES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Toi qui disposes\nDe toutes choses\nEt nous les donne chaque jour,\nReçois, Ô Père !\nNotre prière\nDe reconnaissance et d’amour.\n\n2. Le don suprême\nQue ta main sème\nC’est notre pardon,\nC’est Ta paix;\nEt ta clémence,\nTrésor immense,\nEst le plus grand de tes bienfaits.\n\n3. Que, par Ta grâce,\nL’instant qui passe\nServe à nous rapprocher\nDe Toi et qu’à chaque heure,\nVers Ta demeure\nNos cœurs s’élèvent par la foi.''',
+    numero: 170,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_171',
+    titre: 'O MON SAUVEUR!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. O mon Sauveur !\nOuvre mon cœur\nA ta douce lumière\nSeigneur, mon Dieu,\nDe ton saint lieu,\nEcoute ma prière.\n\n2. Dieu tout-puissant !\nDieu bienfaisant\nJ’ai besoin de ta grâce\nEclaire-moi, Soutiens ma foi,\nJe viens chercher ta face.\n\n3. Ta vérité, Ta charité,\nBrillent dans ta Parole;\nSeule, elle instruit,\nSoutient, conduit\nNotre âme et la console.\n\n4. Que ton Esprit Témoin de Christ,\nRègne seul dans notre âme;\nQue ton amour,\nEt nuit et jour,\nL’embrase de sa flamme.''',
+    numero: 171,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_172',
+    titre: 'PRIEZ SANS CESSE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Priez toujours priez sans cesse !\nPriez le Seigneur entendra\nIl est fidèle sa promesse,\nPriez, priez, il répondra.\n\n2. Priez, si vos cœurs se déchirent,\nLa main qui blesse guérira\nIl entend tous ceux qui soupirent:\nIl a souffert, Il guérira.\n\n3. Priez dans la fournaise ardente,\nQuand Satan gronde autour de vous!\nJésus sait calmer la tourmente,\nPriez, triomphez à genoux !\n\n4. Priez, priez lorsque le doute\nObscurcira votre horizon\nPriez ! Jésus connaît la route,\nIl ouvrira votre prison.\n\n5. Priez! Pour rendre témoignage.\nPriez! Pour confesser Jésus,\nDieu bénira votre langage,\nPour sauver les pécheurs perdus.\n\n6. Priez, quand votre âme hésitante\nNe sait où choisir son chemin\nMême à travers la mer bruyante\nJésus vous tiendra par la main.\n\n7. Priez! Si votre ciel est sombre.\nSi vous tremblez devant la mort!\nJésus vous couvrant de son nombre,\nVous ouvrira les portes d’or.''',
+    numero: 172,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_173',
+    titre: 'LE CRI DE MON AME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Le cri de mon âme\nS’élève vers Toi.\nElle te réclame,\nJésus, pour son roi.\nTon joug est facile,\nTon fardeau léger;\nSur mon cœur docile,\nRègne, ô bon Berger!\n\n2. Jésus sois mon guide,\nDirige mes pas\nEt sois mon égide\nDans tous mes combats\nDans la nuit profonde\nTiens-moi par la main,\nLumière; du monde,\nLuis sur mon chemin !\n\n3. Source de l’eau vive,\nPain venu des cieux,\nQue par toi je vive\nPaisible et joyeux!\nQuand luira l’aurore\nDu jour; éternel,\nQue je vive encore\nPour toi, dans le ciel''',
+    numero: 173,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_174',
+    titre: 'A TOI, MON DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A toi, mon Dieu\nJe m’abandonne,\nOh ! Fais de moi\nCe que Tu veux:\nDe l’argile que je Te donne,\nFais un diamant précieux.\n\nChœur\nPrends, Seigneur,\nPrends toute ma vie,\nA toi seul veux obéir,\nPar l’Esprit qui me sanctifie,\nSur ton autel,\nJe viens m’offrir !\n\n2. Tu connais ma grande faiblesse,\nMon impuissance à te servir,\nS’il le faut que ta main me blesse,\nTon amour saura me guérir !\n\n3. Oh ! Ne m’épargne ni la flamme,\nNi le ciseau, divin Sculpteur !\nQue ton Esprit forme mon âme\nA l’image de son Sauveur.''',
+    numero: 174,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_175',
+    titre: 'JE LE CONNAIS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Je Le connais, celui qui donne\nLa paix et le bonheur;\nCelui qui guérit,\nQui pardonne:\nC’est Jésus le Sauveur.\n\n2. Pour nous, un sanglant sacrifice,\nIl s’of frit par amour;\nSon sang nous\nDonne avec justice,\nPlace au divin séjour.\n\n3. Je veux l’aimer\nJe veux le suivre humblement\nPar la foi\nC’est pour lui seul\nQue je dois vivre\nPuisqu’il mourut pour moi.''',
+    numero: 175,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_176',
+    titre: 'UN REGARD SUR LA CROIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Un regard sur ta croix sanglante,\nJésus, fait déborder mon cœur\nD’amour et de douleur poignante\nD’amour et d’éternel bonheur.\nTu seras seul toute ma gloire,\nCar tout ce dont je me vantais\nM’empêcherait encor de croire\nQu’en ta mort j’ai la paix.\n\n2. Te donnerais-je quelques larmes,\nQuelques soupirs\nEt quelque amour ?\nDevant ta croix je rends les armes\nPrends-moi tout entier dès ce jour.\n\n3. A Tes pieds, mon Sauveur,\nJe jette ce que mon cœur aime le plus.\nOui, prends mon idole secrète;\nTu seras mon trésor, Jésus.''',
+    numero: 176,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_177',
+    titre: 'C’EST MON JOYEUX …',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. C’est mon joyeux service\nD’offrir à Jésus-Christ,\nEn vivant sacrifice,\nMon corps et mon esprit.\n\nChœur\nAccepte mon offrande,\nBien-aimé Fils de Dieu !\nEt que sur moi descende\nLa flamme du saint lieu.\n\n2. J’abandonne ma vie,\nSans regret, ni frayeur,\nA ta grâce infinie,\nO mon Libérateur!\n\n3. Qu’un feu nouveau s’allume\nPar ton amour en moi,\nEt dans mon cœur consume\nCe qui n’est pas à toi !\n\n4. Viens, Jésus !\nSois mon maître;\nPar ton sang racheté,\nA toi seul je veux être\nEt pour l’éternité.''',
+    numero: 177,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_178',
+    titre: 'SEIGNEUR SANCTIFIE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Seigneur ! Sanctifie\nNos jours, nos moments;\nFais que notre vie\nT’honore en tout temps\nQue de ta présence,\nAu milieu de nous,\nL’heureuse influence\nNous pénètre tous.\n\n2. Nous voulons sans cesse\nMarcher par la foi\nEt, dans la détresse,\nRegarder à toi.\nHeureux qui repose\nSur ton bras puissant\nOn a toute chose\nEn Te possédant.''',
+    numero: 178,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_179a',
+    titre: 'ENTRE TES MAINS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Entre les mains j’abandonne\nTout ce que j’appelle mien.\nOh ne permets à personne,\nSeigneur d’en reprendre rien!\n\nChœur\nOui, prends tout, Seigneur (bis)\nEntre tes mains\nJ’abandonne tout\nAvec bonheur.\n\n2. Je n’ai pas peur de te suivre\nSur le chemin de la croix\nC’est pour toi que, je veux vivre,\nJe connais, j’aime ta voix.\n\nChœur\nOui, prends tout, Seigneur (bis)\nSans rien?\nGarder, je Te livre\nTout avec bonheur:\n\n3. Tu connais mieux\nQue moi-même tout les besoins\nDe mon cœur;\nEt pour mon bonheur suprême,\nTu veux\nMe rendre vainqueur.\n\nChœur\nOui, Oui, prends tout,\nSeigneur! (bis)\nJe ne vis plus pour moi-même\nMais pour mon Sauveur.\n\n4. Prends mon corps\nEt prends mon âme;\nQue tout en moi soit à toi.\nQue par ta divine flamme\nTout mal soit détruit en moi.\n\nChœur\nOui, prends tout, Seigneur! (bis)\nPrends mon corps\nEt prends mon âme:\nRègne sur mon cœur!''',
+    numero: 179,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_179b',
+    titre: 'AU PIED DE LA CROIX SANGLANTE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Au pied de la croix sanglante\nOù tu t’es donné pour moi\nMon âme émue\nEt tremblante\nO Jésus, se livre à toi.\n\nChœur\nLe parfait bonheur, (bis)\nC’est de mettre Tout mon être\nA Tes pieds, Seigneur!\n\n2. Me voici pour ton service.\nJe ne garde rien pour moi,\nSur l’autel du sacrifice,\nJe me place par la foi.\n\n3. A la gloire, aux biens du monde\nJe renonce pour jamais,\nQue le Saint-Esprit m’inonde,\nDe Ta joie et de Ta paix.\n\n4. Si ma faiblesse est bien grande\nTa force est plus grande encor,\nO Jésus, qu’elle me rende\nFidèle jusqu’à la mort.\n\n5. O félicité suprême,\nTa grâce est mon bouclier\nEt je t’appartiens.\nJe T’aime,\nToi qui m’aimas le premier''',
+    numero: 179,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_180',
+    titre: 'L’AMOUR DE JESUS CHRIST',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. L’amour de Jésus-Christ nous presse:\nIl est livré pour Son troupeau;\nA suivre les pas de l’Agneau,\nL’un l’autre\nAnimons-nous sans cesse.\n\n2. Au nom du Rédempteur,\nChers frère!\nDonnons-nous tous ici la main,\nPour ne marcher jusqu’à la fin\nQue sous ses regards tutélaires.\n\n3. Vois tes enfants, Dieu notre Père!\nQui se consacrent à ton Fils\nVient-il notre aide\nEt nous remplis d’amour,\nDe zèle et de lumière.\n\n4. Qu’en nous quittant,\nSauveur fidèle!\nNous demeurions unis en toi;\nHabite en nos cœurs par la foi,\nEt que l’Esprit nous renouvelle!''',
+    numero: 180,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_181',
+    titre: 'LA VOIX DU SEIGNEUR M’APPELLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. La voix du Seigneur m’appelle:\nPrends ta croix\nEt viens, suis-moi\nJe réponds : ’’Sauveur fidèle,\nMe voici, je suis à toi !\n\nChœur\nJusqu’au bout\nJe veux Te suivre,\nDans les bons, les mauvais jours,\nA Toi pour mourir et vivre,\nA toi, Jésus, pour toujours.\n\n2. Mais le chemin du Calvaire\nEst étroit et périlleux,\nC’est un chemin solitaire,\nDifficile et ténébreux.\n\n3. Il faut quitter ceux qu’on aime,\nSavoir être mal jugé,\nEndurer l’injure même\nDu monde être méprise.\n\n4. Oui, perdre sa propre vie.\nConsentir à n’être rien,\nN’avoir qu’une seule envie:\nAimer Jésus, le seul bien.\n\n5. Jésus donne grâce et gloire\nPour le suivre pas à pas,\nAvec lui, joie et victoire,\nPaix et bonheur ici-bas.''',
+    numero: 181,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_182',
+    titre: 'J’ENTENDS TA DOUCE VOIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. J’entends ta douce voix,\nJésus, je viens à Toi.\nJe viens, ô Sauveur, lave-moi\nDans le sang de ta Croix.\n\nChœur\nJésus, Roi des rois,\nQui mourut pour moi\nJe veux mourir avec toi,\nAvec Toi sur la Croix.\n\n2. J’entends ta douce voix,\nQui me dit: “ Crois en Moi\nJe crois, Seigneur,\nSoutiens ma foi,\nTiens moi près de ta Croix .\n\n3. J’entends ta douce voix,\nElle pénètre en moi\nEt me dit d’aimer comme Toi\nDe l’amour de la Croix.\n\n4. J’entends ta douce voix,\nToi qui mourus pour moi,\nSeigneur que je m’unisse\nA Toi dans Ta mort par la foi.''',
+    numero: 182,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_183',
+    titre: 'C’EST UN REMPART QUE NOTRE DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. C’est un rempart que notre Dieu,\nUne invincible armure,\nNotre délivrance en tout lieu,\nNotre défense sûre.\nL’ennemi contre nous\nRedouble de courroux;\nVaine colère!\nQue pourrait l’adversaire ?\nL’Eternel détourne ses coups.\n\n2. Seuls, nous bronchons à chaque pas,\nNotre force est faiblesse;\nMais un héros, dans les combats\nPour nous lutte sans cesse\nQuel est ce défenseur ?\nC’est toi, divin Sauveur !\nDieu des armées\nTes tribus opprimées\nConnaissent leur libérateur.\n\n3. Que les démons forgent des fers\nPour accabler l’Eglise\nTa Sion brave les enfers,\nSur ton rocher assis.\nConstant dans son effort,\nEn vain avec la mort\nSatan conspire:\nPour ruiner son empire,\nIl suffit d’un mot du Dieu fort.\n\n4. Dis-le, ce mot victorieux,\nDans toutes nos détresses;\nRépands sur nous, du haut des cieux\nTes divines largesses.\nQu’on nous Ôte nos biens,\nQu’on serre nos liens,\nQue nous importe!\nTa grâce est la plus forte,\nEt ton royaume est pour les tiens.''',
+    numero: 183,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_184',
+    titre: 'PLUS QUE VAINQUEURS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Plus que vainqueurs !\nTelle est notre devise :\nPlus que vigueurs bien\nQue persécutés!\nCar la victoire la foi fut acquise\nPar le Sauveur qui nous a rachetés (bis).\n\n2. Suivons le Christ\nJusque sur le Calvaire;\nAyons toujours sa mort\nDevant nos yeux.\nSi nous souffrons\nAvec Lui sur la terre,\nNous régnerons\nAvec lui dans les cieux (bis).\n\n3. Osons braver les injures du monde\nPour confesser le beau nom de Jésus\nQue sur Lui seul\nTout notre espoir se fonde,\nEt notre espoir\nNe sera pas confus (bis).\n\n4. Amis ! Croyons au pouvoir invisible\nQue le Sauveur a caché dans sa croix:\nComme une arme invincible,\nPour triompher au nom,\nDu Roi des rois (bis).''',
+    numero: 184,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_185',
+    titre: 'IL EST UNE SAINTE GUERRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Il est une sainte guerre,\nIl est un combat divin,\nEntre le ciel et la terre,\nEntre le mal et le bien.\nCertaine est notre victoire,\nLuttons sans crainte\nEt sans peur,\nNous combattons\nPour la gloire de Jésus,\nLe Rédempteur\n\n2. La justice est notre armure,\nLa foi, notre bouclier;\nLa vérité, pour ceinture,\nDoit à jamais nous lier.\nC’est une épée invincible\nQu’on voit ho f fer dans nos mains,\nC’est la paroir’ infaillible\nDu Dieu Sauveur des humains.\n\n3. Sous cette sainte bannière\nLes cœurs en haut,\nNous marchons ;\nEt du séjour de lumière\nPas à pas nous approchons.\nAprès la lutte suprême,\nLa couronne nous attend ;\nJésus la mettra lui-même\nSur le front du combattant !''',
+    numero: 185,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_186',
+    titre: 'PLUS LE MAL, EST PRESSANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Plus le mal est pressant,\nPlus ma misère est grande,\nPlus l’abîme est profond\nEt béant sous mes pas,\nPlus le péril extrême,\nUn prompt secours demande,\nPlus je me réfugie,\nO Jésus, dans Tes bras !\n\n2. Parmi tous les dangers,\nC’est Toi qui me rassures,\nContre tous les assauts,\nC’est Toi mon bouclier !\nC’est Toi, si je faiblis,\nQui guéris mes blessures ;\nPour pouvoir tout, sur\nToi je n’ai qu’à m’appuyer.\n\n3. Tu m’as associé, Jésus,\nA Ta victoire\nMets Ta force en mon bras\nMets ta flamme\nEn mon cœur !\nOui, viens par mon triomphe\nAjouter à lit gloire,\nCombattre par mes mains\nEt me rendre vainqueur.\n\n4. Tu me donnes toujours\nSelon ma confiance,\nQuand j’ai tout demandé,\nJ’ai je pas tout reçu ?\nAvec toi lotit triomphe\nEst assuré d’avance:\nQuand on est sûre de vaincre,\nOn a déjà vaincu.''',
+    numero: 186,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_187',
+    titre: 'LE SIGNAL, DE LA VITOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. L e signal de la victoire\nDéjà brille aux cieux,\nLa couronne de la gloire\nParaît à nos yeux.\n\nChœur\nJe viens, combattez encore !\nDit Jésus à tous,\nOui, mon Sauveur, je T’implore,\nJe lutte à genoux.\n\n2. Que l’ennemi, plein de rage,\nRedouble ses coups,\nNous ne perdons point courage ;\nChrist est avec nous.\n\n3. Suivons, amis,\nLa bannière du Sauveur en croix,\nEt que notre armée entière\nSe range à sa voix.\n\n4. Rude et longue est la mêlée:\nVoici le secours!\nDans nos mains prenons l’épée\nQui vainquit toujours!''',
+    numero: 187,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_188',
+    titre: 'SANS ATTENDRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Sans attendre, je veux tendre\nAu bonheur promis; qui s’élance,\nQui s’avance, obtiendra le prix.\nQuand je prie, Dieu m’entend;\nOn m’attaque\nIl me défend,\nDonc en route,\nPoint de doute\nLe but est si grand !\n\n2. D’un pas ferme, jusqu’au terme\nIl faut s’avancer\nDieu m’observe,\nQu’Il préserve Mon pied de glisser\nQue ce monde et ses attraits\nNe me séduisent jamais\nSi sa haine Se déchaîne,\nQue je sois en paix.\n\n3. Dieu de grâce,\nQue Ta face Luise en mon chemin.\nPère tendre,\nViens me prendre\nPar ta forte main\nToute puissance est à Toi,\nSubviens à ma faible foi:\nMa victoire,\nC’est Ta gloire, Jésus.\nRoi des rois.\n\n4. Près du trône la couronne\nAttend les vainqueurs\nNulle trêve, qu’on se lève\nA dit le Seigneur\nD’obéir soyons heureux\nPoint de tiedes de peureux\nLe Fidele nous appelle\nA reigner au Ciel''',
+    numero: 188,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_189',
+    titre: 'QUI ME RELEVE?',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Qui me relève dans mes chutes ?\nC’est Jésus christ\nQui combat pour moi dans mes luttes ?\nC’est Jésus-Christ.\nJésus a parlé, je veux croire\nQue je puis lutter pour sa gloire,\nCar mon bouclier, ma victoire,\nC’est Jésus-Christ.\n\n2. Je vais à mon Père, et ma voie\nC‘est Jésus-Christ;\nJe suis bienheureux et ma joie\nC’est Jésus-Christ.\nEt si, Même dans la souffrance,\nMon cœur me parle d’espérance,\nC’est que j’ai mis ma confiance\nEn Jésus –Christ.\n\n3. Sauvé, je ne me glorifie,\nQu’en Jésus-Christ;\nPour la terre et le ciel, ma vie\nC’est Jésus-Christ.\nBientôt adieu, choses mortelles.\nLoin de vous je prendrai des ailes\nVers les demeures éternelles,\nVers Jésus-Christ.''',
+    numero: 189,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_190',
+    titre: 'TES SAINTS DANS LA LUTTE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Tes saints, dans la lutte,\nEt de tous côtés ici-bas,\nEn butte aux infirmités,\nSont, dans le ciel même,\nPortés sur Ton cœur\nO notre suprême\nSacrificateur.\n\n2. Plein de sympathie,\nDe tendre bonté,\nJamais tu n’oublies\nAucun racheté.\nC’est toi qui nous aides\nDans chaque combat,\nEt pour nous tu plaides,\nDivin Avocat!\n\n3. Pour toute souillure,\nC’est toi qui te ceins;\nEt lavant d’eau pure\nLes pieds de tes saints,\nTu dis au fidèle:\nSois l’imitateur\nDu parfait Modèle,\nDu vrai Serviteur !''',
+    numero: 190,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_191',
+    titre: 'DEBOUT POUR LA SAINTE GUERRE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Debout pour la sainte guerre!\nLe mal est grand encor;\nPlus d’un ami, plus d’un frère\nSuit un chemin de mort.\n\nChœur\nEn avant! (En avant!)\nTous en avant! (En avant!)\nNotre chef est tout puissant\nNos armes sont la prière,\nL’amour persévérant.\n\n2. Debout pour la sainte guerre !\nRanimons notre ardeur\nAvec la croix pour bannière,\nQui ne serait vainqueur ?\n\n3. Débout pour la sainte guerre !\nSoyons unis et fort !\nQu’une charité sincère,\nPréside à nos efforts.\n\n4. O Dieu! Pour la sainte guerre\nRevêts-nous tous en christ.\nDes armes de la lumière,\nDes dons de ton Esprit.''',
+    numero: 191,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_192',
+    titre: 'NON, NOUS NE SAURIONS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Non, nous ne saurions nous taire\nDevant tant de cœurs souffrants.\nResterez-vous sans rien faire?\nSeriez-vous indifférents?\n\nChœur\nSous la croix, rien n’est pénible.\nEn avant! Frères, debout!\nPar la foi tout est possible,\nEt la couronne est au bout.\n\n2. En tous lieux, pleins d’espérance,\nTraçons un sillon d’amour.\nSemons avec confiance:\nNous moissonnerons un jour.\n\n3. Au monde sans repentance.\nPrêchons Jésus mort pour tous.\nPourquoi tant d’insouciance?\nIl en est temps, levons-nous !\n\n4. Laissons là notre paresse,\nEt l’amour triomphera.\nOui, malgré notre faiblesse,\nLa vérité prévaudra.''',
+    numero: 192,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_193',
+    titre: 'VEILLE TOUJOURS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Veille au matin,\nQuand un ciel sans nuage\nSemble annoncer un jour\nCalme et serein,\nC’est dans ton cœur\nQue peut gronder l’orage\nQui fait tomber le pèlerin.\n\nChœur\nVeille au matin\n(Veille au matin),\nVeille le soir, (veille le soir),\nVeille et prie toujours.\n\n2. Veille à midi,\nQuand les bruits de la terre\nFont oublier le céleste séjour;\nTrouve un instant pour être solitaire\nDans la prière et dans l’amour.\n\n3. Veille le soir, quand se fait le silence;\nPense aux bienfaits de ton céleste Ami;\nCherche avec soin sa divine présence,\nVerse en son cœur tout ton souci.\n\n4. Veille toujours,\nEn tous lieux, à toute heure,\nCar l’ennemi te guette à chaque instant,\nPour se glisser dans la sainte demeure\nOù doit régner le Tout-Puissant.''',
+    numero: 193,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_194',
+    titre: 'A CELUI QUI SERA VAINQUEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A celui qui sera vainqueur,\nEt qui me glorifie,\nJe donnerai, dit le Seigneur,\nAu ciel l’arbre de vie!\n\nChœur\nVictoire, force, honneur et\nLouanges, Gloire, Gloire,\nPuissance à toi, Jésus !\n\n2. Un caillou blanc, un nom nouveau et la manne cachée.\nLui seront donnés par l’Agneau.\nSa promesse est scellée !\n\n3. Revêtu d’un vêtement blanc,\nResplendissant de gloire,\nSera celui qui par le sang\nRemporta la victoire !\n\n4. Avec christ, celui qui vaincra\nS’assiéra sur trône,\nEt de ses mains il recevra\nL’Immortelle couronne.''',
+    numero: 194,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_195',
+    titre: 'VOUS QUI GARDEZ LES MURS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Vous qui gardez les murs\nDe la sainte cité, sentinelle\nDe Dieu, qui veillez à ses portes,\nCeignez-vous\nDe vérité, de valeur, de fermeté,\nQue vos yeux soient\nPerçants et que vos voix soient fortes.\n\n2. Voyez-vous l’ennemi\nS’approcher doucement\nEt chercher, en secret,\nA franchir les murailles ?\nDénoncez-le franchement\nEt lui livrez fermement\nDu Maître de combat,\nLes terribles batailles.\n\n3. Ah ! Soldats,\nC’est au Chef que vous appartenez ;\nC’est Lui qui vous ceignit\nDu redoutable glaive.\nDans vos trompettes sonnez\nContre tous ces révoltés,\nRésistez vaillamment,\nSans repos et sans trêve.\n\n4. Messagers du salut, en ce terrestre lieu,\nPubliez vaillamment le sacré témoignage\nNe craignant que votre Dieu,\nAccomplissez votre vœu ;\nAffrontez les erreurs\nEt méprisez l’outrage.\n\n5. Du monde contre vous\nLa rage éclatera ;\nSoutenez ses assauts :\nC’est Jésus qui l’ordonne.\nLe moqueur vous maudira,\nLe méchant vous frappera ;\nMais le Seigneur vous garde\nEt tient votre couronne.''',
+    numero: 195,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_196',
+    titre: 'SENTINELLE VIGILANTE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Sentinelle vigilante,\nQu’en est-il donc de la nuit ?\nDis à l’âme somnolente\nQue déjà le matin luit !\n\nChœur\nLa nuit passe,\nLe matin du grand jour luit !\nSentinelle, sois au poste jour et nuit,\nSentinelle, sois au poste\nJour et nuit.\n\n2. Les gardes sur la muraille\nNous l’ont dit, entendez-vous ?\nAu loin gronde la bataille,\nTout est sombre autour de nous.\n\n3. Points de repos, de relâche,\nRachetés de l’Eternel.\nTravaillez à votre tâche,\nCar Jésus revient du ciel !''',
+    numero: 196,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_197a',
+    titre: 'DEBOUT, SAINTE COHORTE!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Debout, sainte cohorte,\nSoldats du Roi des rois !\nTenez d’une main forte\nL’étendard de la croix !\nAu sentier de la gloire\nJésus-Christ vous conduit ;\nDe victoire en victoire\nIl mène qui le suit.\n\n2. La trompette résonne ;\nDebout ! Vaillants soldats !\nL’immortelle couronne\nEst le prix des combats.\nSi l’ennemi fait rage,\nSoyez fermes et forts ;\nRedoublez de courage,\nS’il redouble d’efforts.\n\n3. Debout pour la bataille,\nPartez, n’hésitez plus !\nPour que nul ne défaille,\nRegardez à Jésus !\nDe l’armure invincible, Soldats !\nRevêtez-vous !\nLe triomphe est possible\nPour qui lutte à genoux.\n\n4. Debout, debout encore !\nLuttez jusqu’au matin ;\nDéjà brille l’aurore\nA l’horizon lointain.\nBientôt, jetant nos armes\nAux pieds du Roi des rois !\nLes chants après les larmes,\nLe trône après la croix !''',
+    numero: 197,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_197b',
+    titre: 'REVETONS NOTRE ARMURE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Revêtons notre armure\nEt partons en vainqueurs !\nOui, la victoire est sûre,\nEt haut, en haut les cœurs !\nCelui qui nous appelle\nEt nous dit: En avant!\nEst le Sauveur fidèle,\nLe Seigneur tout-puissant.\n\n2. Revêtons notre armure\nEt lutions en vainqueurs !\nLe secours se mesure\nAux besoins de nos cœurs !\nPlus grande est la faiblesse,\nSeigneur, le tes soldats,\nPlus riche est ta promesse\nEt plus ferme est ton bras.\n\n3. Revêtons notre armure\nEt souffrons en vainqueurs !\nDe plainte et de murmure\nSachons garder nos cœurs.\nL’épreuve aura son terme,\nEt, dans le mauvais jour,\nLe chrétien reste ferme\nDans la foi, dans l’amour.\n\n4. Revêtons notre armure\nEt mourons en vainqueurs\nSi la bataille est dure,\nL’espoir soutient nos cœurs ;\nAux rives éternelles,\nIl nous montre le port\nNous Te serons fidèles,\nSeigneur, jusqu’à la mort.''',
+    numero: 197,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_198',
+    titre: 'TRAVAILLONS ET LUTTONS!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Travaillons et luttons!\nNous sommes au Seigneur,\nSuivons l’étroit sentier\nqui conduit à la vie\nJésus marche avec nous,\nAvançons sans frayeur,\nIl nous garde et Son\nBras toujours nous fortifie.\n\nChœur\nTravaillons, (Travaillons)\nEt luttons, (et luttons,)\nTravaillons. (Travaillons)\nEt luttons, (et luttons,)\nSoyons prêts, (Soyons prêts)\nEt prions, (et prions,)\nBientôt le Maître va venir!\n\n2. Travaillons et luttons!\nQue les cœurs affligés,\nLes perdus loin de Dieu\nRetrouvent l’espérance,\nVers la croix dirigeons\nLeurs regards angoissés,\nPressons-les d’accepter\nJésus leur délivrance.\n\n3. Travaillons et luttons!\nIl nous appelle tous,\nPoint de lâches, de tièdes,\nLa moisson est grande,\nPour servir notre chef,\nNe pensons plus à nous,\nEn avant vers le but!\nLe Maître le demande.\n\n4. Travaillons et luttons!\nSans jamais nous lasser,\nDe notre Rédempteur\nElevant la bannière,\nFidèles jusqu’au bout\nSachons persévérer,\nLe repos nous attend\nDans la pleine lumière!''',
+    numero: 198,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_199',
+    titre: 'AH! DONNE A MON AME!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ah ! Donne à mon âme\nPlus de sainteté,\nPlus d’ardente flamme,\nDe sérénité,\nPlus de confiance,\nPour rester debout,\nPlus de patience,\nPour supporter tout !\n\n2. Fais que je contemple\nSans cesse l’Agneau,\nSon vivant exemple,\nSa croix, son tombeau;\nSa grâce fidèle,\nSon immense amour,\nSa gloire éternelle,\nSon prochain retour !\n\n3. Jésus, à mes larmes\nTu veux compatir ;\nDe toutes Tes armes\nViens me revêtir;\nPar plus de prière,\nDe zèle et de foi,\nQue dans la lumière\nJe marche avec toi !\n\n4. Donne à ton service\nUn cœur plus joyeux\nPrompt au sacrifice,\nToujours sous tes yeux;\nQui chante et qui tremble,\nHumble en sa ferveur,\nUn cœur qui ressemble\nAu tien, mon Sauveur.''',
+    numero: 199,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_200',
+    titre: 'COMPTE LES BEINFAITS DE DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Quand le vol de la tempête\nVient assombrir ton ciel bleu,\nAu lien de baisser la tête,\nCompte les bienfaits de Dieu.\n\nChœur\nCompte les bienfaits de Dieu,\nMets-les lotis devant tes yeux,\nTu verras, en adorant,\nCombien le nombre en est grand.\n\n2. Quand sur la route glissante\nTu chancelles sous la croix,\nPense à cette main puissante\nQui t’a béni tant de fois.\n\n3. Si tu perds dans le voyage\nPlus d’un cher et doux trésor,\nPense au divin héritage\nQui Là-haut te reste encor.\n\n4. Bénis donc, bénis sans cesse\nCe Père qui chaque jour\nRépand sur toi la richesse\nDe son merveilleux amour.''',
+    numero: 200,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_201',
+    titre: 'LA CROIX QUE DIEU ME DONNE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. La croix que Dieu me donne\nA porter ici-bas\nEst jointe à la couronne\nQui ne se flétrit pas.\nCelui qui me t’impose\nSe nomme mon Sauveur,\nEn son sein je déposé\nLe soupir de mon cœur.\n\n2. Le premier sur lui même\nIl a chargé la croix,\nAprès lui, puisqu’il m’aime,\nDois-je en craindre le poids ?\nJésus, en qui j’espère\nEt qui la prit sur, me la rendra légère :\nIl est mon sûr appui.\n\n3. Il sait, ce Dieu tout sage,\nIl sait, bien mieux que moi,\nRégler ce court voyage\nOù s’avance ma foi.\nMa route m’est tracée\nPar sa main, chaque jour;\nPeut-elle être placée\nAilleurs qu’en son amour ?\n\n4. Prends donc, prends sans tristesse,\nO mon âme!\nTa croix! Du Seigneur la sagesse\nEn mesura le poids Ton Dieu,\nTon Dieu fidèle,\nTe tient sous son regard:\nA souffrir s’Il t’appelle,\nAh! Sache aimer ta part.''',
+    numero: 201,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_202',
+    titre: 'INVOQUE-MOI!',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. “Invoque-moi du sein de la détresse:\nMon bras puissant te sauvera.’’\nC’est Dieu qui parle,\nOh! Crois à Sa promesse!\nBientôt ta voix l’exaltera\nC’est Dieu qui parle,\nOh! Crois à Sa Promesse!\nBientôt ta voix l’exaltera.\n\n2. Si tout est sombre, oh!\nNe perds pas courage,\nNe doute pas du Dieu vivant.\nMême au milieu des fureurs de l’orage,\nDemeure en paix, crois seulement\nMême au milieu des fureurs de l’orage,\nDemeure en paix, crois seulement.\n\n3. Mais n’attends pas que le mal te domine,\nQue l’ennemi soit dans ton cœur.\nElle est à toi la puissance divine :\nSaisis -la donc et sois vainqueur\nElle est à toi la puissance divine:\nSaisis-la donc et soit vainqueur.\n\n4. Jamais, jamais Dieu,\nQui fit la promesse,\nNe manquera de l’accomplir.\nQue son enfant,\nSauvé de la détresse\nNe manque pas de le bénir!\nQue son enfant, sauvé de la détresse,\nNe manque pas de e bénir !''',
+    numero: 202,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_203',
+    titre: 'UN PARFAIT SAUVEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh! Croyez que Dieu vous donne\nTout ce qu’il promet,\nUn Sauveur qui vous pardonne,\nUn Sauveur parfait,\nUn Sauveur plein de puissance\nSur la terre et dans les cieux,\nUn Sauveur dont la présence\nSeule rend heureux,\n\n2. Ce Sauveur vous fera vivre\nComme il a vécu;\nVous pourrez partout le suivre\nSans être vaincu.\nJusqu’au bout de la mêlée\nSon bras vous protégera,\nEt dans la sombre vallée\nIl vous conduira.\n\n3. Oh! Jésus, dis-leur toi-même\nQue ta forte main\nFait passer celui qui t’aime\nPar un sûr chemin,\nQue tu veux de toute chute\nPréserver ton faible enfant,\nPour qu’il sorte de la lutte\nPour et triomphant.\n\n4. Oui, Seigneur, malgré l’orage\nEt malgré la nuit\nNous voulons prendre courage,\nForts de ton appui.\nEt joyeux pleins d’assurance,\nNous avancer vers le ciel,\nLe jour éternel.\nEn saluant à l’ avance\nLe jour de l’éternel.''',
+    numero: 203,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_204a',
+    titre: 'RESTE AVEC NOUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Reste avec nous,\nSeigneur, le jour décline\nLa nuit s’approche et nous menace tous;\nNous implorons\nTa présence divine:\nReste avec nous,\nSeigneur, reste avec nous.\n\n2. En toi nos cœurs ont salué leur Maître,\nEn toi notre âme\nA trouvé son Epoux;\nA Ta lumière elle se sent renaître;\nReste avec nous,\nSeigneur, reste avec nous.\n\n3. Dans nos combats\nSi ta main délaisse,\nSatan vainqueur nous tiendra\nSous ses coups;\nQue Ta puissance\nArme notre faiblesse;\nReste avec nous Seigneur,\nReste avec nous.\n\n4. Sous ton regard la joie est sainte et bonne,\nPrès de ton cœur\nLes pleurs même sont doux;\nSoit que ta main nous frappe\nOu nous couronne,\nReste avec nous,\nSeigneur, reste avec nous.''',
+    numero: 204,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_204b',
+    titre: 'AUSSI LONGTEMPS QU’ETRANGER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Aussi longtemps qu’étranger sur la terre,\nJe foulerai les sentiers douloureux,\nFais qu’en tout temps\nA tout bien je préfère ce que tu veux,\nSeigneur ! Ce que tu veux.\n\n2. Oui, qu’en tout temps,\nSous la croix la plus dure,\nAux jours mauvais\nComme aux jours radieux,\nJe puisse dire, éloignant tout murmure:\nComme Tu veux, Seigneur\ncomme tu veux !\n\n3. Je ne demande, ô mon Dieu\nQu’une chose: Sois mon trésor,\nMon appui précieux;\nPour tout le reste,\nOrdonne, fais, dispose\nComme tu veux,\nSeigneur comme lu veux !\n\n4. Etablis donc sur mon cœur\nTon empire; Règne si bien\nEt par de si doux nœuds,\nQue rien jamais ne m’empêche\nDe dire: Comme tu veux,\nSeigneur ! Comme tu veux !\n\n5. Et puis tut jour, sans trouble,\nSans alarmes, je chanterai,\nSur des bords plus heureux,\nL’hymne qu’ici je mêle\nAvec mes larmes:\nComme tu veux, Seigneur!\nComme tu veux!''',
+    numero: 204,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_205',
+    titre: 'TON BEAU NOM CALME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ton beau nom calme et console,\nO Jésus, mon Rédempteur!\nJe savoure ta parole,\nQuand ta voix parle à mon cœur.\nSur toi seul je me repose,\nTa promesse me soutient;\nAvec toi j’ai toute chose,\nEt mon âme t’appartient.\n\n2. Je t’apporte ma faiblesse.\nMieux que moi tu la connais.\nJe t’apporte ma tristesse.\nEt tu me donne a paix,\nMes soucis tu tes Partages ;\nTu prends sur toi mes fardeaux:\nDu regard tu m’encourages.\nEt tu guéris tous mes maux.''',
+    numero: 205,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_206',
+    titre: 'QUEL AUTRE QUE TOI ?',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Quel autre au ciel ai-je que toi ?\nO mon Dieu, mon Sauveur !\nN’as-tu pas ouvert à ma foi\nLes trésors de ton cœur ?\nTu t’es donné toi-même à moi,\nEt, vivant sous ta douce loi,\nJe ne prends de plaisir qu’en toi,\nO mon Dieu, mon Sauveur !\n\n2. Que me font les biens d’ici-bas?\nO mon Dieu, mon Sauveur !\nIls passent, tu ne passes pas;\nTu suffis à mon cœur.\nDans le deuil ou la pauvreté,\nDans l’exil ou l’adversité,\nTu restes ma félicité,\nO mon Dieu, mon Sauveur.\n\n3. Je serai toujours avec Toi,\nO mon Dieu, mon Sauveur !\nRien ici-bas, non, rien ne doit\nM’arracher de ton cœur.\nLes vents peuvent se déchaîner,\nLes torrents peuvent déborder :\nTa grâce est mon ferme rocher,\nO mon Dieu, mon Sauveur !\n\n4. Par la main droite tu m’as pris,\nO mon Dieu, mon Sauveur\nPar ton conseil, tu me conduis\nAu repos sur ton cœur;\nEt quand viendra le dernier jour,\nTu m’ouvriras avec amour\nLes portes du divin séjour,\nO mon Dieu, mon Sauveur !''',
+    numero: 206,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_207',
+    titre: 'TIENS DANS TA MAIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Tiens dans ta main,\nTa main puissante et forte,\nTon faible enfant\nQui seul ne peut marcher\nVers toi Seigneur,\nTout mon désir se porte,\nSur mon chemin\nGarde-moi de broncher!\n\n2. Tiens dans ta main\nTous les jours de ma vie,\nQu’ils soient des jours\nDe peine ou de bonheur\nQue de t’aimer,\nSoit toute mon envie,\nQue je sois à toi, Jésus,\nMon Sauveur!\n\n3. Tiens dans la main,\nMon cœur plein de faiblesse,\nSans ton secours\nJe ne puis faire un pas\nEcoute-moi, regarde ma tristesse,\nViens, secours- moi,\nNe m’abandonne pas !\n\n4. Tiens dans ta main,\nMa main parfois tremblante,\nQuand vient l’épreuve\nEt ses jours de douleur.\nDonne à ma foi, souvent si chancelante,\nPlus de douceur, de paix et de ferveur!\n\n5. Tiens dans ta main mon âme\nTout entière;\nRévèle-moi,\nJésus, tout ton amour;\nSois mon rocher,\nMon ancre, ma lumière,\nMon Roi, mon\nMaître, Jésus ! Chaque jour.''',
+    numero: 207,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_208',
+    titre: 'COMME UN FLEUVE IMMENSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Comme un fleuve immense\nEst la paix de Dieu\nParfaite elle avance\nVainqueur en tout lieu;\nParfaite elle augmente\nConstamment son cours;\nParfaite sa pente\nS’abaisse toujours.\n\nChœur\nFondes sur Dieu même,\nNos cœurs à jamais\nOnt pour bien suprême\nSa parfaite paix.\n\n2. Sous ta main meurtrie\nSe brise, O mon Roi !\nToute arme ennemie\nQu’on forge pour moi !\nRien ne peut me nuire\nNi troubler mon cœur,\nTu veux me conduire\nTu seras Vainqueur.\n\n3. Tu traces ma voie:\nJ’y marche avec foi;\nL’épreuve et la joie\nMe viennent de toi !\nCadran de nos vies\nMarque, chaque jour,\nLes heures bénies\nDu soleil d’amour!\n\n4. Océan de gloire,\nPaix de mon Sauveur !\nGage de victoire\nTrésor de bonheur\nTa grâce infinie,\nCoulant nuit et jour,\nInonde ma vie\nDe vagues d’amour!\n\nChœur\nSion ta promesse,\nO Jésus mon Roi !\nJe trouve sans cesse\nPaix parfaite en toi.''',
+    numero: 208,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_209',
+    titre: 'NE CRAINS RIEN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ne crains rien je t’aime !\nJe suis avec toi ! Promesse suprême,\nQui soutient ma foi\nLa sombre vallée n’a plus de terreur,\nL’âme consolée,\nJe marche avec mon Sauveur.\n\nChœur\nNon, jamais tout seul,\nNon, jamais ! Tout seul,\nJésus mon Sauveur me garde,\nJamais ne me laisse seul.\nNon, jamais tout seul,\nNon, jamais tout! Seul,\nJésus mon Sauveur me garde.\nJe ne suis jamais tout seul.\n\n2. L’aube matinière\nNe luit qu’aux beaux jours,\nJésus, ma lumière.\nM’éclaire toujours !\nQuand je perds de vue\nL’astre radieux.\nA travers la nue,\nJésus me montre les cieux !\n\n3. Les dangers accourent.\nSubtils, inconnus:\nDe près ils m’entourent,\nPlus près est Jésus,\nQui dans le voyage,\nMe redit: “ C’est moi.\nNe crains rien: courage\nJe suis toujours avec toi.''',
+    numero: 209,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_210',
+    titre: 'JAMAIS DIEU NE DELAISSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jamais Dieu ne délaisse\nQui se confie en lui\nSi le monde m’oppresse,\nJésus est mon appui.\nCe Dieu bon et fidèle\nGarde en sa paix les siens\nPour la vie éternelle,\nEt les comble de biens.\n\n2. Je veux, sachant qu’il m’aime,\nMe remettre à ses soins:\nBeaucoup mieux que moi-même\nIl connaît mes besoins.\nCe Dieu plein de tendresse\nConfondrait-il ma foi ?\nNon; plus le mal me presse.\nPlus il est près de moi.\n\n3. Monde! Ce qui t’enchante,\nBiens, honneurs, volupté,\nN’est plus ce qui me tente:\nTout n’est que vanité!\nMon trésor, mon partage,\nMon tout, c’est .Jésus-Christ,\nQui me donne pour gage\nLe sceau de son Esprit.\n\n4. Seigneur! par l’efficace\ndu sang versé pour moi.\nAccorde-moi la grâce\nDe vivre tout pour toi.\nC’est la vie éternelle\nDéjà dès ici-bas\nJusqu’au jour qui m’appelle\nA passer dans tes bras.''',
+    numero: 210,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_211',
+    titre: 'UN CHRETIEN, JE CROYAIS ETRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Un chrétien, je croyais être\nMais j’ignorais le bonheur,\nQue Jésus, mon divin Maitre\nVient apporter dans un cœur.\n\nRefrain\nOh ! La paix que Jésus donne,\nJe ne la connaissais pas,\nTout sur mon chemin rayonne,\nDepuis qu’il conduit mes pas.\n\n2. Sa puissance souveraine\nMaintenant règne sur moi ;\nDu péché brise la chaîne,\nMe rend vainqueur par la foi.\n\n3. Et, tranquillement j’avance,\nM’appuyant sur mon Sauveur\nSon adorable présence\nMe donne le vrai bonheur !''',
+    numero: 211,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_212',
+    titre: 'SEIGNEUR, TIENS MA MAIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Quand je craindrai sur la route,\nSeigneur, tiens ma main\nQuand m’assaillira le doute,\nSeigneur, tiens ma main!\n\nChœur\nSeigneur, tiens ma main !\n(Ma main) Seigneur,\nTiens ma main ! (Ma main)\nOh ! Sauveur incomparable,\nToujours tiens ma main !\n\n2. Quand le péché m’environne,\nSeigneur, tiens ma main !\nLa victoire, tu la donnes,\nSeigneur, tiens ma main !\n\n3. Dans la joie ou la tristesse,\nSeigneur, tiens ma main !\nDans la paix ou la détresse.\nSeigneur, tiens ma main !\n\n4. Dans la nuit d’épreuve amère.\nSeigneur, tiens ma main\nConduis-moi vers la lumière\nSeigneur, tiens ma main!\n\n5. Je verrai ta main meurtrie,\nPour toujours là-haut\nDans la céleste patrie,\nOh ! Divin Agneau.''',
+    numero: 212,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_213',
+    titre: 'QUEL AMI FIDELE ET TENDRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Quel ami fidèle et tendre\nNous avons en Jésus-Christ,\nToujours prêt à nous entendre,\nA répondre à notre cri\nII connaît nos défaillances,\nNos chutes de chaque jour.\nSévère en ses exigences,\nIl est riche en son amour.\n\n2. Quel ami fidèle et tendre\nNous avons en Jésus-Christ,\nToujours prêt à nous comprendre\nQuand nous sommes en souci!\nDisons-lui toutes nos craintes,\nOuvrons-lui tout notre cœur.\nBientôt ses Paroles saintes\nNous rendrons le vrai bonheur.\n\n3. Quel ami fidèle et tendre\nNous avons en Jésus-Christ,\nToujours prêt à nous défendre\nQuand nous presse l’ennemi !\nIl nous suit dans la mêlée,\nNous entoure de ses bras.\nEt c’est lui qui tient l’épée\nQui décide des combats.\n\n4. Quel ami fidèle et tendre\nNous avons en Jésus-Christ,\nToujours prêt à nous apprendre\nA vaincre en comptant sur lui\nS’il nous voit vrais et sincères\nA chercher la sainteté,\nIl écoute nos prières\nEt nous met en liberté.\n\n5. Quel ami fidèle et tendre\nNous avons en Jésus-Christ!\nBientôt Il viendra nous prendre\nPour être au ciel avec lui.\nSuivons donc l’étroite voie\nEn comptant sur son secours.\nBientôt nous aurons la joie\nDe vivre avec lui toujours.''',
+    numero: 213,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_214',
+    titre: 'O JOUR BENI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. O jour béni, jour de victoire\nQue je ne saurais oublier;\nJ’ai vu, j’ai vu le Roi de gloire\nApparaissant sur mon sentier\nSa beauté, sa gloire infinie\nDe tous les côtés m’entourait;\nSon regard, qui porte la vie,\nSur ma pauvre âme s’abaissait.\n\n2. Son manteau couvrait ma misère,\nSes bras me serraient sur son cœur;\nIl me portait dans sa lumière,\nLoin du péché, de la douleur\nDe sa main essuyant mes larmes\nIl me parlait de son amour:\nViens mon enfant, sois sans alarmes;\nJe te prends à moi sans retour.\n\n3. Et je suis dans cette retraite.\nDont je ne sortirai jamais,\nEt je goûte une paix parfaite.\nOù ma foi s’abreuve à longs traits\nNon, tout ceci n’es point un rêve.\nMais la grande réalité;\nC’est un jour nouveau qui se lève,\nQui doit durer l’éternité.\n\n4. En avant donc, avec courage.\nAvec espoir, avec bonheur\nJe me consacre sans partage\nA mon Dieu, mon Roi, mon Sauveur.\nIl dit à mon âme ravie :\nNe t’occupe plus que de moi,\nEt je dirigerai ta vie\nEt je m’occuperai de toi.\n\n5. Il a saisi mes mains tremblantes;\nJ’ai dit amen à ce contrat\nIl étend Ses mains bénissantes;\nC’est en effet lui qui combat\nEt les yeux fermés, je m’avance,\nTranquille, sur le droit chemin.\nJ’entonne un chant de délivrance;\nIl peut tout, car je ne suis irien !''',
+    numero: 214,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_215',
+    titre: 'SUR TOI JE ME REPOSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Sur toi je me repose,\nO Jésus, mon Sauveur !\nFaut-il donc autre chose\nPour un pauvre pécheur ?\nConduit par ta lumière,\nGardé par ton amour,\nVers la maison du Père\nMarchant de jour en jour…\n\nRefrain\nSur toi je me repose,\nO Jésus, mon Sauveur !\nFait-il donc autre chose\nPour un pauvre pécheur ?\n\n2. Ah ! Ma misère est grande !\nMais tu m’as pardonné ;\nSainte et vivante offrande\nPour moi tu t’es donné ;\nEt de toute souillure,\nPar le sang de ta croix,\nMon âme devient pure,\nTu l’as dit, je le crois !\n\n3. Moi-même en sacrifice\nImmolé désormais, Seigneur,\nA ton service\nMe voici pour jamais !\nQu’importe ma faiblesse,\nPuisque je t’appartiens :\nTu n’as point de richesse\nQui ne soit pour les tiens,\n\n4. Au plus fort de l’orage\nTu te tiens près de moi,\nRanimant mon courage.\nEt soutenant ma foi ;\nC’est dans ton cœur qui m’aime\nQue tu sais me cacher ;\nEn vain Satan lui-même\nVoudrait m’en arracher…''',
+    numero: 215,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_216',
+    titre: 'FACE A FACE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Voir mon Sauveur face à face\nVoir Jésus dans sa beauté,\nO joie ! Ô suprême grâce !\nO bonheur ! Félicité !\n\nChœur\nOui, dans ta magnificence\nJe te verrai, divin Roi !\nPour toujours en ta présence\nJe serai semblable à toi !\n\n2. Ta gloire est encor voilée,\nAh ! D’un voile ensanglanté!...\nBientôt sera révélée\nTon ineffable beauté !\n\n3. Oh ! Quels transports d’allégresse,\nQuand tes yeux baissés sur moi,\nMe diront avec tendresse :\n’’Je mourus aussi pour toi !’’''',
+    numero: 216,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_217',
+    titre: 'IL VA VENIR, LE SEIGNEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Il va venir, le Seigneur que j’adore.\nBientôt sa voix retentira du ciel.\nA mes regards l’horizon se colore\nDes purs rayons du Soleil éternel.\n\nChœur\nGloire à toi seul,\nSeigneur Jésus,\nGloire à jamais,\nGloire à toi nom !\nDe ton beau ciel\nJe ne sortirai plus\nEt pour toujours\nJ’exalterai ton nom.\n\n2. Qu’autour de moi\nS’élève la tempête,\nJe suis en paix,\ncar tu veilles sur moi ;\nJe puis, ô mon Sauveur,\nLever la tête,\nTu vas venir\nMe prendre auprès de toi.\n\n3. Maison du Père,\nOù ton amour m’appelle,\nSainte cité, demeure des élus,\nLes lieux qu’éclaire une gloire éternelle,\nMe sont ouverts\nPar toi-même, ô Jésus !\n\n4. Bonheur ineffable !\nQuand dans ta gloire,\nAux yeux des rachetés tu parais,\nJésus, avec le cri de la victoire\nPrès de toi, pour toujours\nTu me prendras.''',
+    numero: 217,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_218',
+    titre: 'OR, VERS MINUIT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Or, vers minuit, se fit entendre\nUn cri disant : ’’Voici l’Epoux !’’\nC’est Jésus ! Voyez-le descendre !\nAutour de lui rallions-nous.\n\nRefrain\nQue l’Eglise aujourd’hui\nS’apprête pour l’heure\nDe ce rendez-vous :\nC’est la veille d’un jour de fête:\n’’Voici l’Epoux ! ’’Voici l’Epoux !\n\n2. Cette espérance glorieuse\nRanime nos cœurs abattus\nOh ! Quelle perspective heureuse,\nD’être bientôt avec Jésus !\n\n3. Ceux qui dorment,\nDe leur poussière\nEntendront ta voix comme nous;\nEt, comme nous, loin de la terre,\nIront au-devant de l‘Epoux.''',
+    numero: 218,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_219',
+    titre: 'DANS LA PATRIE ETERNELLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Dans la patrie éternelle\nLe repos enfin m’attend,\nJésus l’a pour moi, rebelle,\nConquis au prix de son sang.\n\nRefrain\nJésus, Jésus m’y convie,\nPrès de l ‘arbre de la vie.\nIl promet une\nPatrie, un repos pour moi.\nAu péché je suis en butte.\nLà plus de mal, plus de chute,\nLe repos après la lutte,\nLe repos pour moi.\n\n2. Il prépare ma demeure\nPour toute l’éternité.\nQuand viendra ma dernière heure,\nTout sera félicité.\n\n3. Jamais douleur, ni tristesse\nNe seront près du Sauveur:\nTout sera chant d’allégresse.\nToute sainteté, tout bonheur.\n\n4. Nous verrons de Christ la gloire\nEt la mort ne sera plus\nTriomphez de sa victoire,\nO rachetés de Jésus !\nChantez, éclatez de joie.\nHeureux héritiers du ciel\nCar au terme de la voie\nEst un repos éternel!''',
+    numero: 219,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_220',
+    titre: 'AVEC ALLEGRESSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Avec allégresse\nMarcher vers le ciel,\nRegarder sans cesse\nNotre Emmanuel;\nPuiser foi nouvelle\nDans ce doux regard,\nDe l’âme fidèle, C’est la sûre part.\n\nRefrain\nFrères, frères, les cœurs en haut!\nJésus nous appelle,\nIl viendra bientôt. Jésus nous appelle.\nIl viendra bientôt.\n\n2. Les anges fidèles.\nLes saints rachetés,\nTroupes immortelles,\nDisent tes bontés\nJésus, Roi de gloire\nTon amour vainqueur,\nGage de victoire sauve le pécheur.\n\n3. Là, tout est lumière,\nPaix et sainteté;\nLà, plus de misère,\nTout est charité !\nSur ce doux rivage ont cessé les pleurs;\nJésus, Ton image est dans tous les cœurs.\n\n4. Amis, bon courage !\nL’étoile qui luit dissipe l’orage\nEt la sombre nuit.\nVeillons sur notre âme\nJésus vient bientôt !\nLui seul nous réclame:\nTous les cœurs en haut!\n\nRefrain\nFrères, frères, le ciel est près,\nJésus, Roi de gloire,\nY règne à jamais !\nJésus, Roi de gloire.\nY règne à jamais.''',
+    numero: 220,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_221',
+    titre: 'VERS LE CIEL',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Vers le ciel, vers le ciel,\nJ’entends Jésus ton appel,\nEt mon cœur vers toi s’élance\nDans la joyeuse espérance\nDe te voir, Emmanuel !\n\n2. Quel bonheur ! Quel bonheur.\nD’être auprès de toi, Seigneur!\nD’entrer dans la cité sainte,\nDélivré de toute crainte,\nA l’ abri du Tentateur.\n\n3. Ici-bas, ici-bas\nTout se flétrit sous nos pas.\nDe toi mon âme est avide ;\nJe voudrais\nD’un vol rapide,\nAller, ô Dieu ! Dans tes bras.\n\n4. Heureux jour, heureux jour\nOù s’ouvrira le séjour\nDe mon Sauveur que j’adore\nQuand brillera ton aurore ?\nJe l’attends, ô Dieu d’amour!''',
+    numero: 221,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_222',
+    titre: 'LA CITE DU CIEL',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Il est un espoir,\nQui toujours soulage\nLes cœurs fatigués et lassés du chemin ;\nIl est un repos au bout du voyage :\nA toutes nos luttes,\nIl est une fin.\n\nRefrain\nC’est la cité du ciel,\nLe bonheur éternel,\nSéjour où les élus\nContempleront Jésus !\n\n2. Il est un séjour où tout est lumière,\nOù rien de souillé,\nNi d’impur n’entrera,\nOù ne seront plus ni mort, ni misère,\nOù le racheté pour toujours chantera.\n\n3. Dans la cité sainte,\nIl n’est plus de temple :\nLe Seigneur\nEt l’Agneau sera avec nous\nPour l’éternité, l’Eglise contemple\nSon bien-aimé\nSauveur, son Chef, son Epoux.\n\n4. O Jérusalem !\nCéleste patrie !\nTout mon cœur s’enflamme,\nQuand je pense à toi.\nAgneau mis à mort,\nPrince de la vie,\nEntends mes soupirs\nEt l’appel de ma foi.\n\nRefrain\nBientôt, bientôt au ciel,\nOh ! Bonheur éternel,\nAvec tous les élus,\nJe te verrai, Jésus.''',
+    numero: 222,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_223',
+    titre: 'CONNAIS-TU CETTE CITE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Connais-tu cette cite,\nLa cité céleste?\nDans ses murs tout est clarté\nPlus d’ombre funeste.\nPèlerins et voyageurs,\nIci-bas dans les douleurs.\nToujours ce trésor nous reste,\nLa cité céleste.\n\n2. Connais-tu cette cité, la cité bénie?\nOu tout est félicité sublime harmonie.\nL’Agneau seul est son soleil\nEt son éclat sans pareil\nIllumine vivifie\nLa cité bénie.\n\n3. D’or, de perles et d’azur\nEst notre patrie !\nConnais-tu le fleuve pur\nL’arbre de la vie,\nPlus de fardeaux à jamais,\nPour les élus tout est paix !\nDe Dieu la cité chérie,\nC’est notre patrie.\n\n4. O Salem repos si doux,\nMon cœur te désire !\nAprès son chef, son époux,\nL’Eglise soupire !\nEtre à toujours devant toi\nMon Seigneur ! Mon divin Roi\nPour te chanter et te dire\nMon cœur te désire.''',
+    numero: 223,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_224',
+    titre: 'CONTEMPLER MON DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Contempler mon Dieu sur son trône,\nVivre avec Jésus\nDans Le ciel, (Dans le ciel)\nJeter à ses pieds ma couronne,\nC’est là le bonheur éternel.\n(Dans le ciel).\n\nChœur\nDans le ciel. (Dans le ciel),\nDans le ciel, (dans le ciel).\nVivre avec Jésus\nDans le ciel, (dans le ciel),\nDans le ciel.\n(Dans le ciel), dans le ciel,\nDans le ciel, c’est là le bonheur éternel.\n\n2. Unir ma voix aux chœurs des anges.\nBénir, louer Emmanuel,\n(Dans le ciel),\nChanter à jamais ses louanges,\nC’est là le bonheur éternel.\n(Dans le ciel).\n\n3. Jouir d’une paix infinie,\nRevoir ; mes amis dans le ciel,\n(Dans le ciel)\nPosséder l’immortelle vie,\nC’est là le bonheur éternel\n(Dans le ciel).\n\n4. Retrouver les saints dans la gloire,\nPrès du trône de l’Eternel,\n(Dans le ciel),\nCélébrer la même victoire,\nC’est là le bonheur éternel.\n(Dans le ciel).''',
+    numero: 224,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_225',
+    titre: 'AU CIEL EST LA MAISON DU PERE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Au ciel est la maison\nDu Père étincelante de beauté\nTout en elle est gloire et lumière,\nIneffable félicite.\n\nChœur\nVers le ciel, (Vers, le ciel),\nVers le ciel (vers le ciel),\nNous marchons vers le ciel,\nC’est au ciel, (C’est au ciel),\nC’est au ciel (c’est au ciel)\nQu’est notre héritage éternel.\n\n2. Là le bonheur est sans mélange,\nLà le péché ne règne plus:\nC’est l’amour et c’est la louange,\nC’est la présence de Jésus.\n\n3. Dans nos fatigues sur la terre,\nDans nos combats et nos douleurs,\nC’est toi, douce maison du Père,\nQue cherchent nos yeux et nos cœurs.\n\n4. Jours de peine ou jours d’allégresse,\nDouce brise ou vents orageux,\nPoussez-nous, poussez-nous sans cesse\nVers notre demeure des cieux.''',
+    numero: 225,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_226',
+    titre: 'NOUS ATTENDONS LE SAUVEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Nous attendons le Sauveur glorieux\nD’un cœur joyeux, remplis de confiance\nIl va régner sur la terre et les cieux,\nDans le beau jour de notre délivrance.\n\nRefrain\nVoir face à face notre Sauveur\nOh! Quelle grâce,\nQuel parfait bonheur!\nVoir face à face notre Sauveur,\nOh! Quel parfait bonheur.\n\n2. Autour de lui nous nous retrouverons\nEn un clin d’œil Formés à son image\nA sa rencontre, ensemble nous irons\nEt le servir sera notre partage.\n\n3. Là le soleil chasse l’obscurité,\nUn jour sans fin succède\nA la nuit sombre :\nPlus d’ouragan dans ce port abrité,\nOh ! Le bonheur sera pur et sans nombre.\n\n4. Tout près de lui\nNous pourrons approcher,\nEt notre main par la sienne tenue,\ndans les lieux saints\nQu’il fera beau marcher,\nAprès la foi, pour toujours par la vue.''',
+    numero: 226,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_227',
+    titre: 'IL EST UN PAYS MAGNIFIQUE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Il est un pays magnifique,\nSans péché, sans maux ni chagrins,\nOù des élus le saint cantique\nS’unit aux chœurs des séraphins.\n\nChœur\nAllons tous, allons tous,\nAllons dans ce beau pays promis ;\nAllons tous, allons tous\nAllons dans ce beau pays promis,\nAllons tous, allons tous\nAllons dans le paradis.\n\n2. C’est le pays de la lumière,\nDu vrai repos et de la paix ;\nC’est là que la gloire du Père\nBrille toujours dans son palais.\n\n3. C’est la cité sainte et bénie,\nBrillante d’or et de cristal,\nOù croit aussi l’arbre de vie,\nEt d’où l’Agneau chasse tout mal.\n\n4. C’est le pays de la promesse\nQue la foi nous fait entrevoir.\nAh ! Puissions-nous louer\nSans cesse Jésus,\nPour ce précieux espoir.''',
+    numero: 227,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_228',
+    titre: 'LA TROMPETTE A RETENTI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. La trompette à retenti:\nEcoutez, écoutez,\nDu ciel résonne ce cri\nLe Seigneur revient !\nOh toi qui sommeilles\nEcoutez, écoutez,\nViens et te réveille :\nLe Seigneur revient !\n\n2. Entendez-vous le clairon ?\nEcoutez, écoutez,\nL’épouse en connaît le son :\nJésus vient bientôt !\nEt dans l’allégresse\nEcoutez, écoutez,\nSon cœur dit sans cesse :\nJésus, vient bientôt !\n\n3. La trompette retenti\nEcoutez, écoutez,\nLevez-vous, il est minuit,\nVoici l’époux vient !\nAu banquet de fête\nEcoutez, écoutez\nQue chacun s’apprête:\nVoici, l’Epoux vient !''',
+    numero: 228,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_229',
+    titre: 'ICI PLEURER ET SOUFFRIR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ici pleurer et souffrir,\nVoir ceux qu’on aime mourir ;\nAux cieux plus de tristesse!\n\nRefrain\nOh ! Nous seront aux cieux\nPour toujours, toujours heureux,\nPrès du seigneur Jésus,\nOù l’on ne se quitte plus !\n\n2. Purs, par le sang de l’Agneau,\nRachetés, nés de nouveau,\nSaints comme Dieu Lui-même.\n\n3. Nous verrons notre sauveur :\nO grâce, O gloire, O bonheur !\nOui, nous verrons sa face !\n\n4. D’âge en âge, en son saint lieu,\nNous dirons à notre Dieu\nLe cantique qu’il nous aime.''',
+    numero: 229,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_230',
+    titre: 'SAINTE SION',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Sainte Sion, o patrie éternelle !\nSéjour des cieux qu’habite le grand Roi,\nOù doit sans fin régner l’âme fidèle,\nC’est mon bonheur que de penser à toi.\n\n2. Dans tes parvis tout est joie, allégresse,\nChants de triomphe ineffables\nPlaisirs là plus de deuil,\nPlus de maux de détresse,\nLà plus d’ennuis,\nDe langueurs, de soupirs.\n\n3. Tes habitants ne craignent plus l’orage;\nIls sont au port, ils y sont pour jamais :\nLeur ciel est pur, il n’a plus de nuage,\nDieu dans leur cœur fait abonder la paix.\n\n4. O mon sauveur, qui par ton sacrifice,\nAux rachetés ouvris ces nouveaux cieux,\nTu m’as couvert de ta sainte justice,\nVers ta Sion j’élevé en paix mes vœux.''',
+    numero: 230,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_231',
+    titre: 'OH ! QUAND SERA-CE FILS DE DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh ! Quand sera-ce, fils de Dieu,\nQue ton Eglise émue\nVerra son Epoux, du saint lieu\nDescendre sur la nue ?\nRéponds à notre cri seigneur\nEt viens bientôt puissant vainqueur!\nOh ! Viens, seigneur Jésus !\nOh ! Viens seigneur Jésus !\n\n2. Tu nous donnes ta douce paix,\nNous sentons ta présence ;\nTu ne nous laisseras jamais,\nC’est là notre assurance,\nMais quand pourrons-nous\nDonc enfin te voir ô notre Epoux divin ?\nOh ! Viens, seigneur Jésus !\nOh ! Viens, seigneur Jésus !\n\n3. De tous tes ennemis,\nO Dieu, Nous voyons la puissance :\nQue de rebelles en tout lieu,\nDe vice et de souffrance!\nViens bientôt, grand triomphateur,\nMettre un terme à tant de douleur!\nOh ! Viens, seigneur Jésus!\nOh ! Viens, seigneur Jésus!\n\n4. Veillez, prier, nous dit Jésus,\nTenez vos lampes prêtes !\nQue rien ne nous entrave plus,\nLevons, levons nos têtes!\nIl vient, il vient, entendez-vous\nCe cri’\nVoici, voici l’Epoux!\nTu viens, seigneur Jésus!\nTu viens seigneur Jésus!''',
+    numero: 231,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_232',
+    titre: 'NOMBREUX COMME LE SABLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh ! Quel beau jour, ou devant ta face,\nTous tes rachetés apparaîtront,\nEn célébrants ta gloire et ta\ngrâce de leurs chants les cieux\nretentiront.\n\nChœur\nNombreux comme le sable des plages !\nNombreux comme le sable des plages !\nOh ! Que ce sera beau,\nLorsque nous irons là-haut.\nAussi nombreux que le sable des plages !\n\n2. Je la vois cette armée innombrable.\nSes rangs reflétant l’éclat des cieux.\nTressaillant d’un bonheur ineffable.\nSur le seuil du séjour radieux.\n\n3. De son trône éclatant de lumière,\nJ’entends la douce voix du Seigneur :\nVenez, vous bien-aimés de mon Père,\nLa couronne est à chaque vainqueur.\n\n4. Puis au sein du vaste océan d’anges\nNos cohortes déversent leurs flots ;\nL’Univers tremble au son des louanges ;\nPlus de combats, de pleurs,\nDe sanglots!''',
+    numero: 232,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_233',
+    titre: 'QUEL BONHEUR JÉSUS VIENT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Quel bonheur ! Jésus vient !\nSa voix se fait entendre ;\nLes ténèbres s’en vont ;\nVoici le point du jour.\nQu’il nous trouve veillant,\nLes reins ceints pour l’attendre,\nPortant du fruit pour lui,\nHeureux dans son amour !\n\n2. Bientôt près de son trône,\nOù notre âme ravie\nGoûtera le repos du séjour glorieux,\nNos yeux contempleront\nLe Prince de la vie,\nCelui qui s’abaissa\nPour nous ouvrir les cieux.\n\n3. Alors éclatera l’hymne de l’allégresse ;\nNos lèvres s’ouvriront\nDans un parfait bonheur ;\nEt tous, à l’unisson,\nRépéteront sans cesse\nLes gloires de l’Agneau,\nDu divin Rédempteur.''',
+    numero: 233,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_234',
+    titre: 'BIENTOT SEIGNEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Bientôt, Seigneur, tu reviendras !\nToi, notre Chef, notre espérance !\nJour de bonheur, de délivrance !\nAu ciel tu nous introduiras :\nTu reviendras !\n\n2. Tu l’as promis : plus qu’un instant,\nJe viens vous prendre dans la gloire ;\nJusqu’au signal de la victoire,\nVeuillez, priez, en combattant,\nPlus qu’un instant !\n\n3. Ne tarde plus : reviens,\nSeigneur !\nC’est le soupir de ton Eglise ;\nElle est à toi, tu l’as acquise,\nMourant pour elle, ô Rédempteur !\nReviens Seigneur !\n\n4. Reviens Seigneur\nPour ton retour, oh !\nTiens-nous prêts !\nQue nul des tiens, manquant de vie,\nNe soit confus à ton aspect.\nOui, tiens-nous prêts !''',
+    numero: 234,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_235',
+    titre: 'PELERIN SUR CETTE TERRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Pèlerin sur cette terre,\nJe m’avance vers le ciel,\nVers le pays de lumière,\nSéjour éternel !\nIci d’ennemis sans nombre\nJe me vois environné,\nMa route souvent est sombre,\nMais je suis aimé.\n\n2. Aimé du plus tendre Père\nQui m’a conduit en chemin.\nEt dirige ma carrière par sa sûre main.\nPendant l’épreuve et l’orage,\nDans l’angoisse et la douleur,\nSa voix me dit :\n« Prends courage,\nJe suis ton Sauveur ! »\n\n3. Travailler pour un tel Maître,\nLe servir en l’attendant,\nApprendre à le mieux connaître\nEn le contemplant!\nQuel bonheur incomparable,\nEt qu’il est heureux mon sort!\nOui, mon Sauveur adorable\nMe conduit au port !\n\n4. Le port, c’est le doux rivage\nOù cesseront tous nos pleurs,\nOù de Jésus-Christ l’image\nRavira nos cœurs.\nQu’importe donc la souffrance,\nJésus vient ! Levons les yeux !\nBien près est la délivrance,\nIIs s’ouvrent les cieux !''',
+    numero: 235,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_236',
+    titre: 'LE TEMPS S’ENVOLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Le temps s’envole et nous emporte,\nEn vain voulons-nous l’arrêter,\nSa course toujours la plus forte,\nSans trêve, rapide, nous porte….\nInutile de regretter.\n\n2. Le temps s’envole…et tous s’efface…\nLe monde n’est que vanité !\nSa gloire, ses faveurs, tout passe.\nDe ses attraits le cœur se lasse\nSur le seuil de l’Eternité.\n\n3. Le temps s’envole…\nEt tout rayonne\nSur ton chemin, sainte Cité !\nDu sauveur l’amour qui pardonne,\nInonde le cœur et l’étonne….\nIneffable félicité !\n\n4. Le temps s’envole\nEt notre Père nous prépare\nPour son séjour.\nDans tous nos cœurs\nSa grâce opère,\nIl recueille notre prière.\nFrères, croyons à son amour.\n\n5. Le temps s’envole…\nEt la souffrance\nLes pleurs, le désespoir, la mort.\nVont disparaître,\nEn la présence de Jésus-Christ\nNotre espérance,\nQuand nous entrerons dans le port.\n\n6. Le temps s’envole…\net sur la nue nos yeux\nContempleront Jésus.\nOh ! Quel jour pour l’Eglise émue\nQue la gloire de sa venue !\nQuel triomphe pour les élus !''',
+    numero: 236,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_237',
+    titre: 'QU’ILS SONT BEAUX SUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Qu’ils sont beaux sur les montagnes\nLes pieds de tes serviteurs,\nQui parcourent vers les campagnes,\nPrêchant la grâce aux pêcheurs !\nO délicieuse vie d’un serviteur de Jésus,\nQui pour son Maître s’oublie,\nEn annonçant ses vertus !\n\n2. Libre de toute autre chaîne,\nLe chrétien qui sert son Dieu,\nDans la souffrance\nEt la peine suit son modèle en tout lieu.\nIl faut qu’en vivante offrande\nIl se donne à son Sauveur ;\nC’est là ce que Dieu demande\nD’un fidèle serviteur.\n\n3. Au pécheur qui désespère\nAnnoncez la guérison,\nPrêchez la mort salutaire\nQui paya notre rançon.\nDans le cœur le plus aride,\nDieu fait jaillir en un jour\nLa source fraîche et limpide\nDe son éternel amour.\n\n4. Parlez du Dieu qui console\nA tous les cœurs affligés;\nQu’aux accents de sa Parole\nLes pécheurs soient réveillés.\nMontrez-leur, dans leur misère,\nCelui qui veut les sauver,\nEt que partout sur la terre\nOn apprenne à l’invoquer.''',
+    numero: 237,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_238',
+    titre: 'GLOIRE AU RESSUSCITE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Alléluia ! Jésus sort de la tombe,\nAdorons tous ce glorieux Sauveur.\nSous son pouvoir déjà\nLa mort succombe,\nJésus est Roi,\nIl est le grand vainqueur.\n\nChœur\nGloire, honneur, au Ressuscité ;\nGloire durant l’éternité !\nQue la terre, avec les cieux,\nChante son nom glorieux.\nGloire ! Alléluia !\n\n2. Alléluia ! Exaltons la victoire\nDe Jésus christ libérateur.\nIl nous invite à vivre pour sa gloire,\nNous le pourrons s’il vit en notre cœur.\n\n3. Alléluia ! Jésus nous justifie,\nDevant son père,\nIl plaide avec amour.\nQue peut la mort ?\nC’est lui qui vivifie ;\nIl nous attend au radieux séjour.''',
+    numero: 238,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_239',
+    titre: 'CHRIST EST MA PORTION',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Chœur\nO toi, Seigneur Jésus,\nintarissable Source de la paix, de la joie\nEt du seul vrai bonheur,\nViens Jésus, viens remplir mon cœur\nQui dans sa source depuis longtemps\nDéjà te désire,\nSeigneur. Daigne seul, en tout temps,\nOccuper mes pensées, tiens-les, Ö mon sauveur !\nSur toi seul attachées, car nul autre que toi,\nne peut, O rédempteur dans ce triste désert,\nSatisfaire mon cœur.\n\n1. De ton trône éternel,\nRayonnant de lumière\nO Dieu ! Ton œil sondera\nMon immense malheur\nEt d’en haut mesurant\nMa profondeur misère\nSur la terre tu vins pour me sauver\nSeigneur pour me donner\nDu ciel les splendeurs éternelles.\n\n2. Seigneur, que désormais\nMa constance devise,\nJusqu’au moment béni de ton prochain retour,\nPour m’introduire enfin dans la terre promise,\nSoit de vivre pour Toi, de croître en ton amour.\nAttache o mon sauveur !\nMon âme à ta parole,\nC’est elle qui soutient qui guide et qui console,\nEt qui, dans ce désert peut diriger mes pas,\nPour surmonter le monde\nEt tous ses vains appâts.''',
+    numero: 239,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_240',
+    titre: 'SEIGNEUR JESUS, BON BERGER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Seigneur Jésus !\nBon berger des petits agneaux :\nEfface tous mes péchés,\nPrend tous mes fardeaux.\nGarde-moi tout près de toi\nSur l’étroit chemin :\nTout les jours, oh !\nConduis moi par ta sure main.\n\n2. Et de ta parfaite paix,\nRemplis tout mon cœur.\nNe m’abandonne jamais,\nMon divin Sauveur.\nToi qui m’aimas le premier\nJe t’aime en retour :\nComment te remercier\nPour ton grand amour ?''',
+    numero: 240,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_241',
+    titre: 'TOUT JOYEUX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Tout joyeux bénissons le Seigneur,\nChantons et célébrons ses louanges\nAdorons avec foi le Sauveur,\nNous joignant aux célestes phalanges.\n\nChœur\nGloire à Dieu ! (Gloire à Dieu !)\nGloire à Dieu ! (Gloire à Dieu !)\nQue ce chant retentisse en tout lieu !\n(Gloire à Dieu !)\nGloire à Dieu ! (Gloire à Dieu !)\nGloire à Dieu ! (Gloire à Dieu !)\nQue ce chant retentisse en tout lieu !\n\n2. Dieu, dans son incomparable amour,\nDu ciel envoya son fils unique,\nEt la terre et les cieux,\nDans ce jour, s’unissent\nPour chanter ce cantique :\n\n3. Le châtiment qui produit la paix,\nJésus-Christ l’a subi pour mon âme ;\nIl voulut expier nos forfaits,\nEn mourant, lui sur le bois infâme.\n\n4. Nous voulons en retour,\nBon Sauveur, t’aimer par-dessus\nTout autre chose\nForme ton amour\nDans notre cœur,\nEt puis de chacun de nous dispose.''',
+    numero: 241,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_242',
+    titre: 'JE SUIS PETIT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Je suis petit, mais que m’importe ?\nDu bon berger je suis l’Agneau.\nJe puis donc entrer\nPar la porte qui mène\nAu ciel tout son troupeau.\n\nRefrain\nAh ! Que je mette, o bon Sauveur !\nSous ta houlette, sous Ah !\nQue je mette,\nTa houlette, Mon jeune cœur !\n\n2. Je suis petit mais de mon âge,\nJésus tu fus tout comme moi ;\nSi donc ton esprit me rend sage,\nAlors je serai comme toi.\n\n3. Je suis petit,\nMais si ma vie\nEst aussi chétive ici bas,\nJésus, la tienne est infinie,\nEt d’elle tu m’enrichiras.''',
+    numero: 242,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_243',
+    titre: 'SUIVEZ L’AGNEAU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Suivez, suivez l’agneau\nJusqu’au soir de la vie ;\nSuivez, suivez-le tous,\nEnfants, dès le berceau.\nAu bonheur des élus sa grâce\nVous convie :\nSuivez (suivez)\nToujours (toujours)\nSuivez toujours l’Agneau !\n\n2. Suivez-le sans frayeur\nAu jour de la tristesse,\nDéposez dans son sein\nVotre pesant fardeau\nSuivez-le dans la paix\nAu jour de l’allégresse :\nSuivez (suivez) toujours\n(toujours)\nSuivez, suivez l’Agneau !\n\n3. Mais suivez-le partout ;\nLe berger qui vous mène\nNe saurait égarer son cher,\nSon faible agneau.\nOui le joug du seigneur\nEst une douce chaîne :\nSuivez (suivez) toujours\n(toujours)\nSuivez partout l’Agneau !\n\n4. Suivez-le sans broncher !\nLe chemin solitaire\nDoit vous conduire un jour,\nAu céleste repos,\nMais pour le suivre au ciel,\nSuivez-le sur la terre :\nSuivez (suivez) toujours\n(toujours)\nNe suivez que l’Agneau !''',
+    numero: 243,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_244',
+    titre: 'BIENTOT JÉSUS VA NOUS PRENDRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Bientôt Jésus va nous prendre,\nAuprès de lui dans le ciel ;\nIl nous a dit de l’attendre,\nJusqu’au jour de son appel.\n\nRefrain\nNous avons (nous avons)\nla victoire!\nNous vivons avec Jésus\ndans le ciel!\n(Dans le ciel!)\nA toi seul (à toi seul) la gloire!\nOh ! Viens bientôt,\nEmmanuel! (Emmanuel!)\n\n2. Péchés, travaux et souffrances,\nCesseront et pour toujours.\nDevant sa sainte présence,\nNous chanterons son amour.\n\n3. Combattons avec courage,\nAttendant ce jour heureux.\nEt chantons malgré l’orage :\nNous sommes victorieux !''',
+    numero: 244,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_245',
+    titre: 'BON SAUVEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Bon sauveur, berger fidèle,\nConduis-nous par ton amour;\nEt, de ta main paternelle,\nNourris nous au jour le jour.\nBéni sois-tu, tendre maître.\nJésus, nous sommes à toi,\nA toi seul nous voulons être\nBéni sois-tu, notre Roi !\n\n2. Dans tes riches pâturages,\nApprends-nous à te chercher ;\nQue sous tes divins ombrages\nNous sachions toujours marcher.\nToi qui nous reçus par grâce,\nBien que faibles et pécheurs,\nPar ta puissance efficace\nPurifie encor nos cœurs.\n\n3. Enfants, nous voulons Te plaire,\nT’obéir,\nGarder Ta loi.\nOh ! Pour cela daigne faire\nQue nous vivions par la foi !\nBon sauveur, berger fidèle,\nPour que nous suivions tes pas,\nRemplis-nous d’un nouveau zèle\nEt porte-nous dans tes bras.''',
+    numero: 245,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_246',
+    titre: 'LE SEIGNEUR M’AIME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Le Seigneur m’aime,\nBonheur suprême, le Seigneur m’aime\nIl est amour!\n\nRefrain\nJe redirai toujours\nLe Seigneur m’aime,\nLe Seigneur m’aime\nIl est amour!\n\n2. Dans la souffrance sans espérance,\nDans la souffrance je gémissais.\nPortant ma peine, ma lourde chaîne,\nPortant ma peine, j’étais perdu.\n\n3. Dieu, dans sa grâce prit à ma place,\nDieu dans sa grâce prit son cher fils.\nEn sacrifice à la justice\nEn sacrifice il vint s’offrir.\n\n4. Le poids immense de mon offense.\nLe poids immense tomba sur lui.\nSur le calvaire loin de son père,\nSur le calvaire il vint mourir.\n\n5. Il purifie toute ma vie,\nIl purifie avec son sang.\nA toi la gloire et la victoire,\nA toi la gloire Agneau de Dieu.''',
+    numero: 246,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_247',
+    titre: 'SOUS LE SANG',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Sous le sang, le précieux sang,\nSous le sang, le précieux sang,\nJe reçois un cœur nouveau,\nSous le précieux sang !''',
+    numero: 247,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_248',
+    titre: 'JESUS QUITTA LE TRONE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus quitta le trône de son Père\nEt descendit ici-bas sur la terre ;\nIl accepta la crèche pour berceau,\nLui, Roi des roi,\nLe fils du Dieu très haut !\n\nRefrain\nOh ! Oui c’est vrai !\nJe sais que c’est vrai !\nIl est écrit cela suffit !\nQue Jésus m’aime !\nOh ! Bonheur suprême !\nLa Bible me le dit\n\n2. En tous les lieux portant la délivrance,\nFaisant le bien, guérissant la souffrance,\nIl pardonnait au pécheur repentant,\nIl bénissait jusqu’au petit enfant.\n\n3. Il fut cloué sur la croix méprisable.\nLui, juste et saint,\nMourut pour moi, coupable.\nPour me sauver,\nSon sang fut répandu ;\nC’est pourquoi j’aime le Seigneur Jésus !\n\n4. Plus que vainqueur\nIl sortit de la tombe,\nGloire à l’Agneau,\nDivin Sauveur du monde!\nIl règne au ciel, intercède pour moi,\nEt vient bientôt me chercher : Je le crois!''',
+    numero: 248,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_249',
+    titre: 'RAYON DE SOLEIL',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus me demande d’être\nUn rayon de soleil,\nQui gaiement fasse connaître\nSon amour sans pareil,\n\nRefrain\nUn rayon de joie,\nUn doux rayon de soleil,\nQue Jésus envoie !\nOh ! Quel bonheur sans pareil!\n\n2. Jésus me demande\nD’être un rayon bienfaisant,\nComme un reflet de ce maître\nAimable et complaisant.\n\n3. Oui, seigneur, donne-moi\nD’être comme un rayon d’espoir\nParaissant à la fenêtre\nQuand le ciel est tout noir.\n\n4. Oh ! Que m’oubliant moi-même,\nJe ne m’efforce plus\nQue d’être pour ceux que j’aime,\nUn reflet de Jésus.\n\n5. Que partout mon gai sourire\nEt ma joyeuse humeur\nSoit un baume à qui soupire\nEt réjouisse un cœur !\n\nRefrain\nQue jésus m’emploie\nEt qu’il me rende pareil\nAux rayons de joie,\nAux doux rayons du soleil !''',
+    numero: 249,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_250',
+    titre: 'CHAQUE JOUR DE MA VIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Chaque jour de ma vie,\nJe veux dire au Seigneur :\nApprends-moi, je te prie,\nA te donner mon cœur.\n\n2. Dès que le jour commence,\nJe veux dire au Seigneur :\nTiens-moi dans ta présence,\nMon Dieu, mon Rédempteur !\n\n3. Souvent dans la journée,\nJe veux dire au Seigneur :\nToi qui me l’as donnée,\nSois-en le bienfaiteur.\n\n4. Et quand vient la nuit sombre,\nJe veux dire au Seigneur :\nTu me vois sous ton ombre,\nGarde-moi ta faveur.''',
+    numero: 250,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_251',
+    titre: 'DES AUJOURD’HUI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Dès aujourd’hui je veux aimer\nDe tout mon cœur le Bon Berger ;\nPuisqu’en son amour\nIl m’appelle je veux saisir Sa main fidèle.\nSeigneur Jésus, je viens à toi,\nDu mal pour toujours garde-moi,\n\n2. Dès ce jour je veux obéir\nA mon sauveur et le servir ;\nPuisqu’à le suivre\nIl me convie,\nJe veux lui consacrer ma vie,\nSeigneur jésus, je viens à toi,\nA ton service accepte-moi,\nA ton service accepte-moi !\n\n3. Dès aujourd’hui je suis heureux,\nMon nom est écrit dans les cieux.\nBientôt je quitterai la terre\nPour le pays de la lumière\nSeigneur Jésus, je suis à toi,\nJusqu’à ton trône porte-moi,\nJusqu’à ton trône porte-moi!''',
+    numero: 251,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_252',
+    titre: 'JESUS NE CHANGE PAS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus ne change pas,\nNe change pas, ne change pas,\nJésus ne change pas, non, jamais !\n\n2. Jésus m’a pardonné,\nM’a pardonné, m’a pardonné,\nJésus m’a pardonné,\nPour toujours !\n\n3. Jésus me satisfait,\nMe satisfait, me satisfait,\nJésus me satisfait\nPour toujours !\n\n4. Jésus me recevra,\nMe recevra, me recevra,\nJésus me recevra\nDans le ciel.\n\n5. Toujours près de jésus !\nPrès de Jésus, près de Jésus,\nToujours près de Jésus,\nje serai.\n\n6. Gloire, gloire à Jésus !\nGloire à Jésus! Gloire à Jésus,\nGloire, gloire à Jésus !\nA jamais !''',
+    numero: 252,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_253',
+    titre: 'AU PETIT !',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Au petit Jésus dit :’\n’je veux être Ton seul Maître’’.\nRéponds-lui :’’ Aujourd’hui,\nSous ta grâce je me place.\n\n2. Et demain, que ta main\nA sa guise me conduise.\nEn ce jour, ton amour\nPour la vie me convie.\n\n3. A mon cœur, Bon Sauveur,\nFait entendre ta voix tendre.\nMon désir, mon plaisir\nEst de vivre pour te suivre.\n\n4. Près de toi, par la foi,\nQu’à toute heure je demeure.\nQuel bonheur !\nO Seigneur,\nBien suprême, ton cœur m’aime !''',
+    numero: 253,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_254',
+    titre: 'DAVID N’AVAIT RIEN QUE SA FRONDE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. David n’avait rien que sa fronde\npour lutter contre le géant : Mais\nau fond de son cœur D’enfant\nhabitait une foi profonde. Il savait\nbien que l’Eternel combattrait\nAvec lui pour sauver Israël !\n\n2. Il avançait ferme et tranquille\nContre le philistin puissant.\nQui, l’œil hautain et méprisant,\nRiait de son air juvénile,\nEt se moquait de l’éternel,\nQui choisissait David pour sauver Israël !\n\n3. Mais sans trembler,\nD’une main sure, l’enfant,\nQue son Dieu dirigeait,\nFit au colosse, d’un seul jet,\nUne inguérissable blessure.\nEt c’est ainsi que l’éternel,\nSelon son bon plaisir, délivrait Israël !\n\n4. Comme David tu nous appelles\nA de grands combats, O Seigneur !\nPour en sortir à ton honneur,\nComme David, rends-nous fidèles,\nEt l’on verra que l’Eternel se tient\nAuprès de nous,\nComme auprès d’Israël.\n\n5. Et si le mal nous environne,\nEt S’il devient plus fort que nous,\nNous t’implorerons à genoux,\nToi qui ne rejettes personne !\nEt, répondant à notre appel,\nTu lutteras pour nous,\nO Sauveur, Eternel !''',
+    numero: 254,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_255',
+    titre: 'SEIGNEUR JÉSUS UNE VASTE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Seigneur Jésus !\nUne vaste carrière s’ouvre\nAux travaux des messagers de paix ;\nDe l’Evangile ils portent tes bienfaits\nAux malheureux privés de sa lumière.\nA leurs efforts donne un succès heureux !\nNous te prions pour eux.\n\n2. Lorsque partout ces messages fidèles,\nO Rédempteur !\nProclameront ta croix,\nDans les palais, en présence des rois,\nDans les déserts, dans les îles nouvelles ;\nÀ leurs efforts\nDonne un succès heureux !\nNous te prions pour eux.\n\n3. Nous t’en prions, Seigneur !\nBénis leur âme :\nQue leur appui soit dans la vérité.\nNous te prions pour que ta charité\nBrûle en leur cœur\nD’une immortelle flamme.\nA leur amour réponds du haut des cieux !\nNous te prions pour eux.''',
+    numero: 255,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_256',
+    titre: 'LA VOIX DE CHRIST NOUS APPELLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. La voix de christ nous appelle ;\nIl est temps de s’éveiller :\nLa moisson est vaste et belle !\nQui veut pour moi travailler ?\nC’est ton sauveur,\nÖ mon frère, dont l’appel s’adresse à toi.\nRéponds-lui, d’un cœur sincère :\nMe voici ; maître, prends-moi’’\n\n2. Sans franchir les mers bruyantes,\nTu peux annoncer Jésus.\nQue d’âmes insouciantes,\nDes cœurs souffrants et perdus !\nAutour de nous l’œuvre est grande,\nMais petite est notre foi.\nA Jésus qui nous commande\nRépondons :’’Maître,\nAide –moi’’ !\n\n3. Si d’un sublime langage\nTu n’as pas reçu le don,\nTu peux rendre témoignage\nQu’en Jésus est le pardon ;\nA ton frère tu peux dire\nCe que christ a fait pour toi.\nPour que lui-même t’inspire,\nDis-lui :’Maître, Enseigne-moi’’ !\n\n4. Mais que nul\nNe nous entende dire encore :\nje ne puis rien !\nLorsque Jésus nous commande\nde faire et d’aimer le bien.\nPoursuivons l’œuvre bénie\nAvec zèle, amour et foi ;\nPuis notre tache finie,\nNous dirons : Maître,\nPrends-moi !’’''',
+    numero: 256,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_257',
+    titre: 'LES JARDINS DU PÈRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Tes jardins, o père,\nFais-les refleurir,(refleurir) ;\nEt la terre entière, fais-la reverdir.\nQue dans les campagnes\nChrist soit exalté ; (exalté),\nQue sur les montagnes\nSon nom soit chanté !\n\n2. Qu’enfin l’on entende\nComme un bruit du vent :\nBruit du vent),\nQue sur nous descende\nL’Esprit tout-puissant !\nFrère, Dieu l’ordonne :\nsors de ton sommeil ;\n(Ton sommeil),\nDéjà pour toi\nC’est l’heure suprême ;\nOh ! Soit le premier (le premier)\nA t’offrir, toi-même,\nA Dieu tout entier !''',
+    numero: 257,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_258',
+    titre: 'MON SALUT, MA NOURRITURE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Mon salut, ma nourriture,\nMon parfait bonheur,\nLe guide en qui je m’assure :\nC’est toi seul, Seigneur.\nEn moi ta parole opère,\nM’occupant de toi ; de toi,\nL’Envoyé du père,\nQui mourut pour moi.\n\n2. O Rédempteur secourable,\nQuand tu m’as trouvé,\nJ’étais perdu, misérable,\nTa main m’a sauvé,\nEt dans mon insuffisance,\nJ’éprouve en tout temps,\nQue les soins de ta clémence\nSont des soins constants.\n\n3. La paix, la vie éternelle\nSont le lot des tiens ;\nTa faveur perpétuelle\nMe comble de biens.\nPar la foi de l’Evangile,\nMon cœur transformé\nNe veut que toi pour asile,\nSauveur bien aimé !\n\n4. Ta sagesse, ta justice,\nTa fidélité, sont ma gloire,\nMon délice, ma tranquillité.\nRecevant grâce sur grâce,\nJ’adore à genoux\nTa tendresse qui dépasse\nMes vœux les plus doux.''',
+    numero: 258,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_259',
+    titre: 'A JESUS JE M’ABANDONNE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. A Jésus je m’abandonne ;\nCe qu’il me dit, je le crois,\nEt je prends ce qu’il me donne,\nLa couronne avec la croix.\n\nChœur\nCompter sur lui d’heure en heure,\nTant que dure le combat ;\nQue l’on vive ou que l’on meure.\nCompter sur lui, tout est là.\n\n2. Que si l’ennemi se montre,\nMon cœur n’en est point troublé ;\nAvec christ à sa rencontre\nJe puis aller sans trembler.\n\n3. Suis-je en paix, vers la lumière\nMon chant s’élève attendri,\nPour se changer en prière\nSi l’horizon s’assombrit.\n\n4. Qu’on m’approuve\nOu qu’on me blâme,\nEt demain comme aujourd’hui,\nJe ne veux, quoi qu’on réclame,\nJamais compter que sur lui.''',
+    numero: 259,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_260',
+    titre: 'PRECIEUX JESUS, JE T’AIME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Précieux Jésus, je t’aime\nRemplis-moi de ton amour\nJe te donne mon cœur même\nAccepte-le sans retour.\n\nChœur\nSeigneur jésus, o mon sauveur,\nSois le trésor de mon Cœur!\nSeigneur Jésus, o mon Sauveur,\nSois le trésor de mon cœur.\n\n2. Prend pour toi,\nSauveur aimable,\nTout mon cœur mes volontés ;\nQue ton Esprit adorable\nRemplisse mes facultés.\n\n3. J’avance ma main sans crainte\nPour saisir ton vêtement ;\nDe toi sort la vertu sainte\nQui guérit entièrement.\n\n4. L’amour qui remplit mon âme\nM’est si doux, o mon Sauveur !\nViens en moi, je te réclame,\nAccomplis tout dans mon cœur.\n\n5. Oh ! Sainte et nouvelle aurore\nQui déjà vient luire en moi ;\nJoyeux, je répète encore :\nMon Sauveur ! Je suis à toi.''',
+    numero: 260,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_261',
+    titre: 'BIENTOT LE SEIGNEUR VA VENIR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Bientôt le Seigneur va venir\nEs-tu prêt?\nBientôt le ciel Il veut t’ouvrir !\nEs-tu prêt?\n\nChœur\nEs-tu prêt? Es-tu prêt?\nEs-tu prêt pour l’éternité ?\nEs-tu prêt? Es-tu prêt?\nLe Sauveur T’a-t’il racheté ?\n\n2. Bientôt l’appel retentira !\nEs-tu prêt?\nBientôt la mort te surprendra !\nEs-tu prêt?\n\n3. Bientôt Jésus va te juger ?\nEs-tu prêt?\nOh ! Devra-t-il te condamner ?\nEs-tu prêt?\n\n4. Bientôt dans le ciel enlevés !\nEs-tu prêt?\nTous les élus seront sauvés.\nEs-tu prêt?''',
+    numero: 261,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_262a',
+    titre: 'VIVANT PAR LA FOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Aujourd’hui, je ne me soucie\ndu lendemain,\nQu’il y ait ombre, pluie ou soleil,\nJe sais, le Seigneur règne\nSur toutes choses,\nEt toutes mes inquiétudes sont vaines.\n\nChœur ;\nEn Jésus-Christ, je vis par la foi,\nConfiant, croyant en son grand amour ;\nSon bras puissant me garde de tout mal,\nJe vis par la foi et je ne crains rien.\n\n2. Qu’il y ait tempête\nOu des nuages orageux,\nEclipsant l’éclat de la vie,\nLes cieux assombris\nNe me font jamais peur,\nLe Maitre veille sur le combat.\n\n3. Je sais qu’il me conduira\nSurement au bout,\nQu’il survienne\nN’importe quel malheur,\nPourquoi alors me soucier\nDe la tempête,\nSi Jésus marche à mes cotes.\n\n4. Un beau jour,\nLe Seigneur viendra sur cette terre,\nAlors nos troubles cesseront,\nLe Maitre nous conduira si tendrement\nAu-delà de cette rive céleste.''',
+    numero: 262,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_262b',
+    titre: 'DANS DE VERTS PATURAGES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Dans des verts pâturages si doux, si riches,\nDieu conduit Ses précieux enfants ;\nLà ou coule l’eau qui ravive les fatigués,\nDieu conduit Ses précieux enfants.\n\nChœur ;\nCertains par les eaux ou par les vagues,\nD’autres par le feu mais tous par le sang ;\nCertains par les peines Mais Dieu donne un chant,\nPendant la nuit et tout au long du jour.\n\n2. De fois sur le mont ou le soleil brille fort ;\nDieu conduit Ses précieux enfants ;\nDes fois dans la vallée au cœur de la nuit ;\nDieu conduit Ses précieux enfants.\n\n3. Qu’il nous arrive des peines,\nQue Satan s’oppose,\nDieu conduit Ses précieux enfants ;\nPar la grâce nous pouvons vaincre l’ennemi,\nDieu conduit Ses précieux enfants.\n\n4. Bien loin de la boue et bien loin de l’argile,\nDieu conduit Ses précieux enfants ;\nLà-haut dans la gloire,\nO jour d’éternité !\nDieu conduit Ses précieux enfants.''',
+    numero: 262,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_263',
+    titre: 'LIEUX PLUS HAUTS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Je me presse sur la route du Ciel,\nNouvelles hauteurs,\nChaque jour je gagne ;\nSur mon chemin, je prie toujours :\nPlace-moi, Seigneur,\nAux lieux plus hauts »\n\nChœur\nLève-moi, Seigneur, que je me tienne,\nPar la foi, sur le plateau du Ciel,\nLa plus haute plaine\nJamais trouvée ;\nPlace-moi, Seigneur,\nAux lieux plus hauts.\n\n2. Mon cœur ne désire point rester\nOu doutes s’élèvent et peurs\nS’abattent,\nQue certains restent Ou ils abondent ;\nJe prie, visant les lieux très hauts.\n\n3. Je veux atteindre le sommet,\nEt voir luire la gloire éclatante,\nAvant de voir le Ciel je prie:\nSeigneur, mène-moi\nAux lieux plus haut”.''',
+    numero: 263,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_264',
+    titre: 'L’AMOUR M’A SAUVE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Dans le péché je sombrais\nLoin de la rive de paix,\nAu-dedans si fort souillé,\nAu point de non retour\nMais le Maitre de la mer\nPerçut mon cri d’angoisse ;\nDes eaux Il m’a tiré et\nJe suis sain et sauf.\n\nChœur\nL’amour m’a sauvé!\nL’amour m’a sauvé.\nQuand rien ne put m’aider,\nL’amour m’a sauvé\nL’amour m’a sauvé!\nL’amour m’a sauvé!\nQuand rien ne put m’aider,\nL’amour m’a sauvé.\n\n2. Je Lui confie tout mon cœur\nJe m’attache à Lui et\nVis dans Sa présence bénie\nEn chantant ses louanges,\nAmour si puissant, si vrai,\nMérite mes meilleurs chants\nUn sincère et tendre\nCulte Lui revient.\n\n3. Ame en danger, lève les yeux,\nJésus sauve complètement\nSon amour te tirera\nHors des vagues en furie.\nIl est Maitre de la mer,\nLes flots lui sont soumis\nIl veut être ton Sauveur,\nEt soit sauvé.''',
+    numero: 264,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_265',
+    titre: 'LES JOURS D’ELIE LE PROPHETE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Ceux-ci sont bien les jours d’Elie\nProclamant la Parole de Dieu\nJ’ai entendu la voix du 7e ange\nOui la justice est restaurée\nBien que ces jours soient\nDe grandes épreuves\nDe famine, de ténèbres et des guerres\nDu désert j’ai entendu la voix criant :\n« Préparer la voie du Seigneur »\n\nRefrain\nVoici Il vient\nSur les nuées\nBrillant comme le soleil\nAu son de la trompette\nElève ta voix\nC’est l’année de jubilé\nEt du mont Sion\nVient le salut.\n\n2. J’ai bien lu la promesse d’Ezéchiel\nLes os desséchés revêtent la chair\nCe sont les jours d’un grand serviteur, Elie\nReconstruisant l’autel de Dieu\nOh ! Ce sont les jours de la récolte\nOh ! Oui, la moisson est bien mûre\nEt je suis un ouvrier\nDans Ta moisson proclamant\nLa Parole de Dieu\n\nIl n’y a point de Dieu comme Jéhovah (x7)''',
+    numero: 265,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_266',
+    titre: 'CHAQUE INSTANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Chaque instant de chaque jour,\nJésus prend soin de moi.\nChaque instant de chaque jour,\nMon cœur est dans la joie\nDepuis que Christ m’a sauvé,\nC’est le bonheur ;\nLibéré de mon péché\nJ’ai la paix dans mon cœur.''',
+    numero: 266,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_267',
+    titre: 'FLEUVE D’EAU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Fleuve d’eau vive, (bis)\nVenez inonder mon âme assoiffée,\nJésus est mort pour que je vive\nAlléluia ! Il m’a sauvé.\n\nFleuve d’eau vive, (bis)\nOui, vous inondez mon âme assoiffée,\nJésus est mort et j’ai la vie\nAlléluia ! Je suis sauvé.''',
+    numero: 267,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_268',
+    titre: 'JE SAIS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Je sais qu’un jour,\nMes yeux verront Jésus\nSi je marche jusqu’au bout\nPar la Foi, et malgré tout\nJe sais qu’un jour,\nMes yeux verront Jésus.''',
+    numero: 268,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_269',
+    titre: 'JE SUIS HEUREUX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Je suis heureux, et voilà la raison,\nJésus m’a donné Son plein pardon\nEt maintenant, je chante tout le jour\nDe Jésus le merveilleux amour\n\n2. Mon cœur accablé\nPar un pesant fardeau,\nPar Jésus soulagé, a le vrai repos\nEt maintenant, je chante tout le jour\nDe Jésus le merveilleux amour.''',
+    numero: 269,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_270',
+    titre: 'LA VICTOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. La victoire est dans le sang, alléluia,\nDans le sang de Jésus-Christ\nMon Sauveur ;\nLa victoire est dans le sang,\nAlléluia\nA l’Agneau la gloire,\nA Lui l’honneur !\n\nChœur\nGloire, gloire, gloire\nEt puissance à l’Agneau\nGloire, gloire, gloire\nA Lui l’honneur ! 2x\nLa victoire est dans le sang,\nAlléluia, à Jésus la gloire\nA Lui l’honneur !''',
+    numero: 270,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_271',
+    titre: 'LE BONHEUR ET GRACE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Le bonheur et la grâce m’accompagneront\nTous les jours, tous les jours de ma vie\nLe bonheur et la grâce m’accompagneront\nTous les jours, tous les jours de ma vie\nJ’habiterai dans la maison de l’Eternel,\nJ’habiterai dans la maison du Père\nLe bonheur et la grâce\nM’accompagneront\nTous les jours, tous les\nJours de ma vie.''',
+    numero: 271,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_272',
+    titre: 'METS DE L’HUILE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Mets de l’huile dans la lampe,\nEt fais-la briller\nMets de l’huile\nEt remplis-la bien !\nMets de l’huile dans ma lampe,\nEt fais-la briller\nEt fais-la briller jusqu’au matin\n\nChante hosanna ! (ter)\nPour le Roi des rois\nChante hosanna ! (ter)\nPour le Roi.''',
+    numero: 272,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_273',
+    titre: 'NE CRAINS PAS LA TEMPETE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Ne crains pas la tempête\nReste tranquille, la paix viendra\nRelève donc la tête,\nRegarde à Jésus :\nIl pourvoira\nQu’importe l’adversaire,\nReste tranquille, il est vaincu\nAu nom puissant de Jésus,\nL’ennemi s’enfuit :\nTu es vainqueur.''',
+    numero: 273,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_274',
+    titre: 'SUR LE CHEMIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Sur le chemin, va sans peur,\nCar Jésus est devant toi,\nJésus-Christ, le Rédempteur,\nOh ! Suis-Le,\nOh ! Suis-Le par la foi\n\n2. Et si tu tombes en chemin,\nRegarde à Jésus ton Roi.\nIl est dans le lieu très Saint ;\nEt Il prie, et Il prie pour toi\n\n3. Maintenant, saisis la main\nDe ton Sauveur,\nCar lui seul peut donner,\nL’Eternel bonheur\nIl a donné Sa vie sur la croix :\nOh ! Suis-Le,\nOh ! Suis-Le par la foi.''',
+    numero: 274,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_275',
+    titre: 'UN VETEMENT BLANC',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Un vêtement blanc, une harpe d’or ;\nUn beau palais, une couronne ;\nLa sainte joie, le vrai trésor,\nLe Sauveur me les donne,\n\n2. Car Jésus est mon Sauveur,\nIl m’a tant aimé,\nPayé ma dette sur le Calvaire\nIl m’a dans Son grand amour\nSauvé du péché,\nJe vis dans Sa sainte Lumière\n\nOui, nous marchons,\nNous marchons tout joyeux : (ter)''',
+    numero: 275,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_276',
+    titre: 'APPARTIENS-TU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Appartiens-tu à l’Epouse\nDe Jésus, notre Seigneur ?\nSera-ce pour toi un jour de joie\nOu un jour de frayeur ?\nQuand Il reviendra, ton vêtement\nSera-t-il pur et serein ?\nOui, c’est l’instant d’être prêt\nPour le festin.\n\nChœur\nMaranatha, Alléluia (ter)\nJésus vient,\nEt Son festin est préparé.\n\n2. Pour cela pourrais-tu renoncer\nAu monde et ses plaisirs ?\nMarches-tu dans la lumière,\nEs-tu prêt pour l’accueillir ?\nSi tu n’es pas encore libre,\nAlors Jésus te dit : « viens »\nCar c’est l’instant\nD’être prêt pour le festin.\n\n3. L’Etat mondial nous révèle aussi\nQue Jésus vient bientôt\nLorsque tout va s’accomplir,\nTa délivrance viendra d’en-haut\nDans les ténèbres profondes\nBrillera l’Etoile du matin,\nOui, c’est l’instant\nD’être prêt pour le festin.\n\n4. Que mon cœur attend ce règne\nSans mort et sans destruction\nPassées seront les choses anciennes :\nC’est une nouvelle création\nLà, je pourrai rencontrer Jésus\nMon Roi, et tous les Saints …\nOui, c’est l’instant\nD’être prêt pour le festin''',
+    numero: 276,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_277',
+    titre: 'CONNAIS-TU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Connais-tu l’Agneau de Dieu qui purifie\nPar Son sang es-tu déjà lavé ?\nTon habit est-il pur,\nAussi blanc que neige ?\nEs-tu lavé dans le sang de l’Agneau.\n\nChœur\nEs-tu lavé dans le Sang,\nDans le sang de Jésus ton Sauveur ?\nTon habit est-il pur,\nAussi blanc que neige ?\nEs-tu lavé dans le sang de l’Agneau ?\n\n2. Ôte donc, ton habit souillé de péchés,\nSois lavé dans le sang de l’Agneau !\nPlonge ton Âme impure\nDans la fontaine sacrée\nSois lavé dans le sang de l’Agneau !\n\nChœur\nOh ! Sois lavé dans le sang,\nDans le sang de Jésus ton Sauveur\nTon habit sera pur\nAussi blanc que neige\nO sois lavé dans le sang de l’Agneau !''',
+    numero: 277,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_278',
+    titre: 'DANS MON CŒUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Chœur\nDans mon cœur chante un amour,\nAmour de mon Sauveur.\nDans mon cœur chante un amour,\nQui fait tout mon bonheur.\n\n1. C’est pour moi qu’il fut tant maltraité,\nPour moi qui ne mérite rien.\nC’est pour moi qu’Il fut tant maltraité\nPour moi, oui Seigneur, oui pour moi.\n\n2. C’est pour moi\nQu’Il a tellement souffert, …\n\n3. C’est pour moi qu’Il fut crucifié,…\n\n4. C’est pour moi qu’Il est glorifié,…\n\n5. C’est pour moi que Jésus reviendra, …''',
+    numero: 278,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_279',
+    titre: 'DIEU TOUT PUISSANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Dieu Tout Puissant\nQuand mon cœur considère\nTout l’univers créé par Ton pouvoir ;\nLe Ciel d’azur, les éclairs, le tonnerre,\nLe clair matin et les ombres du soir.\n\nChœur\nDe tout mon être,\nAlors s’élève un chant :\nDieu Tout-Puissant,\nQue Tu es grand (bis).\n\n2. Quand par les bois\nOu la forêt profonde,\nJ’erre et j’entends\nTous les oiseaux chanter ;\nQuand sur les monts,\nLa source avec son onde,\nLivre au Zéphyr\nSon chant doux et léger ;\n\nChœur\nMon cœur heureux s’écrie\nA chaque instant :\nO Dieu d’amour,\nQue tu es grand ! (bis)\n\n3. Mais quand je songe,\nO sublime mystère !\nQu’un Dieu si grand\nA pu penser à moi,\nQue Son Cher Fils\nEst devenu mon frère,\nEt que je suis\nL’héritier du grand Roi ;\n\nChœur\nAlors mon cœur redit\nLa nuit, le jour :\nQue tu es bon,\nO Dieu d’amour (bis)\n\n4. Quand mon Sauveur,\nEclatant de lumière,\nRayonnera de Sa Gloire éternelle,\nEt que laissant\nLes douleurs de la terre,\nJe verrai les splendeurs\nDe son beau Ciel !\n\nChœur\nJe redirai alors,\nLa nuit, le jour :\nRien n’est plus grand\nQue Ton amour !''',
+    numero: 279,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_280',
+    titre: 'J’AI RESOLU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. J’ai résolu de ne plus chercher\nLes vanités de ce monde\nCar vivre avec Jésus me procure\nUne joie plus grande et profonde.\n\nChœur\nJe décide de donner ma vie\nA Jésus-Christ\nConduits-moi, désormais,\nDans cette nouvelle vie.\n\n2. J’ai résolu de ne plus attendre\nPour fuir à Golgotha,\nOù m’est offerte la vie éternelle\nPar le Sang qui y coula.\n\n3. Comme moi aussi, tu peux décider\nAvant qu’il ne soit trop tard\nLaisse le monde,\nDonne-toi au Sauveur,\nPrends un nouveau départ.''',
+    numero: 280,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_281',
+    titre: 'JESUS, JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''Chœur\nJésus, Jésus, je T’aime (ter)\nJésus, Jésus, Mon Roi !\n\n1. Tu souffris sur la croix pour moi,\nMoi, si petit, aimé d’un roi !\nTu voulais me faire vivre en Toi,\nJésus, Jésus, mon Roi.\n\n2. Pourrais-je oublier mon Roi,\nMon Roi si tendre\nEst mort pour moi !\nJe veux toujours suivre Sa voie,\nJésus, Jésus, mon Roi.\n\n3. Et maintenant, Tu vis en gloire,\nTu m’as donné ce grand espoir\nQue bientôt, je verrai mon Roi,\nJésus, Jésus, c’est Toi.''',
+    numero: 281,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_282',
+    titre: 'JESUS PAR TON SANG',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Jésus, par Ton Sang précieux,\nEnlève mon iniquité\nRegarde-moi du haut des Cieux,\nDis-moi que Tu m’as pardonné\nJ’ai longtemps erré, cœur rebelle\nMais j’entends Ta voix qui m’appelle\nAu pied de ta croix maintenant,\nTout confus, brisé, je me rends.\n\nChœur\nBlanc, plus blanc que neige (bis)\nLavé dans le sang de l’Agneau,\nJe serai plus blanc que la neige.\n\n2. Oh ! Le fardeau de mon péché,\nDieu très Saint est trop grand pour moi\nJe veux en être délivré,\nA cette heure, oh ! Révèle-toi\nJésus, viens, sois ma délivrance\nSeul, Tu peux calmer ma souffrance.\nAu pied de Ta croix, maintenant,\nTout confus, brisé, je me rends.\n\n3. Oh ! Jésus, Ton sang précieux\nA lavé mon iniquité\nOui, tu m’as répondu des cieux,\nTon amour m’a tout pardonné\nJe Te contemple et je puis croire\nQu’en Toi j’ai complète victoire\nAu pied de ta croix\nMaintenant je me relève triomphant.\n\nChœur\nBlanc, plus blanc que neige (bis)\nLavé dans le sang de l’Agneau,\nJe serai plus blanc que la neige.''',
+    numero: 282,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_283',
+    titre: 'MON CŒUR EST PLEIN DE JOIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Mon cœur est plein de joie,\nJe suis l’enfant de Dieu,\nJésus le dit et je le crois,\nJe sais qu’Il est venu pour moi,\nPour moi, Il est mort sur la Croix\nJe suis l’enfant de Dieu !\n\nChœur\nOh, alléluia !\nMes péchés sont effacés,\nJésus vit en moi,\nJe Lui appartiens.\nOh ! Alléluia !\nJe suis né du Saint-Esprit,\nJe suis l’enfant de Dieu.\n\n2. Tous les liens du passé\nont été déliés,\nPlus rien ne me tient prisonnier\nQuelle merveilleuse liberté !\nA Jésus je suis attaché,\nJe suis l’enfant de Dieu !\n\n3. A une source claire,\nJe bois à plein gosier,\nLe Dieu de Jésus est mon Père ;\nComment ne pas Le glorifier ?\nAvec lui, je suis si joyeux !\nJe suis l’enfant de Dieu !\n\nChœur\nOh, alléluia !\nMes péchés sont effacés,\nJésus vit en moi,\nJe Lui appartiens.\nOh ! Alléluia !\nJe suis né du Saint-Esprit,\nJe suis l’enfant de Dieu.''',
+    numero: 283,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_284',
+    titre: 'OH ! VOYEZ',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu:
+        '''1. Oh ! Voyez combien le monde\nNous envie,\nLa joie et la paix inondent notre cœur\nC’est la Gloire du Seigneur qui vivifie,\nEt qui nous remplit\nDe Son parfait bonheur.\n\nChœur\nAlléluia ! Alléluia ! Alléluia\nMes péchés sont pardonnés !\nOui, c’est Jésus qui nous sauve,\nEt qui veut faire autant\nPour toi que pour moi.\n\n2. Aujourd’hui, mon frère, ma sœur,\nC’est jour de grâce,\nN’hésite pas,\nMais donne ton cœur à ton Sauveur,\nTu verras combien il est bon\nD’être avec Jésus,\nIl te remplira de son parfait bonheur.''',
+    numero: 284,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_285',
+    titre: 'O MERVEILLEUX SEIGNEUR JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. O merveilleux Seigneur Jésus,
+Tous les archanges T’ont loué
+O merveilleux Seigneur Jésus,
+Le Ciel, la terre T’ont chanté
+O merveilleux Seigneur Jésus
+D’amour, mon cœur a débordé
+O merveilleux Seigneur Jésus
+Depuis que Tu T’es révélé !
+
+2. O merveilleux Seigneur Jésus
+Tu as pansé toutes mes plaies,
+O merveilleux Seigneur Jésus
+Tu as guéri mon cœur brisé
+O merveilleux Seigneur Jésus
+Tous mes péchés sont effacés
+O merveilleux Seigneur Jésus
+Je ne veux plus d’autre Berger.
+
+3. O merveilleux Seigneur Jésus
+Dieu Tout-Puissant et Conseiller
+O merveilleux Seigneur Jésus
+Père Eternel, Prince de paix
+O merveilleux Seigneur Jésus
+Un Fils nous a été donné
+O merveilleux Seigneur Jésus
+C’est par Lui que je suis sauvé.''',
+    numero: 285,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_286',
+    titre: 'PRENDS-MOI PAR LA MAIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Prends-moi par la main, mon Père,
+Tu es mon repos ;
+Pour la vie, sois mon refuge
+Surveille-moi d’En-Haut
+Sauve-moi, quand je sombre,
+Car je T’appartiens
+Pour que jamais je m’égare
+Prends-moi par la main.
+
+Chœur
+Prends-moi par la main
+Mon Père (bis)
+Pour que jamais je m’égare
+Prends-moi par la main.
+
+2. Prends-moi par la main, mon Père,
+Dans la sombre nuit
+Sois l’Etoile qui toujours
+Guide mes pas indécis
+Toi seul, je veux suivre
+Au séjour divin
+Ton amour peut m’y conduire,
+Prends-moi par la main.
+
+3. Prends-moi par la main, mon Père,
+En partant d’ici
+Accorde-moi donc Ta grâce,
+Quand vers Toi je fuis
+Donne-moi Ton repos
+Loin du monde malin
+Emmène-moi au ciel au Père
+Prends-moi par la main.''',
+    numero: 286,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_287',
+    titre: 'PRES DU TRONE DE LA GRACE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Prêt du trône de la grâce
+Et de la paix
+J’ai reçu la promesse d’un Dieu parfait
+En Jésus est la victoire
+Par Sa mort expiatoire
+Près du trône de la grâce
+Et de la paix.
+
+Chœur
+Viens mon frère,
+Viens au Trône de la grâce
+Viens aussi, ma sœur
+Chacun trouve une place
+Au pied de la croix
+Faites votre choix
+Oh ! Ne voulez-vous
+Pas venir avec moi ?
+
+2. Fuis vain monde, vanité des vanités
+Point de paix
+Pour l’âme des frivolités
+Par toi, Satan nous opprime,
+Nous conduisant à l’abîme
+Fuis vain monde, vanité des vanités.
+
+3. Je veux être un vaillant soldat
+Du Seigneur
+Lutter, combattre,
+Toujours avec ferveur
+Et rempli de confiance
+J’accepterai la souffrance
+Je veux être un vaillant soldat
+Du Seigneur.
+
+4. Quand devant moi
+S’ouvriront les portes d’or
+Et qu’enfin j’atteindrai
+Le céleste port
+Un bonheur pur et sans ombre
+Remplacera la nuit sombre
+Quand devant moi s’ouvriront
+Les portes d’or.''',
+    numero: 287,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_288',
+    titre: 'QUAND MA VIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quand ma vie s’écoulait
+Triste et sans but
+Privée de joie, de paix,
+De plein salut,
+Alors, ont brillé sur mon cœur souillé,
+La lumière et l’amour de Jésus.
+
+Chœur
+Jésus est le vrai Roi de mon cœur,
+Lui Seul règne en moi, je suis par la foi
+Libre de tout lien, plus que vainqueur :
+Oui, Jésus est le vrai Roi de mon cœur.
+
+2. Alors, tout mon fardeau fut enlevé,
+Et sur mon cœur le soleil s’est levé
+Puis Jésus me dit « donne-moi Ta vie »
+Et Il me remplit de Son Esprit.
+
+3. Jésus est sur le trône de mon cœur
+Il remplit mon âme de vrai bonheur
+Et j’aurai là haut couronne et repos
+Oui, le meilleur ami, c’est Jésus.
+
+4. Le monde avec ses trésors peut périr,
+Mais l’amour du Sauveur ne peut tarir
+Car à Golgotha il me racheta
+Désormais ma vie est pour Jésus !''',
+    numero: 288,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_289',
+    titre: 'QUEL BONHEUR DE MARCHER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quel bonheur de marcher avec Lui !2x
+Il conduira tous les pas
+De mon voyage ici-bas,
+Quel bonheur de marcher avec Lui !
+
+2. Alléluia ! Gloire à Son Saint Nom 2x
+Le Seigneur m’a racheté,
+Dans Son Sang Il m’a lavé
+Alléluia ! Gloire à Son Saint nom.
+
+3. Alléluia Jésus me guérit !2x
+Il guérit parfaitement
+Me libère entièrement
+Alléluia Jésus me guérit !
+
+4. Il me baptise de Son Esprit !(x2)
+Il me rend tellement heureux,
+En me baptisant de feu
+Il me baptise de Son Esprit !
+
+5. Avec Lui, je monte toujours plus haut!2x
+Jésus est le Bon Berger,
+Je ne crains aucun danger
+Avec Lui, je monte toujours plus haut!
+
+6. Alléluia! Gloire à Son Saint Nom! 2x
+Bientôt, Jésus reviendra,
+Dans Son règne Il me prendra
+Alléluia! Gloire à Son Saint Nom!''',
+    numero: 289,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_290',
+    titre: 'VIENS ECLAIRES LES AMES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Viens éclairer les âmes enténébrées,
+Lève le flambeau !2x
+Eclaire tout ce qui vit
+Dans le péché
+Lève le flambeau! 2x
+
+Chœur
+Le flambeau porté par les croyants,
+Lève-Le, lève-le aussi
+Vers ces peuples esclaves de Satan,
+Lève le flambeau de Jésus-Christ.
+
+2. Des millions attendent
+La parole de Dieu,
+Lève le flambeau! 2x
+Distribue-leur les biens
+Du royaume des cieux
+Lève le flambeau! 2x.
+
+3. T’engages-tu à porter
+La divine lumière
+Lève le flambeau! 2x
+Rallie-toi maintenant
+Sous l’éclatante bannière,
+Lève le flambeau! 2x.''',
+    numero: 290,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_291',
+    titre: 'JE LE LOUERAI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quand j’ai vu la fontaine qui lave,
+Large ouverte pour mes péchés
+J’acceptai la cours de l’Esprit
+Qui dit « veux-tu être pur ? »
+
+Chœur
+Je vais louer, louer l’Agneau,
+Immolé pour les pécheurs,
+Vous tous peuples, rendez-Lui gloire,
+Car son sang peut laver chaque tâche.
+
+2. La route étant étroite et droite,
+Toutes mes prétentions tombèrent
+Mes plans, ambitions et désirs
+Réduits en cendres à mes pieds.
+
+3. Le feu de Dieu sur l’autel
+De mon cœur fut allumé
+Je le louerai pour toujours
+Gloire ! Gloire à Son nom
+
+4. Bénit soit le Nom de Jésus !
+Je suis heureux qu’Il m’ait pris ;
+Il pardonna mes transgressions
+Il a purifié mon cœur.''',
+    numero: 291,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_292',
+    titre: 'TERRE EPOUSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Terre de blé et vin j’ai atteint,
+Ses trésors sont gratuitement miens,
+Ici brille un jour merveilleux
+Car toute ma nuit s’est dissipée.
+
+Chœur
+O Terre Epouse, douce Terre Epouse !
+Me tenant sur ta haute montagne,
+Par delà la mer, je regarde
+Où des palais fin prêts m’attendent ;
+Je vois la luisante rive de gloire,
+Mon ciel, ma maison à jamais.
+
+2. Mon Sauveur vient, marche avec moi,
+Nous avons une douce communion,
+Tendrement conduit par sa main,
+Car ceci est l’entrée du ciel.
+
+3. Un parfum doux qu’amène la brise
+Vient des arbres toujours vernaux
+Les fleurs ne se fanant jamais
+Poussent où coulent les fleuves de vie.
+
+4. Les Zéphyrs semblent m’apporter
+Doux sons des mélodies célestes
+Quand anges et foule vêtue en blanc
+Chantent le cantique de Rédemption.''',
+    numero: 292,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_293',
+    titre: 'LE SEIGNEUR M’A SAUVE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh ! Quelle joie !
+Le Seigneur m’a sauvé ;
+Oh ! Quelle joie !
+Le Seigneur m’a sauvé ;
+N’eut été le Seigneur Jésus ;
+Oh ! Où serais-je ?
+Oh ! Quelle joie !
+Le Seigneur m’a sauvé ;
+
+2. N’es-tu pas gai comme Il t’a sauvé ?
+N’es-tu pas gai comme Il t’a sauvé ?
+N’eut été le Seigneur Jésus,
+Oh ! Où serais-je ?
+Oh ! Quelle joie le Seigneur m’a sauvé.
+
+3. Oh ! Je chante depuis qu’Il m’a sauvé,
+Oh ! Je chante depuis qu’Il m’a sauvé
+N’eut été le Seigneur Jésus,
+Oh ! Où serais-je ?
+Oh ! Quelle joie le Seigneur m’a sauvé.
+
+4. Oh ! Je danse depuis qu’Il m’a sauvé
+
+5. Oh! Je prie depuis qu’Il…
+
+6. Oh! Je crie depuis qu’Il…''',
+    numero: 293,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_294',
+    titre: 'VIENS ALLONS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Viens, allons à la maison de mon Père,
+Maison de mon Père,
+Maison de mon Père,
+Viens, allons à la maison de mon Père,
+Où il y a paix, paix, paix.
+
+2. Qu’Il soit loué, alléluia!
+Qu’Il soit loué, amen 2x
+Oh! Qu’Il soit loué, alléluia!
+Qu’Il soit loué, amen.
+
+3. Jésus sera dans la maison du Père,
+Maison de mon Père,
+Maison de mon Père,
+Jésus sera dans la maison du Père,
+Où il y a paix, paix, paix
+
+4. Là, dans la maison du Père,
+Point de peine,
+Maison de mon Père,
+Maison de mon Père,
+Il y a joie, joie, joie.''',
+    numero: 294,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_295',
+    titre: 'JESUS M’A AFFRANCHI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je suis très heureux,
+Jésus m’a affranchi (ter)
+Gloire alléluia,
+Jésus m’a affranchi.
+
+2. Je suis très heureux,
+Jésus m’a sauvé (ter)
+Gloire alléluia,
+Jésus m’a sauvé.
+
+3. En route vers le ciel,
+Je crie la victoire, (ter)
+Gloire alléluia,
+Je crie la victoire.''',
+    numero: 295,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_296',
+    titre: 'PAR L’EAU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jadis des jeunes filles puisaient
+De l’eau vers le soir, dit-on
+Isaac envoya Eliezer
+Pour intercepter Rébecca
+Et lui dire :
+« Vois ces précieuses perles »
+C’est mon maître qui m’envoie,
+Ne veux-tu pas être sa belle Epouse
+Là-bas au pays ?
+
+Chœur
+Au temps du soir il y aura la lumière,
+Vous trouverez ! Le sentier vers la gloire,
+Enseveli dans l’eau au Nom de Jésus,
+C’est bien cela la lumière aujourd’hui
+Jeunes, vieux, repentez-vous du péché,
+Le Saint-Esprit entrera bien en vous,
+C’est la lumière du soir
+C’est un fait que Christ et Dieu sont Un.
+
+2. Ainsi les serviteurs de Dieu
+Te parlent d’un Epoux céleste
+A la recherche d’un saint peuple
+Qui bientôt sera Son épouse.
+Il nous envoie l’eau rafraichissante
+Ce dernier glorieux jour
+Ceux là qui seront enlevés,
+Doivent passer à travers l’eau.
+
+3. Es-tu sur la voie de la ruine
+Et encombré de soucis ?
+Vois l’œuvre prompte
+Que Dieu fait
+Pour que tu prennes part à Sa gloire.
+La foi qu’Il transmit jadis aux saints
+Est enfin notre aujourd’hui ;
+Pour être en l’Eglise triomphante
+Tu dois bien passer par l’eau.
+
+4. Aujourd’hui la puissance est faible
+T’es-tu demandé pourquoi ?
+Vas-tu rester dans ces vieilles choses
+Suivre la voie faite par l’homme ?
+O vous saints jamais ensevelis
+Dans le nom béni de Dieu
+La vérité vous sanctifie ;
+Par là passèrent les apôtres.''',
+    numero: 296,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_297',
+    titre: 'VICTOIRE EN JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. J’ai appris une vieille histoire,
+Comment vint de gloire un Sauveur,
+Qui donne sa vie là au calvaire
+Pour mon salut, moi vil,
+Comment il avait gémi,
+Comment son précieux sang expie,
+Alors je me suis repenti,
+Victoire j’ai remportée.
+
+Chœur
+O la victoire en Jésus
+Mon Sauveur pour toujours,
+Me chercha, me racheta,
+Par Son Sang rédempteur,
+M’aima quand je l’ignorais,
+Tout mon amour est pour Lui,
+Me plongea dans la victoire,
+Dans le flot purifiant.
+
+2. On m’a dit qu’Il guérissait,
+Que sa puissance lave et révèle
+Comment Il fit marcher les boiteux
+Et fit voir les aveugles ;
+Puis j’ai crié :
+« Cher Jésus, viens
+Guéris mon esprit brisé »
+Jésus vint, je ne sais comment,
+M’apporter la victoire.
+
+3. J’entends parler d’une demeure
+Qu’il bâtit pour mois dans la gloire
+J’entends parler des rues pavées d’or
+Par delà la mer pure,
+Et aussi des chants des anges,
+De la vieille histoire du rachat,
+Un jour je chanterai là-haut
+Le chant de la victoire.''',
+    numero: 297,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_298',
+    titre: 'MES BREBIS CONNAISSENT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mes brebis connaissent
+Ma voix et Mon chemin
+Elles me suivent partout où Je vais
+Elles connaissent ma voix
+Et viennent quand j’appelle
+Elles ignorent la voix d’un étranger.
+
+Chœur
+Elles connaissent Ma voix
+Chaque jour elles sont
+Là, dans la bergerie
+Et ne s’égarent point,
+Elles M’aiment parce que
+Mon choix tomba sur elles
+Et elles suivent mon appel
+Car elles connaissent Ma voix.
+
+2. Mes brebis connaissent
+Ma voix et le vert pré
+Ou très souvent je les mène paitre
+Elles connaissent Ma voix
+Et les cours d’eau fraiches
+Je les conduis près de ces eaux calmes.
+
+3. Elles connaissent Ma voix,
+La vallée de la mort
+Par où je les mènerai un jour
+Ni danger, ni mal
+N’en peut toucher une
+Car je serai toujours avec elles.''',
+    numero: 298,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_299',
+    titre: 'DOUCEMENT ET TENDREMENT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Doucement et tendrement
+Jésus appelle,
+Il nous appelle toi et moi,
+Vois-Le aux portails,
+Il attend et Il veille,
+Veillant pour toi et pour moi.
+
+Chœur
+Reviens, reviens
+A la maison, Ô toi, fatigué,
+Ardemment, tendrement Jésus appelle
+« Pécheur, rentre à la maison »
+
+2. Pourquoi tarder
+Quand Jésus nous implore
+Nous implorant toi et moi,
+Pourquoi donc traîner
+Et négliger Sa grâce,
+Sa grâce pour toit et pour moi ?
+
+3. Maintenant le temps s’enfuit,
+Les moments passent,
+S’éloignant de toi et moi
+Les ombres s’assemblent,
+La nuit de mort vient,
+Venant pour toi et pour moi.
+
+4. Oh ! Quel merveilleux amour
+Il a promis,
+Promis à toi et à moi,
+Malgré nos péchés, il donne
+Grâce et pardon,
+Pardon à toi et à moi.''',
+    numero: 299,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_300',
+    titre: 'OU IRAI-JE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Vivant dans ce vieux monde
+Plein de péchés,
+Qui offre à peine consolation ;
+M’efforçant à vaincre les tentations
+Où irai-je sinon au Seigneur ?
+
+Chœur
+Où irai-je, Ô où irai-je
+Trouver un refuge
+Pour mon âme
+Et un ami pour m’aider à la fin,
+Où irai-je sinon au Seigneur ?
+
+2. Mes voisins sont gentils,
+Je les aime tous
+Et nous vivons en harmonie,
+Mais quand mon âme désire
+La manne du ciel,
+Où irai-je sinon au Seigneur.
+
+3. Vie sur terre est belle avec les amis,
+La Parole de Dieu me console ;
+Mais en face de la froide main
+De la mort
+Où irai-je sinon au Seigneur ?''',
+    numero: 300,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_301',
+    titre: 'PAIX DANS LA VALLEE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Eh bien ! Fatigué mais je dois
+Suivre mon chemin
+Jusqu’à ce que le Seigneur
+Vienne me prendre, oh ! Oui,
+Le matin est brillant,
+L’Agneau est la lumière,
+Et la nuit est aussi claire
+Que le jour, oh oui.
+
+Chœur
+Y aura la paix dans la vallée
+Pour moi un jour,
+Y aura paix dans la vallée
+Pour moi, Seigneur je prie ;
+N’y aura ni tristesse,
+Ni chagrin, ni trouble à voir,
+Y aura paix dans la vallée
+Pour moi,
+
+2. Là, les fleurs s’épanouiront,
+Le gazon sera vert,
+Et là, les cieux vont être clairs
+Et sereins, oh ! Oui,
+Le soleil brille toujours
+Dans la vallée de rêves.
+Et là, il n’aura
+Jamais de nuages, oh ! Oui.
+
+3. Eh bien ! L’ours sera doux
+Et le loup apprivoisé,
+Et le lion couchera
+Près de l’agneau, oh ! Oui.
+Un petit enfant
+Va conduire la bête sauvage,
+De la créature que je suis,
+Je serai changé !''',
+    numero: 301,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_302',
+    titre: 'LE SOLEIL COUCHE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Le soleil couché, merveilleux matin,
+Avec le Sauveur commence le Ciel
+Plus de peines terrestres,
+O! Glorieuse aurore.
+Le soleil couché, le jour s’en va.
+
+2. Le soleil couché,
+Nuages ne sont plus,
+Orages ne menacent,
+Peurs n’agacent point
+O jour de délices,
+Ö jour éternel,
+Le soleil couché,
+Joie éternelle.
+
+3. Le soleil couché,
+Une main me guide,
+Vers Dieu le Père,
+Lui que j’adore,
+Sa glorieuse présence,
+Ses Paroles d’accueil
+Seront ma part
+Sur le beau rivage.
+
+4. Le soleil couché, rencontre joyeuse
+Avec nos chers frères qui sont partis
+Dans ce beau pays on ne se sépare
+Jamais quand le soleil est couché.''',
+    numero: 302,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_303',
+    titre: 'LA SEMAINE DE RETOUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Dans notre voyage ici bas,
+Nous avons peines et pertes
+Tantôt c’est une couronne d’épines,
+Tantôt c’est la lourde croix.
+Triste chemin vers le calvaire, douleurs
+Tourments amers
+Mais ce qui est derrière ces portes
+De perles vaudra tout.
+
+Chœur
+Quand nous serons derrière ces portes
+Nous apprendrons beaucoup,
+Nous aurons une harpe en or
+De mille cordes peut être,
+Nous aurons des chants,
+Cris et danses,
+L’Agneau séchera nos larmes,
+Mes premiers dix mille ans
+Seront notre semaine de retour.
+
+2. L’obscurité tombe maintenant
+Et le temps est très proche
+Où notre Seigneur reviendra
+Comme un éclair du Ciel
+Dans l’attente et la souffrance
+Nous crierons gloire à Dieu,
+Car juste un coup d’œil
+Par ces portes de perles vaudra tout.
+
+3. Le précieux sang du Fils de Dieu
+A sauvé, sanctifié,
+Pour Son Nom, un peuple
+Merveilleux, appelé Epouse
+Bien que négligés, méprisés,
+Un jour le Seigneur va conduire
+Ses élus derrière les portes,
+ça vaudra tout.''',
+    numero: 303,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_304',
+    titre: 'LE ROC SOLIDE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon espoir ne se fonde
+Que sur justice et sang de Jésus ;
+Sans foi en un beau fondement
+Je ne m’appuie que sur Son Nom.
+
+Chœur
+Sur Christ, Roc solide, je me tiens
+Le reste n’est que sable mouvant,
+Le reste n’est que sable mouvant.
+
+2. Que les ténèbres voilent Sa face,
+Je compte sur Son immuable grâce ;
+Dans chaque orage et chaque tempête,
+Mon ancre tient derrière le voile.
+
+3. Ses serments, alliance et sang,
+Me gardent de flots submergeant ;
+Que tout cède autour de mon âme,
+Il est mon espoir, mon appui.
+
+4. Quand Il vient avec la trompète,
+Puissé-je alors être en lui,
+Revêtu de Sa seule justice
+Pour comparaitre parfait au Trône.''',
+    numero: 304,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_305',
+    titre: 'IL DEMEURE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je me réjouis nuit et jour,
+Comme je marche en pèlerin,
+Car dans toute ma vie
+Je vois la main de Dieu.
+Et la raison de ma joie,
+Le secret de tout cela ;
+Le Consolateur est avec moi.
+
+Chœur
+Il demeure, Il demeure
+Alléluia ! Il est avec moi
+Je me réjoui nuit et jour
+Marchant sur l’étroit chemin
+Le Consolateur est avec moi.
+
+2. Je vivais dans le péché n’ayant
+Point de paix en moi
+Jusqu’au jour où j’ouïs
+Comment Jésus mourut,
+Puis je tombais à Ses pieds
+Et une douce paix me remplit
+Le consolateur est avec moi.
+
+3. Il est avec moi partout
+Et connais tous mes soucis.
+Je suis heureux et libre
+Comme un oiseau,
+Le Saint-Esprit me contrôle,
+Jésus satisfait mon âme
+Le Consolateur est avec moi.
+
+4. Plus de désir pour le monde
+Ses plaisirs ont pris des ailes
+Il y a longtemps je les ai abandonnés,
+Toute ma nuit changée en jour
+Et mes fardeaux enlevés
+Le Consolateur est avec moi.''',
+    numero: 305,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_306',
+    titre: 'JE SERAI QUELQUE PART',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Lorsque le Sauveur m’appellera
+J’entendrai et je répondrai ;
+Lorsqu’il appelle, je répondrai.
+Je serai quelque part
+Pour entendre mon nom.
+
+Chœur
+Je serai quelque part (bis)
+Quelque part là
+Pour entendre mon nom ;
+Je serai quelque part (bis)
+Quelque part
+Pour entendre mon nom.
+
+2. Si mon cœur est droit
+Quand Il m’appelle,
+Si mon cœur est droit j’entendrai,
+Si mon cœur est droit.
+Quand Il m’appelle, je serai
+Quelque part là
+Pour entendre mon nom.
+
+3. Si ma robe est blanche
+Quand Il m’appelle,
+Si ma robe est blanche j’entendrai,
+Si ma robe est blanche
+Quand Il m’appelle, je serai
+Quelque part là
+Pour entendre mon nom.''',
+    numero: 306,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_307',
+    titre: 'BAPTISE DANS LE CORPS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. As-tu été baptisé dans le corps ?
+Baptisé du Saint-Esprit ;
+Il n’y a qu’un seul moyen pour y entrer,
+Comme ils le firent à la Pentecôte.
+
+Chœur
+Es-tu dans l’Eglise triomphante
+Et dans l’Epouse du Sauveur ?
+O viens et sois baptisé dans le corps
+Et demeure là pour toujours.
+
+2. Il n’y a qu’une Eglise,
+L’Epouse ou le corps
+En elle nous sommes baptisés,
+Par le seul et vrai Saint-Esprit promis
+Quoique le monde nous méprise tous.
+
+3. Chaque credo prétendait être le corps
+Le fil d’aplomb déclare faux
+Leurs rêves, car Dieu tient à manifester
+L’authenticité Epouse du Fils.
+
+4. Plusieurs pensaient qu’ils étaient
+Dans le Corps,
+Jusque quand vint l’Esprit-Saint,
+Quand la Parole de Dieu leur fut ouverte
+Ils entrèrent : n’y a encore des places.
+
+5. Ceux qui sont morts
+Avant que l’Esprit-Saint
+Ne descende d’en haut sur nous,
+Peuvent par la foi,
+Avec les saints d’antan,
+Se lever pour Le voir au ciel.
+
+6. Lorsque l’Epoux viendra,
+Seras-tu prêt
+Ta lampe remplie allumée ?
+Tu seras compté
+Parmi les vierges folles
+Si tu ne marches pas dans la lumière.''',
+    numero: 307,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_308',
+    titre: 'LE MESSAGE DE SA VENUE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous attendons Sa venue
+Sur les nuées du Ciel,
+Revenant sur terre
+Pour enlever les Siens,
+Puissions-nous alors
+Être prêts lors du cri de minuit
+Pour régner avec Christ sur Son trône.
+
+Chœur
+Annonçons avec joie
+Le Message de Son apparition
+Annonçons à tous
+Qu’Il vient bientôt dans la gloire
+Réveillez-vous saints du Seigneur
+Pourquoi dormir, la fin vient
+Soyez donc prêts pour l’appel final.
+
+2. Soupirant après la gloire
+Réservée aux fidèles
+Qui vaincront et remporteront
+Tout combat
+Avancez toujours bravement,
+Vie éternelle est le prix
+Pour qui l’emportent sur le péché.
+
+3. Nous prions pour la venue
+De cher Sauveur béni
+Qui a promis la vie
+A qui croit Sa grâce,
+Le Message étant donné,
+Sa venue est imminente,
+Nous verrons le Seigneur face à face.
+
+4. Nous voyons apparaître
+Les signes de Sa venue
+Regardez, les feuilles
+Du figuier reverdissent
+L’Evangile de Son Royaume
+Est allé à chaque nation
+On peut voir
+Que nous sommes à la fin.''',
+    numero: 308,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_309',
+    titre: 'PUIS JESUS VINT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Un homme mendiait
+Assis seul au bord d’une route
+Aveugle, il ne voyait la lumière
+Saisit ses haillons,
+Frissonna dans le noir
+Puis Jésus vient
+Et chassa ses ténèbres.
+
+Chœur
+Quand Jésus vient,
+La tentation est vaincue ;
+Quand Jésus vient,
+Les larmes sont essuyées
+Il ôte la tristesse,
+Remplit de gloire la vie
+Car tout change
+Quand Jésus vient S’établir.
+
+2. Eloignés des siens,
+Du toit, par les démons,
+Croupissant dans la misère
+Au cimetière ;
+Saisi par les démons,
+Il se tailladait,
+Puis, Jésus vint,
+Libéra le captif.
+
+3. Impur ! Impur !
+Criait le lépreux inquiet,
+Sourds, muets se tenaient là
+Délaissés fièvre fit rage,
+Maladie prit sa victime,
+Puis Jésus vint et dissipa toute peur.
+
+4. Aujourd’hui les hommes
+Ont un puissant Sauveur
+Ils ne pouvaient
+Vaincre passions, péchés
+Leurs cœurs brisés
+Les ont laissés seuls et tristes,
+Puis Jésus vint et S’établit en eux.''',
+    numero: 309,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_310',
+    titre: 'LA RENCONTRE DANS LES AIRS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. On t’a parlé de l’enfant Moïse dans les joncs
+Et de l’intrépide David avec sa fronde :
+De l’histoire que tu chantes
+Sur Joseph et ses songes
+Ainsi que celle de Jonas et la baleine.
+Il y en a beaucoup,
+Beaucoup d’autres dans la Bible
+J’aimerais les rencontrer tous
+Je l’avoue! Bientôt sûrement,
+Le Seigneur nous les fera voir
+A cette rencontre dans les airs.
+
+Chœur
+Il y aura une rencontre dans les airs,
+un des ce jours, oui bientôt,
+je veux te rencontrer, rencontrer
+là-bas, dans cette maison là au ciel,
+Tu suivras des chants que jamais
+mortel n’a entendus, ce sera glorieux, je l’avoue!
+Le Fils de Dieu Lui-même sera en tête,
+A cette rencontre dans les airs.
+
+2. Bien des choses auront disparu
+A cette rencontre,
+Car le banc des pénitents
+N’y sera plus,
+Il n’y aura plus des sermons
+Prêchés aux pécheurs.
+Car le pécheur aura rejeté l’appel
+Plus d’afflictions A cause des bien-aimés rebelles,
+Ni de veillées solitaires d’intercession,
+Tous nos fardeaux et nos angoisses seront ôtés
+A cette rencontre dans les airs.
+
+3. Là, les incrédules seront tout à fait absents ;
+Tous les sceptiques seront absents ce jour-là
+Plus de mécontents là qui nous dérangeraient,
+Et les Acans seront occupés ailleurs ;
+Là bas les saints porteront
+Son « sceau sur leurs fronts »
+Vêtus d’habits réservés aux rachetés ;
+Tous ceux qui sont
+En habits de noces seront là
+A cette rencontre dans les airs.''',
+    numero: 310,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_311',
+    titre: 'JESUS DOIT-IL SEUL PORTER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jésus doit-il seul porter la croix
+Et d’autres ne rien porter non
+Il y a une croix pour chacun
+Il y a une croix pour moi.
+
+2. La croix consacrée je porterai
+Jusqu’à ce que mort me libère
+Puis, au ciel porter ma couronne
+Y a une couronne pour moi
+
+3. Là-bas, aux pieds percés de Jésus,
+Sur le pavement De cristal,
+Joyeux, je poserai Ma couronne d’or,
+Répétant Son cher Nom.
+
+4. O précieuse croix ! Glorieuse couronne !
+Oh ! Jour de résurrection !
+Vous, anges descendez des étoiles
+Et emportez mon âme.''',
+    numero: 311,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_312',
+    titre: 'L’ITINERANT PREDICATEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. L’Itinérant prédicateur
+Parcourait le pays,
+Un fusil sur son épaule
+Et une Bible dans sa main ;
+Parlant aux gens de la prairie
+D’un béni Pays promis
+Il chevauchait en chantant.
+
+Chœur
+Reposant, reposant,
+Reposant sur le bras éternel
+Reposant reposant, reposant,
+Sur le bras éternel.
+
+2. Il prêchait la venue
+Du jugement de feu et de souffre
+Et d’un glorieux paradis
+Sans fin pour les justifiés,
+Comme il traversait les montagnes
+On l’entendait qui chantait
+Comme allait chevauchant.
+
+Chœur
+Il y a une force, force,
+Merveilleuse force,
+Dans le sang de l’Agneau,
+Il y a force, force
+Merveilleuse force ;
+Dans le sang précieux
+De l’Agneau
+
+3. Son vieux fusil était rouillé
+Et suspendu au mur rarement
+On touchait à sa poussiéreuse Bible usée,
+Mais son message biblique
+Nous rencontrera au jugement,
+La vérité est en marche.
+
+Chœur
+Gloire! Gloire, alléluia!
+Gloire! Gloire, alléluia!
+Gloire! Gloire, alléluia!
+Sa vérité est en marche.''',
+    numero: 312,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_313',
+    titre: 'IL M’A SORTI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon cœur angoissé sous l’œil
+Sévère de Dieu ;
+Dans la fosse où mes péchés
+M’avaient plongé ;
+De la boue profonde,
+J’ai crié au Seigneur
+Qui tendrement
+M’emmena au jour doré.
+
+Chœur
+Il m’a sorti de la boue d’argile,
+Il a placé mes pieds sur le Roc,
+Il met un chant dans mon âme ce jour,
+Un chant de louange, alléluia !
+
+2. Il m’a placé près de Lui sur le Rocher,
+Mes pas sont affermis,
+J’y demeurerai ;
+Aucun risque de tomber
+Tant que j’y reste
+Jusqu’au couronnement,
+Je tiendrai par Sa Grâce.
+
+3. Il m’a donné
+Un nouveau chant de louange,
+Dont je chanterai
+Les douces notes nuit et jour.
+Mon cœur débordant,
+Je suis libre heureux
+Je loue mon Rédempteur
+Qui m’a secouru.
+
+4. Je chanterai Sa merveilleuse grâce pour moi ;
+Je louerai jusqu’à faire voir Sa bonté
+Je chanterai le salut chez moi partout jusqu’à ce que tous
+Entendent le Parole, croient Dieu.''',
+    numero: 313,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_314',
+    titre: 'HYMNE DE BATAILLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mes yeux ont vu la gloire
+De la venue du Seigneur,
+Il est en train de fouler
+La vendange de la colère ;
+Il a lâché le fatal éclair de
+Sa terrible épée ;
+Sa vérité est en marche.
+
+Chœur
+Gloire, gloire, alléluia!
+Gloire, gloire, alléluia!
+Gloire, gloire, alléluia!
+Sa vérité est en marche.
+
+2. Je L’ai vu entouré d’une centaine
+De feux de bivouac
+Ils ont bâti pour Lui un autel
+Dans la fraîcheur du soir
+Je peux lire Sa juste sentence
+Par le scintillement des lampes ;
+Son jour est vraiment en marche.
+
+3. Il sonna la trompette qui jamais
+N’annonce la retraite,
+Et Il sonde les cœurs des hommes
+Devant Son trône de jugement
+O mon âme, hâte-toi de lui réponde !
+Mes pieds, jubilez !
+Notre Dieu est bien en marche.
+
+4. Dans la beauté de lys, Christ naquit
+Par delà de la mer,
+Avec dans Son sein une gloire
+Qui nous transfigure, vous et moi ;
+Comme Sa mort sanctifia
+Les hommes, mourons pour les libérer
+Pendant que Dieu est en marche.''',
+    numero: 314,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_315',
+    titre: 'REPOSANT SUR LES BRAS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh ! Quelle communion !
+Oh! Quelle joie divine !
+Reposant sur les bras éternels ;
+Quelle félicité !
+Quelle paix est la mienne !
+Reposant sur les bras éternels.
+
+Chœur
+Reposant, reposant
+A l’abri de toutes les terreurs ;
+Reposant, reposant,
+Reposant sur les bras éternels.
+
+2. Qu’il est doux de marcher en pèlerin!
+Reposant sur les bras éternels ;
+Le sentier devient
+Plus clair chaque jour!
+Reposant sur les bras éternels
+
+3. Que puis-je redouter?
+Que pourrais-je craindre?
+Reposant sur les bras éternels ;
+Près de mon Seigneur, j’ai la paix bénie
+Reposant sur les bras éternels.''',
+    numero: 315,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_316',
+    titre: 'JE SUIS MARQUE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. J’ai perdu mon renom depuis que
+J’ai cessé de pécher,
+Tant d’amis m’ont quitté
+Depuis que j’ai reçu mon Sauveur,
+Jadis souriant, maintenant
+Ils me passent comme un inconnu,
+Disant que je suis vraiment un insensé, un démodé.
+
+Chœur
+Je suis marqué, marqué, marqué,
+Je suis marqué, maintenant où que j’aille
+Je suis marqué, marqué, marqué,
+Et ce que je suis, tous semblent savoir
+Je suis scellé, scellé, scellé,
+Je suis scellé par l’Esprit Divin ;
+Oh ! Gloire à Dieu! Alléluia ! Amen
+Je suis Sien et je sais qu’il est mien.
+
+2. Ils disent que ma vie est ruinée,
+Que mon talent est gâché,
+Ils ne comprennent pas cela, car
+J’avais des plans là-dessus;
+Je sais ce que j’ai laissé quand
+J’ai promis d’aller jusqu’au bout ;
+Et j’ai eu beaucoup plus de gloire
+Depuis que Dieu m’a changé.''',
+    numero: 316,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_317',
+    titre: 'NE SERAIT-CE PAS MERVEILLEUX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quand avec le Sauveur
+Nous irons dans la Gloire,
+Ne serait-ce pas merveilleux ?
+Fini les ennuis et les soucis d’ici-bas,
+Ne serait-ce pas merveilleux ?
+
+Chœur
+Ne serait-ce pas merveilleux là?
+Plus de fardeau à porter,
+Chantant avec joie,
+Les cloches du cœur sonnant,
+Oh ! Ne serait-ce pas merveilleux ?
+
+2. Marcher et parler avec Christ, le Céleste,
+Ne serait-ce pas merveilleux ?
+Louer, adorer l’incomparable Eternel,
+Ne serait-ce pas merveilleux ?
+
+3. Là où la tempête ne nous emportera plus,
+Ne serait-ce pas merveilleux ?
+Sûrement le Seigneur
+Nous gardera pour toujours,
+Ne serait-ce pas merveilleux.''',
+    numero: 317,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_318',
+    titre: 'PRECIEUX SOUVENIRS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Précieux souvenirs, anges invisibles
+Sont envoyés vers mon âme ;
+Ils trainent toujours
+Tout près de moi,
+Et le passé sacré s’ouvre.
+
+Chœur
+Précieux souvenirs, ô ils subsistent
+Et toujours inondent mon âme !
+Dans le silence d’en plein minuit,
+Précieuses scènes sacrées s’étalent.
+
+2. O précieux Père, ô tendre mère,
+Survolent les jours solitaires ;
+Veilles scènes d’enfance en famille
+Reviennent comme tendres souvenirs.
+
+3. Dans le silence d’en plein minuit
+J’entends l’écho du passé,
+Chants du vieux temps,
+Donnant la joie,
+Provenant du beau pays.
+
+4. Je me rappelle maman priant,
+Papa priant à genoux,
+Le soleil se couche, la nuit tombe,
+Leurs prières me suivent toujours.
+
+5. Sur le parcours de toute ma vie,
+J’ignore ce qu’est le futur,
+Plus je médite, cher est l’espoir,
+Chers souvenirs inondent mon âme.
+
+6. Précieux souvenir du prophète,
+Inondent mon âme tous les jours
+Je me souviens de précieuses scènes,
+Qui ne s’évanouiront jamais.
+Et le message et Son signal
+M’ont dit : « c’est la fin du jour »
+Je me souviens qu’il promit de
+Revenir pour les vainqueurs.
+
+7. Précieux souvenirs,
+Glorieuses rencontres,
+Sur cette terre, d’une mer à l’autre,
+J’ouïs le Message du prophète,
+Qui me donne vie, espoir.
+
+8. Précieux souvenirs de ce dépôt,
+Contenant la Nourriture,
+Nous sommes rentrés où il stocka
+La manne spirituelle du jour.''',
+    numero: 318,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_319',
+    titre: 'OH ! COMBIEN J’AIME JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Il y a un nom que j’aime entendre
+J’aime chanter Ses mérites,
+C’est une musique à mes oreilles
+Le plus doux nom sur terre.
+
+Chœur
+Oh ! Combien j’aime Jésus !
+Oh ! Combien j’aime Jésus !
+Oh ! Combien j’aime Jésus !
+Car il m’aima le premier
+(Je ne l’abandonnerai…)
+
+2. Il rappelle l’amour du Sauveur ;
+Mort pour me délivrer,
+Me parle de Son précieux Sang
+Plaidoirie du pécheur.
+
+3. Il me dit ce que le Père garde
+En réserve pour chaque jour
+Même si je marche dans les ténèbres
+Il éclaire mon chemin.
+
+4. Il parle d’un homme plein d’amour
+Qui peut sentir ma peine
+Porter dans le chagrin, la part
+Que nul ne peut porter.''',
+    numero: 319,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_320',
+    titre: 'MON PARENT REDEMPTEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Il a pris un corps semblable
+Au corps du péché
+Pour être en toute chose
+Mon parent rédempteur
+Il s’est abaissé pour goûter à la mort,
+Il m’a donné l’assurance du salut.
+
+Chœur
+Mon Parent Rédempteur (x2)
+Je ne l’oublierai
+
+2. Il était formé dans le sein d’une vierge,
+Il n’est pas venu par la naissance du sexe
+Il avait en Lui le sang de Dieu Lui-même
+Oh il est vraiment mon
+Parent Rédempteur.
+
+3. Un Parent Rédempteur doit être
+Un homme riche,
+Un homme capable
+D’accomplir le rachat,
+Un Parent Rédempteur
+Doit être un homme digne,
+Et tout cela fut accomplir en Lui.
+
+4. Il m’avait créé pour être à Son image,
+Dans la chair,
+J’ai contourné ma théophanie,
+Et ma mémoire a été affaiblie,
+Mais c’est par l’alliance du sang.''',
+    numero: 320,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_321',
+    titre: 'POUR CETTE IMMENSE BONHEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Pour cet immense bonheur
+Alléluia
+Que tu as mis dans mon cœur,
+Alléluia,
+Je veux te chanter Seigneur, alléluia
+Oui, Jésus est mon Sauveur,
+Alléluia.
+
+2. Je le redirai encore,
+Alléluia
+Que pour moi, Jésus est mort,
+Alléluia
+Voilà pourquoi je L’adore,
+Alléluia ;
+Lui Seul est tout mon trésor
+Alléluia.
+
+3. Que chaque jour à chaque heure,
+Alléluia ;
+En moi tu aies ta demeure,
+Alléluia.
+Que ma vie soit une fleur,
+Alléluia, un parfum
+Pour Toi Seigneur, alléluia.''',
+    numero: 321,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_322',
+    titre: 'EN MON CŒUR, J’AI CHOISI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. En mon cœur,
+J’ai choisi de suivre Jésus Christ
+En mon cœur
+J’ai choisi de suivre Jésus
+En mon cœur
+J’ai choisi de suivre Jésus, Oui
+Pour toujours, oui pour toujours.
+
+2. Si mes amis s’en vont qu’importe?
+Moi j’irai
+Si mes amis s’en vont qu’importe?
+Moi j’irai
+Si mes amis s’en vont qu’importe?
+Moi j’irai
+Oui pour toujours,
+Oui pour toujours
+
+3. Au monde, je dis «non »
+Joyeux je prends ma croix
+Au monde, je dis «non »
+Joyeux je prends ma croix
+Au monde, je dis «non »
+Joyeux je prends ma croix
+Oui pour toujours,
+Oui pour toujours.''',
+    numero: 322,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_323',
+    titre: 'SOYONS DES AGNEAUX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. L’agneau et la colombe
+Typifient pour nous l’Amour divin
+Cette colombe blanche
+Ne peut se poser que sur l’agneau
+Soumis à la colombe,
+Doux agneau prêt à se sacrifier.
+
+Chœur
+Soyons des agneaux humbles,
+Doux, patients, laissons tous nos droits
+Portons notre croix, vivre dans la foi
+C’est mourir en soi.
+
+2. Comme quand Israël s’humiliait
+Sous la colonne de feu
+Marchant dans le désert,
+Ils étaient conduits
+A chaque pas confiants
+Dans le prophète-messager
+Confirmé en leur temps.
+
+3. Les actes des apôtres
+Sont pour nous la voie du Saint-Esprit
+Confirmant sa parole ;
+Dieu agit dans la simplicité
+Des signes et des prodiges
+S’opérant dans la vie de croyants.
+
+4. Dans ces temps de ténèbres,
+Il nous faut être conduit !
+Marchant dans la lumière,
+Attelés aux roues du Saint-Esprit,
+La vie de la prière
+Anoblit de tout chrétien.''',
+    numero: 323,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_324',
+    titre: 'LA GRANDE FONTAINE DE L’AMOUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quand la grande fontaine de l’amour Divin
+Se confinait dans le corps Parole
+Pour manifester les attributs de Dieu
+J’étais là, et je suis manifesté.
+
+Chœur
+J’étais là, j’étais là, j’étais là,
+Et je suis manifesté,
+J’étais là, j’étais là,
+Je ne me perdrais jamais
+Car j’étais là (moi aussi)
+J’étais là, j’étais là, j’étais là,
+Et je suis manifesté (maintenant)
+J’étais là, j’étais là, j’étais là,
+Je ne me perdrais jamais car j’étais là
+
+2. Quand le grand Elohim
+Qui remplissait toute chose,
+A pris la forme de la Théophanie
+Pour créer toute chose
+Par sa Parole vivante
+J’étais là et je fus une pensée en Dieu.
+
+3. Quand l’homme fut tombé,
+Dieu a récupéré
+Le livre de la Rédemption de l’homme
+Mais qui n’était pas pour Dieu ;
+Mais bien pour ses enfants
+Qui étaient en Lui dans l’éternité.
+
+4. Quand dans l’éternité,
+L’agneau fut immolé
+Par son sang précieux
+Des noms furent écrits
+Dans le livre de Vie,
+Les noms de rachetés
+Tous ceux qui étaient dans Sa pensée.
+
+5. Quand Jésus est venu,
+Il mourut sur la croix,
+Par Son sang versé
+Il m’a racheté, en attendant
+Que vienne la pleine Rédemption
+Quand les fils de Dieu seront manifestés.
+
+6. Quand au temps de la fin,
+Jésus est venu avec ce livre ouvert
+Dans Sa main pour réclamer
+Les Siens qui étaient enfermés
+Dans les credo des dénominations.
+
+7. La trompette a sonné,
+Le cri a retentit, la voix de l’archange
+Se fait entendre ressuscitant les morts,
+Appelant les vivants
+Qui étaient en Lui dans l’éternité.''',
+    numero: 324,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_325',
+    titre: 'BIEN AIME, CROIS EN LUI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Dans ces temps difficile
+Où le monde évolue ;
+Cet âge le plus sombre
+Que l’Eglise ait connu
+Seule la voix du Seigneur
+Nous rassure et nous console 2x
+
+Chœur
+Bien-aimé, bien-aimé,
+Crois en Lui tu es sauvé
+
+2. Vois la croix du salut
+Erigée devant toi,
+Vois le sang du rachat
+Qui coula à Golgotha,
+Et la voix de l’Agneau
+Qui t’appelle à chaque instant.
+Bien-aimé, bien-aimé,
+Crois en Lui tu es sauvé ;
+
+3. Quand l’Agneau t’a tiré
+Du bourbier du péché
+Où étaient, tes parents,
+Tes amis et tes voisins,
+Alors vend tes soucis,
+Tiens l’épée avec joie.
+
+4. Combien de grands autels
+Sont bâtis au nom de Dieu ;
+Des temples et chapelles
+Erigés en tous les lieux,
+Mais il n’y a qu’une place
+Où l’on peut trouver Jésus
+
+5. Prêtres et religieuses
+Ont moisi dans les couvents,
+Des grands théologiens
+Ont vieilli aux séminaires,
+Mais pour vous (petits) enfants,
+La Parole est révélée ;
+
+6. Partout dans les campagnes,
+Ecoutez prêcher des gens
+Plus zélés que ceux-là
+Qui ont reçu mon vrai mandat,
+Mais la main du Seigneur
+N’est que là où est Son nom.
+
+7. Avant que tu existes moi j’avais connu ton nom
+Avant que tu vives moi j’avais tracé mon plan,
+pour que toute la gloire me revienne à tout moment.''',
+    numero: 325,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_326',
+    titre: 'DIEU SE REPOSE DANS L’EGLISE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Tout a commencé en Genèse ;
+Au sixième jour Dieu créa l’homme,
+Au septième jour du millénium.
+
+Chœur
+Dieu se repose dans l’Eglise,
+Dieu se repose dans l’homme
+
+2. Aujourd’hui l’histoire se répète,
+Dieu forma l’Eglise en sept âges,
+Au septième jour du millénium
+
+3. Il y avait la justification,
+Puis ce fut la sanctification,
+En fin le baptême du Saint-Esprit
+
+4. Dieu viendra dans la nué de gloire,
+Il dira Shalom à l’Epouse,
+Dans le matin du millénium.
+
+5. Dieu lira les pensées des hommes,
+Comme ce fut au temple de Salomon,
+Il y a un don de sagesse.
+
+6. Je désire voir le millénium,
+Il y aura la paix sur la terre,
+Jésus sera le Dieu incarné.
+
+7. Les russes embrasseront
+Les finlandais, comme ce fut
+Dans l’arche de Noé,
+Le loup et l’agneau paitront ensemble.
+
+8. La colonne de feu retournera ;
+Elle viendra oindre le Saint des saints,
+Dans le matin du millénium.''',
+    numero: 326,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_327',
+    titre: 'REVIENS SEIGNEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh gloire à Toi, divin Sauveur,
+Reviens nous T’attendons
+Toi qui nous as si tant aimé,
+Reviens nous T’attendons.
+
+Chœur
+Reviens, Seigneur, vers Tes enfants,
+Nous T’attendons d’un cœur brisé,
+Le monde a touché à sa fin,
+Reviens, nous T’attendons.
+
+2. Toi qui abandonnas le trône,
+Reviens nous T’attendons,
+Tu te fis homme pour nous sauver
+Reviens, nous T’attendons.
+
+3. Par Ton sang Tu nous rachetas,
+Reviens nous T’attendons
+Par Tes meurtrissures, sommes guéris,
+Reviens nous T’attendons
+
+4. Bientôt tout est fini, Seigneur,
+Reviens nous T’attendons,
+Nous Te louons, Puissant Vainqueur
+Reviens, nous T’attendons.''',
+    numero: 327,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_328',
+    titre: 'IL Y A UN MESSAGE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Il y a un message à croire
+Et un signe à produire
+Plus qu’un livre à apprendre,
+Une doctrine à défendre.
+
+Chœur
+Prêchez-le, croyez-le
+Le message de ce jour ;
+Prêchez-la, croyez-la,
+la Parole révélée.
+
+2. Jésus-Christ est le même
+Hier, aujourd’hui et demain,
+Suivons les voies des apôtres,
+Ceux qui nous ont précédés.
+
+3. Vous ministres de cet âge ;
+Prêchez tous le Message,
+Il n’y a qu’une seule source,
+Puisez-y c’est notre bourse.
+
+4. Placez bien votre semence,
+La pluie tombera bientôt,
+Dieu confirmera ce jour,
+La Parole originale.
+
+5. Car ainsi dit mon prophète,
+L’évidence de l’Esprit,
+C’est la foi dans la Parole,
+Révélée en notre temps.
+
+6. Confiez-vous en l’Eternel,
+La Parole faite chair,
+Confiez-vous en Ses prophètes,
+Et vous prospérerez.''',
+    numero: 328,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_329',
+    titre: 'NOUS ALLONS BON PAS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous allons bon pas pèlerins
+Joyeux, sur l’ancien et bon chemin.
+Le bâton en main,
+Marchant vers les cieux,
+Sur l’ancien et bon chemin.
+
+2. Le chemin s’en va parmi les pêcheurs,
+Sur l’ancien et bon chemin.
+Ennemis nombreux,
+Mais la paix du cœur
+Sur l’ancien et bon chemin.
+
+3. Nous marchons au nom
+D’un Puissant Sauveur,
+Sur l’ancien et bon chemin.
+En chantant bien haut
+Son amour vainqueur,
+Sur l’ancien et bon chemin.
+
+4. Nous courons souvent
+De présents dangers,
+Sur l’ancien et bon chemin.
+Mais tout près de nous
+Est le Bon Berger,
+Sur l’ancien et bon chemin.''',
+    numero: 329,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_330',
+    titre: 'NASIKIA HABARI YA MJI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nasikia habari ya mji
+Huko mbali ya inchi ya taabu
+Nuru yake ni mwana kondoo
+Sikumoja naingiamo
+
+Haleluya nafika upesi
+Haleluya nakwenda kwa mji
+Haleluya karibu kufika
+Siku moja naingiamo
+
+2. Kuna inchi pasipo machozi
+Na taabu na vita huzuni
+Wala ugonjwa hauta kuako
+Siku moja naingiamo
+
+Haleluya nafika kwa shangwe
+Haleluya na kwenda kwa mji
+Haleluya karibu kufika
+Siku moja nitakuwako
+
+3. Na jamaa ya inchi ya heri
+Wanavikwa na nguo nyeupe
+Wana taji za zahabu safi
+Siku moja naingiamo
+
+Haleluya furaha mbinguni
+Haleluya mashaka hayako
+Wala shida anguko si huko
+Natamani kuingiako.''',
+    numero: 330,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_331',
+    titre: 'UN JOUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Un jour, quand le ciel fut plein
+De ses louanges,
+Un jour quand le péché était tout noir,
+Alors vint Jésus pour naître d’une vierge,
+Vécut parmi les hommes.
+Lui, mon exemple !
+
+Chœur
+Vivant, Il m’aima,
+Mourant, me sauva,
+Enseveli, emporta mes péchés.
+Ressuscitant Il justifia pour toujours,
+Un jour, Il reviendra,
+Quel glorieux jour !
+
+2. Un jour, on Le conduisit
+Au mont calvaire,
+On Le cloua pour mourir sur le bois,
+Accablé des peines, méprisé, rejeté,
+Il prit nos péchés,
+Lui, mon rédempteur !
+
+3. Un jour, on L’abandonna Seul au jardin,
+Après souffrance, Il fut enseveli,
+Les anges descendirent
+Pour veiller à Sa tombe,
+Mon Sauveur, Espoir du désespéré !
+
+4. Un jour, la tombe
+Ne Le garda pas longtemps
+Un jour, la pierre roula loin de la porte.
+Alors il ressuscita, vainquit la mort,
+Maintenant Il est monté, mon Seigneur.
+
+5. Un jour, les cieux brilleront
+De Ses louanges,
+La trompette annoncera Sa venue,
+Jour merveilleux
+Ramenant mes bien-aimés,
+Glorieux Sauveur,
+Ce Jésus est à moi.''',
+    numero: 331,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_332',
+    titre: 'PANAPO UPENDO',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Vitu vyote ni sawa panapo
+pendo,
+Kila sauti tamu, panapo pendo,
+Pana amani pale, na furaha
+Nyumbani,
+Siku zote salama, panapo pendo
+
+Chœur
+Panopo ! upendo !
+Siku zote salama, panapo pendo.
+
+2. Furaha i nyumbani, panapo
+pendo,
+Hapana machukizo, panapo
+pendo,
+Chakula nikitamu, mashamba
+yastawi,
+Maisha nikamili panapo pendo
+
+3. Hata mbinguni juu, pana furaha,
+Wakionaupendo,
+nyumbanimwetu,
+Macho yanapendezwa
+Na viumbe vya Mungu,
+Huona panapo pendo
+
+4. Ee Yesu niwe wako wako kabisa
+Ndipo patakuwako pendo
+nyumbani
+Nitakaa salama, sitafanya zambi
+Nitabarikiwa tu panapo pendo''',
+    numero: 332,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_332b',
+    titre: 'ON EST BIEN A LA MAISON',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. On est bien à la maison
+Quand règne l’amour
+La joie est dans chaque son
+Quand règne l’amour
+C’est la paix, la bonne humeur
+Le véritable bonheur
+Le temps passe avec douceur
+Quand règne l’Amour.
+
+Chœur :
+Au foyer, chaque jour,
+Le temps passe avec douceur,
+Quand règne l’amour.
+
+2. Vers Dieu s’élève un doux chant
+Quand règne l’amour
+Point de mot rude et méchant
+Quand règne l’amour
+Partout sur notre chemin
+Fleurissent rose et jasmin
+La terre est un bon jardin
+Quand règne l’amour.
+
+3. Le ciel sourit, bienveillant
+Quand règne l’amour
+Chacun se montre accueillant
+Quand règne l’amour
+Plus gaiement chante l’oiseau
+Et murmure le ruisseau
+L’azur du ciel est plus beau
+Quand règne l’amour.
+
+4. Jésus, tout entier prends-moi
+Pour que chaque jour
+Notre foyer soit pour toi
+Gardé dans l’amour
+Tu mettras à l’abri
+De tout mal, de tout souci
+Par toi je serai béni
+Jésus, Roi d’Amour.''',
+    numero: 332,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_333',
+    titre: 'MA RICHESSE, MA GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ma richesse, ma gloire
+Et ma félicité,
+O Jésus ! C’est de croire
+Que Tu m’as racheté,
+Rempli de confiance,
+En Toi, divin Sauveur.
+Je vis dans l’espérance,
+Et je marche sans peur.
+
+2. Rien n’ôte les souillures,
+Rien ne guérit le cœur.
+Si non les meurtrissures
+Et le sang du Sauveur.
+Oui, Jésus seul nous lave,
+De toute iniquité.
+Et procure à l’esclave,
+L’heureuse liberté.''',
+    numero: 333,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_333',
+    titre: 'MA RICHESSE, MA GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ma richesse, ma gloire
+Et ma félicité,
+O Jésus ! C’est de croire
+Que Tu m’as racheté,
+Rempli de confiance,
+En Toi, divin Sauveur.
+Je vis dans l’espérance,
+Et je marche sans peur.
+
+2. Rien n’ôte les souillures,
+Rien ne guérit le cœur.
+Si non les meurtrissures
+Et le sang du Sauveur.
+Oui, Jésus seul nous lave,
+De toute iniquité.
+Et procure à l’esclave,
+L’heureuse liberté.
+
+3. Oh ! Que toute la terre,
+Apporte à ce Sauveur.
+Ses péchés, sa misère !
+Il fait grâce au pécheur.
+Son amour insondable
+Lui fit quitter le ciel,
+Pour donner au coupable
+Un salut éternel.''',
+    numero: 333,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_334',
+    titre: 'IL EST PLUS TARD',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Voyez comment toutes
+Les prophéties s’accomplissent
+Sous nos yeux,
+Annonçant la venue du Seigneur,
+O bientôt s’ouvriront les cieux.
+
+Chœur
+Combien de temps pensez-vous,
+Nous restant comme frère ?
+Il est plus tard que vous ne le pensiez,
+Oui, le Seigneur revient bientôt.
+
+2. Les signes se voient dans les cieux,
+Sur la terre et partout,
+Proclamant qu’il n’y a plus de temps.
+Repentez-vous ou vous mourrez.
+
+3. La fin de toute chose est proche
+Soyez alors sages et sobres ;
+Prenez toutes les armes de Dieu,
+Vivez la vie des bons chrétiens.
+
+4. Bientôt dans le ciel enlevé,
+Nous irons à la maison de celui
+Qui nous a sauvés et
+Avec Lui nous régnerons.''',
+    numero: 334,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_335',
+    titre: 'PRES DE TOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Toi ma portion éternelle,
+Plus qu’un ami ou la vie,
+Pendant mon pèlerinage,
+Laisse-moi marcher avec toi (x4)
+Près de Toi (x4)
+Pendant mon pèlerinage,
+Laisse-moi marcher avec Toi.
+
+2. Ma prière ne sera jamais,
+Pour les plaisirs de ce monde
+Oui, je souffrirai avec joie,
+Laisse-moi marcher avec Toi
+Près de Toi (x4)
+Oui, je souffrirai avec joie,
+Laisse-moi marcher avec Toi.
+
+3. Guide-moi dans la vallée d’ombres,
+Et sur les vagues de la vie,
+Puissé-je dans la vie éternelle entrer avec Toi Seigneur.
+Près de Toi (x4)
+Puissé-je dans la vie éternelle entrer avec Toi Seigneur.''',
+    numero: 335,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_336',
+    titre: 'MERVEILLEUSE PAIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ce soir, loin dans la profondeur
+De mon esprit,
+S’élève un chant plus doux
+Que le psaume ;
+Pareil aux accords célestes,
+Ce chant tombe sans cesse
+Sur mon âme comme un calme infini.
+
+Chœur
+Paix ! Paix ! Merveilleuse paix ;
+Venant de la part du Père céleste
+O inonde pour toujours mon esprit
+Je prie, des vagues d’amour insondables.
+
+2. Dans cette merveilleuse paix,
+Quel trésor je possède
+Enfouie profondément
+Dans mon âme,
+Tellement ancrée
+Qu’aucune puissance ne peut l’ôter
+Durant les jours de l’éternité
+
+3. Ce soir, je me repose
+Dans cette merveilleuse paix,
+Doux repos sous contrôle de Jésus !
+Car je suis gardé
+De tout danger nuit et jour,
+Mon âme est inondée de Sa gloire.
+
+4. Et je pense qu’en montant
+Vers cette cité de paix
+Où je verrai l’Auteur de la paix,
+Cette mélodie que chanteront
+Les rachetés,
+S’entendra dans ce Royaume céleste.
+
+5. O âme, ici, sans repos,
+Sans consolation,
+Marchant sur les rudes sentiers
+Du temps,
+Prends Jésus comme ami
+Avant que la nuit tombe ;
+Oh ! Accepte cette douce paix
+Si sublime.''',
+    numero: 336,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_337',
+    titre: 'JE NE PASSERAI LE JOURDAIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quand j’atteindrai la rivière
+A la fin du jour ;
+Au dernier coup de vent de chagrins,
+Quelqu’un m’attendra là
+Pour m’indiquer la route,
+Je ne passerai le Jourdain seul.
+
+Chœur
+Je ne passerai le Jourdain seul
+Jésus mourut expia mes péchés
+Quand je verrai la nuit,
+Il m’attendra. Je ne passerai
+Le Jourdain seul.
+
+2. Bien souvent je suis las,
+abandonné
+Et triste quand mes amis semblent
+Tous partis une pensée me console
+Et rend mon cœur joyeux
+Je ne passerai le Jourdain seul.
+
+3. Que les flots de chagrins et de souci
+De ferlent, Christ le sauveur prendra
+Mon âme jusqu’au bout du voyage
+Je ne passerai le Jourdain seul.''',
+    numero: 337,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_338',
+    titre: 'RASSEMBLANT LES GERBES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous irons joyeux, ce jour,
+Moissonner au champ lointain
+Rassemblant les belles gerbes,
+Du matin jusqu’au soir
+Nous travaillerons avec force,
+Rassemblant les belles gerbes.
+
+Chœur
+Rassembler les belles gerbes
+Rassembler les belles gerbes ;
+Gloire à Dieu, nous allons
+Au pays du jour éternel ;
+Rassembler les belles gerbes.
+
+2. Sur les monts, collines ou plaines,
+Nous moissonnerons le grain ;
+Rassemblant les belles gerbes,
+Oui, nous œuvrerons partout
+Sans craindre ni défaillir
+Rassemblant les belles gerbes.
+
+3. Nous chanterons, prierons
+Et obéirons au Maître,
+Rassemblant les belles gerbes :
+Nous irons dans d’autres terres,
+Obéissant au Seigneur,
+Rassemblant les belles gerbes.''',
+    numero: 338,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_339',
+    titre: 'IL DESCEND DE SA GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon Dieu, mon Sauveur descendit
+De Sa gloire,
+Son nom était Jésus,
+Histoire toujours vivante
+Né dans une mangeoire,
+Etranger pour les Siens ;
+Un homme de chagrins,
+De douleur, de larmes.
+
+Chœur
+Oh ! Combien je l’aime :
+Combien je l’adore !
+Mon soleil, min souffle,
+Mon tout en tout
+Le grand Créateur devin mon Sauveur
+Tout ce que Dieu est, demeure en Lui.
+
+2. Oh ! Quelle humiliation,
+Nous offrant rédemption !
+Quand en pleines ténèbres,
+Nous étions sans espoir,
+Dieu de grâce, Dieu tendre
+Abandonnant Sa gloire
+Pour courtiser, gagner,
+Sauver mon âme.
+
+3. Sans aucun regret,
+Il devin chair et sang ;
+Il prit la forme humaine,
+Montra le plan caché,
+Oh glorieux mystère,
+Sacrifice du Calvaire ;
+Maintenant je sais,
+Tu es le grand « Je Suis »''',
+    numero: 339,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_340',
+    titre: 'DERRIERE LE RIDEAU DU TEMPS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Entre le Ciel et la terre
+S’étale un rideau ;
+Derrière se trouve un beau pays
+Là, les maux de cette vie
+Ne peuvent
+Plus me toucher ;
+Dieu, puis-je voir
+Derrière le rideau du temps !
+
+2. Je suis seul, sans secours
+Et je veux voir Jésus ;
+Entendre les cloches du port sonner ;
+Là où mes amis,
+Mes chers bien-aimés m’attendent ;
+Dieu, puis-je voir
+Derrière le rideau du temps !
+
+3. Très nostalgique, très triste,
+Je désire voir Jésus ;
+Entendre les cloches du port sonner.
+Rendrait ma route agréable
+Otant toute peur ;
+Dieu, puis-voir
+Derrière le rideau du temps ;''',
+    numero: 340,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_341',
+    titre: 'C’EST LE SEIGNEUR DE GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh ! Voyez quel genre d’homme
+Qui calme la mer en furie,
+Guérit malades, estropiés ;
+Boiteux, fait voir l’aveugle,
+Portes de la prison
+Il ouvre et libère les captifs ;
+Voyez quel genre d’homme
+Il est, Quel genre d’homme est-ce !
+
+Chœur
+C’est le Seigneur de gloire,
+Il est le grand Je Suis
+Il est l’Alpha, l’Omega ;
+Le Commencement et la Fin
+Son Nom est Merveilleux ;
+C’est le Prince de la Paix ;
+Il est le Père éternel
+Durant l’éternité.
+
+2. Oh ! Voyez quel genre d’homme ;
+Qui dit à la femme au puits ;
+Vie éternelle, Je te donne,
+Vie d’une immense richesse
+Et quiconque boira l’eau du puits,
+Vivra éternellement
+Voyez quel genre d’homme Il est
+Quel genre d’homme est-ce.
+
+3. Oh ! Voyez quel genre d’homme
+Qui guérit boiteux, infirmes ;
+Tes péchés sont pardonnés
+Prend ton lit marche « dit-Il »
+Débout en puissant guérisseur
+Il cri : « Aie foi en Moi »
+Voyez quel genre d’homme Il est
+Quel genre d’homme est-ce !
+
+4. Oh ! Voyez quel genre d’homme
+Qui est entre Dieu et l’homme !
+Ses yeux sont
+Comme une flamme de feu ;
+Van, Il a dans Sa main ;
+Jean Le vit dans les sept Eglises
+Comme un soleil radieux
+Voyez quel genre d’homme Il est
+Quel genre d’homme est-ce !
+
+5. Oh ! Voyez quel genre d’homme
+Qui est sur Son Trône au Ciel
+Depuis le Ciel,
+Il règne et conduit Ses bien-aimés ;
+Lion de la tribu de Juda ;
+Et racine de David ;
+Voyez quel genre d’homme Il est,
+Quel genre d’homme est-ce !''',
+    numero: 341,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_342',
+    titre: 'RIEN NE SEPARE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Rien ne sépare mon âme du Sauveur ;
+Rien de ce rêve illusoire du monde
+J’ai renoncé au plaisir du péché ;
+Jésus est mien, rien ne nous sépare.
+
+Chœur
+Rien ne sépare mon âme du Sauveur,
+Ainsi je peux voir Sa face bénit ;
+Rien n’empêche la moindre
+De Ses faveurs ;
+Libère la voie que rien ne sépare.
+
+2. Les obstacles tels que plaisirs
+Du monde ;
+Coutumes qui paraissent inoffensives ;
+Ne doivent point séparer mon cœur
+De Lui ;
+Il est mon Tout ; rien ne nous sépare.
+
+3. Les obstacles comme orgueil ou titre ;
+Le moi ou amis n’interviendront ;
+Même si j’ai beaucoup de tribulations,
+J’ai décidé, rien ne nous sépare.
+
+4. Rien ne sépare même pas
+Les dures épreuves ;
+Même si le monde se ligue
+Contre moi, me reniant,
+Veillant dans la prière,
+Je vaincrais donc sans rien qui sépare.''',
+    numero: 342,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_343',
+    titre: 'VOIS UN FLOT CRAMOISI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Sur le mont Calvaire de peines,
+Prix du péché payé ;
+Rayons d’espoir pour demain
+Jaillirent sur notre route.
+
+Chœur
+Flot cramoisi du sang je vois
+Il coule du calvaire ;
+Ses vagues touchant le Trône de Dieu
+Se déversent sur nous.
+
+2. N’y a plus de condamnation
+Qui reste pour détourner
+Mon âme loin de Son salut
+Il demeure dans mon cœur.
+
+3. Quand tristesse et chagrin disent
+« Pécheur n’ose pas prier »
+Je lève les yeux vers Jésus
+Et Il m’invite à dire.
+
+4. Quand nous serons au portail
+Où vie, règne toujours,
+Grande finale des rachetés
+Sera ce doux refrain.''',
+    numero: 343,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_344',
+    titre: 'LA PORTE DE L’EST',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je te rencontrerai à l’aube,
+Tout juste à la porte de l’Est ;
+Sois prêt, pèlerin fidèle ;
+De peur qu’il ne soit trop tard.
+
+Chœur
+Je te rencontrerai à l’aube ;
+Tout juste à la porte de l’Est,
+Oui là-bas ;
+Je te rencontrerai à l’aube ;
+Je te rencontrerai à l’aube,
+Oui là-bas.
+
+2. Si tu me devances dans la gloire,
+Sois près de la porte de l’Est ;
+Car je viendrai ce matin-là
+Tu n’attendras pas longtemps.
+
+3. Gardez allumées, nettes, vos lampes ;
+Veillez, attendez l’Epoux,
+Il viendra à notre rencontre,
+Tout juste à la porte de l’Est.
+
+4. Quelle grande joie
+De rencontrer
+Là, les saints qui nous attendent,
+Quelle rencontre heureuse et bénie,
+Tout juste à la porte de l’Est.''',
+    numero: 344,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_345',
+    titre: 'LE LYS DE LA VALLEE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. J’ai trouvé en Jésus l’Ami
+Qui est toute chose pour moi ;
+C’est le plus beau d’entre dix mille pour mon âme.
+Il est le Lys de la vallée
+Est en Lui Seul je trouve
+Ma purification et ma guérison.
+Mon réconfort dans les peines
+Appui dans les tourments
+Il m’invite à Lui confier
+Chaque souci, Alléluia!
+La brillante étoile du matin
+Le Lys de la vallée,
+C’est le plus beau d’entre dix
+mille pour mon âme
+
+2. Il a pris et porté sur Lui
+Tous mes soucis et mes peines
+Ma tour forte et puissante
+Dans les tentations
+Pour Lui, j’ai tout abandonné
+Et ôté de mon cœur
+Les idoles et par Sa puissance
+Il me garde.
+Même si le monde m’abandonne
+Ou que Satan me tente
+Par Jésus, j’atteindrai
+Sûrement le but, alléluia !
+La brillante étoile du matin
+Le Lys de la vallée,
+C’est le plus beau d’entre dix mille
+Pour mon âme.
+
+3. Il ne me quittera jamais
+Ni me laissera ici
+Tant que j’ai la foi et fais Sa volonté,
+Un mur de feu autour de moi ;
+Maintenant je ne crains rien
+Mon âme affamée
+Se nourrit de Sa manne.
+Alors ravi dans la gloire
+Pour voir Sa face bénie
+Là à jamais coulent
+Les fleuves des délices,
+Alléluia !
+La brillante étoile du matin,
+Le lys de la vallée,
+C’est le plus beau d’entre dix mille
+Pour mon âme.''',
+    numero: 345,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_346',
+    titre: 'JERICHO',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Tout le peuple d’Israël,
+Dirigé par l’Eternel
+Vient de franchir le Jourdain
+Par un miracle divin ;
+Mais un obstacle puissant
+Juste au seuil du Canaan ;
+Vient arrêter leur entrée ;
+C’est la pierre Jéricho.
+
+Chœur
+Jéricho ! Jéricho !
+Proclamez joyeux échos !
+La louange fait crouler
+Tous les murs les plus épais.
+
+2. Tout le peuple est circoncis,
+Consacrés sans compromis
+Et les milices du ciel
+Sont aux côtés d’Israël
+Et Dieu dit à Josué :
+‘Cette ville du péché,
+Avec ses soldats, son roi,
+Je vais la vaincre avec Toi.
+
+3. Tout le peuple obéissant,
+Au son du clairon puissant.
+Avec l’arche a fait le tour
+Des ces murs durant sept jours ;
+Et soudain Josué dit :
+Cette ville, poussant des cris,
+L’Eternel nous a livré
+Cette arrogante cité.
+
+4. Tout le peuple d’un seul cœur
+Cria :
+‘Gloire au Dieu vainqueur’.
+Et dans un puissant fracas
+La muraille s’écroula,
+Et c’est la divine loi,
+L’obéissance c’est la foi
+Les louanges d’un cœur pur
+Font crouler les plus hauts murs.''',
+    numero: 346,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_347',
+    titre: 'CE MONDE N’EST PAS CHEZ MOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ce monde n’est pas chez-moi,
+Je suis juste un passant.
+Et mes trésors s’entassent
+Quelque part là au ciel,
+Les anges me font signe
+Depuis la porte du ciel
+Et je ne me sens jamais comme
+Chez-moi dans ce monde.
+
+Chœur
+Seigneur Tu sais,
+N’y a point d’amis comme Toi.
+Si le ciel n’est pas chez-moi,
+Alors que ferais-je ?
+Les anges me font signe
+Depuis la porte du ciel
+Et je ne me sens jamais
+Comme chez-moi dans ce monde.
+
+2. Tous sont à mon attente,
+C’est tout ce que je sais
+Y a longtemps avec Christ,
+J’ai bien tout arrangé.
+Bien que faible et pauvre,
+Je sais qu’Il me soutient
+Et je ne me sens jamais
+Comme chez-moi dans ce monde.
+
+3. Dans le Pays de gloire
+Nous vivrons à jamais.
+De tous cotés les saints crient :
+« victoire » dans des chants
+De la plus douce louange.
+Qui monte depuis le ciel
+Et je ne me sens jamais
+Comme chez-moi dans ce monde.''',
+    numero: 347,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_348',
+    titre: 'VOIR MON SAUVEUR FACE A FACE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Voir mon Sauveur face à face
+Voir Jésus dans Sa beauté ;
+O joie ! O suprême grâce !
+Ö bonheur ! Félicité !
+
+Chœur
+Oui, dans Ta magnificence
+Je Te verrai, divin, Roi !
+Pour toujours en Ta présence
+Je serai semblable à Toi !
+
+2. Ta gloire est encore voilée ;
+Ah ! D’un voile ensanglanté !
+Bientôt sera révélée
+Ton ineffable beauté !
+
+3. Oh ! Quels transports d’allégresse ;
+Quand Tes yeux baissé
+Sur moi ;
+Me diront avec tendresse ;
+« Je mourus aussi pour toi »''',
+    numero: 348,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_349',
+    titre: 'J’AI SOIF DE TA PRESENCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. J’ai soif de Ta présence,
+Divin chef de ma foi.
+Dans ma faiblesse immense
+Que ferais-je sans Toi ?
+
+Chœur
+Chaque jour
+A chaque heure
+Oh ! J’ai besoin de Toi,
+Viens Jésus et demeure
+Auprès de moi.
+
+2. Des ennemis dans l’ombre,
+Rodent autour de moi.
+Accablé par le nombre,
+Que ferais-je sans Toi ?
+
+3. Pendant les jours d’orage,
+D’obscurité d’effroi,
+Quand faiblit mon courage
+Que ferais-je sans Toi ?
+
+4. O Jésus ! Ta présence
+C’est la vie et la paix.
+La paix dans la souffrance
+Et la vie à jamais.''',
+    numero: 349,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_350',
+    titre: 'PECHEUR, JE VOUDRAIS TE GUERIR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Pécheur, Je voudrais te guérir ;
+J’ai vu tes larmes, ta souffrance ;
+Mais pour avoir la délivrance,
+Il faut apprendre à m’obéir ;
+Voici, je me tiens à la porte,
+Je suis Ton maître et Ton Sauveur
+C’est le bonheur
+Que Je t’apporte;
+Ne veux-tu pas M’ouvrir ton cœur ?
+
+2. Sais- tu que Je suis né pour toi ;
+Que pour toi J’ai donné ma vie ?
+Ton cœur est-il l’hôtellerie
+Sans place même pour ton Roi?
+Souvent année après année,
+Chez toi j’ai frappé, mais en vain,
+Voici le soir de la journée.
+Ne veux-tu pas M’ouvrir enfin?
+
+3. N’auras-tu pas besoin de Moi ;
+Bientôt, dans la nuit éternelle?
+Dès aujourd’hui, viens
+Sous Mon aile
+Je serai tout, oui, Tout pour toi.
+Le temps rapidement t’emporte,
+Pourquoi renvoyer à demain?
+Trop tard, un jour devant ma porte,
+Tu frapperas ;
+Peut-être, en vain.
+
+4. Si tu n’as pas besoin de Moi,
+Ecoute, obéis sans comprendre.
+Mais Jusques à quand devrai-Je attendre ?
+Ton Seigneur a besoin de toi.
+Voici, Je me tiens à la porte,
+Je suis ton Maître et ton Sauveur,
+C’est le bonheur que Je t’apporte :
+Ne veux-tu pas M’ouvrir ton cœur ?''',
+    numero: 350,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_351',
+    titre: 'LE SEIGNEUR NOUS AIME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Le Seigneur nous a aimé
+Comme on n’a jamais aimé
+Il nous guide chaque jour
+Comme une étoile dans la nuit ;
+Quand nous partageons le pain,
+Il nous donne Son amour ;
+C’est le pain de l’amitié, le pain de Dieu.
+
+Chœur
+C’est mon corps, prenez et mangez ;
+C’est mon sang, prenez et buvez,
+Car Je suis la vie ;
+Et Je suis l’Amour ;
+O Seigneur, emporte-nous
+Dans Ton Amour.
+
+2. Le Seigneur nous a aimé ;
+Comme on n’a jamais aimé ;
+Pour les gens de son village
+C’est le fils du charpentier ;
+Il travaille de Ses Mains comme
+Font tous Ses amis ;
+Il connait le dur labeur de chaque jour.
+
+3. Le Seigneur nous a aimé ;
+Comme on n’a jamais aimé ;
+Son Amour était si grand
+Qu’Il en mourut sur la croix,
+Son Amour était si fort
+Qu’Il triompha de la mort ;
+Il sortit de Son tombeau libre
+Et vainqueur.
+
+4. Le Seigneur nous a aimé
+Comme on n’a jamais aimé
+Il rassemble tous les hommes
+Et les fait vivre de Sa vie
+Et tous les chrétiens du monde,
+Sont les membres de Son corps
+Rien ne peut les séparer de Son Amour.''',
+    numero: 351,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_352',
+    titre: 'LA LUTTE SUPREME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. La lutte suprême
+Nous appelle tous
+Et Jésus Lui-même
+Marche devant nous.
+Que Sa vue enflamme
+Tous Ses combattants, et soutienne
+L’âme de plus hésitants.
+
+Chœur
+Du Christ la bannière
+Se déploie au vent ;
+Pour la Sainte guerre
+Soldats en avant.
+
+2. L’ennemi redoute
+le Nom Seul du Roi ;
+Il fuit en déroute au cri de la foi
+Acclamons ensemble
+Jésus d’un seul cœur
+Et que l’enfer tremble
+A ce Nom vainqueur.
+
+3. Nous suivons la trace
+Des saints d’autrefois,
+Par la même grâce,
+Sous les mêmes lois,
+Vivant de miracles
+L’Eglise de Dieu de tous
+Les obstacles triomphe en tous lieux.
+
+4. Que les ans s’écoulent,
+que de toutes parts,
+A grand brouit s’écroulent
+trônent et remparts.
+Notre citadelle, ferme contre tout,
+l’Eglise fidèle, restera debout!
+
+5. Reçois, Chef Suprême
+Monarque Eternel,
+D’un peuple qui T’aime
+le vœu solennel ; Gloire, amour,
+hommage Au ressuscité,
+Qu’Il soit d’âge en âge partout exalté.''',
+    numero: 352,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_353',
+    titre: 'COMME UN PHARE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Comme un phare sur la plage.
+Perçant l’ombre de la nuit.
+L’amour de Dieu dans l’orage.
+Cherche l’homme et le conduit
+
+Chœur
+O Sauveur! Que Ta lumière.
+Resplendisse sur les flots.
+Et vers le ciel, qu’elle éclaire.
+Et sauve les matelots.
+
+2. Nulle étoile n’étincelle.
+Pour vous guider, ô nochers !
+Qui guidera la nacelle.
+Des écueils et des rochers ?
+
+3. Dans la nuit qui m’environne.
+De Ton amour ô Jésus !
+Que par moi l’éclat rayonne.
+Aux yeux des marins perdus.''',
+    numero: 353,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_354',
+    titre: 'SUR LE CONGO SOLITAIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Sur le Congo solitaire ;
+Je vais chantant.
+Voix du ciel, voix de la terre
+Rendent mon cœur content.
+Car tout parle de Ta grâce,
+Divin rédempteur !
+Qui vint T’unir à ma race
+Pour me sauver, moi pécheur.
+
+Chœur
+Oh! La merveilleuse histoire!
+Christ est mort pour moi !
+Jésus est le Roi de gloire
+Et je suis frère du Roi.
+
+2. Fini l’horrible esclavage :
+Le Dieu d’amour
+Transforme l’homme sauvage,
+Change la nuit en jour.
+Plus de fétiches, d’idoles,
+Plus de mauvais sort
+Pour qui croit cette Parole :
+Jésus a vaincu la mort !
+
+Chœur
+Oh ! La merveilleuse
+Histoire!
+Christ est mort pour moi !
+Jésus est le Roi de gloire
+Et je suis frère du Roi.
+
+3. Là-bas, Lualaba chante :
+Il est venu !
+Congo, que ta voix puissante
+Proclame : ‘Il a vaincu !’
+Toi large Oubangui
+Murmure : Il revient bientôt
+Et que toute la nature
+Redise comme un écho.
+
+Chœur
+La miraculeuse histoire!
+Christ est mort pour moi !
+Jésus est le Roi de gloire
+Et je suis frère du Roi.''',
+    numero: 354,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_355',
+    titre: 'JE SUIS DU NOMBRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je suis du nombre,
+Je suis du nombre
+De ceux qui sont vêtus de blanc.
+(x2)
+
+Chœur
+Je suis du nombre,
+Je suis du nombre
+De ceux qui sont vêtus de blanc.
+
+2. Du nombre des gens
+Lavés par le sang,
+Je suis du nombre de ceux-là
+(Bis).
+
+3. Jean vit ces gens-là,
+Lavés par le sang,
+Jean les vit tous
+Vêtus de blanc (Bis).''',
+    numero: 355,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_355b',
+    titre: 'JEAN FUT RAVIS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh ! Oui Jean fut ravis
+Dans le jour du Seigneur
+Il entendit du ciel une voix qui lui dit :
+” Je suis l’Alpha et l’Omega,
+Le Commencement et la Fin”
+Je suis vivant éternellement.
+
+2. Je suis vivant Je suis vivant
+Je suis vivant éternellement (2x)''',
+    numero: 355,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_355c',
+    titre: 'OH! LE SANG',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Oh! Le Sang de Jésus Le Sang,
+Précieux Sang,
+De Jésus purifie les péchés''',
+    numero: 355,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_355d',
+    titre: 'BIENTOT TRES BIENTOT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Bientôt très bientôt
+Nous verront notre Seigneur 3x
+Amen! Alléluia!
+Alléluia nous verront notre Seigneur.
+
+2. Plus de maladie, nous…
+
+3. La mort n’y est plus, nous…
+
+4. Satan n’y est plus, nous…''',
+    numero: 355,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_356',
+    titre: 'MON JESUS JE T’AIME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon Jésus je T’aime
+Je Te sers à moi
+Oh ! Quel charme extrême
+Me retient à Toi ;
+Les plaisirs du monde,
+Ne m’attirent plus,
+Ton amour m’inonde ;
+Je T’aime O Jésus.
+
+2. Mon Jésus je T’aime
+Car Tu m’as sauvé
+En T’offrant Toi-même
+Ton Sang m’a lavé !
+Sur la croix bénie,
+Pour moi Tu mourus,
+Ta mort est ma vie,
+Je T’aime, oh Jésus.
+
+3. Qu’ici bas je T’aime
+Jusque dans la mort
+A l’heure suprême
+Du dernier effort
+Ma voix expirante
+Ne s’entendra plus
+Sachez que je chante
+« Je T’aime, o ! Jésus.
+
+4. Je verrai Ta face,
+Quel ravissement !
+Je louerai Ta grâce
+Eternellement ;
+Et dirai sans cesse
+Avec les élus
+L’hymne d’allégresse
+« Je T’aime, O ! Jésus »''',
+    numero: 356,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_357',
+    titre: 'NOUS AVONS DECOUVERT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous avons découvert
+La joie de vivre et de chanter
+Nous avons trouvé le bonheur ;
+Le secret merveilleux
+Qui permet de tout espérer
+Nous avons rencontré le Seigneur.
+
+2. C’est pourquoi nous chantons
+Tout joyeux le long du chemin
+En espérant que vous aussi ;
+Vous aurez découvert
+La joie de vivre et de chanter
+Vous aurez trouvé le bonheur
+Le secret merveilleux
+Qui permet de tout espérer
+Vous aurez rencontré le Seigneur.''',
+    numero: 357,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_358',
+    titre: 'MON SAUVEUR ME CONDUIT PARTOUT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon Sauveur
+Me conduit partout,
+Quoi désirer d’avantage ?
+Douterais-je de Sa grâce
+Qui me guide dans la vie ?
+Pain divin, réconfort du ciel,
+Par la foi constante en Lui.
+Car je sais, quoi qu’il m’arrive
+Jésus le transforme en bien (Bis).
+
+2. Mon Sauveur me conduit
+Partout, me console
+Dans les tourments,
+Me donne Grâce dans les épreuves,
+Me fournit du pain de vie,
+Même si parfois mes pas trébuchent,
+Et mon âme est assoiffée,
+Du rocher qui va devant moi
+Jaillit une fontaine de joie (Bis).
+
+3. Mon Sauveur me conduit partout,
+Plénitude de Son amour !
+Un repos complet m’est promis
+A la maison de mon Père.
+Revêtu d’immortalité,
+Mon esprit s’envolera.
+Et mon chant de l’éternité :
+Jésus m’a conduit partout (Bis).''',
+    numero: 358,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_359',
+    titre: 'HOSANNA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Hosanna, Hosanna, Hosanna au plus haut des cieux !
+Hosanna, Hosanna, Hosanna au plus haut des cieux !
+
+Chœur
+Nous célébrons ton Nom, d'un cœur reconnaissant,
+Tu es élevé, Seigneur notre Dieu,
+Hosanna au plus haut des cieux !
+
+Gloire, gloire, gloire au Roi des rois !
+Gloire, gloire, gloire au Roi des rois !''',
+    numero: 359,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_360',
+    titre: 'NE, NE DE NOUVEAU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Né, né de nouveau,
+Mon cœur est purifié ;
+Jésus m’a pardonné,
+Je suis né de nouveau.
+
+2. Lavé dans son précieux sang,
+Je marche dans sa lumière ;
+Délivré de l'ennemi,
+Je suis enfant de Dieu.
+
+3. Esprit Saint, descends sur moi,
+Remplis-moi de ta présence ;
+Je veux vivre pour mon Roi,
+Né de nouveau par sa grâce.''',
+    numero: 360,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_361',
+    titre: 'NE SAIS-TU PAS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ne sais-tu pas que tu es le temple ?
+Ne sais-tu pas que tu es le temple ?
+Ne sais-tu pas que tu es le temple ?
+Tu es le temple du Saint-Esprit.
+
+Chœur
+Plein de gloire, plein de puissance,
+Plein de majesté et de louange ;
+Ne sais-tu pas que tu es le temple ?
+Tu es le temple du Saint-Esprit.
+
+2. Sois donc purifié, mon frère,
+Sanctifié par sa lumière,
+Car Dieu habite en toi, mon frère,
+Par son Esprit de vérité.''',
+    numero: 361,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_362',
+    titre: 'CE N\'EST PLUS MOI QUI VIS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ce n'est plus moi qui vis,
+C'est Christ qui vit en moi.
+Ce n'est plus moi qui vis,
+C'est Christ qui vit en moi.
+
+Chœur
+Jésus vit en moi,
+Jésus vit en moi.
+Oh ! Quelle joie immense,
+Jésus vit en moi !
+
+2. Crucifié avec Christ,
+Je marche par la foi ;
+Désormais affranchi,
+Je ne vis plus pour moi.''',
+    numero: 362,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_363',
+    titre: 'LA CROIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. À la croix, à la croix où j'ai vu la lumière,
+Et le fardeau de mon cœur enlevé,
+C'est là par la foi j'ai reçu la vue,
+Et maintenant je suis heureux tout le jour !
+
+2. C'est à la croix que le Sang précieux
+A coulé pour laver mes péchés ;
+Jésus a tout payé pour m'offrir le ciel,
+Mon âme y a trouvé la liberté.
+
+3. Je veux rester au pied de cette croix,
+Contempler mon Sauveur immolé,
+Et chanter à jamais l'amour du grand Roi,
+Qui par sa grâce m'a racheté.''',
+    numero: 363,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_364',
+    titre: 'BENISSONS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Bénissons le Seigneur,
+Annonçons son salut,
+Célébrons sa grandeur,
+Lui qui nous a élus.
+
+Chœur
+Chantons, chanterons,
+Bénissons le Seigneur !
+Chantons, chanterons,
+Célébrons le Sauveur !
+
+2. Il a brisé nos fers,
+Nous a donné sa paix,
+Par-dessus l'univers,
+Il règne pour jamais.''',
+    numero: 364,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_365',
+    titre: 'CAR C\'EST LA JOIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Car c'est la joie du Seigneur qui est ma force,
+Car c'est la joie du Seigneur qui est ma force,
+Car c'est la joie du Seigneur qui est ma force,
+Oui, la joie du Seigneur est ma force.
+
+2. Il me donne de l'eau vive à boire,
+Il me donne de l'eau vive à boire,
+Il me donne de l'eau vive à boire,
+Oui, la joie du Seigneur est ma force.
+
+3. Si tu as cette joie, chante alléluia,
+Si tu as cette joie, chante alléluia,
+Si tu as cette joie, chante alléluia,
+Oui, la joie du Seigneur est ma force.''',
+    numero: 365,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_366',
+    titre: 'C\'EST LA JOIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. C'est la joie, c'est la joie dans mon cœur,
+Depuis que Jésus m'a sauvé !
+C'est la joie, c'est la joie dans mon cœur,
+Son Saint-Esprit m'a libéré !
+
+Chœur
+J'ai la joie, la joie, la joie dans mon cœur,
+La joie que le monde ne peut ôter !
+J'ai la joie, la joie, la joie dans mon cœur,
+Jésus me l'a donnée !
+
+2. Finis mes chagrins et mes peines,
+Mon nom est inscrit dans les cieux ;
+Je marche en victorieux,
+Vers le pays glorieux.''',
+    numero: 366,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_367',
+    titre: 'C\'EST LE ROI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. C'est le Roi des rois, le Seigneur des seigneurs,
+Jésus-Christ le Fils de Dieu !
+Exaltons son Nom, célébrons sa victoire,
+Lui qui règne dans les cieux.
+
+Chœur
+Couronnons-le, couronnons-le !
+Couronnons Jésus le Roi !
+Couronnons-le, couronnons-le !
+Il est Roi, oui, Il est Roi !
+
+2. Devant lui tout genou fléchira sur la terre,
+Toute langue confessera,
+Qu'il est le Seigneur, à la gloire du Père,
+Pour toujours il rénera.''',
+    numero: 367,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_368',
+    titre: 'QU\'IL EST DOUX POUR LES FRERES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Qu'il est doux pour des frères
+De demeurer ensemble !
+C'est là que le Seigneur verse
+Sa grâce et sa bénédiction.
+
+Chœur
+Comme une huile précieuse,
+Qui descend sur la tête,
+Et coule sur la barbe,
+La barbe d'Aaron.
+
+2. C'est comme la rosée,
+Qui descend de l'Hermon,
+Sur les monts de Sion,
+Où Dieu donne la vie.''',
+    numero: 368,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_369',
+    titre: 'JEHOVAH EST SON NOM',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jéhovah est son Nom,
+Jéhovah est son Nom,
+Puissant guerrier dans les combats,
+Jéhovah est son Nom.
+
+2. Seigneur Jésus est son Nom,
+Seigneur Jésus est son Nom,
+Puissant guerrier dans les combats,
+Seigneur Jésus est son Nom.
+
+3. Il a vaincu la mort et l'enfer,
+Jéhovah est son Nom ;
+Il nous donne la victoire,
+Jéhovah est son Nom.''',
+    numero: 369,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_370',
+    titre: 'PLUIES DE BENEDICTION',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Pluies de bénédiction,
+C'est la promesse d'amour ;
+Le Seigneur dans sa bonté,
+Nous les envoie chaque jour.
+
+Chœur
+Des pluies de bénédiction,
+Des pluies nous avons besoin !
+Les gouttes tombent autour de nous,
+Mais nous demandons les pluies.
+
+2. Pluies de bénédiction,
+Rfraîchis nos cœurs altérés ;
+Donne-nous la vie abondante,
+Par ton Esprit consolateur.
+
+3. Pluies de bénédiction,
+Envoie-les sur ton Église ;
+Que ta gloire se manifeste,
+Et que les âmes soient sauvées.''',
+    numero: 370,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_371',
+    titre: 'IL PREND SOIN DE TOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Il prend soin de toi,
+Il prend soin de toi,
+Pendant le jour ou la nuit,
+Il prend soin de toi.
+
+2. Ne crains rien, mon frère,
+Ton Dieu est fidèle ;
+Sur ses ailes d'amour,
+Il prend soin de toi.
+
+3. Confie-lui tes peines,
+Tes fardeaux, tes craintes ;
+Chaque instant de ta vie,
+Il prend soin de toi.''',
+    numero: 371,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_372',
+    titre: 'DIEU DE L\'ESPERANCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Dieu de l'espérance,
+Remplis nos cœurs de paix,
+De joie et de confiance,
+En ta grâce à jamais.
+
+Chœur
+Par la puissance du Saint-Esprit,
+Que l'espérance abonde en nous !
+Jésus notre Sauveur vit,
+Il nous garde jusqu'au bout.
+
+2. Dans les jours de tempête,
+Tu es notre rocher ;
+Quand le danger s'apprête,
+En toi nous venons nous cacher.''',
+    numero: 372,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_373',
+    titre: 'OH! PRENDS MON AME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh ! Prends mon âme, prends-la, Seigneur,
+Et que ta flamme brûle en mon cœur.
+Que tout mon être vibre pour Toi,
+Sois seul mon Maître, ô divin Roi !
+
+Chœur
+Source de vie, de paix, d'amour,
+Vers Toi je crie la nuit, le jour ;
+Guide mes pas, soutiens ma foi,
+Remplis mon âme du feu de joie !
+
+2. Du mal perfide, oh ! Garde-moi,
+Sois mon seul guide, mon seul appui.
+Viens, prends ma main, conduis mes pas,
+Sur le chemin qui mène à Toi.
+
+3. Quand la nuit voile tout à mes yeux,
+Sois mon Étoile dans les hauts cieux.
+Fais-moi comprendre ton doux amour,
+En t'attendant jusqu'à ton retour.''',
+    numero: 373,
+    auteur: 'H. Arnera / Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_374',
+    titre: 'JE L’AI TROUVE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je L’ai trouvé, je L’ai trouvé
+Le bonheur ineffable
+Je suis sauvé, je suis sauvé
+O joie inexprimable!
+Tous mes péchés sont effacés
+Le sang de Christ me lave
+Les jours des larmes sont passés
+Je ne suis plus esclave.
+
+2. Oh! Quel bonheur!
+Oh! Quel bonheur
+D’avoir Jésus pour Maitre
+O mon Sauveur, mon seul Sauveur
+A toi seul je veux être
+Tu vins briser Puissant vainqueur
+Du mal la tyrannie
+Affranchissant mon pauvre cœur
+Et me donnant la vie !
+
+3. Dans ton amour, tu m’as cherché,
+Errant bien loin du père!
+Tu m’as sauvé de mon pêché
+Tu fis de moi ton frère et maintenant,
+Et pour jamais sous ton joug
+Je me plie je ne puis vivre désormais
+Jésus que de ta vie.
+
+4. Ah ! Laissez-moi chanter mon roi,
+Oui, qu’à genoux je chante :
+Jésus n’est il pas tout pour moi ?
+Gloire à sa croix sanglante
+Sans se lasser, jour a après jour.
+Il m’aime, il m’aime encore
+Comment répondre à tant d’amour ?
+Je crois, j’aime et j’adore.''',
+    numero: 374,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_375',
+    titre: 'TON AMOUR NOUS ENVIRONNE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ton amour nous environne
+Au Seigneur,
+Ta gloire resplendie
+Tout comme le soleil.
+Ton amour nous environne
+Au Seigneur c’est pourquoi
+Nous espérons tous a toi (x2)
+
+Chœur
+Gloire a ton nom :
+Oh Seigneur notre joie
+Gloire à ton nom :
+Toi qui nous as sauvé
+Gloire a ton nom :
+Toi qui nous aimé tant
+C’est pourquoi
+Nous espérons tous a toi.
+
+2. Tu n’as rien caché à ton épouse
+Les mystères de Dieu
+Sont tous accomplis
+Nous voyons la rédemption approche
+C’est pourquoi
+Nous attendons le départ.''',
+    numero: 375,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_376',
+    titre: 'NOUS MONTERONS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Le nouveau testament
+Est achevé et le temps
+Des gentils est à sa fin,
+Nous n’attendons
+Plus rien dans cette vie
+Que la promesse de l’enlèvement.
+
+Chœur
+Notre foi défiera la pesanteur
+Et nos corps seront vivifiés
+Nous monterons dans le firmament
+Nous rencontrerons notre Seigneur.
+
+2. Quand la Pierre de faite descendra
+Tous les élus
+Seront manifestés
+Cette Eglise atteindra la perfection
+Et la pyramide s’élèvera.
+
+3. Tous les saints endormis se lèveront
+Et le corps des vivants seront changés
+La trompète de Dieu
+Retentira nous appelant
+Aux noces de l’Agneau.
+
+4. Tous ces qui ont suivi la voix de Paul,
+D’Iréné de Martin et Colomba,
+De Luther de Wesley et de Branham
+Ce jour-là c’est certains nous les verrons.
+
+5. Au-delà des soucis de cette vie
+Pèlerin la cité est préparée
+Pour la joie de l’Epouse et de l’Epoux
+Seul l’amour parfait y entrera.''',
+    numero: 376,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_377',
+    titre: 'ECOUTE O CIEL !',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ecoute o ciel et tout ce
+Que tu as combien Jésus-Christ
+Est riche en bonté
+Et toi terre des hommes
+Et bétail de champs
+O loué-Le car Il est bon.
+
+Chœur
+Combien Il est bon (x3)
+Mon Seigneur et mon Dieu
+Combien Il est bon o alléluia
+Oui je Le louerai toujours.
+
+2. Il nous a créé pour la vie éternelle
+Mais nous avons péché
+Et avons tout perdu
+Mais dans sa bonté
+Il se décida de nous ramener à la vie.
+
+3. Et comme un agneau
+Il vint ici bas
+Et versa son sang
+Pour nous racheter
+Depuis ce jour-là
+Nous pouvons crier
+Oh mort ou est ton aiguillon.
+
+4. Pareille à un aigle
+Qui rode sur nous
+Il voit nos besoins
+Nul n’est en danger
+Et à chaque tour
+Il jette ce crie
+«Ne craignez rien car
+Je suis là »
+
+5. Et comme une poule
+Entoure ses poussins
+Jésus nous entoure
+Et prends soins de nous,
+D’où viendra l’orage
+Qu’Il ne saura calmer
+Oui nous sommes
+Plus qu’en sécurité.
+
+6. Je loue et j’adore
+Mon Seigneur Jésus
+Pour tout ce qu’Il ne cesse
+De faire pour moi
+Oh je ne puis compter
+Ses nombres bienfait
+Oh combien je vais l’adoré.''',
+    numero: 377,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_378',
+    titre: 'MON DIEU EST SI BON',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon Dieu est si bon,
+Il prend bien soin de moi,
+C’est Dieu si fidele
+Celui qui pense à toi
+Il voudra t’aider dans tes difficultés
+Il faut que tu viennes à lui
+Tel que tu es.
+
+Chœur
+Dieu sait si bien ce qui te semble lourd,
+Qui te fait mal te trouble chaque jour,
+Il connait tes besoins,
+Ta peur du lendemain
+Avec mon Dieu je sais tous ira bien.
+
+2. Il vit a jamais c’est un Dieu tout puissant,
+Il te répondra viens à lui simplement,
+Quand tout semble noir, triste
+Et désespéré
+Sais- tu que là haut tu n’es pas oublié.
+
+3. Mon Dieu t’aidera il conduira tes pas,
+Si tu veux marcher tes plier à
+Ses lois
+Alors ne craint plus
+Tu peux compte sur Lui,
+Il accomplira tout ce qu’il a promis.''',
+    numero: 378,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_379',
+    titre: 'LA BIBLE, NOTRE HERITAGE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Chœur
+La bible(Le Message)
+Est notre héritage
+La bible nous enseigne
+La bible nous corrige
+La bible est un livre inspiré.
+
+Genèse
+Exode
+Lévitique
+Nombres
+Deutéronome
+Josué
+Juges
+
+Chœur
+La bible(le Message)
+Est notre héritage
+La bible nous enseigne
+La bible nous corrige
+La bible est un livre inspiré
+
+Esdras
+Néhémie
+Esther
+Job
+Psaumes
+Proverbes
+
+Chœur
+La bible(le Message)
+Nous révèle Jésus-Christ
+La bible est un livre sacré
+C’est Dieu sous forme imprimé
+La bible est le « ainsi dit le Seigneur »
+
+Ezéchiel
+Daniel
+Osée
+Joël
+Amos
+Abdias
+Jonas
+
+Chœur
+La bible (Le Message)
+Nous révèle Jésus-Christ
+La bible(Le Message)
+Est un livre sacré
+C’est Dieu sous forme imprimée
+La bible est le « Ainsi dit le Seigneur »
+
+Mathieu
+Marc
+Luc
+Jean
+Actes des apôtres
+Romains
+1 Corinthiens
+
+Chœur
+La bible(Le Message)
+Restaure nos âmes
+La bible c’est ma lumière
+La bible c’est ma sagesse
+La bible, titre de propriété
+
+1 Timothée
+2 Timothée
+Tite
+Philémon
+Hébreux
+Jacques
+1 Pierre
+
+Chœur
+La bible(Le Message) restaure nos âmes
+La bible c’est ma lumière
+La bible c’est ma sagesse
+La bible, titre de propriété.''',
+    numero: 379,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_380',
+    titre: 'MON SAUVEUR SOUFFRIT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon Sauveur souffrit sur la croix,
+Gloire à l’Agneau de Dieu.
+Oh ! Viens le louer avec moi,
+Gloire à l’Agneau de Dieu.
+
+Chœur
+L’Agneau ! L’Agneau !
+L’Agneau de Dieu,
+J’aime l’écho de son saint Nom
+Ce Nom brillera sur mon front,
+Gloire à l’Agneau de Dieu,
+
+2. Je veux dire à chaque pécheur,
+Gloire à l’Agneau de Dieu.
+Qu’enfin j’ai trouvé mon Sauveur,
+Gloire à l’Agneau de Dieu.
+
+3. Oui, je veux chanter plein de foi,
+Gloire à l’Agneau de Dieu.
+Que mon Sauveur est mort pour moi,
+Gloire à l’Agneau de Dieu.
+
+4. Du monde je fais l’abandon,
+Gloire à l’Agneau de Dieu.
+De mes péchés j’ai le pardon,
+Gloire à l’Agneau de Dieu.
+
+5. Parmi les sauvés j’ai mon rang,
+Gloire à l’Agneau de Dieu.
+Mon cœur est lavé dans Son sang,
+Gloire à l’Agneau de Dieu.''',
+    numero: 380,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_381',
+    titre: 'LE BATEAU DE SAUVETAGE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Les flots du temps nous entrainent mais
+Ce n’est plus pour longtemps
+Nuages orageux de la nuit
+Feront place au jour clair
+Alors prenons tous courage
+Car nous ne sommes pas tous seuls,
+Le bateau de sauvetage
+Vient ramener les perles au ciel.
+
+Chœur
+Courage, mon frère, courage,
+Bientôt nos épreuves sont finies !
+Sur la rive d’orée
+Nous rencontrerons
+Nos bien-aimés.
+Ici pèlerins étrangers,
+Nous cherchons une cité
+Le bateau de sauvetage
+Vient ramener les perles au ciel.
+
+2. Satan me tente parfois
+Disant que c’est inutile
+De marcher au Nom
+De Jésus et vivre en chrétien :
+Mais alors le maitre nous dit
+« Je veux vous secourir,
+Confiez-vous en Moi
+Je vous conduirai au pays ».
+
+3. J’aperçois par la foi
+Le bateau de sauvetage qui vient,
+Comment sur les eaux
+il s’avance venant nous secourir,
+Nous faire arriver à bon port
+Avec nos bien-aimés
+« Soyez prêt », crie le capitaine,
+« Bientôt il sera la »
+
+4. Oh c’est le moment de monter à bord
+Pendant qu’il passe
+Mais si tu t’arrête trop
+Longtemps, tu mourras pour toujours :
+Le prix étant payé pour tous,
+Le capitaine t’invite
+Ce bateau te conduit
+Sûrement au ciel embarque-toi.''',
+    numero: 381,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_382',
+    titre: 'RETOURNER A LA CROIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. La nuit est très avancée
+Le calvaire est oublié
+Du sentier abandonné
+Jésus crie à ses enfants.
+
+Chœur
+Retourné à la croix
+Ou la vie fut rependue
+Si tu as un cœur brisé
+Tu auras un cœur nouveau.
+
+2. Si ta vie ne change pas
+Quand la parole est prêchée
+Tu ne connais pas ton Dieu
+Ne mentez pas contre lui.
+
+3. Si la gloire du Seigneur
+T’as quitté depuis un temps
+Tu ne sais plus rayonner
+Dans le milieu ou tu vas.
+
+4. Si l’onction pour le service
+Te manque depuis un temps
+Retourner encore au calvaire
+Boire a ce rocher frappé
+
+5. Si l’amour rédempteur
+N’est plus le thème de ta vie
+Et la pension de la croix
+N’est pour toi
+Que de l’histoire.
+
+6. Si la venue du Seigneur
+Ne te fais plus soupirer
+Tu te donnes à des projets
+Reviens encore à genoux.
+
+7. Si l’amour de la parole
+S’est envolé de ton cœur
+Tu n’as pas le Saint-Esprit
+Retourner pour le chercher.
+
+8. Si la joie de ton salut
+Et parti sans t’aviser
+Tu te sens trop embrouillé
+C’est le moment de pleurer.
+
+9. Si la vie de la prière
+Devient pour toi une corvée
+Tu ne peux pas fabriquer
+Retourner a Golgotha.
+
+10. Si le zèle que tu as
+C’est de courir à l’argent
+Repend- toi ou tu mourras
+Consacre-toi pour prier.''',
+    numero: 382,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_383',
+    titre: 'COMME UNE BICHE SOUPIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Comme une biche soupire
+Apres l’eau du ruisseau
+Ainsi mon âme soupire
+J’ai soif de ta présence
+Ô Dieu vivant
+Je voudrais t’adoré.
+
+Chœur
+Toi seul est mon bouclier, ma force.
+A toi seul mon âme s’abandonne
+Tu es le seul désire de mon cœur
+Je vais te donner ma vie.
+
+2. Tu es mon ami et tu es mon frère
+Bien que tu sois le roi
+Je t’aime plus que tout autre
+Et beaucoup plus que
+Les choses de ce monde.
+
+3. Je t’aime plus que l’or
+Et l’argent seulement Toi
+Qui peux satisfaire.
+Tu es le seul donateur
+De la joie réelle, tu es merveilleux.''',
+    numero: 383,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_384',
+    titre: 'DOIS-JE PARTIR D’ICI MAINS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Dois-je partir d’ici les mains vides.
+Pour le séjour éternel
+Et quitter ces lieux arides
+Sans une âme pour le ciel.
+
+Chœur
+Oui, faut-il que les mains vides
+Je rencontre mon Sauveur
+Pendant que les cœurs avides
+Cherchent en vain le bonheur.
+
+2. Jésus a sauvé mon âme
+De la mort et je n’ai plus peur
+Mais ce que mon cœur
+Réclame C’est un don
+Pour mon Sauveur.
+
+3. Si je pouvais de la vie
+Recommencer le chemin
+Je n’aurai plus qu’une envie
+Semer partout le bon grain.
+
+4. Pour vous aussi
+L’heure passe
+O! Pendant qu’il en est temps
+Annoncer le Dieu de grâce
+Aux cœurs
+Contrits repentant.''',
+    numero: 384,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_385',
+    titre: 'EN CHANTANT CE CHANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. En chantant ce chant
+Je suis bien heureux
+De glorifier Jésus mon Sauveur
+C’est Lui qui quittant son beau paradis
+Pour me libérer du pouvoir de Satan.
+
+Chœur
+O! Jésus mon frère que tu sois loué
+Que toute mon âme exalte Ton Nom
+Je te confie toute ma vie
+Contrôle mes pas
+Surveille mes pas,
+Oh! Jésus, je me confie en Toi.
+
+2. Oh! Divin amour
+De frère Jésus
+Son sang rependu, je suis délivré
+Ainsi arraché dans les ténèbres
+Je ne glorifie que Jésus bien-aimé.
+
+3. Etant pèlerin pour guide ici-bas
+J’ai choisi Jésus Lumière de tous
+Et conduit par lui je me dirige
+Vers ce bon rivage cité éternelle.''',
+    numero: 385,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_386',
+    titre: 'QUI A CRU A CE QUI ÉTAIT …',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Qui a cru à ce qui était annoncé?
+Qui a reconnu la Main de l’éternel
+Et à qui Sa volonté a-t’elle été révélée
+Qu’il craigne et soit dans l’humilité.
+
+2. Car le Seigneur, l’Eternel ne fait rien
+Sans révéler Son secret
+A Ses prophètes
+Ils sonnent la trompette
+Et que l’église s’apprête au combat scripturaire
+De son temps.
+
+3. Zacharie avait déjà
+Prophétisé qu’il y aurait
+Un jour unique
+Connu de Dieu
+Qui n’est ni jour ni nuit
+Mais que vers le temps du soir
+La lumière paraitrait à l’horizon.
+
+4. Malachie avait aussi prophétisé
+Qu’avant que le
+Jour de l’Eternel n’arrive,
+Il nous enverrait Elie,
+Son prophète merveilleux,
+Ramener les cœurs des enfants
+A leurs pères.
+
+5. Même à Jean Il avait déjà été dit
+Qu’aux jours de la voix
+Du 7ieme ange sur terre,
+Quand il sonne la trompète
+Tous les mystères de Dieu
+S’accompliraient comme
+Il avait annoncé.
+
+6. Et toi qui reportes tout au lendemain
+Que sais-tu de ce qui se fera demain ?
+Car la roue dentée de Dieu
+S’avance sans s’arrêter
+Jusqu'à ce que s’accomplisse
+Tout son plan.''',
+    numero: 386,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_387',
+    titre: 'CE JOUR-LA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ce jour-la sur le mont du calvaire
+Il fut mis parmi les malfaiteurs
+Ce jours-la au lieu appelé crane
+O !ils le crucifièrent la.
+
+Chœur
+C’était lui Jésus,
+C’était Lui Mon Roi,
+C’était Lui le Seigneur,
+Le Dieu de gloire,
+C’était lui le Messi,
+C’était le prince de vie,
+C’était Lui la parole faite chair.
+
+2. Il porta une couronne d’épines
+Son corps fut méchamment flagellé.
+Et courbé sous sa très lourde croix
+Tout sanglant, il n’y renonça pas.
+
+3. Le saint fut jugé par les impies
+Condamné, il ne dit aucun mot
+Dépouillé, il ne réclama point
+L’agneau fut mené sans résister.
+
+4. Crucifier il sauva le pécheur
+Epuisé, il pardonna encore
+Méprisé, il aima le moqueur.
+Son souci O ! Père, pardonne-leur.
+
+5. Accusant cette génération.
+Le prophète de mon temps s’est levé
+contre toute dénomination
+Crucifiant à nouveau le message.''',
+    numero: 387,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_388',
+    titre: 'COMMENT NE POURRAIS-JE ?',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. J’étais éloigné de ta parole,
+Tu m’as envoyé ton saint prophète (x2)
+
+Chœur
+Comment ne pourrais-je te louer
+Pour tous ce que tu as faits pour moi
+Tu as toujours été mon secours
+Chaque fois que l’ennemie me combat.
+
+2. J’étais sans aucune consolation
+Tu m’as rempli de ton saint esprit.
+
+3. J’étais prêt à tomber en enfer
+Tu m’as montré le chemin du ciel.
+
+4. Lorsque les gens parle en mal de moi
+Jai trouvé en toi mon seul ami.
+
+5. Je ne connaissais pas le plan de Dieu,
+Tu m’as révélé les grands mystères.
+
+6. J’étais mort dans les dénominations
+Tu m’as montré
+Le message de l’heure.
+
+7. J’étais terrassé par la maladie
+Tu as compati, tu m’as guéri.''',
+    numero: 388,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_389',
+    titre: 'ASSURANCE BENIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Assurance bénie,
+Jésus est mien
+Oh! Quel avant gout de la divine gloire!
+Racheté, héritier du salut
+Lavé dans le sang, né de l’Esprit.
+
+Chœur
+C’est mon histoire,
+C’est ma chanson,
+Je loue mon Sauveur,
+Le long du jour (x2)
+
+2. Parfaite soumission,
+Parfaite délices.
+Vision d’enlèvement,
+Eclatant à ma vue.
+Les anges descendant,
+Du ciel apportent.
+Echos de la grâce,
+Murmure d’amour.
+
+3. Parfaite soumission,
+Tout au repos.
+En mon Sauveur,
+J’ai joie, bénédiction
+Veillant, attendant, les yeux levés.
+Plein de sa bonté,
+Couvert d’amour.''',
+    numero: 389,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_390',
+    titre: 'TU ES MERVEILLEUX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Tu es Merveilleux! Seigneur!
+Je désire voir ta face.
+Quand Ton regard se pose sur moi
+Ta grâce abonde en moi.
+
+2. J’étais perdu dans le péché
+Mais tu m’as retrouvé
+A la croix tu es mort à ma place
+Pour moi tu as payé le prix de mon péché
+C’est pourquoi je veux Te dire
+Combien tu es Merveilleux
+
+3. Seigneur fais-moi la grâce
+De porter Ton saint feu
+Jusqu’à la fin de mon voyage
+D’être enflammé pour Toi.''',
+    numero: 390,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_391',
+    titre: 'ROCHER FRAPPE ROCHER BRISE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. A Horeb Moise a frappé
+Sur le Rocher,
+Ce rocher représentait le Christ
+Les enfants d’Israël
+Ont bu au Rocher spirituel
+Mais quand ils furent
+Près de la terre promise
+Ils doutèrent du bras de l’Eternel,
+Et ils étaient tous morts
+A cause de leur incrédulité.
+
+Refrain
+Rocher frappé Rocher brisé
+Soutient ma foi au moment difficile
+Seigneur ne permet pas
+Que je chancelle 2x
+
+2. Au désert Moise éleva
+Le serpent d’airain,
+Ce serpent était l’image de Christ
+Quiconque le regardait
+Conservait la vie quoique mordu
+C’est ainsi que Dieu
+Que Dieu a tant aimé le monde
+Et qu’Il avait donné Son Fils unique,
+Afin que quiconque croit en Lui
+Ne périsse pas mais qu’il vive.
+
+3. Le prophète Esaïe a parlé d’une pierre,
+Cette Pierre préfigurait Le Christ,
+Ce fut le rocher de scandale
+Pour les deux maisons d’Israël
+Il était un achoppement
+Pour Jérusalem de sorte
+Que la Pierre qu’ont rejeté
+Ceux qui bâtissaient
+Est devenu la Principale de l’angle.
+
+4. Dans le songe Daniel
+A observé un caillou,
+Ce caillou représentait
+Le Christ Se détachant
+De la montagne
+Sans le secours d’aucune main
+Il est venu briser le statut
+Du roi,
+D’or, d’argent, de fer, d’argile
+Pour établir alors sur la terre
+Un Royaume éternel.''',
+    numero: 391,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_392',
+    titre: 'DANS TA PRESENCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Dans ta présence, là je suis fort
+Dans Ta présence ;
+Seigneur, je viens
+Dans Ta présence,
+Je veux demeurer,
+Cherchant Ta face,
+Touchant Ta grâce,
+Dans le creux du Rocher,
+Dans Ta présence Seigneur.
+
+2. J’aime me cacher
+Ou l’esprit du mal ne peut me troubler
+La ou le Soleil m’entoure
+Oui, je veux être la
+Ou la honte et les ténèbres
+Ne me touchent pas ;
+Dans Ta présence Seigneur.''',
+    numero: 392,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_393',
+    titre: 'LA TROMPETTE SONNERA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''La trompette sonnera,
+Les morts vivront,
+Et le Seigneur attendra dans les cieux.
+Puis nous les vivants
+Nous seront changés en un instant,
+En un Clain d’œil.
+Gloire! Gloire! Gloire! Gloire!
+Alléluia à Son nom
+Hier, aujourd’hui, éternellement.
+Notre Jésus est le même.''',
+    numero: 393,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_394',
+    titre: 'CHAQUE PROMESSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Chaque promesse
+Dans le Livre est mienne.
+Chaque chapitre,
+Chaque verset, chaque ligne ?
+Oui, je crois en Son amour divin.
+Chaque promesse
+Dans le Livre est mienne.''',
+    numero: 394,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_395',
+    titre: 'J’AIME LA VIELLE MANIERE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. J’aime la vieille manière de chanter,
+J’aime la vieille manière,
+J’aime la vieille manière de Crier,
+prêcher, prier
+J’aime la vieille manière.
+
+Chœur
+Je loue 2x mon Sauveur
+Partout où je vais 3x
+Je loue 2x Mon Sauveur
+Partout où je vais
+Car il y a joie, dans Mon âme.
+
+2. J’aime la vieille manière de prier,
+J’aime la vieille manière,
+J’aime la vieille manière de Crier,
+prêcher, prier
+J’aime la vieille manière.
+
+3. J’aime la vieille manière de prêcher,
+J’aime la vieille manière,
+J’aime la vieille manière de Crier,
+prêcher, prier
+J’aime la vieille manière.''',
+    numero: 395,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_396',
+    titre: 'C EST ASSEZ POUR ME FAIRE CHANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''C’est assez pour me faire chanter
+Tous mes péchés sont pardonnés
+Et moi, je suis en route vers le ciel,
+C’est assez pour me faire chanter.
+
+C’est assez pour me faire crier 2x
+Tous mes péchés sont pardonnés…
+
+Adorer, Sauter, Danser…''',
+    numero: 396,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_397',
+    titre: 'MERCI JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Merci Jésus,
+Merci Jésus,
+Merci Jésus,
+Merci Jésus
+
+Gloire à Son nom,
+Gloire à Son nom,
+Gloire à Son nom,
+Gloire à Son nom
+
+Nous Te louons,
+Nous Te louons,
+Nous Te louons,
+Nous Te louons.
+
+Nous T’adorons,
+Nous t’adorons,
+Nous adorons,
+Nous adorons.
+
+Alléluia. Jésus,
+Alléluia Jésus
+Alléluia Jésus,
+Alléluia Jésus''',
+    numero: 397,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_398',
+    titre: 'PERE CELESTE COMBIEN…',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Père céleste combien je T’apprécie 2x
+Je T’aime, je T’adore
+Je me prosterne à Tes pieds
+Père céleste combien je T’apprécie.
+
+Saint-Esprit toi ma consolation 2x
+Tu me guides, me conduis
+Et Tu demeures en moi
+Saint-Esprit, toi ma consolation.''',
+    numero: 398,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_399',
+    titre: 'COMBIEN J’AIME JESUS !',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Il y a un Nom que j’aime entendre,
+J’aime chanter ses mérites,
+C’est une musique à mes oreilles,
+Le plus doux Nom sur terre.
+
+Chœur :
+Oh ! Combien j’aime Jésus
+Oh ! Combien j’aime Jésus !
+Oh ! Combien j’aime Jésus !
+Car il m’aima le premier
+(je ne l’abandonnerai…)
+
+2. Il rappelle l’amour du Sauveur,
+Mort pour me délivrer,
+Me parle de son précieux sang,
+Plaidoirie du pécheur.
+
+3. Il me dit ce que le père garde
+En réserve pour chaque jour
+Même si je marche dans les ténèbres,
+Il éclaire mon chemin.
+
+4. Il parle d’un homme plein d’amour
+Qui peut sentir ma peine
+Porter dans le chagrin, la part
+Que nul ne peut porter.''',
+    numero: 399,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_400',
+    titre: 'QUAND LES RACHETES S’Y ASSEMBLERONT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je pense à l’enlèvement vers
+notre Maison bénie d’en haut,
+Quand les rachetés s’y assembleront
+Combien nous chanterons l’hymne,
+Céleste dans cette ville là-haut,
+Quand les rachetés s’y assembleront.
+
+Chœur
+Quand les rachetés s’y assembleront
+Blanc comme neige et libres du péché,
+Que des cris ! Que des chants !
+Quand les rachetés s’y assembleront.
+
+2. Là il y aura un grand défilé
+Dans les rues pavées d’or
+Quand les rachetés s’y assembleront,
+Oh ! Quel musique, oh !
+Quels chants retentiront là dans la ville
+Quand les rachetés s’y assembleront.
+
+3. Les saints chanteront la rédemption
+À vive et haute voix
+Quand les rachetés s’y assembleront,
+Les anges l’écouteront seulement,
+Ne pouvant pas la chanter,
+Quand les rachetés s’y assembleront.
+
+4. Le Sauveur donnera l’ordre de préparer le festin,
+Quand les rachetés s’y assembleront,
+Nous entendrons son appel :
+« Venez, vous bénis du Seigneur, »
+Quand les rachetés s’y assembleront.''',
+    numero: 400,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_401',
+    titre: 'NOUS NOUS SENTONS SI BIEN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Nous nous sentons si bien en parlant du bon vieux chemin,
+Nous nous sentons si bien en parlant du Seigneur
+Continuons, continuons à parler du bon vieux chemin.
+Continuons, continuons à parler du Seigneur.
+
+Le diable n’aime pas cela : parler de ce bon vieux chemin,
+Le diable n’aime pas cela : parler du Seigneur,
+(Ainsi) continuons, continuons à parler du bon vieux chemin,
+Continuons, continuons à parler du Seigneur.''',
+    numero: 401,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_402',
+    titre: 'MONT SION',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Là m’attends un joyeux lendemain
+Où portes perlées s’ouvrent large
+La vallée de peines traversée
+De l’autre côté je camperai.
+
+Chœur
+Un jour, hors de la portée des mortels
+Un jour, Dieu seul sait juste où et quand,
+Les roues de la vie mortelle s’arrêteront
+Et j’irai habiter au mon Sion.
+
+2. Un jour, j’entendrai chanter les anges,
+Là, loin des ombres de la tombe ;
+Toutes les cloches du ciel sonneront,
+Quand les saints chantent :
+« Douce demeure »
+
+3. Un jour, je n’aurai plus de labeurs,
+Mes errances seront finies,
+Terrestres liens brisés, rétablis,
+Mes soupirs et pleurs cesseront.
+
+4. Les nuages sombres se fendront,
+Et la nuit obscure passera ;
+Tous les fardeaux de la vie ôtés,
+Et poindra le jour de repos.''',
+    numero: 402,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_403',
+    titre: 'PARLONS DE JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Parlons de Jésus,
+Il est le Roi des rois,
+Le Seigneur des seigneurs,
+Durant l’éternité ;
+Le Grand JE SUIS, la Voie,
+La Vie, la Vérité,
+Parlons de Jésus de plus en plus.
+
+2. Parlons de Jésus,
+Que tout le monde proclame,
+Puissance et majesté
+D’un tel merveilleux Nom
+Bébé de Bethlehem
+L’Etoile du matin
+Chantons donc ses louanges partout.
+
+3. Parlons de Jésus,
+Il est le Pain de vie,
+C’est le Sauveur du monde
+L’Homme de Galilée,
+Prophète, Prêtre, Roi
+Il est le Dieu Puissant
+La Source de l’Eau de Vie gratuite.
+
+4. Parlons de Jésus,
+C’est le Prince de la paix,
+Il est le Grand Médecin
+A travers toute l’histoire.
+Il est le Lys pur, blanc,
+La belle rose de Sharon,
+Il est le Berger aux soins tendres.
+
+5. Parlons de Jésus,
+C’est le Rocher des Ages
+Agneau, Homme du calvaire
+Mort pour tous les pécheurs
+Le Grand Emmanuel
+Parole de Dieu sublime,
+Et Il est notre Epoux si divin.''',
+    numero: 403,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_404',
+    titre: 'DANS PEU DE TEMPS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous sommes souvent ballotés
+Sur la mer houleuse du temps
+Les tempêtes et les cieux sombres
+Succèdent au soleil brillant.
+Au pays du jour parfait, quand les brumes sont dissipées,
+Oui, nous le comprendrons mieux dans peu de temps.
+
+Chœur
+Dans peu de temps le matin viendra
+Quand tous les saints de Dieu seront rassemblés,
+nous allons raconter comment nous vainquions,
+Car nous le comprendrons mieux dans peu de temps.
+
+2. Nous sommes souvent
+dépourvus des choses que cette vie demande ;
+Affamés et sans abri, terres arides collines desséchées ;
+Nous nous confions au Seigneur, et ce selon sa Parole,
+Oui, nous le comprendrons mieux dans peu de temps.
+
+3. Nous avons partout d’épreuves,
+et nous ne comprenons pas
+La manière dont notre Dieu nous conduit à la terre promise
+Mais Son œil veille sur nous,
+Nous Le suivrons jusqu’au bout,
+Car nous le comprendrons mieux dans peu de temps.
+
+4. Bien souvent les piège cachés,
+Les tentations nous surprennent,
+Nos cœurs sont amenés à saigner
+A cause de paroles vaines ;
+Pourquoi sommes-nous éprouvés
+quand nous voulons faire le bien ?
+Mais nous le comprendrons mieux dans peu de temps.''',
+    numero: 404,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_405',
+    titre: 'ATTIRE-MOI PLUS PRES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je suis Tien, Seigneur, j’ai saisi Ta Voix
+Me parlant de Ton amour
+Mon ardent désir : Grandir dans la foi
+Et être plus près de toi.
+
+Chœur
+Attire-moi plus près, Seigneur béni,
+De la croix où Tu mourus
+Attire-moi plus près, plus près,
+Seigneur béni.
+De Ton précieux flanc saignant.
+
+2. Seigneur, consacre-moi à Ton service,
+Par la puissance de ta grâce ;
+Que mon âme T’invoque avec ferme espoir.
+Que ta volonté soit mienne.
+
+3. Oh ! Les purs délices d’une heure
+Que je passe devant Ton trône,
+Avec Toi mon Dieu, quand je m’agenouille,
+Je communie en ami.
+
+4. Y a des profondeurs d’amour
+Que j’ignore
+Tant que je ne passe la mer ;
+Y à degrés de joie que je ne peux atteindre
+Qu’en me reposant en toi.''',
+    numero: 405,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_406',
+    titre: 'J’AI L’ENVIE D’Y ALLER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ma demeure céleste est splendide
+J’ai envie d’y aller
+Ni mort, ni peines n’y entreront
+J’ai envie d’y aller.
+
+Chœur
+Oui, j’ai envie d’y aller
+J’ai envie d’y aller
+Ma demeure céleste est splendide,
+J’ai envie d’y aller.
+
+2. Et ses tours brillent plus que le soleil
+J’ai l’envie d’y aller
+Ce palais céleste sera mien
+J’ai l’envie d’y aller.
+
+3. D’autres cherchent une maison ici-bas,
+J’ai l’envie d’y aller
+Que des flammes dévorent, les vagues inondent
+J’ai l’envie d’y aller.
+
+4. Le Seigneur a été bon pour moi
+J’ai l’envie d’y aller
+Avant de voir cette maison bénie,
+J’ai l’envie d’y aller.''',
+    numero: 406,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_407',
+    titre: 'LE TEMPS DE LA FIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je vois l’état pitoyable de la terre,
+Des foules amassent pour leur gain propre,
+Peinant pour l’aisance et le confort,
+Elles ne voient pas que tout est vain,
+C’en est fait d’elles.
+
+Chœur :
+La fin est là, elle est très proche
+L’Epouse se rassemble et le monde s’écroule,
+Israël se réveille, les nations se disloquent
+C’est la fin, notre prophète l’a dit nous croyons.
+
+2. Messieurs, c’est l’heure dont parla
+Notre prophète, l’Ange est venu avec un cri,
+A sa voix la montagne a tremblé,
+Le cri fort et clair a dit :
+« il n’y a plus de temps ».
+
+3. Considères- tu le message de la fin ?
+Considère – tu Malachie 4,
+apocalypse 10 : 7 et Luc 17?
+Ce message les proclame
+maintenant et à jamais.''',
+    numero: 407,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_408',
+    titre: 'QUAND TOUS NOUS SERONS AU CIEL',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Chantons le grand amour de Jésus
+Sa miséricorde, sa grâce ;
+Dans les beaux et bénis palais
+Il prépare pour nous une place.
+
+Chœur :
+Quand tous nous serons au ciel
+Oh ! Quel jour de réjouissance ce sera !
+Quand nous verrons Jésus
+Nous chanterons fort la victoire.
+
+2. Dans notre pèlerinage,
+Les nuages couvrent le ciel
+Mais à la fin du voyage,
+Plus d’ombre ni de soupir.
+
+3. Soyons donc sincères et fidèles,
+Confiant et servant chaque jour,
+Juste l’entrevoir dans la gloire
+Récompensera nos peines.
+
+4. Courons vers le prix devant nous !
+Bientôt on voit sa beauté,
+Les portes de perles s’ouvrent,
+Nous foulerons les rues d’or.''',
+    numero: 408,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_409',
+    titre: 'OH OUI, JE TRIOMPHE !',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Oh ! Oui, je triomphe
+oh ! Oui, je triomphe
+Oh ! Oui, je triomphe !
+Car j’aime bien Jésus. Il est mon sauveur
+Il m’aime et me sourit.''',
+    numero: 409,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_410',
+    titre: 'ENVOI LA PENTECOTE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ils étaient tous ensemble,
+unis dans un même cœur
+Attendant la promesse,
+tous d'un commun accord
+C‘était après la pâque,
+attendant dans la chambre
+Que la puissance du ciel
+a rempli tous leurs cœur.
+
+Chœur:
+Envoie la pentecôte
+la fête des prémices
+Pour agiter la gerbe
+de l'épouse Parole
+Envoie la pentecôte,
+pour tous les premiers nés
+La pluie de la récolte
+à l'horizon des temps.
+
+2. Nous avons fait l'exode
+suivant l'appel du ciel
+Nous avons eu la manne
+dans la marche au désert
+Nous avons vu des signes
+opérés par Moise
+Nous voici à la porte
+de ce pays promis.
+
+3. Nous avons un prophète,
+confirme par la Bible
+Et la colonne de feu,
+l‘Ange de l'Eternel
+Nous avons un Message,
+une Parole promise
+Nous ne cherchons rien d'autre
+que fêter en Canaan.
+
+4. Bientôt en Israël,
+sonnera une trompette
+Pour qu'Elie et Moise
+apporte leur message
+Et le même soleil
+qui se lève à l‘Est
+Se couche à l'ouest
+avant le huitième jour.
+
+5. Que de vrais ministres
+répandent la lumière
+Et que de grands miracles
+confirment la Parole
+Que les parlers en langues,
+les visions et les songes
+Que Joël 2:28 soit vécu
+dans l‘Eglise.''',
+    numero: 410,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_411',
+    titre: 'IL M’AIME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Dans ce monde pervers
+et agité Seigneur il m’a cherché
+il m’a cherché, il m’a trouvé
+il m’aime il est mort pour moi.
+
+Chœur:
+Jésus m’aime
+il m’aime il m’aime
+il m’aime il est mort pour moi x2
+
+2. La couronne d’épines,
+il l‘a portée
+pour venir mourir ici-bas
+la couronne de honte,
+il l’a portée
+il m’aime il est mort pour moi.
+
+3. Quelle que soit la souffrance,
+les moqueries
+je n’ai rien à gagner ici-bas
+Jésus m’aime ça me suffit
+il m’aime il est mort pour moi.''',
+    numero: 411,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_412',
+    titre: 'MERCI SEGNEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh ! Oui oh ! Oui merci Seigneur 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination 2x.
+
+2. Quand je vois Satan,
+échouer dans ma vie 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination
+
+3. Quand je vois le monde aujourd’hui
+sous mes pieds 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination
+
+4. Quand je vois mon cœur,
+recevoir le Saint-Esprit 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+
+5. Quand je me retrouve
+dans la robe de l’épouse 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+
+6. Quand je me sens,
+libère du péché 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+
+7. Quand je me sens,
+déchargé de mon fardeau 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination 2x.
+
+8. Quand je me vois,
+lave par la parole 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+
+9. Quand je vois Malachie 4,
+accompli sous mes yeux 2x
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+
+10. Quand je vois le péché, échouer dans ma vie.
+Quand je vois la mondanité, échouer dans ma vie.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…
+
+11. Quand je vois l’immoralité, échouer dans ma vie.
+Quand je vois la fornication, échouer dans ma vie.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…
+
+12. Quand je vois l’adultère, échouer dans ma vie.
+Quand je vois la prostitution, échouer dans ma vie.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…
+
+13. Quand je vois le célibat, échouer dans ma vie.
+Quand je vois la stérilité, échouer dans ma vie.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…
+
+14. Quand je vois les sorciers, échouer dans ma vie.
+Quand je vois les marabouts, échouer dans ma vie.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…
+
+15. Quand je te regarde, tu n’es plus le même.
+Et quand je me regarde, je ne suis plus le même.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…
+
+16. Quand je vois la Parole, réussir dans ma vie.
+Quand je vois Jésus, réussir dans ma vie.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…
+
+17. Quand je vois les soucis, échouer dans ma vie.
+Quand je vois les maladies, échouer dans ma vie.
+Mon Seigneur je te loue, je te loue, je te loue.
+Mon Seigneur je te loue pour ma prédestination.
+0h Oui…''',
+    numero: 412,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_413',
+    titre: 'Y A-T-ILPOUR TOI DES RIVIERES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. « Aie bon courage» cria Dieu à Josué,
+En lui pointant la route sur la rivière
+L’infranchissable Jourdain.
+Comme c’est impossible
+Comme ils marchaient soumis
+Les eaux s’ouvrirent.
+
+Chœur :
+Y-a-t-il pour Toi des rivières
+infranchissables, des montagnes que
+Tu ne peux franchir ?
+Dieu, spécialiste dans des
+choses dites impossibles, Fera
+ce qu’aucune autre puissance ne peut faire.
+
+2. Pour vaincre ils devraient
+surmonter les obstacles.
+Les murs de Jéricho devraient tomber.
+Ils durent s’écrouler
+comme on les contournait.
+Dieu ne faillit point.
+Il tient Ses promesses.
+
+3. Dieu reste le même,
+Sa Parole mérite confiance.
+Il t’ouvrira une voie à travers l’eau.
+Et Il change les situations de la vie.
+Montagnes et collines
+Il fondra pour toi.''',
+    numero: 413,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_414',
+    titre: 'QUEL MERVEILLEUX SAUVEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quel Merveilleux Sauveur est Jésus mon Roi ?
+Un Merveilleux Sauveur pour moi.
+Il cache mon âme dans le creux du rocher.
+Ou je bois au fleuve de délices.
+
+Chœur :
+Il cache mon âme dans le creux du Rocher.
+Couvre la terre sèche sans eau.
+Il cache ma vie au cœur de Son Amour
+Là Il me couvre par Sa main (2X).
+
+2. Quel Merveilleux Sauveur est Jésus Mon Roi.
+Et compagnon Il me décharge
+Il me soutien je ne chancèlerai pas
+Et Il me comble assez de force.
+
+3. Il me comble de tant de bénédictions
+Il me remplit de Sa présence.
+Dans mon ravissement je chante
+Oh gloire à Dieu.
+Pour Son amour et Son Salut.
+
+4. Revêtu de Sa grâce et prêt enlevé
+Pour Le rencontrer dans les airs.
+Je chanterai avec tous les rachetés
+Pour Son amour et Son salut.''',
+    numero: 414,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_415',
+    titre: 'AIGLE JEHOVAH',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Aigle Jéhovah
+L’ancre de ma vie 2X.
+
+2. Pendant toute la nuit je suis en sommeil, mes yeux sont fermés
+Ton œil est ouvert tu veille sur moi
+Oh mon Seigneur.
+
+3. Quand tu me réveille j’invoque
+Ton nom pour me consacrer à Toi
+Jéhovah J’abandonne mon souffle et mon âme dans tes mains.
+
+4. Comme la mère-aigle nourrissant ses enfants
+De bouche en bouche sans intermédiaire
+Tu m’as bien nourri de Ta Parole.
+
+5. Je ne peux rien faire sans Te consulter
+Je ne peux pas marcher sans penser à Toi
+Tu as rempli tout mon être.
+
+6. Avant ma naissance Tu m’avais choisi
+Tu m’as protégé depuis mon enfance
+Tu m’as bien gardé de la mort.
+
+7. Marchant sur la terre je suis si fier
+D’avoir un Sauveur comme Toi Jéhovah.
+Mon âme est noyée dans le Sang.
+
+8. Pendant mon voyage tu es mon guide
+Je Te tiens la main Tu conduis mes pas
+Je suis à l’abri du danger.
+
+9. Pendant les épreuves je me sens tout seul
+Mais Tu me rassures Aigle-Jéhovah.
+Tu entends ma voie quand je pleure.
+
+10. Si aujourd’hui je suis débout dans la foi
+Oui, c’est par Ta grâce Aigle-Jéhovah.
+Je n’ai point de force par moi-même.
+
+11. Nous étions nombreux à croire ce Message,
+beaucoup sont tombés, d’autres sont restés,
+Tu ne T’es occupé que de moi.
+
+12. Souviens-Toi de moi pendant les épreuves.
+Ne m’oubli pas Aigle-Jéhovah,
+c’est Toi qui est L’Ancre de ma vie.
+
+13. Quand je crie à Toi écoute ma voie
+Exauce ma prière Oh ! Grand Dieu d’amour.
+Tu peux me venir au secours.''',
+    numero: 415,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_416',
+    titre: 'TOUT CONCOURT POUR MON BIEN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Chœur
+Tout concourt pour mon bien puisque j’aime Jésus,
+Tout travaille pour mon bien
+Puisque j’aime Le Roi.
+
+1. Et quand l’épreuve arrive, elle travaille pour mon bien,
+j’apprends à bien combattre, puisque j’aime Jésus.
+
+2. Et quand le monde bouge, il travaille pour mon bien,
+j’attache mes racines, puisque j’aime Jésus.
+
+3. Et quant à la douleur, elle travaille pour mon bien,
+J’apprends à bien combattre, puisque j’aime mon Roi.
+
+4. Quant à la maladie, elle travaille pour mon bien,
+elle fortifie ma foi, puisque j’aime mon Roi.
+
+5. Et quand la mort frappe, elle travaille pour mon bien,
+je vais me reposer puisque j’aime Jésus.
+
+6. Quand la tentation vient, elle travaille pour mon bien,
+j’apprends à faire la guerre, puisque j’aime Jésus.
+
+7. Même dans les angoisses, je ne perds pas la foi,
+je sais Dieu me soutient, puisque j’aime Jésus.''',
+    numero: 416,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_417',
+    titre: 'A LA FIN DE LA BATAILLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Suis-je bien un soldat de la Croix,
+disciple de l’Agneau,
+Craindrai-je de soutenir Sa cause,
+de parler de Son Nom ?
+
+Chœur
+A la fin de la bataille nous serons couronnés 3X
+A la fin de la bataille nous serons couronnés,
+dans la Nouvelle Jérusalem
+Couronnés, couronnés d’une brillante et belle couronne,
+A la fin de la bataille nous serons couronnés,
+dans la Nouvelle Jérusalem.
+
+2. Dois-je être transporté au Ciel
+sur un beau lit d’aisance,
+quand d’autres combattent, gagnent le prix,
+navigant sur le sang.
+
+3. N’ai-je pas d’ennemis à combattre,
+des vagues à surmonter ?
+Ce monde se joint-il à la grâce
+pour m’amener à Dieu ?
+
+4. Oui, pour régner, je dois combattre,
+redonne courage, Seigneur,
+souffrances et peines j’endurerai,
+aidé par Ta Parole.''',
+    numero: 417,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_418',
+    titre: 'JESUS EST VIVANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jésus est vivant (bis)
+Par Son sang Il m’a racheté,
+Par Sa Puissance Il m’a transformé,
+une vie nouvelle Il m’a donné,
+oui Jésus est vivant.
+Jésus est vivant.
+
+2. Jésus est vivant pour toi maintenant,
+crois en Lui et sois purifié.
+Reçois Sa force et soit transformé,
+confie-toi donc en Son amour,
+oui Jésus est vivant.''',
+    numero: 418,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_419',
+    titre: 'LE SANG DE JESUS-CHRIST',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Le Sang de Jésus-Christ (bis)
+a purifié tous mes péchés
+Tous mes péchés (bis)
+Le Sang de Jésus-Christ (bis)
+A purifié tous mes péchés.''',
+    numero: 419,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_420',
+    titre: 'NOUS SOMMES LE PEUPLE DU DIEU VIVANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous sommes le peuple du Dieu vivant,
+nous fumes acquis par le sang,
+Répandu à la croix pour le pécheur,
+nous Lui appartenons.
+
+2. Nous portons le Nom de Jésus Le Christ,
+Ce Nom qui fait tomber,
+toute la puissance de l’antichrist,
+et sauver le pécheur.
+
+3. Plusieurs tempêtes s’abattent sur nous,
+Mais nous ne craignons rien.
+Nous sommes fondés sur Le Roc Eternel,
+Nous resterons debout.
+
+4. Nous marchons au Nom du Puissant Vainqueur.
+C’est celui de Jésus-Christ,
+Le Tout-Puissant marche au milieu de nous,
+Nous sommes plus que vainqueur.
+
+5. Nous allons vers cette ville d’en haut,
+la Nouvelle Jérusalem,
+ou il n’y a ni faim, ni douleur, ni pleurs,
+Jérusalem d’en haut.
+
+6. Et bientôt nous percerons les nuées,
+nous serons enlevés tous,
+à la rencontre de Jésus Le Christ,
+et pour l’éternité.''',
+    numero: 420,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_421',
+    titre: 'SEIGNEUR VOICI TON PEUPLE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Seigneur voici Ton peuple
+Toi-même conduit-le 2X
+Toi-même parle-lui
+Toi-même taille-le
+Toi-même brise-le
+Toi-même béni-le
+Toi-même guéris-le
+Toi-même garde-le.''',
+    numero: 421,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_423',
+    titre: 'OH! DEBOUT L’EPOUSE DE L’AGNEAU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh debout épouse de l’Agneau,
+l’heure a sonné voici Ton époux.
+Prends ta lumière, bientôt Il viendra
+dans les airs, là-haut dans le ciel.
+
+Chœur :
+Je suis sauvé, Alléluia.
+Je veux chanter pour mon Sauveur,
+Il vient Il vient pour m’enlever ;
+Le voici j’entends Sa voix.
+
+2. Oh ! Ce monde n’est pas à nous,
+Plein de péchés, vaux mieux le quitter,
+Plions bagages pèlerins d’espérance.
+Montons là-haut vers notre cité.
+
+3. La chez nous il n’y a point de fumeurs.
+Là-haut les sœurs ont de longs cheveux,
+sanctifions-nous car c’est par nous
+que ce monde sera jugé.
+
+4. Heureux les appelés au festin,
+Oui, nous avons la vie éternelle
+par Jésus-Christ Le Roi des rois,
+Notre Seigneur Dieu Tout-Puissant.
+
+5. Mets-toi debout toi mon frère, ma sœur,
+mets-toi debout prend ta lumière.
+Mets –toi debout toi qui dort encore
+soit baptisé de feu de l’Esprit.
+Mets-toi debout, toi mon frère ma sœur,
+tu as Jésus entre tes mains.''',
+    numero: 423,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_424',
+    titre: 'JE SERAI RAJEUNI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Chœur :
+O ! Alléluia. Alléluia, Amen (bis)
+Je ne vieillirai jamais alléluia 2X
+Je serai rajeuni à l’enlèvement,
+Je serai rajeuni dans le millenium,
+Je serai rajeuni dans l’éternité
+O! Je ne vieillirai jamais. Alléluia !
+
+1. Nous attendons la trompette du ciel,
+Réjouissons-nous et donnons-Lui la gloire.
+Car les noces de l’Agneau sont venues.
+Je ne vieillirai jamais alléluia ! 2X
+
+2. Ce sera sur la montagne de Sion,
+Il n’y aura ni mort, ni pleur, ni douleur,
+Tout sera en paix et aussi dans l’amour,
+Je ne vieillirai jamais alléluia !
+
+3. Il n’y aura pas la lumière du soleil,
+Il n’y aura pas la lumière de la lune,
+il n’y aura pas la lumière de ce monde.
+Je ne vieillirai jamais alléluia !
+
+4. L’Agneau sera la Lumière des élus,
+A Jérusalem la Cité Royale,
+La ville Sainte bâtie pour l’Epouse.
+Je ne vieillirai jamais alléluia !
+
+5. Et Son Epouse s’est bien préparée,
+Elle a été revêtue des fins lins,
+Pour se réjouir auprès de Son Epoux.
+Je ne vieillirai jamais alléluia !
+
+6. Heureux (sont) les appelés au festin,
+Qui ont cru à la Parole de leur temps,
+La révélation complète de Jésus,
+Je ne vieillirai jamais alléluia ! 2X.''',
+    numero: 424,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_425',
+    titre: 'MAPENDEZI YA DUNIA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mapendezi ya dunia siyatamani
+tena Nifanane yoteYesu (Bwana)
+Nifanane Nawe.
+
+Chœur :
+Nifanane NaweYesu
+Hata nyumbaniao popote
+Kila siku ya maisha (yangu)
+Nifanane Nawe.
+
+2. Ulivunja kila pigo
+La makosa yangu
+Acha nikutumikie (Bwana)
+Nifanane Nawe.
+
+3. Toka hapa kwenda mbingu ni
+kwa safari nzima
+Nitapasha Neno lako (Bwana)
+Nifanane nawe.
+
+4. Nikukute kule mbingu
+Mukombozi wangu Nisikiye Neno
+njema
+Nifanane Nawe.''',
+    numero: 425,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_426',
+    titre: 'BWANA NIPELEKE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Bwana unipelekekulekwa Baba,
+kwenye Mji wa raha, Mlango ni
+Yesu, Tutaishi naye kule
+mbinguni.
+
+Chœur :
+Oh! Oh! Oh! Oh! Alleluia 2X
+Mule ndani ya Yesu muna raha ya
+ajabu Isiyo na mwisho, Kule
+mbinguni.
+
+2. Yerusalema mupya, Muji wa
+amani unameta meta una
+pambwa pambwa Kwa ajili
+yangu, kweli ni ajabu.
+
+3. Siku inakuja, ile ya furaha,
+Tutarukaruka tutachezacheza
+Kwenye barabara ile ya zahabu.''',
+    numero: 426,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_427',
+    titre: 'L’AMOUR AGAPAO',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Il n y a plus rien dans ce monde
+Qui soit plus fort que l’amour
+L’amour est plus fort que les chaines d’airain
+Rien ne peut le briser
+L’amour Agapao
+C’est le don éternel
+L’amour Agapao
+C’est Dieu lui-même dans mon cœur.
+
+Chœur
+C’est l’amour qui nous unit
+C’est l’amour qui nous unit
+C’est l’amour qui nous unit.
+
+2. Le diable peut imiter
+Tous les dons de la bible
+A l’exception de l’amour
+Le diable ne peut jamais aimer
+L’amour Agapao
+C’est la perfection
+L’amour Agapao
+C’est la Divinité.
+
+3. L’amour c’est la super puissance
+C’est la force invincible
+L’amour c’est la pierre de faîte
+Qui vient coiffer la pyramide
+L’amour Agapao
+Me fais aimer comme Dieu lui-même
+L’amour Agapao
+C’est le Saint Esprit.''',
+    numero: 427,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_428',
+    titre: 'LA REVELATION SUPREME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. La révélation, révélation suprême
+Que le prophète Branham a prêché
+C’est la Divinité de Jésus Christ
+Les théologiens ne peuvent le comprendre
+Les sages de ce monde ne peuvent l’expliquer
+A force de penser,
+Ils deviennent fous
+
+Chœur:
+Je n’ai pas peur de témoigner
+Que Jésus Christ est mon Dieu
+Je n’ai pas honte de publier
+Que moi je l’adore.
+
+2. Elohim, l’Esprit Eternel
+L’Esprit Eternel qui se mouvait
+Au-dessus des eaux
+Que personne ne pouvait voir
+Que personne ne pouvait toucher
+Le Jéhovah de l’Ancien Testament
+C’est Jésus-Christ dans le nouveau.
+
+3. Pour les uns, Jésus n’est qu’un homme
+Pour les autres, Il n’est qu’un prophète
+Mais pour moi, Jésus est plus qu’un homme
+Oui pour moi, Il est le Dieu de tous les prophètes
+Cent pour cent homme, cent pour cent Dieu.
+
+4. Et partout, où le Nom de Jésus
+N’est pas honoré, oh mes bien-aimés
+Les hommes et les femmes qui y vont
+Ne sont pas plus que les animaux
+Là où Jésus n’est pas le bien venu
+Moi aussi je n’y serai pas.''',
+    numero: 428,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_429',
+    titre: 'NOUS VENONS DANS CE MONDE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous venons dans ce monde
+étant des pécheurs,
+Car la voie emprunté il y a
+l’ennemi Satan
+« Et pour ôté ce vaccin du péché,
+nous devons accourir, accourir à la croix » x2
+
+Chœur :
+Solo : Chantons la croix,
+Tous :
+La croix, la croix, la croix c’est le
+lieu de la condamnation de
+l’ennemi Satan.
+
+2. Dieu a quitté le trône, Dieu a quitté la gloire
+Est descendu ici-bas avec les baumes,
+« Et pour me sauver Son Sang
+coulas à la croix, tout est
+accompli me voici justifier. » x2
+
+3. Nous étions oliviers sauvages abandonné,
+Par la grâce de Dieu Il nous a anté au trône,
+Et les bénédictions réservées à
+Israël sont tombées sur nous à la croix » x2.''',
+    numero: 429,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_430',
+    titre: 'MA FOI REGARDE A TOI, TOI…',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ma foi regarde à Toi, Toi l’Agneau du calvaire,
+Sauveur Divin écoute maintenant ma prière,
+« Efface tout mes péchés auquel j’ai d’aujourd’hui,
+Que je sois tout à Toi au Jésus mon Sauveur. » x2
+
+Chœur :
+Oh ! Quel Nom ?
+Précieux Nom au combien Il est doux
+l’espoir de la terre est la joie du ciel.
+
+Solo :
+Alléluia ! Alléluia Puissant Vainqueur
+je viens à Toi Seigneur prend soins de moi,
+Alléluia ! Alléluia le Bon Berger
+écoute ma prière Seigneur ne me rejette pas,
+quel Nom ?
+
+2. Cette croix consacrée je porterais
+jusqu’à ce que la mort me libère
+au Jésus Mon Sauveur.''',
+    numero: 430,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_431',
+    titre: 'CHRETIEN JUSQU\'A LA MORT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Chrétien jusqu'à la mort (x3)
+Je serai chrétien jusqu’à la mort.
+Combattant jusqu’à la mort
+Chrétien jusqu’à la mort
+Fidèle jusqu’à la mort
+Croyant jusqu’à la mort.''',
+    numero: 431,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_432',
+    titre: 'NE DISANKA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ne disankapakumonanfumu Yesu
+Alleluia! Alleluia!
+Tuimbayibonso ne
+dinsankadinenealleluia! Alleluia!
+
+Chœur:
+Puilayibonsodialelu
+TutumbishaYesu
+Tumuimbilayi ne dinsankadinene
+Alleluia! Alleluia!
+
+2. Wakafilamashiandi ne moyo
+Alleluia!
+Kutokesha benji bamalumabi,
+alleluia!
+Kunkulusekunakapetalupandulue
+nyi alléluia!
+KuakamfuilaYesumuanawaNzambi,
+alléluia!
+
+3. Muamuamuluba muimbila ne
+disanka alléluia ! (banjelo)
+batumbishaNzambiwaNzambiyonso
+Alléluia!
+Nzambiyonso Alléluia!
+
+4. BansantubatumbishaNzambewabo,
+alleluia!
+Wakambulamajituabuonso,
+alleluia!
+Nzambe wetu
+matambamaluonso, alleluia!
+Kuikalenendenkutambamaluonso,
+alleluia.''',
+    numero: 432,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_433',
+    titre: 'QUEL JOUR DE GLOIRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Chœur :
+« Quel jour de gloire
+Quand Jésus m’a sauvé ». (x4)
+
+1. Des chaînes du péché Jésus m’a libéré(x3)
+Quel jour de gloire m’a sauvé.
+
+2. Aux choses du passé je ne veux plus toucher(x3)
+Quel jour de gloire quand Jésus m’a sauvé.
+
+3. Ce n’est plus moi qui vis c’est la Parole en moi(x3)
+Quel jour de gloire quand Jésus m’a sauvé.
+
+4. Je suis prédestiné avant la fondation(x3)
+Quel jour de gloire quand Jésus m’a sauvé.
+
+5. Je serai enlevé quand Jésus reviendra(x3)
+Quel jour de gloire quand Jésus m’a sauvé.''',
+    numero: 433,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_434a',
+    titre: 'MOYEBI MONENE N’ETUMBA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Moyebimonene n’etumba,
+molongi o yoyakala,
+Elombemonene n’etumba,
+Yesuoyobalongaka te.
+
+Choeur :
+NkoloYesu, telema, odonduakati
+na banguna, bana na Yo,
+bakumisa, elonga na
+Yoyaelombe.
+
+2. Mapinganionso na lola,
+ezalinionso sima na Yo,
+mpokokumisaNkombo na Yo,
+moyebimonen n’etumba.
+
+3. Yondemokamuisiyabato,
+na boyebi na Yo n’etumba,
+na lolenge y’okolongayango,
+naniakosakana na Yo.
+
+4. Elekoesiebelemi,
+mpo na kobomabatomabe,
+na mosakoliyalokuta,
+elongo n’elembo na naima.''',
+    numero: 434,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_434b',
+    titre: 'MOYEBI MONENE N’ETUMBA',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''Version tshiluba
+
+1. Mumanyimunenewanvita,
+Mutshimunyiwa kale kale
+Tshilobotshikole mu nvita
+Yesuukenakutshimuna.
+
+Réf:
+Tshilobojukawenda
+madiunda mu baluishibebe
+banabebe, babandila
+luenduluebeluabutshimunyi.
+
+2. Misumbayonsoya mu diulu
+Idi panyimapebewewe
+Bwakutumbishadinadiebe
+Mumanyimunenewanvita.
+
+3. Wewemukemeshiwa bantu
+Buadimanyadiebedianvita
+Ne mishinduyaditshimuna
+Nganyiwapalakananebe.
+
+4. Ditukudikadipabuipi
+Di wabutula bantu babi ne
+muambiwabowamashimi
+Po pamwe ne nyamawalonji.
+
+5. Dibokodiebediabukole
+Dididibandishibuekuulupamutu
+pa makoleonso, ne
+mamanyaonsoanvita.
+
+6. Yonawakadilabikole
+Nganyiwabululamukanda
+Kakuvuamuntunanshaumwe
+AnuYesumuan’amukoko.
+
+7. Dina diaNzambiwetunganyi
+Dina diende si YesuKlisto
+yeye se Nzambiwa ka diku
+yeyemene ne yikalaku.''',
+    numero: 434,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_435',
+    titre: 'DANS MA VIE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Dans ma vie (x2)
+Je veux servir Jésus, dans ma vie.
+
+2. Dans mon cœur (x2)
+Je veux aimer Jésus, dans mon cœur.
+
+3. De ma bouche (x2)
+Je veux prêcher Jésus, de ma bouche.
+
+4. De mes yeux(x2)
+Je veux voir Jésus, de mes yeux.
+
+5. De mes mains(x2)
+Je veux toucher Jésus, de mes mains.
+
+6. De mes pieds(x2)
+Je veux suivre Jésus, de mes pieds.''',
+    numero: 435,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_436',
+    titre: 'JE DOIS DIRE A JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je dois dire à Jésus tous mes soucis
+Je ne peux porter seul mes fardeaux.
+Dans ma détresse, Il m’aidera bien ;
+Toujours Il aime et prend soin des siens.
+
+Chœur :
+Je dois le Lui dire, le dire à Jésus
+Je ne peux porter seul mes fardeaux.
+Je dois le lui dire, le dire à Jésus
+Jésus peut m’aider, oui Jésus seul.
+
+2. Je dois dire à Jésus tous mes ennuis
+Il est l’ami bon compatissant ;
+Si je Lui demande, Il délivrera
+Il mettra vite fin à mes ennuis
+
+3. Tenté, éprouvé, je veux un Sauveur
+Qui peut m’aider à porter mon poids ;
+Je dois le Lui dire, le dire à Jésus;
+Peines et soucis Il m’aide à porter.
+
+4. Oh ! Combien le monde, m’attire vers le mal!
+Et mon cœur est tenté de pécher!
+Je dois dire à Jésus, Il m’aidera
+A avoir la victoire sur le monde.''',
+    numero: 436,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_437',
+    titre: 'CRIS DU JUBILE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. J’ai entendu le cris du jubilé,
+J’ai décidé de tout abandonné
+Et libéré des tourments du péché
+Je n’ai plus rien d’autre qu’un seul souci.
+
+Chœur :
+Mon souci, mon seul souci seigneur
+Mon souci, être comme JESUS.
+
+2. Privé de tout ce qui m’était un gain
+J’ai préféré le chemin du mépris
+Tout en sachant que si je perdais tout
+J’aurais acquis la vie qui vient de Dieu.
+
+3. Si par des fois toute la nuit durant
+Pris d’insomnie je médite tes lois
+S’il faut veiller s’il faut de foi jeuner
+Ce n’est pour rien d’autre dans cette vie.
+
+4. S’il faut monter sur les monts, les collines
+Pour témoigner de l’amour de mon Dieu
+S’il faut passer sous la pluie ou le froid
+Ce n’est que pour être comme Jésus.
+
+5. Dans les épreuves et dans les tentations
+J’aime penser comment ferait Jésus
+Dans la misère et dans les maladies
+J’aime savoir ce que ferait Jésus.''',
+    numero: 437,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_438',
+    titre: 'QUEL BEAU JOUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Oh ! quel beau jour, jour de mon choix
+Sur toi, mon Sauveur et mon Dieu
+Que mon cœur rayonne de joie,
+Exprime partout son ravissement.
+
+Chœur :
+Quel beau jour, quel beau jour
+Quand JESUS ôta mes péchés!
+Il m’apprit à veiller, prier
+Et vivre chaque jour dans la joie
+Quel beau jour, quel beau jour
+Quand JESUS ôta mes péchés.
+
+2. Quel engagement qui scelle mes vœux
+A lui qui mérite mon amour!
+Puissent les chants remplir sa maison
+Pendant que je vais à l’autel.
+
+3. L’alliance est faite avec JESUS!
+Il est à moi, je suis à lui
+Il me conduit et je le suis,
+Brulant de confesser sa voix.''',
+    numero: 438,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_439',
+    titre: 'JÉSUS, MON SEUL ABRI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jésus, mon seul abri, ma haute retraite,
+Quand la tempête gronde autour de moi,
+En toi mon âme trouve sa paix complète,
+Je suis en sécurité près de toi.
+
+Chœur
+Rocher des siècles, fendu pour moi,
+Laisse-moi me cacher en toi !
+Rocher des siècles, puissant Sauveur,
+Tu es le repos de mon cœur.
+
+2. Quand le doute ou la crainte m'envahit,
+Je lève les yeux vers ton saint nom ;
+Ta promesse est fidèle et m'affermit,
+En toi je trouve le vrai pardon.''',
+    numero: 439,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_440',
+    titre: 'LA SEMAINE EST PASSÉE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. La semaine est passée,
+Le jour du repos vient ;
+Mon âme soulagée,
+Bénit le Souverain.
+
+Chœur
+Jour du Seigneur, jour saint et doux,
+Rassemble-nous à tes genoux !
+Jour du Seigneur, plein de lumière,
+Sois notre joie et notre prière.
+
+2. Eloigne de nos cœurs
+Les soins du monde vain,
+Et verse tes faveurs
+Sur nous, Maître divin.''',
+    numero: 440,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_441',
+    titre: 'NOUS VOICI DANS TA PRÉSENCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Nous voici dans ta présence,
+Seigneur Dieu tout-puissant,
+Cherchant ta sainte grâce,
+D'un cœur reconnaissant.
+
+Chœur
+Remplis ce lieu de ta gloire,
+Descends, Saint-Esprit de Dieu !
+Accorde-nous la victoire,
+Et le feu venu du ciel.
+
+2. Viens parler à nos âmes,
+Guéris tous nos blessés,
+Allume en nous la flamme
+De ta pure vérité.''',
+    numero: 441,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_442',
+    titre: 'SEIGNEUR, ATTIRE-MOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Seigneur, attire-moi plus près de toi,
+Je veux marcher sans peur, gardant la foi.
+Loin des bruits de ce monde et du péché,
+En toi seul, ô Jésus, je veux cacher.
+
+Chœur
+Plus près de toi, mon Sauveur et mon Roi,
+Plus près de toi, toujours plus près de toi !
+Garde mon âme attachée à tes pas,
+Ne me laisse jamais sans ton bras.
+
+2. Dans l'épreuve ou les jours de grand bonheur,
+Sois le seul Souverain de tout mon cœur.''',
+    numero: 442,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_443',
+    titre: 'QU`ELLE EST DOUCE, TA PRÉSENCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Qu'elle est douce, ta présence,
+Ô Jésus, mon divin Roi !
+Mon âme en toi se confie,
+Et trouve son seul repos.
+
+Chœur
+Gloire, gloire à ton saint nom !
+Tu es digne de louange.
+Gloire, gloire à ton saint nom !
+Seigneur des rois et des anges.
+
+2. En toi j'ai la vie abondante,
+La paix que le monde n'a pas,
+Une joie pure et éclatante,
+Qui me guide à chaque pas.''',
+    numero: 443,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_444',
+    titre: 'LE SANG DE JÉSUS ME LAVE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Le sang de Jésus me lave,
+Me rend plus blanc que la neige !
+Plus de condamnation pour moi,
+Je suis racheté par le Roi.
+
+Chœur
+Le sang, le sang précieux de Jésus,
+A coulé pour ma liberté !
+Le sang, le sang précieux de Jésus,
+M'a purifié pour l'éternité !
+
+2. Devant l'accusateur qui vient,
+Je plaide le sang du Sauveur ;
+Par lui je suis victorieux,
+Et mon nom est écrit aux cieux.''',
+    numero: 444,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_445',
+    titre: 'TU ES LE DIEU DES MIRACLES',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Tu es le Dieu des miracles,
+Rien n'est impossible à toi !
+Tu brises toutes les chaînes,
+Quand nous prions avec foi.
+
+Chœur
+Dieu puissant, Dieu redoutable,
+Tu agis encore aujourd'hui !
+Ton amour est insondable,
+Ta fidélité n'a pas de fin.
+
+2. Les aveugles voient ta gloire,
+Les boiteux sautent de joie,
+Les captifs ont la victoire,
+Par la puissance de ta croix.''',
+    numero: 445,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_446',
+    titre: 'JÉHOVAH JIRÉ',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jéhovah Jiré, mon pourvoyeur,
+Sa grâce me suffit toujours !
+Il comble tous mes besoins en Christ,
+Selon sa richesse et son amour.
+
+Chœur
+Il prend soin de moi, oui, il prend soin !
+Mon Dieu pourvoit à tous mes besoins.
+Jéhovah Jiré, le Grand I AM,
+Est mon berger tous les jours.
+
+2. Pourquoi m'inquiéter du lendemain ?
+Mon Père céleste sait tout.
+Il nourrit l'oiseau dans les cieux,
+Et me garde jusqu'au bout.''',
+    numero: 446,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_447',
+    titre: 'MON ÂME, BÉNIS LE SEIGNEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon âme, bénis le Seigneur,
+Et n'oublie aucun de ses bienfaits !
+C'est lui qui pardonne tes fautes,
+Et guérit toutes tes maladies.
+
+Chœur
+Bénis le Seigneur, ô mon âme !
+Que tout ce qui est en moi
+Célèbre son saint nom !
+Car il est plein de bonté.
+
+2. Il couronne ta vie de grâce,
+De compassion et de ferveur ;
+Il rassasie de biens ta vieillesse,
+Et te rajeunit comme l'aigle.''',
+    numero: 447,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_448',
+    titre: 'SUR LE CHEMIN DE LA CROIX',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Sur le chemin de la croix,
+Je veux suivre Jésus mon Maître,
+Entendre sa douce voix,
+Et lui donner tout mon être.
+
+Chœur
+Suivre Jésus, oui, je le veux !
+Porter ma croix chaque jour ;
+Marcher vers le pays des cieux,
+Rempli de son divin amour.
+
+2. Que le monde se moque ou raille,
+Je ne regarderai pas en arrière ;
+Au milieu de la bataille,
+Son Esprit est ma lumière.''',
+    numero: 448,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_449',
+    titre: 'JE VEUX T`ADORER',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je veux t'adorer, ô mon Roi,
+De tout mon cœur, de toute mon âme ;
+Elever mes mains vers toi,
+Brûler de ta sainte flamme.
+
+Chœur
+Adoration, louange et gloire,
+Soient à l'Agneau sur le trône !
+A toi appartient la victoire,
+A toi la majesté et la couronne !
+
+2. Dans la beauté de ta sainteté,
+Je me prosterne humblement ;
+Saisi par ta grande bonté,
+Je te loue éternellement.''',
+    numero: 449,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_450',
+    titre: 'L`ESPRIT DU SEIGNEUR EST SUR MOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. L'Esprit du Seigneur est sur moi,
+Il m'a oint pour annoncer
+La bonne nouvelle aux pauvres,
+Et les captifs libérer.
+
+Chœur
+L'Esprit de Dieu m'a oint !
+Pour guérir les cœurs brisés,
+Proclamer l'année de grâce,
+Et consoler les affligés.
+
+2. Revêtus de sa puissance,
+Nous marchons sans reculer,
+Pour porter la délivrance
+À ce monde ténébreux.''',
+    numero: 450,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_451',
+    titre: 'JÉSUS EST LE MÊME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jésus est le même hier et aujourd'hui,
+Il le sera pour l'éternité !
+Sa parole ne passe jamais,
+Sa grâce est notre sécurité.
+
+Chœur
+Hier, aujourd'hui, toujours le même !
+Jésus ne change jamais.
+Il aime, il sauve, il guérit encore,
+Gloire à son nom à jamais !
+
+2. Ce qu'il a fait aux temps anciens,
+Il le fait encore parmi nous ;
+Mets ta confiance dans son soutien,
+Il est fidèle jusqu'au bout.''',
+    numero: 451,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_452',
+    titre: 'MA FOI S`ENRACINE EN TOI',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Ma foi s'enracine en toi,
+Rocher inébranlable !
+Quand les vents se déchaînent,
+Ta grâce est immuable.
+
+Chœur
+Fondé sur le roc, Jésus-Christ,
+Mon âme ne chancelle pas !
+Conduit par ton Holy Spirit,
+Je marche d'un ferme pas.
+
+2. Les promesses de ton Livre
+Sont ma lumière et mon pain ;
+C'est par elles que je veux vivre,
+Tenu par ta forte main.''',
+    numero: 452,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_453',
+    titre: 'SANS JÉSUS, JE NE PUIS VIVRE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Sans Jésus, je ne puis vivre,
+Il est mon souffle et ma vie ;
+C'est lui seul que je veux suivre,
+Mon âme en lui s'est confiée.
+
+Chœur
+Jésus seul, Jésus seul !
+Il me suffit à jamais.
+Jésus seul, Jésus seul !
+Mon trésor et ma vraie paix.
+
+2. Il dessèche mes larmes,
+Il ôte toute frayeur,
+Il est ma plus puissante arme,
+Mon glorieux Rédempteur.''',
+    numero: 453,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_454',
+    titre: 'BÉNIE SOIT LA FONTAINE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Bénie soit la fontaine
+Du sang du Rédempteur !
+Qui purifie et enchaîne
+Le mal de mon pauvre cœur.
+
+Chœur
+Je crois au sang de Jésus !
+Il me lave entièrement,
+Je ne suis plus perdu,
+Je suis sauvé maintenant.
+
+2. Cette source toujours coule
+Pour quiconque veut venir ;
+Même au milieu de la foule,
+Jésus vient nous secourir.''',
+    numero: 454,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_455',
+    titre: 'QUAND JE CONTEMPLE TA SAINTETÉ',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quand je contemple ta sainteté,
+Et quand je contemple ta beauté,
+Les choses qui m'environnent
+Ne sont que des ombres,
+Auprès de ta lumière.
+
+Chœur
+Je t'adore, oui, je t'adore !
+La raison pour laquelle je vis,
+C'est pour t'adorer.
+Je t'adore, oui, je t'adore !
+La raison pour laquelle je vis,
+C'est pour t'adorer.
+
+2. Mon cœur s'incline devant ton trône,
+Où règne la grâce et l'amour,
+Rien sur la terre ne m'importe,
+Sinon de t'adorer toujours.''',
+    numero: 455,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_456',
+    titre: 'VIENS, ESPRIT DU DIEU VIVANT',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Viens, Esprit du Dieu vivant,
+Sois le Maître en moi.
+Viens, Esprit du Dieu vivant,
+Sois le Maître en moi.
+
+Chœur
+Brise-moi, façonne-moi,
+Remplis-moi, utilise-moi !
+Viens, Esprit du Dieu vivant,
+Sois le Maître en moi.
+
+2. Remplis mon cœur de ton feu,
+Rends-moi témoin de Jésus,
+Pour proclamer le règne de Dieu,
+Aux âmes qui sont perdues.''',
+    numero: 456,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_457',
+    titre: 'À CELUI QUI EST ASSIS SUR LE TRÔNE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. À celui qui est assis sur le trône,
+Et à l'Agneau, soient la louange,
+L'honneur, la gloire et la force,
+Aux siècles des siècles !
+
+Chœur
+Amén ! Amén !
+Bénédiction et puissance !
+Amén ! Amén !
+À notre Dieu pour toujours !
+
+2. Les anges et les rachetés
+Prosternennt leurs couronnes,
+Chantant la sainteté
+Du Souverain sur le trône.''',
+    numero: 457,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_458',
+    titre: 'MON SEIGNEUR ET MON DIEU',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Mon Seigneur et mon Dieu,
+Je m'approche de toi ;
+Fais descendre du ciel
+Ta gloire sur moi.
+
+Chœur
+Tu es mon berger,
+Rien ne me manquera ;
+Dans tes verts pâturages,
+Mon âme reposera.
+
+2. Tu me conduis sûrement
+Près des eaux paisibles,
+Et tu restaures mon âme
+Par ta force invincible.''',
+    numero: 458,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_459',
+    titre: 'LÀ-BAS DANS LE CIEL',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Là-bas dans le ciel, cité de lumière,
+Il n'y aura plus ni pleurs ni douleurs ;
+Plus de nuit, plus de mort sur cette terre,
+Jésus essuiera les larmes de nos cœurs.
+
+Chœur
+Ô patrie céleste, séjour glorieux !
+Nous serons réunis avec notre Roi.
+Chantant les louanges du Dieu victorieux,
+Transfigurés par sa grâce et sa foi.
+
+2. Les rues sont d'or pur, les portes de perles,
+La gloire de l'Agneau éclaire ce lieu ;
+Dans la cité sainte, les rachetés célèbrent
+L'amour éternel de notre grand Dieu.''',
+    numero: 459,
+    auteur: 'Auteur inconnu',
+  ),
+  Cantique(
+    id: 'cantiques_inspires_460',
+    titre: 'C`EST PAR LA GRÂCE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. C'est par la grâce que nous sommes sauvés,
+Par le moyen de la foi ;
+Ce n'est pas nous qui l'avons mérité,
+C'est le don gratuit du Roi.
+
+Chœur
+Grâce infinie, grâce merveilleuse !
+Qui a racheté un indigne comme moi.
+Mon âme autrefois était malheureuse,
+Mais aujourd'hui je vis par la foi.
+
+2. Rien de nos œuvres ne peut nous justifier,
+Seul le sacrifice de Christ nous blanchit ;
+À lui soit la gloire, l'honneur, la majesté,
+Pour le salut qu'il nous a accompli.''',
+    numero: 460,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_461',
+    titre: 'PRENDS MA MAIN',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Quand ma voie devient morne
+Sois tout près, cher Seigneur,
+Quand ma vie sera quasi-partie ;
+Ecoute-moi quand j’appelle,
+Tiens ma main que je ne tombe ;
+Prends ma main,
+Mène-moi à la maison
+
+Chœur
+Prends ma main, Cher Seigneur,
+Conduis-moi, soutiens-moi ;
+Fatigués, épuisé, je suis faible ;
+Sous l’orage, dans la nuit,
+Mène-moi vers la lumière ;
+Prends ma main ;
+Mène-moi à la maison,
+
+2. Quand les ombres apparaissent ;
+Alors la nuit approche,
+Le jour passe et décline ;
+Je serai au bord de la rivière ;
+Tiens ma main guide de mes pas
+Prends ma main
+Mène-moi à la maison
+
+Chœur
+Prends ma main, Cher Seigneur,
+Conduis-moi, soutiens-moi ;
+Fatigué, épuisé, je suis faible ;
+Sous l’orage, dans la nuit,
+Mène-moi vers la lumière ;
+Prends ma main,
+Mène-moi à la maison.''',
+    numero: 461,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_462',
+    titre: 'CHAQUE INSTANTDE CHAQUE QUI PASSE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Chaque instant de chaque jour qui passe,
+en Jésus je puis me confier.
+Cet ami que jamais rien ne lasse,
+me soutient, sait me vivifier.
+
+Chœur
+Et son cœur si grand si fort si tendre
+sait pourvoir aux besoins de ma foi.
+A lui seul j’ai appris à m’attendre.
+Et je sais qu’Il s’occupe de moi.
+
+2. Aide-moi à n’avoir confiance
+Qu’en toi seul mon Maitre mon Seigneur.
+Tu connais toutes mes défaillances,
+Mon salut est seul en ta faveur.
+
+3. Prend ma main, tiens moi quand je chancelle
+Le chemin est sombre rocailleux.
+O permet que je te sois fidèle,
+Conduit-moi jusqu’au séjour des cieux.''',
+    numero: 462,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_463',
+    titre: 'JESUS-CHRIST NOTRE SAUVEUR PREPARE',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jésus-Christ notre Sauveur prépare pour nous.
+La Cité de la nouvelle Jérusalem (2X)
+
+Chœur
+La terre est vieille avec ses montagnes.
+La terre est vieille
+Elle n’est plus si belle.
+Jésus-Christ notre Sauveur prépare pour nous.
+La Cité de la nouvelle Jérusalem.
+
+2. Annonçons aux habitants de cette vielle terre,
+Que bientôt sur les nuées paraitra Le Christ
+Les élus seront enlevés dans les nuées.
+Les condamnés seront dans la fournaise ardente (2X)
+
+3. Nous sommes les pèlerins sur cette vielle terre
+En attendant le retour de notre Seigneur 2x''',
+    numero: 463,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_464',
+    titre: 'JE SUIVRAI MON SEIGNEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Je suivrai mon Seigneur et mon Maitre.
+Sans jamais m’éloigner de ses pas.
+Sans que rien ici-bas ne m’arrête.
+Et sans rien que le chant de sa voix.
+
+2. Je vivrai de bonheur et de grâce
+De l’amour que son cœur m’a donné.
+Et que rien ici-bas ne l’efface.
+C’est le vœu de mon âme assoiffée.
+
+3. Un seul instant auprès de toi vaut bien
+les heures et la route
+Tout, pour autant que ce soit Toi
+qui m’accompagne au parvis de Ta joie.''',
+    numero: 464,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_465',
+    titre: 'JESUS M’AIME',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jésus m’aime énormément
+Dans la Bible c’est écrit
+Tous les enfants sont à Lui
+Ils sont petits et Lui est grand
+
+Chœur
+Oui, Jésus m’aime
+Oui Jésus m’aime
+Oui Jésus m’aime
+La Bible me le dit
+
+2. Jésus m’aime, je le sais
+Car la Bible me le dit
+Tous les enfants Lui appartiennent
+Ils sont faibles
+Lui est fort.
+
+3. Jésus m’aime Il mourut
+Pour ouvrir les portes du Ciel,
+Il ôtera mes péchés
+Fera entrer Son enfant.
+
+4. Jésus m’aime lui crucifié
+Pour que je sois à ses cotés
+Il a lavé mes péchés
+Il m’invite à m’approcher
+
+5. Jésus m’aimes, m’aime toujours!
+Que je sois malade et faible
+De son brillant trône au Ciel
+Il vient pour veiller sur moi''',
+    numero: 465,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_466',
+    titre: 'JE DESIRE ETRE COMME JESUS',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Jésus le Fils de Dieu à marché sur la terre.
+Plein de compassion et rempli de vérité.
+Nul homme dans ce monde n’est semblable à Lui,
+Homme de caractère de simplicité.
+Combien je désire être comme Lui,
+durant toute ma vie, marcher sur Ses pas.
+Je veux…
+
+Chœur :
+Je veux être comme Lui.
+Durant toute ma vie (O yé) marcher sur Ses pas.
+Je veux suivre les empruntes laisser par Jésus
+pendant Son séjour ici sur la terre.
+
+2. Jésus le Fils de Dieu fut rempli de l’Esprit.
+Il a eu l’onction aux eaux de Jordanie.
+Nul homme dans ce monde n’a reçu comme Lui,
+L’Esprit sans mesure, plénitude de Dieu.
+Combien je désire être comme Lui
+durant toute ma vie,
+Marcher sur Ses pas.
+Je veux…
+
+3. Jésus le Fils de Dieu a guéri les malades.
+Il a délivré les brebis enchainées.
+Nul homme dans ce monde n’a prié comme Lui,
+un Homme consacré au service de Dieu.
+Combien je désire être comme Lui,
+durant toute ma vie,
+Marcher sur Ses pas.
+Je veux…
+
+4. Jésus le Fils de Dieu a prêché la Parole.
+Il a annoncé l’Evangile aux perdus,
+nul Homme dans ce monde n’a prêché comme Lui,
+l’Evangile de Grace qui donne la vie.
+Combien je désire être comme Jésus, ( Mon Roi)
+durant toute ma vie marcher sur Ses pas.
+
+5. Jésus Le Fils de Dieu a été rejeté.
+Quoi que de Sa bouche ne sortit point de fraude,
+Nul homme dans ce monde n’a été hai,
+comme le fut Jésus cet Homme de Galilée.
+Combien je désire être comme Jésus(Mon Maitre)
+durant toute ma vie
+Marcher sur Ses pas.
+Je veux…''',
+    numero: 466,
+    auteur: 'Auteur inconnu',
+  ),
+
+  Cantique(
+    id: 'cantiques_inspires_467',
+    titre: 'LE SANG DE JESUS-CHRIST MON SAUVEUR',
+    collectionId: 'cantiques_inspires',
+    collection: 'Cantiques Inspirés',
+    contenu: '''1. Le Sang de Jésus-Christ Mon Sauveur
+parle plus fort que celui d’Abel…
+
+R/ Ooooh il a coulé des veines d’Emmanuel,
+il est différent du sang des animaux
+
+2. En tout il était un Sang innocent,
+Versé pour les péchés de mon peuple,
+Pour les iniquités de mes frères,
+Il peut ainsi les sanctifier.
+Ou allez-vous trouver un détergent?
+Qui peut virer au blanc le cramoisi.
+Qui peut le rendre plus blanc que la laine.
+Et qui est l’antidote du péché.
+
+R/ Ooooh il a coulé des veines d’Emmanuel,
+il est différent du sang des animaux
+R/ Ooooh il a coulé des veines d’Elohim,
+il est différent du sang des animaux
+
+3. Le sang de Jésus-Christ mon Sauveur
+coule à flot comme un ruisseau d’eau vive.
+Comme une fontaine purificatrice.
+Prêt à baigner celui qui voudra.
+Il a fait une expiation totale.
+Depuis le péché du jardin d’Eden.
+Jusqu’à ce jour il est encore efficace.
+Pour abreuver les cœurs assoiffés
+
+R/ Ooooh il a coulé des veines d’Emmanuel,
+il est différent du sang des animaux
+
+4. Le Sang de Jésus-Christ mon Sauveur.
+Est aussi un véritable breuvage.
+Si quelqu’un ne boit pas de ce Sang.
+Il ne peut avoir la vie en lui-même.
+L’homme demande quel est donc ce Sang ?
+C’est ne pas toujours la substance liquide.
+Qui a coulé sur le mont Golgotha.
+Ce n’est pas non plus un produit chimique.
+
+R/ Ooooh il a coulé des veines d’Emmanuel,
+il est différent du sang des animaux
+
+5. Le Sang de Jésus-Christ mon Sauveur.
+N’est autre chose que le Message de l’heure.
+Il n’est autre chose que la Parole Parlée.
+Envoyée selon les promesses du jour.
+Ou allez-vous placer votre assurance.
+C’est cette Parole de Sang.
+La voix qui crie au milieu de la nuit.
+Pour réveiller l’Epouse endormie.
+
+R/ Ooooh il a coulé des veines d’Emmanuel,
+il est différent du sang des animaux
+
+6. Le sang de Jésus-Christ Mon Sauveur
+parle plus fort que celui d’Etienne…
+
+R/ Ooooh il a coulé des veines d’Emmanuel,
+il est différent du sang des tous les saints
+
+7. Le sang de Jésus-Christ Mon Sauveur
+parle plus fort que celui de Polycarpe…
+
+R/ Ooooh il a coulé des veines de Dieu Lui-même,
+il est différent du sang des tous les hommes.
+
+8. Le sang de Jésus-Christ Mon Sauveur
+parle plus fort que celui d’Antipas…
+
+R/ Ooooh il a coulé des veines d’Elohim,
+il est différent du sang des animaux.''',
+    numero: 467,
     auteur: 'Auteur inconnu',
   ),
 ];
