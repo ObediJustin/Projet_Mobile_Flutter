@@ -83,7 +83,7 @@ class _AccueilPageState extends State<AccueilPage> {
                   child: DecoratedBox(
                     decoration: BoxDecoration(
                       image: const DecorationImage(
-                        image: AssetImage('../assets/images/image3.jpg'),
+                        image: AssetImage('assets/images/image3.jpg'),
                         fit: BoxFit.cover,
                         colorFilter: ColorFilter.mode(
                           Colors.black54,
