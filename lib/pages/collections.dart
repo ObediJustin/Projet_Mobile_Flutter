@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import '../models/cantique.dart';
 import '../services/cantique_service.dart';
 import '../services/favorite_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_spacing.dart';
+import '../widgets/app_empty_state.dart';
+import '../widgets/app_search_bar.dart';
 import '../widgets/cantique_card.dart';
 import '../widgets/collection_card.dart';
 
@@ -35,54 +39,38 @@ class _CollectionPageState extends State<CollectionPage> {
 
   List<String> get _collections => _cantiqueService.getAllCollections();
 
+  Color _getGradientColorForIndex(int index) {
+    final colors = AppColors.collectionGradientsStart;
+    return colors[index % colors.length];
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.all(16),
-          child: TextField(
+          padding: const EdgeInsets.all(AppSpacing.lg),
+          child: AppSearchBar(
             controller: _searchController,
-            onChanged: (value) {
-              setState(() {
-                _globalQuery = value;
-              });
-            },
-            decoration: InputDecoration(
-              hintText: 'Rechercher un cantique dans toutes les collections...',
-              prefixIcon: const Icon(Icons.search),
-              filled: true,
-              fillColor: Colors.grey.shade100,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(18),
-                borderSide: BorderSide.none,
-              ),
-              suffixIcon: _globalQuery.isNotEmpty
-                  ? IconButton(
-                      icon: const Icon(Icons.clear),
-                      onPressed: () {
-                        setState(() {
-                          _globalQuery = '';
-                          _searchController.clear();
-                        });
-                      },
-                    )
-                  : null,
-            ),
+            hintText: 'Rechercher un cantique dans toutes les collections...',
+            onChanged: (value) => setState(() => _globalQuery = value),
+            onClear: () => setState(() => _globalQuery = ''),
           ),
         ),
-
         if (_globalQuery.trim().isNotEmpty) ...[
           Expanded(
             child: _globalResults.isEmpty
-                ? const Center(
-                    child: Text(
-                      'Aucun cantique trouvé',
-                      style: TextStyle(color: Colors.grey),
-                    ),
+                ? AppEmptyState(
+                    icon: Icons.search_off_rounded,
+                    title: 'Aucun cantique trouvé',
+                    message:
+                        'Aucun cantique ne correspond à "$_globalQuery".',
                   )
                 : ListView.builder(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.lg,
+                      vertical: AppSpacing.sm,
+                    ),
                     itemCount: _globalResults.length,
                     itemBuilder: (context, index) {
                       return CantiqueCard(cantique: _globalResults[index]);
@@ -92,7 +80,10 @@ class _CollectionPageState extends State<CollectionPage> {
         ] else ...[
           Expanded(
             child: ListView.builder(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpacing.lg,
+                vertical: AppSpacing.sm,
+              ),
               itemCount: _collections.length,
               itemBuilder: (context, index) {
                 final collection = _collections[index];
@@ -101,12 +92,12 @@ class _CollectionPageState extends State<CollectionPage> {
                 );
 
                 return Padding(
-                  padding: const EdgeInsets.only(bottom: 16),
+                  padding: const EdgeInsets.only(bottom: AppSpacing.lg),
                   child: CollectionCard(
                     titre: collection,
                     nombre: count,
-                    description: '',
-                    couleur: _getColorForIndex(index),
+                    description: 'Cantiques et hymnes de $collection',
+                    couleur: _getGradientColorForIndex(index),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -152,20 +143,6 @@ class _CollectionPageState extends State<CollectionPage> {
       ],
     );
   }
-
-  Color _getColorForIndex(int index) {
-    final colors = [
-      Colors.blue,
-      Colors.green,
-      Colors.purple,
-      Colors.orange,
-      Colors.red,
-      Colors.teal,
-      Colors.indigo,
-      Colors.pink,
-    ];
-    return colors[index % colors.length];
-  }
 }
 
 class CollectionDetailPage extends StatefulWidget {
@@ -201,48 +178,36 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.collectionName),
-        backgroundColor: Colors.amber,
       ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16),
-            child: TextField(
+            padding: const EdgeInsets.all(AppSpacing.lg),
+            child: AppSearchBar(
               controller: _searchController,
-              onChanged: (value) {
-                setState(() => _query = value);
-              },
-              decoration: InputDecoration(
-                hintText: 'Rechercher dans cette collection...',
-                prefixIcon: const Icon(Icons.search),
-                filled: true,
-                fillColor: Colors.grey.shade100,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(18),
-                  borderSide: BorderSide.none,
-                ),
-                suffixIcon: _query.isNotEmpty
-                    ? IconButton(
-                        icon: const Icon(Icons.clear),
-                        onPressed: () {
-                          setState(() {
-                            _query = '';
-                            _searchController.clear();
-                          });
-                        },
-                      )
-                    : null,
-              ),
+              hintText: 'Rechercher dans cette collection...',
+              onChanged: (value) => setState(() => _query = value),
+              onClear: () => setState(() => _query = ''),
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              padding: const EdgeInsets.all(16),
-              itemCount: _filtered.length,
-              itemBuilder: (context, index) {
-                return CantiqueCard(cantique: _filtered[index]);
-              },
-            ),
+            child: _filtered.isEmpty
+                ? AppEmptyState(
+                    icon: Icons.search_off_rounded,
+                    title: 'Aucun cantique trouvé',
+                    message:
+                        'Aucun cantique trouvé dans ${widget.collectionName}.',
+                  )
+                : ListView.builder(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.lg,
+                      vertical: AppSpacing.sm,
+                    ),
+                    itemCount: _filtered.length,
+                    itemBuilder: (context, index) {
+                      return CantiqueCard(cantique: _filtered[index]);
+                    },
+                  ),
           ),
         ],
       ),
@@ -283,46 +248,35 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Chercher dans ${widget.collectionName}'),
-        backgroundColor: Colors.amber,
       ),
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16),
-            child: TextField(
+            padding: const EdgeInsets.all(AppSpacing.lg),
+            child: AppSearchBar(
               controller: _searchController,
+              hintText: 'Rechercher un cantique...',
               onChanged: (value) => setState(() => _query = value),
-              decoration: InputDecoration(
-                hintText: 'Rechercher un cantique...',
-                prefixIcon: const Icon(Icons.search),
-                filled: true,
-                fillColor: Colors.grey.shade100,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(18),
-                  borderSide: BorderSide.none,
-                ),
-                suffixIcon: _query.isNotEmpty
-                    ? IconButton(
-                        icon: const Icon(Icons.clear),
-                        onPressed: () {
-                          setState(() {
-                            _query = '';
-                            _searchController.clear();
-                          });
-                        },
-                      )
-                    : null,
-              ),
+              onClear: () => setState(() => _query = ''),
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              padding: const EdgeInsets.all(16),
-              itemCount: _results.length,
-              itemBuilder: (context, index) {
-                return CantiqueCard(cantique: _results[index]);
-              },
-            ),
+            child: _results.isEmpty
+                ? AppEmptyState(
+                    icon: Icons.search_off_rounded,
+                    title: 'Aucun cantique trouvé',
+                    message: 'Aucun cantique ne correspond à votre recherche.',
+                  )
+                : ListView.builder(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.lg,
+                      vertical: AppSpacing.sm,
+                    ),
+                    itemCount: _results.length,
+                    itemBuilder: (context, index) {
+                      return CantiqueCard(cantique: _results[index]);
+                    },
+                  ),
           ),
         ],
       ),
@@ -369,35 +323,27 @@ class _CollectionFavorisPageState extends State<CollectionFavorisPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Favoris - ${widget.collectionName}'),
-        backgroundColor: Colors.amber,
       ),
       body: _favorites.isEmpty
-          ? const Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.favorite_border, size: 72, color: Colors.grey),
-                  SizedBox(height: 16),
-                  Text(
-                    'Aucun favori dans cette collection',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 18, color: Colors.grey),
-                  ),
-                ],
-              ),
+          ? AppEmptyState(
+              icon: Icons.favorite_border_rounded,
+              title: 'Aucun favori',
+              message:
+                  'Vous n\'avez aucun cantique favori dans ${widget.collectionName}.',
             )
           : ListView.builder(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(AppSpacing.lg),
               itemCount: count + 1,
               itemBuilder: (context, index) {
                 if (index == 0) {
                   return Padding(
-                    padding: const EdgeInsets.only(bottom: 16),
+                    padding: const EdgeInsets.only(bottom: AppSpacing.md),
                     child: Text(
                       '$count favori(s) dans ${widget.collectionName}',
                       style: const TextStyle(
                         fontSize: 16,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.textPrimary,
                       ),
                     ),
                   );

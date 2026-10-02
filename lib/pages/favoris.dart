@@ -6,6 +6,11 @@ import '../pages/chant_detail.dart';
 import '../services/cantique_service.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
+import '../widgets/app_empty_state.dart';
+import '../widgets/app_section_header.dart';
 import '../widgets/cantique_card.dart';
 
 class FavorisPage extends StatefulWidget {
@@ -50,48 +55,43 @@ class _FavorisPageState extends State<FavorisPage> {
   Widget build(BuildContext context) {
     if (_isLoading) {
       return const Center(
-        child: CircularProgressIndicator(color: Colors.amber),
+        child: CircularProgressIndicator(),
       );
     }
 
     if (_favoriteCantiques.isEmpty && _favoriteChantsPersonnels.isEmpty) {
-      return const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.favorite_border, size: 64, color: Colors.grey),
-            SizedBox(height: 16),
-            Text(
-              'Aucun favori',
-              style: TextStyle(fontSize: 18, color: Colors.grey),
-            ),
-            SizedBox(height: 8),
-            Text(
-              'Ajoutez des cantiques ou chants personnels à vos favoris',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.grey),
-            ),
-          ],
-        ),
+      return const AppEmptyState(
+        icon: Icons.favorite_border_rounded,
+        title: 'Aucun favori',
+        message:
+            'Ajoutez des cantiques ou des chants personnels à vos favoris pour les retrouver facilement ici.',
       );
     }
 
     return RefreshIndicator(
       onRefresh: _loadFavorites,
       child: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         children: [
           if (_favoriteCantiques.isNotEmpty) ...[
-            _SectionTitle(icon: Icons.music_note, title: 'Cantiques'),
-            const SizedBox(height: 12),
+            AppSectionHeader(
+              title: 'Cantiques favoris',
+              icon: Icons.music_note_rounded,
+              countBadge: _favoriteCantiques.length,
+            ),
+            const SizedBox(height: AppSpacing.md),
             ..._favoriteCantiques.map(
               (cantique) => CantiqueCard(cantique: cantique),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.lg),
           ],
           if (_favoriteChantsPersonnels.isNotEmpty) ...[
-            _SectionTitle(icon: Icons.edit_note, title: 'Mes chants'),
-            const SizedBox(height: 12),
+            AppSectionHeader(
+              title: 'Mes chants favoris',
+              icon: Icons.edit_note_rounded,
+              countBadge: _favoriteChantsPersonnels.length,
+            ),
+            const SizedBox(height: AppSpacing.md),
             ..._favoriteChantsPersonnels.map(
               (chant) => _ChantPersonnelFavoriteTile(
                 chant: chant,
@@ -101,27 +101,6 @@ class _FavorisPageState extends State<FavorisPage> {
           ],
         ],
       ),
-    );
-  }
-}
-
-class _SectionTitle extends StatelessWidget {
-  final IconData icon;
-  final String title;
-
-  const _SectionTitle({required this.icon, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(icon, color: Colors.amber.shade800),
-        const SizedBox(width: 8),
-        Text(
-          title,
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        ),
-      ],
     );
   }
 }
@@ -137,31 +116,70 @@ class _ChantPersonnelFavoriteTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: ListTile(
-        leading: CircleAvatar(
-          backgroundColor: Colors.amber.shade100,
-          child: const Icon(Icons.edit_note, color: Colors.amber),
+    return Container(
+      margin: const EdgeInsets.only(bottom: AppSpacing.sm),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: AppRadius.lgBorder,
+        border: Border.all(color: AppColors.borderLight, width: 1),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x08000000),
+            blurRadius: 8,
+            offset: Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: AppRadius.lgBorder,
+        child: ListTile(
+          shape: RoundedRectangleBorder(borderRadius: AppRadius.lgBorder),
+          leading: Container(
+            width: 42,
+            height: 42,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: AppColors.primaryLight,
+              borderRadius: AppRadius.mdBorder,
+            ),
+            child: const Icon(
+              Icons.edit_note_rounded,
+              color: AppColors.primary,
+              size: 22,
+            ),
+          ),
+          title: Text(
+            chant.titre,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+              color: AppColors.textPrimary,
+            ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+          subtitle: Text(
+            _preview(chant.contenu),
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
+              fontSize: 13,
+              color: AppColors.textSecondary,
+            ),
+          ),
+          trailing: const Icon(
+            Icons.favorite_rounded,
+            color: AppColors.error,
+            size: 20,
+          ),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => ChantDetailPage(chant: chant)),
+            ).then((_) => onReturn());
+          },
         ),
-        title: Text(
-          chant.titre,
-          style: const TextStyle(fontWeight: FontWeight.bold),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-        ),
-        subtitle: Text(
-          _preview(chant.contenu),
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-        ),
-        trailing: const Icon(Icons.favorite, color: Colors.red),
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (_) => ChantDetailPage(chant: chant)),
-          ).then((_) => onReturn());
-        },
       ),
     );
   }

@@ -3,6 +3,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../services/cantique_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
+import '../widgets/app_empty_state.dart';
+import '../widgets/app_search_bar.dart';
+import '../widgets/app_section_header.dart';
 import '../widgets/cantique_card.dart';
 
 class AccueilPage extends StatefulWidget {
@@ -26,7 +32,10 @@ class _AccueilPageState extends State<AccueilPage> {
     "Car Dieu a tant aimé le monde qu'il a donné son Fils unique. — Jean 3:16",
   ];
 
-  static const List<IconData> _icons = [Icons.menu_book, Icons.auto_stories];
+  static const List<IconData> _icons = [
+    Icons.menu_book_rounded,
+    Icons.auto_stories_rounded,
+  ];
 
   String _query = '';
 
@@ -47,149 +56,194 @@ class _AccueilPageState extends State<AccueilPage> {
   @override
   Widget build(BuildContext context) {
     final allCantiques = _cantiqueService.getAllCantiques();
-
     final filtered = CantiqueService.filterCantiques(allCantiques, _query);
-
-    final recentCantiques = filtered.take(3).toList();
+    final isSearching = _query.trim().isNotEmpty;
+    final recentCantiques = filtered.take(isSearching ? 10 : 3).toList();
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(AppSpacing.lg),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Banner Image Header
           LayoutBuilder(
             builder: (context, constraints) {
               final maxWidth = constraints.maxWidth;
-              final headerHeight = (maxWidth < 360) ? 220.0 : 300.0;
+              final headerHeight = (maxWidth < 360) ? 180.0 : 220.0;
 
               return ClipRRect(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: AppRadius.xlBorder,
                 child: SizedBox(
                   height: headerHeight,
                   width: double.infinity,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
+                      color: AppColors.primaryDark,
                       image: const DecorationImage(
                         image: AssetImage('assets/images/image3.jpg'),
                         fit: BoxFit.cover,
                         colorFilter: ColorFilter.mode(
-                          Colors.black54,
+                          Color(0xB30B5D2A),
                           BlendMode.darken,
                         ),
                       ),
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: AppRadius.xlBorder,
                     ),
-                    child: const SizedBox.shrink(),
+                    child: Padding(
+                      padding: const EdgeInsets.all(AppSpacing.xl),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 4,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.2),
+                              borderRadius: AppRadius.fullBorder,
+                            ),
+                            child: const Text(
+                              "BIENVENUE",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 1.2,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 6),
+                          const Text(
+                            "Cantiques du Message",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: -0.3,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            "Trouvez rapidement vos cantiques de louange et d'adoration",
+                            style: TextStyle(
+                              color: Colors.white.withValues(alpha: 0.9),
+                              fontSize: 13,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               );
             },
           ),
 
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.lg),
 
-          _SearchBar(
+          // Search Field
+          AppSearchBar(
             controller: _searchController,
-            onQueryChanged: (value) => setState(() => _query = value),
+            hintText: 'Rechercher par titre, numéro, contenu ou collection…',
+            onChanged: (value) => setState(() => _query = value),
+            onClear: () => setState(() => _query = ''),
           ),
 
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpacing.xl),
 
-          const Text(
-            'Cantiques récents',
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          // Section Title: Cantiques Récents / Résultats
+          AppSectionHeader(
+            title: isSearching ? 'Résultats de recherche' : 'Cantiques récents',
+            icon: isSearching
+                ? Icons.search_rounded
+                : Icons.access_time_rounded,
+            countBadge: recentCantiques.length,
           ),
-          const SizedBox(height: 12),
 
-          ...recentCantiques.map(
-            (cantique) => CantiqueCard(cantique: cantique),
-          ),
+          const SizedBox(height: AppSpacing.md),
 
-          const SizedBox(height: 20),
-
-          const Text(
-            'Verset du jour',
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 12),
-
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.all(16),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(18),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.10),
-                  blurRadius: 18,
-                  offset: const Offset(0, 8),
-                ),
-              ],
-              gradient: const LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [Color(0xFFFDE6E9), Color(0xFFE3F2FD)],
-              ),
+          if (recentCantiques.isEmpty)
+            AppEmptyState(
+              icon: Icons.search_off_rounded,
+              title: 'Aucun cantique trouvé',
+              message: 'Aucun résultat ne correspond à "$_query".',
+            )
+          else
+            ...recentCantiques.map(
+              (cantique) => CantiqueCard(cantique: cantique),
             ),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 44,
-                  height: 44,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.85),
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  child: Icon(_verseIcon, color: Colors.amber.shade800),
+
+          if (!isSearching) ...[
+            const SizedBox(height: AppSpacing.xl),
+
+            // Verset du jour Section
+            const AppSectionHeader(
+              title: 'Verset du jour',
+              icon: Icons.format_quote_rounded,
+            ),
+            const SizedBox(height: AppSpacing.md),
+
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(AppSpacing.lg),
+              decoration: BoxDecoration(
+                color: AppColors.primaryVeryLight,
+                borderRadius: AppRadius.xlBorder,
+                border: Border.all(
+                  color: AppColors.secondaryLight,
+                  width: 1.5,
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Text(
-                    _verseDuJour,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      height: 1.35,
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0x0A16803A),
+                    blurRadius: 12,
+                    offset: Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 44,
+                    height: 44,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: AppColors.surface,
+                      borderRadius: AppRadius.mdBorder,
+                      border: Border.all(
+                        color: AppColors.borderLight,
+                        width: 1,
+                      ),
+                    ),
+                    child: Icon(
+                      _verseIcon,
+                      color: AppColors.primary,
+                      size: 22,
                     ),
                   ),
-                ),
-              ],
+                  const SizedBox(width: AppSpacing.md),
+                  Expanded(
+                    child: Text(
+                      _verseDuJour,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.textPrimary,
+                        height: 1.45,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
+          ],
 
-          const SizedBox(height: 24),
+          const SizedBox(height: AppSpacing.xxl),
         ],
-      ),
-    );
-  }
-}
-
-class _SearchBar extends StatelessWidget {
-  final TextEditingController controller;
-  final ValueChanged<String> onQueryChanged;
-
-  const _SearchBar({required this.controller, required this.onQueryChanged});
-
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      controller: controller,
-      onChanged: onQueryChanged,
-      decoration: InputDecoration(
-        hintText: 'Rechercher par titre, numéro, contenu ou collection…',
-        prefixIcon: const Icon(Icons.search),
-        filled: true,
-        fillColor: Colors.grey.shade100,
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 14,
-          vertical: 14,
-        ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide.none,
-        ),
       ),
     );
   }

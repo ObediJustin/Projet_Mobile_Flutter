@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../services/settings_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
+import '../widgets/app_section_header.dart';
 
 class ParametresPage extends StatefulWidget {
   const ParametresPage({super.key});
@@ -42,69 +46,240 @@ class _ParametresPageState extends State<ParametresPage> {
   Widget build(BuildContext context) {
     if (_isLoading) {
       return const Center(
-        child: CircularProgressIndicator(color: Colors.amber),
+        child: CircularProgressIndicator(),
       );
     }
 
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(AppSpacing.lg),
       children: [
-        const Text(
-          'Préférences',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        const AppSectionHeader(
+          title: 'Préférences',
+          icon: Icons.tune_rounded,
         ),
-        const SizedBox(height: 20),
-        SwitchListTile(
-          title: const Text('Notifications'),
-          subtitle: const Text('Recevoir des notifications quotidiennes'),
-          value: _notificationsEnabled,
-          onChanged: (value) async {
-            setState(() {
-              _notificationsEnabled = value;
-            });
-            await _settingsService.saveNotificationsEnabled(value);
-          },
-        ),
-        ListTile(
-          title: const Text('Langue'),
-          subtitle: Text(_selectedLanguage),
-          trailing: const Icon(Icons.arrow_forward_ios),
-          onTap: () {
-            _showLanguageDialog();
-          },
-        ),
-        ListTile(
-          title: const Text('Taille du texte'),
-          subtitle: Slider(
-            value: _fontSize,
-            min: SettingsService.minLyricsFontSize,
-            max: SettingsService.maxLyricsFontSize,
-            divisions: 14,
-            label: _fontSize.toStringAsFixed(0),
+        const SizedBox(height: AppSpacing.md),
+
+        // Notifications Card
+        Container(
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            borderRadius: AppRadius.lgBorder,
+            border: Border.all(color: AppColors.borderLight, width: 1),
+          ),
+          child: SwitchListTile(
+            secondary: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppColors.primaryLight,
+                borderRadius: AppRadius.mdBorder,
+              ),
+              child: const Icon(
+                Icons.notifications_active_rounded,
+                color: AppColors.primary,
+                size: 20,
+              ),
+            ),
+            title: const Text(
+              'Notifications',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            ),
+            subtitle: const Text(
+              'Recevoir des rappels et édifications quotidiennes',
+              style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
+            ),
+            value: _notificationsEnabled,
             onChanged: (value) async {
               setState(() {
-                _fontSize = value;
+                _notificationsEnabled = value;
               });
-              await _settingsService.saveLyricsFontSize(value);
+              await _settingsService.saveNotificationsEnabled(value);
             },
           ),
         ),
-        const SizedBox(height: 30),
-        const Text(
-          'À propos',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+
+        const SizedBox(height: AppSpacing.md),
+
+        // Language Card
+        Container(
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            borderRadius: AppRadius.lgBorder,
+            border: Border.all(color: AppColors.borderLight, width: 1),
+          ),
+          child: ListTile(
+            leading: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppColors.primaryLight,
+                borderRadius: AppRadius.mdBorder,
+              ),
+              child: const Icon(
+                Icons.language_rounded,
+                color: AppColors.primary,
+                size: 20,
+              ),
+            ),
+            title: const Text(
+              'Langue d\'affichage',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            ),
+            subtitle: Text(
+              _selectedLanguage,
+              style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
+            ),
+            trailing: const Icon(
+              Icons.chevron_right_rounded,
+              color: AppColors.textMuted,
+            ),
+            onTap: _showLanguageDialog,
+          ),
         ),
-        const SizedBox(height: 20),
-        const ListTile(
-          leading: Icon(Icons.info),
-          title: Text('Version'),
-          subtitle: Text('1.0.0'),
+
+        const SizedBox(height: AppSpacing.md),
+
+        // Lyrics Font Size Card
+        Container(
+          padding: const EdgeInsets.all(AppSpacing.lg),
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            borderRadius: AppRadius.lgBorder,
+            border: Border.all(color: AppColors.borderLight, width: 1),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: AppColors.primaryLight,
+                      borderRadius: AppRadius.mdBorder,
+                    ),
+                    child: const Icon(
+                      Icons.format_size_rounded,
+                      color: AppColors.primary,
+                      size: 20,
+                    ),
+                  ),
+                  const SizedBox(width: AppSpacing.md),
+                  const Expanded(
+                    child: Text(
+                      'Taille des paroles par défaut',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 4,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppColors.primaryLight,
+                      borderRadius: AppRadius.smBorder,
+                    ),
+                    child: Text(
+                      '${_fontSize.toInt()} px',
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.primaryDark,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: AppSpacing.md),
+              Slider(
+                value: _fontSize,
+                min: SettingsService.minLyricsFontSize,
+                max: SettingsService.maxLyricsFontSize,
+                divisions: 14,
+                label: '${_fontSize.toInt()} px',
+                onChanged: (value) async {
+                  setState(() {
+                    _fontSize = value;
+                  });
+                  await _settingsService.saveLyricsFontSize(value);
+                },
+              ),
+            ],
+          ),
         ),
-        const ListTile(
-          leading: Icon(Icons.email),
-          title: Text('Contact'),
-          subtitle: Text('contact@cantiques.com'),
+
+        const SizedBox(height: AppSpacing.xxl),
+
+        const AppSectionHeader(
+          title: 'À propos',
+          icon: Icons.info_outline_rounded,
         ),
+        const SizedBox(height: AppSpacing.md),
+
+        Container(
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            borderRadius: AppRadius.lgBorder,
+            border: Border.all(color: AppColors.borderLight, width: 1),
+          ),
+          child: Column(
+            children: [
+              ListTile(
+                leading: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppColors.primaryLight,
+                    borderRadius: AppRadius.mdBorder,
+                  ),
+                  child: const Icon(
+                    Icons.system_update_rounded,
+                    color: AppColors.primary,
+                    size: 20,
+                  ),
+                ),
+                title: const Text(
+                  'Version de l\'application',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                ),
+                subtitle: const Text(
+                  '1.0.0 (Build 1)',
+                  style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: AppSpacing.lg),
+                child: Divider(),
+              ),
+              ListTile(
+                leading: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppColors.primaryLight,
+                    borderRadius: AppRadius.mdBorder,
+                  ),
+                  child: const Icon(
+                    Icons.contact_mail_rounded,
+                    color: AppColors.primary,
+                    size: 20,
+                  ),
+                ),
+                title: const Text(
+                  'Contact développeur',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                ),
+                subtitle: const Text(
+                  'sadikiobedi@outlook.fr',
+                  style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
+                ),
+              ),
+            ],
+          ),
+        ),
+
+        const SizedBox(height: AppSpacing.xxl),
       ],
     );
   }
@@ -117,27 +292,42 @@ class _ParametresPageState extends State<ParametresPage> {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            ListTile(
-              title: const Text('Français'),
-              onTap: () async {
-                await _saveLanguage(SettingsService.defaultLanguage);
-              },
+            _languageTile(
+              label: 'Français',
+              value: SettingsService.defaultLanguage,
             ),
-            ListTile(
-              title: const Text('English'),
-              onTap: () async {
-                await _saveLanguage('English');
-              },
+            _languageTile(
+              label: 'English',
+              value: 'English',
             ),
-            ListTile(
-              title: const Text('Swahili'),
-              onTap: () async {
-                await _saveLanguage('Swahili');
-              },
+            _languageTile(
+              label: 'Swahili',
+              value: 'Swahili',
             ),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _languageTile({required String label, required String value}) {
+    final isSelected = _selectedLanguage == value;
+
+    return ListTile(
+      shape: RoundedRectangleBorder(borderRadius: AppRadius.mdBorder),
+      title: Text(
+        label,
+        style: TextStyle(
+          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+          color: isSelected ? AppColors.primary : AppColors.textPrimary,
+        ),
+      ),
+      trailing: isSelected
+          ? const Icon(Icons.check_circle_rounded, color: AppColors.primary)
+          : null,
+      onTap: () async {
+        await _saveLanguage(value);
+      },
     );
   }
 

@@ -4,6 +4,12 @@ import '../models/chant_personnel.dart';
 import '../pages/chant_detail.dart';
 import '../pages/chant_form.dart';
 import '../services/chant_personnel_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
+import '../widgets/app_empty_state.dart';
+import '../widgets/app_search_bar.dart';
+import '../widgets/app_section_header.dart';
 
 /// Page principale "Mes Chants" : liste, recherche, tri, CRUD.
 class MesChantsPage extends StatefulWidget {
@@ -129,12 +135,12 @@ class _MesChantsPageState extends State<MesChantsPage> {
               onPressed: () => Navigator.pop(context, false),
               child: const Text('Annuler'),
             ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, true),
-              child: const Text(
-                'Supprimer',
-                style: TextStyle(color: Colors.red),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.error,
               ),
+              onPressed: () => Navigator.pop(context, true),
+              child: const Text('Supprimer'),
             ),
           ],
         );
@@ -167,81 +173,84 @@ class _MesChantsPageState extends State<MesChantsPage> {
           _buildHeader(),
           Expanded(
             child: _isLoading
-                ? const Center(
-                    child: CircularProgressIndicator(color: Colors.amber),
-                  )
+                ? const Center(child: CircularProgressIndicator())
                 : _buildList(),
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.amber,
-        foregroundColor: Colors.black,
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: AppColors.primary,
+        foregroundColor: AppColors.textOnPrimary,
         onPressed: _openAddForm,
-        child: const Icon(Icons.add),
+        icon: const Icon(Icons.add_rounded),
+        label: const Text(
+          'Nouveau chant',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }
 
   Widget _buildHeader() {
     return Padding(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(AppSpacing.lg),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Vos chants personnels',
-            style: Theme.of(context).textTheme.titleLarge,
+          AppSectionHeader(
+            title: 'Vos chants personnels',
+            icon: Icons.edit_note_rounded,
+            countBadge: _chants.length,
           ),
-          const SizedBox(height: 12),
-          TextField(
+          const SizedBox(height: AppSpacing.md),
+          AppSearchBar(
             controller: _searchController,
+            hintText: 'Rechercher par titre...',
             onChanged: (value) => setState(() => _searchQuery = value),
-            decoration: InputDecoration(
-              hintText: 'Rechercher par titre...',
-              prefixIcon: const Icon(Icons.search),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(30),
-              ),
-              suffixIcon: _searchController.text.isNotEmpty
-                  ? IconButton(
-                      icon: const Icon(Icons.clear),
-                      onPressed: () {
-                        _searchController.clear();
-                        setState(() => _searchQuery = '');
-                      },
-                    )
-                  : null,
-            ),
+            onClear: () => setState(() => _searchQuery = ''),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpacing.md),
           Row(
             children: [
-              const Icon(Icons.sort, color: Colors.amber),
-              const SizedBox(width: 8),
+              const Icon(
+                Icons.sort_rounded,
+                color: AppColors.primary,
+                size: 20,
+              ),
+              const SizedBox(width: AppSpacing.sm),
               Expanded(
-                child: DropdownButtonFormField<bool>(
-                  initialValue: _sortNewestFirst,
-                  decoration: InputDecoration(
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 12),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(14),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  decoration: BoxDecoration(
+                    color: AppColors.surface,
+                    borderRadius: AppRadius.mdBorder,
+                    border: Border.all(color: AppColors.border, width: 1),
+                  ),
+                  child: DropdownButtonHideUnderline(
+                    child: DropdownButton<bool>(
+                      value: _sortNewestFirst,
+                      isExpanded: true,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        color: AppColors.textPrimary,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      items: const [
+                        DropdownMenuItem(
+                          value: true,
+                          child: Text('Plus récent d’abord'),
+                        ),
+                        DropdownMenuItem(
+                          value: false,
+                          child: Text('Plus ancien d’abord'),
+                        ),
+                      ],
+                      onChanged: (value) {
+                        if (value == null) return;
+                        setState(() => _sortNewestFirst = value);
+                      },
                     ),
                   ),
-                  items: const [
-                    DropdownMenuItem(
-                      value: true,
-                      child: Text('Plus récent d’abord'),
-                    ),
-                    DropdownMenuItem(
-                      value: false,
-                      child: Text('Plus ancien d’abord'),
-                    ),
-                  ],
-                  onChanged: (value) {
-                    if (value == null) return;
-                    setState(() => _sortNewestFirst = value);
-                  },
                 ),
               ),
             ],
@@ -255,70 +264,124 @@ class _MesChantsPageState extends State<MesChantsPage> {
     final items = _filteredAndSorted;
 
     if (items.isEmpty) {
-      return const Center(
-        child: Text(
-          'Aucun chant trouvé.',
-          style: TextStyle(color: Colors.grey, fontSize: 16),
-        ),
+      return AppEmptyState(
+        icon: Icons.music_off_rounded,
+        title: 'Aucun chant personnel',
+        message: _searchQuery.isNotEmpty
+            ? 'Aucun chant ne correspond à "$_searchQuery".'
+            : 'Vous n\'avez encore ajouté aucun chant personnel. Appuyez sur "Nouveau chant" pour en créer un.',
+        actionLabel: _searchQuery.isEmpty ? 'Créer un chant' : null,
+        onAction: _searchQuery.isEmpty ? _openAddForm : null,
       );
     }
 
     return ListView.builder(
-      padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.lg,
+        0,
+        AppSpacing.lg,
+        80, // Space for FAB
+      ),
       itemCount: items.length,
       itemBuilder: (context, index) {
         final chant = items[index];
 
-        return Card(
-          margin: const EdgeInsets.only(bottom: 12),
-          child: ListTile(
-            title: Text(
-              chant.titre,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
-            subtitle: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  _preview(chant.contenu),
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
+        return Container(
+          margin: const EdgeInsets.only(bottom: AppSpacing.sm),
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            borderRadius: AppRadius.lgBorder,
+            border: Border.all(color: AppColors.borderLight, width: 1),
+            boxShadow: const [
+              BoxShadow(
+                color: Color(0x08000000),
+                blurRadius: 8,
+                offset: Offset(0, 2),
+              ),
+            ],
+          ),
+          child: Material(
+            color: Colors.transparent,
+            borderRadius: AppRadius.lgBorder,
+            child: ListTile(
+              shape: RoundedRectangleBorder(borderRadius: AppRadius.lgBorder),
+              leading: Container(
+                width: 42,
+                height: 42,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: AppColors.primaryLight,
+                  borderRadius: AppRadius.mdBorder,
                 ),
-                const SizedBox(height: 6),
-                Text(
-                  'Modifié : ${_formatDate(chant.dateModification)}',
-                  style: TextStyle(color: Colors.grey.shade700, fontSize: 12),
+                child: const Icon(
+                  Icons.edit_note_rounded,
+                  color: AppColors.primary,
+                  size: 22,
                 ),
-              ],
-            ),
-            leading: CircleAvatar(
-              backgroundColor: Colors.amber.shade100,
-              child: const Icon(Icons.edit_note, color: Colors.amber),
-            ),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ChantDetailPage(chant: chant),
+              ),
+              title: Text(
+                chant.titre,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                  color: AppColors.textPrimary,
                 ),
-              ).then((_) => _loadChants());
-            },
-            trailing: Wrap(
-              spacing: 6,
-              children: [
-                IconButton(
-                  padding: EdgeInsets.zero,
-                  icon: const Icon(Icons.edit, color: Colors.amber),
-                  onPressed: () => _openEditForm(chant),
-                ),
-                IconButton(
-                  padding: EdgeInsets.zero,
-                  icon: const Icon(Icons.delete_outline, color: Colors.red),
-                  onPressed: () => _confirmAndDelete(chant),
-                ),
-              ],
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+              subtitle: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 2),
+                  Text(
+                    _preview(chant.contenu),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: AppColors.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Modifié le ${_formatDate(chant.dateModification)}',
+                    style: const TextStyle(
+                      color: AppColors.textMuted,
+                      fontSize: 11,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => ChantDetailPage(chant: chant),
+                  ),
+                ).then((_) => _loadChants());
+              },
+              trailing: Wrap(
+                spacing: 2,
+                children: [
+                  IconButton(
+                    icon: const Icon(
+                      Icons.edit_outlined,
+                      color: AppColors.primary,
+                      size: 20,
+                    ),
+                    onPressed: () => _openEditForm(chant),
+                  ),
+                  IconButton(
+                    icon: const Icon(
+                      Icons.delete_outline_rounded,
+                      color: AppColors.error,
+                      size: 20,
+                    ),
+                    onPressed: () => _confirmAndDelete(chant),
+                  ),
+                ],
+              ),
             ),
           ),
         );

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../models/chant_personnel.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_spacing.dart';
 
 /// Page formulaire pour ajouter / modifier un chant personnel.
 class ChantFormPage extends StatefulWidget {
@@ -45,8 +47,9 @@ class _ChantFormPageState extends State<ChantFormPage> {
   }
 
   String? _nonVideValidator(String? value) {
-    if (value == null) return 'Champ obligatoire';
-    if (value.trim().isEmpty) return 'Champ obligatoire';
+    if (value == null || value.trim().isEmpty) {
+      return 'Ce champ est obligatoire';
+    }
     return null;
   }
 
@@ -54,59 +57,57 @@ class _ChantFormPageState extends State<ChantFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
         title: Text(_isEditMode ? 'Modifier le chant' : 'Nouveau chant'),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(AppSpacing.lg),
           child: Form(
             key: _formKey,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Informations du chant',
-                  style: Theme.of(context).textTheme.titleLarge,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.textPrimary,
+                  ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpacing.lg),
 
                 TextFormField(
                   controller: _titreController,
-                  decoration: InputDecoration(
-                    labelText: 'Titre',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    prefixIcon: const Icon(Icons.title),
+                  decoration: const InputDecoration(
+                    labelText: 'Titre du chant',
+                    hintText: 'Ex: Mon Dieu est grand',
+                    prefixIcon: Icon(Icons.title_rounded),
                   ),
                   validator: _nonVideValidator,
                   textInputAction: TextInputAction.next,
                 ),
 
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpacing.lg),
 
                 TextFormField(
                   controller: _auteurController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Auteur (optionnel)',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    prefixIcon: const Icon(Icons.person_outline),
+                    hintText: 'Ex: Auteur inconnu',
+                    prefixIcon: Icon(Icons.person_outline_rounded),
                   ),
                 ),
 
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpacing.lg),
 
                 TextFormField(
                   controller: _contenuController,
-                  decoration: InputDecoration(
-                    labelText: 'Contenu',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    prefixIcon: const Icon(Icons.notes),
+                  decoration: const InputDecoration(
+                    labelText: 'Paroles / Contenu du chant',
+                    hintText: 'Saisissez les paroles du chant ici...',
+                    prefixIcon: Icon(Icons.notes_rounded),
+                    alignLabelWithHint: true,
                   ),
                   validator: _nonVideValidator,
                   minLines: 8,
@@ -114,24 +115,14 @@ class _ChantFormPageState extends State<ChantFormPage> {
                   keyboardType: TextInputType.multiline,
                 ),
 
-                const SizedBox(height: 24),
+                const SizedBox(height: AppSpacing.xxl),
 
                 Row(
                   children: [
                     Expanded(
                       child: ElevatedButton.icon(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.amber,
-                          foregroundColor: Colors.black,
-                          padding: const EdgeInsets.symmetric(vertical: 14),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                        ),
-                        icon: const Icon(Icons.save),
-                        label: Text(
-                          _isEditMode ? 'Enregistrer' : 'Enregistrer',
-                        ),
+                        icon: const Icon(Icons.save_rounded),
+                        label: const Text('Enregistrer'),
                         onPressed: () async {
                           final form = _formKey.currentState;
                           if (form == null) return;
@@ -158,15 +149,9 @@ class _ChantFormPageState extends State<ChantFormPage> {
                         },
                       ),
                     ),
-                    const SizedBox(width: 12),
+                    const SizedBox(width: AppSpacing.md),
                     OutlinedButton.icon(
-                      style: OutlinedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(14),
-                        ),
-                      ),
-                      icon: const Icon(Icons.cancel),
+                      icon: const Icon(Icons.close_rounded),
                       label: const Text('Annuler'),
                       onPressed: () => Navigator.pop(context),
                     ),

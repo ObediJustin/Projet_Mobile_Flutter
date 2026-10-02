@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'database/app_database.dart';
 import 'pages/home.dart';
 import 'services/cantique_service.dart';
+import 'theme/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,9 +17,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Cantiques du Message',
       debugShowCheckedModeBanner: false,
-      home: Home());
+      theme: AppTheme.lightTheme,
+      home: const Home(),
+    );
   }
 }
-

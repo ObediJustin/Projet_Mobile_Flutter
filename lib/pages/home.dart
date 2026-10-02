@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../services/cantique_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
 import 'accueil.dart';
 import 'cantique_detail.dart';
 import 'collections.dart';
@@ -28,7 +31,7 @@ class _HomeState extends State<Home> {
     "Collections",
     "Favoris",
     "Mes Chants",
-    "Parametres",
+    "Paramètres",
   ];
 
   final List<Widget> pages = [
@@ -44,18 +47,20 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.amber,
         title: Text(
           titles[currentIndex],
           style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         ),
-        elevation: 2,
       ),
       drawer: Drawer(
+        backgroundColor: AppColors.surface,
         child: Column(
           children: [
             DrawerHeader(
               padding: EdgeInsets.zero,
+              decoration: const BoxDecoration(
+                color: AppColors.primaryDark,
+              ),
               child: Stack(
                 fit: StackFit.expand,
                 children: [
@@ -64,49 +69,70 @@ class _HomeState extends State<Home> {
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
-                        color: Colors.amber,
+                        decoration: const BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              AppColors.primaryDark,
+                              AppColors.primary,
+                            ],
+                          ),
+                        ),
                         child: const Center(
                           child: Icon(
-                            Icons.music_note,
-                            size: 80,
-                            color: Colors.white,
+                            Icons.auto_stories_rounded,
+                            size: 70,
+                            color: AppColors.secondaryLight,
                           ),
                         ),
                       );
                     },
                   ),
-                  Container(color: Colors.black.withValues(alpha: 0.5)),
+                  Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.black.withValues(alpha: 0.3),
+                          AppColors.primaryDark.withValues(alpha: 0.85),
+                        ],
+                      ),
+                    ),
+                  ),
                   const Padding(
-                    padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(AppSpacing.lg),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CircleAvatar(
-                          radius: 28,
-                          backgroundColor: Colors.amber,
+                          radius: 26,
+                          backgroundColor: AppColors.primaryLight,
                           child: Icon(
-                            Icons.music_note,
-                            color: Colors.white,
-                            size: 30,
+                            Icons.auto_stories_rounded,
+                            color: AppColors.primary,
+                            size: 26,
                           ),
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Cantiques Boanerges",
+                          "Cantiques du Message",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 24,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
+                            letterSpacing: -0.2,
                           ),
                         ),
-                        SizedBox(height: 5),
+                        SizedBox(height: 2),
                         Text(
-                          "by objus",
+                          "Recueil spirituel local",
                           style: TextStyle(
-                            color: Colors.white70,
+                            color: AppColors.primaryLight,
                             fontSize: 13,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                       ],
@@ -117,92 +143,120 @@ class _HomeState extends State<Home> {
             ),
             Expanded(
               child: ListView(
+                padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm),
                 children: [
-                  ListTile(
-                    leading: const Icon(Icons.home),
-                    title: const Text("Accueil"),
-                    onTap: () {
-                      setState(() => currentIndex = 0);
-                      Navigator.pop(context);
-                    },
+                  _drawerItem(
+                    index: 0,
+                    icon: Icons.home_rounded,
+                    label: "Accueil",
+                  ),
+                  _drawerItem(
+                    index: 1,
+                    icon: Icons.library_books_rounded,
+                    label: "Collections",
+                  ),
+                  _drawerItem(
+                    index: 2,
+                    icon: Icons.favorite_rounded,
+                    label: "Favoris",
+                  ),
+                  _drawerItem(
+                    index: 3,
+                    icon: Icons.queue_music_rounded,
+                    label: "Mes Chants",
+                  ),
+                  _drawerItem(
+                    index: 4,
+                    icon: Icons.settings_rounded,
+                    label: "Paramètres",
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: AppSpacing.lg),
+                    child: Divider(),
                   ),
                   ListTile(
-                    leading: const Icon(Icons.library_books),
-                    title: const Text("Collections"),
-                    onTap: () {
-                      setState(() => currentIndex = 1);
-                      Navigator.pop(context);
-                    },
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.favorite),
-                    title: const Text("Favoris"),
-                    onTap: () {
-                      setState(() => currentIndex = 2);
-                      Navigator.pop(context);
-                    },
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.face_retouching_natural_sharp),
-                    title: const Text("Mes Chants"),
-                    onTap: () {
-                      setState(() => currentIndex = 3);
-                      Navigator.pop(context);
-                    },
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.settings),
-                    title: const Text("Parametres"),
-                    onTap: () {
-                      setState(() => currentIndex = 4);
-                      Navigator.pop(context);
-                    },
-                  ),
-                  const Divider(),
-                  ListTile(
-                    leading: const Icon(Icons.shuffle),
-                    title: const Text("Cantique aleatoire"),
+                    leading: const Icon(
+                      Icons.shuffle_rounded,
+                      color: AppColors.primary,
+                    ),
+                    title: const Text(
+                      "Cantique aléatoire",
+                      style: TextStyle(fontWeight: FontWeight.w600),
+                    ),
                     onTap: () {
                       Navigator.pop(context);
                       _openRandomCantique(context);
                     },
                   ),
                   ListTile(
-                    leading: const Icon(Icons.info),
-                    title: const Text("A propos"),
+                    leading: const Icon(
+                      Icons.info_outline_rounded,
+                      color: AppColors.primary,
+                    ),
+                    title: const Text(
+                      "À propos",
+                      style: TextStyle(fontWeight: FontWeight.w600),
+                    ),
                     onTap: () {
                       Navigator.pop(context);
                       _showAboutDialog(context);
                     },
                   ),
-                  const Divider(),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: AppSpacing.lg),
+                    child: Divider(),
+                  ),
                   ListTile(
-                    leading: const Icon(Icons.front_hand),
-                    title: const Text("Soutenir"),
+                    leading: const Icon(
+                      Icons.volunteer_activism_rounded,
+                      color: AppColors.primary,
+                    ),
+                    title: const Text(
+                      "Soutenir",
+                      style: TextStyle(fontWeight: FontWeight.w600),
+                    ),
                     onTap: () {
                       Navigator.pop(context);
                       _showSupportDialog(context);
                     },
                   ),
                   ListTile(
-                    leading: const Icon(Icons.star_border_rounded),
-                    title: const Text("Noter l'appli"),
+                    leading: const Icon(
+                      Icons.star_outline_rounded,
+                      color: AppColors.primary,
+                    ),
+                    title: const Text(
+                      "Noter l'application",
+                      style: TextStyle(fontWeight: FontWeight.w600),
+                    ),
                     onTap: () {
                       Navigator.pop(context);
                       _showRateDialog(context);
                     },
                   ),
                   ListTile(
-                    leading: const Icon(Icons.share),
-                    title: const Text("Partager l'appli"),
+                    leading: const Icon(
+                      Icons.share_rounded,
+                      color: AppColors.primary,
+                    ),
+                    title: const Text(
+                      "Partager l'application",
+                      style: TextStyle(fontWeight: FontWeight.w600),
+                    ),
                     onTap: () {
                       Navigator.pop(context);
                       _shareApp();
                     },
                   ),
                   ListTile(
-                    leading: const Icon(Icons.contact_mail),
-                    title: const Text("Nous contacter"),
+                    leading: const Icon(
+                      Icons.contact_mail_outlined,
+                      color: AppColors.primary,
+                    ),
+                    title: const Text(
+                      "Nous contacter",
+                      style: TextStyle(fontWeight: FontWeight.w600),
+                    ),
                     onTap: () {
                       Navigator.pop(context);
                       _showContactDialog(context);
@@ -213,29 +267,17 @@ class _HomeState extends State<Home> {
             ),
             const Divider(),
             Padding(
-              padding: const EdgeInsets.only(bottom: 20, top: 10),
+              padding: const EdgeInsets.only(bottom: 16, top: 8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  IconButton(
-                    onPressed: () => _showSocialDialog(context, 'Facebook'),
-                    icon: const Icon(Icons.facebook, color: Colors.blue),
-                    iconSize: 28,
-                  ),
-                  IconButton(
-                    onPressed: () => _showSocialDialog(context, 'Telegram'),
-                    icon: const Icon(Icons.telegram, color: Colors.blue),
-                    iconSize: 28,
-                  ),
-                  IconButton(
-                    onPressed: () => _showSocialDialog(context, 'Email'),
-                    icon: const Icon(Icons.email, color: Colors.red),
-                    iconSize: 28,
-                  ),
-                  IconButton(
-                    onPressed: () => _showSocialDialog(context, 'YouTube'),
-                    icon: const Icon(Icons.play_circle_fill, color: Colors.red),
-                    iconSize: 28,
+                  _socialIcon(Icons.facebook, 'Facebook', Colors.blue.shade700),
+                  _socialIcon(Icons.telegram, 'Telegram', Colors.lightBlue),
+                  _socialIcon(Icons.email_rounded, 'Email', AppColors.primary),
+                  _socialIcon(
+                    Icons.play_circle_fill_rounded,
+                    'YouTube',
+                    Colors.red.shade700,
                   ),
                 ],
               ),
@@ -249,25 +291,78 @@ class _HomeState extends State<Home> {
         onDestinationSelected: (index) {
           setState(() => currentIndex = index);
         },
-        backgroundColor: Colors.white,
-        elevation: 8,
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: "Accueil"),
           NavigationDestination(
-            icon: Icon(Icons.library_books),
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home_rounded),
+            label: "Accueil",
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.library_books_outlined),
+            selectedIcon: Icon(Icons.library_books_rounded),
             label: "Collections",
           ),
-          NavigationDestination(icon: Icon(Icons.favorite), label: "Favoris"),
           NavigationDestination(
-            icon: Icon(Icons.face_retouching_natural_sharp),
+            icon: Icon(Icons.favorite_outline_rounded),
+            selectedIcon: Icon(Icons.favorite_rounded),
+            label: "Favoris",
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.queue_music_outlined),
+            selectedIcon: Icon(Icons.queue_music_rounded),
             label: "Mes Chants",
           ),
           NavigationDestination(
-            icon: Icon(Icons.settings),
-            label: "Parametres",
+            icon: Icon(Icons.settings_outlined),
+            selectedIcon: Icon(Icons.settings_rounded),
+            label: "Paramètres",
           ),
         ],
       ),
+    );
+  }
+
+  Widget _drawerItem({
+    required int index,
+    required IconData icon,
+    required String label,
+  }) {
+    final isSelected = currentIndex == index;
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.sm,
+        vertical: 2,
+      ),
+      child: ListTile(
+        shape: RoundedRectangleBorder(borderRadius: AppRadius.mdBorder),
+        selected: isSelected,
+        selectedTileColor: AppColors.primaryLight,
+        leading: Icon(
+          icon,
+          color: isSelected ? AppColors.primary : AppColors.textSecondary,
+        ),
+        title: Text(
+          label,
+          style: TextStyle(
+            fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+            color: isSelected ? AppColors.primaryDark : AppColors.textPrimary,
+          ),
+        ),
+        onTap: () {
+          setState(() => currentIndex = index);
+          Navigator.pop(context);
+        },
+      ),
+    );
+  }
+
+  Widget _socialIcon(IconData icon, String name, Color color) {
+    return IconButton(
+      onPressed: () => _showSocialDialog(context, name),
+      icon: Icon(icon, color: color),
+      iconSize: 26,
+      tooltip: name,
     );
   }
 
@@ -289,35 +384,42 @@ class _HomeState extends State<Home> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Cantiques Boanerges"),
+          title: const Text("Cantiques du Message"),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Icon(Icons.music_note, size: 50, color: Colors.amber),
-              const SizedBox(height: 10),
-              const Text(
-                "Cantiques Boanerges",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: const BoxDecoration(
+                  color: AppColors.primaryLight,
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.auto_stories_rounded,
+                  size: 40,
+                  color: AppColors.primary,
+                ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 12),
+              const Text(
+                "Cantiques du Message",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 4),
               const Text(
                 "Version 1.0.0",
-                style: TextStyle(fontSize: 14, color: Colors.grey),
+                style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 12),
               const Text(
-                "Une application de cantiques pour vous aider a louer et adorer Dieu.",
+                "Une bibliothèque locale de cantiques pour louer et adorer Dieu en toute simplicité.",
                 textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 10),
-              Text(
-                "Copyright 2024 by objus",
-                style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                style: TextStyle(height: 1.4),
               ),
             ],
           ),
           actions: [
-            TextButton(
+            ElevatedButton(
               onPressed: () => Navigator.pop(context),
               child: const Text("Fermer"),
             ),
@@ -339,19 +441,27 @@ class _HomeState extends State<Home> {
             children: [
               const Text(
                 "Pour toute question ou suggestion :",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.w600),
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 12),
               ListTile(
-                leading: const Icon(Icons.email, color: Colors.blue),
+                contentPadding: EdgeInsets.zero,
+                leading: const CircleAvatar(
+                  backgroundColor: AppColors.primaryLight,
+                  child: Icon(Icons.email_outlined, color: AppColors.primary),
+                ),
                 title: const Text("Email"),
                 subtitle: const Text("sadikiobedi@outlook.fr"),
                 dense: true,
                 onTap: () => Navigator.pop(context),
               ),
               ListTile(
-                leading: const Icon(Icons.phone, color: Colors.green),
-                title: const Text("Telephone"),
+                contentPadding: EdgeInsets.zero,
+                leading: const CircleAvatar(
+                  backgroundColor: AppColors.primaryLight,
+                  child: Icon(Icons.phone_outlined, color: AppColors.primary),
+                ),
+                title: const Text("Téléphone"),
                 subtitle: const Text("+243 892 821 544"),
                 dense: true,
                 onTap: () => Navigator.pop(context),
@@ -377,12 +487,12 @@ class _HomeState extends State<Home> {
           title: const Text("Soutenir"),
           content: const Text(
             "Merci de vouloir soutenir notre application !\n\n"
-            "Cette fonctionnalite sera bientot disponible.\n\n"
+            "Cette fonctionnalité sera bientôt disponible.\n\n"
             "En attendant, vous pouvez partager l'application avec vos proches.",
-            style: TextStyle(fontSize: 16),
+            style: TextStyle(fontSize: 15, height: 1.4),
           ),
           actions: [
-            TextButton(
+            ElevatedButton(
               onPressed: () => Navigator.pop(context),
               child: const Text("Fermer"),
             ),
@@ -397,14 +507,14 @@ class _HomeState extends State<Home> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Noter l'appli"),
+          title: const Text("Noter l'application"),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               const Text(
-                "Si vous aimez cette application, "
-                "n'hesitez pas a la noter sur le store !",
-                style: TextStyle(fontSize: 16),
+                "Si vous aimez cette application, n'hésitez pas à lui donner une note !",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 15),
               ),
               const SizedBox(height: 16),
               Row(
@@ -415,7 +525,11 @@ class _HomeState extends State<Home> {
                       Navigator.pop(context);
                       _showThankYouDialog(context, index + 1);
                     },
-                    icon: const Icon(Icons.star, color: Colors.amber, size: 40),
+                    icon: const Icon(
+                      Icons.star_rounded,
+                      color: AppColors.warning,
+                      size: 36,
+                    ),
                   );
                 }),
               ),
@@ -433,12 +547,12 @@ class _HomeState extends State<Home> {
         return AlertDialog(
           title: const Text("Merci !"),
           content: Text(
-            "Merci d'avoir donne $rating etoile(s) a notre application !\n\n"
-            "Votre soutien nous est precieux.",
-            style: const TextStyle(fontSize: 16),
+            "Merci d'avoir attribué $rating étoile(s) à notre application !\n\n"
+            "Votre soutien nous est précieux.",
+            style: const TextStyle(fontSize: 15),
           ),
           actions: [
-            TextButton(
+            ElevatedButton(
               onPressed: () => Navigator.pop(context),
               child: const Text("Fermer"),
             ),
@@ -452,7 +566,7 @@ class _HomeState extends State<Home> {
     await SharePlus.instance.share(
       ShareParams(
         text:
-            'Decouvre l\'application "Cantiques Boanerges" pour louer et adorer Dieu !',
+            'Découvre l\'application "Cantiques du Message" pour louer et adorer Dieu !',
       ),
     );
   }
@@ -464,10 +578,10 @@ class _HomeState extends State<Home> {
         return AlertDialog(
           title: Text(social),
           content: Text(
-            "Suivez-nous sur $social\n\nCette fonctionnalite sera bientot disponible.",
+            "Suivez-nous sur $social\n\nCette fonctionnalité sera bientôt disponible.",
           ),
           actions: [
-            TextButton(
+            ElevatedButton(
               onPressed: () => Navigator.pop(context),
               child: const Text("OK"),
             ),

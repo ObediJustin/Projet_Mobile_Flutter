@@ -9,6 +9,9 @@ import '../models/chant_personnel.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
 import '../services/settings_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
 
 class CantiqueDetailPage extends StatefulWidget {
   final Cantique cantique;
@@ -34,7 +37,6 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   late final AnimationController _fadeController;
   late final Animation<double> _fadeAnimation;
 
-  // La page est non-scrollable : seul ce scroll (paroles) est actif.
   final ScrollController _parolesScrollController = ScrollController();
 
   @override
@@ -47,7 +49,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
     _fadeController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 450),
+      duration: const Duration(milliseconds: 350),
     );
     _fadeAnimation = CurvedAnimation(
       parent: _fadeController,
@@ -100,7 +102,6 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   }
 
   String _buildShareText() {
-    // Contrainte: on garde numéro + collection pour le partage.
     return '${widget.cantique.titre}\n'
         'Numéro : ${widget.cantique.numero}\n'
         'Collection : ${widget.cantique.collection}\n\n'
@@ -113,7 +114,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
-        content: Text('Paroles copiées'),
+        content: Text('Paroles copiées dans le presse-papier'),
         duration: Duration(seconds: 1),
       ),
     );
@@ -129,88 +130,107 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
       builder: (context) {
-        final current = _fontSize;
-
-        return Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Row(
+        return StatefulBuilder(
+          builder: (context, setModalState) {
+            return Padding(
+              padding: const EdgeInsets.all(AppSpacing.xl),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text(
-                    'Taille des paroles',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-                  ),
-                  const Spacer(),
-                  Text(
-                    current.toStringAsFixed(0),
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey.shade700,
-                      fontWeight: FontWeight.w600,
+                  Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: AppColors.border,
+                      borderRadius: BorderRadius.circular(2),
                     ),
                   ),
+                  const SizedBox(height: AppSpacing.lg),
+                  Row(
+                    children: [
+                      const Text(
+                        'Taille du texte',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.textPrimary,
+                        ),
+                      ),
+                      const Spacer(),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 4,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppColors.primaryLight,
+                          borderRadius: AppRadius.smBorder,
+                        ),
+                        child: Text(
+                          '${_fontSize.toInt()} px',
+                          style: const TextStyle(
+                            fontSize: 14,
+                            color: AppColors.primaryDark,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpacing.md),
+                  Slider(
+                    value: _fontSize,
+                    min: 12,
+                    max: 28,
+                    divisions: 16,
+                    onChanged: (v) {
+                      setModalState(() => _fontSize = v);
+                      setState(() => _fontSize = v);
+                    },
+                    onChangeEnd: (v) {
+                      _saveFontSize(v);
+                    },
+                  ),
+                  const SizedBox(height: AppSpacing.md),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: OutlinedButton.icon(
+                          onPressed: () {
+                            final next = (_fontSize - 1).clamp(12.0, 28.0);
+                            setModalState(() => _fontSize = next);
+                            setState(() => _fontSize = next);
+                            _saveFontSize(next);
+                          },
+                          icon: const Icon(Icons.remove_rounded),
+                          label: const Text('Réduire'),
+                        ),
+                      ),
+                      const SizedBox(width: AppSpacing.md),
+                      Expanded(
+                        child: ElevatedButton.icon(
+                          onPressed: () {
+                            final next = (_fontSize + 1).clamp(12.0, 28.0);
+                            setModalState(() => _fontSize = next);
+                            setState(() => _fontSize = next);
+                            _saveFontSize(next);
+                          },
+                          icon: const Icon(Icons.add_rounded),
+                          label: const Text('Agrandir'),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
                 ],
               ),
-              const SizedBox(height: 14),
-              Slider(
-                value: _fontSize,
-                min: 12,
-                max: 26,
-                divisions: 14,
-                label: _fontSize.toStringAsFixed(0),
-                onChanged: (v) {
-                  setState(() => _fontSize = v.toDouble());
-                },
-                onChangeEnd: (v) {
-                  _saveFontSize(v.toDouble());
-                },
-              ),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        final next = (_fontSize - 1).clamp(12, 26).toDouble();
-                        setState(() => _fontSize = next);
-                        _saveFontSize(next);
-                      },
-                      icon: const Icon(Icons.remove),
-                      label: const Text('Moins'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey.shade200,
-                        foregroundColor: Colors.black,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        final next = (_fontSize + 1).clamp(12, 26).toDouble();
-                        setState(() => _fontSize = next);
-                        _saveFontSize(next);
-                      },
-                      icon: const Icon(Icons.add),
-                      label: const Text('Plus'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.amber,
-                        foregroundColor: Colors.black,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 12),
-            ],
-          ),
+            );
+          },
         );
       },
     );
@@ -235,7 +255,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Déjà ajouté aux chants personnels'),
+          content: Text('Déjà présent dans vos chants personnels'),
           duration: Duration(seconds: 1),
         ),
       );
@@ -247,43 +267,36 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
-        content: Text('Ajouté aux chants personnels'),
+        content: Text('Ajouté à vos chants personnels'),
         duration: Duration(seconds: 1),
       ),
     );
   }
 
-  Widget _quickAction({
+  Widget _actionIconButton({
     required IconData icon,
-    required String trailingEmoji,
+    required String label,
     required VoidCallback onTap,
-    required bool enabled,
     required Color iconColor,
   }) {
     return InkWell(
-      borderRadius: BorderRadius.circular(14),
-      onTap: enabled ? onTap : null,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-        decoration: BoxDecoration(
-          color: enabled
-              ? Colors.white.withValues(alpha: 0.9)
-              : Colors.grey.shade200,
-          borderRadius: BorderRadius.circular(14),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.06),
-              blurRadius: 10,
-              offset: const Offset(0, 6),
-            ),
-          ],
-        ),
-        child: Row(
+      onTap: onTap,
+      borderRadius: AppRadius.mdBorder,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 20, color: iconColor),
-            const SizedBox(width: 8),
-            Text(trailingEmoji, style: const TextStyle(fontSize: 16)),
+            Icon(icon, size: 22, color: iconColor),
+            const SizedBox(height: 3),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.w600,
+                color: AppColors.textSecondary,
+              ),
+            ),
           ],
         ),
       ),
@@ -294,8 +307,20 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.cantique.titre),
-        backgroundColor: Colors.amber,
+        title: Text('N° ${widget.cantique.numero}'),
+        actions: [
+          IconButton(
+            icon: Icon(
+              _isFavorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+              color: _isFavorite ? AppColors.error : AppColors.textOnPrimary,
+            ),
+            onPressed: _toggleFavorite,
+          ),
+          IconButton(
+            icon: const Icon(Icons.share_rounded),
+            onPressed: _share,
+          ),
+        ],
       ),
       body: FutureBuilder<_CantiqueDetailData>(
         future: _detailDataFuture,
@@ -314,127 +339,199 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
             opacity: _fadeAnimation,
             child: SafeArea(
               child: Column(
-            children: [
-              // Card paroles: seule zone scrollable et centrée.
-              Expanded(
-                child: Center(
-                  child: SingleChildScrollView(
-                    controller: _parolesScrollController,
-                    padding: const EdgeInsets.all(16),
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(maxWidth: 800),
-                      child: Card(
-                        elevation: 2,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
+                children: [
+                  // Top Header Information Box
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.lg,
+                      vertical: AppSpacing.md,
+                    ),
+                    decoration: const BoxDecoration(
+                      color: AppColors.primaryVeryLight,
+                      border: Border(
+                        bottom: BorderSide(
+                          color: AppColors.borderLight,
+                          width: 1,
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(16),
-                          child: SelectableText(
-                            widget.cantique.contenu,
-                            textAlign: TextAlign.justify,
-                            style: TextStyle(
-                              fontSize: _fontSize,
-                              height: 1.8,
-                              color: Colors.grey.shade900,
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          'N° ${widget.cantique.numero}',
+                          style: const TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.primaryDark,
+                            letterSpacing: 1.0,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          widget.cantique.titre,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.textPrimary,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 10,
+                            vertical: 3,
+                          ),
+                          decoration: BoxDecoration(
+                            color: AppColors.primaryLight,
+                            borderRadius: AppRadius.fullBorder,
+                          ),
+                          child: Text(
+                            widget.cantique.collection,
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                              color: AppColors.primaryDark,
                             ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // Lyrics Area (Scrollable reader container)
+                  Expanded(
+                    child: SingleChildScrollView(
+                      controller: _parolesScrollController,
+                      padding: const EdgeInsets.all(AppSpacing.lg),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 800),
+                        child: Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.all(AppSpacing.xl),
+                          decoration: BoxDecoration(
+                            color: AppColors.surface,
+                            borderRadius: AppRadius.xlBorder,
+                            border: Border.all(
+                              color: AppColors.borderLight,
+                              width: 1,
+                            ),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0x0A000000),
+                                blurRadius: 12,
+                                offset: Offset(0, 4),
+                              ),
+                            ],
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SelectableText(
+                                widget.cantique.contenu,
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  fontSize: _fontSize,
+                                  height: 1.8,
+                                  color: AppColors.textPrimary,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              if (widget.cantique.auteur != null &&
+                                  widget.cantique.auteur!.isNotEmpty) ...[
+                                const SizedBox(height: AppSpacing.xxl),
+                                const Divider(),
+                                const SizedBox(height: AppSpacing.md),
+                                Row(
+                                  children: [
+                                    const Icon(
+                                      Icons.person_outline_rounded,
+                                      size: 16,
+                                      color: AppColors.textSecondary,
+                                    ),
+                                    const SizedBox(width: 6),
+                                    Text(
+                                      'Auteur : ${widget.cantique.auteur}',
+                                      style: const TextStyle(
+                                        fontSize: 13,
+                                        fontStyle: FontStyle.italic,
+                                        color: AppColors.textSecondary,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ],
                           ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ),
 
-              // Barre d’actions fixe en bas, placée après la card paroles.
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                child: Card(
-                  elevation: 4,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: SizedBox(
-                    height: 56,
+                  // Bottom Fixed Reading Action Bar
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.md,
+                      vertical: AppSpacing.sm,
+                    ),
+                    decoration: BoxDecoration(
+                      color: AppColors.surface,
+                      border: const Border(
+                        top: BorderSide(
+                          color: AppColors.borderLight,
+                          width: 1,
+                        ),
+                      ),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Color(0x0F000000),
+                          blurRadius: 10,
+                          offset: Offset(0, -4),
+                        ),
+                      ],
+                    ),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        _quickAction(
+                        _actionIconButton(
                           icon: _isFavorite
-                              ? Icons.favorite
-                              : Icons.favorite_border,
-                          trailingEmoji: _isFavorite ? '❤️' : '🤍',
-                          iconColor: _isFavorite ? Colors.red : Colors.grey,
-                          enabled: true,
+                              ? Icons.favorite_rounded
+                              : Icons.favorite_border_rounded,
+                          label: _isFavorite ? 'Favori' : 'Favori',
+                          iconColor:
+                              _isFavorite ? AppColors.error : AppColors.primary,
                           onTap: _toggleFavorite,
                         ),
-                        const SizedBox(width: 10),
-                        _quickAction(
-                          icon: Icons.copy,
-                          trailingEmoji: '📋',
-                          iconColor: Colors.blueGrey,
-                          enabled: true,
+                        _actionIconButton(
+                          icon: Icons.copy_rounded,
+                          label: 'Copier',
+                          iconColor: AppColors.primary,
                           onTap: _copyToClipboard,
                         ),
-                        const SizedBox(width: 10),
-                        _quickAction(
-                          icon: Icons.share,
-                          trailingEmoji: '📤',
-                          iconColor: Colors.blue,
-                          enabled: true,
+                        _actionIconButton(
+                          icon: Icons.share_rounded,
+                          label: 'Partager',
+                          iconColor: AppColors.primary,
                           onTap: _share,
                         ),
-                        const SizedBox(width: 10),
-                        _quickAction(
-                          icon: Icons.text_fields,
-                          trailingEmoji: '🔎',
-                          iconColor: Colors.brown,
-                          enabled: true,
+                        _actionIconButton(
+                          icon: Icons.format_size_rounded,
+                          label: 'Taille',
+                          iconColor: AppColors.primary,
                           onTap: _showFontSizeSheet,
                         ),
-                        const SizedBox(width: 10),
-                        _quickAction(
-                          icon: Icons.star_border,
-                          trailingEmoji: '⭐',
-                          iconColor: Colors.amber.shade800,
-                          enabled: true,
+                        _actionIconButton(
+                          icon: Icons.library_add_rounded,
+                          label: 'Mes Chants',
+                          iconColor: AppColors.primary,
                           onTap: _addToPersonalChants,
                         ),
                       ],
                     ),
                   ),
-                ),
-              ),
-
-              // Card auteur: en bas.
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                child: Card(
-                  elevation: 1,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 8,
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        if (widget.cantique.auteur != null)
-                          ListTile(
-                            dense: true,
-                            leading: const Icon(Icons.person_outline),
-                            title: const Text('Auteur'),
-                            subtitle: Text(widget.cantique.auteur!),
-                          ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ],
+                ],
               ),
             ),
           );

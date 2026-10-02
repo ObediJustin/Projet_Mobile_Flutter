@@ -4,6 +4,9 @@ import '../models/chant_personnel.dart';
 import '../pages/chant_form.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
+import '../theme/app_colors.dart';
+import '../theme/app_radius.dart';
+import '../theme/app_spacing.dart';
 
 /// Page de détail / édition d’un chant personnel.
 class ChantDetailPage extends StatefulWidget {
@@ -85,12 +88,12 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
               onPressed: () => Navigator.pop(context, false),
               child: const Text('Annuler'),
             ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, true),
-              child: const Text(
-                'Supprimer',
-                style: TextStyle(color: Colors.red),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.error,
               ),
+              onPressed: () => Navigator.pop(context, true),
+              child: const Text('Supprimer'),
             ),
           ],
         );
@@ -160,10 +163,28 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
   }
 
   Widget _infoChip({required IconData icon, required String label}) {
-    return Chip(
-      backgroundColor: Colors.white,
-      avatar: Icon(icon, size: 18, color: Colors.amber.shade800),
-      label: Text(label),
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: AppRadius.fullBorder,
+        border: Border.all(color: AppColors.borderLight, width: 1),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 14, color: AppColors.primary),
+          const SizedBox(width: 4),
+          Text(
+            label,
+            style: const TextStyle(
+              fontSize: 12,
+              color: AppColors.textSecondary,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -173,13 +194,12 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
         title: Text(chant.titre),
         actions: [
           IconButton(
             icon: Icon(
-              _isFavorite ? Icons.favorite : Icons.favorite_border,
-              color: _isFavorite ? Colors.red : Colors.white,
+              _isFavorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+              color: _isFavorite ? AppColors.error : AppColors.textOnPrimary,
             ),
             onPressed: _isBusy ? null : _toggleFavorite,
           ),
@@ -188,15 +208,20 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
       body: Stack(
         children: [
           SingleChildScrollView(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // Banner header container
                 Container(
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(AppSpacing.lg),
                   decoration: BoxDecoration(
-                    color: Colors.amber.shade50,
-                    borderRadius: BorderRadius.circular(14),
+                    color: AppColors.primaryVeryLight,
+                    borderRadius: AppRadius.xlBorder,
+                    border: Border.all(
+                      color: AppColors.secondaryLight,
+                      width: 1,
+                    ),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -204,33 +229,36 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                       Text(
                         chant.titre,
                         style: const TextStyle(
-                          fontSize: 26,
+                          fontSize: 22,
                           fontWeight: FontWeight.bold,
+                          color: AppColors.textPrimary,
                         ),
                       ),
-                      const SizedBox(height: 8),
-                      if ((chant.auteur ?? '').isNotEmpty)
+                      if ((chant.auteur ?? '').isNotEmpty) ...[
+                        const SizedBox(height: 4),
                         Text(
                           'Auteur : ${chant.auteur}',
-                          style: TextStyle(
-                            color: Colors.grey.shade700,
+                          style: const TextStyle(
+                            color: AppColors.textSecondary,
                             fontStyle: FontStyle.italic,
+                            fontSize: 14,
                           ),
                         ),
-                      const SizedBox(height: 10),
+                      ],
+                      const SizedBox(height: AppSpacing.md),
                       Wrap(
-                        spacing: 12,
-                        runSpacing: 8,
+                        spacing: 8,
+                        runSpacing: 6,
                         children: [
                           _infoChip(
-                            icon: Icons.calendar_today_outlined,
+                            icon: Icons.calendar_today_rounded,
                             label:
-                                'Création: ${_formatDate(chant.dateCreation)}',
+                                'Création : ${_formatDate(chant.dateCreation)}',
                           ),
                           _infoChip(
-                            icon: Icons.update_outlined,
+                            icon: Icons.update_rounded,
                             label:
-                                'Modification: ${_formatDate(chant.dateModification)}',
+                                'Modifié : ${_formatDate(chant.dateModification)}',
                           ),
                         ],
                       ),
@@ -238,45 +266,68 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                   ),
                 ),
 
-                const SizedBox(height: 18),
+                const SizedBox(height: AppSpacing.xl),
 
-                Text('Contenu', style: Theme.of(context).textTheme.titleLarge),
-                const SizedBox(height: 8),
+                const Text(
+                  'Paroles',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.textPrimary,
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.md),
 
-                Text(
-                  chant.contenu,
-                  style: const TextStyle(fontSize: 16, height: 1.8),
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(AppSpacing.xl),
+                  decoration: BoxDecoration(
+                    color: AppColors.surface,
+                    borderRadius: AppRadius.xlBorder,
+                    border: Border.all(
+                      color: AppColors.borderLight,
+                      width: 1,
+                    ),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0x0A000000),
+                        blurRadius: 10,
+                        offset: Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: SelectableText(
+                    chant.contenu,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      height: 1.8,
+                      color: AppColors.textPrimary,
+                    ),
+                  ),
                 ),
 
-                const SizedBox(height: 24),
+                const SizedBox(height: AppSpacing.xxl),
 
                 Row(
                   children: [
                     Expanded(
-                      child: OutlinedButton.icon(
-                        style: OutlinedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(vertical: 14),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                          foregroundColor: Colors.black,
-                        ),
-                        icon: const Icon(Icons.edit),
+                      child: ElevatedButton.icon(
+                        icon: const Icon(Icons.edit_rounded, size: 18),
                         label: const Text('Modifier'),
                         onPressed: _isBusy ? null : _edit,
                       ),
                     ),
-                    const SizedBox(width: 12),
+                    const SizedBox(width: AppSpacing.md),
                     Expanded(
                       child: OutlinedButton.icon(
                         style: OutlinedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(vertical: 14),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                          foregroundColor: Colors.red,
+                          foregroundColor: AppColors.error,
+                          side: const BorderSide(color: AppColors.error),
                         ),
-                        icon: const Icon(Icons.delete_outline),
+                        icon: const Icon(
+                          Icons.delete_outline_rounded,
+                          size: 18,
+                        ),
                         label: const Text('Supprimer'),
                         onPressed: _isBusy ? null : _confirmAndDelete,
                       ),
@@ -291,7 +342,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
               child: ColoredBox(
                 color: Color(0x33000000),
                 child: Center(
-                  child: CircularProgressIndicator(color: Colors.amber),
+                  child: CircularProgressIndicator(),
                 ),
               ),
             ),
