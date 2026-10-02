@@ -8,7 +8,7 @@ import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../models/collection.dart';
 import 'database_platform.dart';
-import 'initial_data.dart';
+import 'initial_data_loader.dart';
 
 class AppDatabase {
   static const String databaseName = 'cantiques_du_message.db';
@@ -105,15 +105,18 @@ class AppDatabase {
   Future<void> _initializeMemoryStore() async {
     if (_memoryInitialized) return;
 
-    _memoryCollections = List<CantiqueCollection>.of(initialCollections);
-    _memoryCantiques = List<Cantique>.of(initialCantiques);
+    _memoryCollections = List<CantiqueCollection>.of(
+      await InitialDataLoader.loadCollections(),
+    );
+    _memoryCantiques = List<Cantique>.of(await InitialDataLoader.loadCantiques());
+    final cantiqueIds = _memoryCantiques.map((cantique) => cantique.id).toSet();
 
     final prefs = await SharedPreferences.getInstance();
     final rawFavorites = prefs.getString('favorites');
     if (rawFavorites != null && rawFavorites.isNotEmpty) {
       final decoded = jsonDecode(rawFavorites) as List<dynamic>;
       for (final value in decoded.whereType<String>()) {
-        final ref = _parseFavoriteRef(value);
+        final ref = _parseFavoriteRef(value, cantiqueIds);
         _memoryFavoriteRefs.add(_favoriteKey(ref.type, ref.id));
       }
     }
@@ -234,11 +237,14 @@ class AppDatabase {
   }
 
   Future<void> _seedInitialData(Database db) async {
-    final now = initialDataTimestamp.toIso8601String();
+    final collections = await InitialDataLoader.loadCollections();
+    final cantiques = await InitialDataLoader.loadCantiques();
+    final now = DateTime(2026, 1, 1).toIso8601String();
+
     await db.transaction((txn) async {
       final batch = txn.batch();
 
-      for (final collection in initialCollections) {
+      for (final collection in collections) {
         batch.insert(
           'collections',
           collection.toMap(),
@@ -246,7 +252,7 @@ class AppDatabase {
         );
       }
 
-      for (final cantique in initialCantiques) {
+      for (final cantique in cantiques) {
         batch.insert('cantiques', {
           ...cantique.toMap(),
           'created_at': now,
@@ -270,10 +276,11 @@ class AppDatabase {
 
     final decoded = jsonDecode(raw) as List<dynamic>;
     final now = DateTime.now().toIso8601String();
+    final cantiqueIds = await InitialDataLoader.loadCantiqueIds();
 
     await db.transaction((txn) async {
       for (final value in decoded.whereType<String>()) {
-        final ref = _parseFavoriteRef(value);
+        final ref = _parseFavoriteRef(value, cantiqueIds);
         await txn.insert('favorites', {
           'item_type': ref.type,
           'item_id': ref.id,
@@ -314,7 +321,7 @@ class AppDatabase {
     await prefs.setBool(chantsMigrationKey, true);
   }
 
-  _FavoriteRef _parseFavoriteRef(String value) {
+  _FavoriteRef _parseFavoriteRef(String value, Set<String> cantiqueIds) {
     if (value.startsWith('$favoriteCantiqueType:')) {
       final id = value.substring(favoriteCantiqueType.length + 1);
       return _FavoriteRef(favoriteCantiqueType, normalizeLegacyCantiqueId(id));
@@ -328,7 +335,7 @@ class AppDatabase {
     }
 
     final cantiqueId = normalizeLegacyCantiqueId(value);
-    if (initialCantiques.any((cantique) => cantique.id == cantiqueId)) {
+    if (cantiqueIds.contains(cantiqueId)) {
       return _FavoriteRef(favoriteCantiqueType, cantiqueId);
     }
 

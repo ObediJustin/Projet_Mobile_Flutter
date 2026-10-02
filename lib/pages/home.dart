@@ -1,5 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
+
+import '../services/cantique_service.dart';
 import 'accueil.dart';
+import 'cantique_detail.dart';
 import 'collections.dart';
 import 'favoris.dart';
 import 'mes_chants.dart';
@@ -14,17 +20,17 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int currentIndex = 0;
+  final CantiqueService _cantiqueService = CantiqueService.instance;
+  final Random _random = Random();
 
-  // Titres de l'AppBar
   final List<String> titles = [
     "Accueil",
     "Collections",
     "Favoris",
     "Mes Chants",
-    "Paramètres",
+    "Parametres",
   ];
 
-  // Pages
   final List<Widget> pages = [
     const AccueilPage(),
     const CollectionPage(),
@@ -36,7 +42,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar dynamique
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.amber,
@@ -46,8 +51,6 @@ class _HomeState extends State<Home> {
         ),
         elevation: 2,
       ),
-
-      // Drawer
       drawer: Drawer(
         child: Column(
           children: [
@@ -56,7 +59,6 @@ class _HomeState extends State<Home> {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  // Image de fond
                   Image.asset(
                     "assets/images/image1.jpg",
                     fit: BoxFit.cover,
@@ -73,9 +75,7 @@ class _HomeState extends State<Home> {
                       );
                     },
                   ),
-                  // Couche sombre
                   Container(color: Colors.black.withValues(alpha: 0.5)),
-                  // Contenu
                   const Padding(
                     padding: EdgeInsets.all(16),
                     child: Column(
@@ -93,7 +93,7 @@ class _HomeState extends State<Home> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Cantiques du Message",
+                          "Cantiques Boanerges",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
@@ -115,8 +115,6 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-
-            // Menu principal
             Expanded(
               child: ListView(
                 children: [
@@ -124,9 +122,7 @@ class _HomeState extends State<Home> {
                     leading: const Icon(Icons.home),
                     title: const Text("Accueil"),
                     onTap: () {
-                      setState(() {
-                        currentIndex = 0;
-                      });
+                      setState(() => currentIndex = 0);
                       Navigator.pop(context);
                     },
                   ),
@@ -134,9 +130,7 @@ class _HomeState extends State<Home> {
                     leading: const Icon(Icons.library_books),
                     title: const Text("Collections"),
                     onTap: () {
-                      setState(() {
-                        currentIndex = 1;
-                      });
+                      setState(() => currentIndex = 1);
                       Navigator.pop(context);
                     },
                   ),
@@ -144,9 +138,7 @@ class _HomeState extends State<Home> {
                     leading: const Icon(Icons.favorite),
                     title: const Text("Favoris"),
                     onTap: () {
-                      setState(() {
-                        currentIndex = 2;
-                      });
+                      setState(() => currentIndex = 2);
                       Navigator.pop(context);
                     },
                   ),
@@ -154,34 +146,30 @@ class _HomeState extends State<Home> {
                     leading: const Icon(Icons.face_retouching_natural_sharp),
                     title: const Text("Mes Chants"),
                     onTap: () {
-                      setState(() {
-                        currentIndex = 3;
-                      });
+                      setState(() => currentIndex = 3);
                       Navigator.pop(context);
                     },
                   ),
                   ListTile(
                     leading: const Icon(Icons.settings),
-                    title: const Text("Paramètres"),
+                    title: const Text("Parametres"),
                     onTap: () {
-                      setState(() {
-                        currentIndex = 4;
-                      });
+                      setState(() => currentIndex = 4);
                       Navigator.pop(context);
                     },
                   ),
                   const Divider(),
                   ListTile(
                     leading: const Icon(Icons.shuffle),
-                    title: const Text("Cantique aléatoire"),
+                    title: const Text("Cantique aleatoire"),
                     onTap: () {
                       Navigator.pop(context);
-                      _showRandomCantiqueDialog(context);
+                      _openRandomCantique(context);
                     },
                   ),
                   ListTile(
                     leading: const Icon(Icons.info),
-                    title: const Text("À propos"),
+                    title: const Text("A propos"),
                     onTap: () {
                       Navigator.pop(context);
                       _showAboutDialog(context);
@@ -209,7 +197,7 @@ class _HomeState extends State<Home> {
                     title: const Text("Partager l'appli"),
                     onTap: () {
                       Navigator.pop(context);
-                      _showShareDialog(context);
+                      _shareApp();
                     },
                   ),
                   ListTile(
@@ -223,40 +211,29 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-
             const Divider(),
-
-            // Footer avec icônes sociales
             Padding(
               padding: const EdgeInsets.only(bottom: 20, top: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   IconButton(
-                    onPressed: () {
-                      _showSocialDialog(context, 'Facebook');
-                    },
+                    onPressed: () => _showSocialDialog(context, 'Facebook'),
                     icon: const Icon(Icons.facebook, color: Colors.blue),
                     iconSize: 28,
                   ),
                   IconButton(
-                    onPressed: () {
-                      _showSocialDialog(context, 'Telegram');
-                    },
+                    onPressed: () => _showSocialDialog(context, 'Telegram'),
                     icon: const Icon(Icons.telegram, color: Colors.blue),
                     iconSize: 28,
                   ),
                   IconButton(
-                    onPressed: () {
-                      _showSocialDialog(context, 'Email');
-                    },
+                    onPressed: () => _showSocialDialog(context, 'Email'),
                     icon: const Icon(Icons.email, color: Colors.red),
                     iconSize: 28,
                   ),
                   IconButton(
-                    onPressed: () {
-                      _showSocialDialog(context, 'YouTube');
-                    },
+                    onPressed: () => _showSocialDialog(context, 'YouTube'),
                     icon: const Icon(Icons.play_circle_fill, color: Colors.red),
                     iconSize: 28,
                   ),
@@ -266,17 +243,11 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-
-      // Contenu des pages
       body: pages[currentIndex],
-
-      // Navigation du bas
       bottomNavigationBar: NavigationBar(
         selectedIndex: currentIndex,
         onDestinationSelected: (index) {
-          setState(() {
-            currentIndex = index;
-          });
+          setState(() => currentIndex = index);
         },
         backgroundColor: Colors.white,
         elevation: 8,
@@ -293,52 +264,39 @@ class _HomeState extends State<Home> {
           ),
           NavigationDestination(
             icon: Icon(Icons.settings),
-            label: "Paramètres",
+            label: "Parametres",
           ),
         ],
       ),
     );
   }
 
-  // Dialogue pour cantique aléatoire
-  void _showRandomCantiqueDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text("Cantique aléatoire"),
-          content: const Text(
-            "Cette fonctionnalité sera bientôt disponible !\n\n"
-            "Vous pourrez découvrir des cantiques au hasard.",
-            style: TextStyle(fontSize: 16),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: const Text("OK"),
-            ),
-          ],
-        );
-      },
+  void _openRandomCantique(BuildContext context) {
+    final cantiques = _cantiqueService.getAllCantiques();
+    if (cantiques.isEmpty) return;
+
+    final cantique = cantiques[_random.nextInt(cantiques.length)];
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => CantiqueDetailPage(cantique: cantique),
+      ),
     );
   }
 
-  // Dialogue À propos
   void _showAboutDialog(BuildContext context) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("À propos"),
+          title: const Text("Cantiques Boanerges"),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               const Icon(Icons.music_note, size: 50, color: Colors.amber),
               const SizedBox(height: 10),
               const Text(
-                "Cantiques",
+                "Cantiques Boanerges",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 10),
@@ -348,21 +306,19 @@ class _HomeState extends State<Home> {
               ),
               const SizedBox(height: 10),
               const Text(
-                "Une application de cantiques pour vous aider à louer et adorer Dieu.",
+                "Une application de cantiques pour vous aider a louer et adorer Dieu.",
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 10),
               Text(
-                "© 2024 by objus",
+                "Copyright 2024 by objus",
                 style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
               ),
             ],
           ),
           actions: [
             TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
+              onPressed: () => Navigator.pop(context),
               child: const Text("Fermer"),
             ),
           ],
@@ -371,7 +327,6 @@ class _HomeState extends State<Home> {
     );
   }
 
-  // Dialogue Nous contacter
   void _showContactDialog(BuildContext context) {
     showDialog(
       context: context,
@@ -392,26 +347,20 @@ class _HomeState extends State<Home> {
                 title: const Text("Email"),
                 subtitle: const Text("sadikiobedi@outlook.fr"),
                 dense: true,
-                onTap: () {
-                  Navigator.pop(context);
-                },
+                onTap: () => Navigator.pop(context),
               ),
               ListTile(
                 leading: const Icon(Icons.phone, color: Colors.green),
-                title: const Text("Téléphone"),
+                title: const Text("Telephone"),
                 subtitle: const Text("+243 892 821 544"),
                 dense: true,
-                onTap: () {
-                  Navigator.pop(context);
-                },
+                onTap: () => Navigator.pop(context),
               ),
             ],
           ),
           actions: [
             TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
+              onPressed: () => Navigator.pop(context),
               child: const Text("Fermer"),
             ),
           ],
@@ -420,7 +369,6 @@ class _HomeState extends State<Home> {
     );
   }
 
-  // Dialogue Soutenir
   void _showSupportDialog(BuildContext context) {
     showDialog(
       context: context,
@@ -429,15 +377,13 @@ class _HomeState extends State<Home> {
           title: const Text("Soutenir"),
           content: const Text(
             "Merci de vouloir soutenir notre application !\n\n"
-            "Cette fonctionnalité sera bientôt disponible.\n\n"
+            "Cette fonctionnalite sera bientot disponible.\n\n"
             "En attendant, vous pouvez partager l'application avec vos proches.",
             style: TextStyle(fontSize: 16),
           ),
           actions: [
             TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
+              onPressed: () => Navigator.pop(context),
               child: const Text("Fermer"),
             ),
           ],
@@ -446,7 +392,6 @@ class _HomeState extends State<Home> {
     );
   }
 
-  // Dialogue Noter l'appli
   void _showRateDialog(BuildContext context) {
     showDialog(
       context: context,
@@ -458,7 +403,7 @@ class _HomeState extends State<Home> {
             children: [
               const Text(
                 "Si vous aimez cette application, "
-                "n'hésitez pas à la noter sur le store !",
+                "n'hesitez pas a la noter sur le store !",
                 style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 16),
@@ -470,7 +415,7 @@ class _HomeState extends State<Home> {
                       Navigator.pop(context);
                       _showThankYouDialog(context, index + 1);
                     },
-                    icon: Icon(Icons.star, color: Colors.amber, size: 40),
+                    icon: const Icon(Icons.star, color: Colors.amber, size: 40),
                   );
                 }),
               ),
@@ -481,7 +426,6 @@ class _HomeState extends State<Home> {
     );
   }
 
-  // Dialogue Merci pour la note
   void _showThankYouDialog(BuildContext context, int rating) {
     showDialog(
       context: context,
@@ -489,15 +433,13 @@ class _HomeState extends State<Home> {
         return AlertDialog(
           title: const Text("Merci !"),
           content: Text(
-            "Merci d'avoir donné $rating étoile(s) à notre application !\n\n"
-            "Votre soutien nous est précieux.",
+            "Merci d'avoir donne $rating etoile(s) a notre application !\n\n"
+            "Votre soutien nous est precieux.",
             style: const TextStyle(fontSize: 16),
           ),
           actions: [
             TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
+              onPressed: () => Navigator.pop(context),
               child: const Text("Fermer"),
             ),
           ],
@@ -506,32 +448,15 @@ class _HomeState extends State<Home> {
     );
   }
 
-  // Dialogue Partager l'appli
-  void _showShareDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text("Partager l'appli"),
-          content: const Text(
-            "Partagez cette application avec vos amis et votre famille !\n\n"
-            "Cette fonctionnalité sera bientôt disponible.",
-            style: TextStyle(fontSize: 16),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: const Text("Fermer"),
-            ),
-          ],
-        );
-      },
+  Future<void> _shareApp() async {
+    await SharePlus.instance.share(
+      ShareParams(
+        text:
+            'Decouvre l\'application "Cantiques Boanerges" pour louer et adorer Dieu !',
+      ),
     );
   }
 
-  // Dialogue réseaux sociaux
   void _showSocialDialog(BuildContext context, String social) {
     showDialog(
       context: context,
@@ -539,13 +464,11 @@ class _HomeState extends State<Home> {
         return AlertDialog(
           title: Text(social),
           content: Text(
-            "Suivez-nous sur $social\n\nCette fonctionnalité sera bientôt disponible.",
+            "Suivez-nous sur $social\n\nCette fonctionnalite sera bientot disponible.",
           ),
           actions: [
             TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
+              onPressed: () => Navigator.pop(context),
               child: const Text("OK"),
             ),
           ],

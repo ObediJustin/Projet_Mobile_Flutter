@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "projet1_tp" "\0"
+            VALUE "FileDescription", "Cantiques Boanerges" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "projet1_tp" "\0"
+            VALUE "InternalName", "cantiques_boanerges" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "projet1_tp.exe" "\0"
-            VALUE "ProductName", "projet1_tp" "\0"
+            VALUE "OriginalFilename", "cantiques_boanerges.exe" "\0"
+            VALUE "ProductName", "Cantiques Boanerges" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

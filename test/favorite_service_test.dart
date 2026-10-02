@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:projet1_tp/database/app_database.dart';
-import 'package:projet1_tp/models/chant_personnel.dart';
-import 'package:projet1_tp/services/cantique_service.dart';
-import 'package:projet1_tp/services/chant_personnel_service.dart';
-import 'package:projet1_tp/services/favorite_service.dart';
+import 'package:cantiques_boanerges/database/app_database.dart';
+import 'package:cantiques_boanerges/models/chant_personnel.dart';
+import 'package:cantiques_boanerges/services/cantique_service.dart';
+import 'package:cantiques_boanerges/services/chant_personnel_service.dart';
+import 'package:cantiques_boanerges/services/favorite_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
@@ -18,8 +18,13 @@ void main() {
       SharedPreferences.setMockInitialValues({});
       await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
       await AppDatabase.instance.initialize();
-      await CantiqueService.loadCacheFromDatabase();
+      await CantiqueService.instance.loadCacheFromDatabase();
       service = FavoriteService();
+    });
+
+    tearDown(() async {
+      await AppDatabase.instance.close();
+      await CantiqueService.instance.resetCacheForTesting();
     });
 
     test('a cantique can be added to favorites', () async {
@@ -70,7 +75,7 @@ void main() {
 
     test('two cantiques with numero 1 can be favorites simultaneously',
         () async {
-      final cantiqueService = CantiqueService();
+      final cantiqueService = CantiqueService.instance;
       await service.loadFavorites();
       await service.toggleCantiqueFavorite('hosanna_001');
       await service.toggleCantiqueFavorite('boanerges_tabernacle_001');
@@ -107,7 +112,7 @@ void main() {
 
       await service.loadFavorites();
 
-      expect(service.getFavoriteCantiques(CantiqueService()), isEmpty);
+      expect(service.getFavoriteCantiques(CantiqueService.instance), isEmpty);
       expect(
         await service.getFavoriteChantsPersonnels(ChantPersonnelService()),
         isEmpty,
@@ -121,7 +126,7 @@ void main() {
       });
       await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
       await AppDatabase.instance.initialize();
-      await CantiqueService.loadCacheFromDatabase();
+      await CantiqueService.instance.loadCacheFromDatabase();
 
       await service.loadFavorites();
 
@@ -137,7 +142,7 @@ void main() {
       });
       await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
       await AppDatabase.instance.initialize();
-      await CantiqueService.loadCacheFromDatabase();
+      await CantiqueService.instance.loadCacheFromDatabase();
 
       await service.loadFavorites();
 
@@ -160,7 +165,7 @@ void main() {
       });
       await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
       await AppDatabase.instance.initialize();
-      await CantiqueService.loadCacheFromDatabase();
+      await CantiqueService.instance.loadCacheFromDatabase();
 
       await service.loadFavorites();
       final favorites = await service.getFavoriteChantsPersonnels(

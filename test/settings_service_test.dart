@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:projet1_tp/services/settings_service.dart';
+import 'package:cantiques_boanerges/services/settings_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {

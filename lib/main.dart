@@ -7,7 +7,7 @@ import 'services/cantique_service.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await AppDatabase.instance.initialize();
-  await CantiqueService.loadCacheFromDatabase();
+  await CantiqueService.instance.loadCacheFromDatabase();
   runApp(const MyApp());
 }
 

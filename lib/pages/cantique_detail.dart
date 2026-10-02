@@ -23,9 +23,11 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     with SingleTickerProviderStateMixin {
   late final FavoriteService _favoriteService;
   final SettingsService _settingsService = SettingsService();
+  late final Future<_CantiqueDetailData> _detailDataFuture;
 
   bool _isFavorite = false;
   double _fontSize = 16.0;
+  bool _detailDataApplied = false;
 
   final ChantPersonnelService _chantPersonnelService = ChantPersonnelService();
 
@@ -40,9 +42,8 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     super.initState();
 
     _favoriteService = FavoriteService();
-    _initFavorites();
+    _detailDataFuture = _loadData();
     SettingsService.lyricsFontSizeNotifier.addListener(_syncFontSize);
-    _loadFontSize();
 
     _fadeController = AnimationController(
       vsync: this,
@@ -70,18 +71,13 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     });
   }
 
-  Future<void> _initFavorites() async {
+  Future<_CantiqueDetailData> _loadData() async {
     await _favoriteService.loadFavorites();
-    if (!mounted) return;
-    setState(() {
-      _isFavorite = _favoriteService.isCantiqueFavorite(widget.cantique.id);
-    });
-  }
-
-  Future<void> _loadFontSize() async {
-    final value = await _settingsService.getLyricsFontSize();
-    if (!mounted) return;
-    setState(() => _fontSize = value);
+    final isFavorite = _favoriteService.isCantiqueFavorite(widget.cantique.id);
+    final fontSize = await _settingsService.getLyricsFontSize();
+    _isFavorite = isFavorite;
+    _fontSize = fontSize;
+    return _CantiqueDetailData(isFavorite: isFavorite, fontSize: fontSize);
   }
 
   Future<void> _saveFontSize(double value) async {
@@ -301,10 +297,23 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
         title: Text(widget.cantique.titre),
         backgroundColor: Colors.amber,
       ),
-      body: FadeTransition(
-        opacity: _fadeAnimation,
-        child: SafeArea(
-          child: Column(
+      body: FutureBuilder<_CantiqueDetailData>(
+        future: _detailDataFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState != ConnectionState.done) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          if (snapshot.hasData && !_detailDataApplied) {
+            _isFavorite = snapshot.data!.isFavorite;
+            _fontSize = snapshot.data!.fontSize;
+            _detailDataApplied = true;
+          }
+
+          return FadeTransition(
+            opacity: _fadeAnimation,
+            child: SafeArea(
+              child: Column(
             children: [
               // Card paroles: seule zone scrollable et centrée.
               Expanded(
@@ -426,9 +435,21 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                 ),
               ),
             ],
-          ),
-        ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }
+}
+
+class _CantiqueDetailData {
+  final bool isFavorite;
+  final double fontSize;
+
+  const _CantiqueDetailData({
+    required this.isFavorite,
+    required this.fontSize,
+  });
 }

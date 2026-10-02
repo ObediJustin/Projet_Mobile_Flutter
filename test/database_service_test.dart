@@ -2,13 +2,13 @@ import 'dart:io';
 
 import 'package:path/path.dart' as p;
 import 'package:flutter_test/flutter_test.dart';
-import 'package:projet1_tp/database/app_database.dart';
-import 'package:projet1_tp/models/cantique.dart';
-import 'package:projet1_tp/models/chant_personnel.dart';
-import 'package:projet1_tp/models/collection.dart';
-import 'package:projet1_tp/services/cantique_service.dart';
-import 'package:projet1_tp/services/chant_personnel_service.dart';
-import 'package:projet1_tp/services/favorite_service.dart';
+import 'package:cantiques_boanerges/database/app_database.dart';
+import 'package:cantiques_boanerges/models/cantique.dart';
+import 'package:cantiques_boanerges/models/chant_personnel.dart';
+import 'package:cantiques_boanerges/models/collection.dart';
+import 'package:cantiques_boanerges/services/cantique_service.dart';
+import 'package:cantiques_boanerges/services/chant_personnel_service.dart';
+import 'package:cantiques_boanerges/services/favorite_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
@@ -19,11 +19,12 @@ void main() {
       SharedPreferences.setMockInitialValues({});
       await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
       await AppDatabase.instance.initialize();
-      await CantiqueService.loadCacheFromDatabase();
+      await CantiqueService.instance.loadCacheFromDatabase();
     });
 
     tearDown(() async {
       await AppDatabase.instance.close();
+      await CantiqueService.instance.resetCacheForTesting();
     });
 
     test('creates and reads seeded collections', () async {
@@ -46,7 +47,7 @@ void main() {
     });
 
     test('gets cantiques by id and preserves local numeros', () async {
-      final service = CantiqueService();
+      final service = CantiqueService.instance;
 
       final hosanna = service.getCantiqueById('hosanna_001');
       final boanerges = service.getCantiqueById('boanerges_tabernacle_001');
@@ -213,7 +214,7 @@ void main() {
       try {
         await AppDatabase.instance.useDatabasePathForTesting(dbPath);
         await AppDatabase.instance.initialize();
-        await CantiqueService.loadCacheFromDatabase();
+        await CantiqueService.instance.loadCacheFromDatabase();
 
         await ChantPersonnelService().addChant(chant);
         final favorites = FavoriteService();
@@ -223,7 +224,7 @@ void main() {
         await AppDatabase.instance.close();
         await AppDatabase.instance.useDatabasePathForTesting(dbPath);
         await AppDatabase.instance.initialize();
-        await CantiqueService.loadCacheFromDatabase();
+        await CantiqueService.instance.loadCacheFromDatabase();
 
         expect(
           await ChantPersonnelService().getChantById('restart_001'),
@@ -233,6 +234,37 @@ void main() {
         final reloadedFavorites = FavoriteService();
         await reloadedFavorites.loadFavorites();
         expect(reloadedFavorites.isCantiqueFavorite('hosanna_001'), isTrue);
+      } finally {
+        await AppDatabase.instance.close();
+        if (await tempDir.exists()) {
+          await tempDir.delete(recursive: true);
+        }
+      }
+    });
+
+    test('re-seeding does not overwrite existing cantiques', () async {
+      final tempDir = await Directory.systemTemp.createTemp('cantiques_db_seed');
+      final dbPath = p.join(tempDir.path, 'seed_test.db');
+      const customTitle = 'Titre conserve apres reseed';
+
+      try {
+        await AppDatabase.instance.useDatabasePathForTesting(dbPath);
+        await AppDatabase.instance.initialize();
+
+        final db = await AppDatabase.instance.database;
+        await db.update(
+          'cantiques',
+          {'titre': customTitle},
+          where: 'id = ?',
+          whereArgs: ['hosanna_001'],
+        );
+
+        await AppDatabase.instance.close();
+        await AppDatabase.instance.useDatabasePathForTesting(dbPath);
+        await AppDatabase.instance.initialize();
+
+        final saved = await AppDatabase.instance.getCantiqueById('hosanna_001');
+        expect(saved?.titre, customTitle);
       } finally {
         await AppDatabase.instance.close();
         if (await tempDir.exists()) {

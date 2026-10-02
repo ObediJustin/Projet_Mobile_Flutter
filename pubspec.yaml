@@ -1,4 +1,4 @@
-name: projet1_tp
+name: cantiques_boanerges
 description: "Application de cantiques pour louer et adorer Dieu"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -70,6 +70,8 @@ flutter:
     - assets/images/image3.jpg
     # Décommentez ces lignes si vous ajoutez d'autres images
     - assets/images/
+    - assets/data/collections.json
+    - assets/data/cantiques.json
     #- assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -17,7 +17,7 @@ class FavorisPage extends StatefulWidget {
 
 class _FavorisPageState extends State<FavorisPage> {
   final FavoriteService _favoriteService = FavoriteService();
-  final CantiqueService _cantiqueService = CantiqueService();
+  final CantiqueService _cantiqueService = CantiqueService.instance;
   final ChantPersonnelService _chantPersonnelService = ChantPersonnelService();
 
   bool _isLoading = true;

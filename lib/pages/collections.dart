@@ -14,7 +14,7 @@ class CollectionPage extends StatefulWidget {
 }
 
 class _CollectionPageState extends State<CollectionPage> {
-  final CantiqueService _cantiqueService = CantiqueService();
+  final CantiqueService _cantiqueService = CantiqueService.instance;
   final TextEditingController _searchController = TextEditingController();
 
   String _globalQuery = '';
@@ -26,21 +26,11 @@ class _CollectionPageState extends State<CollectionPage> {
   }
 
   List<Cantique> get _globalResults {
-    final query = _globalQuery.trim().toLowerCase();
-    if (query.isEmpty) return const [];
-
-    final all = _cantiqueService.getAllCantiques();
-    return all.where((c) {
-      final titre = c.titre.toLowerCase();
-      final numero = c.numero.toString();
-      final contenu = c.contenu.toLowerCase();
-      final collection = c.collection.toLowerCase();
-
-      return titre.contains(query) ||
-          numero.contains(query) ||
-          contenu.contains(query) ||
-          collection.contains(query);
-    }).toList();
+    if (_globalQuery.trim().isEmpty) return const [];
+    return CantiqueService.filterCantiques(
+      _cantiqueService.getAllCantiques(),
+      _globalQuery,
+    );
   }
 
   List<String> get _collections => _cantiqueService.getAllCollections();
@@ -188,7 +178,7 @@ class CollectionDetailPage extends StatefulWidget {
 }
 
 class _CollectionDetailPageState extends State<CollectionDetailPage> {
-  final CantiqueService _cantiqueService = CantiqueService();
+  final CantiqueService _cantiqueService = CantiqueService.instance;
   final TextEditingController _searchController = TextEditingController();
 
   String _query = '';
@@ -203,16 +193,7 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
       _cantiqueService.getCantiquesByCollection(widget.collectionName);
 
   List<Cantique> get _filtered {
-    final q = _query.trim().toLowerCase();
-    if (q.isEmpty) return _cantiquesBruts;
-
-    return _cantiquesBruts.where((c) {
-      final titre = c.titre.toLowerCase();
-      final numero = c.numero.toString();
-      final contenu = c.contenu.toLowerCase();
-
-      return titre.contains(q) || numero.contains(q) || contenu.contains(q);
-    }).toList();
+    return CantiqueService.filterCantiques(_cantiquesBruts, _query);
   }
 
   @override
@@ -279,7 +260,7 @@ class CollectionSearchPage extends StatefulWidget {
 }
 
 class _CollectionSearchPageState extends State<CollectionSearchPage> {
-  final CantiqueService _cantiqueService = CantiqueService();
+  final CantiqueService _cantiqueService = CantiqueService.instance;
   final TextEditingController _searchController = TextEditingController();
 
   String _query = '';
@@ -294,15 +275,7 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
       _cantiqueService.getCantiquesByCollection(widget.collectionName);
 
   List<Cantique> get _results {
-    final q = _query.trim().toLowerCase();
-    if (q.isEmpty) return _base;
-
-    return _base.where((c) {
-      final titre = c.titre.toLowerCase();
-      final numero = c.numero.toString();
-      final contenu = c.contenu.toLowerCase();
-      return titre.contains(q) || numero.contains(q) || contenu.contains(q);
-    }).toList();
+    return CantiqueService.filterCantiques(_base, _query);
   }
 
   @override
@@ -368,7 +341,7 @@ class CollectionFavorisPage extends StatefulWidget {
 
 class _CollectionFavorisPageState extends State<CollectionFavorisPage> {
   final FavoriteService _favoriteService = FavoriteService();
-  final CantiqueService _cantiqueService = CantiqueService();
+  final CantiqueService _cantiqueService = CantiqueService.instance;
 
   List<Cantique> _favorites = const [];
 

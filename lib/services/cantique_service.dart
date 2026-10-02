@@ -1,16 +1,28 @@
 import '../database/app_database.dart';
-import '../database/initial_data.dart';
+import '../database/initial_data_loader.dart';
 import '../models/cantique.dart';
 import '../models/collection.dart';
 
 class CantiqueService {
+  CantiqueService();
+
+  static final CantiqueService instance = CantiqueService();
+
   static const Map<String, String> legacyIdMigration =
       AppDatabase.legacyCantiqueIdMigration;
 
-  static List<Cantique> _cachedCantiques = _validateUniqueIds(initialCantiques);
-  static List<CantiqueCollection> _cachedCollections = initialCollections;
+  List<Cantique> _cachedCantiques = const [];
+  List<CantiqueCollection> _cachedCollections = const [];
 
-  static Future<void> loadCacheFromDatabase() async {
+  Future<void> loadInitialData() async {
+    final cantiques = await InitialDataLoader.loadCantiques();
+    final collections = await InitialDataLoader.loadCollections();
+
+    _cachedCantiques = _validateUniqueIds(cantiques);
+    _cachedCollections = List.unmodifiable(collections);
+  }
+
+  Future<void> loadCacheFromDatabase() async {
     final db = AppDatabase.instance;
     final cantiques = await db.getCantiques();
     final collections = await db.getCollections();
@@ -19,27 +31,35 @@ class CantiqueService {
     _cachedCollections = collections;
   }
 
+  Future<void> resetCacheForTesting() async {
+    InitialDataLoader.resetCache();
+    await loadInitialData();
+  }
+
   static List<Cantique> _validateUniqueIds(List<Cantique> cantiques) {
-    final seen = <String>{};
-    final duplicates = <String>{};
+    final byId = <String, Cantique>{};
 
     for (final cantique in cantiques) {
-      if (!seen.add(cantique.id)) {
-        duplicates.add(cantique.id);
-      }
+      byId[cantique.id] = cantique;
     }
 
-    if (duplicates.isNotEmpty) {
-      throw StateError(
-        'Identifiants de cantiques dupliques: ${duplicates.join(', ')}',
-      );
-    }
-
-    return List.unmodifiable(cantiques);
+    return List.unmodifiable(byId.values);
   }
 
   static String normalizeCantiqueId(String id) {
     return AppDatabase.normalizeLegacyCantiqueId(id);
+  }
+
+  static List<Cantique> filterCantiques(List<Cantique> source, String query) {
+    final q = query.trim().toLowerCase();
+    if (q.isEmpty) return source;
+
+    return source.where((c) {
+      return c.titre.toLowerCase().contains(q) ||
+          c.numero.toString().contains(q) ||
+          c.contenu.toLowerCase().contains(q) ||
+          c.collection.toLowerCase().contains(q);
+    }).toList();
   }
 
   List<Cantique> getAllCantiques() {

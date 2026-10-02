@@ -13,7 +13,7 @@ class AccueilPage extends StatefulWidget {
 }
 
 class _AccueilPageState extends State<AccueilPage> {
-  final CantiqueService _cantiqueService = CantiqueService();
+  final CantiqueService _cantiqueService = CantiqueService.instance;
   final TextEditingController _searchController = TextEditingController();
 
   late final String _verseDuJour;
@@ -48,20 +48,7 @@ class _AccueilPageState extends State<AccueilPage> {
   Widget build(BuildContext context) {
     final allCantiques = _cantiqueService.getAllCantiques();
 
-    final filtered = _query.isEmpty
-        ? allCantiques
-        : allCantiques.where((c) {
-            final q = _query.toLowerCase().trim();
-            final titre = c.titre.toLowerCase();
-            final numero = c.numero.toString();
-            final contenu = c.contenu.toLowerCase();
-            final collection = c.collection.toLowerCase();
-
-            return titre.contains(q) ||
-                numero.contains(q) ||
-                contenu.contains(q) ||
-                collection.contains(q);
-          }).toList();
+    final filtered = CantiqueService.filterCantiques(allCantiques, _query);
 
     final recentCantiques = filtered.take(3).toList();
 
