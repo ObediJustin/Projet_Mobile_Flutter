@@ -39,11 +39,6 @@ class _CollectionPageState extends State<CollectionPage> {
 
   List<String> get _collections => _cantiqueService.getAllCollections();
 
-  Color _getGradientColorForIndex(int index) {
-    final colors = AppColors.collectionGradientsStart;
-    return colors[index % colors.length];
-  }
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -97,7 +92,6 @@ class _CollectionPageState extends State<CollectionPage> {
                     titre: collection,
                     nombre: count,
                     description: 'Cantiques et hymnes de $collection',
-                    couleur: _getGradientColorForIndex(index),
                     onTap: () {
                       Navigator.push(
                         context,

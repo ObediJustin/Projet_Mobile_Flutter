@@ -37,6 +37,7 @@ class AppDatabase {
   List<Cantique> _memoryCantiques = [];
   final Map<String, ChantPersonnel> _memoryChants = {};
   final Set<String> _memoryFavoriteRefs = {};
+  final Map<String, DateTime> _memoryRecentlyViewed = {};
 
   Future<Database> get database async {
     if (_useMemoryStore || shouldUseMemoryDatabase) {
@@ -216,6 +217,14 @@ class AppDatabase {
       )
     ''');
 
+    await db.execute('''
+      CREATE TABLE recently_viewed_cantiques (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        cantique_id TEXT NOT NULL UNIQUE,
+        last_viewed_at TEXT NOT NULL
+      )
+    ''');
+
     await db.execute(
       'CREATE INDEX idx_cantiques_collection_id ON cantiques(collection_id)',
     );
@@ -226,6 +235,9 @@ class AppDatabase {
     );
     await db.execute(
       'CREATE INDEX idx_favorites_item_id ON favorites(item_id)',
+    );
+    await db.execute(
+      'CREATE INDEX idx_recently_viewed_last_viewed_at ON recently_viewed_cantiques(last_viewed_at DESC)',
     );
   }
 
@@ -642,6 +654,60 @@ class AppDatabase {
       orderBy: 'created_at DESC, id DESC',
     );
     return rows.map((row) => row['item_id'] as String).toList();
+  }
+
+  Future<void> recordRecentlyViewedCantique(String cantiqueId) async {
+    final now = DateTime.now().toIso8601String();
+    final normalizedId = normalizeLegacyCantiqueId(cantiqueId);
+
+    if (_useMemoryStore) {
+      _memoryRecentlyViewed[normalizedId] = DateTime.now();
+      return;
+    }
+
+    final db = await database;
+    await db.execute('''
+      INSERT INTO recently_viewed_cantiques (cantique_id, last_viewed_at)
+      VALUES (?, ?)
+      ON CONFLICT(cantique_id) DO UPDATE SET last_viewed_at = excluded.last_viewed_at
+    ''', [normalizedId, now]);
+  }
+
+  Future<void> clearRecentlyViewedForTesting() async {
+    if (_useMemoryStore) {
+      _memoryRecentlyViewed.clear();
+      return;
+    }
+
+    final db = await database;
+    await db.delete('recently_viewed_cantiques');
+  }
+
+  Future<List<Cantique>> getRecentlyViewedCantiques({int limit = 5}) async {
+    if (_useMemoryStore) {
+      final sortedEntries = _memoryRecentlyViewed.entries.toList()
+        ..sort((a, b) => b.value.compareTo(a.value));
+      final cantiqueIds = sortedEntries.map((e) => e.key).take(limit);
+
+      final result = <Cantique>[];
+      for (final id in cantiqueIds) {
+        final c = await getCantiqueById(id);
+        if (c != null) result.add(c);
+      }
+      return result;
+    }
+
+    final db = await database;
+    final rows = await db.rawQuery('''
+      SELECT c.*, collections.name AS collection
+      FROM recently_viewed_cantiques r
+      INNER JOIN cantiques c ON c.id = r.cantique_id
+      INNER JOIN collections ON collections.id = c.collection_id
+      ORDER BY r.last_viewed_at DESC
+      LIMIT ?
+    ''', [limit]);
+
+    return rows.map(Cantique.fromMap).toList();
   }
 }
 

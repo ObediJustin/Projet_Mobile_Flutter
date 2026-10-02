@@ -1,8 +1,11 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
+
+import '../models/cantique.dart';
 import '../services/cantique_service.dart';
+import '../services/recent_cantique_service.dart';
+import '../services/verse_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
@@ -20,31 +23,28 @@ class AccueilPage extends StatefulWidget {
 
 class _AccueilPageState extends State<AccueilPage> {
   final CantiqueService _cantiqueService = CantiqueService.instance;
+  final RecentCantiqueService _recentService = RecentCantiqueService.instance;
   final TextEditingController _searchController = TextEditingController();
 
-  late final String _verseDuJour;
-  late final IconData _verseIcon;
-
-  static const List<String> _versets = [
-    "Je puis tout par Christ qui me fortifie. — Philippiens 4:13",
-    "L'Éternel est mon berger : je ne manquerai de rien. — Psaume 23:1",
-    "Crois seulement, toutes choses sont possibles à celui qui croit. — Marc 9:23",
-    "Car Dieu a tant aimé le monde qu'il a donné son Fils unique. — Jean 3:16",
-  ];
-
-  static const List<IconData> _icons = [
-    Icons.menu_book_rounded,
-    Icons.auto_stories_rounded,
-  ];
-
+  late final VerseItem _verseDuJour;
+  List<Cantique> _recentCantiques = const [];
+  bool _isLoadingRecents = true;
   String _query = '';
 
   @override
   void initState() {
     super.initState();
-    final rnd = Random();
-    _verseDuJour = _versets[rnd.nextInt(_versets.length)];
-    _verseIcon = _icons[rnd.nextInt(_icons.length)];
+    _verseDuJour = VerseService.instance.getVerseOfDay();
+    _loadRecents();
+  }
+
+  Future<void> _loadRecents() async {
+    final recents = await _recentService.getRecentlyViewedCantiques(limit: 5);
+    if (!mounted) return;
+    setState(() {
+      _recentCantiques = recents;
+      _isLoadingRecents = false;
+    });
   }
 
   @override
@@ -55,10 +55,13 @@ class _AccueilPageState extends State<AccueilPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+
     final allCantiques = _cantiqueService.getAllCantiques();
-    final filtered = CantiqueService.filterCantiques(allCantiques, _query);
+    final filteredSearchResults =
+        CantiqueService.filterCantiques(allCantiques, _query);
     final isSearching = _query.trim().isNotEmpty;
-    final recentCantiques = filtered.take(isSearching ? 10 : 3).toList();
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(AppSpacing.lg),
@@ -78,12 +81,12 @@ class _AccueilPageState extends State<AccueilPage> {
                   width: double.infinity,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: AppColors.primaryDark,
+                      color: theme.colorScheme.primary,
                       image: const DecorationImage(
                         image: AssetImage('assets/images/image3.jpg'),
                         fit: BoxFit.cover,
                         colorFilter: ColorFilter.mode(
-                          Color(0xB30B5D2A),
+                          Color(0xB3000000),
                           BlendMode.darken,
                         ),
                       ),
@@ -104,9 +107,9 @@ class _AccueilPageState extends State<AccueilPage> {
                               color: Colors.white.withValues(alpha: 0.2),
                               borderRadius: AppRadius.fullBorder,
                             ),
-                            child: const Text(
-                              "BIENVENUE",
-                              style: TextStyle(
+                            child: Text(
+                              l10n?.bienvenueTitle ?? "BIENVENUE",
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 11,
                                 fontWeight: FontWeight.bold,
@@ -115,9 +118,9 @@ class _AccueilPageState extends State<AccueilPage> {
                             ),
                           ),
                           const SizedBox(height: 6),
-                          const Text(
-                            "Cantiques du Message",
-                            style: TextStyle(
+                          Text(
+                            l10n?.appTitle ?? "Cantiques du Message",
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
@@ -126,7 +129,8 @@ class _AccueilPageState extends State<AccueilPage> {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            "Trouvez rapidement vos cantiques de louange et d'adoration",
+                            l10n?.bienvenueSubtitle ??
+                                "Trouvez rapidement vos cantiques de louange et d'adoration",
                             style: TextStyle(
                               color: Colors.white.withValues(alpha: 0.9),
                               fontSize: 13,
@@ -146,7 +150,8 @@ class _AccueilPageState extends State<AccueilPage> {
           // Search Field
           AppSearchBar(
             controller: _searchController,
-            hintText: 'Rechercher par titre, numéro, contenu ou collection…',
+            hintText: l10n?.searchHint ??
+                'Rechercher par titre, numéro, contenu ou collection…',
             onChanged: (value) => setState(() => _query = value),
             onClear: () => setState(() => _query = ''),
           ),
@@ -155,32 +160,55 @@ class _AccueilPageState extends State<AccueilPage> {
 
           // Section Title: Cantiques Récents / Résultats
           AppSectionHeader(
-            title: isSearching ? 'Résultats de recherche' : 'Cantiques récents',
+            title: isSearching
+                ? (l10n?.searchResultsTitle ?? 'Résultats de recherche')
+                : (l10n?.cantiquesRecentsTitle ?? 'Cantiques récents'),
             icon: isSearching
                 ? Icons.search_rounded
                 : Icons.access_time_rounded,
-            countBadge: recentCantiques.length,
+            countBadge: isSearching
+                ? filteredSearchResults.length
+                : _recentCantiques.length,
           ),
 
           const SizedBox(height: AppSpacing.md),
 
-          if (recentCantiques.isEmpty)
-            AppEmptyState(
-              icon: Icons.search_off_rounded,
-              title: 'Aucun cantique trouvé',
-              message: 'Aucun résultat ne correspond à "$_query".',
-            )
-          else
-            ...recentCantiques.map(
-              (cantique) => CantiqueCard(cantique: cantique),
-            ),
+          if (isSearching) ...[
+            if (filteredSearchResults.isEmpty)
+              AppEmptyState(
+                icon: Icons.search_off_rounded,
+                title: l10n?.noCantiqueFound ?? 'Aucun cantique trouvé',
+                message: l10n?.noResultsForQuery ??
+                    'Aucun résultat ne correspond à votre recherche.',
+              )
+            else
+              ...filteredSearchResults.map(
+                (cantique) => CantiqueCard(cantique: cantique),
+              ),
+          ] else ...[
+            if (_isLoadingRecents)
+              const Padding(
+                padding: EdgeInsets.all(AppSpacing.lg),
+                child: Center(child: CircularProgressIndicator()),
+              )
+            else if (_recentCantiques.isEmpty)
+              AppEmptyState(
+                icon: Icons.history_rounded,
+                title: l10n?.noRecentCantiques ??
+                    'Vos cantiques récents apparaîtront ici',
+                message:
+                    'Consultez des cantiques pour les retrouver rapidement sur cet écran.',
+              )
+            else
+              ..._recentCantiques.map(
+                (cantique) => CantiqueCard(cantique: cantique),
+              ),
 
-          if (!isSearching) ...[
             const SizedBox(height: AppSpacing.xl),
 
             // Verset du jour Section
-            const AppSectionHeader(
-              title: 'Verset du jour',
+            AppSectionHeader(
+              title: l10n?.versetDuJourTitle ?? 'Verset du jour',
               icon: Icons.format_quote_rounded,
             ),
             const SizedBox(height: AppSpacing.md),
@@ -189,17 +217,17 @@ class _AccueilPageState extends State<AccueilPage> {
               width: double.infinity,
               padding: const EdgeInsets.all(AppSpacing.lg),
               decoration: BoxDecoration(
-                color: AppColors.primaryVeryLight,
+                color: theme.colorScheme.primaryContainer,
                 borderRadius: AppRadius.xlBorder,
                 border: Border.all(
-                  color: AppColors.secondaryLight,
+                  color: theme.colorScheme.outlineVariant,
                   width: 1.5,
                 ),
-                boxShadow: const [
+                boxShadow: [
                   BoxShadow(
-                    color: Color(0x0A16803A),
+                    color: theme.colorScheme.primary.withValues(alpha: 0.08),
                     blurRadius: 12,
-                    offset: Offset(0, 4),
+                    offset: const Offset(0, 4),
                   ),
                 ],
               ),
@@ -219,22 +247,36 @@ class _AccueilPageState extends State<AccueilPage> {
                       ),
                     ),
                     child: Icon(
-                      _verseIcon,
-                      color: AppColors.primary,
+                      Icons.auto_stories_rounded,
+                      color: theme.colorScheme.primary,
                       size: 22,
                     ),
                   ),
                   const SizedBox(width: AppSpacing.md),
                   Expanded(
-                    child: Text(
-                      _verseDuJour,
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.textPrimary,
-                        height: 1.45,
-                        fontStyle: FontStyle.italic,
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '"${_verseDuJour.text}"',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            color: theme.colorScheme.onPrimaryContainer,
+                            height: 1.45,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '— ${_verseDuJour.reference}',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.bold,
+                            color: theme.colorScheme.primary,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],

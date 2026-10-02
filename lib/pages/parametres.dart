@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
+import '../services/notification_service.dart';
 import '../services/settings_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
+import '../theme/app_theme_mode.dart';
 import '../widgets/app_section_header.dart';
 
 class ParametresPage extends StatefulWidget {
@@ -17,6 +20,7 @@ class _ParametresPageState extends State<ParametresPage> {
   final SettingsService _settingsService = SettingsService();
 
   bool _isLoading = true;
+  AppThemeMode _selectedTheme = AppThemeMode.green;
   bool _notificationsEnabled = SettingsService.defaultNotificationsEnabled;
   String _selectedLanguage = SettingsService.defaultLanguage;
   double _fontSize = SettingsService.defaultLyricsFontSize;
@@ -28,13 +32,15 @@ class _ParametresPageState extends State<ParametresPage> {
   }
 
   Future<void> _loadSettings() async {
+    final theme = await _settingsService.getTheme();
     final language = await _settingsService.getLanguage();
-    final notificationsEnabled = await _settingsService
-        .getNotificationsEnabled();
+    final notificationsEnabled =
+        await _settingsService.getNotificationsEnabled();
     final fontSize = await _settingsService.getLyricsFontSize();
 
     if (!mounted) return;
     setState(() {
+      _selectedTheme = theme;
       _selectedLanguage = language;
       _notificationsEnabled = notificationsEnabled;
       _fontSize = fontSize;
@@ -42,8 +48,30 @@ class _ParametresPageState extends State<ParametresPage> {
     });
   }
 
+  String _getLanguageLabel(String val, AppLocalizations? l10n) {
+    if (val == 'English') return l10n?.langueAnglais ?? 'English';
+    if (val == 'system') return l10n?.langueSysteme ?? 'Langue du système';
+    return l10n?.langueFrancais ?? 'Français';
+  }
+
+  String _getThemeLabel(AppThemeMode mode, AppLocalizations? l10n) {
+    switch (mode) {
+      case AppThemeMode.blue:
+        return l10n?.themeBlue ?? 'Bleu';
+      case AppThemeMode.purple:
+        return l10n?.themePurple ?? 'Violet';
+      case AppThemeMode.amber:
+        return l10n?.themeAmber ?? 'Ambre';
+      case AppThemeMode.green:
+        return l10n?.themeGreen ?? 'Vert Nature';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+
     if (_isLoading) {
       return const Center(
         child: CircularProgressIndicator(),
@@ -53,8 +81,75 @@ class _ParametresPageState extends State<ParametresPage> {
     return ListView(
       padding: const EdgeInsets.all(AppSpacing.lg),
       children: [
-        const AppSectionHeader(
-          title: 'Préférences',
+        // Apparence Section Header
+        AppSectionHeader(
+          title: l10n?.apparenceTitle ?? 'Apparence',
+          icon: Icons.palette_rounded,
+        ),
+        const SizedBox(height: AppSpacing.md),
+
+        // Theme Selection Card
+        Container(
+          decoration: BoxDecoration(
+            color: AppColors.surface,
+            borderRadius: AppRadius.lgBorder,
+            border: Border.all(color: AppColors.borderLight, width: 1),
+          ),
+          child: ListTile(
+            leading: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.primaryContainer,
+                borderRadius: AppRadius.mdBorder,
+              ),
+              child: Icon(
+                Icons.color_lens_rounded,
+                color: theme.colorScheme.primary,
+                size: 20,
+              ),
+            ),
+            title: Text(
+              l10n?.themeTitle ?? 'Thème',
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            ),
+            subtitle: Text(
+              _getThemeLabel(_selectedTheme, l10n),
+              style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
+            ),
+            trailing: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 18,
+                  height: 18,
+                  decoration: BoxDecoration(
+                    color: _selectedTheme.primary,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white, width: 2),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black26,
+                        blurRadius: 3,
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 8),
+                const Icon(
+                  Icons.chevron_right_rounded,
+                  color: AppColors.textMuted,
+                ),
+              ],
+            ),
+            onTap: _showThemeDialog,
+          ),
+        ),
+
+        const SizedBox(height: AppSpacing.xxl),
+
+        // Preferences Section Header
+        AppSectionHeader(
+          title: l10n?.preferencesTitle ?? 'Préférences',
           icon: Icons.tune_rounded,
         ),
         const SizedBox(height: AppSpacing.md),
@@ -70,22 +165,23 @@ class _ParametresPageState extends State<ParametresPage> {
             secondary: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: AppColors.primaryLight,
+                color: theme.colorScheme.primaryContainer,
                 borderRadius: AppRadius.mdBorder,
               ),
-              child: const Icon(
+              child: Icon(
                 Icons.notifications_active_rounded,
-                color: AppColors.primary,
+                color: theme.colorScheme.primary,
                 size: 20,
               ),
             ),
-            title: const Text(
-              'Notifications',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            title: Text(
+              l10n?.notificationsTitle ?? 'Notifications',
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
             ),
-            subtitle: const Text(
-              'Recevoir des rappels et édifications quotidiennes',
-              style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
+            subtitle: Text(
+              l10n?.notificationsSubtitle ??
+                  'Recevoir des rappels et édifications quotidiennes',
+              style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
             ),
             value: _notificationsEnabled,
             onChanged: (value) async {
@@ -93,6 +189,10 @@ class _ParametresPageState extends State<ParametresPage> {
                 _notificationsEnabled = value;
               });
               await _settingsService.saveNotificationsEnabled(value);
+              if (value) {
+                await NotificationService.instance.requestPermission();
+              }
+              await NotificationService.instance.syncNotificationSchedule();
             },
           ),
         ),
@@ -110,21 +210,21 @@ class _ParametresPageState extends State<ParametresPage> {
             leading: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: AppColors.primaryLight,
+                color: theme.colorScheme.primaryContainer,
                 borderRadius: AppRadius.mdBorder,
               ),
-              child: const Icon(
+              child: Icon(
                 Icons.language_rounded,
-                color: AppColors.primary,
+                color: theme.colorScheme.primary,
                 size: 20,
               ),
             ),
-            title: const Text(
-              'Langue d\'affichage',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            title: Text(
+              l10n?.langueTitle ?? 'Langue d\'affichage',
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
             ),
             subtitle: Text(
-              _selectedLanguage,
+              _getLanguageLabel(_selectedLanguage, l10n),
               style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
             ),
             trailing: const Icon(
@@ -153,20 +253,21 @@ class _ParametresPageState extends State<ParametresPage> {
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: AppColors.primaryLight,
+                      color: theme.colorScheme.primaryContainer,
                       borderRadius: AppRadius.mdBorder,
                     ),
-                    child: const Icon(
+                    child: Icon(
                       Icons.format_size_rounded,
-                      color: AppColors.primary,
+                      color: theme.colorScheme.primary,
                       size: 20,
                     ),
                   ),
                   const SizedBox(width: AppSpacing.md),
-                  const Expanded(
+                  Expanded(
                     child: Text(
-                      'Taille des paroles par défaut',
-                      style: TextStyle(
+                      l10n?.tailleParolesDefault ??
+                          'Taille des paroles par défaut',
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
                         color: AppColors.textPrimary,
@@ -179,15 +280,15 @@ class _ParametresPageState extends State<ParametresPage> {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: AppColors.primaryLight,
+                      color: theme.colorScheme.primaryContainer,
                       borderRadius: AppRadius.smBorder,
                     ),
                     child: Text(
                       '${_fontSize.toInt()} px',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.bold,
-                        color: AppColors.primaryDark,
+                        color: theme.colorScheme.onPrimaryContainer,
                       ),
                     ),
                   ),
@@ -213,8 +314,9 @@ class _ParametresPageState extends State<ParametresPage> {
 
         const SizedBox(height: AppSpacing.xxl),
 
-        const AppSectionHeader(
-          title: 'À propos',
+        // A propos Section Header
+        AppSectionHeader(
+          title: l10n?.aProposTitle ?? 'À propos',
           icon: Icons.info_outline_rounded,
         ),
         const SizedBox(height: AppSpacing.md),
@@ -231,18 +333,18 @@ class _ParametresPageState extends State<ParametresPage> {
                 leading: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: AppColors.primaryLight,
+                    color: theme.colorScheme.primaryContainer,
                     borderRadius: AppRadius.mdBorder,
                   ),
-                  child: const Icon(
+                  child: Icon(
                     Icons.system_update_rounded,
-                    color: AppColors.primary,
+                    color: theme.colorScheme.primary,
                     size: 20,
                   ),
                 ),
-                title: const Text(
-                  'Version de l\'application',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                title: Text(
+                  l10n?.versionApp ?? 'Version de l\'application',
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                 ),
                 subtitle: const Text(
                   '1.0.0 (Build 1)',
@@ -257,18 +359,18 @@ class _ParametresPageState extends State<ParametresPage> {
                 leading: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: AppColors.primaryLight,
+                    color: theme.colorScheme.primaryContainer,
                     borderRadius: AppRadius.mdBorder,
                   ),
-                  child: const Icon(
+                  child: Icon(
                     Icons.contact_mail_rounded,
-                    color: AppColors.primary,
+                    color: theme.colorScheme.primary,
                     size: 20,
                   ),
                 ),
-                title: const Text(
-                  'Contact développeur',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                title: Text(
+                  l10n?.contactDev ?? 'Contact développeur',
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                 ),
                 subtitle: const Text(
                   'sadikiobedi@outlook.fr',
@@ -284,25 +386,95 @@ class _ParametresPageState extends State<ParametresPage> {
     );
   }
 
-  void _showLanguageDialog() {
+  void _showThemeDialog() {
+    final l10n = AppLocalizations.of(context);
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Choisir la langue'),
+        title: Text(l10n?.choisirTheme ?? 'Choisir le thème'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: AppThemeMode.values
+              .map(
+                (mode) => _themeTile(
+                  label: _getThemeLabel(mode, l10n),
+                  mode: mode,
+                ),
+              )
+              .toList(),
+        ),
+      ),
+    );
+  }
+
+  Widget _themeTile({required String label, required AppThemeMode mode}) {
+    final isSelected = _selectedTheme == mode;
+    final theme = Theme.of(context);
+
+    return ListTile(
+      shape: RoundedRectangleBorder(borderRadius: AppRadius.mdBorder),
+      leading: Container(
+        width: 24,
+        height: 24,
+        decoration: BoxDecoration(
+          color: mode.primary,
+          shape: BoxShape.circle,
+          border: Border.all(color: Colors.white, width: 2),
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.black26,
+              blurRadius: 3,
+            ),
+          ],
+        ),
+      ),
+      title: Text(
+        label,
+        style: TextStyle(
+          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+          color: isSelected ? theme.colorScheme.primary : AppColors.textPrimary,
+        ),
+      ),
+      trailing: isSelected
+          ? Icon(Icons.check_circle_rounded, color: theme.colorScheme.primary)
+          : null,
+      onTap: () async {
+        await _saveTheme(mode);
+      },
+    );
+  }
+
+  Future<void> _saveTheme(AppThemeMode mode) async {
+    setState(() {
+      _selectedTheme = mode;
+    });
+    await _settingsService.saveTheme(mode);
+    if (!mounted) return;
+    Navigator.pop(context);
+  }
+
+  void _showLanguageDialog() {
+    final l10n = AppLocalizations.of(context);
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n?.choisirLangue ?? 'Choisir la langue'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             _languageTile(
-              label: 'Français',
-              value: SettingsService.defaultLanguage,
+              label: l10n?.langueFrancais ?? 'Français',
+              value: 'Français',
             ),
             _languageTile(
-              label: 'English',
+              label: l10n?.langueAnglais ?? 'English',
               value: 'English',
             ),
             _languageTile(
-              label: 'Swahili',
-              value: 'Swahili',
+              label: l10n?.langueSysteme ?? 'Langue du système',
+              value: 'system',
             ),
           ],
         ),
@@ -312,6 +484,7 @@ class _ParametresPageState extends State<ParametresPage> {
 
   Widget _languageTile({required String label, required String value}) {
     final isSelected = _selectedLanguage == value;
+    final theme = Theme.of(context);
 
     return ListTile(
       shape: RoundedRectangleBorder(borderRadius: AppRadius.mdBorder),
@@ -319,11 +492,11 @@ class _ParametresPageState extends State<ParametresPage> {
         label,
         style: TextStyle(
           fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-          color: isSelected ? AppColors.primary : AppColors.textPrimary,
+          color: isSelected ? theme.colorScheme.primary : AppColors.textPrimary,
         ),
       ),
       trailing: isSelected
-          ? const Icon(Icons.check_circle_rounded, color: AppColors.primary)
+          ? Icon(Icons.check_circle_rounded, color: theme.colorScheme.primary)
           : null,
       onTap: () async {
         await _saveLanguage(value);

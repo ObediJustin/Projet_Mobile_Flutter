@@ -2,20 +2,23 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 import 'app_radius.dart';
 import 'app_spacing.dart';
+import 'app_theme_mode.dart';
 
 /// AppTheme centralizes all Flutter ThemeData configurations.
 abstract class AppTheme {
-  static ThemeData get lightTheme {
-    const colorScheme = ColorScheme(
+  static ThemeData get lightTheme => buildTheme(AppThemeMode.green);
+
+  static ThemeData buildTheme(AppThemeMode mode) {
+    final colorScheme = ColorScheme(
       brightness: Brightness.light,
-      primary: AppColors.primary,
+      primary: mode.primary,
       onPrimary: AppColors.textOnPrimary,
-      primaryContainer: AppColors.primaryLight,
-      onPrimaryContainer: AppColors.primaryDark,
-      secondary: AppColors.secondary,
+      primaryContainer: mode.primaryLight,
+      onPrimaryContainer: mode.primaryDark,
+      secondary: mode.secondary,
       onSecondary: AppColors.textOnPrimary,
-      secondaryContainer: AppColors.secondaryLight,
-      onSecondaryContainer: AppColors.secondaryDark,
+      secondaryContainer: mode.secondaryLight,
+      onSecondaryContainer: mode.secondaryDark,
       surface: AppColors.surface,
       onSurface: AppColors.textPrimary,
       surfaceContainerHighest: AppColors.surfaceVariant,
@@ -26,7 +29,7 @@ abstract class AppTheme {
       onErrorContainer: AppColors.error,
       outline: AppColors.border,
       outlineVariant: AppColors.borderLight,
-      shadow: Color(0x1A000000),
+      shadow: const Color(0x1A000000),
     );
 
     final textTheme = ThemeData.light().textTheme.copyWith(
@@ -88,15 +91,15 @@ abstract class AppTheme {
       textTheme: textTheme,
 
       // AppBar Theme
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         centerTitle: true,
         elevation: 0,
         scrolledUnderElevation: 0.5,
-        backgroundColor: AppColors.primary,
+        backgroundColor: mode.primary,
         foregroundColor: AppColors.textOnPrimary,
-        iconTheme: IconThemeData(color: AppColors.textOnPrimary),
-        actionsIconTheme: IconThemeData(color: AppColors.textOnPrimary),
-        titleTextStyle: TextStyle(
+        iconTheme: const IconThemeData(color: AppColors.textOnPrimary),
+        actionsIconTheme: const IconThemeData(color: AppColors.textOnPrimary),
+        titleTextStyle: const TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
           color: AppColors.textOnPrimary,
@@ -128,7 +131,7 @@ abstract class AppTheme {
           fontSize: 14,
           fontWeight: FontWeight.normal,
         ),
-        prefixIconColor: AppColors.primary,
+        prefixIconColor: mode.primary,
         suffixIconColor: AppColors.textSecondary,
         border: OutlineInputBorder(
           borderRadius: AppRadius.mdBorder,
@@ -140,7 +143,7 @@ abstract class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: AppRadius.mdBorder,
-          borderSide: const BorderSide(color: AppColors.primary, width: 2),
+          borderSide: BorderSide(color: mode.primary, width: 2),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: AppRadius.mdBorder,
@@ -158,19 +161,19 @@ abstract class AppTheme {
         backgroundColor: AppColors.surface,
         elevation: 8,
         shadowColor: Colors.black.withValues(alpha: 0.08),
-        indicatorColor: AppColors.primaryLight,
+        indicatorColor: mode.primaryLight,
         iconTheme: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            return const IconThemeData(color: AppColors.primary, size: 24);
+            return IconThemeData(color: mode.primary, size: 24);
           }
           return const IconThemeData(color: AppColors.textSecondary, size: 22);
         }),
         labelTextStyle: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            return const TextStyle(
+            return TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.bold,
-              color: AppColors.primary,
+              color: mode.primary,
             );
           }
           return const TextStyle(
@@ -184,7 +187,7 @@ abstract class AppTheme {
       // Button Themes
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
+          backgroundColor: mode.primary,
           foregroundColor: AppColors.textOnPrimary,
           elevation: 0,
           padding: const EdgeInsets.symmetric(
@@ -200,8 +203,8 @@ abstract class AppTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          foregroundColor: AppColors.primary,
-          side: const BorderSide(color: AppColors.primary, width: 1.5),
+          foregroundColor: mode.primary,
+          side: BorderSide(color: mode.primary, width: 1.5),
           padding: const EdgeInsets.symmetric(
             horizontal: AppSpacing.lg,
             vertical: AppSpacing.md,
@@ -215,7 +218,7 @@ abstract class AppTheme {
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          foregroundColor: AppColors.primary,
+          foregroundColor: mode.primary,
           shape: RoundedRectangleBorder(borderRadius: AppRadius.smBorder),
           textStyle: const TextStyle(
             fontSize: 14,
@@ -224,7 +227,7 @@ abstract class AppTheme {
         ),
       ),
       floatingActionButtonTheme: FloatingActionButtonThemeData(
-        backgroundColor: AppColors.primary,
+        backgroundColor: mode.primary,
         foregroundColor: AppColors.textOnPrimary,
         elevation: 4,
         shape: RoundedRectangleBorder(borderRadius: AppRadius.lgBorder),
@@ -232,13 +235,13 @@ abstract class AppTheme {
 
       // Chip Theme
       chipTheme: ChipThemeData(
-        backgroundColor: AppColors.primaryLight,
+        backgroundColor: mode.primaryLight,
         disabledColor: AppColors.surfaceVariant,
-        selectedColor: AppColors.primary,
-        secondarySelectedColor: AppColors.primaryDark,
+        selectedColor: mode.primary,
+        secondarySelectedColor: mode.primaryDark,
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-        labelStyle: const TextStyle(
-          color: AppColors.primaryDark,
+        labelStyle: TextStyle(
+          color: mode.primaryDark,
           fontSize: 13,
           fontWeight: FontWeight.w600,
         ),
@@ -266,7 +269,7 @@ abstract class AppTheme {
 
       // SnackBar Theme
       snackBarTheme: SnackBarThemeData(
-        backgroundColor: AppColors.primaryDark,
+        backgroundColor: mode.primaryDark,
         contentTextStyle: const TextStyle(
           color: AppColors.textOnPrimary,
           fontSize: 14,
@@ -294,7 +297,7 @@ abstract class AppTheme {
         }),
         trackColor: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            return AppColors.primary;
+            return mode.primary;
           }
           return AppColors.border;
         }),
@@ -302,11 +305,11 @@ abstract class AppTheme {
 
       // Slider Theme
       sliderTheme: SliderThemeData(
-        activeTrackColor: AppColors.primary,
-        inactiveTrackColor: AppColors.primaryLight,
-        thumbColor: AppColors.primary,
-        overlayColor: AppColors.primary.withValues(alpha: 0.12),
-        valueIndicatorColor: AppColors.primaryDark,
+        activeTrackColor: mode.primary,
+        inactiveTrackColor: mode.primaryLight,
+        thumbColor: mode.primary,
+        overlayColor: mode.primary.withValues(alpha: 0.12),
+        valueIndicatorColor: mode.primaryDark,
         valueIndicatorTextStyle: const TextStyle(
           color: AppColors.textOnPrimary,
           fontSize: 13,
@@ -315,9 +318,9 @@ abstract class AppTheme {
       ),
 
       // Progress Indicator Theme
-      progressIndicatorTheme: const ProgressIndicatorThemeData(
-        color: AppColors.primary,
-        linearTrackColor: AppColors.primaryLight,
+      progressIndicatorTheme: ProgressIndicatorThemeData(
+        color: mode.primary,
+        linearTrackColor: mode.primaryLight,
       ),
     );
   }

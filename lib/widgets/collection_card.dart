@@ -7,7 +7,7 @@ class CollectionCard extends StatelessWidget {
   final String titre;
   final int nombre;
   final String description;
-  final Color couleur;
+  final Color? couleur;
   final VoidCallback? onTap;
 
   final VoidCallback? onOuvrir;
@@ -19,7 +19,7 @@ class CollectionCard extends StatelessWidget {
     required this.titre,
     required this.nombre,
     required this.description,
-    required this.couleur,
+    this.couleur,
     this.onTap,
     this.onOuvrir,
     this.onChercher,
@@ -28,16 +28,18 @@ class CollectionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeColor = couleur ?? Theme.of(context).colorScheme.primary;
+
     return Container(
       decoration: BoxDecoration(
         color: AppColors.surface,
         borderRadius: AppRadius.xlBorder,
         border: Border.all(color: AppColors.borderLight, width: 1),
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
-            color: Color(0x0C16803A),
+            color: themeColor.withValues(alpha: 0.1),
             blurRadius: 14,
-            offset: Offset(0, 4),
+            offset: const Offset(0, 4),
           ),
         ],
       ),
@@ -57,8 +59,8 @@ class CollectionCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      couleur,
-                      couleur.withValues(alpha: 0.82),
+                      themeColor,
+                      themeColor.withValues(alpha: 0.82),
                     ],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,

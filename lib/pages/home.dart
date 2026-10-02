@@ -3,6 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../l10n/app_localizations.dart';
+
 import '../services/cantique_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
@@ -26,14 +28,6 @@ class _HomeState extends State<Home> {
   final CantiqueService _cantiqueService = CantiqueService.instance;
   final Random _random = Random();
 
-  final List<String> titles = [
-    "Accueil",
-    "Collections",
-    "Favoris",
-    "Mes Chants",
-    "Paramètres",
-  ];
-
   final List<Widget> pages = [
     const AccueilPage(),
     const CollectionPage(),
@@ -42,13 +36,33 @@ class _HomeState extends State<Home> {
     const ParametresPage(),
   ];
 
+  String _getTabTitle(int index, AppLocalizations? l10n) {
+    switch (index) {
+      case 0:
+        return l10n?.navAccueil ?? 'Accueil';
+      case 1:
+        return l10n?.navCollections ?? 'Collections';
+      case 2:
+        return l10n?.navFavoris ?? 'Favoris';
+      case 3:
+        return l10n?.navMesChants ?? 'Mes Chants';
+      case 4:
+        return l10n?.navParametres ?? 'Paramètres';
+      default:
+        return 'Cantiques du Message';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          titles[currentIndex],
+          _getTabTitle(currentIndex, l10n),
           style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         ),
       ),
@@ -58,8 +72,8 @@ class _HomeState extends State<Home> {
           children: [
             DrawerHeader(
               padding: EdgeInsets.zero,
-              decoration: const BoxDecoration(
-                color: AppColors.primaryDark,
+              decoration: BoxDecoration(
+                color: theme.colorScheme.primary,
               ),
               child: Stack(
                 fit: StackFit.expand,
@@ -69,13 +83,13 @@ class _HomeState extends State<Home> {
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           gradient: LinearGradient(
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                             colors: [
-                              AppColors.primaryDark,
-                              AppColors.primary,
+                              theme.colorScheme.primary,
+                              theme.colorScheme.secondary,
                             ],
                           ),
                         ),
@@ -96,41 +110,41 @@ class _HomeState extends State<Home> {
                         end: Alignment.bottomCenter,
                         colors: [
                           Colors.black.withValues(alpha: 0.3),
-                          AppColors.primaryDark.withValues(alpha: 0.85),
+                          theme.colorScheme.primary.withValues(alpha: 0.85),
                         ],
                       ),
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.all(AppSpacing.lg),
+                  Padding(
+                    padding: const EdgeInsets.all(AppSpacing.lg),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CircleAvatar(
                           radius: 26,
-                          backgroundColor: AppColors.primaryLight,
+                          backgroundColor: theme.colorScheme.primaryContainer,
                           child: Icon(
                             Icons.auto_stories_rounded,
-                            color: AppColors.primary,
+                            color: theme.colorScheme.primary,
                             size: 26,
                           ),
                         ),
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
                         Text(
-                          "Cantiques du Message",
-                          style: TextStyle(
+                          l10n?.appTitle ?? "Cantiques du Message",
+                          style: const TextStyle(
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             letterSpacing: -0.2,
                           ),
                         ),
-                        SizedBox(height: 2),
+                        const SizedBox(height: 2),
                         Text(
                           "Recueil spirituel local",
                           style: TextStyle(
-                            color: AppColors.primaryLight,
+                            color: theme.colorScheme.primaryContainer,
                             fontSize: 13,
                             fontWeight: FontWeight.w500,
                           ),
@@ -148,40 +162,40 @@ class _HomeState extends State<Home> {
                   _drawerItem(
                     index: 0,
                     icon: Icons.home_rounded,
-                    label: "Accueil",
+                    label: l10n?.navAccueil ?? "Accueil",
                   ),
                   _drawerItem(
                     index: 1,
                     icon: Icons.library_books_rounded,
-                    label: "Collections",
+                    label: l10n?.navCollections ?? "Collections",
                   ),
                   _drawerItem(
                     index: 2,
                     icon: Icons.favorite_rounded,
-                    label: "Favoris",
+                    label: l10n?.navFavoris ?? "Favoris",
                   ),
                   _drawerItem(
                     index: 3,
                     icon: Icons.queue_music_rounded,
-                    label: "Mes Chants",
+                    label: l10n?.navMesChants ?? "Mes Chants",
                   ),
                   _drawerItem(
                     index: 4,
                     icon: Icons.settings_rounded,
-                    label: "Paramètres",
+                    label: l10n?.navParametres ?? "Paramètres",
                   ),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: AppSpacing.lg),
                     child: Divider(),
                   ),
                   ListTile(
-                    leading: const Icon(
+                    leading: Icon(
                       Icons.shuffle_rounded,
-                      color: AppColors.primary,
+                      color: theme.colorScheme.primary,
                     ),
-                    title: const Text(
-                      "Cantique aléatoire",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                    title: Text(
+                      l10n?.cantiqueDuMomentTitle ?? "Cantique aléatoire",
+                      style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
                       Navigator.pop(context);
@@ -189,13 +203,13 @@ class _HomeState extends State<Home> {
                     },
                   ),
                   ListTile(
-                    leading: const Icon(
+                    leading: Icon(
                       Icons.info_outline_rounded,
-                      color: AppColors.primary,
+                      color: theme.colorScheme.primary,
                     ),
-                    title: const Text(
-                      "À propos",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                    title: Text(
+                      l10n?.aProposTitle ?? "À propos",
+                      style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
                       Navigator.pop(context);
@@ -207,9 +221,9 @@ class _HomeState extends State<Home> {
                     child: Divider(),
                   ),
                   ListTile(
-                    leading: const Icon(
+                    leading: Icon(
                       Icons.volunteer_activism_rounded,
-                      color: AppColors.primary,
+                      color: theme.colorScheme.primary,
                     ),
                     title: const Text(
                       "Soutenir",
@@ -221,9 +235,9 @@ class _HomeState extends State<Home> {
                     },
                   ),
                   ListTile(
-                    leading: const Icon(
+                    leading: Icon(
                       Icons.star_outline_rounded,
-                      color: AppColors.primary,
+                      color: theme.colorScheme.primary,
                     ),
                     title: const Text(
                       "Noter l'application",
@@ -235,9 +249,9 @@ class _HomeState extends State<Home> {
                     },
                   ),
                   ListTile(
-                    leading: const Icon(
+                    leading: Icon(
                       Icons.share_rounded,
-                      color: AppColors.primary,
+                      color: theme.colorScheme.primary,
                     ),
                     title: const Text(
                       "Partager l'application",
@@ -249,9 +263,9 @@ class _HomeState extends State<Home> {
                     },
                   ),
                   ListTile(
-                    leading: const Icon(
+                    leading: Icon(
                       Icons.contact_mail_outlined,
-                      color: AppColors.primary,
+                      color: theme.colorScheme.primary,
                     ),
                     title: const Text(
                       "Nous contacter",
@@ -273,7 +287,11 @@ class _HomeState extends State<Home> {
                 children: [
                   _socialIcon(Icons.facebook, 'Facebook', Colors.blue.shade700),
                   _socialIcon(Icons.telegram, 'Telegram', Colors.lightBlue),
-                  _socialIcon(Icons.email_rounded, 'Email', AppColors.primary),
+                  _socialIcon(
+                    Icons.email_rounded,
+                    'Email',
+                    theme.colorScheme.primary,
+                  ),
                   _socialIcon(
                     Icons.play_circle_fill_rounded,
                     'YouTube',
@@ -291,31 +309,31 @@ class _HomeState extends State<Home> {
         onDestinationSelected: (index) {
           setState(() => currentIndex = index);
         },
-        destinations: const [
+        destinations: [
           NavigationDestination(
-            icon: Icon(Icons.home_outlined),
-            selectedIcon: Icon(Icons.home_rounded),
-            label: "Accueil",
+            icon: const Icon(Icons.home_outlined),
+            selectedIcon: const Icon(Icons.home_rounded),
+            label: l10n?.navAccueil ?? "Accueil",
           ),
           NavigationDestination(
-            icon: Icon(Icons.library_books_outlined),
-            selectedIcon: Icon(Icons.library_books_rounded),
-            label: "Collections",
+            icon: const Icon(Icons.library_books_outlined),
+            selectedIcon: const Icon(Icons.library_books_rounded),
+            label: l10n?.navCollections ?? "Collections",
           ),
           NavigationDestination(
-            icon: Icon(Icons.favorite_outline_rounded),
-            selectedIcon: Icon(Icons.favorite_rounded),
-            label: "Favoris",
+            icon: const Icon(Icons.favorite_outline_rounded),
+            selectedIcon: const Icon(Icons.favorite_rounded),
+            label: l10n?.navFavoris ?? "Favoris",
           ),
           NavigationDestination(
-            icon: Icon(Icons.queue_music_outlined),
-            selectedIcon: Icon(Icons.queue_music_rounded),
-            label: "Mes Chants",
+            icon: const Icon(Icons.queue_music_outlined),
+            selectedIcon: const Icon(Icons.queue_music_rounded),
+            label: l10n?.navMesChants ?? "Mes Chants",
           ),
           NavigationDestination(
-            icon: Icon(Icons.settings_outlined),
-            selectedIcon: Icon(Icons.settings_rounded),
-            label: "Paramètres",
+            icon: const Icon(Icons.settings_outlined),
+            selectedIcon: const Icon(Icons.settings_rounded),
+            label: l10n?.navParametres ?? "Paramètres",
           ),
         ],
       ),
@@ -328,6 +346,7 @@ class _HomeState extends State<Home> {
     required String label,
   }) {
     final isSelected = currentIndex == index;
+    final theme = Theme.of(context);
 
     return Padding(
       padding: const EdgeInsets.symmetric(
@@ -337,16 +356,20 @@ class _HomeState extends State<Home> {
       child: ListTile(
         shape: RoundedRectangleBorder(borderRadius: AppRadius.mdBorder),
         selected: isSelected,
-        selectedTileColor: AppColors.primaryLight,
+        selectedTileColor: theme.colorScheme.primaryContainer,
         leading: Icon(
           icon,
-          color: isSelected ? AppColors.primary : AppColors.textSecondary,
+          color: isSelected
+              ? theme.colorScheme.primary
+              : AppColors.textSecondary,
         ),
         title: Text(
           label,
           style: TextStyle(
             fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-            color: isSelected ? AppColors.primaryDark : AppColors.textPrimary,
+            color: isSelected
+                ? theme.colorScheme.onPrimaryContainer
+                : AppColors.textPrimary,
           ),
         ),
         onTap: () {
@@ -380,6 +403,8 @@ class _HomeState extends State<Home> {
   }
 
   void _showAboutDialog(BuildContext context) {
+    final theme = Theme.of(context);
+
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -390,14 +415,14 @@ class _HomeState extends State<Home> {
             children: [
               Container(
                 padding: const EdgeInsets.all(12),
-                decoration: const BoxDecoration(
-                  color: AppColors.primaryLight,
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.primaryContainer,
                   shape: BoxShape.circle,
                 ),
-                child: const Icon(
+                child: Icon(
                   Icons.auto_stories_rounded,
                   size: 40,
-                  color: AppColors.primary,
+                  color: theme.colorScheme.primary,
                 ),
               ),
               const SizedBox(height: 12),
@@ -430,6 +455,8 @@ class _HomeState extends State<Home> {
   }
 
   void _showContactDialog(BuildContext context) {
+    final theme = Theme.of(context);
+
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -446,9 +473,12 @@ class _HomeState extends State<Home> {
               const SizedBox(height: 12),
               ListTile(
                 contentPadding: EdgeInsets.zero,
-                leading: const CircleAvatar(
-                  backgroundColor: AppColors.primaryLight,
-                  child: Icon(Icons.email_outlined, color: AppColors.primary),
+                leading: CircleAvatar(
+                  backgroundColor: theme.colorScheme.primaryContainer,
+                  child: Icon(
+                    Icons.email_outlined,
+                    color: theme.colorScheme.primary,
+                  ),
                 ),
                 title: const Text("Email"),
                 subtitle: const Text("sadikiobedi@outlook.fr"),
@@ -457,9 +487,12 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 contentPadding: EdgeInsets.zero,
-                leading: const CircleAvatar(
-                  backgroundColor: AppColors.primaryLight,
-                  child: Icon(Icons.phone_outlined, color: AppColors.primary),
+                leading: CircleAvatar(
+                  backgroundColor: theme.colorScheme.primaryContainer,
+                  child: Icon(
+                    Icons.phone_outlined,
+                    color: theme.colorScheme.primary,
+                  ),
                 ),
                 title: const Text("Téléphone"),
                 subtitle: const Text("+243 892 821 544"),

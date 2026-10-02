@@ -8,6 +8,7 @@ import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
+import '../services/recent_cantique_service.dart';
 import '../services/settings_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
@@ -74,6 +75,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   }
 
   Future<_CantiqueDetailData> _loadData() async {
+    await RecentCantiqueService.instance.recordView(widget.cantique.id);
     await _favoriteService.loadFavorites();
     final isFavorite = _favoriteService.isCantiqueFavorite(widget.cantique.id);
     final fontSize = await _settingsService.getLyricsFontSize();
