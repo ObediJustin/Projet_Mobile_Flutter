@@ -5,6 +5,7 @@ import '../services/cantique_service.dart';
 import '../services/favorite_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
+import '../theme/app_assets.dart';
 import '../widgets/app_empty_state.dart';
 import '../widgets/app_search_bar.dart';
 import '../widgets/cantique_card.dart';
@@ -56,7 +57,7 @@ class _CollectionPageState extends State<CollectionPage> {
           Expanded(
             child: _globalResults.isEmpty
                 ? AppEmptyState(
-                    icon: Icons.search_off_rounded,
+                    assetPath: AppAssets.searchEmpty,
                     title: 'Aucun cantique trouvé',
                     message:
                         'Aucun cantique ne correspond à "$_globalQuery".',

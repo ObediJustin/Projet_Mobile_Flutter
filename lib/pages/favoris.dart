@@ -9,6 +9,7 @@ import '../services/favorite_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
+import '../theme/app_assets.dart';
 import '../widgets/app_empty_state.dart';
 import '../widgets/app_section_header.dart';
 import '../widgets/cantique_card.dart';
@@ -61,7 +62,7 @@ class _FavorisPageState extends State<FavorisPage> {
 
     if (_favoriteCantiques.isEmpty && _favoriteChantsPersonnels.isEmpty) {
       return const AppEmptyState(
-        icon: Icons.favorite_border_rounded,
+        assetPath: AppAssets.favoritesEmpty,
         title: 'Aucun favori',
         message:
             'Ajoutez des cantiques ou des chants personnels à vos favoris pour les retrouver facilement ici.',

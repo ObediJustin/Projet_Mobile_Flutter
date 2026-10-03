@@ -9,6 +9,7 @@ import '../services/verse_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
+import '../theme/app_assets.dart';
 import '../widgets/app_empty_state.dart';
 import '../widgets/app_search_bar.dart';
 import '../widgets/app_section_header.dart';
@@ -176,7 +177,7 @@ class _AccueilPageState extends State<AccueilPage> {
           if (isSearching) ...[
             if (filteredSearchResults.isEmpty)
               AppEmptyState(
-                icon: Icons.search_off_rounded,
+                assetPath: AppAssets.searchEmpty,
                 title: l10n?.noCantiqueFound ?? 'Aucun cantique trouvé',
                 message: l10n?.noResultsForQuery ??
                     'Aucun résultat ne correspond à votre recherche.',
@@ -193,7 +194,7 @@ class _AccueilPageState extends State<AccueilPage> {
               )
             else if (_recentCantiques.isEmpty)
               AppEmptyState(
-                icon: Icons.history_rounded,
+                assetPath: AppAssets.recentEmpty,
                 title: l10n?.noRecentCantiques ??
                     'Vos cantiques récents apparaîtront ici',
                 message:
@@ -235,8 +236,9 @@ class _AccueilPageState extends State<AccueilPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    width: 44,
-                    height: 44,
+                    width: 48,
+                    height: 48,
+                    padding: const EdgeInsets.all(6),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: AppColors.surface,
@@ -246,10 +248,10 @@ class _AccueilPageState extends State<AccueilPage> {
                         width: 1,
                       ),
                     ),
-                    child: Icon(
-                      Icons.auto_stories_rounded,
-                      color: theme.colorScheme.primary,
-                      size: 22,
+                    child: AppAssets.svg(
+                      AppAssets.verseOfDay,
+                      width: 32,
+                      height: 32,
                     ),
                   ),
                   const SizedBox(width: AppSpacing.md),

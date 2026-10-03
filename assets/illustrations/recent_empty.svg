@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Dotted Book Outline -->
+  <rect x="64" y="60" width="112" height="130" rx="12" fill="#FFFFFF" stroke="#16803A" stroke-width="5" stroke-dasharray="7 5"/>
+
+  <!-- Empty History Arc -->
+  <path d="M 120 70 C 148 70 170 92 170 120 C 170 148 148 170 120 170" fill="none" stroke="#2D9C52" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 4"/>
+  
+  <!-- Clock hands at 12:00 neutral -->
+  <circle cx="120" cy="120" r="24" fill="#FFFFFF" stroke="#16803A" stroke-width="5"/>
+  <path d="M 120 106 L 120 120 L 130 120" stroke="#2D9C52" stroke-width="4" stroke-linecap="round"/>
+</svg>

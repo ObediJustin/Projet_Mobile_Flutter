@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Gear Wheel -->
+  <g fill="#FFFFFF" stroke="#16803A" stroke-width="6" stroke-linejoin="round">
+    <!-- Gear Teeth Outer Path -->
+    <path d="M 108 34 L 132 34 L 136 50 C 143 53 150 57 156 62 L 171 54 L 188 71 L 180 86 C 185 92 189 99 192 106 L 208 110 L 208 134 L 192 138 C 189 145 185 152 180 158 L 188 173 L 171 190 L 156 182 C 150 187 143 191 136 194 L 132 210 L 108 210 L 104 194 C 97 191 90 187 84 182 L 69 190 L 52 173 L 60 158 C 55 152 51 145 48 138 L 32 134 L 32 110 L 48 106 C 51 99 55 92 60 86 L 52 71 L 69 54 L 84 62 C 90 57 97 53 104 50 Z" />
+  </g>
+
+  <!-- Central Circle Cutout -->
+  <circle cx="120" cy="122" r="38" fill="#EAF7EE" stroke="#16803A" stroke-width="6"/>
+
+  <!-- Musical Treble Clef Emblem inside Gear Center -->
+  <path d="M 122 96 C 122 96 112 106 112 116 C 112 126 128 126 128 118 C 128 110 116 102 122 90 C 124 86 128 85 128 92 L 122 144 C 120 148 114 150 114 146" 
+        fill="none" stroke="#2D9C52" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="114" cy="145" r="3" fill="#2D9C52"/>
+</svg>

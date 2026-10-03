@@ -7,6 +7,7 @@ import '../services/chant_personnel_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
+import '../theme/app_assets.dart';
 import '../widgets/app_empty_state.dart';
 import '../widgets/app_search_bar.dart';
 import '../widgets/app_section_header.dart';
@@ -265,7 +266,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
 
     if (items.isEmpty) {
       return AppEmptyState(
-        icon: Icons.music_off_rounded,
+        assetPath: _searchQuery.isNotEmpty ? AppAssets.searchEmpty : AppAssets.personalSongs,
         title: 'Aucun chant personnel',
         message: _searchQuery.isNotEmpty
             ? 'Aucun chant ne correspond à "$_searchQuery".'

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none">
+  <defs>
+    <linearGradient id="markGrad" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16803A" />
+      <stop offset="100%" stop-color="#0B5D2A" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D9C52" />
+      <stop offset="100%" stop-color="#16803A" />
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#16803A" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Soft Aura -->
+  <circle cx="100" cy="100" r="88" fill="#EAF7EE" opacity="0.6"/>
+
+  <g filter="url(#softGlow)">
+    <!-- Left Page of Open Book -->
+    <path d="M 38 135 C 38 135 60 122 92 125 L 92 65 C 60 62 38 75 38 75 Z" 
+          fill="none" stroke="url(#markGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Right Page of Open Book -->
+    <path d="M 162 135 C 162 135 140 122 108 125 L 108 65 C 140 62 162 75 162 75 Z" 
+          fill="none" stroke="url(#markGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Book Spine Curve -->
+    <path d="M 92 125 C 97 128 103 128 108 125 L 108 142 C 103 145 97 145 92 142 Z" 
+          fill="url(#markGrad)" />
+
+    <!-- Central Musical Note rising from pages -->
+    <!-- Stem & Flag -->
+    <path d="M 100 125 L 100 52 C 100 52 118 42 138 52 C 124 58 114 62 114 74 L 114 98" 
+          fill="none" stroke="url(#accentGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Note Head -->
+    <ellipse cx="88" cy="102" rx="14" ry="10" transform="rotate(-20 88 102)" fill="url(#accentGrad)" />
+
+    <!-- Light Rays / Divine Sparkle above -->
+    <path d="M 100 24 L 100 32" stroke="#2D9C52" stroke-width="4" stroke-linecap="round" />
+    <path d="M 76 32 L 82 38" stroke="#2D9C52" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M 124 32 L 118 38" stroke="#2D9C52" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+</svg>

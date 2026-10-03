@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Musical Bell Body -->
+  <path d="M 120 54 C 92 54 75 75 75 115 L 65 145 C 65 145 60 155 80 155 L 160 155 C 180 155 175 145 175 145 L 165 115 C 165 75 148 54 120 54 Z" 
+        fill="#FFFFFF" stroke="#16803A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        
+  <!-- Bell Clapper -->
+  <path d="M 104 155 C 104 165 110 174 120 174 C 130 174 136 165 136 155 Z" fill="#2D9C52"/>
+
+  <!-- Top Ring -->
+  <circle cx="120" cy="46" r="10" stroke="#16803A" stroke-width="5" fill="#FFFFFF"/>
+
+  <!-- Emitting Musical Waves (Right) -->
+  <path d="M 185 85 C 196 95 202 110 202 125 C 202 140 196 155 185 165" stroke="#2D9C52" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 172 100 C 178 108 182 116 182 125 C 182 134 178 142 172 150" stroke="#2D9C52" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Musical Note floating above -->
+  <ellipse cx="62" cy="85" rx="7" ry="5" transform="rotate(-20 62 85)" fill="#2D9C52"/>
+  <path d="M 67 83 L 67 66 C 67 66 75 62 82 66" stroke="#2D9C52" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+</svg>

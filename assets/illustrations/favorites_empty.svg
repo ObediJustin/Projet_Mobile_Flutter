@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Dotted Outer Heart -->
+  <path d="M 120 178 C 120 178 55 142 55 100 C 55 78 72 62 94 62 C 108 62 116 70 120 74 C 124 70 132 62 146 62 C 168 62 185 78 185 100 C 185 142 120 178 120 178 Z" 
+        fill="none" stroke="#16803A" stroke-width="5" stroke-dasharray="8 6" stroke-linecap="round"/>
+
+  <!-- Inner Gentle Hymnbook with musical note -->
+  <rect x="90" y="90" width="60" height="74" rx="8" fill="#FFFFFF" stroke="#2D9C52" stroke-width="5"/>
+  <rect x="90" y="90" width="12" height="74" rx="2" fill="#EAF7EE" stroke="#2D9C52" stroke-width="5"/>
+
+  <!-- Plus symbol invitation -->
+  <circle cx="124" cy="127" r="16" fill="#EAF7EE"/>
+  <path d="M 124 119 L 124 135 M 116 127 L 132 127" stroke="#16803A" stroke-width="4" stroke-linecap="round"/>
+</svg>

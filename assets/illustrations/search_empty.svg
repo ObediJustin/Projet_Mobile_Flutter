@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Open Book (Empty Pages) -->
+  <path d="M 40 160 C 40 160 70 148 116 152 C 162 148 192 160 192 160 L 192 92 C 162 78 116 92 116 92 C 116 92 70 78 40 92 Z" 
+        fill="#FFFFFF" stroke="#16803A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 116 92 L 116 152" stroke="#16803A" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Faint Dotted Lines on pages -->
+  <line x1="56" y1="110" x2="96" y2="105" stroke="#C5E8CF" stroke-width="4" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <line x1="56" y1="128" x2="96" y2="123" stroke="#C5E8CF" stroke-width="4" stroke-dasharray="4 4" stroke-linecap="round"/>
+
+  <!-- Magnifying Glass inspecting empty space -->
+  <circle cx="145" cy="115" r="32" fill="#FFFFFF" stroke="#16803A" stroke-width="6"/>
+  <path d="M 168 138 L 196 166" stroke="#16803A" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Little Question Sparkle inside lens -->
+  <path d="M 140 110 C 140 104 144 100 150 100 C 154 100 158 103 158 107 C 158 112 148 114 148 119" stroke="#2D9C52" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <circle cx="148" cy="126" r="2.5" fill="#2D9C52"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Library Shelf Line -->
+  <line x1="30" y1="185" x2="210" y2="185" stroke="#16803A" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Book 1 (Leaning left) -->
+  <g transform="translate(42, 70) rotate(-10 20 55)">
+    <rect x="0" y="0" width="42" height="110" rx="6" fill="#FFFFFF" stroke="#16803A" stroke-width="5"/>
+    <rect x="0" y="0" width="10" height="110" fill="#2D9C52"/>
+    <!-- Note mark -->
+    <circle cx="24" cy="55" r="7" fill="#16803A"/>
+  </g>
+
+  <!-- Book 2 (Center, tall) -->
+  <g transform="translate(90, 55)">
+    <rect x="0" y="0" width="46" height="126" rx="6" fill="#FFFFFF" stroke="#16803A" stroke-width="5"/>
+    <rect x="0" y="0" width="12" height="126" fill="#16803A"/>
+    <!-- Gold/Emerald Star emblem -->
+    <path d="M 26 50 L 28 58 L 36 58 L 30 62 L 32 70 L 26 65 L 20 70 L 22 62 L 16 58 L 24 58 Z" fill="#2D9C52"/>
+  </g>
+
+  <!-- Book 3 (Right, medium) -->
+  <g transform="translate(142, 75)">
+    <rect x="0" y="0" width="44" height="106" rx="6" fill="#FFFFFF" stroke="#16803A" stroke-width="5"/>
+    <rect x="0" y="0" width="10" height="106" fill="#2D9C52"/>
+    <!-- Lines on spine -->
+    <line x1="16" y1="30" x2="36" y2="30" stroke="#16803A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="16" y1="45" x2="36" y2="45" stroke="#16803A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -9,6 +9,7 @@ import '../services/cantique_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
+import '../theme/app_assets.dart';
 import 'accueil.dart';
 import 'cantique_detail.dart';
 import 'collections.dart';
@@ -122,12 +123,15 @@ class _HomeState extends State<Home> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CircleAvatar(
-                          radius: 26,
-                          backgroundColor: theme.colorScheme.primaryContainer,
-                          child: Icon(
-                            Icons.auto_stories_rounded,
-                            color: theme.colorScheme.primary,
-                            size: 26,
+                          radius: 28,
+                          backgroundColor: Colors.white,
+                          child: Padding(
+                            padding: const EdgeInsets.all(6.0),
+                            child: AppAssets.svg(
+                              AppAssets.logoMark,
+                              width: 38,
+                              height: 38,
+                            ),
                           ),
                         ),
                         const SizedBox(height: 10),

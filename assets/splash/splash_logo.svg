@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" fill="none">
+  <!-- Mark (Top Center) -->
+  <g transform="translate(70, 20) scale(0.95)">
+    <!-- Soft glowing backdrop circle -->
+    <circle cx="100" cy="100" r="84" fill="#FFFFFF" opacity="0.12"/>
+    
+    <!-- Book Left Page -->
+    <path d="M 38 135 C 38 135 60 122 92 125 L 92 65 C 60 62 38 75 38 75 Z" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Book Right Page -->
+    <path d="M 162 135 C 162 135 140 122 108 125 L 108 65 C 140 62 162 75 162 75 Z" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Spine -->
+    <path d="M 92 125 C 97 128 103 128 108 125 L 108 142 C 103 145 97 145 92 142 Z" fill="#FFFFFF" />
+    
+    <!-- Music Note Stem -->
+    <path d="M 100 125 L 100 52 C 100 52 118 42 138 52 C 124 58 114 62 114 74 L 114 98" fill="none" stroke="#68D391" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Note Head -->
+    <ellipse cx="88" cy="102" rx="14" ry="10" transform="rotate(-20 88 102)" fill="#68D391" />
+    
+    <!-- Light rays -->
+    <path d="M 100 24 L 100 32" stroke="#68D391" stroke-width="4" stroke-linecap="round" />
+    <path d="M 76 32 L 82 38" stroke="#68D391" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M 124 32 L 118 38" stroke="#68D391" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography -->
+  <text x="160" y="240" text-anchor="middle" font-family="Roboto, 'Segoe UI', sans-serif" font-weight="700" font-size="22" fill="#FFFFFF" letter-spacing="1">CANTIQUES DU MESSAGE</text>
+  <text x="160" y="268" text-anchor="middle" font-family="Roboto, 'Segoe UI', sans-serif" font-weight="400" font-size="13" fill="#E2E8F0" letter-spacing="2">RECUEIL DE CHANTS &amp; HYMNES</text>
+</svg>

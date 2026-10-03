@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Personal Spiral Journal -->
+  <rect x="64" y="50" width="124" height="148" rx="10" fill="#FFFFFF" stroke="#16803A" stroke-width="6"/>
+
+  <!-- Spiral Binder Rings (Left) -->
+  <g fill="#16803A">
+    <rect x="54" y="65" width="20" height="6" rx="3"/>
+    <rect x="54" y="90" width="20" height="6" rx="3"/>
+    <rect x="54" y="115" width="20" height="6" rx="3"/>
+    <rect x="54" y="140" width="20" height="6" rx="3"/>
+    <rect x="54" y="165" width="20" height="6" rx="3"/>
+  </g>
+
+  <!-- Sheet Lines -->
+  <line x1="90" y1="80" x2="166" y2="80" stroke="#A3D9B1" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="104" x2="166" y2="104" stroke="#A3D9B1" stroke-width="4" stroke-linecap="round"/>
+  <line x1="90" y1="128" x2="140" y2="128" stroke="#A3D9B1" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Pen / Stylus & Musical Note -->
+  <path d="M 145 168 L 178 128 L 190 140 L 157 180 Z" fill="#2D9C52" stroke="#16803A" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M 145 168 L 140 185 L 157 180 Z" fill="#16803A"/>
+
+  <!-- Floating Note -->
+  <ellipse cx="112" cy="155" rx="8" ry="6" transform="rotate(-20 112 155)" fill="#2D9C52"/>
+  <path d="M 118 152 L 118 135 C 118 135 128 130 135 134" stroke="#2D9C52" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

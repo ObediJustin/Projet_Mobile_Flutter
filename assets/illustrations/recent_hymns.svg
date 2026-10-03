@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  <!-- Background Halo -->
+  <circle cx="120" cy="120" r="95" fill="#EAF7EE" opacity="0.6"/>
+
+  <!-- Hymnbook Cover -->
+  <rect x="52" y="60" width="116" height="135" rx="12" fill="#FFFFFF" stroke="#16803A" stroke-width="6"/>
+  <!-- Spine Shadow -->
+  <rect x="52" y="60" width="20" height="135" rx="4" fill="#EAF7EE" stroke="#16803A" stroke-width="6"/>
+
+  <!-- Musical Note Emblem on Cover -->
+  <ellipse cx="108" cy="120" rx="12" ry="9" transform="rotate(-20 108 120)" fill="#2D9C52"/>
+  <path d="M 118 116 L 118 90 C 118 90 130 84 142 90 L 142 108" stroke="#2D9C52" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- History Clock Overlay (Bottom Right) -->
+  <circle cx="160" cy="155" r="32" fill="#FFFFFF" stroke="#16803A" stroke-width="6"/>
+  <!-- Clock Hands -->
+  <path d="M 160 137 L 160 155 L 174 155" stroke="#2D9C52" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- History Arc arrow -->
+  <path d="M 134 145 C 138 132 150 126 164 126 C 178 126 190 136 190 152" fill="none" stroke="#2D9C52" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 3"/>
+</svg>
