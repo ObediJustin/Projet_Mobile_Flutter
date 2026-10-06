@@ -12,7 +12,7 @@ import 'initial_data_loader.dart';
 
 class AppDatabase {
   static const String databaseName = 'cantiques_du_message.db';
-  static const int schemaVersion = 1;
+  static const int schemaVersion = 2;
   static const String favoritesMigrationKey = 'favorites_sqlite_migrated_v1';
   static const String chantsMigrationKey =
       'chants_personnels_sqlite_migrated_v1';
@@ -74,6 +74,7 @@ class AppDatabase {
         await _createSchema(db);
       },
       onOpen: (db) async {
+        await _ensureRecentlyViewedTable(db);
         await _seedInitialData(db);
         await _migrateFavoritesFromSharedPreferences(db);
         await _migrateChantsPersonnelsFromSharedPreferences(db);
@@ -237,12 +238,28 @@ class AppDatabase {
       'CREATE INDEX idx_favorites_item_id ON favorites(item_id)',
     );
     await db.execute(
-      'CREATE INDEX idx_recently_viewed_last_viewed_at ON recently_viewed_cantiques(last_viewed_at DESC)',
+      'CREATE INDEX IF NOT EXISTS idx_recently_viewed_last_viewed_at ON recently_viewed_cantiques(last_viewed_at DESC)',
+    );
+  }
+
+  Future<void> _ensureRecentlyViewedTable(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS recently_viewed_cantiques (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        cantique_id TEXT NOT NULL UNIQUE,
+        last_viewed_at TEXT NOT NULL
+      )
+    ''');
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_recently_viewed_last_viewed_at ON recently_viewed_cantiques(last_viewed_at DESC)',
     );
   }
 
   Future<void> _migrateToVersion(Database db, int version) async {
     switch (version) {
+      case 2:
+        await _ensureRecentlyViewedTable(db);
+        break;
       default:
         throw UnsupportedError('Migration SQLite inconnue: v$version');
     }

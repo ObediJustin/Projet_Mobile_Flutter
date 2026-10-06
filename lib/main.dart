@@ -5,6 +5,7 @@ import 'database/app_database.dart';
 import 'l10n/app_localizations.dart';
 import 'pages/cantique_detail.dart';
 import 'pages/home.dart';
+import 'pages/splash_page.dart';
 import 'services/cantique_service.dart';
 import 'services/notification_service.dart';
 import 'services/settings_service.dart';
@@ -80,7 +81,7 @@ class _MyAppState extends State<MyApp> {
                 AppLocalizations.delegate,
               ],
               supportedLocales: AppLocalizations.supportedLocales,
-              home: const Home(),
+              home: const SplashPage(),
             );
           },
         );
