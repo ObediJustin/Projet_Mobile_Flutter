@@ -66,7 +66,7 @@ void main() {
     });
 
     test(
-      'allows same numero in two collections and rejects it in one collection',
+      'allows same numero in two collections and allows variant cantiques in one collection',
       () async {
         final db = AppDatabase.instance;
         final now = DateTime(2026);
@@ -109,27 +109,24 @@ void main() {
           ),
         );
 
+        await db.insertCantique(
+          Cantique(
+            id: 'collection_a_001b',
+            titre: 'Chant A Variante',
+            collectionId: 'collection_a',
+            collection: 'Collection A',
+            contenu: 'Paroles A Variante',
+            numero: 1,
+          ),
+        );
+
         expect(
           await db.getCantiques(collectionId: 'collection_a'),
-          hasLength(1),
+          hasLength(2),
         );
         expect(
           await db.getCantiques(collectionId: 'collection_b'),
           hasLength(1),
-        );
-
-        expect(
-          () => db.insertCantique(
-            Cantique(
-              id: 'collection_a_duplicate_001',
-              titre: 'Doublon',
-              collectionId: 'collection_a',
-              collection: 'Collection A',
-              contenu: 'Paroles doublon',
-              numero: 1,
-            ),
-          ),
-          throwsA(isA<DatabaseException>()),
         );
       },
     );
@@ -381,9 +378,99 @@ void main() {
     );
 
     test(
-      'Cas 5 & 6: Multiple synchronisations n impressionnent pas les contraintes d unicités',
+      'Prompt 3 - Test 1 & 2: Même numéro 1 et 116 dans deux collections différentes sans conflit',
       () async {
-        // Exécuter 3 fois d'affilée la synchronisation
+        final hosanna1 = await AppDatabase.instance.getCantiqueById(
+          'hosanna_001',
+        );
+        final crois1 = await AppDatabase.instance.getCantiqueById(
+          'crois_seulement_001',
+        );
+
+        expect(hosanna1?.numero, 1);
+        expect(crois1?.numero, 1);
+        expect(hosanna1?.id, isNot(crois1?.id));
+      },
+    );
+
+    test(
+      'Prompt 3 - Test 3 & 7: Coexistence de 116a et 116b dans la même collection sans écrasement silencieux',
+      () async {
+        final cantique116a = await AppDatabase.instance.getCantiqueById(
+          'petit_troupeau_116a',
+        );
+        final cantique116b = await AppDatabase.instance.getCantiqueById(
+          'petit_troupeau_116b',
+        );
+
+        expect(cantique116a, isNotNull);
+        expect(cantique116b, isNotNull);
+        expect(cantique116a?.numero, 116);
+        expect(cantique116b?.numero, 116);
+        expect(cantique116a?.titre, 'CHANTONS DU SAUVEUR LA TENDRESSE');
+        expect(cantique116b?.titre, 'BENISSONS DIEU PAR NOS CANTIQUES');
+      },
+    );
+
+    test(
+      'Prompt 3 - Test 4 & 5 & 9: Correction de titre ou de paroles conserve l ID et préserve les favoris',
+      () async {
+        final tempDir = await Directory.systemTemp.createTemp(
+          'cantiques_db_id_stability',
+        );
+        final dbPath = p.join(tempDir.path, 'stability_test.db');
+
+        try {
+          await AppDatabase.instance.useDatabasePathForTesting(dbPath);
+          await AppDatabase.instance.initialize();
+
+          // 1. Ajouter 'crois_seulement_001' aux favoris
+          final favoriteService = FavoriteService();
+          await favoriteService.loadFavorites();
+          await favoriteService.toggleCantiqueFavorite('crois_seulement_001');
+          expect(
+            favoriteService.isCantiqueFavorite('crois_seulement_001'),
+            isTrue,
+          );
+
+          // 2. Modifier le titre et paroles dans la DB pour simuler une correction
+          final db = await AppDatabase.instance.database;
+          await db.update(
+            'cantiques',
+            {
+              'titre': 'Nouveau Titre Corrige',
+              'paroles': 'Nouvelles Paroles Corrigees',
+            },
+            where: 'id = ?',
+            whereArgs: ['crois_seulement_001'],
+          );
+
+          // 3. Vérifier que l'ID est identique et que le favori pointe toujours vers ce cantique
+          final reloadedCantique = await AppDatabase.instance.getCantiqueById(
+            'crois_seulement_001',
+          );
+          expect(reloadedCantique?.id, 'crois_seulement_001');
+          expect(reloadedCantique?.titre, 'Nouveau Titre Corrige');
+          expect(reloadedCantique?.contenu, 'Nouvelles Paroles Corrigees');
+
+          final reloadedFavorites = FavoriteService();
+          await reloadedFavorites.loadFavorites();
+          expect(
+            reloadedFavorites.isCantiqueFavorite('crois_seulement_001'),
+            isTrue,
+          );
+        } finally {
+          await AppDatabase.instance.close();
+          if (await tempDir.exists()) {
+            await tempDir.delete(recursive: true);
+          }
+        }
+      },
+    );
+
+    test(
+      'Prompt 3 - Test 6 & 8: Multiples synchronisations idempotentes sans doublons d IDs',
+      () async {
         await AppDatabase.instance.syncOfficialData();
         await AppDatabase.instance.syncOfficialData();
         await AppDatabase.instance.syncOfficialData();
@@ -391,14 +478,7 @@ void main() {
         final cantiques = await AppDatabase.instance.getCantiques();
         final ids = cantiques.map((c) => c.id).toList();
 
-        // Pas de doublons d'IDs
         expect(ids.length, equals(ids.toSet().length));
-
-        // Pas de conflit sur (collection_id, numero)
-        final pairs = cantiques
-            .map((c) => '${c.collectionId}_${c.numero}')
-            .toList();
-        expect(pairs.length, equals(pairs.toSet().length));
       },
     );
   });

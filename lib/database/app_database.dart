@@ -12,7 +12,7 @@ import 'initial_data_loader.dart';
 
 class AppDatabase {
   static const String databaseName = 'cantiques_du_message.db';
-  static const int schemaVersion = 2;
+  static const int schemaVersion = 3;
   static const String favoritesMigrationKey = 'favorites_sqlite_migrated_v1';
   static const String chantsMigrationKey =
       'chants_personnels_sqlite_migrated_v1';
@@ -197,8 +197,7 @@ class AppDatabase {
         updated_at TEXT NOT NULL,
         FOREIGN KEY (collection_id) REFERENCES collections(id)
           ON UPDATE CASCADE
-          ON DELETE RESTRICT,
-        UNIQUE(collection_id, numero)
+          ON DELETE RESTRICT
       )
     ''');
 
@@ -265,9 +264,44 @@ class AppDatabase {
       case 2:
         await _ensureRecentlyViewedTable(db);
         break;
+      case 3:
+        await _removeCantiquesUniqueConstraint(db);
+        break;
       default:
         throw UnsupportedError('Migration SQLite inconnue: v$version');
     }
+  }
+
+  Future<void> _removeCantiquesUniqueConstraint(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS cantiques_v3 (
+        id TEXT PRIMARY KEY,
+        collection_id TEXT NOT NULL,
+        numero INTEGER NOT NULL,
+        titre TEXT NOT NULL,
+        auteur TEXT,
+        paroles TEXT NOT NULL,
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL,
+        FOREIGN KEY (collection_id) REFERENCES collections(id)
+          ON UPDATE CASCADE
+          ON DELETE RESTRICT
+      )
+    ''');
+    await db.execute(
+      'INSERT OR IGNORE INTO cantiques_v3 SELECT * FROM cantiques',
+    );
+    await db.execute('DROP TABLE cantiques');
+    await db.execute('ALTER TABLE cantiques_v3 RENAME TO cantiques');
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cantiques_collection_id ON cantiques(collection_id)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cantiques_numero ON cantiques(numero)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_cantiques_titre ON cantiques(titre)',
+    );
   }
 
   Future<void> syncOfficialData() async {
@@ -327,12 +361,6 @@ class AppDatabase {
           ON CONFLICT(id) DO UPDATE SET
             collection_id = excluded.collection_id,
             numero = excluded.numero,
-            titre = excluded.titre,
-            auteur = excluded.auteur,
-            paroles = excluded.paroles,
-            updated_at = excluded.updated_at
-          ON CONFLICT(collection_id, numero) DO UPDATE SET
-            id = excluded.id,
             titre = excluded.titre,
             auteur = excluded.auteur,
             paroles = excluded.paroles,
