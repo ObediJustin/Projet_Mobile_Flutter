@@ -19,7 +19,8 @@ abstract class AppAssets {
   static const String personalSongs = 'assets/illustrations/personal_songs.svg';
   static const String collections = 'assets/illustrations/collections.svg';
   static const String searchEmpty = 'assets/illustrations/search_empty.svg';
-  static const String favoritesEmpty = 'assets/illustrations/favorites_empty.svg';
+  static const String favoritesEmpty =
+      'assets/illustrations/favorites_empty.svg';
   static const String recentEmpty = 'assets/illustrations/recent_empty.svg';
   static const String notifications = 'assets/illustrations/notifications.svg';
   static const String settings = 'assets/illustrations/settings.svg';

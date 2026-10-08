@@ -16,7 +16,9 @@ void main() {
     setUp(() async {
       sqfliteFfiInit();
       SharedPreferences.setMockInitialValues({});
-      await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
+      await AppDatabase.instance.useDatabasePathForTesting(
+        inMemoryDatabasePath,
+      );
       await AppDatabase.instance.initialize();
       await CantiqueService.instance.loadCacheFromDatabase();
       service = FavoriteService();
@@ -61,34 +63,38 @@ void main() {
       expect(service.getFavoriteChantPersonnelIds(), isEmpty);
     });
 
-    test('raw ids do not collide between cantiques and personal chants',
-        () async {
-      await service.loadFavorites();
-      await service.toggleCantiqueFavorite('001');
-      await service.toggleChantPersonnelFavorite('001');
+    test(
+      'raw ids do not collide between cantiques and personal chants',
+      () async {
+        await service.loadFavorites();
+        await service.toggleCantiqueFavorite('001');
+        await service.toggleChantPersonnelFavorite('001');
 
-      expect(service.isCantiqueFavorite('001'), isTrue);
-      expect(service.isChantPersonnelFavorite('001'), isTrue);
-      expect(service.getFavoriteCantiqueIds(), ['001']);
-      expect(service.getFavoriteChantPersonnelIds(), ['001']);
-    });
+        expect(service.isCantiqueFavorite('001'), isTrue);
+        expect(service.isChantPersonnelFavorite('001'), isTrue);
+        expect(service.getFavoriteCantiqueIds(), ['001']);
+        expect(service.getFavoriteChantPersonnelIds(), ['001']);
+      },
+    );
 
-    test('two cantiques with numero 1 can be favorites simultaneously',
-        () async {
-      final cantiqueService = CantiqueService.instance;
-      await service.loadFavorites();
-      await service.toggleCantiqueFavorite('hosanna_001');
-      await service.toggleCantiqueFavorite('boanerges_tabernacle_001');
+    test(
+      'two cantiques with numero 1 can be favorites simultaneously',
+      () async {
+        final cantiqueService = CantiqueService.instance;
+        await service.loadFavorites();
+        await service.toggleCantiqueFavorite('hosanna_001');
+        await service.toggleCantiqueFavorite('boanerges_tabernacle_001');
 
-      final favorites = service.getFavoriteCantiques(cantiqueService);
+        final favorites = service.getFavoriteCantiques(cantiqueService);
 
-      expect(favorites.map((c) => c.id), contains('hosanna_001'));
-      expect(
-        favorites.map((c) => c.id),
-        contains('boanerges_tabernacle_001'),
-      );
-      expect(favorites.where((c) => c.numero == 1), hasLength(2));
-    });
+        expect(favorites.map((c) => c.id), contains('hosanna_001'));
+        expect(
+          favorites.map((c) => c.id),
+          contains('boanerges_tabernacle_001'),
+        );
+        expect(favorites.where((c) => c.numero == 1), hasLength(2));
+      },
+    );
 
     test('favorites are persistent', () async {
       await service.loadFavorites();
@@ -124,7 +130,9 @@ void main() {
       SharedPreferences.setMockInitialValues({
         FavoriteService.favoritesKey: jsonEncode(['3']),
       });
-      await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
+      await AppDatabase.instance.useDatabasePathForTesting(
+        inMemoryDatabasePath,
+      );
       await AppDatabase.instance.initialize();
       await CantiqueService.instance.loadCacheFromDatabase();
 
@@ -134,21 +142,25 @@ void main() {
       expect(service.getFavoriteCantiqueIds(), ['hosanna_001']);
     });
 
-    test('legacy raw personal chant ids are migrated to typed references',
-        () async {
-      await AppDatabase.instance.close();
-      SharedPreferences.setMockInitialValues({
-        FavoriteService.favoritesKey: jsonEncode(['personal_001']),
-      });
-      await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
-      await AppDatabase.instance.initialize();
-      await CantiqueService.instance.loadCacheFromDatabase();
+    test(
+      'legacy raw personal chant ids are migrated to typed references',
+      () async {
+        await AppDatabase.instance.close();
+        SharedPreferences.setMockInitialValues({
+          FavoriteService.favoritesKey: jsonEncode(['personal_001']),
+        });
+        await AppDatabase.instance.useDatabasePathForTesting(
+          inMemoryDatabasePath,
+        );
+        await AppDatabase.instance.initialize();
+        await CantiqueService.instance.loadCacheFromDatabase();
 
-      await service.loadFavorites();
+        await service.loadFavorites();
 
-      expect(service.isChantPersonnelFavorite('personal_001'), isTrue);
-      expect(service.getFavoriteChantPersonnelIds(), ['personal_001']);
-    });
+        expect(service.isChantPersonnelFavorite('personal_001'), isTrue);
+        expect(service.getFavoriteChantPersonnelIds(), ['personal_001']);
+      },
+    );
 
     test('personal favorite objects can be resolved', () async {
       final chant = ChantPersonnel(
@@ -163,7 +175,9 @@ void main() {
         FavoriteService.favoritesKey: jsonEncode(['personnel:personal_001']),
         'chants_personnels': jsonEncode([chant.toJson()]),
       });
-      await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
+      await AppDatabase.instance.useDatabasePathForTesting(
+        inMemoryDatabasePath,
+      );
       await AppDatabase.instance.initialize();
       await CantiqueService.instance.loadCacheFromDatabase();
 

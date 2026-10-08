@@ -32,18 +32,20 @@ class InitialDataLoader {
 
     final raw = await _readAsset(_cantiquesPath);
     final decoded = jsonDecode(raw) as List<dynamic>;
-    final cantiques = decoded.map((row) {
-      final map = _asMap(row);
-      return Cantique(
-        id: map['id'] as String,
-        titre: map['titre'] as String,
-        collectionId: map['collection_id'] as String,
-        collection: map['collection'] as String,
-        contenu: map['contenu'] as String,
-        numero: (map['numero'] as num).toInt(),
-        auteur: map['auteur'] as String?,
-      );
-    }).toList(growable: false);
+    final cantiques = decoded
+        .map((row) {
+          final map = _asMap(row);
+          return Cantique(
+            id: map['id'] as String,
+            titre: map['titre'] as String,
+            collectionId: map['collection_id'] as String,
+            collection: map['collection'] as String,
+            contenu: map['contenu'] as String,
+            numero: (map['numero'] as num).toInt(),
+            auteur: map['auteur'] as String?,
+          );
+        })
+        .toList(growable: false);
     _cachedCantiques = cantiques;
     return cantiques;
   }

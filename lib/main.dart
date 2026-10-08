@@ -4,7 +4,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'database/app_database.dart';
 import 'l10n/app_localizations.dart';
 import 'pages/cantique_detail.dart';
-import 'pages/home.dart';
 import 'pages/splash_page.dart';
 import 'services/cantique_service.dart';
 import 'services/notification_service.dart';
@@ -16,7 +15,7 @@ final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   final settingsService = SettingsService();
   await settingsService.initSettings();
 

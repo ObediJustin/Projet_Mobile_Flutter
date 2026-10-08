@@ -59,8 +59,7 @@ class _CollectionPageState extends State<CollectionPage> {
                 ? AppEmptyState(
                     assetPath: AppAssets.searchEmpty,
                     title: 'Aucun cantique trouvé',
-                    message:
-                        'Aucun cantique ne correspond à "$_globalQuery".',
+                    message: 'Aucun cantique ne correspond à "$_globalQuery".',
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.symmetric(
@@ -171,9 +170,7 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.collectionName),
-      ),
+      appBar: AppBar(title: Text(widget.collectionName)),
       body: Column(
         children: [
           Padding(
@@ -241,9 +238,7 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Chercher dans ${widget.collectionName}'),
-      ),
+      appBar: AppBar(title: Text('Chercher dans ${widget.collectionName}')),
       body: Column(
         children: [
           Padding(
@@ -316,9 +311,7 @@ class _CollectionFavorisPageState extends State<CollectionFavorisPage> {
     final count = _favorites.length;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Favoris - ${widget.collectionName}'),
-      ),
+      appBar: AppBar(title: Text('Favoris - ${widget.collectionName}')),
       body: _favorites.isEmpty
           ? AppEmptyState(
               icon: Icons.favorite_border_rounded,

@@ -1,4 +1,3 @@
-
 /// Modèle représentant un chant personnel de l’utilisateur.
 class ChantPersonnel {
   /// Identifiant unique du chant.
@@ -30,22 +29,22 @@ class ChantPersonnel {
 
   /// Conversion vers un Map pour persistance JSON.
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'titre': titre,
-        'contenu': contenu,
-        'auteur': auteur,
-        'dateCreation': dateCreation.toIso8601String(),
-        'dateModification': dateModification.toIso8601String(),
-      };
+    'id': id,
+    'titre': titre,
+    'contenu': contenu,
+    'auteur': auteur,
+    'dateCreation': dateCreation.toIso8601String(),
+    'dateModification': dateModification.toIso8601String(),
+  };
 
   Map<String, dynamic> toMap() => {
-        'id': id,
-        'titre': titre,
-        'auteur': auteur,
-        'paroles': contenu,
-        'created_at': dateCreation.toIso8601String(),
-        'updated_at': dateModification.toIso8601String(),
-      };
+    'id': id,
+    'titre': titre,
+    'auteur': auteur,
+    'paroles': contenu,
+    'created_at': dateCreation.toIso8601String(),
+    'updated_at': dateModification.toIso8601String(),
+  };
 
   /// Construction depuis un Map JSON.
   factory ChantPersonnel.fromJson(Map<String, dynamic> json) {
@@ -99,4 +98,3 @@ class ChantPersonnel {
   @override
   int get hashCode => id.hashCode;
 }
-

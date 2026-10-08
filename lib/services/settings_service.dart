@@ -25,11 +25,13 @@ class SettingsService {
   static final ValueNotifier<AppThemeMode> themeNotifier =
       ValueNotifier<AppThemeMode>(AppThemeMode.green);
 
-  static final ValueNotifier<String> languageNotifier =
-      ValueNotifier<String>(defaultLanguage);
+  static final ValueNotifier<String> languageNotifier = ValueNotifier<String>(
+    defaultLanguage,
+  );
 
-  static final ValueNotifier<bool> notificationsNotifier =
-      ValueNotifier<bool>(defaultNotificationsEnabled);
+  static final ValueNotifier<bool> notificationsNotifier = ValueNotifier<bool>(
+    defaultNotificationsEnabled,
+  );
 
   static final ValueNotifier<double> lyricsFontSizeNotifier =
       ValueNotifier<double>(defaultLyricsFontSize);
@@ -79,7 +81,8 @@ class SettingsService {
 
   Future<bool> getNotificationsEnabled() async {
     final prefs = await SharedPreferences.getInstance();
-    final enabled = prefs.getBool(notificationsKey) ?? defaultNotificationsEnabled;
+    final enabled =
+        prefs.getBool(notificationsKey) ?? defaultNotificationsEnabled;
     notificationsNotifier.value = enabled;
     return enabled;
   }

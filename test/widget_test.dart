@@ -17,8 +17,10 @@ void main() {
 
     test('same numero can exist in multiple collections', () {
       final service = CantiqueService.instance;
-      final numeroOneCantiques =
-          service.getAllCantiques().where((c) => c.numero == 1).toList();
+      final numeroOneCantiques = service
+          .getAllCantiques()
+          .where((c) => c.numero == 1)
+          .toList();
 
       expect(numeroOneCantiques, hasLength(greaterThan(1)));
       expect(

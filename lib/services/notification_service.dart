@@ -36,7 +36,9 @@ class NotificationService {
 
     _ensureTimezoneInitialized();
 
-    const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
+    const androidSettings = AndroidInitializationSettings(
+      '@mipmap/ic_launcher',
+    );
     const iosSettings = DarwinInitializationSettings(
       requestAlertPermission: false,
       requestBadgePermission: false,
@@ -68,19 +70,21 @@ class NotificationService {
     if (kIsWeb) return false;
 
     try {
-      final androidImplementation =
-          _notificationsPlugin.resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin>();
+      final androidImplementation = _notificationsPlugin
+          .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin
+          >();
 
       if (androidImplementation != null) {
-        final granted =
-            await androidImplementation.requestNotificationsPermission();
+        final granted = await androidImplementation
+            .requestNotificationsPermission();
         return granted ?? false;
       }
 
-      final iosImplementation =
-          _notificationsPlugin.resolvePlatformSpecificImplementation<
-              IOSFlutterLocalNotificationsPlugin>();
+      final iosImplementation = _notificationsPlugin
+          .resolvePlatformSpecificImplementation<
+            IOSFlutterLocalNotificationsPlugin
+          >();
 
       if (iosImplementation != null) {
         final granted = await iosImplementation.requestPermissions(
@@ -126,7 +130,10 @@ class NotificationService {
     );
 
     const iosDetails = DarwinNotificationDetails();
-    const details = NotificationDetails(android: androidDetails, iOS: iosDetails);
+    const details = NotificationDetails(
+      android: androidDetails,
+      iOS: iosDetails,
+    );
 
     try {
       _ensureTimezoneInitialized();
@@ -185,7 +192,10 @@ class NotificationService {
     );
 
     const iosDetails = DarwinNotificationDetails();
-    const details = NotificationDetails(android: androidDetails, iOS: iosDetails);
+    const details = NotificationDetails(
+      android: androidDetails,
+      iOS: iosDetails,
+    );
 
     try {
       _ensureTimezoneInitialized();

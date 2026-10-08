@@ -38,16 +38,19 @@ void main() {
       }
     });
 
-    test('saved language can be retrieved (Français, English, system)', () async {
-      await service.saveLanguage('English');
-      expect(await service.getLanguage(), 'English');
+    test(
+      'saved language can be retrieved (Français, English, system)',
+      () async {
+        await service.saveLanguage('English');
+        expect(await service.getLanguage(), 'English');
 
-      await service.saveLanguage('system');
-      expect(await service.getLanguage(), 'system');
+        await service.saveLanguage('system');
+        expect(await service.getLanguage(), 'system');
 
-      await service.saveLanguage('Français');
-      expect(await service.getLanguage(), 'Français');
-    });
+        await service.saveLanguage('Français');
+        expect(await service.getLanguage(), 'Français');
+      },
+    );
 
     test('resolveLocale resolves correct locales for preferences', () {
       expect(SettingsService.resolveLocale('Français'), const Locale('fr'));

@@ -55,9 +55,7 @@ class _FavorisPageState extends State<FavorisPage> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return const Center(
-        child: CircularProgressIndicator(),
-      );
+      return const Center(child: CircularProgressIndicator());
     }
 
     if (_favoriteCantiques.isEmpty && _favoriteChantsPersonnels.isEmpty) {

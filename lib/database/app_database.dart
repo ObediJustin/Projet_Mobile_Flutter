@@ -110,7 +110,9 @@ class AppDatabase {
     _memoryCollections = List<CantiqueCollection>.of(
       await InitialDataLoader.loadCollections(),
     );
-    _memoryCantiques = List<Cantique>.of(await InitialDataLoader.loadCantiques());
+    _memoryCantiques = List<Cantique>.of(
+      await InitialDataLoader.loadCantiques(),
+    );
     final cantiqueIds = _memoryCantiques.map((cantique) => cantique.id).toSet();
 
     final prefs = await SharedPreferences.getInstance();
@@ -139,7 +141,10 @@ class AppDatabase {
 
   Future<void> _persistMemoryFavorites() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('favorites', jsonEncode(_memoryFavoriteRefs.toList()));
+    await prefs.setString(
+      'favorites',
+      jsonEncode(_memoryFavoriteRefs.toList()),
+    );
   }
 
   Future<void> _persistMemoryChants() async {
@@ -265,7 +270,26 @@ class AppDatabase {
     }
   }
 
+  Future<void> syncOfficialData() async {
+    if (_useMemoryStore || shouldUseMemoryDatabase) {
+      _memoryCollections = List<CantiqueCollection>.of(
+        await InitialDataLoader.loadCollections(),
+      );
+      _memoryCantiques = List<Cantique>.of(
+        await InitialDataLoader.loadCantiques(),
+      );
+      return;
+    }
+
+    final db = await database;
+    await _syncOfficialData(db);
+  }
+
   Future<void> _seedInitialData(Database db) async {
+    await _syncOfficialData(db);
+  }
+
+  Future<void> _syncOfficialData(Database db) async {
     final collections = await InitialDataLoader.loadCollections();
     final cantiques = await InitialDataLoader.loadCantiques();
     final now = DateTime(2026, 1, 1).toIso8601String();
@@ -274,19 +298,57 @@ class AppDatabase {
       final batch = txn.batch();
 
       for (final collection in collections) {
-        batch.insert(
-          'collections',
-          collection.toMap(),
-          conflictAlgorithm: ConflictAlgorithm.ignore,
+        batch.rawInsert(
+          '''
+          INSERT INTO collections (id, name, description, image, created_at, updated_at)
+          VALUES (?, ?, ?, ?, ?, ?)
+          ON CONFLICT(id) DO UPDATE SET
+            name = excluded.name,
+            description = excluded.description,
+            image = excluded.image,
+            updated_at = excluded.updated_at
+        ''',
+          [
+            collection.id,
+            collection.name,
+            collection.description,
+            collection.image,
+            collection.createdAt.toIso8601String(),
+            collection.updatedAt.toIso8601String(),
+          ],
         );
       }
 
       for (final cantique in cantiques) {
-        batch.insert('cantiques', {
-          ...cantique.toMap(),
-          'created_at': now,
-          'updated_at': now,
-        }, conflictAlgorithm: ConflictAlgorithm.ignore);
+        batch.rawInsert(
+          '''
+          INSERT INTO cantiques (id, collection_id, numero, titre, auteur, paroles, created_at, updated_at)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+          ON CONFLICT(id) DO UPDATE SET
+            collection_id = excluded.collection_id,
+            numero = excluded.numero,
+            titre = excluded.titre,
+            auteur = excluded.auteur,
+            paroles = excluded.paroles,
+            updated_at = excluded.updated_at
+          ON CONFLICT(collection_id, numero) DO UPDATE SET
+            id = excluded.id,
+            titre = excluded.titre,
+            auteur = excluded.auteur,
+            paroles = excluded.paroles,
+            updated_at = excluded.updated_at
+        ''',
+          [
+            cantique.id,
+            cantique.collectionId,
+            cantique.numero,
+            cantique.titre,
+            cantique.auteur,
+            cantique.contenu,
+            now,
+            now,
+          ],
+        );
       }
 
       await batch.commit(noResult: true);
@@ -683,11 +745,14 @@ class AppDatabase {
     }
 
     final db = await database;
-    await db.execute('''
+    await db.execute(
+      '''
       INSERT INTO recently_viewed_cantiques (cantique_id, last_viewed_at)
       VALUES (?, ?)
       ON CONFLICT(cantique_id) DO UPDATE SET last_viewed_at = excluded.last_viewed_at
-    ''', [normalizedId, now]);
+    ''',
+      [normalizedId, now],
+    );
   }
 
   Future<void> clearRecentlyViewedForTesting() async {
@@ -715,14 +780,17 @@ class AppDatabase {
     }
 
     final db = await database;
-    final rows = await db.rawQuery('''
+    final rows = await db.rawQuery(
+      '''
       SELECT c.*, collections.name AS collection
       FROM recently_viewed_cantiques r
       INNER JOIN cantiques c ON c.id = r.cantique_id
       INNER JOIN collections ON collections.id = c.collection_id
       ORDER BY r.last_viewed_at DESC
       LIMIT ?
-    ''', [limit]);
+    ''',
+      [limit],
+    );
 
     return rows.map(Cantique.fromMap).toList();
   }

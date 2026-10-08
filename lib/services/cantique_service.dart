@@ -68,7 +68,9 @@ class CantiqueService {
 
   List<Cantique> getCantiquesByCollection(String collection) {
     return _cachedCantiques
-        .where((c) => c.collection == collection || c.collectionId == collection)
+        .where(
+          (c) => c.collection == collection || c.collectionId == collection,
+        )
         .toList();
   }
 

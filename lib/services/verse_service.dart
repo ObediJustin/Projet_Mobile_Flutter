@@ -39,19 +39,23 @@ class VerseService {
       reference: "Hébreux 13:8",
     ),
     VerseItem(
-      text: "Voici, je vous enverrai Élie, le prophète, avant que le jour de l'Éternel arrive.",
+      text:
+          "Voici, je vous enverrai Élie, le prophète, avant que le jour de l'Éternel arrive.",
       reference: "Malachie 4:5",
     ),
     VerseItem(
-      text: "Mais aux jours de la voix du septième ange, le mystère de Dieu s'accomplirait.",
+      text:
+          "Mais aux jours de la voix du septième ange, le mystère de Dieu s'accomplirait.",
       reference: "Apocalypse 10:7",
     ),
     VerseItem(
-      text: "Recherchez la paix avec tous, et la sanctification, sans laquelle personne ne verra le Seigneur.",
+      text:
+          "Recherchez la paix avec tous, et la sanctification, sans laquelle personne ne verra le Seigneur.",
       reference: "Hébreux 12:14",
     ),
     VerseItem(
-      text: "Ta parole est une lampe à mes pieds, et une lumière sur mon sentier.",
+      text:
+          "Ta parole est une lampe à mes pieds, et une lumière sur mon sentier.",
       reference: "Psaume 119:105",
     ),
   ];

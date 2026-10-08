@@ -73,9 +73,7 @@ class _HomeState extends State<Home> {
           children: [
             DrawerHeader(
               padding: EdgeInsets.zero,
-              decoration: BoxDecoration(
-                color: theme.colorScheme.primary,
-              ),
+              decoration: BoxDecoration(color: theme.colorScheme.primary),
               child: Stack(
                 fit: StackFit.expand,
                 children: [

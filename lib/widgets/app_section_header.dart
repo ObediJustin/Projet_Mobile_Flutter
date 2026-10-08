@@ -30,11 +30,7 @@ class AppSectionHeader extends StatelessWidget {
               color: AppColors.primaryLight,
               borderRadius: BorderRadius.circular(8),
             ),
-            child: Icon(
-              icon,
-              size: 18,
-              color: AppColors.primary,
-            ),
+            child: Icon(icon, size: 18, color: AppColors.primary),
           ),
           const SizedBox(width: AppSpacing.sm),
         ],

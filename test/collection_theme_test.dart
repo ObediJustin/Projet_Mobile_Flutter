@@ -21,8 +21,9 @@ void main() {
           ),
         );
 
-        final BuildContext context =
-            tester.element(find.byType(CollectionCard));
+        final BuildContext context = tester.element(
+          find.byType(CollectionCard),
+        );
         final themePrimary = Theme.of(context).colorScheme.primary;
 
         expect(themePrimary, mode.primary);

@@ -60,8 +60,10 @@ class _AccueilPageState extends State<AccueilPage> {
     final theme = Theme.of(context);
 
     final allCantiques = _cantiqueService.getAllCantiques();
-    final filteredSearchResults =
-        CantiqueService.filterCantiques(allCantiques, _query);
+    final filteredSearchResults = CantiqueService.filterCantiques(
+      allCantiques,
+      _query,
+    );
     final isSearching = _query.trim().isNotEmpty;
 
     return SingleChildScrollView(
@@ -151,7 +153,8 @@ class _AccueilPageState extends State<AccueilPage> {
           // Search Field
           AppSearchBar(
             controller: _searchController,
-            hintText: l10n?.searchHint ??
+            hintText:
+                l10n?.searchHint ??
                 'Rechercher par titre, numéro, contenu ou collection…',
             onChanged: (value) => setState(() => _query = value),
             onClear: () => setState(() => _query = ''),
@@ -179,7 +182,8 @@ class _AccueilPageState extends State<AccueilPage> {
               AppEmptyState(
                 assetPath: AppAssets.searchEmpty,
                 title: l10n?.noCantiqueFound ?? 'Aucun cantique trouvé',
-                message: l10n?.noResultsForQuery ??
+                message:
+                    l10n?.noResultsForQuery ??
                     'Aucun résultat ne correspond à votre recherche.',
               )
             else
@@ -195,7 +199,8 @@ class _AccueilPageState extends State<AccueilPage> {
             else if (_recentCantiques.isEmpty)
               AppEmptyState(
                 assetPath: AppAssets.recentEmpty,
-                title: l10n?.noRecentCantiques ??
+                title:
+                    l10n?.noRecentCantiques ??
                     'Vos cantiques récents apparaîtront ici',
                 message:
                     'Consultez des cantiques pour les retrouver rapidement sur cet écran.',

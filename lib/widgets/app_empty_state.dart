@@ -21,7 +21,10 @@ class AppEmptyState extends StatelessWidget {
     required this.message,
     this.actionLabel,
     this.onAction,
-  }) : assert(icon != null || assetPath != null, 'Either icon or assetPath must be provided');
+  }) : assert(
+         icon != null || assetPath != null,
+         'Either icon or assetPath must be provided',
+       );
 
   @override
   Widget build(BuildContext context) {
@@ -37,10 +40,7 @@ class AppEmptyState extends StatelessWidget {
                 width: 140,
                 height: 140,
                 padding: const EdgeInsets.all(AppSpacing.md),
-                child: AppAssets.svg(
-                  assetPath!,
-                  fit: BoxFit.contain,
-                ),
+                child: AppAssets.svg(assetPath!, fit: BoxFit.contain),
               )
             else if (icon != null)
               Container(
@@ -51,11 +51,7 @@ class AppEmptyState extends StatelessWidget {
                   shape: BoxShape.circle,
                   border: Border.all(color: AppColors.secondaryLight, width: 2),
                 ),
-                child: Icon(
-                  icon!,
-                  size: 38,
-                  color: AppColors.primary,
-                ),
+                child: Icon(icon!, size: 38, color: AppColors.primary),
               ),
             const SizedBox(height: AppSpacing.lg),
             Text(

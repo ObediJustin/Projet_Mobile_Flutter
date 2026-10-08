@@ -313,15 +313,14 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
         actions: [
           IconButton(
             icon: Icon(
-              _isFavorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+              _isFavorite
+                  ? Icons.favorite_rounded
+                  : Icons.favorite_border_rounded,
               color: _isFavorite ? AppColors.error : AppColors.textOnPrimary,
             ),
             onPressed: _toggleFavorite,
           ),
-          IconButton(
-            icon: const Icon(Icons.share_rounded),
-            onPressed: _share,
-          ),
+          IconButton(icon: const Icon(Icons.share_rounded), onPressed: _share),
         ],
       ),
       body: FutureBuilder<_CantiqueDetailData>(
@@ -481,10 +480,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                     decoration: BoxDecoration(
                       color: AppColors.surface,
                       border: const Border(
-                        top: BorderSide(
-                          color: AppColors.borderLight,
-                          width: 1,
-                        ),
+                        top: BorderSide(color: AppColors.borderLight, width: 1),
                       ),
                       boxShadow: const [
                         BoxShadow(
@@ -502,8 +498,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                               ? Icons.favorite_rounded
                               : Icons.favorite_border_rounded,
                           label: _isFavorite ? 'Favori' : 'Favori',
-                          iconColor:
-                              _isFavorite ? AppColors.error : AppColors.primary,
+                          iconColor: _isFavorite
+                              ? AppColors.error
+                              : AppColors.primary,
                           onTap: _toggleFavorite,
                         ),
                         _actionIconButton(
@@ -547,8 +544,5 @@ class _CantiqueDetailData {
   final bool isFavorite;
   final double fontSize;
 
-  const _CantiqueDetailData({
-    required this.isFavorite,
-    required this.fontSize,
-  });
+  const _CantiqueDetailData({required this.isFavorite, required this.fontSize});
 }

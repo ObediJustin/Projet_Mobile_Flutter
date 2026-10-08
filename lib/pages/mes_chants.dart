@@ -137,9 +137,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
               child: const Text('Annuler'),
             ),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.error,
-              ),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.error),
               onPressed: () => Navigator.pop(context, true),
               child: const Text('Supprimer'),
             ),
@@ -266,7 +264,9 @@ class _MesChantsPageState extends State<MesChantsPage> {
 
     if (items.isEmpty) {
       return AppEmptyState(
-        assetPath: _searchQuery.isNotEmpty ? AppAssets.searchEmpty : AppAssets.personalSongs,
+        assetPath: _searchQuery.isNotEmpty
+            ? AppAssets.searchEmpty
+            : AppAssets.personalSongs,
         title: 'Aucun chant personnel',
         message: _searchQuery.isNotEmpty
             ? 'Aucun chant ne correspond à "$_searchQuery".'

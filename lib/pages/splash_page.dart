@@ -8,7 +8,8 @@ class SplashPage extends StatefulWidget {
   State<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateMixin {
+class _SplashPageState extends State<SplashPage>
+    with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
@@ -27,10 +28,7 @@ class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateM
     );
 
     _scaleAnimation = Tween<double>(begin: 0.88, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: Curves.easeOutBack,
-      ),
+      CurvedAnimation(parent: _animationController, curve: Curves.easeOutBack),
     );
 
     _animationController.forward();
@@ -40,13 +38,12 @@ class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateM
       if (mounted) {
         Navigator.of(context).pushReplacement(
           PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) => const Home(),
-            transitionsBuilder: (context, animation, secondaryAnimation, child) {
-              return FadeTransition(
-                opacity: animation,
-                child: child,
-              );
-            },
+            pageBuilder: (context, animation, secondaryAnimation) =>
+                const Home(),
+            transitionsBuilder:
+                (context, animation, secondaryAnimation, child) {
+                  return FadeTransition(opacity: animation, child: child);
+                },
             transitionDuration: const Duration(milliseconds: 400),
           ),
         );
@@ -99,7 +96,9 @@ class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateM
                   height: 28,
                   child: CircularProgressIndicator(
                     strokeWidth: 2.5,
-                    valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFD4AF37)),
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                      Color(0xFFD4AF37),
+                    ),
                   ),
                 ),
               ],

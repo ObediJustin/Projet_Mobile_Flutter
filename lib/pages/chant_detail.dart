@@ -89,9 +89,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
               child: const Text('Annuler'),
             ),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.error,
-              ),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.error),
               onPressed: () => Navigator.pop(context, true),
               child: const Text('Supprimer'),
             ),
@@ -198,7 +196,9 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
         actions: [
           IconButton(
             icon: Icon(
-              _isFavorite ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+              _isFavorite
+                  ? Icons.favorite_rounded
+                  : Icons.favorite_border_rounded,
               color: _isFavorite ? AppColors.error : AppColors.textOnPrimary,
             ),
             onPressed: _isBusy ? null : _toggleFavorite,
@@ -284,10 +284,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                   decoration: BoxDecoration(
                     color: AppColors.surface,
                     borderRadius: AppRadius.xlBorder,
-                    border: Border.all(
-                      color: AppColors.borderLight,
-                      width: 1,
-                    ),
+                    border: Border.all(color: AppColors.borderLight, width: 1),
                     boxShadow: const [
                       BoxShadow(
                         color: Color(0x0A000000),
@@ -341,9 +338,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
             const Positioned.fill(
               child: ColoredBox(
                 color: Color(0x33000000),
-                child: Center(
-                  child: CircularProgressIndicator(),
-                ),
+                child: Center(child: CircularProgressIndicator()),
               ),
             ),
         ],

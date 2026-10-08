@@ -35,8 +35,8 @@ class _ParametresPageState extends State<ParametresPage> {
   Future<void> _loadSettings() async {
     final theme = await _settingsService.getTheme();
     final language = await _settingsService.getLanguage();
-    final notificationsEnabled =
-        await _settingsService.getNotificationsEnabled();
+    final notificationsEnabled = await _settingsService
+        .getNotificationsEnabled();
     final fontSize = await _settingsService.getLyricsFontSize();
 
     if (!mounted) return;
@@ -74,9 +74,7 @@ class _ParametresPageState extends State<ParametresPage> {
     final theme = Theme.of(context);
 
     if (_isLoading) {
-      return const Center(
-        child: CircularProgressIndicator(),
-      );
+      return const Center(child: CircularProgressIndicator());
     }
 
     return ListView(
@@ -110,10 +108,7 @@ class _ParametresPageState extends State<ParametresPage> {
                     ),
                   ],
                 ),
-                child: AppAssets.svg(
-                  AppAssets.logoMark,
-                  fit: BoxFit.contain,
-                ),
+                child: AppAssets.svg(AppAssets.logoMark, fit: BoxFit.contain),
               ),
               const SizedBox(width: AppSpacing.md),
               Expanded(
@@ -178,7 +173,10 @@ class _ParametresPageState extends State<ParametresPage> {
             ),
             subtitle: Text(
               _getThemeLabel(_selectedTheme, l10n),
-              style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
+              style: const TextStyle(
+                fontSize: 13,
+                color: AppColors.textSecondary,
+              ),
             ),
             trailing: Row(
               mainAxisSize: MainAxisSize.min,
@@ -191,10 +189,7 @@ class _ParametresPageState extends State<ParametresPage> {
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 2),
                     boxShadow: const [
-                      BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 3,
-                      ),
+                      BoxShadow(color: Colors.black26, blurRadius: 3),
                     ],
                   ),
                 ),
@@ -245,7 +240,10 @@ class _ParametresPageState extends State<ParametresPage> {
             subtitle: Text(
               l10n?.notificationsSubtitle ??
                   'Recevoir des rappels et édifications quotidiennes',
-              style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
+              style: const TextStyle(
+                fontSize: 13,
+                color: AppColors.textSecondary,
+              ),
             ),
             value: _notificationsEnabled,
             onChanged: (value) async {
@@ -289,7 +287,10 @@ class _ParametresPageState extends State<ParametresPage> {
             ),
             subtitle: Text(
               _getLanguageLabel(_selectedLanguage, l10n),
-              style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
+              style: const TextStyle(
+                fontSize: 13,
+                color: AppColors.textSecondary,
+              ),
             ),
             trailing: const Icon(
               Icons.chevron_right_rounded,
@@ -408,11 +409,17 @@ class _ParametresPageState extends State<ParametresPage> {
                 ),
                 title: Text(
                   l10n?.versionApp ?? 'Version de l\'application',
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),
                 ),
                 subtitle: const Text(
                   '1.0.0 (Build 1)',
-                  style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: AppColors.textSecondary,
+                  ),
                 ),
               ),
               const Padding(
@@ -434,11 +441,17 @@ class _ParametresPageState extends State<ParametresPage> {
                 ),
                 title: Text(
                   l10n?.contactDev ?? 'Contact développeur',
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),
                 ),
                 subtitle: const Text(
                   'sadikiobedi@outlook.fr',
-                  style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: AppColors.textSecondary,
+                  ),
                 ),
               ),
             ],
@@ -461,10 +474,8 @@ class _ParametresPageState extends State<ParametresPage> {
           mainAxisSize: MainAxisSize.min,
           children: AppThemeMode.values
               .map(
-                (mode) => _themeTile(
-                  label: _getThemeLabel(mode, l10n),
-                  mode: mode,
-                ),
+                (mode) =>
+                    _themeTile(label: _getThemeLabel(mode, l10n), mode: mode),
               )
               .toList(),
         ),
@@ -485,12 +496,7 @@ class _ParametresPageState extends State<ParametresPage> {
           color: mode.primary,
           shape: BoxShape.circle,
           border: Border.all(color: Colors.white, width: 2),
-          boxShadow: const [
-            BoxShadow(
-              color: Colors.black26,
-              blurRadius: 3,
-            ),
-          ],
+          boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 3)],
         ),
       ),
       title: Text(

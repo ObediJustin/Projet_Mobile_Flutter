@@ -38,7 +38,9 @@ void main() {
       expect(payload.startsWith('cantique:'), isTrue);
 
       final extractedId = payload.substring('cantique:'.length);
-      final resolvedCantique = CantiqueService.instance.getCantiqueById(extractedId);
+      final resolvedCantique = CantiqueService.instance.getCantiqueById(
+        extractedId,
+      );
       expect(resolvedCantique, isNotNull);
       expect(resolvedCantique!.id, first.id);
     });

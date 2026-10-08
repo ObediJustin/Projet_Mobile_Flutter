@@ -58,10 +58,7 @@ class CollectionCard extends StatelessWidget {
                 padding: const EdgeInsets.all(AppSpacing.lg),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
-                    colors: [
-                      themeColor,
-                      themeColor.withValues(alpha: 0.82),
-                    ],
+                    colors: [themeColor, themeColor.withValues(alpha: 0.82)],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),

@@ -17,7 +17,9 @@ void main() {
     setUp(() async {
       sqfliteFfiInit();
       SharedPreferences.setMockInitialValues({});
-      await AppDatabase.instance.useDatabasePathForTesting(inMemoryDatabasePath);
+      await AppDatabase.instance.useDatabasePathForTesting(
+        inMemoryDatabasePath,
+      );
       await AppDatabase.instance.initialize();
       await CantiqueService.instance.loadCacheFromDatabase();
     });
@@ -63,66 +65,74 @@ void main() {
       expect(results.map((c) => c.id), contains('only_believe_001'));
     });
 
-    test('allows same numero in two collections and rejects it in one collection',
-        () async {
-      final db = AppDatabase.instance;
-      final now = DateTime(2026);
+    test(
+      'allows same numero in two collections and rejects it in one collection',
+      () async {
+        final db = AppDatabase.instance;
+        final now = DateTime(2026);
 
-      await db.insertCollection(
-        CantiqueCollection(
-          id: 'collection_a',
-          name: 'Collection A',
-          createdAt: now,
-          updatedAt: now,
-        ),
-      );
-      await db.insertCollection(
-        CantiqueCollection(
-          id: 'collection_b',
-          name: 'Collection B',
-          createdAt: now,
-          updatedAt: now,
-        ),
-      );
+        await db.insertCollection(
+          CantiqueCollection(
+            id: 'collection_a',
+            name: 'Collection A',
+            createdAt: now,
+            updatedAt: now,
+          ),
+        );
+        await db.insertCollection(
+          CantiqueCollection(
+            id: 'collection_b',
+            name: 'Collection B',
+            createdAt: now,
+            updatedAt: now,
+          ),
+        );
 
-      await db.insertCantique(
-        Cantique(
-          id: 'collection_a_001',
-          titre: 'Chant A',
-          collectionId: 'collection_a',
-          collection: 'Collection A',
-          contenu: 'Paroles A',
-          numero: 1,
-        ),
-      );
-      await db.insertCantique(
-        Cantique(
-          id: 'collection_b_001',
-          titre: 'Chant B',
-          collectionId: 'collection_b',
-          collection: 'Collection B',
-          contenu: 'Paroles B',
-          numero: 1,
-        ),
-      );
-
-      expect(await db.getCantiques(collectionId: 'collection_a'), hasLength(1));
-      expect(await db.getCantiques(collectionId: 'collection_b'), hasLength(1));
-
-      expect(
-        () => db.insertCantique(
+        await db.insertCantique(
           Cantique(
-            id: 'collection_a_duplicate_001',
-            titre: 'Doublon',
+            id: 'collection_a_001',
+            titre: 'Chant A',
             collectionId: 'collection_a',
             collection: 'Collection A',
-            contenu: 'Paroles doublon',
+            contenu: 'Paroles A',
             numero: 1,
           ),
-        ),
-        throwsA(isA<DatabaseException>()),
-      );
-    });
+        );
+        await db.insertCantique(
+          Cantique(
+            id: 'collection_b_001',
+            titre: 'Chant B',
+            collectionId: 'collection_b',
+            collection: 'Collection B',
+            contenu: 'Paroles B',
+            numero: 1,
+          ),
+        );
+
+        expect(
+          await db.getCantiques(collectionId: 'collection_a'),
+          hasLength(1),
+        );
+        expect(
+          await db.getCantiques(collectionId: 'collection_b'),
+          hasLength(1),
+        );
+
+        expect(
+          () => db.insertCantique(
+            Cantique(
+              id: 'collection_a_duplicate_001',
+              titre: 'Doublon',
+              collectionId: 'collection_a',
+              collection: 'Collection A',
+              contenu: 'Paroles doublon',
+              numero: 1,
+            ),
+          ),
+          throwsA(isA<DatabaseException>()),
+        );
+      },
+    );
 
     test('personal chant CRUD works through SQLite', () async {
       final service = ChantPersonnelService();
@@ -194,14 +204,13 @@ void main() {
 
       await favorites.toggleCantiqueFavorite('hosanna_001');
       expect(favorites.isCantiqueFavorite('hosanna_001'), isFalse);
-      expect(
-        favorites.isCantiqueFavorite('boanerges_tabernacle_001'),
-        isTrue,
-      );
+      expect(favorites.isCantiqueFavorite('boanerges_tabernacle_001'), isTrue);
     });
 
     test('data persists after closing and reopening a test database', () async {
-      final tempDir = await Directory.systemTemp.createTemp('cantiques_db_test');
+      final tempDir = await Directory.systemTemp.createTemp(
+        'cantiques_db_test',
+      );
       final dbPath = p.join(tempDir.path, 'restart_test.db');
       final chant = ChantPersonnel(
         id: 'restart_001',
@@ -242,35 +251,155 @@ void main() {
       }
     });
 
-    test('re-seeding does not overwrite existing cantiques', () async {
-      final tempDir = await Directory.systemTemp.createTemp('cantiques_db_seed');
-      final dbPath = p.join(tempDir.path, 'seed_test.db');
-      const customTitle = 'Titre conserve apres reseed';
+    test(
+      'Cas 1: Base SQLite vide + JSON -> toutes les données officielles sont correctement présentées',
+      () async {
+        final collections = await AppDatabase.instance.getCollections();
+        final cantiques = await AppDatabase.instance.getCantiques();
 
-      try {
-        await AppDatabase.instance.useDatabasePathForTesting(dbPath);
-        await AppDatabase.instance.initialize();
+        expect(collections, isNotEmpty);
+        expect(cantiques, isNotEmpty);
+        expect(collections.map((c) => c.id), contains('crois_seulement'));
+        expect(cantiques.map((c) => c.id), contains('crois_seulement_001'));
+      },
+    );
 
-        final db = await AppDatabase.instance.database;
-        await db.update(
-          'cantiques',
-          {'titre': customTitle},
-          where: 'id = ?',
-          whereArgs: ['hosanna_001'],
+    test(
+      'Cas 2 & 3: Synchronisation des nouvelles collections et cantiques modifiés dans SQLite',
+      () async {
+        final tempDir = await Directory.systemTemp.createTemp(
+          'cantiques_db_sync',
         );
+        final dbPath = p.join(tempDir.path, 'sync_test.db');
 
-        await AppDatabase.instance.close();
-        await AppDatabase.instance.useDatabasePathForTesting(dbPath);
-        await AppDatabase.instance.initialize();
+        try {
+          await AppDatabase.instance.useDatabasePathForTesting(dbPath);
+          await AppDatabase.instance.initialize();
 
-        final saved = await AppDatabase.instance.getCantiqueById('hosanna_001');
-        expect(saved?.titre, customTitle);
-      } finally {
-        await AppDatabase.instance.close();
-        if (await tempDir.exists()) {
-          await tempDir.delete(recursive: true);
+          final db = await AppDatabase.instance.database;
+
+          // Simulation d'une nouvelle collection insérée manuellement avant ré-exécution du sync
+          final now = DateTime(2026).toIso8601String();
+          await db.insert('collections', {
+            'id': 'test_collection',
+            'name': 'Test Collection',
+            'description': 'Collection de test',
+            'created_at': now,
+            'updated_at': now,
+          });
+
+          await db.insert('cantiques', {
+            'id': 'crois_seulement_001',
+            'collection_id': 'crois_seulement',
+            'numero': 1,
+            'titre': 'Ancien Titre',
+            'auteur': 'Ancien Auteur',
+            'paroles': 'Anciennes paroles',
+            'created_at': now,
+            'updated_at': now,
+          }, conflictAlgorithm: ConflictAlgorithm.replace);
+
+          // Déclencher la synchronisation des données officielles
+          await AppDatabase.instance.syncOfficialData();
+
+          // Cas 3: Le cantique officiel 'crois_seulement_001' a été mis à jour avec le titre issu du JSON
+          final updatedCantique = await AppDatabase.instance.getCantiqueById(
+            'crois_seulement_001',
+          );
+          expect(updatedCantique?.titre, 'Crois seulement');
+
+          // Cas 2: Les collections existantes sont conservées/synchronisées
+          final collections = await AppDatabase.instance.getCollections();
+          expect(collections.map((c) => c.id), contains('crois_seulement'));
+        } finally {
+          await AppDatabase.instance.close();
+          if (await tempDir.exists()) {
+            await tempDir.delete(recursive: true);
+          }
         }
-      }
-    });
+      },
+    );
+
+    test(
+      'Cas 4: Synchronisation préserve intactes toutes les données utilisateur (chants personnels, favoris, récents)',
+      () async {
+        final tempDir = await Directory.systemTemp.createTemp(
+          'cantiques_user_data',
+        );
+        final dbPath = p.join(tempDir.path, 'user_data.db');
+
+        try {
+          await AppDatabase.instance.useDatabasePathForTesting(dbPath);
+          await AppDatabase.instance.initialize();
+
+          // 1. Créer des données utilisateur
+          final chantService = ChantPersonnelService();
+          await chantService.addChant(
+            ChantPersonnel(
+              id: 'user_chant_001',
+              titre: 'Chant Personnel Utilisateur',
+              contenu: 'Paroles personnelles',
+              dateCreation: DateTime(2026),
+              dateModification: DateTime(2026),
+            ),
+          );
+
+          final favoriteService = FavoriteService();
+          await favoriteService.loadFavorites();
+          await favoriteService.toggleCantiqueFavorite('crois_seulement_001');
+
+          await AppDatabase.instance.recordRecentlyViewedCantique(
+            'crois_seulement_001',
+          );
+
+          // 2. Exécuter la synchronisation plusieurs fois
+          await AppDatabase.instance.syncOfficialData();
+          await AppDatabase.instance.syncOfficialData();
+
+          // 3. Vérifier que toutes les données utilisateur sont intactes
+          final userChant = await chantService.getChantById('user_chant_001');
+          expect(userChant, isNotNull);
+          expect(userChant?.titre, 'Chant Personnel Utilisateur');
+
+          final reloadedFavorites = FavoriteService();
+          await reloadedFavorites.loadFavorites();
+          expect(
+            reloadedFavorites.isCantiqueFavorite('crois_seulement_001'),
+            isTrue,
+          );
+
+          final recents = await AppDatabase.instance
+              .getRecentlyViewedCantiques();
+          expect(recents.map((c) => c.id), contains('crois_seulement_001'));
+        } finally {
+          await AppDatabase.instance.close();
+          if (await tempDir.exists()) {
+            await tempDir.delete(recursive: true);
+          }
+        }
+      },
+    );
+
+    test(
+      'Cas 5 & 6: Multiple synchronisations n impressionnent pas les contraintes d unicités',
+      () async {
+        // Exécuter 3 fois d'affilée la synchronisation
+        await AppDatabase.instance.syncOfficialData();
+        await AppDatabase.instance.syncOfficialData();
+        await AppDatabase.instance.syncOfficialData();
+
+        final cantiques = await AppDatabase.instance.getCantiques();
+        final ids = cantiques.map((c) => c.id).toList();
+
+        // Pas de doublons d'IDs
+        expect(ids.length, equals(ids.toSet().length));
+
+        // Pas de conflit sur (collection_id, numero)
+        final pairs = cantiques
+            .map((c) => '${c.collectionId}_${c.numero}')
+            .toList();
+        expect(pairs.length, equals(pairs.toSet().length));
+      },
+    );
   });
 }
