@@ -51,15 +51,7 @@ class CantiqueService {
   }
 
   static List<Cantique> filterCantiques(List<Cantique> source, String query) {
-    final q = query.trim().toLowerCase();
-    if (q.isEmpty) return source;
-
-    return source.where((c) {
-      return c.titre.toLowerCase().contains(q) ||
-          c.numero.toString().contains(q) ||
-          c.contenu.toLowerCase().contains(q) ||
-          c.collection.toLowerCase().contains(q);
-    }).toList();
+    return filterCantiquesForSearch(source, query);
   }
 
   List<Cantique> getAllCantiques() {
@@ -91,14 +83,8 @@ class CantiqueService {
   }
 
   List<Cantique> searchCantiques(String query) {
-    final q = query.trim().toLowerCase();
-    if (q.isEmpty) return [];
-
-    return _cachedCantiques.where((c) {
-      return c.titre.toLowerCase().contains(q) ||
-          (c.auteur ?? '').toLowerCase().contains(q) ||
-          c.contenu.toLowerCase().contains(q);
-    }).toList();
+    if (normalizeCantiqueSearchText(query).isEmpty) return [];
+    return filterCantiquesForSearch(_cachedCantiques, query);
   }
 
   Cantique? getCantiqueById(String id) {

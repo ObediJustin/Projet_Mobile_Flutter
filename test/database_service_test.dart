@@ -66,6 +66,41 @@ void main() {
     });
 
     test(
+      'SQLite search uses number, collection and accent normalization',
+      () async {
+        final now = DateTime(2026);
+        await AppDatabase.instance.insertCollection(
+          CantiqueCollection(
+            id: 'search_collection',
+            name: 'Échos de Grâce',
+            createdAt: now,
+            updatedAt: now,
+          ),
+        );
+        await AppDatabase.instance.insertCantique(
+          Cantique(
+            id: 'search_042',
+            titre: 'Lumière',
+            collectionId: 'search_collection',
+            collection: 'Échos de Grâce',
+            contenu: 'Jésus sauve',
+            numero: 42,
+            auteur: 'Élie',
+          ),
+        );
+
+        for (final query in ['lumiere', '42', 'elie', 'jesus', 'echos grace']) {
+          final results = await AppDatabase.instance.searchCantiques(query);
+          expect(
+            results.map((cantique) => cantique.id),
+            contains('search_042'),
+            reason: 'query: $query',
+          );
+        }
+      },
+    );
+
+    test(
       'allows same numero in two collections and allows variant cantiques in one collection',
       () async {
         final db = AppDatabase.instance;

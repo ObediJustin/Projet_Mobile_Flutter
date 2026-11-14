@@ -56,3 +56,108 @@ class Cantique {
     auteur: map['auteur'] as String?,
   );
 }
+
+final RegExp _searchWhitespace = RegExp(r'\s+');
+
+const Map<String, String> _searchCharacterFolding = {
+  'à': 'a',
+  'á': 'a',
+  'â': 'a',
+  'ä': 'a',
+  'ã': 'a',
+  'å': 'a',
+  'ā': 'a',
+  'ă': 'a',
+  'ą': 'a',
+  'æ': 'ae',
+  'ç': 'c',
+  'ć': 'c',
+  'č': 'c',
+  'ď': 'd',
+  'đ': 'd',
+  'è': 'e',
+  'é': 'e',
+  'ê': 'e',
+  'ë': 'e',
+  'ē': 'e',
+  'ĕ': 'e',
+  'ė': 'e',
+  'ę': 'e',
+  'ě': 'e',
+  'ì': 'i',
+  'í': 'i',
+  'î': 'i',
+  'ï': 'i',
+  'ī': 'i',
+  'ĭ': 'i',
+  'į': 'i',
+  'ł': 'l',
+  'ñ': 'n',
+  'ń': 'n',
+  'ň': 'n',
+  'ò': 'o',
+  'ó': 'o',
+  'ô': 'o',
+  'ö': 'o',
+  'õ': 'o',
+  'ø': 'o',
+  'ō': 'o',
+  'ŏ': 'o',
+  'ő': 'o',
+  'œ': 'oe',
+  'ŕ': 'r',
+  'ř': 'r',
+  'ś': 's',
+  'š': 's',
+  'ş': 's',
+  'ť': 't',
+  'ù': 'u',
+  'ú': 'u',
+  'û': 'u',
+  'ü': 'u',
+  'ū': 'u',
+  'ŭ': 'u',
+  'ů': 'u',
+  'ű': 'u',
+  'ų': 'u',
+  'ý': 'y',
+  'ÿ': 'y',
+  'ž': 'z',
+  'ź': 'z',
+  'ż': 'z',
+};
+
+String normalizeCantiqueSearchText(String value) {
+  final folded = StringBuffer();
+  for (final rune in value.toLowerCase().runes) {
+    if (rune >= 0x0300 && rune <= 0x036f) continue;
+    final character = String.fromCharCode(rune);
+    folded.write(_searchCharacterFolding[character] ?? character);
+  }
+  return folded.toString().replaceAll(_searchWhitespace, ' ').trim();
+}
+
+bool cantiqueMatchesSearch(Cantique cantique, String query) {
+  final normalizedQuery = normalizeCantiqueSearchText(query);
+  if (normalizedQuery.isEmpty) return true;
+
+  final searchableText = normalizeCantiqueSearchText(
+    '${cantique.numero} ${cantique.titre} ${cantique.auteur ?? ''} '
+    '${cantique.contenu} ${cantique.collection}',
+  );
+  return normalizedQuery
+      .split(' ')
+      .every((term) => searchableText.contains(term));
+}
+
+List<Cantique> filterCantiquesForSearch(
+  Iterable<Cantique> source,
+  String query,
+) {
+  if (normalizeCantiqueSearchText(query).isEmpty) {
+    return source is List<Cantique> ? source : source.toList();
+  }
+  return source
+      .where((cantique) => cantiqueMatchesSearch(cantique, query))
+      .toList();
+}

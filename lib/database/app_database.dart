@@ -642,45 +642,8 @@ class AppDatabase {
   }
 
   Future<List<Cantique>> searchCantiques(String query) async {
-    final q = query.trim();
-    if (q.isEmpty) return [];
-
-    if (_useMemoryStore) {
-      final needle = q.toLowerCase();
-      final rows = _memoryCantiques
-          .where(
-            (cantique) =>
-                cantique.titre.toLowerCase().contains(needle) ||
-                (cantique.auteur?.toLowerCase().contains(needle) ?? false) ||
-                cantique.contenu.toLowerCase().contains(needle),
-          )
-          .map(_withCollectionName)
-          .toList();
-      rows.sort((a, b) {
-        final collectionCompare = a.collection.toLowerCase().compareTo(
-          b.collection.toLowerCase(),
-        );
-        if (collectionCompare != 0) return collectionCompare;
-        return a.numero.compareTo(b.numero);
-      });
-      return rows;
-    }
-
-    final db = await database;
-    final like = '%$q%';
-    final rows = await db.rawQuery(
-      '''
-      SELECT c.*, collections.name AS collection
-      FROM cantiques c
-      INNER JOIN collections ON collections.id = c.collection_id
-      WHERE c.titre LIKE ?
-        OR c.auteur LIKE ?
-        OR c.paroles LIKE ?
-      ORDER BY collections.name COLLATE NOCASE, c.numero
-      ''',
-      [like, like, like],
-    );
-    return rows.map(Cantique.fromMap).toList();
+    if (normalizeCantiqueSearchText(query).isEmpty) return [];
+    return filterCantiquesForSearch(await getCantiques(), query);
   }
 
   Future<void> insertChantPersonnel(ChantPersonnel chant) async {
