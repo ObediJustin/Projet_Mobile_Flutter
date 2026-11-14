@@ -12,7 +12,7 @@ import 'initial_data_loader.dart';
 
 class AppDatabase {
   static const String databaseName = 'cantiques_du_message.db';
-  static const int schemaVersion = 3;
+  static const int schemaVersion = 4;
   static const String favoritesMigrationKey = 'favorites_sqlite_migrated_v1';
   static const String chantsMigrationKey =
       'chants_personnels_sqlite_migrated_v1';
@@ -267,14 +267,21 @@ class AppDatabase {
       case 3:
         await _removeCantiquesUniqueConstraint(db);
         break;
+      case 4:
+        await _repairSchemaVersion4(db);
+        break;
       default:
         throw UnsupportedError('Migration SQLite inconnue: v$version');
     }
   }
 
   Future<void> _removeCantiquesUniqueConstraint(Database db) async {
+    // A stale staging table must never make rows from the source table get
+    // ignored. openDatabase wraps upgrades in a transaction, so dropping it is
+    // safe and also makes a retry deterministic after an interrupted upgrade.
+    await db.execute('DROP TABLE IF EXISTS cantiques_v3');
     await db.execute('''
-      CREATE TABLE IF NOT EXISTS cantiques_v3 (
+      CREATE TABLE cantiques_v3 (
         id TEXT PRIMARY KEY,
         collection_id TEXT NOT NULL,
         numero INTEGER NOT NULL,
@@ -288,11 +295,47 @@ class AppDatabase {
           ON DELETE RESTRICT
       )
     ''');
-    await db.execute(
-      'INSERT OR IGNORE INTO cantiques_v3 SELECT * FROM cantiques',
-    );
+    final sourceCount =
+        Sqflite.firstIntValue(
+          await db.rawQuery('SELECT COUNT(*) FROM cantiques'),
+        ) ??
+        0;
+    await db.execute('INSERT INTO cantiques_v3 SELECT * FROM cantiques');
+    final copiedCount =
+        Sqflite.firstIntValue(
+          await db.rawQuery('SELECT COUNT(*) FROM cantiques_v3'),
+        ) ??
+        0;
+    if (sourceCount != copiedCount) {
+      throw StateError(
+        'Migration v3 incomplete: $copiedCount/$sourceCount cantiques copies',
+      );
+    }
     await db.execute('DROP TABLE cantiques');
     await db.execute('ALTER TABLE cantiques_v3 RENAME TO cantiques');
+    await _ensureCantiqueIndexes(db);
+  }
+
+  Future<void> _repairSchemaVersion4(Database db) async {
+    await _ensureCantiqueIndexes(db);
+
+    // favorites is polymorphic, therefore SQLite cannot express both target
+    // foreign keys directly. Remove only references whose target is absent.
+    await db.delete(
+      'favorites',
+      where:
+          "item_type = ? AND NOT EXISTS (SELECT 1 FROM cantiques WHERE cantiques.id = favorites.item_id)",
+      whereArgs: [favoriteCantiqueType],
+    );
+    await db.delete(
+      'favorites',
+      where:
+          "item_type = ? AND NOT EXISTS (SELECT 1 FROM chants_personnels WHERE chants_personnels.id = favorites.item_id)",
+      whereArgs: [favoriteChantPersonnelType],
+    );
+  }
+
+  Future<void> _ensureCantiqueIndexes(Database db) async {
     await db.execute(
       'CREATE INDEX IF NOT EXISTS idx_cantiques_collection_id ON cantiques(collection_id)',
     );

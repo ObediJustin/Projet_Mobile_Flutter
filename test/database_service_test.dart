@@ -481,5 +481,189 @@ void main() {
         expect(ids.length, equals(ids.toSet().length));
       },
     );
+
+    test('migration v2 to v4 preserves every existing data category', () async {
+      final tempDir = await Directory.systemTemp.createTemp(
+        'cantiques_db_migration',
+      );
+      final dbPath = p.join(tempDir.path, 'legacy_v2.db');
+      final now = DateTime(2025).toIso8601String();
+
+      try {
+        await AppDatabase.instance.close();
+        final legacyDb = await databaseFactoryFfi.openDatabase(
+          dbPath,
+          options: OpenDatabaseOptions(
+            version: 2,
+            onCreate: (db, _) async {
+              await db.execute('''
+                CREATE TABLE collections (
+                  id TEXT PRIMARY KEY,
+                  name TEXT NOT NULL,
+                  description TEXT NOT NULL DEFAULT '',
+                  image TEXT,
+                  created_at TEXT NOT NULL,
+                  updated_at TEXT NOT NULL
+                )
+              ''');
+              await db.execute('''
+                CREATE TABLE cantiques (
+                  id TEXT PRIMARY KEY,
+                  collection_id TEXT NOT NULL,
+                  numero INTEGER NOT NULL,
+                  titre TEXT NOT NULL,
+                  auteur TEXT,
+                  paroles TEXT NOT NULL,
+                  created_at TEXT NOT NULL,
+                  updated_at TEXT NOT NULL,
+                  UNIQUE(collection_id, numero)
+                )
+              ''');
+              await db.execute('''
+                CREATE TABLE chants_personnels (
+                  id TEXT PRIMARY KEY,
+                  titre TEXT NOT NULL,
+                  auteur TEXT,
+                  paroles TEXT NOT NULL,
+                  created_at TEXT NOT NULL,
+                  updated_at TEXT NOT NULL
+                )
+              ''');
+              await db.execute('''
+                CREATE TABLE favorites (
+                  id INTEGER PRIMARY KEY AUTOINCREMENT,
+                  item_type TEXT NOT NULL,
+                  item_id TEXT NOT NULL,
+                  created_at TEXT NOT NULL,
+                  UNIQUE(item_type, item_id)
+                )
+              ''');
+              await db.execute('''
+                CREATE TABLE recently_viewed_cantiques (
+                  id INTEGER PRIMARY KEY AUTOINCREMENT,
+                  cantique_id TEXT NOT NULL UNIQUE,
+                  last_viewed_at TEXT NOT NULL
+                )
+              ''');
+            },
+          ),
+        );
+
+        await legacyDb.insert('collections', {
+          'id': 'legacy_collection',
+          'name': 'Legacy collection',
+          'description': 'Must survive',
+          'created_at': now,
+          'updated_at': now,
+        });
+        for (var number = 1; number <= 2; number++) {
+          await legacyDb.insert('cantiques', {
+            'id': 'legacy_$number',
+            'collection_id': 'legacy_collection',
+            'numero': number,
+            'titre': 'Legacy $number',
+            'paroles': 'Existing lyrics $number',
+            'created_at': now,
+            'updated_at': now,
+          });
+        }
+        await legacyDb.insert('chants_personnels', {
+          'id': 'personal_legacy',
+          'titre': 'Personal legacy',
+          'paroles': 'Private lyrics',
+          'created_at': now,
+          'updated_at': now,
+        });
+        await legacyDb.insert('favorites', {
+          'item_type': AppDatabase.favoriteCantiqueType,
+          'item_id': 'legacy_1',
+          'created_at': now,
+        });
+        await legacyDb.insert('favorites', {
+          'item_type': AppDatabase.favoriteChantPersonnelType,
+          'item_id': 'personal_legacy',
+          'created_at': now,
+        });
+        await legacyDb.insert('favorites', {
+          'item_type': AppDatabase.favoriteChantPersonnelType,
+          'item_id': 'missing_personal',
+          'created_at': now,
+        });
+        await legacyDb.insert('recently_viewed_cantiques', {
+          'cantique_id': 'legacy_2',
+          'last_viewed_at': now,
+        });
+
+        // Simulate debris left by an old, externally interrupted migration.
+        await legacyDb.execute(
+          'CREATE TABLE cantiques_v3 AS SELECT * FROM cantiques WHERE id = "legacy_1"',
+        );
+        await legacyDb.close();
+
+        await AppDatabase.instance.useDatabasePathForTesting(dbPath);
+        await AppDatabase.instance.initialize();
+
+        final migrated = await AppDatabase.instance.getCantiques(
+          collectionId: 'legacy_collection',
+        );
+        expect(migrated.map((cantique) => cantique.id), {
+          'legacy_1',
+          'legacy_2',
+        });
+        expect(
+          await AppDatabase.instance.getChantPersonnelById('personal_legacy'),
+          isNotNull,
+        );
+        expect(
+          await AppDatabase.instance.getFavoriteIds(
+            AppDatabase.favoriteCantiqueType,
+          ),
+          contains('legacy_1'),
+        );
+        expect(
+          await AppDatabase.instance.getFavoriteIds(
+            AppDatabase.favoriteChantPersonnelType,
+          ),
+          contains('personal_legacy'),
+        );
+        expect(
+          await AppDatabase.instance.getFavoriteIds(
+            AppDatabase.favoriteChantPersonnelType,
+          ),
+          isNot(contains('missing_personal')),
+        );
+        expect(
+          (await AppDatabase.instance.getRecentlyViewedCantiques()).map(
+            (cantique) => cantique.id,
+          ),
+          contains('legacy_2'),
+        );
+
+        final migratedDb = await AppDatabase.instance.database;
+        final versionRows = await migratedDb.rawQuery('PRAGMA user_version');
+        expect(versionRows.single['user_version'], AppDatabase.schemaVersion);
+        await AppDatabase.instance.insertCantique(
+          Cantique(
+            id: 'legacy_1_variant',
+            titre: 'Legacy variant',
+            collectionId: 'legacy_collection',
+            collection: 'Legacy collection',
+            contenu: 'Variant lyrics',
+            numero: 1,
+          ),
+        );
+        expect(
+          await AppDatabase.instance.getCantiques(
+            collectionId: 'legacy_collection',
+          ),
+          hasLength(3),
+        );
+      } finally {
+        await AppDatabase.instance.close();
+        if (await tempDir.exists()) {
+          await tempDir.delete(recursive: true);
+        }
+      }
+    });
   });
 }
