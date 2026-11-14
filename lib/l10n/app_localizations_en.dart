@@ -203,4 +203,138 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get choisirTheme => 'Choose theme';
+
+  @override
+  String get modifierChant => 'Edit song';
+
+  @override
+  String get informationsChant => 'Song information';
+
+  @override
+  String get champObligatoire => 'This field is required';
+
+  @override
+  String get titreChantHint => 'Example: How Great Is Our God';
+
+  @override
+  String get auteurChantHint => 'Example: Unknown author';
+
+  @override
+  String get parolesContenuChant => 'Song lyrics / Content';
+
+  @override
+  String get parolesChantHint => 'Enter the song lyrics here…';
+
+  @override
+  String get chargementChantsErreur => 'Unable to load your songs.';
+
+  @override
+  String get ajoutChantErreur => 'Unable to add this song.';
+
+  @override
+  String get modificationChantErreur => 'Unable to update this song.';
+
+  @override
+  String get suppressionChantErreur => 'Unable to delete this song.';
+
+  @override
+  String get chantAjoute => 'Song added';
+
+  @override
+  String get chantMisAJour => 'Song updated';
+
+  @override
+  String get chantSupprime => 'Song deleted';
+
+  @override
+  String get supprimerChantQuestion => 'Delete this song?';
+
+  @override
+  String supprimerChantConfirmation(String title) {
+    return 'Do you really want to delete “$title”?';
+  }
+
+  @override
+  String get chantsPersonnelsTitle => 'Your personal songs';
+
+  @override
+  String get rechercherParTitre => 'Search by title…';
+
+  @override
+  String get plusRecentDabord => 'Newest first';
+
+  @override
+  String get plusAncienDabord => 'Oldest first';
+
+  @override
+  String aucunChantPourRecherche(String query) {
+    return 'No song matches “$query”.';
+  }
+
+  @override
+  String get creerChant => 'Create a song';
+
+  @override
+  String modifieLe(String date) {
+    return 'Updated on $date';
+  }
+
+  @override
+  String get favorisVidesMessage =>
+      'Add hymns or personal songs to your favorites to find them easily here.';
+
+  @override
+  String get cantiquesFavoris => 'Favorite hymns';
+
+  @override
+  String get chantsPersonnelsFavoris => 'Favorite personal songs';
+
+  @override
+  String aucunCantiquePourRecherche(String query) {
+    return 'No hymn matches “$query”.';
+  }
+
+  @override
+  String descriptionCollection(String collection) {
+    return 'Hymns and songs from $collection';
+  }
+
+  @override
+  String aucunCantiqueDansCollection(String collection) {
+    return 'No hymn found in $collection.';
+  }
+
+  @override
+  String chercherDansCollection(String collection) {
+    return 'Search in $collection';
+  }
+
+  @override
+  String get rechercherCantiqueHint => 'Search for a hymn…';
+
+  @override
+  String favorisCollection(String collection) {
+    return 'Favorites — $collection';
+  }
+
+  @override
+  String aucunFavoriDansCollectionNommee(String collection) {
+    return 'You have no favorite hymns in $collection.';
+  }
+
+  @override
+  String nombreFavorisDansCollection(int count, String collection) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count favorites',
+      one: '1 favorite',
+      zero: 'No favorites',
+    );
+    return '$_temp0 in $collection';
+  }
+
+  @override
+  String get consulterPourRecents =>
+      'Open hymns to find them quickly on this screen.';
 }

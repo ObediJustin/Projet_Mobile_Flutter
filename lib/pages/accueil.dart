@@ -202,8 +202,7 @@ class _AccueilPageState extends State<AccueilPage> {
                 title:
                     l10n?.noRecentCantiques ??
                     'Vos cantiques récents apparaîtront ici',
-                message:
-                    'Consultez des cantiques pour les retrouver rapidement sur cet écran.',
+                message: l10n?.consulterPourRecents ?? '',
               )
             else
               ..._recentCantiques.map(

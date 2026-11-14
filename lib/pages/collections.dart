@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
 import '../models/cantique.dart';
 import '../services/cantique_service.dart';
 import '../services/favorite_service.dart';
@@ -42,13 +43,14 @@ class _CollectionPageState extends State<CollectionPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         Padding(
           padding: const EdgeInsets.all(AppSpacing.lg),
           child: AppSearchBar(
             controller: _searchController,
-            hintText: 'Rechercher un cantique dans toutes les collections...',
+            hintText: l10n.searchCollectionsHint,
             onChanged: (value) => setState(() => _globalQuery = value),
             onClear: () => setState(() => _globalQuery = ''),
           ),
@@ -58,8 +60,8 @@ class _CollectionPageState extends State<CollectionPage> {
             child: _globalResults.isEmpty
                 ? AppEmptyState(
                     assetPath: AppAssets.searchEmpty,
-                    title: 'Aucun cantique trouvé',
-                    message: 'Aucun cantique ne correspond à "$_globalQuery".',
+                    title: l10n.noCantiqueFound,
+                    message: l10n.aucunCantiquePourRecherche(_globalQuery),
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.symmetric(
@@ -91,7 +93,7 @@ class _CollectionPageState extends State<CollectionPage> {
                   child: CollectionCard(
                     titre: collection,
                     nombre: count,
-                    description: 'Cantiques et hymnes de $collection',
+                    description: l10n.descriptionCollection(collection),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -169,6 +171,7 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(title: Text(widget.collectionName)),
       body: Column(
@@ -177,7 +180,7 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
             padding: const EdgeInsets.all(AppSpacing.lg),
             child: AppSearchBar(
               controller: _searchController,
-              hintText: 'Rechercher dans cette collection...',
+              hintText: l10n.searchInCollectionHint,
               onChanged: (value) => setState(() => _query = value),
               onClear: () => setState(() => _query = ''),
             ),
@@ -186,9 +189,10 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
             child: _filtered.isEmpty
                 ? AppEmptyState(
                     icon: Icons.search_off_rounded,
-                    title: 'Aucun cantique trouvé',
-                    message:
-                        'Aucun cantique trouvé dans ${widget.collectionName}.',
+                    title: l10n.noCantiqueFound,
+                    message: l10n.aucunCantiqueDansCollection(
+                      widget.collectionName,
+                    ),
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.symmetric(
@@ -237,15 +241,18 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
-      appBar: AppBar(title: Text('Chercher dans ${widget.collectionName}')),
+      appBar: AppBar(
+        title: Text(l10n.chercherDansCollection(widget.collectionName)),
+      ),
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(AppSpacing.lg),
             child: AppSearchBar(
               controller: _searchController,
-              hintText: 'Rechercher un cantique...',
+              hintText: l10n.rechercherCantiqueHint,
               onChanged: (value) => setState(() => _query = value),
               onClear: () => setState(() => _query = ''),
             ),
@@ -254,8 +261,8 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
             child: _results.isEmpty
                 ? AppEmptyState(
                     icon: Icons.search_off_rounded,
-                    title: 'Aucun cantique trouvé',
-                    message: 'Aucun cantique ne correspond à votre recherche.',
+                    title: l10n.noCantiqueFound,
+                    message: l10n.noResultsForQuery,
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.symmetric(
@@ -308,16 +315,20 @@ class _CollectionFavorisPageState extends State<CollectionFavorisPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final count = _favorites.length;
 
     return Scaffold(
-      appBar: AppBar(title: Text('Favoris - ${widget.collectionName}')),
+      appBar: AppBar(
+        title: Text(l10n.favorisCollection(widget.collectionName)),
+      ),
       body: _favorites.isEmpty
           ? AppEmptyState(
               icon: Icons.favorite_border_rounded,
-              title: 'Aucun favori',
-              message:
-                  'Vous n\'avez aucun cantique favori dans ${widget.collectionName}.',
+              title: l10n.noFavorites,
+              message: l10n.aucunFavoriDansCollectionNommee(
+                widget.collectionName,
+              ),
             )
           : ListView.builder(
               padding: const EdgeInsets.all(AppSpacing.lg),
@@ -327,7 +338,10 @@ class _CollectionFavorisPageState extends State<CollectionFavorisPage> {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: AppSpacing.md),
                     child: Text(
-                      '$count favori(s) dans ${widget.collectionName}',
+                      l10n.nombreFavorisDansCollection(
+                        count,
+                        widget.collectionName,
+                      ),
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,

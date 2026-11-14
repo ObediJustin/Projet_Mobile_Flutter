@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
 import '../models/chant_personnel.dart';
 import '../pages/chant_detail.dart';
 import '../pages/chant_form.dart';
@@ -48,11 +49,12 @@ class _MesChantsPageState extends State<MesChantsPage> {
       final all = await _chantService.getAllChants();
       if (!mounted) return;
       setState(() => _chants = all);
-    } catch (e) {
+    } catch (_) {
       if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text('Erreur chargement: $e')));
+        ).showSnackBar(SnackBar(content: Text(l10n.chargementChantsErreur)));
       }
     } finally {
       if (mounted) setState(() => _isLoading = false);
@@ -85,15 +87,17 @@ class _MesChantsPageState extends State<MesChantsPage> {
     try {
       await _chantService.addChant(result);
       if (!mounted) return;
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('Chant ajouté')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(AppLocalizations.of(context)!.chantAjoute)),
+      );
       await _loadChants();
-    } catch (e) {
+    } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Erreur ajout: $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.ajoutChantErreur),
+          ),
+        );
       }
     }
   }
@@ -111,35 +115,40 @@ class _MesChantsPageState extends State<MesChantsPage> {
     try {
       await _chantService.updateChant(updated);
       if (!mounted) return;
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('Chant mis à jour')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(AppLocalizations.of(context)!.chantMisAJour)),
+      );
       await _loadChants();
-    } catch (e) {
+    } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Erreur modification: $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              AppLocalizations.of(context)!.modificationChantErreur,
+            ),
+          ),
+        );
       }
     }
   }
 
   Future<void> _confirmAndDelete(ChantPersonnel chant) async {
+    final l10n = AppLocalizations.of(context)!;
     final shouldDelete = await showDialog<bool>(
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('Supprimer ce chant ?'),
-          content: Text('Voulez-vous vraiment supprimer\n"${chant.titre}" ?'),
+          title: Text(l10n.supprimerChantQuestion),
+          content: Text(l10n.supprimerChantConfirmation(chant.titre)),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, false),
-              child: const Text('Annuler'),
+              child: Text(l10n.annuler),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: AppColors.error),
               onPressed: () => Navigator.pop(context, true),
-              child: const Text('Supprimer'),
+              child: Text(l10n.supprimer),
             ),
           ],
         );
@@ -151,21 +160,24 @@ class _MesChantsPageState extends State<MesChantsPage> {
     try {
       await _chantService.deleteChant(chant.id);
       if (!mounted) return;
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('Chant supprimé')));
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(AppLocalizations.of(context)!.chantSupprime)),
+      );
       await _loadChants();
-    } catch (e) {
+    } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Erreur suppression: $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.suppressionChantErreur),
+          ),
+        );
       }
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       body: Column(
         children: [
@@ -182,29 +194,30 @@ class _MesChantsPageState extends State<MesChantsPage> {
         foregroundColor: AppColors.textOnPrimary,
         onPressed: _openAddForm,
         icon: const Icon(Icons.add_rounded),
-        label: const Text(
-          'Nouveau chant',
-          style: TextStyle(fontWeight: FontWeight.bold),
+        label: Text(
+          l10n.nouveauChant,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
     );
   }
 
   Widget _buildHeader() {
+    final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.all(AppSpacing.lg),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AppSectionHeader(
-            title: 'Vos chants personnels',
+            title: l10n.chantsPersonnelsTitle,
             icon: Icons.edit_note_rounded,
             countBadge: _chants.length,
           ),
           const SizedBox(height: AppSpacing.md),
           AppSearchBar(
             controller: _searchController,
-            hintText: 'Rechercher par titre...',
+            hintText: l10n.rechercherParTitre,
             onChanged: (value) => setState(() => _searchQuery = value),
             onClear: () => setState(() => _searchQuery = ''),
           ),
@@ -234,14 +247,14 @@ class _MesChantsPageState extends State<MesChantsPage> {
                         color: AppColors.textPrimary,
                         fontWeight: FontWeight.w500,
                       ),
-                      items: const [
+                      items: [
                         DropdownMenuItem(
                           value: true,
-                          child: Text('Plus récent d’abord'),
+                          child: Text(l10n.plusRecentDabord),
                         ),
                         DropdownMenuItem(
                           value: false,
-                          child: Text('Plus ancien d’abord'),
+                          child: Text(l10n.plusAncienDabord),
                         ),
                       ],
                       onChanged: (value) {
@@ -260,6 +273,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
   }
 
   Widget _buildList() {
+    final l10n = AppLocalizations.of(context)!;
     final items = _filteredAndSorted;
 
     if (items.isEmpty) {
@@ -267,11 +281,11 @@ class _MesChantsPageState extends State<MesChantsPage> {
         assetPath: _searchQuery.isNotEmpty
             ? AppAssets.searchEmpty
             : AppAssets.personalSongs,
-        title: 'Aucun chant personnel',
+        title: l10n.noPersonalChants,
         message: _searchQuery.isNotEmpty
-            ? 'Aucun chant ne correspond à "$_searchQuery".'
-            : 'Vous n\'avez encore ajouté aucun chant personnel. Appuyez sur "Nouveau chant" pour en créer un.',
-        actionLabel: _searchQuery.isEmpty ? 'Créer un chant' : null,
+            ? l10n.aucunChantPourRecherche(_searchQuery)
+            : l10n.noPersonalChantsMessage,
+        actionLabel: _searchQuery.isEmpty ? l10n.creerChant : null,
         onAction: _searchQuery.isEmpty ? _openAddForm : null,
       );
     }
@@ -345,7 +359,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Modifié le ${_formatDate(chant.dateModification)}',
+                    l10n.modifieLe(_formatDate(chant.dateModification)),
                     style: const TextStyle(
                       color: AppColors.textMuted,
                       fontSize: 11,

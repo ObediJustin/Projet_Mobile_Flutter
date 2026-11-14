@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../pages/chant_detail.dart';
@@ -54,16 +55,16 @@ class _FavorisPageState extends State<FavorisPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     if (_isLoading) {
       return const Center(child: CircularProgressIndicator());
     }
 
     if (_favoriteCantiques.isEmpty && _favoriteChantsPersonnels.isEmpty) {
-      return const AppEmptyState(
+      return AppEmptyState(
         assetPath: AppAssets.favoritesEmpty,
-        title: 'Aucun favori',
-        message:
-            'Ajoutez des cantiques ou des chants personnels à vos favoris pour les retrouver facilement ici.',
+        title: l10n.noFavorites,
+        message: l10n.favorisVidesMessage,
       );
     }
 
@@ -74,7 +75,7 @@ class _FavorisPageState extends State<FavorisPage> {
         children: [
           if (_favoriteCantiques.isNotEmpty) ...[
             AppSectionHeader(
-              title: 'Cantiques favoris',
+              title: l10n.cantiquesFavoris,
               icon: Icons.music_note_rounded,
               countBadge: _favoriteCantiques.length,
             ),
@@ -86,7 +87,7 @@ class _FavorisPageState extends State<FavorisPage> {
           ],
           if (_favoriteChantsPersonnels.isNotEmpty) ...[
             AppSectionHeader(
-              title: 'Mes chants favoris',
+              title: l10n.chantsPersonnelsFavoris,
               icon: Icons.edit_note_rounded,
               countBadge: _favoriteChantsPersonnels.length,
             ),

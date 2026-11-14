@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
 import '../models/chant_personnel.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
@@ -48,16 +49,17 @@ class _ChantFormPageState extends State<ChantFormPage> {
 
   String? _nonVideValidator(String? value) {
     if (value == null || value.trim().isEmpty) {
-      return 'Ce champ est obligatoire';
+      return AppLocalizations.of(context)?.champObligatoire;
     }
     return null;
   }
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: Text(_isEditMode ? 'Modifier le chant' : 'Nouveau chant'),
+        title: Text(_isEditMode ? l10n.modifierChant : l10n.nouveauChant),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -67,9 +69,9 @@ class _ChantFormPageState extends State<ChantFormPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Informations du chant',
-                  style: TextStyle(
+                Text(
+                  l10n.informationsChant,
+                  style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: AppColors.textPrimary,
@@ -79,10 +81,10 @@ class _ChantFormPageState extends State<ChantFormPage> {
 
                 TextFormField(
                   controller: _titreController,
-                  decoration: const InputDecoration(
-                    labelText: 'Titre du chant',
-                    hintText: 'Ex: Mon Dieu est grand',
-                    prefixIcon: Icon(Icons.title_rounded),
+                  decoration: InputDecoration(
+                    labelText: l10n.titreChant,
+                    hintText: l10n.titreChantHint,
+                    prefixIcon: const Icon(Icons.title_rounded),
                   ),
                   validator: _nonVideValidator,
                   textInputAction: TextInputAction.next,
@@ -92,10 +94,10 @@ class _ChantFormPageState extends State<ChantFormPage> {
 
                 TextFormField(
                   controller: _auteurController,
-                  decoration: const InputDecoration(
-                    labelText: 'Auteur (optionnel)',
-                    hintText: 'Ex: Auteur inconnu',
-                    prefixIcon: Icon(Icons.person_outline_rounded),
+                  decoration: InputDecoration(
+                    labelText: l10n.auteurChant,
+                    hintText: l10n.auteurChantHint,
+                    prefixIcon: const Icon(Icons.person_outline_rounded),
                   ),
                 ),
 
@@ -103,10 +105,10 @@ class _ChantFormPageState extends State<ChantFormPage> {
 
                 TextFormField(
                   controller: _contenuController,
-                  decoration: const InputDecoration(
-                    labelText: 'Paroles / Contenu du chant',
-                    hintText: 'Saisissez les paroles du chant ici...',
-                    prefixIcon: Icon(Icons.notes_rounded),
+                  decoration: InputDecoration(
+                    labelText: l10n.parolesContenuChant,
+                    hintText: l10n.parolesChantHint,
+                    prefixIcon: const Icon(Icons.notes_rounded),
                     alignLabelWithHint: true,
                   ),
                   validator: _nonVideValidator,
@@ -122,7 +124,7 @@ class _ChantFormPageState extends State<ChantFormPage> {
                     Expanded(
                       child: ElevatedButton.icon(
                         icon: const Icon(Icons.save_rounded),
-                        label: const Text('Enregistrer'),
+                        label: Text(l10n.enregistrer),
                         onPressed: () async {
                           final form = _formKey.currentState;
                           if (form == null) return;
@@ -152,7 +154,7 @@ class _ChantFormPageState extends State<ChantFormPage> {
                     const SizedBox(width: AppSpacing.md),
                     OutlinedButton.icon(
                       icon: const Icon(Icons.close_rounded),
-                      label: const Text('Annuler'),
+                      label: Text(l10n.annuler),
                       onPressed: () => Navigator.pop(context),
                     ),
                   ],

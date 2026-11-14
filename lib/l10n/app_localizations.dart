@@ -487,6 +487,216 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Choisir le thème'**
   String get choisirTheme;
+
+  /// No description provided for @modifierChant.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifier le chant'**
+  String get modifierChant;
+
+  /// No description provided for @informationsChant.
+  ///
+  /// In fr, this message translates to:
+  /// **'Informations du chant'**
+  String get informationsChant;
+
+  /// No description provided for @champObligatoire.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ce champ est obligatoire'**
+  String get champObligatoire;
+
+  /// No description provided for @titreChantHint.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ex. : Mon Dieu est grand'**
+  String get titreChantHint;
+
+  /// No description provided for @auteurChantHint.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ex. : Auteur inconnu'**
+  String get auteurChantHint;
+
+  /// No description provided for @parolesContenuChant.
+  ///
+  /// In fr, this message translates to:
+  /// **'Paroles / Contenu du chant'**
+  String get parolesContenuChant;
+
+  /// No description provided for @parolesChantHint.
+  ///
+  /// In fr, this message translates to:
+  /// **'Saisissez les paroles du chant ici…'**
+  String get parolesChantHint;
+
+  /// No description provided for @chargementChantsErreur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible de charger vos chants.'**
+  String get chargementChantsErreur;
+
+  /// No description provided for @ajoutChantErreur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible d\'ajouter ce chant.'**
+  String get ajoutChantErreur;
+
+  /// No description provided for @modificationChantErreur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible de modifier ce chant.'**
+  String get modificationChantErreur;
+
+  /// No description provided for @suppressionChantErreur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible de supprimer ce chant.'**
+  String get suppressionChantErreur;
+
+  /// No description provided for @chantAjoute.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant ajouté'**
+  String get chantAjoute;
+
+  /// No description provided for @chantMisAJour.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant mis à jour'**
+  String get chantMisAJour;
+
+  /// No description provided for @chantSupprime.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant supprimé'**
+  String get chantSupprime;
+
+  /// No description provided for @supprimerChantQuestion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Supprimer ce chant ?'**
+  String get supprimerChantQuestion;
+
+  /// No description provided for @supprimerChantConfirmation.
+  ///
+  /// In fr, this message translates to:
+  /// **'Voulez-vous vraiment supprimer « {title} » ?'**
+  String supprimerChantConfirmation(String title);
+
+  /// No description provided for @chantsPersonnelsTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Vos chants personnels'**
+  String get chantsPersonnelsTitle;
+
+  /// No description provided for @rechercherParTitre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Rechercher par titre…'**
+  String get rechercherParTitre;
+
+  /// No description provided for @plusRecentDabord.
+  ///
+  /// In fr, this message translates to:
+  /// **'Plus récent d\'abord'**
+  String get plusRecentDabord;
+
+  /// No description provided for @plusAncienDabord.
+  ///
+  /// In fr, this message translates to:
+  /// **'Plus ancien d\'abord'**
+  String get plusAncienDabord;
+
+  /// No description provided for @aucunChantPourRecherche.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucun chant ne correspond à « {query} ».'**
+  String aucunChantPourRecherche(String query);
+
+  /// No description provided for @creerChant.
+  ///
+  /// In fr, this message translates to:
+  /// **'Créer un chant'**
+  String get creerChant;
+
+  /// No description provided for @modifieLe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifié le {date}'**
+  String modifieLe(String date);
+
+  /// No description provided for @favorisVidesMessage.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajoutez des cantiques ou des chants personnels à vos favoris pour les retrouver facilement ici.'**
+  String get favorisVidesMessage;
+
+  /// No description provided for @cantiquesFavoris.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cantiques favoris'**
+  String get cantiquesFavoris;
+
+  /// No description provided for @chantsPersonnelsFavoris.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mes chants favoris'**
+  String get chantsPersonnelsFavoris;
+
+  /// No description provided for @aucunCantiquePourRecherche.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucun cantique ne correspond à « {query} ».'**
+  String aucunCantiquePourRecherche(String query);
+
+  /// No description provided for @descriptionCollection.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cantiques et hymnes de {collection}'**
+  String descriptionCollection(String collection);
+
+  /// No description provided for @aucunCantiqueDansCollection.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucun cantique trouvé dans {collection}.'**
+  String aucunCantiqueDansCollection(String collection);
+
+  /// No description provided for @chercherDansCollection.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chercher dans {collection}'**
+  String chercherDansCollection(String collection);
+
+  /// No description provided for @rechercherCantiqueHint.
+  ///
+  /// In fr, this message translates to:
+  /// **'Rechercher un cantique…'**
+  String get rechercherCantiqueHint;
+
+  /// No description provided for @favorisCollection.
+  ///
+  /// In fr, this message translates to:
+  /// **'Favoris — {collection}'**
+  String favorisCollection(String collection);
+
+  /// No description provided for @aucunFavoriDansCollectionNommee.
+  ///
+  /// In fr, this message translates to:
+  /// **'Vous n\'avez aucun cantique favori dans {collection}.'**
+  String aucunFavoriDansCollectionNommee(String collection);
+
+  /// No description provided for @nombreFavorisDansCollection.
+  ///
+  /// In fr, this message translates to:
+  /// **'{count, plural, =0{Aucun favori} =1{1 favori} other{{count} favoris}} dans {collection}'**
+  String nombreFavorisDansCollection(int count, String collection);
+
+  /// No description provided for @consulterPourRecents.
+  ///
+  /// In fr, this message translates to:
+  /// **'Consultez des cantiques pour les retrouver rapidement sur cet écran.'**
+  String get consulterPourRecents;
 }
 
 class _AppLocalizationsDelegate
