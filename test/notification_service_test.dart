@@ -37,12 +37,42 @@ void main() {
       final payload = 'cantique:${first.id}';
       expect(payload.startsWith('cantique:'), isTrue);
 
-      final extractedId = payload.substring('cantique:'.length);
+      final extractedId = NotificationService.cantiqueIdFromPayload(payload);
       final resolvedCantique = CantiqueService.instance.getCantiqueById(
-        extractedId,
+        extractedId!,
       );
       expect(resolvedCantique, isNotNull);
       expect(resolvedCantique!.id, first.id);
+    });
+
+    test('payload parser rejects unrelated and empty targets', () {
+      expect(
+        NotificationService.cantiqueIdFromPayload('verse_of_the_day'),
+        isNull,
+      );
+      expect(NotificationService.cantiqueIdFromPayload('cantique:  '), isNull);
+      expect(
+        NotificationService.cantiqueIdFromPayload('cantique:hosanna_001'),
+        'hosanna_001',
+      );
+    });
+
+    test('daily cantique content changes deterministically', () {
+      final first = NotificationService.dailyContentIndex(
+        DateTime(2026, 1, 1),
+        10,
+      );
+      final sameDay = NotificationService.dailyContentIndex(
+        DateTime(2026, 1, 1, 23, 59),
+        10,
+      );
+      final nextDay = NotificationService.dailyContentIndex(
+        DateTime(2026, 1, 2),
+        10,
+      );
+
+      expect(sameDay, first);
+      expect(nextDay, isNot(first));
     });
   });
 }

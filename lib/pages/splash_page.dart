@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'home.dart';
 
 class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
+  final Widget? pageAfterSplash;
+
+  const SplashPage({super.key, this.pageAfterSplash});
 
   @override
   State<SplashPage> createState() => _SplashPageState();
@@ -36,7 +38,8 @@ class _SplashPageState extends State<SplashPage>
     // Navigate to Home after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
-        Navigator.of(context).pushReplacement(
+        final navigator = Navigator.of(context);
+        navigator.pushReplacement(
           PageRouteBuilder(
             pageBuilder: (context, animation, secondaryAnimation) =>
                 const Home(),
@@ -47,6 +50,16 @@ class _SplashPageState extends State<SplashPage>
             transitionDuration: const Duration(milliseconds: 400),
           ),
         );
+        final pageAfterSplash = widget.pageAfterSplash;
+        if (pageAfterSplash != null) {
+          Future.delayed(const Duration(milliseconds: 450), () {
+            if (navigator.mounted) {
+              navigator.push(
+                MaterialPageRoute(builder: (_) => pageAfterSplash),
+              );
+            }
+          });
+        }
       }
     });
   }

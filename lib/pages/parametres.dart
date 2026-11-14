@@ -23,6 +23,7 @@ class _ParametresPageState extends State<ParametresPage> {
   bool _isLoading = true;
   AppThemeMode _selectedTheme = AppThemeMode.green;
   bool _notificationsEnabled = SettingsService.defaultNotificationsEnabled;
+  bool _isUpdatingNotifications = false;
   String _selectedLanguage = SettingsService.defaultLanguage;
   double _fontSize = SettingsService.defaultLyricsFontSize;
 
@@ -246,16 +247,9 @@ class _ParametresPageState extends State<ParametresPage> {
               ),
             ),
             value: _notificationsEnabled,
-            onChanged: (value) async {
-              setState(() {
-                _notificationsEnabled = value;
-              });
-              await _settingsService.saveNotificationsEnabled(value);
-              if (value) {
-                await NotificationService.instance.requestPermission();
-              }
-              await NotificationService.instance.syncNotificationSchedule();
-            },
+            onChanged: _isUpdatingNotifications
+                ? null
+                : _setNotificationsEnabled,
           ),
         ),
 
@@ -461,6 +455,32 @@ class _ParametresPageState extends State<ParametresPage> {
         const SizedBox(height: AppSpacing.xxl),
       ],
     );
+  }
+
+  Future<void> _setNotificationsEnabled(bool requestedValue) async {
+    final previousValue = _notificationsEnabled;
+    setState(() {
+      _notificationsEnabled = requestedValue;
+      _isUpdatingNotifications = true;
+    });
+
+    try {
+      final enabled = requestedValue
+          ? await NotificationService.instance.requestPermission()
+          : false;
+      await _settingsService.saveNotificationsEnabled(enabled);
+      await NotificationService.instance.syncNotificationSchedule();
+      if (!mounted) return;
+      setState(() => _notificationsEnabled = enabled);
+    } catch (_) {
+      await _settingsService.saveNotificationsEnabled(previousValue);
+      if (!mounted) return;
+      setState(() => _notificationsEnabled = previousValue);
+    } finally {
+      if (mounted) {
+        setState(() => _isUpdatingNotifications = false);
+      }
+    }
   }
 
   void _showThemeDialog() {

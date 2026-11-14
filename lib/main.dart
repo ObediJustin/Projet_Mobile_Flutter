@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -34,27 +36,57 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
+  StreamSubscription<String>? _notificationSubscription;
+  String? _initialNotificationPayload;
+
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _initialNotificationPayload = NotificationService.instance
+        .takeInitialPayload();
     _listenToNotificationTaps();
   }
 
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      unawaited(NotificationService.instance.refreshForDeviceChanges());
+    }
+  }
+
   void _listenToNotificationTaps() {
-    NotificationService.instance.onNotificationTap.listen((payload) {
-      if (payload.startsWith('cantique:')) {
-        final cantiqueId = payload.substring('cantique:'.length);
-        final cantique = CantiqueService.instance.getCantiqueById(cantiqueId);
-        if (cantique != null) {
-          navigatorKey.currentState?.push(
-            MaterialPageRoute(
-              builder: (context) => CantiqueDetailPage(cantique: cantique),
-            ),
-          );
-        }
-      }
-    });
+    _notificationSubscription = NotificationService.instance.onNotificationTap
+        .listen(_openNotificationPayload);
+  }
+
+  Widget? _pageForNotificationPayload(String? payload) {
+    if (payload == null) return null;
+    final cantiqueId = NotificationService.cantiqueIdFromPayload(payload);
+    if (cantiqueId == null) return null;
+    final cantique = CantiqueService.instance.getCantiqueById(cantiqueId);
+    return cantique == null ? null : CantiqueDetailPage(cantique: cantique);
+  }
+
+  void _openNotificationPayload(String payload) {
+    final page = _pageForNotificationPayload(payload);
+    if (page == null) return;
+    final navigator = navigatorKey.currentState;
+    if (navigator == null) {
+      WidgetsBinding.instance.addPostFrameCallback(
+        (_) => _openNotificationPayload(payload),
+      );
+      return;
+    }
+    navigator.push(MaterialPageRoute(builder: (_) => page));
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _notificationSubscription?.cancel();
+    super.dispose();
   }
 
   @override
@@ -80,7 +112,11 @@ class _MyAppState extends State<MyApp> {
                 AppLocalizations.delegate,
               ],
               supportedLocales: AppLocalizations.supportedLocales,
-              home: const SplashPage(),
+              home: SplashPage(
+                pageAfterSplash: _pageForNotificationPayload(
+                  _initialNotificationPayload,
+                ),
+              ),
             );
           },
         );
