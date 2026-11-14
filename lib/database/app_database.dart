@@ -737,7 +737,14 @@ class AppDatabase {
     }
 
     final db = await database;
-    await db.delete('chants_personnels', where: 'id = ?', whereArgs: [id]);
+    await db.transaction((txn) async {
+      await txn.delete(
+        'favorites',
+        where: 'item_type = ? AND item_id = ?',
+        whereArgs: [favoriteChantPersonnelType, id],
+      );
+      await txn.delete('chants_personnels', where: 'id = ?', whereArgs: [id]);
+    });
   }
 
   Future<void> insertFavorite(String type, String id) async {
