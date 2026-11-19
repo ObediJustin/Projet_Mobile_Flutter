@@ -17,16 +17,115 @@ final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  runApp(const AppBootstrap());
+}
 
-  final settingsService = SettingsService();
-  await settingsService.initSettings();
+class AppBootstrap extends StatefulWidget {
+  const AppBootstrap({super.key});
 
-  await AppDatabase.instance.initialize();
-  await CantiqueService.instance.loadCacheFromDatabase();
+  @override
+  State<AppBootstrap> createState() => _AppBootstrapState();
+}
 
-  await NotificationService.instance.initialize();
+class _AppBootstrapState extends State<AppBootstrap> {
+  bool _isInitializing = false;
+  bool _isReady = false;
+  Object? _startupError;
 
-  runApp(const MyApp());
+  @override
+  void initState() {
+    super.initState();
+    _initialize();
+  }
+
+  Future<void> _initialize() async {
+    if (_isInitializing) return;
+    setState(() {
+      _isInitializing = true;
+      _startupError = null;
+    });
+
+    try {
+      final settingsService = SettingsService();
+      await settingsService.initSettings();
+
+      await AppDatabase.instance.initialize();
+      await CantiqueService.instance.loadCacheFromDatabase();
+
+      await NotificationService.instance.initialize();
+
+      if (!mounted) return;
+      setState(() => _isReady = true);
+    } catch (error, stackTrace) {
+      debugPrint('Critical application startup failure: $error');
+      debugPrintStack(stackTrace: stackTrace);
+      if (!mounted) return;
+      setState(() => _startupError = error);
+    } finally {
+      if (mounted) {
+        setState(() => _isInitializing = false);
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_isReady) return const MyApp();
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.buildTheme(SettingsService.themeNotifier.value),
+      locale: SettingsService.resolveLocale(
+        SettingsService.languageNotifier.value,
+      ),
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        AppLocalizations.delegate,
+      ],
+      supportedLocales: AppLocalizations.supportedLocales,
+      home: Builder(
+        builder: (context) {
+          final l10n = AppLocalizations.of(context)!;
+          return Scaffold(
+            body: SafeArea(
+              child: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: _startupError == null
+                      ? const CircularProgressIndicator()
+                      : Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(Icons.error_outline_rounded, size: 48),
+                            const SizedBox(height: 16),
+                            Text(
+                              l10n.demarrageErreurTitle,
+                              style: Theme.of(context).textTheme.titleLarge,
+                              textAlign: TextAlign.center,
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              l10n.demarrageErreurMessage,
+                              textAlign: TextAlign.center,
+                            ),
+                            const SizedBox(height: 24),
+                            FilledButton.icon(
+                              onPressed: _isInitializing ? null : _initialize,
+                              icon: const Icon(Icons.refresh_rounded),
+                              label: Text(l10n.reessayer),
+                            ),
+                          ],
+                        ),
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
 }
 
 class MyApp extends StatefulWidget {
