@@ -343,4 +343,85 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get consulterPourRecents =>
       'Consultez des cantiques pour les retrouver rapidement sur cet écran.';
+
+  @override
+  String get recueilSpirituelLocal => 'Recueil spirituel local';
+
+  @override
+  String get cantiqueAleatoire => 'Cantique aléatoire';
+
+  @override
+  String get soutenir => 'Soutenir';
+
+  @override
+  String get noterApplication => 'Noter l\'application';
+
+  @override
+  String get partagerApplication => 'Partager l\'application';
+
+  @override
+  String get nousContacter => 'Nous contacter';
+
+  @override
+  String get aProposDescription =>
+      'Une bibliothèque locale de cantiques pour louer et adorer Dieu en toute simplicité.';
+
+  @override
+  String get fermer => 'Fermer';
+
+  @override
+  String get contactQuestionSuggestion => 'Pour toute question ou suggestion :';
+
+  @override
+  String get telephone => 'Téléphone';
+
+  @override
+  String get soutienIndisponible =>
+      'Merci de vouloir soutenir notre application !\n\nCette fonctionnalité sera bientôt disponible.\n\nEn attendant, vous pouvez partager l\'application avec vos proches.';
+
+  @override
+  String get noterApplicationMessage =>
+      'Si vous aimez cette application, n\'hésitez pas à lui donner une note !';
+
+  @override
+  String get merciTitle => 'Merci !';
+
+  @override
+  String merciNotation(int rating) {
+    return 'Merci d\'avoir attribué $rating étoile(s) à notre application !\n\nVotre soutien nous est précieux.';
+  }
+
+  @override
+  String get partageApplicationMessage =>
+      'Découvre l\'application « Cantiques du Message » pour louer et adorer Dieu !';
+
+  @override
+  String reseauBientotDisponible(String social) {
+    return 'Suivez-nous sur $social\n\nCette fonctionnalité sera bientôt disponible.';
+  }
+
+  @override
+  String get erreurFavori => 'Impossible de modifier ce favori.';
+
+  @override
+  String get supprimerQuestion => 'Supprimer ?';
+
+  @override
+  String get suppressionDefinitiveChant =>
+      'Cette action supprimera définitivement ce chant personnel.\n\nVoulez-vous continuer ?';
+
+  @override
+  String auteurValeur(String author) {
+    return 'Auteur : $author';
+  }
+
+  @override
+  String creationValeur(String date) {
+    return 'Création : $date';
+  }
+
+  @override
+  String modificationValeur(String date) {
+    return 'Modifié : $date';
+  }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_localizations.dart';
 import '../models/chant_personnel.dart';
 import '../pages/chant_form.dart';
 import '../services/chant_personnel_service.dart';
@@ -55,17 +56,19 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              _isFavorite ? 'Ajouté aux favoris' : 'Retiré des favoris',
+              _isFavorite
+                  ? AppLocalizations.of(context)!.ajouteAuxFavoris
+                  : AppLocalizations.of(context)!.retireDesFavoris,
             ),
             duration: const Duration(seconds: 1),
           ),
         );
       }
-    } catch (e) {
+    } catch (_) {
       if (mounted) {
-        ScaffoldMessenger.of(
-          context,
-        ).showSnackBar(SnackBar(content: Text('Erreur favoris: $e')));
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context)!.erreurFavori)),
+        );
       }
     } finally {
       if (mounted) setState(() => _isBusy = false);
@@ -74,24 +77,23 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
   Future<void> _confirmAndDelete() async {
     if (_isBusy) return;
+    final l10n = AppLocalizations.of(context)!;
 
     final bool? canDelete = await showDialog<bool>(
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('Supprimer ?'),
-          content: const Text(
-            'Cette action supprimera définitivement ce chant personnel.\n\nVoulez-vous continuer ?',
-          ),
+          title: Text(l10n.supprimerQuestion),
+          content: Text(l10n.suppressionDefinitiveChant),
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context, false),
-              child: const Text('Annuler'),
+              child: Text(l10n.annuler),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(backgroundColor: AppColors.error),
               onPressed: () => Navigator.pop(context, true),
-              child: const Text('Supprimer'),
+              child: Text(l10n.supprimer),
             ),
           ],
         );
@@ -107,14 +109,14 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(const SnackBar(content: Text('Chant supprimé')));
+      ).showSnackBar(SnackBar(content: Text(l10n.chantSupprime)));
 
       Navigator.pop(context, true);
-    } catch (e) {
+    } catch (_) {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text('Erreur suppression: $e')));
+        ).showSnackBar(SnackBar(content: Text(l10n.suppressionChantErreur)));
       }
     } finally {
       if (mounted) setState(() => _isBusy = false);
@@ -123,6 +125,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
   Future<void> _edit() async {
     if (_isBusy) return;
+    final l10n = AppLocalizations.of(context)!;
 
     final updated = await Navigator.push<ChantPersonnel>(
       context,
@@ -140,14 +143,14 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(const SnackBar(content: Text('Chant mis à jour')));
+      ).showSnackBar(SnackBar(content: Text(l10n.chantMisAJour)));
 
       Navigator.pop(context, updated);
-    } catch (e) {
+    } catch (_) {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
-        ).showSnackBar(SnackBar(content: Text('Erreur modification: $e')));
+        ).showSnackBar(SnackBar(content: Text(l10n.modificationChantErreur)));
       }
     } finally {
       if (mounted) setState(() => _isBusy = false);
@@ -189,6 +192,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
   @override
   Widget build(BuildContext context) {
     final chant = widget.chant;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -237,7 +241,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                       if ((chant.auteur ?? '').isNotEmpty) ...[
                         const SizedBox(height: 4),
                         Text(
-                          'Auteur : ${chant.auteur}',
+                          l10n.auteurValeur(chant.auteur!),
                           style: const TextStyle(
                             color: AppColors.textSecondary,
                             fontStyle: FontStyle.italic,
@@ -252,13 +256,15 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                         children: [
                           _infoChip(
                             icon: Icons.calendar_today_rounded,
-                            label:
-                                'Création : ${_formatDate(chant.dateCreation)}',
+                            label: l10n.creationValeur(
+                              _formatDate(chant.dateCreation),
+                            ),
                           ),
                           _infoChip(
                             icon: Icons.update_rounded,
-                            label:
-                                'Modifié : ${_formatDate(chant.dateModification)}',
+                            label: l10n.modificationValeur(
+                              _formatDate(chant.dateModification),
+                            ),
                           ),
                         ],
                       ),
@@ -268,9 +274,9 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
                 const SizedBox(height: AppSpacing.xl),
 
-                const Text(
-                  'Paroles',
-                  style: TextStyle(
+                Text(
+                  l10n.parolesChant,
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: AppColors.textPrimary,
@@ -310,7 +316,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                     Expanded(
                       child: ElevatedButton.icon(
                         icon: const Icon(Icons.edit_rounded, size: 18),
-                        label: const Text('Modifier'),
+                        label: Text(l10n.modifier),
                         onPressed: _isBusy ? null : _edit,
                       ),
                     ),
@@ -325,7 +331,7 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                           Icons.delete_outline_rounded,
                           size: 18,
                         ),
-                        label: const Text('Supprimer'),
+                        label: Text(l10n.supprimer),
                         onPressed: _isBusy ? null : _confirmAndDelete,
                       ),
                     ),

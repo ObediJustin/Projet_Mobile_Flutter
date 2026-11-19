@@ -337,4 +337,85 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get consulterPourRecents =>
       'Open hymns to find them quickly on this screen.';
+
+  @override
+  String get recueilSpirituelLocal => 'Local spiritual songbook';
+
+  @override
+  String get cantiqueAleatoire => 'Random hymn';
+
+  @override
+  String get soutenir => 'Support us';
+
+  @override
+  String get noterApplication => 'Rate the app';
+
+  @override
+  String get partagerApplication => 'Share the app';
+
+  @override
+  String get nousContacter => 'Contact us';
+
+  @override
+  String get aProposDescription =>
+      'A local hymn library for praising and worshiping God with ease.';
+
+  @override
+  String get fermer => 'Close';
+
+  @override
+  String get contactQuestionSuggestion => 'For any question or suggestion:';
+
+  @override
+  String get telephone => 'Phone';
+
+  @override
+  String get soutienIndisponible =>
+      'Thank you for wanting to support our app!\n\nThis feature will be available soon.\n\nIn the meantime, you can share the app with friends and family.';
+
+  @override
+  String get noterApplicationMessage =>
+      'If you enjoy this app, please consider giving it a rating!';
+
+  @override
+  String get merciTitle => 'Thank you!';
+
+  @override
+  String merciNotation(int rating) {
+    return 'Thank you for giving our app $rating star(s)!\n\nYour support means a lot to us.';
+  }
+
+  @override
+  String get partageApplicationMessage =>
+      'Discover the “Cantiques du Message” app to praise and worship God!';
+
+  @override
+  String reseauBientotDisponible(String social) {
+    return 'Follow us on $social\n\nThis feature will be available soon.';
+  }
+
+  @override
+  String get erreurFavori => 'Unable to update this favorite.';
+
+  @override
+  String get supprimerQuestion => 'Delete?';
+
+  @override
+  String get suppressionDefinitiveChant =>
+      'This action will permanently delete this personal song.\n\nDo you want to continue?';
+
+  @override
+  String auteurValeur(String author) {
+    return 'Author: $author';
+  }
+
+  @override
+  String creationValeur(String date) {
+    return 'Created: $date';
+  }
+
+  @override
+  String modificationValeur(String date) {
+    return 'Updated: $date';
+  }
 }

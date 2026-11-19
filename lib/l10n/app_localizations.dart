@@ -697,6 +697,138 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Consultez des cantiques pour les retrouver rapidement sur cet écran.'**
   String get consulterPourRecents;
+
+  /// No description provided for @recueilSpirituelLocal.
+  ///
+  /// In fr, this message translates to:
+  /// **'Recueil spirituel local'**
+  String get recueilSpirituelLocal;
+
+  /// No description provided for @cantiqueAleatoire.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cantique aléatoire'**
+  String get cantiqueAleatoire;
+
+  /// No description provided for @soutenir.
+  ///
+  /// In fr, this message translates to:
+  /// **'Soutenir'**
+  String get soutenir;
+
+  /// No description provided for @noterApplication.
+  ///
+  /// In fr, this message translates to:
+  /// **'Noter l\'application'**
+  String get noterApplication;
+
+  /// No description provided for @partagerApplication.
+  ///
+  /// In fr, this message translates to:
+  /// **'Partager l\'application'**
+  String get partagerApplication;
+
+  /// No description provided for @nousContacter.
+  ///
+  /// In fr, this message translates to:
+  /// **'Nous contacter'**
+  String get nousContacter;
+
+  /// No description provided for @aProposDescription.
+  ///
+  /// In fr, this message translates to:
+  /// **'Une bibliothèque locale de cantiques pour louer et adorer Dieu en toute simplicité.'**
+  String get aProposDescription;
+
+  /// No description provided for @fermer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Fermer'**
+  String get fermer;
+
+  /// No description provided for @contactQuestionSuggestion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Pour toute question ou suggestion :'**
+  String get contactQuestionSuggestion;
+
+  /// No description provided for @telephone.
+  ///
+  /// In fr, this message translates to:
+  /// **'Téléphone'**
+  String get telephone;
+
+  /// No description provided for @soutienIndisponible.
+  ///
+  /// In fr, this message translates to:
+  /// **'Merci de vouloir soutenir notre application !\n\nCette fonctionnalité sera bientôt disponible.\n\nEn attendant, vous pouvez partager l\'application avec vos proches.'**
+  String get soutienIndisponible;
+
+  /// No description provided for @noterApplicationMessage.
+  ///
+  /// In fr, this message translates to:
+  /// **'Si vous aimez cette application, n\'hésitez pas à lui donner une note !'**
+  String get noterApplicationMessage;
+
+  /// No description provided for @merciTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Merci !'**
+  String get merciTitle;
+
+  /// No description provided for @merciNotation.
+  ///
+  /// In fr, this message translates to:
+  /// **'Merci d\'avoir attribué {rating} étoile(s) à notre application !\n\nVotre soutien nous est précieux.'**
+  String merciNotation(int rating);
+
+  /// No description provided for @partageApplicationMessage.
+  ///
+  /// In fr, this message translates to:
+  /// **'Découvre l\'application « Cantiques du Message » pour louer et adorer Dieu !'**
+  String get partageApplicationMessage;
+
+  /// No description provided for @reseauBientotDisponible.
+  ///
+  /// In fr, this message translates to:
+  /// **'Suivez-nous sur {social}\n\nCette fonctionnalité sera bientôt disponible.'**
+  String reseauBientotDisponible(String social);
+
+  /// No description provided for @erreurFavori.
+  ///
+  /// In fr, this message translates to:
+  /// **'Impossible de modifier ce favori.'**
+  String get erreurFavori;
+
+  /// No description provided for @supprimerQuestion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Supprimer ?'**
+  String get supprimerQuestion;
+
+  /// No description provided for @suppressionDefinitiveChant.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cette action supprimera définitivement ce chant personnel.\n\nVoulez-vous continuer ?'**
+  String get suppressionDefinitiveChant;
+
+  /// No description provided for @auteurValeur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Auteur : {author}'**
+  String auteurValeur(String author);
+
+  /// No description provided for @creationValeur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Création : {date}'**
+  String creationValeur(String date);
+
+  /// No description provided for @modificationValeur.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifié : {date}'**
+  String modificationValeur(String date);
 }
 
 class _AppLocalizationsDelegate

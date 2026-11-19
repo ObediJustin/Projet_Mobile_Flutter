@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
 
     return Scaffold(
@@ -134,7 +134,7 @@ class _HomeState extends State<Home> {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          l10n?.appTitle ?? "Cantiques du Message",
+                          l10n.appTitle,
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 20,
@@ -144,7 +144,7 @@ class _HomeState extends State<Home> {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          "Recueil spirituel local",
+                          l10n.recueilSpirituelLocal,
                           style: TextStyle(
                             color: theme.colorScheme.primaryContainer,
                             fontSize: 13,
@@ -164,27 +164,27 @@ class _HomeState extends State<Home> {
                   _drawerItem(
                     index: 0,
                     icon: Icons.home_rounded,
-                    label: l10n?.navAccueil ?? "Accueil",
+                    label: l10n.navAccueil,
                   ),
                   _drawerItem(
                     index: 1,
                     icon: Icons.library_books_rounded,
-                    label: l10n?.navCollections ?? "Collections",
+                    label: l10n.navCollections,
                   ),
                   _drawerItem(
                     index: 2,
                     icon: Icons.favorite_rounded,
-                    label: l10n?.navFavoris ?? "Favoris",
+                    label: l10n.navFavoris,
                   ),
                   _drawerItem(
                     index: 3,
                     icon: Icons.queue_music_rounded,
-                    label: l10n?.navMesChants ?? "Mes Chants",
+                    label: l10n.navMesChants,
                   ),
                   _drawerItem(
                     index: 4,
                     icon: Icons.settings_rounded,
-                    label: l10n?.navParametres ?? "Paramètres",
+                    label: l10n.navParametres,
                   ),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: AppSpacing.lg),
@@ -196,7 +196,7 @@ class _HomeState extends State<Home> {
                       color: theme.colorScheme.primary,
                     ),
                     title: Text(
-                      l10n?.cantiqueDuMomentTitle ?? "Cantique aléatoire",
+                      l10n.cantiqueAleatoire,
                       style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
@@ -210,7 +210,7 @@ class _HomeState extends State<Home> {
                       color: theme.colorScheme.primary,
                     ),
                     title: Text(
-                      l10n?.aProposTitle ?? "À propos",
+                      l10n.aProposTitle,
                       style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
@@ -227,9 +227,9 @@ class _HomeState extends State<Home> {
                       Icons.volunteer_activism_rounded,
                       color: theme.colorScheme.primary,
                     ),
-                    title: const Text(
-                      "Soutenir",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                    title: Text(
+                      l10n.soutenir,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
                       Navigator.pop(context);
@@ -241,9 +241,9 @@ class _HomeState extends State<Home> {
                       Icons.star_outline_rounded,
                       color: theme.colorScheme.primary,
                     ),
-                    title: const Text(
-                      "Noter l'application",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                    title: Text(
+                      l10n.noterApplication,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
                       Navigator.pop(context);
@@ -255,9 +255,9 @@ class _HomeState extends State<Home> {
                       Icons.share_rounded,
                       color: theme.colorScheme.primary,
                     ),
-                    title: const Text(
-                      "Partager l'application",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                    title: Text(
+                      l10n.partagerApplication,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
                       Navigator.pop(context);
@@ -269,9 +269,9 @@ class _HomeState extends State<Home> {
                       Icons.contact_mail_outlined,
                       color: theme.colorScheme.primary,
                     ),
-                    title: const Text(
-                      "Nous contacter",
-                      style: TextStyle(fontWeight: FontWeight.w600),
+                    title: Text(
+                      l10n.nousContacter,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                     onTap: () {
                       Navigator.pop(context);
@@ -315,27 +315,27 @@ class _HomeState extends State<Home> {
           NavigationDestination(
             icon: const Icon(Icons.home_outlined),
             selectedIcon: const Icon(Icons.home_rounded),
-            label: l10n?.navAccueil ?? "Accueil",
+            label: l10n.navAccueil,
           ),
           NavigationDestination(
             icon: const Icon(Icons.library_books_outlined),
             selectedIcon: const Icon(Icons.library_books_rounded),
-            label: l10n?.navCollections ?? "Collections",
+            label: l10n.navCollections,
           ),
           NavigationDestination(
             icon: const Icon(Icons.favorite_outline_rounded),
             selectedIcon: const Icon(Icons.favorite_rounded),
-            label: l10n?.navFavoris ?? "Favoris",
+            label: l10n.navFavoris,
           ),
           NavigationDestination(
             icon: const Icon(Icons.queue_music_outlined),
             selectedIcon: const Icon(Icons.queue_music_rounded),
-            label: l10n?.navMesChants ?? "Mes Chants",
+            label: l10n.navMesChants,
           ),
           NavigationDestination(
             icon: const Icon(Icons.settings_outlined),
             selectedIcon: const Icon(Icons.settings_rounded),
-            label: l10n?.navParametres ?? "Paramètres",
+            label: l10n.navParametres,
           ),
         ],
       ),
@@ -406,12 +406,13 @@ class _HomeState extends State<Home> {
 
   void _showAboutDialog(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Cantiques du Message"),
+          title: Text(l10n.appTitle),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -428,9 +429,12 @@ class _HomeState extends State<Home> {
                 ),
               ),
               const SizedBox(height: 12),
-              const Text(
-                "Cantiques du Message",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              Text(
+                l10n.appTitle,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const SizedBox(height: 4),
               const Text(
@@ -438,17 +442,17 @@ class _HomeState extends State<Home> {
                 style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
               ),
               const SizedBox(height: 12),
-              const Text(
-                "Une bibliothèque locale de cantiques pour louer et adorer Dieu en toute simplicité.",
+              Text(
+                l10n.aProposDescription,
                 textAlign: TextAlign.center,
-                style: TextStyle(height: 1.4),
+                style: const TextStyle(height: 1.4),
               ),
             ],
           ),
           actions: [
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text("Fermer"),
+              child: Text(l10n.fermer),
             ),
           ],
         );
@@ -458,19 +462,20 @@ class _HomeState extends State<Home> {
 
   void _showContactDialog(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Nous contacter"),
+          title: Text(l10n.nousContacter),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                "Pour toute question ou suggestion :",
-                style: TextStyle(fontWeight: FontWeight.w600),
+              Text(
+                l10n.contactQuestionSuggestion,
+                style: const TextStyle(fontWeight: FontWeight.w600),
               ),
               const SizedBox(height: 12),
               ListTile(
@@ -496,7 +501,7 @@ class _HomeState extends State<Home> {
                     color: theme.colorScheme.primary,
                   ),
                 ),
-                title: const Text("Téléphone"),
+                title: Text(l10n.telephone),
                 subtitle: const Text("+243 892 821 544"),
                 dense: true,
                 onTap: () => Navigator.pop(context),
@@ -506,7 +511,7 @@ class _HomeState extends State<Home> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text("Fermer"),
+              child: Text(l10n.fermer),
             ),
           ],
         );
@@ -515,21 +520,20 @@ class _HomeState extends State<Home> {
   }
 
   void _showSupportDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Soutenir"),
-          content: const Text(
-            "Merci de vouloir soutenir notre application !\n\n"
-            "Cette fonctionnalité sera bientôt disponible.\n\n"
-            "En attendant, vous pouvez partager l'application avec vos proches.",
-            style: TextStyle(fontSize: 15, height: 1.4),
+          title: Text(l10n.soutenir),
+          content: Text(
+            l10n.soutienIndisponible,
+            style: const TextStyle(fontSize: 15, height: 1.4),
           ),
           actions: [
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text("Fermer"),
+              child: Text(l10n.fermer),
             ),
           ],
         );
@@ -538,18 +542,19 @@ class _HomeState extends State<Home> {
   }
 
   void _showRateDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Noter l'application"),
+          title: Text(l10n.noterApplication),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Text(
-                "Si vous aimez cette application, n'hésitez pas à lui donner une note !",
+              Text(
+                l10n.noterApplicationMessage,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 15),
+                style: const TextStyle(fontSize: 15),
               ),
               const SizedBox(height: 16),
               Row(
@@ -576,20 +581,20 @@ class _HomeState extends State<Home> {
   }
 
   void _showThankYouDialog(BuildContext context, int rating) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Merci !"),
+          title: Text(l10n.merciTitle),
           content: Text(
-            "Merci d'avoir attribué $rating étoile(s) à notre application !\n\n"
-            "Votre soutien nous est précieux.",
+            l10n.merciNotation(rating),
             style: const TextStyle(fontSize: 15),
           ),
           actions: [
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text("Fermer"),
+              child: Text(l10n.fermer),
             ),
           ],
         );
@@ -598,23 +603,20 @@ class _HomeState extends State<Home> {
   }
 
   Future<void> _shareApp() async {
+    final l10n = AppLocalizations.of(context)!;
     await SharePlus.instance.share(
-      ShareParams(
-        text:
-            'Découvre l\'application "Cantiques du Message" pour louer et adorer Dieu !',
-      ),
+      ShareParams(text: l10n.partageApplicationMessage),
     );
   }
 
   void _showSocialDialog(BuildContext context, String social) {
+    final l10n = AppLocalizations.of(context)!;
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text(social),
-          content: Text(
-            "Suivez-nous sur $social\n\nCette fonctionnalité sera bientôt disponible.",
-          ),
+          content: Text(l10n.reseauBientotDisponible(social)),
           actions: [
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
