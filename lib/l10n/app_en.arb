@@ -136,5 +136,13 @@
   "creationValeur": "Created: {date}",
   "@creationValeur": {"placeholders": {"date": {"type": "String"}}},
   "modificationValeur": "Updated: {date}",
-  "@modificationValeur": {"placeholders": {"date": {"type": "String"}}}
+  "@modificationValeur": {"placeholders": {"date": {"type": "String"}}},
+  "partageNumero": "Number: {number}",
+  "@partageNumero": {"placeholders": {"number": {"type": "int"}}},
+  "partageCollection": "Collection: {collection}",
+  "@partageCollection": {"placeholders": {"collection": {"type": "String"}}},
+  "tailleCourt": "Size",
+  "demarrageErreurTitle": "Unable to start",
+  "demarrageErreurMessage": "The app could not access its data. Your data has not been deleted.",
+  "reessayer": "Try again"
 }

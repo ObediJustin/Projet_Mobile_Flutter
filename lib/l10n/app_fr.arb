@@ -136,5 +136,13 @@
   "creationValeur": "Création : {date}",
   "@creationValeur": {"placeholders": {"date": {"type": "String"}}},
   "modificationValeur": "Modifié : {date}",
-  "@modificationValeur": {"placeholders": {"date": {"type": "String"}}}
+  "@modificationValeur": {"placeholders": {"date": {"type": "String"}}},
+  "partageNumero": "Numéro : {number}",
+  "@partageNumero": {"placeholders": {"number": {"type": "int"}}},
+  "partageCollection": "Collection : {collection}",
+  "@partageCollection": {"placeholders": {"collection": {"type": "String"}}},
+  "tailleCourt": "Taille",
+  "demarrageErreurTitle": "Démarrage impossible",
+  "demarrageErreurMessage": "L'application n'a pas pu accéder à ses données. Vos données n'ont pas été supprimées.",
+  "reessayer": "Réessayer"
 }

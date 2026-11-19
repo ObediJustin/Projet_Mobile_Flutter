@@ -418,4 +418,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String modificationValeur(String date) {
     return 'Updated: $date';
   }
+
+  @override
+  String partageNumero(int number) {
+    return 'Number: $number';
+  }
+
+  @override
+  String partageCollection(String collection) {
+    return 'Collection: $collection';
+  }
+
+  @override
+  String get tailleCourt => 'Size';
+
+  @override
+  String get demarrageErreurTitle => 'Unable to start';
+
+  @override
+  String get demarrageErreurMessage =>
+      'The app could not access its data. Your data has not been deleted.';
+
+  @override
+  String get reessayer => 'Try again';
 }

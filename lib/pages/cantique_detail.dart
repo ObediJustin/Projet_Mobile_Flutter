@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../l10n/app_localizations.dart';
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../services/chant_personnel_service.dart';
@@ -89,6 +90,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   }
 
   Future<void> _toggleFavorite() async {
+    final l10n = AppLocalizations.of(context)!;
     await _favoriteService.toggleCantiqueFavorite(widget.cantique.id);
     if (!mounted) return;
     setState(() => _isFavorite = !_isFavorite);
@@ -96,7 +98,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
-          _isFavorite ? 'Ajouté aux favoris' : 'Retiré des favoris',
+          _isFavorite ? l10n.ajouteAuxFavoris : l10n.retireDesFavoris,
         ),
         duration: const Duration(seconds: 1),
       ),
@@ -104,9 +106,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   }
 
   String _buildShareText() {
+    final l10n = AppLocalizations.of(context)!;
     return '${widget.cantique.titre}\n'
-        'Numéro : ${widget.cantique.numero}\n'
-        'Collection : ${widget.cantique.collection}\n\n'
+        '${l10n.partageNumero(widget.cantique.numero)}\n'
+        '${l10n.partageCollection(widget.cantique.collection)}\n\n'
         '${widget.cantique.contenu}';
   }
 
@@ -115,9 +118,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     if (!mounted) return;
 
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Paroles copiées dans le presse-papier'),
-        duration: Duration(seconds: 1),
+      SnackBar(
+        content: Text(AppLocalizations.of(context)!.parolesCopiees),
+        duration: const Duration(seconds: 1),
       ),
     );
   }
@@ -129,6 +132,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   }
 
   void _showFontSizeSheet() {
+    final l10n = AppLocalizations.of(context)!;
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -155,9 +159,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                   const SizedBox(height: AppSpacing.lg),
                   Row(
                     children: [
-                      const Text(
-                        'Taille du texte',
-                        style: TextStyle(
+                      Text(
+                        l10n.tailleDuTexte,
+                        style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: AppColors.textPrimary,
@@ -210,7 +214,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                             _saveFontSize(next);
                           },
                           icon: const Icon(Icons.remove_rounded),
-                          label: const Text('Réduire'),
+                          label: Text(l10n.reduire),
                         ),
                       ),
                       const SizedBox(width: AppSpacing.md),
@@ -223,7 +227,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                             _saveFontSize(next);
                           },
                           icon: const Icon(Icons.add_rounded),
-                          label: const Text('Agrandir'),
+                          label: Text(l10n.agrandir),
                         ),
                       ),
                     ],
@@ -239,6 +243,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
   }
 
   Future<void> _addToPersonalChants() async {
+    final l10n = AppLocalizations.of(context)!;
     final chantToAdd = ChantPersonnel(
       id: '',
       titre: widget.cantique.titre,
@@ -256,9 +261,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     if (already) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Déjà présent dans vos chants personnels'),
-          duration: Duration(seconds: 1),
+        SnackBar(
+          content: Text(l10n.dejaDansMesChants),
+          duration: const Duration(seconds: 1),
         ),
       );
       return;
@@ -268,9 +273,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Ajouté à vos chants personnels'),
-        duration: Duration(seconds: 1),
+      SnackBar(
+        content: Text(l10n.ajouteAuxMesChants),
+        duration: const Duration(seconds: 1),
       ),
     );
   }
@@ -307,6 +312,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text('N° ${widget.cantique.numero}'),
@@ -454,7 +460,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                     ),
                                     const SizedBox(width: 6),
                                     Text(
-                                      'Auteur : ${widget.cantique.auteur}',
+                                      l10n.auteurValeur(widget.cantique.auteur!),
                                       style: const TextStyle(
                                         fontSize: 13,
                                         fontStyle: FontStyle.italic,
@@ -497,7 +503,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                           icon: _isFavorite
                               ? Icons.favorite_rounded
                               : Icons.favorite_border_rounded,
-                          label: _isFavorite ? 'Favori' : 'Favori',
+                          label: l10n.favori,
                           iconColor: _isFavorite
                               ? AppColors.error
                               : AppColors.primary,
@@ -505,25 +511,25 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                         ),
                         _actionIconButton(
                           icon: Icons.copy_rounded,
-                          label: 'Copier',
+                          label: l10n.copier,
                           iconColor: AppColors.primary,
                           onTap: _copyToClipboard,
                         ),
                         _actionIconButton(
                           icon: Icons.share_rounded,
-                          label: 'Partager',
+                          label: l10n.partager,
                           iconColor: AppColors.primary,
                           onTap: _share,
                         ),
                         _actionIconButton(
                           icon: Icons.format_size_rounded,
-                          label: 'Taille',
+                          label: l10n.tailleCourt,
                           iconColor: AppColors.primary,
                           onTap: _showFontSizeSheet,
                         ),
                         _actionIconButton(
                           icon: Icons.library_add_rounded,
-                          label: 'Mes Chants',
+                          label: l10n.mesChants,
                           iconColor: AppColors.primary,
                           onTap: _addToPersonalChants,
                         ),

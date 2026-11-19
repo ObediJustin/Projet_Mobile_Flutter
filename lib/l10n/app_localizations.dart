@@ -829,6 +829,42 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Modifié : {date}'**
   String modificationValeur(String date);
+
+  /// No description provided for @partageNumero.
+  ///
+  /// In fr, this message translates to:
+  /// **'Numéro : {number}'**
+  String partageNumero(int number);
+
+  /// No description provided for @partageCollection.
+  ///
+  /// In fr, this message translates to:
+  /// **'Collection : {collection}'**
+  String partageCollection(String collection);
+
+  /// No description provided for @tailleCourt.
+  ///
+  /// In fr, this message translates to:
+  /// **'Taille'**
+  String get tailleCourt;
+
+  /// No description provided for @demarrageErreurTitle.
+  ///
+  /// In fr, this message translates to:
+  /// **'Démarrage impossible'**
+  String get demarrageErreurTitle;
+
+  /// No description provided for @demarrageErreurMessage.
+  ///
+  /// In fr, this message translates to:
+  /// **'L\'application n\'a pas pu accéder à ses données. Vos données n\'ont pas été supprimées.'**
+  String get demarrageErreurMessage;
+
+  /// No description provided for @reessayer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Réessayer'**
+  String get reessayer;
 }
 
 class _AppLocalizationsDelegate

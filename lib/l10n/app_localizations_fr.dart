@@ -424,4 +424,27 @@ class AppLocalizationsFr extends AppLocalizations {
   String modificationValeur(String date) {
     return 'Modifié : $date';
   }
+
+  @override
+  String partageNumero(int number) {
+    return 'Numéro : $number';
+  }
+
+  @override
+  String partageCollection(String collection) {
+    return 'Collection : $collection';
+  }
+
+  @override
+  String get tailleCourt => 'Taille';
+
+  @override
+  String get demarrageErreurTitle => 'Démarrage impossible';
+
+  @override
+  String get demarrageErreurMessage =>
+      'L\'application n\'a pas pu accéder à ses données. Vos données n\'ont pas été supprimées.';
+
+  @override
+  String get reessayer => 'Réessayer';
 }
