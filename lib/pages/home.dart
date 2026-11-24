@@ -73,7 +73,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       drawer: Drawer(
-        backgroundColor: AppColors.surface,
+        backgroundColor: theme.colorScheme.surface,
         child: Column(
           children: [
             DrawerHeader(
@@ -145,15 +145,29 @@ class _HomeState extends State<Home> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             letterSpacing: -0.2,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(0, 1.5),
+                                blurRadius: 4,
+                                color: Colors.black54,
+                              ),
+                            ],
                           ),
                         ),
-                        const SizedBox(height: 2),
+                        const SizedBox(height: 3),
                         Text(
-                          l10n.recueilSpirituelLocal,
-                          style: TextStyle(
-                            color: theme.colorScheme.primaryContainer,
+                          l10n.drawerTagline,
+                          style: const TextStyle(
+                            color: Colors.white,
                             fontSize: 13,
                             fontWeight: FontWeight.w500,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(0, 1),
+                                blurRadius: 3,
+                                color: Colors.black87,
+                              ),
+                            ],
                           ),
                         ),
                       ],

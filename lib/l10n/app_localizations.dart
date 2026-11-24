@@ -1153,6 +1153,30 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Touchez l’écran pour afficher les commandes'**
   String get afficherCommandesLouange;
+
+  /// No description provided for @drawerTagline.
+  ///
+  /// In fr, this message translates to:
+  /// **'Les cantiques inspirés à votre portée.'**
+  String get drawerTagline;
+
+  /// No description provided for @ajouterChants.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajouter des chants'**
+  String get ajouterChants;
+
+  /// No description provided for @rechercherChants.
+  ///
+  /// In fr, this message translates to:
+  /// **'Rechercher un chant (titre, numéro, paroles)…'**
+  String get rechercherChants;
+
+  /// No description provided for @aucunChantTrouve.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucun chant trouvé'**
+  String get aucunChantTrouve;
 }
 
 class _AppLocalizationsDelegate

@@ -601,4 +601,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get afficherCommandesLouange => 'Tap the screen to show controls';
+
+  @override
+  String get drawerTagline => 'Inspired hymns within your reach.';
+
+  @override
+  String get ajouterChants => 'Add songs';
+
+  @override
+  String get rechercherChants => 'Search a song (title, number, lyrics)…';
+
+  @override
+  String get aucunChantTrouve => 'No songs found';
 }

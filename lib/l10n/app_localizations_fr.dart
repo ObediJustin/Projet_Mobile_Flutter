@@ -608,4 +608,17 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get afficherCommandesLouange =>
       'Touchez l’écran pour afficher les commandes';
+
+  @override
+  String get drawerTagline => 'Les cantiques inspirés à votre portée.';
+
+  @override
+  String get ajouterChants => 'Ajouter des chants';
+
+  @override
+  String get rechercherChants =>
+      'Rechercher un chant (titre, numéro, paroles)…';
+
+  @override
+  String get aucunChantTrouve => 'Aucun chant trouvé';
 }

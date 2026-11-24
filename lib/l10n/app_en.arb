@@ -195,5 +195,9 @@
   "accelerer": "Faster",
   "chantPrecedent": "Previous song",
   "chantSuivant": "Next song",
-  "afficherCommandesLouange": "Tap the screen to show controls"
+  "afficherCommandesLouange": "Tap the screen to show controls",
+  "drawerTagline": "Inspired hymns within your reach.",
+  "ajouterChants": "Add songs",
+  "rechercherChants": "Search a song (title, number, lyrics)…",
+  "aucunChantTrouve": "No songs found"
 }

@@ -195,5 +195,9 @@
   "accelerer": "Accélérer",
   "chantPrecedent": "Chant précédent",
   "chantSuivant": "Chant suivant",
-  "afficherCommandesLouange": "Touchez l’écran pour afficher les commandes"
+  "afficherCommandesLouange": "Touchez l’écran pour afficher les commandes",
+  "drawerTagline": "Les cantiques inspirés à votre portée.",
+  "ajouterChants": "Ajouter des chants",
+  "rechercherChants": "Rechercher un chant (titre, numéro, paroles)…",
+  "aucunChantTrouve": "Aucun chant trouvé"
 }
