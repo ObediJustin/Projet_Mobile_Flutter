@@ -572,4 +572,40 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get retirerDeLaListe => 'Retirer de la liste';
+
+  @override
+  String get modeLouange => 'Mode louange';
+
+  @override
+  String get quitterModeLouange => 'Quitter le mode louange';
+
+  @override
+  String get lancerDefilement => 'Démarrer le défilement';
+
+  @override
+  String get mettreEnPause => 'Mettre en pause';
+
+  @override
+  String get vitesseDefilement => 'Vitesse du défilement';
+
+  @override
+  String vitesseDefilementValeur(int speed) {
+    return '$speed px/s';
+  }
+
+  @override
+  String get ralentir => 'Ralentir';
+
+  @override
+  String get accelerer => 'Accélérer';
+
+  @override
+  String get chantPrecedent => 'Chant précédent';
+
+  @override
+  String get chantSuivant => 'Chant suivant';
+
+  @override
+  String get afficherCommandesLouange =>
+      'Touchez l’écran pour afficher les commandes';
 }

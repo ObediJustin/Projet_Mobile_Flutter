@@ -566,4 +566,39 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get retirerDeLaListe => 'Remove from playlist';
+
+  @override
+  String get modeLouange => 'Worship mode';
+
+  @override
+  String get quitterModeLouange => 'Exit worship mode';
+
+  @override
+  String get lancerDefilement => 'Start auto-scroll';
+
+  @override
+  String get mettreEnPause => 'Pause auto-scroll';
+
+  @override
+  String get vitesseDefilement => 'Scroll speed';
+
+  @override
+  String vitesseDefilementValeur(int speed) {
+    return '$speed px/s';
+  }
+
+  @override
+  String get ralentir => 'Slower';
+
+  @override
+  String get accelerer => 'Faster';
+
+  @override
+  String get chantPrecedent => 'Previous song';
+
+  @override
+  String get chantSuivant => 'Next song';
+
+  @override
+  String get afficherCommandesLouange => 'Tap the screen to show controls';
 }

@@ -183,5 +183,17 @@
   "listeCreee": "Liste créée avec succès",
   "listeModifiee": "Liste modifiée",
   "listeSupprimee": "Liste supprimée",
-  "retirerDeLaListe": "Retirer de la liste"
+  "retirerDeLaListe": "Retirer de la liste",
+  "modeLouange": "Mode louange",
+  "quitterModeLouange": "Quitter le mode louange",
+  "lancerDefilement": "Démarrer le défilement",
+  "mettreEnPause": "Mettre en pause",
+  "vitesseDefilement": "Vitesse du défilement",
+  "vitesseDefilementValeur": "{speed} px/s",
+  "@vitesseDefilementValeur": {"placeholders": {"speed": {"type": "int"}}},
+  "ralentir": "Ralentir",
+  "accelerer": "Accélérer",
+  "chantPrecedent": "Chant précédent",
+  "chantSuivant": "Chant suivant",
+  "afficherCommandesLouange": "Touchez l’écran pour afficher les commandes"
 }

@@ -183,5 +183,17 @@
   "listeCreee": "Playlist created successfully",
   "listeModifiee": "Playlist updated",
   "listeSupprimee": "Playlist deleted",
-  "retirerDeLaListe": "Remove from playlist"
+  "retirerDeLaListe": "Remove from playlist",
+  "modeLouange": "Worship mode",
+  "quitterModeLouange": "Exit worship mode",
+  "lancerDefilement": "Start auto-scroll",
+  "mettreEnPause": "Pause auto-scroll",
+  "vitesseDefilement": "Scroll speed",
+  "vitesseDefilementValeur": "{speed} px/s",
+  "@vitesseDefilementValeur": {"placeholders": {"speed": {"type": "int"}}},
+  "ralentir": "Slower",
+  "accelerer": "Faster",
+  "chantPrecedent": "Previous song",
+  "chantSuivant": "Next song",
+  "afficherCommandesLouange": "Tap the screen to show controls"
 }

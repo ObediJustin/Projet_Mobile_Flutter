@@ -1087,6 +1087,72 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Retirer de la liste'**
   String get retirerDeLaListe;
+
+  /// No description provided for @modeLouange.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mode louange'**
+  String get modeLouange;
+
+  /// No description provided for @quitterModeLouange.
+  ///
+  /// In fr, this message translates to:
+  /// **'Quitter le mode louange'**
+  String get quitterModeLouange;
+
+  /// No description provided for @lancerDefilement.
+  ///
+  /// In fr, this message translates to:
+  /// **'Démarrer le défilement'**
+  String get lancerDefilement;
+
+  /// No description provided for @mettreEnPause.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mettre en pause'**
+  String get mettreEnPause;
+
+  /// No description provided for @vitesseDefilement.
+  ///
+  /// In fr, this message translates to:
+  /// **'Vitesse du défilement'**
+  String get vitesseDefilement;
+
+  /// No description provided for @vitesseDefilementValeur.
+  ///
+  /// In fr, this message translates to:
+  /// **'{speed} px/s'**
+  String vitesseDefilementValeur(int speed);
+
+  /// No description provided for @ralentir.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ralentir'**
+  String get ralentir;
+
+  /// No description provided for @accelerer.
+  ///
+  /// In fr, this message translates to:
+  /// **'Accélérer'**
+  String get accelerer;
+
+  /// No description provided for @chantPrecedent.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant précédent'**
+  String get chantPrecedent;
+
+  /// No description provided for @chantSuivant.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant suivant'**
+  String get chantSuivant;
+
+  /// No description provided for @afficherCommandesLouange.
+  ///
+  /// In fr, this message translates to:
+  /// **'Touchez l’écran pour afficher les commandes'**
+  String get afficherCommandesLouange;
 }
 
 class _AppLocalizationsDelegate
