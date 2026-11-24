@@ -865,6 +865,54 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Réessayer'**
   String get reessayer;
+
+  /// No description provided for @cetteCollection.
+  ///
+  /// In fr, this message translates to:
+  /// **'Cette collection'**
+  String get cetteCollection;
+
+  /// No description provided for @toutesLesCollections.
+  ///
+  /// In fr, this message translates to:
+  /// **'Toutes les collections'**
+  String get toutesLesCollections;
+
+  /// No description provided for @themeSysteme.
+  ///
+  /// In fr, this message translates to:
+  /// **'Thème du système'**
+  String get themeSysteme;
+
+  /// No description provided for @themeClair.
+  ///
+  /// In fr, this message translates to:
+  /// **'Thème clair'**
+  String get themeClair;
+
+  /// No description provided for @themeSombre.
+  ///
+  /// In fr, this message translates to:
+  /// **'Thème sombre'**
+  String get themeSombre;
+
+  /// No description provided for @reinitialiserTailleTexte.
+  ///
+  /// In fr, this message translates to:
+  /// **'Réinitialiser la taille du texte'**
+  String get reinitialiserTailleTexte;
+
+  /// No description provided for @actions.
+  ///
+  /// In fr, this message translates to:
+  /// **'Actions'**
+  String get actions;
+
+  /// No description provided for @copierParoles.
+  ///
+  /// In fr, this message translates to:
+  /// **'Copier les paroles'**
+  String get copierParoles;
 }
 
 class _AppLocalizationsDelegate

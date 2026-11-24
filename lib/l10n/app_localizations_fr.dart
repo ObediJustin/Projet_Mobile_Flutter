@@ -447,4 +447,28 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get reessayer => 'Réessayer';
+
+  @override
+  String get cetteCollection => 'Cette collection';
+
+  @override
+  String get toutesLesCollections => 'Toutes les collections';
+
+  @override
+  String get themeSysteme => 'Thème du système';
+
+  @override
+  String get themeClair => 'Thème clair';
+
+  @override
+  String get themeSombre => 'Thème sombre';
+
+  @override
+  String get reinitialiserTailleTexte => 'Réinitialiser la taille du texte';
+
+  @override
+  String get actions => 'Actions';
+
+  @override
+  String get copierParoles => 'Copier les paroles';
 }

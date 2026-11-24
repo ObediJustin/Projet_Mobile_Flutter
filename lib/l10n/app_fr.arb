@@ -144,5 +144,13 @@
   "tailleCourt": "Taille",
   "demarrageErreurTitle": "Démarrage impossible",
   "demarrageErreurMessage": "L'application n'a pas pu accéder à ses données. Vos données n'ont pas été supprimées.",
-  "reessayer": "Réessayer"
+  "reessayer": "Réessayer",
+  "cetteCollection": "Cette collection",
+  "toutesLesCollections": "Toutes les collections",
+  "themeSysteme": "Thème du système",
+  "themeClair": "Thème clair",
+  "themeSombre": "Thème sombre",
+  "reinitialiserTailleTexte": "Réinitialiser la taille du texte",
+  "actions": "Actions",
+  "copierParoles": "Copier les paroles"
 }

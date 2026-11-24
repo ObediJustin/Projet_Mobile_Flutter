@@ -441,4 +441,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reessayer => 'Try again';
+
+  @override
+  String get cetteCollection => 'This collection';
+
+  @override
+  String get toutesLesCollections => 'All collections';
+
+  @override
+  String get themeSysteme => 'System theme';
+
+  @override
+  String get themeClair => 'Light theme';
+
+  @override
+  String get themeSombre => 'Dark theme';
+
+  @override
+  String get reinitialiserTailleTexte => 'Reset text size';
+
+  @override
+  String get actions => 'Actions';
+
+  @override
+  String get copierParoles => 'Copy lyrics';
 }
