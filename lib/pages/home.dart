@@ -15,6 +15,7 @@ import 'cantique_detail.dart';
 import 'collections.dart';
 import 'favoris.dart';
 import 'mes_chants.dart';
+import 'mes_listes.dart';
 import 'parametres.dart';
 
 class Home extends StatefulWidget {
@@ -34,6 +35,7 @@ class _HomeState extends State<Home> {
     const CollectionPage(),
     const FavorisPage(),
     const MesChantsPage(),
+    const MesListesPage(),
     const ParametresPage(),
   ];
 
@@ -48,6 +50,8 @@ class _HomeState extends State<Home> {
       case 3:
         return l10n?.navMesChants ?? 'Mes Chants';
       case 4:
+        return l10n?.mesListes ?? 'Mes listes';
+      case 5:
         return l10n?.navParametres ?? 'Paramètres';
       default:
         return 'Cantiques du Message';
@@ -183,6 +187,11 @@ class _HomeState extends State<Home> {
                   ),
                   _drawerItem(
                     index: 4,
+                    icon: Icons.playlist_play_rounded,
+                    label: l10n.mesListes,
+                  ),
+                  _drawerItem(
+                    index: 5,
                     icon: Icons.settings_rounded,
                     label: l10n.navParametres,
                   ),
@@ -331,6 +340,11 @@ class _HomeState extends State<Home> {
             icon: const Icon(Icons.queue_music_outlined),
             selectedIcon: const Icon(Icons.queue_music_rounded),
             label: l10n.navMesChants,
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.playlist_play_outlined),
+            selectedIcon: const Icon(Icons.playlist_play_rounded),
+            label: l10n.mesListes,
           ),
           NavigationDestination(
             icon: const Icon(Icons.settings_outlined),
