@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_assets.dart';
 
-/// Reusable Empty State Widget with professional design identity.
+/// Reusable Empty State Widget with professional design identity and dark mode support.
 class AppEmptyState extends StatelessWidget {
   final IconData? icon;
   final String? assetPath;
@@ -12,6 +11,7 @@ class AppEmptyState extends StatelessWidget {
   final String message;
   final String? actionLabel;
   final VoidCallback? onAction;
+  final IconData? actionIcon;
 
   const AppEmptyState({
     super.key,
@@ -21,6 +21,7 @@ class AppEmptyState extends StatelessWidget {
     required this.message,
     this.actionLabel,
     this.onAction,
+    this.actionIcon,
   }) : assert(
          icon != null || assetPath != null,
          'Either icon or assetPath must be provided',
@@ -28,6 +29,9 @@ class AppEmptyState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(AppSpacing.xxl),
@@ -47,29 +51,36 @@ class AppEmptyState extends StatelessWidget {
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
-                  color: AppColors.primaryLight,
+                  color: isDark
+                      ? theme.colorScheme.primary.withValues(alpha: 0.18)
+                      : theme.colorScheme.primaryContainer,
                   shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.secondaryLight, width: 2),
+                  border: Border.all(
+                    color: isDark
+                        ? theme.colorScheme.primary.withValues(alpha: 0.35)
+                        : theme.colorScheme.secondaryContainer,
+                    width: 2,
+                  ),
                 ),
-                child: Icon(icon!, size: 38, color: AppColors.primary),
+                child: Icon(icon!, size: 38, color: theme.colorScheme.primary),
               ),
             const SizedBox(height: AppSpacing.lg),
             Text(
               title,
               textAlign: TextAlign.center,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: AppColors.textPrimary,
+                color: theme.colorScheme.onSurface,
               ),
             ),
             const SizedBox(height: AppSpacing.sm),
             Text(
               message,
               textAlign: TextAlign.center,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 14,
-                color: AppColors.textSecondary,
+                color: theme.colorScheme.onSurfaceVariant,
                 height: 1.4,
               ),
             ),
@@ -78,14 +89,21 @@ class AppEmptyState extends StatelessWidget {
               ElevatedButton.icon(
                 onPressed: onAction,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primary,
-                  foregroundColor: AppColors.textOnPrimary,
+                  backgroundColor: theme.colorScheme.primary,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: AppSpacing.xl,
+                    vertical: AppSpacing.md,
+                  ),
                   shape: RoundedRectangleBorder(
                     borderRadius: AppRadius.mdBorder,
                   ),
                 ),
-                icon: const Icon(Icons.refresh_rounded, size: 18),
-                label: Text(actionLabel!),
+                icon: Icon(actionIcon ?? Icons.add_rounded, size: 20),
+                label: Text(
+                  actionLabel!,
+                  style: const TextStyle(fontWeight: FontWeight.w600),
+                ),
               ),
             ],
           ],

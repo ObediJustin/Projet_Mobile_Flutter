@@ -11,6 +11,7 @@ import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 import '../widgets/app_empty_state.dart';
+import '../widgets/playlist_add_songs_sheet.dart';
 import 'cantique_detail.dart';
 import 'chant_detail.dart';
 import 'worship_mode.dart';
@@ -289,6 +290,16 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
     );
   }
 
+  void _openAddSongsModal() {
+    PlaylistAddSongsSheet.show(
+      context,
+      playlist: _playlist,
+      onSongAdded: () {
+        _loadPlaylistDetails();
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -298,6 +309,11 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
       appBar: AppBar(
         title: Text(_playlist.nom),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.add_rounded),
+            tooltip: l10n.ajouterChants,
+            onPressed: _openAddSongsModal,
+          ),
           IconButton(
             icon: const Icon(Icons.edit_outlined),
             tooltip: l10n.modifierListe,
@@ -418,6 +434,9 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
                           icon: Icons.playlist_add_rounded,
                           title: l10n.listeVide,
                           message: l10n.listeVideMessage,
+                          actionLabel: l10n.ajouterChants,
+                          onAction: _openAddSongsModal,
+                          actionIcon: Icons.add_rounded,
                         )
                       : ReorderableListView.builder(
                           padding: const EdgeInsets.only(
@@ -515,6 +534,13 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
                 ),
               ],
             ),
+      floatingActionButton: _items.isNotEmpty
+          ? FloatingActionButton.extended(
+              onPressed: _openAddSongsModal,
+              icon: const Icon(Icons.add_rounded),
+              label: Text(l10n.ajouterChants),
+            )
+          : null,
     );
   }
 }

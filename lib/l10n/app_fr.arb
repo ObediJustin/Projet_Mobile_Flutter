@@ -199,5 +199,6 @@
   "drawerTagline": "Les cantiques inspirés à votre portée.",
   "ajouterChants": "Ajouter des chants",
   "rechercherChants": "Rechercher un chant (titre, numéro, paroles)…",
-  "aucunChantTrouve": "Aucun chant trouvé"
+  "aucunChantTrouve": "Aucun chant trouvé",
+  "chantAjouteALaListe": "Chant ajouté à la liste"
 }

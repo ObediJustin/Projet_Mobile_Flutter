@@ -621,4 +621,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get aucunChantTrouve => 'Aucun chant trouvé';
+
+  @override
+  String get chantAjouteALaListe => 'Chant ajouté à la liste';
 }

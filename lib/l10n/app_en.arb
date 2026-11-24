@@ -199,5 +199,6 @@
   "drawerTagline": "Inspired hymns within your reach.",
   "ajouterChants": "Add songs",
   "rechercherChants": "Search a song (title, number, lyrics)…",
-  "aucunChantTrouve": "No songs found"
+  "aucunChantTrouve": "No songs found",
+  "chantAjouteALaListe": "Song added to playlist"
 }

@@ -613,4 +613,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aucunChantTrouve => 'No songs found';
+
+  @override
+  String get chantAjouteALaListe => 'Song added to playlist';
 }

@@ -1177,6 +1177,12 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Aucun chant trouvé'**
   String get aucunChantTrouve;
+
+  /// No description provided for @chantAjouteALaListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant ajouté à la liste'**
+  String get chantAjouteALaListe;
 }
 
 class _AppLocalizationsDelegate
