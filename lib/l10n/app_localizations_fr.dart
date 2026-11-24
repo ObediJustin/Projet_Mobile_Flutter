@@ -471,4 +471,105 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get copierParoles => 'Copier les paroles';
+
+  @override
+  String get mesListes => 'Mes listes';
+
+  @override
+  String get creerListe => 'Créer une liste';
+
+  @override
+  String get nouvelleListe => 'Nouvelle liste';
+
+  @override
+  String get nomListe => 'Nom de la liste';
+
+  @override
+  String get nomListeHint => 'Ex. : Culte du dimanche';
+
+  @override
+  String get nomListeRequis => 'Le nom de la liste est obligatoire';
+
+  @override
+  String get descriptionListe => 'Description (facultative)';
+
+  @override
+  String get descriptionListeHint => 'Ex. : Chants pour le culte...';
+
+  @override
+  String get modifierListe => 'Modifier la liste';
+
+  @override
+  String get supprimerListe => 'Supprimer la liste';
+
+  @override
+  String get supprimerListeQuestion => 'Supprimer cette liste ?';
+
+  @override
+  String get supprimerListeConfirmation =>
+      'Les cantiques ne seront pas supprimés de l\'application.';
+
+  @override
+  String get ajouterALaListe => 'Ajouter à une liste';
+
+  @override
+  String get commencerLouange => 'Commencer la louange';
+
+  @override
+  String get listeVide => 'Aucun chant dans cette liste';
+
+  @override
+  String get listeVideMessage =>
+      'Ajoutez des cantiques ou des chants personnels depuis leur page de lecture.';
+
+  @override
+  String get aucuneListe => 'Aucune liste de chants';
+
+  @override
+  String get aucuneListeMessage =>
+      'Créez votre première liste pour organiser vos chants de culte ou de prière.';
+
+  @override
+  String get chantAjouteAListe => 'Chant ajouté à la liste';
+
+  @override
+  String get chantRetireDeListe => 'Chant retiré de la liste';
+
+  @override
+  String get reorganiser => 'Réorganiser';
+
+  @override
+  String nombreChants(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count chants',
+      one: '1 chant',
+      zero: '0 chant',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionChant(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get chantDejaDansListe => 'Déjà dans la liste';
+
+  @override
+  String get selectionnerListes => 'Ajouter à une liste';
+
+  @override
+  String get listeCreee => 'Liste créée avec succès';
+
+  @override
+  String get listeModifiee => 'Liste modifiée';
+
+  @override
+  String get listeSupprimee => 'Liste supprimée';
+
+  @override
+  String get retirerDeLaListe => 'Retirer de la liste';
 }

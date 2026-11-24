@@ -465,4 +465,105 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get copierParoles => 'Copy lyrics';
+
+  @override
+  String get mesListes => 'My playlists';
+
+  @override
+  String get creerListe => 'Create playlist';
+
+  @override
+  String get nouvelleListe => 'New playlist';
+
+  @override
+  String get nomListe => 'Playlist name';
+
+  @override
+  String get nomListeHint => 'Ex.: Sunday Service';
+
+  @override
+  String get nomListeRequis => 'Playlist name is required';
+
+  @override
+  String get descriptionListe => 'Description (optional)';
+
+  @override
+  String get descriptionListeHint => 'Ex.: Worship service songs...';
+
+  @override
+  String get modifierListe => 'Edit playlist';
+
+  @override
+  String get supprimerListe => 'Delete playlist';
+
+  @override
+  String get supprimerListeQuestion => 'Delete this playlist?';
+
+  @override
+  String get supprimerListeConfirmation =>
+      'Songs will not be deleted from the application.';
+
+  @override
+  String get ajouterALaListe => 'Add to playlist';
+
+  @override
+  String get commencerLouange => 'Start worship';
+
+  @override
+  String get listeVide => 'No songs in this playlist';
+
+  @override
+  String get listeVideMessage =>
+      'Add hymns or personal songs from their reader page.';
+
+  @override
+  String get aucuneListe => 'No playlists';
+
+  @override
+  String get aucuneListeMessage =>
+      'Create your first playlist to organize your worship songs.';
+
+  @override
+  String get chantAjouteAListe => 'Song added to playlist';
+
+  @override
+  String get chantRetireDeListe => 'Song removed from playlist';
+
+  @override
+  String get reorganiser => 'Reorder';
+
+  @override
+  String nombreChants(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count songs',
+      one: '1 song',
+      zero: '0 songs',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String positionChant(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get chantDejaDansListe => 'Already in playlist';
+
+  @override
+  String get selectionnerListes => 'Add to playlist';
+
+  @override
+  String get listeCreee => 'Playlist created successfully';
+
+  @override
+  String get listeModifiee => 'Playlist updated';
+
+  @override
+  String get listeSupprimee => 'Playlist deleted';
+
+  @override
+  String get retirerDeLaListe => 'Remove from playlist';
 }

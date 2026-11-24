@@ -913,6 +913,180 @@ abstract class AppLocalizations {
   /// In fr, this message translates to:
   /// **'Copier les paroles'**
   String get copierParoles;
+
+  /// No description provided for @mesListes.
+  ///
+  /// In fr, this message translates to:
+  /// **'Mes listes'**
+  String get mesListes;
+
+  /// No description provided for @creerListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Créer une liste'**
+  String get creerListe;
+
+  /// No description provided for @nouvelleListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Nouvelle liste'**
+  String get nouvelleListe;
+
+  /// No description provided for @nomListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Nom de la liste'**
+  String get nomListe;
+
+  /// No description provided for @nomListeHint.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ex. : Culte du dimanche'**
+  String get nomListeHint;
+
+  /// No description provided for @nomListeRequis.
+  ///
+  /// In fr, this message translates to:
+  /// **'Le nom de la liste est obligatoire'**
+  String get nomListeRequis;
+
+  /// No description provided for @descriptionListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Description (facultative)'**
+  String get descriptionListe;
+
+  /// No description provided for @descriptionListeHint.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ex. : Chants pour le culte...'**
+  String get descriptionListeHint;
+
+  /// No description provided for @modifierListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Modifier la liste'**
+  String get modifierListe;
+
+  /// No description provided for @supprimerListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Supprimer la liste'**
+  String get supprimerListe;
+
+  /// No description provided for @supprimerListeQuestion.
+  ///
+  /// In fr, this message translates to:
+  /// **'Supprimer cette liste ?'**
+  String get supprimerListeQuestion;
+
+  /// No description provided for @supprimerListeConfirmation.
+  ///
+  /// In fr, this message translates to:
+  /// **'Les cantiques ne seront pas supprimés de l\'application.'**
+  String get supprimerListeConfirmation;
+
+  /// No description provided for @ajouterALaListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajouter à une liste'**
+  String get ajouterALaListe;
+
+  /// No description provided for @commencerLouange.
+  ///
+  /// In fr, this message translates to:
+  /// **'Commencer la louange'**
+  String get commencerLouange;
+
+  /// No description provided for @listeVide.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucun chant dans cette liste'**
+  String get listeVide;
+
+  /// No description provided for @listeVideMessage.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajoutez des cantiques ou des chants personnels depuis leur page de lecture.'**
+  String get listeVideMessage;
+
+  /// No description provided for @aucuneListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Aucune liste de chants'**
+  String get aucuneListe;
+
+  /// No description provided for @aucuneListeMessage.
+  ///
+  /// In fr, this message translates to:
+  /// **'Créez votre première liste pour organiser vos chants de culte ou de prière.'**
+  String get aucuneListeMessage;
+
+  /// No description provided for @chantAjouteAListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant ajouté à la liste'**
+  String get chantAjouteAListe;
+
+  /// No description provided for @chantRetireDeListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Chant retiré de la liste'**
+  String get chantRetireDeListe;
+
+  /// No description provided for @reorganiser.
+  ///
+  /// In fr, this message translates to:
+  /// **'Réorganiser'**
+  String get reorganiser;
+
+  /// No description provided for @nombreChants.
+  ///
+  /// In fr, this message translates to:
+  /// **'{count, plural, =0{0 chant} =1{1 chant} other{{count} chants}}'**
+  String nombreChants(int count);
+
+  /// No description provided for @positionChant.
+  ///
+  /// In fr, this message translates to:
+  /// **'{current} / {total}'**
+  String positionChant(int current, int total);
+
+  /// No description provided for @chantDejaDansListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Déjà dans la liste'**
+  String get chantDejaDansListe;
+
+  /// No description provided for @selectionnerListes.
+  ///
+  /// In fr, this message translates to:
+  /// **'Ajouter à une liste'**
+  String get selectionnerListes;
+
+  /// No description provided for @listeCreee.
+  ///
+  /// In fr, this message translates to:
+  /// **'Liste créée avec succès'**
+  String get listeCreee;
+
+  /// No description provided for @listeModifiee.
+  ///
+  /// In fr, this message translates to:
+  /// **'Liste modifiée'**
+  String get listeModifiee;
+
+  /// No description provided for @listeSupprimee.
+  ///
+  /// In fr, this message translates to:
+  /// **'Liste supprimée'**
+  String get listeSupprimee;
+
+  /// No description provided for @retirerDeLaListe.
+  ///
+  /// In fr, this message translates to:
+  /// **'Retirer de la liste'**
+  String get retirerDeLaListe;
 }
 
 class _AppLocalizationsDelegate
