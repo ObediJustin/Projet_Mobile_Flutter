@@ -14,15 +14,16 @@ import '../widgets/app_empty_state.dart';
 import '../widgets/app_search_bar.dart';
 import '../widgets/app_section_header.dart';
 import '../widgets/cantique_card.dart';
+import '../widgets/home_banner.dart';
 
 class AccueilPage extends StatefulWidget {
   const AccueilPage({super.key});
 
   @override
-  State<AccueilPage> createState() => _AccueilPageState();
+  State<AccueilPage> createState() => AccueilPageState();
 }
 
-class _AccueilPageState extends State<AccueilPage> {
+class AccueilPageState extends State<AccueilPage> {
   final CantiqueService _cantiqueService = CantiqueService.instance;
   final RecentCantiqueService _recentService = RecentCantiqueService.instance;
   final TextEditingController _searchController = TextEditingController();
@@ -36,11 +37,11 @@ class _AccueilPageState extends State<AccueilPage> {
   void initState() {
     super.initState();
     _verseDuJour = VerseService.instance.getVerseOfDay();
-    _loadRecents();
+    loadRecents();
   }
 
-  Future<void> _loadRecents() async {
-    final recents = await _recentService.getRecentlyViewedCantiques(limit: 5);
+  Future<void> loadRecents() async {
+    final recents = await _recentService.getRecentlyViewedCantiques(limit: 4);
     if (!mounted) return;
     setState(() {
       _recentCantiques = recents;
@@ -71,81 +72,12 @@ class _AccueilPageState extends State<AccueilPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Banner Image Header
-          LayoutBuilder(
-            builder: (context, constraints) {
-              final maxWidth = constraints.maxWidth;
-              final headerHeight = (maxWidth < 360) ? 180.0 : 220.0;
-
-              return ClipRRect(
-                borderRadius: AppRadius.xlBorder,
-                child: SizedBox(
-                  height: headerHeight,
-                  width: double.infinity,
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      color: theme.colorScheme.primary,
-                      image: const DecorationImage(
-                        image: AssetImage('assets/images/image3.jpg'),
-                        fit: BoxFit.cover,
-                        colorFilter: ColorFilter.mode(
-                          Color(0xB3000000),
-                          BlendMode.darken,
-                        ),
-                      ),
-                      borderRadius: AppRadius.xlBorder,
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(AppSpacing.xl),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.2),
-                              borderRadius: AppRadius.fullBorder,
-                            ),
-                            child: Text(
-                              l10n?.bienvenueTitle ?? "BIENVENUE",
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 11,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 1.2,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 6),
-                          Text(
-                            l10n?.appTitle ?? "Cantiques du Message",
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: -0.3,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            l10n?.bienvenueSubtitle ??
-                                "Trouvez rapidement vos cantiques de louange et d'adoration",
-                            style: TextStyle(
-                              color: Colors.white.withValues(alpha: 0.9),
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              );
-            },
+          // Modern Rotating Banner Header
+          HomeBanner(
+            badgeText: l10n?.bienvenueTitle ?? "BIENVENUE",
+            title: l10n?.appTitle ?? "Cantiques du Message",
+            subtitle: l10n?.bienvenueSubtitle ??
+                "Trouvez rapidement vos cantiques de louange et d'adoration",
           ),
 
           const SizedBox(height: AppSpacing.lg),
@@ -188,7 +120,10 @@ class _AccueilPageState extends State<AccueilPage> {
               )
             else
               ...filteredSearchResults.map(
-                (cantique) => CantiqueCard(cantique: cantique),
+                (cantique) => CantiqueCard(
+                  cantique: cantique,
+                  onReturn: loadRecents,
+                ),
               ),
           ] else ...[
             if (_isLoadingRecents)
@@ -206,7 +141,10 @@ class _AccueilPageState extends State<AccueilPage> {
               )
             else
               ..._recentCantiques.map(
-                (cantique) => CantiqueCard(cantique: cantique),
+                (cantique) => CantiqueCard(
+                  cantique: cantique,
+                  onReturn: loadRecents,
+                ),
               ),
 
             const SizedBox(height: AppSpacing.xl),
@@ -245,10 +183,10 @@ class _AccueilPageState extends State<AccueilPage> {
                     padding: const EdgeInsets.all(6),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: AppColors.surface,
+                      color: theme.colorScheme.surface,
                       borderRadius: AppRadius.mdBorder,
                       border: Border.all(
-                        color: AppColors.borderLight,
+                        color: theme.colorScheme.outlineVariant,
                         width: 1,
                       ),
                     ),
