@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:cantiques_boanerges/database/app_database.dart';
-import 'package:cantiques_boanerges/models/cantique.dart';
 import 'package:cantiques_boanerges/models/chant_personnel.dart';
 import 'package:cantiques_boanerges/models/playlist_item.dart';
 import 'package:cantiques_boanerges/pages/cantique_detail.dart';
