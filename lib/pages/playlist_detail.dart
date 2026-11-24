@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../l10n/app_localizations.dart';
 import '../models/playlist.dart';
 import '../models/playlist_item.dart';
+import '../models/worship_song.dart';
 import '../services/cantique_service.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/playlist_service.dart';
@@ -12,14 +13,12 @@ import '../theme/app_spacing.dart';
 import '../widgets/app_empty_state.dart';
 import 'cantique_detail.dart';
 import 'chant_detail.dart';
+import 'worship_mode.dart';
 
 class PlaylistDetailPage extends StatefulWidget {
   final Playlist playlist;
 
-  const PlaylistDetailPage({
-    super.key,
-    required this.playlist,
-  });
+  const PlaylistDetailPage({super.key, required this.playlist});
 
   @override
   State<PlaylistDetailPage> createState() => _PlaylistDetailPageState();
@@ -44,8 +43,12 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
   Future<void> _loadPlaylistDetails() async {
     setState(() => _isLoading = true);
     try {
-      final updatedPlaylist = await _playlistService.getPlaylistById(_playlist.id);
-      final items = await _playlistService.getResolvedPlaylistItems(_playlist.id);
+      final updatedPlaylist = await _playlistService.getPlaylistById(
+        _playlist.id,
+      );
+      final items = await _playlistService.getResolvedPlaylistItems(
+        _playlist.id,
+      );
       if (!mounted) return;
       setState(() {
         if (updatedPlaylist != null) {
@@ -103,7 +106,9 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
   Future<void> _editPlaylist() async {
     final l10n = AppLocalizations.of(context)!;
     final nameController = TextEditingController(text: _playlist.nom);
-    final descController = TextEditingController(text: _playlist.description ?? '');
+    final descController = TextEditingController(
+      text: _playlist.description ?? '',
+    );
     final formKey = GlobalKey<FormState>();
 
     final updated = await showDialog<bool>(
@@ -173,9 +178,9 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
       await _playlistService.updatePlaylist(newPlaylist);
       await _loadPlaylistDetails();
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.listeModifiee)),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(l10n.listeModifiee)));
     }
   }
 
@@ -209,9 +214,9 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
     if (confirmed == true) {
       await _playlistService.deletePlaylist(_playlist.id);
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.listeSupprimee)),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(l10n.listeSupprimee)));
       Navigator.pop(context, true);
     }
   }
@@ -256,9 +261,32 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
     }
   }
 
-  void _startWorship() {
-    if (_items.isEmpty) return;
-    _openSong(0);
+  Future<void> _startWorship() async {
+    final firstIndex = _items.indexWhere((item) => item.isAvailable);
+    if (firstIndex < 0) return;
+    final item = _items[firstIndex];
+
+    WorshipSong? song;
+    if (item.isOfficial) {
+      final cantique = _cantiqueService.getCantiqueById(item.songId);
+      if (cantique != null) song = WorshipSong.fromCantique(cantique);
+    } else {
+      final chant = await _chantPersonnelService.getChantById(item.songId);
+      if (chant != null) song = WorshipSong.fromPersonal(chant);
+    }
+    if (!mounted || song == null) return;
+
+    await Navigator.push<void>(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WorshipModePage(
+          initialSong: song!,
+          playlistContext: _items,
+          playlistIndex: firstIndex,
+          playlistTitle: _playlist.nom,
+        ),
+      ),
+    );
   }
 
   @override
@@ -422,7 +450,9 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
                                   height: 38,
                                   alignment: Alignment.center,
                                   decoration: BoxDecoration(
-                                    color: theme.colorScheme.surfaceContainerHighest,
+                                    color: theme
+                                        .colorScheme
+                                        .surfaceContainerHighest,
                                     borderRadius: AppRadius.mdBorder,
                                   ),
                                   child: Text(
@@ -444,9 +474,10 @@ class _PlaylistDetailPageState extends State<PlaylistDetailPage> {
                                 subtitle: Text(
                                   item.isOfficial
                                       ? '${item.collection ?? ''} • #${item.numero ?? item.songId}'
-                                      : (item.auteur != null && item.auteur!.isNotEmpty
-                                          ? item.auteur!
-                                          : l10n.navMesChants),
+                                      : (item.auteur != null &&
+                                                item.auteur!.isNotEmpty
+                                            ? item.auteur!
+                                            : l10n.navMesChants),
                                   style: theme.textTheme.bodySmall?.copyWith(
                                     color: theme.colorScheme.onSurfaceVariant,
                                   ),

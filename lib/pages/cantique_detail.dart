@@ -9,6 +9,7 @@ import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../models/playlist_item.dart';
 import '../models/search_scope.dart';
+import '../models/worship_song.dart';
 import '../services/cantique_service.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
@@ -21,6 +22,7 @@ import '../widgets/add_to_playlist_sheet.dart';
 import '../widgets/lyrics_zoom_wrapper.dart';
 import '../widgets/reader_speed_dial.dart';
 import 'chant_detail.dart';
+import 'worship_mode.dart';
 
 class CantiqueDetailPage extends StatefulWidget {
   final Cantique cantique;
@@ -94,7 +96,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     try {
       await RecentCantiqueService.instance.recordView(widget.cantique.id);
       await _favoriteService.loadFavorites();
-      final isFavorite = _favoriteService.isCantiqueFavorite(widget.cantique.id);
+      final isFavorite = _favoriteService.isCantiqueFavorite(
+        widget.cantique.id,
+      );
       final fontSize = await _settingsService.getLyricsFontSize();
       if (!mounted) return;
       setState(() {
@@ -127,6 +131,20 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
       SnackBar(
         content: Text(l10n.reinitialiserTailleTexte),
         duration: const Duration(seconds: 1),
+      ),
+    );
+  }
+
+  Future<void> _openWorshipMode() async {
+    await Navigator.push<void>(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WorshipModePage(
+          initialSong: WorshipSong.fromCantique(widget.cantique),
+          playlistContext: widget.playlistContext,
+          playlistIndex: widget.playlistIndex,
+          playlistTitle: widget.playlistTitle,
+        ),
       ),
     );
   }
@@ -359,10 +377,16 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
         return StatefulBuilder(
           builder: (context, setModalState) {
             final query = _searchQuery;
-            final targetCantiques = _searchModalScope == SearchScope.allCollections
+            final targetCantiques =
+                _searchModalScope == SearchScope.allCollections
                 ? CantiqueService.instance.getAllCantiques()
-                : CantiqueService.instance.getCantiquesByCollection(widget.cantique.collection);
-            final results = CantiqueService.filterCantiques(targetCantiques, query);
+                : CantiqueService.instance.getCantiquesByCollection(
+                    widget.cantique.collection,
+                  );
+            final results = CantiqueService.filterCantiques(
+              targetCantiques,
+              query,
+            );
 
             return DraggableScrollableSheet(
               expand: false,
@@ -385,7 +409,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                       const SizedBox(height: AppSpacing.md),
                       Row(
                         children: [
-                          const Icon(Icons.search_rounded, color: AppColors.primary),
+                          const Icon(
+                            Icons.search_rounded,
+                            color: AppColors.primary,
+                          ),
                           const SizedBox(width: AppSpacing.sm),
                           Text(
                             l10n.rechercherCantiqueHint,
@@ -406,7 +433,8 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                       TextField(
                         autofocus: true,
                         decoration: InputDecoration(
-                          hintText: _searchModalScope == SearchScope.allCollections
+                          hintText:
+                              _searchModalScope == SearchScope.allCollections
                               ? l10n.searchCollectionsHint
                               : l10n.searchInCollectionHint,
                           prefixIcon: const Icon(Icons.search_rounded),
@@ -424,7 +452,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                             borderRadius: AppRadius.mdBorder,
                             borderSide: BorderSide.none,
                           ),
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                          contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                          ),
                         ),
                         onChanged: (val) {
                           setModalState(() => _searchQuery = val);
@@ -441,16 +471,25 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                               label: Text(
                                 l10n.cetteCollection,
                                 overflow: TextOverflow.ellipsis,
-                                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                                style: const TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
-                              icon: const Icon(Icons.folder_open_rounded, size: 14),
+                              icon: const Icon(
+                                Icons.folder_open_rounded,
+                                size: 14,
+                              ),
                             ),
                             ButtonSegment<SearchScope>(
                               value: SearchScope.allCollections,
                               label: Text(
                                 l10n.toutesLesCollections,
                                 overflow: TextOverflow.ellipsis,
-                                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                                style: const TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                               icon: const Icon(Icons.public_rounded, size: 14),
                             ),
@@ -468,10 +507,15 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                         child: results.isEmpty
                             ? Center(
                                 child: Text(
-                                  _searchModalScope == SearchScope.allCollections
+                                  _searchModalScope ==
+                                          SearchScope.allCollections
                                       ? l10n.aucunCantiquePourRecherche(query)
-                                      : l10n.aucunCantiqueDansCollection(widget.cantique.collection),
-                                  style: const TextStyle(color: AppColors.textSecondary),
+                                      : l10n.aucunCantiqueDansCollection(
+                                          widget.cantique.collection,
+                                        ),
+                                  style: const TextStyle(
+                                    color: AppColors.textSecondary,
+                                  ),
                                 ),
                               )
                             : ListView.builder(
@@ -482,7 +526,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                   return ListTile(
                                     leading: Container(
                                       padding: const EdgeInsets.symmetric(
-                                          horizontal: 8, vertical: 4),
+                                        horizontal: 8,
+                                        vertical: 4,
+                                      ),
                                       decoration: BoxDecoration(
                                         color: AppColors.primaryLight,
                                         borderRadius: AppRadius.smBorder,
@@ -515,7 +561,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                       Navigator.pushReplacement(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (_) => CantiqueDetailPage(cantique: item),
+                                          builder: (_) => CantiqueDetailPage(
+                                            cantique: item,
+                                          ),
                                         ),
                                       );
                                     },
@@ -562,7 +610,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
               child: Text(
                 widget.cantique.collection,
                 overflow: TextOverflow.ellipsis,
-                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                style: const TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
           ],
@@ -582,7 +633,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                   : Icons.favorite_border_rounded,
               color: _isFavorite ? AppColors.error : AppColors.textOnPrimary,
             ),
-            tooltip: _isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris',
+            tooltip: _isFavorite
+                ? 'Retirer des favoris'
+                : 'Ajouter aux favoris',
             onPressed: _toggleFavorite,
           ),
           IconButton(
@@ -660,7 +713,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                               ),
                               decoration: BoxDecoration(
                                 color: isDark
-                                    ? theme.colorScheme.primary.withValues(alpha: 0.2)
+                                    ? theme.colorScheme.primary.withValues(
+                                        alpha: 0.2,
+                                      )
                                     : AppColors.primaryLight,
                                 borderRadius: AppRadius.fullBorder,
                               ),
@@ -733,15 +788,21 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                           Icon(
                                             Icons.person_outline_rounded,
                                             size: 16,
-                                            color: theme.colorScheme.onSurfaceVariant,
+                                            color: theme
+                                                .colorScheme
+                                                .onSurfaceVariant,
                                           ),
                                           const SizedBox(width: 6),
                                           Text(
-                                            l10n.auteurValeur(widget.cantique.auteur!),
+                                            l10n.auteurValeur(
+                                              widget.cantique.auteur!,
+                                            ),
                                             style: TextStyle(
                                               fontSize: 13,
                                               fontStyle: FontStyle.italic,
-                                              color: theme.colorScheme.onSurfaceVariant,
+                                              color: theme
+                                                  .colorScheme
+                                                  .onSurfaceVariant,
                                             ),
                                           ),
                                         ],
@@ -762,6 +823,12 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                 ReaderSpeedDial(
                   tooltip: l10n.actions,
                   actions: [
+                    SpeedDialAction(
+                      key: const Key('reader_action_worship_mode'),
+                      icon: Icons.fullscreen_rounded,
+                      label: l10n.modeLouange,
+                      onTap: _openWorshipMode,
+                    ),
                     SpeedDialAction(
                       key: const Key('reader_action_favorite'),
                       icon: _isFavorite
@@ -828,12 +895,15 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
   Future<void> _navigateToPlaylistItem(int targetIndex) async {
     if (widget.playlistContext == null) return;
-    if (targetIndex < 0 || targetIndex >= widget.playlistContext!.length) return;
+    if (targetIndex < 0 || targetIndex >= widget.playlistContext!.length)
+      return;
     final targetItem = widget.playlistContext![targetIndex];
     if (!targetItem.isAvailable) return;
 
     if (targetItem.isOfficial) {
-      final cantique = CantiqueService.instance.getCantiqueById(targetItem.songId);
+      final cantique = CantiqueService.instance.getCantiqueById(
+        targetItem.songId,
+      );
       if (cantique != null && mounted) {
         Navigator.pushReplacement(
           context,
@@ -851,7 +921,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
         );
       }
     } else {
-      final chant = await _chantPersonnelService.getChantById(targetItem.songId);
+      final chant = await _chantPersonnelService.getChantById(
+        targetItem.songId,
+      );
       if (chant != null && mounted) {
         Navigator.pushReplacement(
           context,
@@ -877,14 +949,14 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md, vertical: 4),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.md,
+        vertical: 4,
+      ),
       decoration: BoxDecoration(
         color: theme.colorScheme.primaryContainer.withValues(alpha: 0.6),
         border: Border(
-          bottom: BorderSide(
-            color: theme.colorScheme.outlineVariant,
-            width: 1,
-          ),
+          bottom: BorderSide(color: theme.colorScheme.outlineVariant, width: 1),
         ),
       ),
       child: Row(
@@ -892,13 +964,16 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
           IconButton(
             icon: const Icon(Icons.arrow_back_ios_rounded, size: 16),
             tooltip: 'Précédent',
-            onPressed: hasPrev ? () => _navigateToPlaylistItem(widget.playlistIndex! - 1) : null,
+            onPressed: hasPrev
+                ? () => _navigateToPlaylistItem(widget.playlistIndex! - 1)
+                : null,
           ),
           Expanded(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                if (widget.playlistTitle != null && widget.playlistTitle!.isNotEmpty)
+                if (widget.playlistTitle != null &&
+                    widget.playlistTitle!.isNotEmpty)
                   Text(
                     widget.playlistTitle!,
                     style: const TextStyle(
@@ -922,7 +997,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
           IconButton(
             icon: const Icon(Icons.arrow_forward_ios_rounded, size: 16),
             tooltip: 'Suivant',
-            onPressed: hasNext ? () => _navigateToPlaylistItem(widget.playlistIndex! + 1) : null,
+            onPressed: hasNext
+                ? () => _navigateToPlaylistItem(widget.playlistIndex! + 1)
+                : null,
           ),
         ],
       ),

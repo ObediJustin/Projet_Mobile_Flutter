@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../l10n/app_localizations.dart';
 import '../models/chant_personnel.dart';
 import '../models/playlist_item.dart';
+import '../models/worship_song.dart';
 import '../pages/chant_form.dart';
 import '../services/cantique_service.dart';
 import '../services/chant_personnel_service.dart';
@@ -13,7 +14,9 @@ import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 import '../widgets/add_to_playlist_sheet.dart';
 import '../widgets/lyrics_zoom_wrapper.dart';
+import '../widgets/reader_speed_dial.dart';
 import 'cantique_detail.dart';
+import 'worship_mode.dart';
 
 /// Page de détail / édition d’un chant personnel.
 class ChantDetailPage extends StatefulWidget {
@@ -79,6 +82,20 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
     setState(() {
       _isFavorite = _favoriteService.isChantPersonnelFavorite(widget.chant.id);
     });
+  }
+
+  Future<void> _openWorshipMode() async {
+    await Navigator.push<void>(
+      context,
+      MaterialPageRoute(
+        builder: (context) => WorshipModePage(
+          initialSong: WorshipSong.fromPersonal(widget.chant),
+          playlistContext: widget.playlistContext,
+          playlistIndex: widget.playlistIndex,
+          playlistTitle: widget.playlistTitle,
+        ),
+      ),
+    );
   }
 
   Future<void> _toggleFavorite() async {
@@ -279,54 +296,128 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                  // Banner header container
-                  Container(
-                    padding: const EdgeInsets.all(AppSpacing.lg),
-                    decoration: BoxDecoration(
-                      color: AppColors.primaryVeryLight,
-                      borderRadius: AppRadius.xlBorder,
-                      border: Border.all(
-                        color: AppColors.secondaryLight,
-                        width: 1,
-                      ),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                        // Banner header container
+                        Container(
+                          padding: const EdgeInsets.all(AppSpacing.lg),
+                          decoration: BoxDecoration(
+                            color: AppColors.primaryVeryLight,
+                            borderRadius: AppRadius.xlBorder,
+                            border: Border.all(
+                              color: AppColors.secondaryLight,
+                              width: 1,
+                            ),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                chant.titre,
+                                style: const TextStyle(
+                                  fontSize: 22,
+                                  fontWeight: FontWeight.bold,
+                                  color: AppColors.textPrimary,
+                                ),
+                              ),
+                              if ((chant.auteur ?? '').isNotEmpty) ...[
+                                const SizedBox(height: 4),
+                                Text(
+                                  l10n.auteurValeur(chant.auteur!),
+                                  style: const TextStyle(
+                                    color: AppColors.textSecondary,
+                                    fontStyle: FontStyle.italic,
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ],
+                              const SizedBox(height: AppSpacing.md),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 6,
+                                children: [
+                                  _infoChip(
+                                    icon: Icons.calendar_today_rounded,
+                                    label: l10n.creationValeur(
+                                      _formatDate(chant.dateCreation),
+                                    ),
+                                  ),
+                                  _infoChip(
+                                    icon: Icons.update_rounded,
+                                    label: l10n.modificationValeur(
+                                      _formatDate(chant.dateModification),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        const SizedBox(height: AppSpacing.xl),
+
                         Text(
-                          chant.titre,
+                          l10n.parolesChant,
                           style: const TextStyle(
-                            fontSize: 22,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: AppColors.textPrimary,
                           ),
                         ),
-                        if ((chant.auteur ?? '').isNotEmpty) ...[
-                          const SizedBox(height: 4),
-                          Text(
-                            l10n.auteurValeur(chant.auteur!),
-                            style: const TextStyle(
-                              color: AppColors.textSecondary,
-                              fontStyle: FontStyle.italic,
-                              fontSize: 14,
+                        const SizedBox(height: AppSpacing.md),
+
+                        Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.all(AppSpacing.xl),
+                          decoration: BoxDecoration(
+                            color: AppColors.surface,
+                            borderRadius: AppRadius.xlBorder,
+                            border: Border.all(
+                              color: AppColors.borderLight,
+                              width: 1,
+                            ),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0x0A000000),
+                                blurRadius: 10,
+                                offset: Offset(0, 4),
+                              ),
+                            ],
+                          ),
+                          child: SelectableText(
+                            chant.contenu,
+                            style: TextStyle(
+                              fontSize: _fontSize,
+                              height: 1.8,
+                              color: AppColors.textPrimary,
                             ),
                           ),
-                        ],
-                        const SizedBox(height: AppSpacing.md),
-                        Wrap(
-                          spacing: 8,
-                          runSpacing: 6,
+                        ),
+
+                        const SizedBox(height: AppSpacing.xxl),
+
+                        Row(
                           children: [
-                            _infoChip(
-                              icon: Icons.calendar_today_rounded,
-                              label: l10n.creationValeur(
-                                _formatDate(chant.dateCreation),
+                            Expanded(
+                              child: ElevatedButton.icon(
+                                icon: const Icon(Icons.edit_rounded, size: 18),
+                                label: Text(l10n.modifier),
+                                onPressed: _isBusy ? null : _edit,
                               ),
                             ),
-                            _infoChip(
-                              icon: Icons.update_rounded,
-                              label: l10n.modificationValeur(
-                                _formatDate(chant.dateModification),
+                            const SizedBox(width: AppSpacing.md),
+                            Expanded(
+                              child: OutlinedButton.icon(
+                                style: OutlinedButton.styleFrom(
+                                  foregroundColor: AppColors.error,
+                                  side: const BorderSide(
+                                    color: AppColors.error,
+                                  ),
+                                ),
+                                icon: const Icon(
+                                  Icons.delete_outline_rounded,
+                                  size: 18,
+                                ),
+                                label: Text(l10n.supprimer),
+                                onPressed: _isBusy ? null : _confirmAndDelete,
                               ),
                             ),
                           ],
@@ -334,78 +425,20 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
                       ],
                     ),
                   ),
-
-                  const SizedBox(height: AppSpacing.xl),
-
-                  Text(
-                    l10n.parolesChant,
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.textPrimary,
-                    ),
-                  ),
-                  const SizedBox(height: AppSpacing.md),
-
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(AppSpacing.xl),
-                    decoration: BoxDecoration(
-                      color: AppColors.surface,
-                      borderRadius: AppRadius.xlBorder,
-                      border: Border.all(color: AppColors.borderLight, width: 1),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Color(0x0A000000),
-                          blurRadius: 10,
-                          offset: Offset(0, 4),
-                        ),
-                      ],
-                    ),
-                    child: SelectableText(
-                      chant.contenu,
-                      style: TextStyle(
-                        fontSize: _fontSize,
-                        height: 1.8,
-                        color: AppColors.textPrimary,
-                      ),
-                    ),
-                  ),
-
-                  const SizedBox(height: AppSpacing.xxl),
-
-                Row(
-                  children: [
-                    Expanded(
-                      child: ElevatedButton.icon(
-                        icon: const Icon(Icons.edit_rounded, size: 18),
-                        label: Text(l10n.modifier),
-                        onPressed: _isBusy ? null : _edit,
-                      ),
-                    ),
-                    const SizedBox(width: AppSpacing.md),
-                    Expanded(
-                      child: OutlinedButton.icon(
-                        style: OutlinedButton.styleFrom(
-                          foregroundColor: AppColors.error,
-                          side: const BorderSide(color: AppColors.error),
-                        ),
-                        icon: const Icon(
-                          Icons.delete_outline_rounded,
-                          size: 18,
-                        ),
-                        label: Text(l10n.supprimer),
-                        onPressed: _isBusy ? null : _confirmAndDelete,
-                      ),
-                    ),
-                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-          ),
-          ),
-          ],
+          ReaderSpeedDial(
+            tooltip: l10n.actions,
+            actions: [
+              SpeedDialAction(
+                key: const Key('personal_reader_action_worship_mode'),
+                icon: Icons.fullscreen_rounded,
+                label: l10n.modeLouange,
+                onTap: _openWorshipMode,
+              ),
+            ],
           ),
           if (_isBusy)
             const Positioned.fill(
@@ -421,12 +454,15 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
   Future<void> _navigateToPlaylistItem(int targetIndex) async {
     if (widget.playlistContext == null) return;
-    if (targetIndex < 0 || targetIndex >= widget.playlistContext!.length) return;
+    if (targetIndex < 0 || targetIndex >= widget.playlistContext!.length)
+      return;
     final targetItem = widget.playlistContext![targetIndex];
     if (!targetItem.isAvailable) return;
 
     if (targetItem.isOfficial) {
-      final cantique = CantiqueService.instance.getCantiqueById(targetItem.songId);
+      final cantique = CantiqueService.instance.getCantiqueById(
+        targetItem.songId,
+      );
       if (cantique != null && mounted) {
         Navigator.pushReplacement(
           context,
@@ -470,14 +506,14 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md, vertical: 4),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.md,
+        vertical: 4,
+      ),
       decoration: BoxDecoration(
         color: theme.colorScheme.primaryContainer.withValues(alpha: 0.6),
         border: Border(
-          bottom: BorderSide(
-            color: theme.colorScheme.outlineVariant,
-            width: 1,
-          ),
+          bottom: BorderSide(color: theme.colorScheme.outlineVariant, width: 1),
         ),
       ),
       child: Row(
@@ -485,13 +521,16 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
           IconButton(
             icon: const Icon(Icons.arrow_back_ios_rounded, size: 16),
             tooltip: 'Précédent',
-            onPressed: hasPrev ? () => _navigateToPlaylistItem(widget.playlistIndex! - 1) : null,
+            onPressed: hasPrev
+                ? () => _navigateToPlaylistItem(widget.playlistIndex! - 1)
+                : null,
           ),
           Expanded(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                if (widget.playlistTitle != null && widget.playlistTitle!.isNotEmpty)
+                if (widget.playlistTitle != null &&
+                    widget.playlistTitle!.isNotEmpty)
                   Text(
                     widget.playlistTitle!,
                     style: const TextStyle(
@@ -515,7 +554,9 @@ class _ChantDetailPageState extends State<ChantDetailPage> {
           IconButton(
             icon: const Icon(Icons.arrow_forward_ios_rounded, size: 16),
             tooltip: 'Suivant',
-            onPressed: hasNext ? () => _navigateToPlaylistItem(widget.playlistIndex! + 1) : null,
+            onPressed: hasNext
+                ? () => _navigateToPlaylistItem(widget.playlistIndex! + 1)
+                : null,
           ),
         ],
       ),
