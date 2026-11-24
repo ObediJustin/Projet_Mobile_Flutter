@@ -17,6 +17,7 @@ import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 import '../widgets/lyrics_zoom_wrapper.dart';
+import '../widgets/reader_speed_dial.dart';
 
 class CantiqueDetailPage extends StatefulWidget {
   final Cantique cantique;
@@ -518,36 +519,6 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     );
   }
 
-  Widget _actionIconButton({
-    required IconData icon,
-    required String label,
-    required VoidCallback onTap,
-    required Color iconColor,
-  }) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: AppRadius.mdBorder,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(icon, size: 22, color: iconColor),
-            const SizedBox(height: 3),
-            Text(
-              label,
-              style: const TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.w600,
-                color: AppColors.textSecondary,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -622,205 +593,197 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
           return FadeTransition(
             opacity: _fadeAnimation,
-            child: SafeArea(
-              child: Column(
-                children: [
-                  // Top Header Information Box
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: AppSpacing.lg,
-                      vertical: AppSpacing.md,
-                    ),
-                    decoration: const BoxDecoration(
-                      color: AppColors.primaryVeryLight,
-                      border: Border(
-                        bottom: BorderSide(
-                          color: AppColors.borderLight,
-                          width: 1,
+            child: Stack(
+              children: [
+                SafeArea(
+                  child: Column(
+                    children: [
+                      // Top Header Information Box
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpacing.lg,
+                          vertical: AppSpacing.md,
+                        ),
+                        decoration: const BoxDecoration(
+                          color: AppColors.primaryVeryLight,
+                          border: Border(
+                            bottom: BorderSide(
+                              color: AppColors.borderLight,
+                              width: 1,
+                            ),
+                          ),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'N° ${widget.cantique.numero}',
+                              style: const TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.bold,
+                                color: AppColors.primaryDark,
+                                letterSpacing: 1.0,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Text(
+                              widget.cantique.titre,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: AppColors.textPrimary,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 3,
+                              ),
+                              decoration: BoxDecoration(
+                                color: AppColors.primaryLight,
+                                borderRadius: AppRadius.fullBorder,
+                              ),
+                              child: Text(
+                                widget.cantique.collection,
+                                style: const TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
+                                  color: AppColors.primaryDark,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          'N° ${widget.cantique.numero}',
-                          style: const TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.primaryDark,
-                            letterSpacing: 1.0,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          widget.cantique.titre,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: AppColors.textPrimary,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 10,
-                            vertical: 3,
-                          ),
-                          decoration: BoxDecoration(
-                            color: AppColors.primaryLight,
-                            borderRadius: AppRadius.fullBorder,
-                          ),
-                          child: Text(
-                            widget.cantique.collection,
-                            style: const TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                              color: AppColors.primaryDark,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
 
-                  // Lyrics Area (Scrollable reader container with pinch zoom)
-                  Expanded(
-                    child: LyricsZoomWrapper(
-                      fontSize: _fontSize,
-                      onFontSizeChange: _onPinchFontSizeChange,
-                      onFontSizeCommit: _onPinchFontSizeCommit,
-                      child: SingleChildScrollView(
-                        controller: _parolesScrollController,
-                        padding: const EdgeInsets.all(AppSpacing.lg),
-                        child: ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: 800),
-                          child: Container(
-                            width: double.infinity,
-                            padding: const EdgeInsets.all(AppSpacing.xl),
-                            decoration: BoxDecoration(
-                              color: AppColors.surface,
-                              borderRadius: AppRadius.xlBorder,
-                              border: Border.all(
-                                color: AppColors.borderLight,
-                                width: 1,
-                              ),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Color(0x0A000000),
-                                  blurRadius: 12,
-                                  offset: Offset(0, 4),
-                                ),
-                              ],
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                SelectableText(
-                                  widget.cantique.contenu,
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    fontSize: _fontSize,
-                                    height: 1.8,
-                                    color: AppColors.textPrimary,
-                                    fontWeight: FontWeight.w400,
+                      // Lyrics Area (Scrollable reader container with pinch zoom)
+                      Expanded(
+                        child: LyricsZoomWrapper(
+                          fontSize: _fontSize,
+                          onFontSizeChange: _onPinchFontSizeChange,
+                          onFontSizeCommit: _onPinchFontSizeCommit,
+                          child: SingleChildScrollView(
+                            controller: _parolesScrollController,
+                            padding: const EdgeInsets.all(AppSpacing.lg),
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 800),
+                              child: Container(
+                                width: double.infinity,
+                                padding: const EdgeInsets.all(AppSpacing.xl),
+                                decoration: BoxDecoration(
+                                  color: AppColors.surface,
+                                  borderRadius: AppRadius.xlBorder,
+                                  border: Border.all(
+                                    color: AppColors.borderLight,
+                                    width: 1,
                                   ),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                      color: Color(0x0A000000),
+                                      blurRadius: 12,
+                                      offset: Offset(0, 4),
+                                    ),
+                                  ],
                                 ),
-                                if (widget.cantique.auteur != null &&
-                                    widget.cantique.auteur!.isNotEmpty) ...[
-                                  const SizedBox(height: AppSpacing.xxl),
-                                  const Divider(),
-                                  const SizedBox(height: AppSpacing.md),
-                                  Row(
-                                    children: [
-                                      const Icon(
-                                        Icons.person_outline_rounded,
-                                        size: 16,
-                                        color: AppColors.textSecondary,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    SelectableText(
+                                      widget.cantique.contenu,
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(
+                                        fontSize: _fontSize,
+                                        height: 1.8,
+                                        color: AppColors.textPrimary,
+                                        fontWeight: FontWeight.w400,
                                       ),
-                                      const SizedBox(width: 6),
-                                      Text(
-                                        l10n.auteurValeur(widget.cantique.auteur!),
-                                        style: const TextStyle(
-                                          fontSize: 13,
-                                          fontStyle: FontStyle.italic,
-                                          color: AppColors.textSecondary,
-                                        ),
+                                    ),
+                                    if (widget.cantique.auteur != null &&
+                                        widget.cantique.auteur!.isNotEmpty) ...[
+                                      const SizedBox(height: AppSpacing.xxl),
+                                      const Divider(),
+                                      const SizedBox(height: AppSpacing.md),
+                                      Row(
+                                        children: [
+                                          const Icon(
+                                            Icons.person_outline_rounded,
+                                            size: 16,
+                                            color: AppColors.textSecondary,
+                                          ),
+                                          const SizedBox(width: 6),
+                                          Text(
+                                            l10n.auteurValeur(widget.cantique.auteur!),
+                                            style: const TextStyle(
+                                              fontSize: 13,
+                                              fontStyle: FontStyle.italic,
+                                              color: AppColors.textSecondary,
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ],
-                                  ),
-                                ],
-                              ],
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
+                    ],
                   ),
+                ),
 
-                  // Bottom Fixed Reading Action Bar
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: AppSpacing.md,
-                      vertical: AppSpacing.sm,
+                // Expandable Speed Dial Floating Action Menu
+                ReaderSpeedDial(
+                  tooltip: l10n.actions,
+                  actions: [
+                    SpeedDialAction(
+                      key: const Key('reader_action_favorite'),
+                      icon: _isFavorite
+                          ? Icons.favorite_rounded
+                          : Icons.favorite_border_rounded,
+                      iconColor: _isFavorite ? AppColors.error : null,
+                      label: _isFavorite
+                          ? l10n.retireDesFavoris
+                          : l10n.ajouteAuxFavoris,
+                      onTap: _toggleFavorite,
                     ),
-                    decoration: BoxDecoration(
-                      color: AppColors.surface,
-                      border: const Border(
-                        top: BorderSide(color: AppColors.borderLight, width: 1),
-                      ),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Color(0x0F000000),
-                          blurRadius: 10,
-                          offset: Offset(0, -4),
-                        ),
-                      ],
+                    SpeedDialAction(
+                      key: const Key('reader_action_share'),
+                      icon: Icons.share_rounded,
+                      label: l10n.partager,
+                      onTap: _share,
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        _actionIconButton(
-                          icon: _isFavorite
-                              ? Icons.favorite_rounded
-                              : Icons.favorite_border_rounded,
-                          label: l10n.favori,
-                          iconColor: _isFavorite
-                              ? AppColors.error
-                              : AppColors.primary,
-                          onTap: _toggleFavorite,
-                        ),
-                        _actionIconButton(
-                          icon: Icons.copy_rounded,
-                          label: l10n.copier,
-                          iconColor: AppColors.primary,
-                          onTap: _copyToClipboard,
-                        ),
-                        _actionIconButton(
-                          icon: Icons.share_rounded,
-                          label: l10n.partager,
-                          iconColor: AppColors.primary,
-                          onTap: _share,
-                        ),
-                        _actionIconButton(
-                          icon: Icons.format_size_rounded,
-                          label: l10n.tailleCourt,
-                          iconColor: AppColors.primary,
-                          onTap: _showFontSizeSheet,
-                        ),
-                        _actionIconButton(
-                          icon: Icons.library_add_rounded,
-                          label: l10n.mesChants,
-                          iconColor: AppColors.primary,
-                          onTap: _addToPersonalChants,
-                        ),
-                      ],
+                    SpeedDialAction(
+                      key: const Key('reader_action_copy'),
+                      icon: Icons.copy_rounded,
+                      label: l10n.copierParoles,
+                      onTap: _copyToClipboard,
                     ),
-                  ),
-                ],
-              ),
+                    SpeedDialAction(
+                      key: const Key('reader_action_font_size'),
+                      icon: Icons.format_size_rounded,
+                      label: l10n.tailleDuTexte,
+                      onTap: _showFontSizeSheet,
+                    ),
+                    SpeedDialAction(
+                      key: const Key('reader_action_reset_font_size'),
+                      icon: Icons.restart_alt_rounded,
+                      label: l10n.reinitialiserTailleTexte,
+                      onTap: _resetFontSize,
+                    ),
+                    SpeedDialAction(
+                      key: const Key('reader_action_my_chants'),
+                      icon: Icons.library_add_rounded,
+                      label: l10n.mesChants,
+                      onTap: _addToPersonalChants,
+                    ),
+                  ],
+                ),
+              ],
             ),
           );
         },
