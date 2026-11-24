@@ -7,8 +7,9 @@ import '../theme/app_spacing.dart';
 
 class CantiqueCard extends StatelessWidget {
   final Cantique cantique;
+  final VoidCallback? onReturn;
 
-  const CantiqueCard({super.key, required this.cantique});
+  const CantiqueCard({super.key, required this.cantique, this.onReturn});
 
   @override
   Widget build(BuildContext context) {
@@ -37,13 +38,14 @@ class CantiqueCard extends StatelessWidget {
         borderRadius: AppRadius.lgBorder,
         child: InkWell(
           borderRadius: AppRadius.lgBorder,
-          onTap: () {
-            Navigator.push(
+          onTap: () async {
+            await Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) => CantiqueDetailPage(cantique: cantique),
               ),
             );
+            onReturn?.call();
           },
           child: Padding(
             padding: const EdgeInsets.symmetric(

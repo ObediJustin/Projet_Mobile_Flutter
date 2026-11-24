@@ -10,7 +10,7 @@ class RecentCantiqueService {
     await AppDatabase.instance.recordRecentlyViewedCantique(cantiqueId);
   }
 
-  Future<List<Cantique>> getRecentlyViewedCantiques({int limit = 5}) async {
+  Future<List<Cantique>> getRecentlyViewedCantiques({int limit = 4}) async {
     return AppDatabase.instance.getRecentlyViewedCantiques(limit: limit);
   }
 }

@@ -29,9 +29,10 @@ class _HomeState extends State<Home> {
   int currentIndex = 0;
   final CantiqueService _cantiqueService = CantiqueService.instance;
   final Random _random = Random();
+  final GlobalKey<AccueilPageState> _accueilKey = GlobalKey<AccueilPageState>();
 
-  final List<Widget> pages = [
-    const AccueilPage(),
+  late final List<Widget> pages = [
+    AccueilPage(key: _accueilKey),
     const CollectionPage(),
     const FavorisPage(),
     const MesChantsPage(),
@@ -319,6 +320,9 @@ class _HomeState extends State<Home> {
         selectedIndex: currentIndex,
         onDestinationSelected: (index) {
           setState(() => currentIndex = index);
+          if (index == 0) {
+            _accueilKey.currentState?.loadRecents();
+          }
         },
         destinations: [
           NavigationDestination(
@@ -405,17 +409,18 @@ class _HomeState extends State<Home> {
     );
   }
 
-  void _openRandomCantique(BuildContext context) {
+  Future<void> _openRandomCantique(BuildContext context) async {
     final cantiques = _cantiqueService.getAllCantiques();
     if (cantiques.isEmpty) return;
 
     final cantique = cantiques[_random.nextInt(cantiques.length)];
-    Navigator.push(
+    await Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => CantiqueDetailPage(cantique: cantique),
       ),
     );
+    _accueilKey.currentState?.loadRecents();
   }
 
   void _showAboutDialog(BuildContext context) {

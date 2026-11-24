@@ -853,7 +853,7 @@ class AppDatabase {
     await db.delete('recently_viewed_cantiques');
   }
 
-  Future<List<Cantique>> getRecentlyViewedCantiques({int limit = 5}) async {
+  Future<List<Cantique>> getRecentlyViewedCantiques({int limit = 4}) async {
     if (_useMemoryStore) {
       final sortedEntries = _memoryRecentlyViewed.entries.toList()
         ..sort((a, b) => b.value.compareTo(a.value));
