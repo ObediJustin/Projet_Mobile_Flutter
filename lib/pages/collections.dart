@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../l10n/app_localizations.dart';
 import '../models/cantique.dart';
+import '../models/search_scope.dart';
 import '../services/cantique_service.dart';
 import '../services/favorite_service.dart';
 import '../theme/app_colors.dart';
@@ -155,6 +156,7 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
   final TextEditingController _searchController = TextEditingController();
 
   String _query = '';
+  SearchScope _searchScope = SearchScope.currentCollection;
 
   @override
   void dispose() {
@@ -162,11 +164,58 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
     super.dispose();
   }
 
-  List<Cantique> get _cantiquesBruts =>
-      _cantiqueService.getCantiquesByCollection(widget.collectionName);
+  List<Cantique> get _targetCantiques {
+    if (_searchScope == SearchScope.allCollections) {
+      return _cantiqueService.getAllCantiques();
+    }
+    return _cantiqueService.getCantiquesByCollection(widget.collectionName);
+  }
 
   List<Cantique> get _filtered {
-    return CantiqueService.filterCantiques(_cantiquesBruts, _query);
+    return CantiqueService.filterCantiques(_targetCantiques, _query);
+  }
+
+  Widget _buildScopeSelector(AppLocalizations l10n) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.lg,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+        child: SizedBox(
+          width: double.infinity,
+          child: SegmentedButton<SearchScope>(
+            showSelectedIcon: true,
+            segments: [
+              ButtonSegment<SearchScope>(
+                value: SearchScope.currentCollection,
+                label: Text(
+                  l10n.cetteCollection,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                ),
+                icon: const Icon(Icons.folder_open_rounded, size: 16),
+              ),
+              ButtonSegment<SearchScope>(
+                value: SearchScope.allCollections,
+                label: Text(
+                  l10n.toutesLesCollections,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                ),
+                icon: const Icon(Icons.public_rounded, size: 16),
+              ),
+            ],
+            selected: {_searchScope},
+            onSelectionChanged: (Set<SearchScope> newSelection) {
+              setState(() {
+                _searchScope = newSelection.first;
+              });
+            },
+          ),
+        ),
+      ),
+    );
   }
 
   @override
@@ -180,19 +229,24 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
             padding: const EdgeInsets.all(AppSpacing.lg),
             child: AppSearchBar(
               controller: _searchController,
-              hintText: l10n.searchInCollectionHint,
+              hintText: _searchScope == SearchScope.allCollections
+                  ? l10n.searchCollectionsHint
+                  : l10n.searchInCollectionHint,
               onChanged: (value) => setState(() => _query = value),
               onClear: () => setState(() => _query = ''),
             ),
           ),
+          _buildScopeSelector(l10n),
           Expanded(
             child: _filtered.isEmpty
                 ? AppEmptyState(
                     icon: Icons.search_off_rounded,
                     title: l10n.noCantiqueFound,
-                    message: l10n.aucunCantiqueDansCollection(
-                      widget.collectionName,
-                    ),
+                    message: _searchScope == SearchScope.allCollections
+                        ? l10n.aucunCantiquePourRecherche(_query)
+                        : l10n.aucunCantiqueDansCollection(
+                            widget.collectionName,
+                          ),
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.symmetric(
@@ -225,6 +279,7 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
   final TextEditingController _searchController = TextEditingController();
 
   String _query = '';
+  SearchScope _searchScope = SearchScope.currentCollection;
 
   @override
   void dispose() {
@@ -232,11 +287,58 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
     super.dispose();
   }
 
-  List<Cantique> get _base =>
-      _cantiqueService.getCantiquesByCollection(widget.collectionName);
+  List<Cantique> get _targetCantiques {
+    if (_searchScope == SearchScope.allCollections) {
+      return _cantiqueService.getAllCantiques();
+    }
+    return _cantiqueService.getCantiquesByCollection(widget.collectionName);
+  }
 
   List<Cantique> get _results {
-    return CantiqueService.filterCantiques(_base, _query);
+    return CantiqueService.filterCantiques(_targetCantiques, _query);
+  }
+
+  Widget _buildScopeSelector(AppLocalizations l10n) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.lg,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+        child: SizedBox(
+          width: double.infinity,
+          child: SegmentedButton<SearchScope>(
+            showSelectedIcon: true,
+            segments: [
+              ButtonSegment<SearchScope>(
+                value: SearchScope.currentCollection,
+                label: Text(
+                  l10n.cetteCollection,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                ),
+                icon: const Icon(Icons.folder_open_rounded, size: 16),
+              ),
+              ButtonSegment<SearchScope>(
+                value: SearchScope.allCollections,
+                label: Text(
+                  l10n.toutesLesCollections,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                ),
+                icon: const Icon(Icons.public_rounded, size: 16),
+              ),
+            ],
+            selected: {_searchScope},
+            onSelectionChanged: (Set<SearchScope> newSelection) {
+              setState(() {
+                _searchScope = newSelection.first;
+              });
+            },
+          ),
+        ),
+      ),
+    );
   }
 
   @override
@@ -252,17 +354,26 @@ class _CollectionSearchPageState extends State<CollectionSearchPage> {
             padding: const EdgeInsets.all(AppSpacing.lg),
             child: AppSearchBar(
               controller: _searchController,
-              hintText: l10n.rechercherCantiqueHint,
+              hintText: _searchScope == SearchScope.allCollections
+                  ? l10n.searchCollectionsHint
+                  : l10n.rechercherCantiqueHint,
               onChanged: (value) => setState(() => _query = value),
               onClear: () => setState(() => _query = ''),
             ),
           ),
+          _buildScopeSelector(l10n),
           Expanded(
             child: _results.isEmpty
                 ? AppEmptyState(
                     icon: Icons.search_off_rounded,
                     title: l10n.noCantiqueFound,
-                    message: l10n.noResultsForQuery,
+                    message: _query.isEmpty
+                        ? (_searchScope == SearchScope.allCollections
+                            ? l10n.noResultsForQuery
+                            : l10n.aucunCantiqueDansCollection(widget.collectionName))
+                        : (_searchScope == SearchScope.allCollections
+                            ? l10n.aucunCantiquePourRecherche(_query)
+                            : l10n.aucunCantiqueDansCollection(widget.collectionName)),
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.symmetric(

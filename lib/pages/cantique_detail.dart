@@ -7,6 +7,7 @@ import 'package:share_plus/share_plus.dart';
 import '../l10n/app_localizations.dart';
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
+import '../models/search_scope.dart';
 import '../services/cantique_service.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
@@ -326,12 +327,15 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     );
   }
 
+  SearchScope _searchModalScope = SearchScope.currentCollection;
+  String _searchQuery = '';
+
   Future<void> _openSearchModal() async {
-    final allCantiques = CantiqueService.instance.getAllCantiques();
+    final l10n = AppLocalizations.of(context)!;
     await showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      backgroundColor: AppColors.surface,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
@@ -339,7 +343,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
         return StatefulBuilder(
           builder: (context, setModalState) {
             final query = _searchQuery;
-            final results = CantiqueService.filterCantiques(allCantiques, query);
+            final targetCantiques = _searchModalScope == SearchScope.allCollections
+                ? CantiqueService.instance.getAllCantiques()
+                : CantiqueService.instance.getCantiquesByCollection(widget.cantique.collection);
+            final results = CantiqueService.filterCantiques(targetCantiques, query);
 
             return DraggableScrollableSheet(
               expand: false,
@@ -364,9 +371,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                         children: [
                           const Icon(Icons.search_rounded, color: AppColors.primary),
                           const SizedBox(width: AppSpacing.sm),
-                          const Text(
-                            'Rechercher un cantique',
-                            style: TextStyle(
+                          Text(
+                            l10n.rechercherCantiqueHint,
+                            style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                               color: AppColors.textPrimary,
@@ -383,7 +390,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                       TextField(
                         autofocus: true,
                         decoration: InputDecoration(
-                          hintText: 'Titre, numéro (ex: 116), paroles...',
+                          hintText: _searchModalScope == SearchScope.allCollections
+                              ? l10n.searchCollectionsHint
+                              : l10n.searchInCollectionHint,
                           prefixIcon: const Icon(Icons.search_rounded),
                           suffixIcon: query.isNotEmpty
                               ? IconButton(
@@ -405,13 +414,48 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                           setModalState(() => _searchQuery = val);
                         },
                       ),
+                      const SizedBox(height: AppSpacing.sm),
+                      SizedBox(
+                        width: double.infinity,
+                        child: SegmentedButton<SearchScope>(
+                          showSelectedIcon: true,
+                          segments: [
+                            ButtonSegment<SearchScope>(
+                              value: SearchScope.currentCollection,
+                              label: Text(
+                                l10n.cetteCollection,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                              ),
+                              icon: const Icon(Icons.folder_open_rounded, size: 14),
+                            ),
+                            ButtonSegment<SearchScope>(
+                              value: SearchScope.allCollections,
+                              label: Text(
+                                l10n.toutesLesCollections,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                              ),
+                              icon: const Icon(Icons.public_rounded, size: 14),
+                            ),
+                          ],
+                          selected: {_searchModalScope},
+                          onSelectionChanged: (newSelection) {
+                            setModalState(() {
+                              _searchModalScope = newSelection.first;
+                            });
+                          },
+                        ),
+                      ),
                       const SizedBox(height: AppSpacing.md),
                       Expanded(
                         child: results.isEmpty
-                            ? const Center(
+                            ? Center(
                                 child: Text(
-                                  'Aucun cantique trouvé',
-                                  style: TextStyle(color: AppColors.textSecondary),
+                                  _searchModalScope == SearchScope.allCollections
+                                      ? l10n.aucunCantiquePourRecherche(query)
+                                      : l10n.aucunCantiqueDansCollection(widget.cantique.collection),
+                                  style: const TextStyle(color: AppColors.textSecondary),
                                 ),
                               )
                             : ListView.builder(
@@ -473,8 +517,6 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
       },
     );
   }
-
-  String _searchQuery = '';
 
   Widget _actionIconButton({
     required IconData icon,

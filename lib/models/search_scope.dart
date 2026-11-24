@@ -1,0 +1,4 @@
+enum SearchScope {
+  currentCollection,
+  allCollections,
+}
