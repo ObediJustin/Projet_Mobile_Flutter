@@ -7,6 +7,7 @@ import 'package:share_plus/share_plus.dart';
 import '../l10n/app_localizations.dart';
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
+import '../services/cantique_service.dart';
 import '../services/chant_personnel_service.dart';
 import '../services/favorite_service.dart';
 import '../services/recent_cantique_service.dart';
@@ -14,6 +15,7 @@ import '../services/settings_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
+import '../widgets/lyrics_zoom_wrapper.dart';
 
 class CantiqueDetailPage extends StatefulWidget {
   final Cantique cantique;
@@ -89,6 +91,29 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     await _settingsService.saveLyricsFontSize(value);
   }
 
+  void _onPinchFontSizeChange(double value) {
+    setState(() {
+      _fontSize = value;
+    });
+    _settingsService.setLyricsFontSizeInMemory(value);
+  }
+
+  void _onPinchFontSizeCommit(double value) {
+    _saveFontSize(value);
+  }
+
+  Future<void> _resetFontSize() async {
+    await _settingsService.resetLyricsFontSize();
+    if (!mounted) return;
+    final l10n = AppLocalizations.of(context)!;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(l10n.reinitialiserTailleTexte),
+        duration: const Duration(seconds: 1),
+      ),
+    );
+  }
+
   Future<void> _toggleFavorite() async {
     final l10n = AppLocalizations.of(context)!;
     await _favoriteService.toggleCantiqueFavorite(widget.cantique.id);
@@ -133,10 +158,11 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
   void _showFontSizeSheet() {
     final l10n = AppLocalizations.of(context)!;
+    final theme = Theme.of(context);
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      backgroundColor: AppColors.surface,
+      backgroundColor: theme.colorScheme.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
@@ -161,10 +187,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                     children: [
                       Text(
                         l10n.tailleDuTexte,
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: AppColors.textPrimary,
+                          color: theme.colorScheme.onSurface,
                         ),
                       ),
                       const Spacer(),
@@ -174,14 +200,14 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                           vertical: 4,
                         ),
                         decoration: BoxDecoration(
-                          color: AppColors.primaryLight,
+                          color: theme.colorScheme.primaryContainer,
                           borderRadius: AppRadius.smBorder,
                         ),
                         child: Text(
                           '${_fontSize.toInt()} px',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 14,
-                            color: AppColors.primaryDark,
+                            color: theme.colorScheme.onPrimaryContainer,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -190,13 +216,17 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                   ),
                   const SizedBox(height: AppSpacing.md),
                   Slider(
-                    value: _fontSize,
-                    min: 12,
-                    max: 28,
-                    divisions: 16,
+                    value: _fontSize.clamp(
+                      SettingsService.minLyricsFontSize,
+                      SettingsService.maxLyricsFontSize,
+                    ),
+                    min: SettingsService.minLyricsFontSize,
+                    max: SettingsService.maxLyricsFontSize,
+                    divisions: 20,
                     onChanged: (v) {
                       setModalState(() => _fontSize = v);
                       setState(() => _fontSize = v);
+                      _settingsService.setLyricsFontSizeInMemory(v);
                     },
                     onChangeEnd: (v) {
                       _saveFontSize(v);
@@ -208,7 +238,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                       Expanded(
                         child: OutlinedButton.icon(
                           onPressed: () {
-                            final next = (_fontSize - 1).clamp(12.0, 28.0);
+                            final next = (_fontSize - 1).clamp(
+                              SettingsService.minLyricsFontSize,
+                              SettingsService.maxLyricsFontSize,
+                            );
                             setModalState(() => _fontSize = next);
                             setState(() => _fontSize = next);
                             _saveFontSize(next);
@@ -221,7 +254,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                       Expanded(
                         child: ElevatedButton.icon(
                           onPressed: () {
-                            final next = (_fontSize + 1).clamp(12.0, 28.0);
+                            final next = (_fontSize + 1).clamp(
+                              SettingsService.minLyricsFontSize,
+                              SettingsService.maxLyricsFontSize,
+                            );
                             setModalState(() => _fontSize = next);
                             setState(() => _fontSize = next);
                             _saveFontSize(next);
@@ -231,6 +267,16 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                         ),
                       ),
                     ],
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  TextButton.icon(
+                    icon: const Icon(Icons.restart_alt_rounded, size: 18),
+                    label: Text(l10n.reinitialiserTailleTexte),
+                    onPressed: () {
+                      final def = SettingsService.defaultLyricsFontSize;
+                      setModalState(() => _fontSize = def);
+                      _resetFontSize();
+                    },
                   ),
                   const SizedBox(height: AppSpacing.sm),
                 ],
@@ -280,6 +326,156 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     );
   }
 
+  Future<void> _openSearchModal() async {
+    final allCantiques = CantiqueService.instance.getAllCantiques();
+    await showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: AppColors.surface,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setModalState) {
+            final query = _searchQuery;
+            final results = CantiqueService.filterCantiques(allCantiques, query);
+
+            return DraggableScrollableSheet(
+              expand: false,
+              initialChildSize: 0.85,
+              minChildSize: 0.5,
+              maxChildSize: 0.95,
+              builder: (context, scrollController) {
+                return Padding(
+                  padding: const EdgeInsets.all(AppSpacing.lg),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 40,
+                        height: 4,
+                        decoration: BoxDecoration(
+                          color: AppColors.border,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.md),
+                      Row(
+                        children: [
+                          const Icon(Icons.search_rounded, color: AppColors.primary),
+                          const SizedBox(width: AppSpacing.sm),
+                          const Text(
+                            'Rechercher un cantique',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.textPrimary,
+                            ),
+                          ),
+                          const Spacer(),
+                          IconButton(
+                            icon: const Icon(Icons.close_rounded),
+                            onPressed: () => Navigator.pop(context),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: AppSpacing.sm),
+                      TextField(
+                        autofocus: true,
+                        decoration: InputDecoration(
+                          hintText: 'Titre, numéro (ex: 116), paroles...',
+                          prefixIcon: const Icon(Icons.search_rounded),
+                          suffixIcon: query.isNotEmpty
+                              ? IconButton(
+                                  icon: const Icon(Icons.clear_rounded),
+                                  onPressed: () {
+                                    setModalState(() => _searchQuery = '');
+                                  },
+                                )
+                              : null,
+                          filled: true,
+                          fillColor: AppColors.surfaceVariant,
+                          border: OutlineInputBorder(
+                            borderRadius: AppRadius.mdBorder,
+                            borderSide: BorderSide.none,
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                        ),
+                        onChanged: (val) {
+                          setModalState(() => _searchQuery = val);
+                        },
+                      ),
+                      const SizedBox(height: AppSpacing.md),
+                      Expanded(
+                        child: results.isEmpty
+                            ? const Center(
+                                child: Text(
+                                  'Aucun cantique trouvé',
+                                  style: TextStyle(color: AppColors.textSecondary),
+                                ),
+                              )
+                            : ListView.builder(
+                                controller: scrollController,
+                                itemCount: results.length,
+                                itemBuilder: (context, index) {
+                                  final item = results[index];
+                                  return ListTile(
+                                    leading: Container(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: AppColors.primaryLight,
+                                        borderRadius: AppRadius.smBorder,
+                                      ),
+                                      child: Text(
+                                        'N° ${item.numero}',
+                                        style: const TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12,
+                                          color: AppColors.primaryDark,
+                                        ),
+                                      ),
+                                    ),
+                                    title: Text(
+                                      item.titre,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                    subtitle: Text(
+                                      item.collection,
+                                      style: const TextStyle(
+                                        fontSize: 12,
+                                        color: AppColors.textSecondary,
+                                      ),
+                                    ),
+                                    onTap: () {
+                                      Navigator.pop(context);
+                                      Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (_) => CantiqueDetailPage(cantique: item),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
+                      ),
+                    ],
+                  ),
+                );
+              },
+            );
+          },
+        );
+      },
+    );
+  }
+
+  String _searchQuery = '';
+
   Widget _actionIconButton({
     required IconData icon,
     required String label,
@@ -315,18 +511,58 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
-        title: Text('N° ${widget.cantique.numero}'),
+        titleSpacing: 0,
+        title: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              decoration: BoxDecoration(
+                color: AppColors.primaryLight,
+                borderRadius: AppRadius.fullBorder,
+              ),
+              child: Text(
+                'N° ${widget.cantique.numero}',
+                style: const TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.primaryDark,
+                ),
+              ),
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                widget.cantique.collection,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+              ),
+            ),
+          ],
+        ),
         actions: [
           IconButton(
+            key: const Key('reader_search_button'),
+            icon: const Icon(Icons.search_rounded),
+            tooltip: 'Rechercher un cantique',
+            onPressed: _openSearchModal,
+          ),
+          IconButton(
+            key: const Key('reader_favorite_button'),
             icon: Icon(
               _isFavorite
                   ? Icons.favorite_rounded
                   : Icons.favorite_border_rounded,
               color: _isFavorite ? AppColors.error : AppColors.textOnPrimary,
             ),
+            tooltip: _isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris',
             onPressed: _toggleFavorite,
           ),
-          IconButton(icon: const Icon(Icons.share_rounded), onPressed: _share),
+          IconButton(
+            key: const Key('reader_share_button'),
+            icon: const Icon(Icons.share_rounded),
+            tooltip: 'Partager le cantique',
+            onPressed: _share,
+          ),
         ],
       ),
       body: FutureBuilder<_CantiqueDetailData>(
@@ -408,69 +644,74 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                     ),
                   ),
 
-                  // Lyrics Area (Scrollable reader container)
+                  // Lyrics Area (Scrollable reader container with pinch zoom)
                   Expanded(
-                    child: SingleChildScrollView(
-                      controller: _parolesScrollController,
-                      padding: const EdgeInsets.all(AppSpacing.lg),
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(maxWidth: 800),
-                        child: Container(
-                          width: double.infinity,
-                          padding: const EdgeInsets.all(AppSpacing.xl),
-                          decoration: BoxDecoration(
-                            color: AppColors.surface,
-                            borderRadius: AppRadius.xlBorder,
-                            border: Border.all(
-                              color: AppColors.borderLight,
-                              width: 1,
-                            ),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Color(0x0A000000),
-                                blurRadius: 12,
-                                offset: Offset(0, 4),
+                    child: LyricsZoomWrapper(
+                      fontSize: _fontSize,
+                      onFontSizeChange: _onPinchFontSizeChange,
+                      onFontSizeCommit: _onPinchFontSizeCommit,
+                      child: SingleChildScrollView(
+                        controller: _parolesScrollController,
+                        padding: const EdgeInsets.all(AppSpacing.lg),
+                        child: ConstrainedBox(
+                          constraints: const BoxConstraints(maxWidth: 800),
+                          child: Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.all(AppSpacing.xl),
+                            decoration: BoxDecoration(
+                              color: AppColors.surface,
+                              borderRadius: AppRadius.xlBorder,
+                              border: Border.all(
+                                color: AppColors.borderLight,
+                                width: 1,
                               ),
-                            ],
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SelectableText(
-                                widget.cantique.contenu,
-                                textAlign: TextAlign.left,
-                                style: TextStyle(
-                                  fontSize: _fontSize,
-                                  height: 1.8,
-                                  color: AppColors.textPrimary,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-                              if (widget.cantique.auteur != null &&
-                                  widget.cantique.auteur!.isNotEmpty) ...[
-                                const SizedBox(height: AppSpacing.xxl),
-                                const Divider(),
-                                const SizedBox(height: AppSpacing.md),
-                                Row(
-                                  children: [
-                                    const Icon(
-                                      Icons.person_outline_rounded,
-                                      size: 16,
-                                      color: AppColors.textSecondary,
-                                    ),
-                                    const SizedBox(width: 6),
-                                    Text(
-                                      l10n.auteurValeur(widget.cantique.auteur!),
-                                      style: const TextStyle(
-                                        fontSize: 13,
-                                        fontStyle: FontStyle.italic,
-                                        color: AppColors.textSecondary,
-                                      ),
-                                    ),
-                                  ],
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color(0x0A000000),
+                                  blurRadius: 12,
+                                  offset: Offset(0, 4),
                                 ),
                               ],
-                            ],
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SelectableText(
+                                  widget.cantique.contenu,
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    fontSize: _fontSize,
+                                    height: 1.8,
+                                    color: AppColors.textPrimary,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
+                                if (widget.cantique.auteur != null &&
+                                    widget.cantique.auteur!.isNotEmpty) ...[
+                                  const SizedBox(height: AppSpacing.xxl),
+                                  const Divider(),
+                                  const SizedBox(height: AppSpacing.md),
+                                  Row(
+                                    children: [
+                                      const Icon(
+                                        Icons.person_outline_rounded,
+                                        size: 16,
+                                        color: AppColors.textSecondary,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        l10n.auteurValeur(widget.cantique.auteur!),
+                                        style: const TextStyle(
+                                          fontSize: 13,
+                                          fontStyle: FontStyle.italic,
+                                          color: AppColors.textSecondary,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ],
+                            ),
                           ),
                         ),
                       ),

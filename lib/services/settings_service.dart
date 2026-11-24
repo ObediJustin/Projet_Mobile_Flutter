@@ -14,7 +14,7 @@ class SettingsService {
   static const bool defaultNotificationsEnabled = true;
   static const double defaultLyricsFontSize = 16.0;
   static const double minLyricsFontSize = 12.0;
-  static const double maxLyricsFontSize = 26.0;
+  static const double maxLyricsFontSize = 32.0;
 
   static const List<String> supportedLanguages = [
     'Français',
@@ -106,6 +106,15 @@ class SettingsService {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setDouble(lyricsFontSizeKey, sanitized);
     lyricsFontSizeNotifier.value = sanitized;
+  }
+
+  void setLyricsFontSizeInMemory(double value) {
+    final sanitized = sanitizeLyricsFontSize(value);
+    lyricsFontSizeNotifier.value = sanitized;
+  }
+
+  Future<void> resetLyricsFontSize() async {
+    await saveLyricsFontSize(defaultLyricsFontSize);
   }
 
   String sanitizeLanguage(String? language) {
