@@ -15,6 +15,8 @@ void main() {
           SettingsService.defaultLyricsFontSize;
       SettingsService.themeNotifier.value = AppThemeMode.green;
       SettingsService.languageNotifier.value = SettingsService.defaultLanguage;
+      SettingsService.worshipScrollSpeedNotifier.value =
+          SettingsService.defaultWorshipScrollSpeed;
     });
 
     test('first use returns default values', () async {
@@ -27,6 +29,10 @@ void main() {
       expect(
         await service.getLyricsFontSize(),
         SettingsService.defaultLyricsFontSize,
+      );
+      expect(
+        await service.getWorshipScrollSpeed(),
+        SettingsService.defaultWorshipScrollSpeed,
       );
     });
 
@@ -75,24 +81,42 @@ void main() {
       await service.saveLyricsFontSize(28);
       expect(await service.getLyricsFontSize(), 28);
       await service.resetLyricsFontSize();
-      expect(await service.getLyricsFontSize(), SettingsService.defaultLyricsFontSize);
+      expect(
+        await service.getLyricsFontSize(),
+        SettingsService.defaultLyricsFontSize,
+      );
     });
 
-    test('themeMode defaults to system and can be saved and retrieved', () async {
-      expect(await service.getThemeMode(), ThemeMode.system);
+    test('worship scroll speed is persisted and sanitized', () async {
+      await service.saveWorshipScrollSpeed(44);
+      expect(await service.getWorshipScrollSpeed(), 44);
+      expect(SettingsService.worshipScrollSpeedNotifier.value, 44);
 
-      await service.saveThemeMode(ThemeMode.light);
-      expect(await service.getThemeMode(), ThemeMode.light);
-      expect(SettingsService.themeModeNotifier.value, ThemeMode.light);
-
-      await service.saveThemeMode(ThemeMode.dark);
-      expect(await service.getThemeMode(), ThemeMode.dark);
-      expect(SettingsService.themeModeNotifier.value, ThemeMode.dark);
-
-      await service.saveThemeMode(ThemeMode.system);
-      expect(await service.getThemeMode(), ThemeMode.system);
-      expect(SettingsService.themeModeNotifier.value, ThemeMode.system);
+      await service.saveWorshipScrollSpeed(500);
+      expect(
+        await service.getWorshipScrollSpeed(),
+        SettingsService.maxWorshipScrollSpeed,
+      );
     });
+
+    test(
+      'themeMode defaults to system and can be saved and retrieved',
+      () async {
+        expect(await service.getThemeMode(), ThemeMode.system);
+
+        await service.saveThemeMode(ThemeMode.light);
+        expect(await service.getThemeMode(), ThemeMode.light);
+        expect(SettingsService.themeModeNotifier.value, ThemeMode.light);
+
+        await service.saveThemeMode(ThemeMode.dark);
+        expect(await service.getThemeMode(), ThemeMode.dark);
+        expect(SettingsService.themeModeNotifier.value, ThemeMode.dark);
+
+        await service.saveThemeMode(ThemeMode.system);
+        expect(await service.getThemeMode(), ThemeMode.system);
+        expect(SettingsService.themeModeNotifier.value, ThemeMode.system);
+      },
+    );
 
     test('invalid values use a safe fallback', () async {
       SharedPreferences.setMockInitialValues({
