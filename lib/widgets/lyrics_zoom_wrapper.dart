@@ -25,6 +25,7 @@ class _LyricsZoomWrapperState extends State<LyricsZoomWrapper> {
   final Map<int, Offset> _pointers = <int, Offset>{};
   double _initialDistance = 0.0;
   double _baseFontSize = 16.0;
+  double _currentZoomedSize = 16.0;
   bool _isPinching = false;
 
   void _onPointerDown(PointerDownEvent event) {
@@ -34,6 +35,7 @@ class _LyricsZoomWrapperState extends State<LyricsZoomWrapper> {
       final p2 = _pointers.values.last;
       _initialDistance = (p1 - p2).distance;
       _baseFontSize = widget.fontSize;
+      _currentZoomedSize = widget.fontSize;
       _isPinching = true;
     }
   }
@@ -50,6 +52,7 @@ class _LyricsZoomWrapperState extends State<LyricsZoomWrapper> {
         SettingsService.minLyricsFontSize,
         SettingsService.maxLyricsFontSize,
       );
+      _currentZoomedSize = newSize;
       widget.onFontSizeChange(newSize);
     }
   }
@@ -59,14 +62,14 @@ class _LyricsZoomWrapperState extends State<LyricsZoomWrapper> {
     if (_pointers.length < 2 && _isPinching) {
       _isPinching = false;
       _initialDistance = 0.0;
-      widget.onFontSizeCommit(widget.fontSize);
+      widget.onFontSizeCommit(_currentZoomedSize);
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Listener(
-      behavior: HitTestBehavior.translucent,
+      behavior: HitTestBehavior.opaque,
       onPointerDown: _onPointerDown,
       onPointerMove: _onPointerMove,
       onPointerUp: _onPointerUpOrCancel,

@@ -71,6 +71,29 @@ void main() {
       expect(await service.getLyricsFontSize(), 22);
     });
 
+    test('resetLyricsFontSize resets to default', () async {
+      await service.saveLyricsFontSize(28);
+      expect(await service.getLyricsFontSize(), 28);
+      await service.resetLyricsFontSize();
+      expect(await service.getLyricsFontSize(), SettingsService.defaultLyricsFontSize);
+    });
+
+    test('themeMode defaults to system and can be saved and retrieved', () async {
+      expect(await service.getThemeMode(), ThemeMode.system);
+
+      await service.saveThemeMode(ThemeMode.light);
+      expect(await service.getThemeMode(), ThemeMode.light);
+      expect(SettingsService.themeModeNotifier.value, ThemeMode.light);
+
+      await service.saveThemeMode(ThemeMode.dark);
+      expect(await service.getThemeMode(), ThemeMode.dark);
+      expect(SettingsService.themeModeNotifier.value, ThemeMode.dark);
+
+      await service.saveThemeMode(ThemeMode.system);
+      expect(await service.getThemeMode(), ThemeMode.system);
+      expect(SettingsService.themeModeNotifier.value, ThemeMode.system);
+    });
+
     test('invalid values use a safe fallback', () async {
       SharedPreferences.setMockInitialValues({
         SettingsService.themeKey: 'unknown_theme',
