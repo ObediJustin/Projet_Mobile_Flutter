@@ -36,6 +36,7 @@ class ChantPersonnelService {
   }
 
   Future<void> deleteChant(String id) async {
+    await AppDatabase.instance.cleanupDeletedPersonalSongFromPlaylists(id);
     await AppDatabase.instance.deleteChantPersonnel(id);
   }
 }

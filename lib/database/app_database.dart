@@ -7,12 +7,14 @@ import 'package:sqflite/sqflite.dart';
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
 import '../models/collection.dart';
+import '../models/playlist.dart';
+import '../models/playlist_item.dart';
 import 'database_platform.dart';
 import 'initial_data_loader.dart';
 
 class AppDatabase {
   static const String databaseName = 'cantiques_du_message.db';
-  static const int schemaVersion = 4;
+  static const int schemaVersion = 5;
   static const String favoritesMigrationKey = 'favorites_sqlite_migrated_v1';
   static const String chantsMigrationKey =
       'chants_personnels_sqlite_migrated_v1';
@@ -38,6 +40,8 @@ class AppDatabase {
   final Map<String, ChantPersonnel> _memoryChants = {};
   final Set<String> _memoryFavoriteRefs = {};
   final Map<String, DateTime> _memoryRecentlyViewed = {};
+  final Map<String, Playlist> _memoryPlaylists = {};
+  final List<PlaylistItem> _memoryPlaylistItems = [];
 
   Future<Database> get database async {
     if (_useMemoryStore || shouldUseMemoryDatabase) {
@@ -102,6 +106,8 @@ class AppDatabase {
     _memoryCantiques = [];
     _memoryChants.clear();
     _memoryFavoriteRefs.clear();
+    _memoryPlaylists.clear();
+    _memoryPlaylistItems.clear();
   }
 
   Future<void> _initializeMemoryStore() async {
@@ -136,7 +142,41 @@ class AppDatabase {
       }
     }
 
+    final rawPlaylists = prefs.getString('playlists');
+    if (rawPlaylists != null && rawPlaylists.isNotEmpty) {
+      final decoded = jsonDecode(rawPlaylists) as List<dynamic>;
+      for (final row in decoded.whereType<Map>()) {
+        final playlist = Playlist.fromMap(Map<String, dynamic>.from(row));
+        _memoryPlaylists[playlist.id] = playlist;
+      }
+    }
+
+    final rawItems = prefs.getString('playlist_items');
+    if (rawItems != null && rawItems.isNotEmpty) {
+      final decoded = jsonDecode(rawItems) as List<dynamic>;
+      for (final row in decoded.whereType<Map>()) {
+        final item = PlaylistItem.fromMap(Map<String, dynamic>.from(row));
+        _memoryPlaylistItems.add(item);
+      }
+    }
+
     _memoryInitialized = true;
+  }
+
+  Future<void> _persistMemoryPlaylists() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(
+      'playlists',
+      jsonEncode(_memoryPlaylists.values.map((p) => p.toJson()).toList()),
+    );
+  }
+
+  Future<void> _persistMemoryPlaylistItems() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(
+      'playlist_items',
+      jsonEncode(_memoryPlaylistItems.map((i) => i.toJson()).toList()),
+    );
   }
 
   Future<void> _persistMemoryFavorites() async {
@@ -244,6 +284,8 @@ class AppDatabase {
     await db.execute(
       'CREATE INDEX IF NOT EXISTS idx_recently_viewed_last_viewed_at ON recently_viewed_cantiques(last_viewed_at DESC)',
     );
+
+    await _createPlaylistTables(db);
   }
 
   Future<void> _ensureRecentlyViewedTable(Database db) async {
@@ -257,6 +299,8 @@ class AppDatabase {
     await db.execute(
       'CREATE INDEX IF NOT EXISTS idx_recently_viewed_last_viewed_at ON recently_viewed_cantiques(last_viewed_at DESC)',
     );
+
+    await _createPlaylistTables(db);
   }
 
   Future<void> _migrateToVersion(Database db, int version) async {
@@ -269,6 +313,9 @@ class AppDatabase {
         break;
       case 4:
         await _repairSchemaVersion4(db);
+        break;
+      case 5:
+        await _createPlaylistTables(db);
         break;
       default:
         throw UnsupportedError('Migration SQLite inconnue: v$version');
@@ -834,6 +881,369 @@ class AppDatabase {
     );
 
     return rows.map(Cantique.fromMap).toList();
+  }
+
+  Future<void> _createPlaylistTables(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS playlists (
+        id TEXT PRIMARY KEY,
+        nom TEXT NOT NULL,
+        description TEXT,
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+      )
+    ''');
+
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS playlist_items (
+        id TEXT PRIMARY KEY,
+        playlist_id TEXT NOT NULL,
+        song_type TEXT NOT NULL,
+        song_id TEXT NOT NULL,
+        position INTEGER NOT NULL,
+        created_at TEXT NOT NULL,
+        FOREIGN KEY (playlist_id) REFERENCES playlists(id)
+          ON UPDATE CASCADE
+          ON DELETE CASCADE,
+        UNIQUE(playlist_id, song_type, song_id)
+      )
+    ''');
+
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_playlist_items_playlist_id ON playlist_items(playlist_id)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_playlist_items_position ON playlist_items(playlist_id, position)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_playlist_items_song ON playlist_items(song_type, song_id)',
+    );
+  }
+
+  Future<void> insertPlaylist(Playlist playlist) async {
+    if (_useMemoryStore) {
+      _memoryPlaylists[playlist.id] = playlist;
+      await _persistMemoryPlaylists();
+      return;
+    }
+    final db = await database;
+    await db.insert(
+      'playlists',
+      playlist.toMap(),
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<void> updatePlaylist(Playlist playlist) async {
+    if (_useMemoryStore) {
+      _memoryPlaylists[playlist.id] = playlist;
+      await _persistMemoryPlaylists();
+      return;
+    }
+    final db = await database;
+    await db.update(
+      'playlists',
+      playlist.toMap(),
+      where: 'id = ?',
+      whereArgs: [playlist.id],
+    );
+  }
+
+  Future<void> deletePlaylist(String playlistId) async {
+    if (_useMemoryStore) {
+      _memoryPlaylists.remove(playlistId);
+      _memoryPlaylistItems.removeWhere((item) => item.playlistId == playlistId);
+      await _persistMemoryPlaylists();
+      await _persistMemoryPlaylistItems();
+      return;
+    }
+    final db = await database;
+    await db.delete('playlist_items', where: 'playlist_id = ?', whereArgs: [playlistId]);
+    await db.delete('playlists', where: 'id = ?', whereArgs: [playlistId]);
+  }
+
+  Future<List<Playlist>> getPlaylists() async {
+    if (_useMemoryStore) {
+      final list = _memoryPlaylists.values.map((p) {
+        final count = _memoryPlaylistItems.where((i) => i.playlistId == p.id).length;
+        return p.copyWith(itemCount: count);
+      }).toList()
+        ..sort((a, b) => b.updatedAt.compareTo(a.updatedAt));
+      return list;
+    }
+    final db = await database;
+    final rows = await db.rawQuery('''
+      SELECT p.*, COUNT(pi.id) AS item_count
+      FROM playlists p
+      LEFT JOIN playlist_items pi ON pi.playlist_id = p.id
+      GROUP BY p.id
+      ORDER BY p.updated_at DESC
+    ''');
+    return rows
+        .map(
+          (r) => Playlist.fromMap(
+            r,
+            itemCount: (r['item_count'] as num?)?.toInt() ?? 0,
+          ),
+        )
+        .toList();
+  }
+
+  Future<Playlist?> getPlaylistById(String playlistId) async {
+    if (_useMemoryStore) {
+      final p = _memoryPlaylists[playlistId];
+      if (p == null) return null;
+      final count = _memoryPlaylistItems.where((i) => i.playlistId == p.id).length;
+      return p.copyWith(itemCount: count);
+    }
+    final db = await database;
+    final rows = await db.rawQuery('''
+      SELECT p.*, COUNT(pi.id) AS item_count
+      FROM playlists p
+      LEFT JOIN playlist_items pi ON pi.playlist_id = p.id
+      WHERE p.id = ?
+      GROUP BY p.id
+    ''', [playlistId]);
+    if (rows.isEmpty) return null;
+    return Playlist.fromMap(
+      rows.first,
+      itemCount: (rows.first['item_count'] as num?)?.toInt() ?? 0,
+    );
+  }
+
+  Future<bool> isSongInPlaylist(
+    String playlistId,
+    PlaylistItemType songType,
+    String songId,
+  ) async {
+    if (_useMemoryStore) {
+      return _memoryPlaylistItems.any(
+        (i) =>
+            i.playlistId == playlistId &&
+            i.songType == songType &&
+            i.songId == songId,
+      );
+    }
+    final db = await database;
+    final rows = await db.query(
+      'playlist_items',
+      columns: ['id'],
+      where: 'playlist_id = ? AND song_type = ? AND song_id = ?',
+      whereArgs: [playlistId, songType.value, songId],
+      limit: 1,
+    );
+    return rows.isNotEmpty;
+  }
+
+  Future<Set<String>> getPlaylistIdsContainingSong(
+    PlaylistItemType songType,
+    String songId,
+  ) async {
+    if (_useMemoryStore) {
+      return _memoryPlaylistItems
+          .where((i) => i.songType == songType && i.songId == songId)
+          .map((i) => i.playlistId)
+          .toSet();
+    }
+    final db = await database;
+    final rows = await db.query(
+      'playlist_items',
+      columns: ['playlist_id'],
+      where: 'song_type = ? AND song_id = ?',
+      whereArgs: [songType.value, songId],
+    );
+    return rows.map((r) => r['playlist_id'] as String).toSet();
+  }
+
+  Future<bool> addSongToPlaylist(
+    String playlistId,
+    PlaylistItemType songType,
+    String songId,
+  ) async {
+    final exists = await isSongInPlaylist(playlistId, songType, songId);
+    if (exists) return false;
+
+    if (_useMemoryStore) {
+      final existingForPlaylist = _memoryPlaylistItems
+          .where((i) => i.playlistId == playlistId)
+          .toList();
+      final nextPosition = existingForPlaylist.length;
+      final newItem = PlaylistItem(
+        id: '${playlistId}_${DateTime.now().microsecondsSinceEpoch}',
+        playlistId: playlistId,
+        songType: songType,
+        songId: songId,
+        position: nextPosition,
+        createdAt: DateTime.now(),
+      );
+      _memoryPlaylistItems.add(newItem);
+      final p = _memoryPlaylists[playlistId];
+      if (p != null) {
+        _memoryPlaylists[playlistId] = p.copyWith(updatedAt: DateTime.now());
+      }
+      await _persistMemoryPlaylists();
+      await _persistMemoryPlaylistItems();
+      return true;
+    }
+
+    final db = await database;
+    return await db.transaction((txn) async {
+      final maxPosRow = await txn.rawQuery(
+        'SELECT MAX(position) AS max_pos FROM playlist_items WHERE playlist_id = ?',
+        [playlistId],
+      );
+      final currentMax = (maxPosRow.first['max_pos'] as num?)?.toInt() ?? -1;
+      final nextPos = currentMax + 1;
+      final newItem = PlaylistItem(
+        id: '${playlistId}_${DateTime.now().microsecondsSinceEpoch}',
+        playlistId: playlistId,
+        songType: songType,
+        songId: songId,
+        position: nextPos,
+        createdAt: DateTime.now(),
+      );
+      await txn.insert(
+        'playlist_items',
+        newItem.toMap(),
+        conflictAlgorithm: ConflictAlgorithm.ignore,
+      );
+      await txn.update(
+        'playlists',
+        {'updated_at': DateTime.now().toIso8601String()},
+        where: 'id = ?',
+        whereArgs: [playlistId],
+      );
+      return true;
+    });
+  }
+
+  Future<void> removePlaylistItem(String playlistId, String itemId) async {
+    if (_useMemoryStore) {
+      _memoryPlaylistItems.removeWhere((i) => i.id == itemId);
+      final remaining = _memoryPlaylistItems
+          .where((i) => i.playlistId == playlistId)
+          .toList()
+        ..sort((a, b) => a.position.compareTo(b.position));
+      for (var idx = 0; idx < remaining.length; idx++) {
+        final old = remaining[idx];
+        final itemIdx = _memoryPlaylistItems.indexWhere((i) => i.id == old.id);
+        if (itemIdx != -1) {
+          _memoryPlaylistItems[itemIdx] = old.copyWith(position: idx);
+        }
+      }
+      final p = _memoryPlaylists[playlistId];
+      if (p != null) {
+        _memoryPlaylists[playlistId] = p.copyWith(updatedAt: DateTime.now());
+      }
+      await _persistMemoryPlaylists();
+      await _persistMemoryPlaylistItems();
+      return;
+    }
+
+    final db = await database;
+    await db.transaction((txn) async {
+      await txn.delete('playlist_items', where: 'id = ?', whereArgs: [itemId]);
+      final rows = await txn.query(
+        'playlist_items',
+        where: 'playlist_id = ?',
+        whereArgs: [playlistId],
+        orderBy: 'position ASC',
+      );
+      for (var idx = 0; idx < rows.length; idx++) {
+        await txn.update(
+          'playlist_items',
+          {'position': idx},
+          where: 'id = ?',
+          whereArgs: [rows[idx]['id']],
+        );
+      }
+      await txn.update(
+        'playlists',
+        {'updated_at': DateTime.now().toIso8601String()},
+        where: 'id = ?',
+        whereArgs: [playlistId],
+      );
+    });
+  }
+
+  Future<void> reorderPlaylistItems(
+    String playlistId,
+    List<String> orderedItemIds,
+  ) async {
+    if (_useMemoryStore) {
+      for (var pos = 0; pos < orderedItemIds.length; pos++) {
+        final id = orderedItemIds[pos];
+        final idx = _memoryPlaylistItems.indexWhere((i) => i.id == id);
+        if (idx != -1) {
+          _memoryPlaylistItems[idx] = _memoryPlaylistItems[idx].copyWith(position: pos);
+        }
+      }
+      final p = _memoryPlaylists[playlistId];
+      if (p != null) {
+        _memoryPlaylists[playlistId] = p.copyWith(updatedAt: DateTime.now());
+      }
+      await _persistMemoryPlaylists();
+      await _persistMemoryPlaylistItems();
+      return;
+    }
+
+    final db = await database;
+    await db.transaction((txn) async {
+      final batch = txn.batch();
+      for (var pos = 0; pos < orderedItemIds.length; pos++) {
+        batch.update(
+          'playlist_items',
+          {'position': pos},
+          where: 'id = ?',
+          whereArgs: [orderedItemIds[pos]],
+        );
+      }
+      await batch.commit(noResult: true);
+      await txn.update(
+        'playlists',
+        {'updated_at': DateTime.now().toIso8601String()},
+        where: 'id = ?',
+        whereArgs: [playlistId],
+      );
+    });
+  }
+
+  Future<List<PlaylistItem>> getPlaylistItems(String playlistId) async {
+    if (_useMemoryStore) {
+      final items = _memoryPlaylistItems
+          .where((i) => i.playlistId == playlistId)
+          .toList()
+        ..sort((a, b) => a.position.compareTo(b.position));
+      return items;
+    }
+    final db = await database;
+    final rows = await db.query(
+      'playlist_items',
+      where: 'playlist_id = ?',
+      whereArgs: [playlistId],
+      orderBy: 'position ASC',
+    );
+    return rows.map(PlaylistItem.fromMap).toList();
+  }
+
+  Future<void> cleanupDeletedPersonalSongFromPlaylists(
+    String personalSongId,
+  ) async {
+    if (_useMemoryStore) {
+      _memoryPlaylistItems.removeWhere(
+        (i) =>
+            i.songType == PlaylistItemType.personal &&
+            i.songId == personalSongId,
+      );
+      await _persistMemoryPlaylistItems();
+      return;
+    }
+    final db = await database;
+    await db.delete(
+      'playlist_items',
+      where: 'song_type = ? AND song_id = ?',
+      whereArgs: [PlaylistItemType.personal.value, personalSongId],
+    );
   }
 }
 
