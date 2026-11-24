@@ -591,6 +591,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
             _detailDataApplied = true;
           }
 
+          final theme = Theme.of(context);
+          final isDark = theme.brightness == Brightness.dark;
+
           return FadeTransition(
             opacity: _fadeAnimation,
             child: Stack(
@@ -605,11 +608,15 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                           horizontal: AppSpacing.lg,
                           vertical: AppSpacing.md,
                         ),
-                        decoration: const BoxDecoration(
-                          color: AppColors.primaryVeryLight,
+                        decoration: BoxDecoration(
+                          color: isDark
+                              ? theme.colorScheme.surface
+                              : AppColors.primaryVeryLight,
                           border: Border(
                             bottom: BorderSide(
-                              color: AppColors.borderLight,
+                              color: isDark
+                                  ? theme.colorScheme.outlineVariant
+                                  : AppColors.borderLight,
                               width: 1,
                             ),
                           ),
@@ -619,10 +626,12 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                           children: [
                             Text(
                               'N° ${widget.cantique.numero}',
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.bold,
-                                color: AppColors.primaryDark,
+                                color: isDark
+                                    ? theme.colorScheme.primary
+                                    : AppColors.primaryDark,
                                 letterSpacing: 1.0,
                               ),
                             ),
@@ -630,10 +639,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                             Text(
                               widget.cantique.titre,
                               textAlign: TextAlign.center,
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
-                                color: AppColors.textPrimary,
+                                color: theme.colorScheme.onSurface,
                               ),
                             ),
                             const SizedBox(height: 4),
@@ -643,15 +652,19 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                 vertical: 3,
                               ),
                               decoration: BoxDecoration(
-                                color: AppColors.primaryLight,
+                                color: isDark
+                                    ? theme.colorScheme.primary.withValues(alpha: 0.2)
+                                    : AppColors.primaryLight,
                                 borderRadius: AppRadius.fullBorder,
                               ),
                               child: Text(
                                 widget.cantique.collection,
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w600,
-                                  color: AppColors.primaryDark,
+                                  color: isDark
+                                      ? theme.colorScheme.primary
+                                      : AppColors.primaryDark,
                                 ),
                               ),
                             ),
@@ -674,17 +687,19 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                 width: double.infinity,
                                 padding: const EdgeInsets.all(AppSpacing.xl),
                                 decoration: BoxDecoration(
-                                  color: AppColors.surface,
+                                  color: theme.colorScheme.surface,
                                   borderRadius: AppRadius.xlBorder,
                                   border: Border.all(
-                                    color: AppColors.borderLight,
+                                    color: theme.colorScheme.outlineVariant,
                                     width: 1,
                                   ),
-                                  boxShadow: const [
+                                  boxShadow: [
                                     BoxShadow(
-                                      color: Color(0x0A000000),
+                                      color: isDark
+                                          ? const Color(0x33000000)
+                                          : const Color(0x0A000000),
                                       blurRadius: 12,
-                                      offset: Offset(0, 4),
+                                      offset: const Offset(0, 4),
                                     ),
                                   ],
                                 ),
@@ -697,7 +712,7 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                       style: TextStyle(
                                         fontSize: _fontSize,
                                         height: 1.8,
-                                        color: AppColors.textPrimary,
+                                        color: theme.colorScheme.onSurface,
                                         fontWeight: FontWeight.w400,
                                       ),
                                     ),
@@ -708,18 +723,18 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                       const SizedBox(height: AppSpacing.md),
                                       Row(
                                         children: [
-                                          const Icon(
+                                          Icon(
                                             Icons.person_outline_rounded,
                                             size: 16,
-                                            color: AppColors.textSecondary,
+                                            color: theme.colorScheme.onSurfaceVariant,
                                           ),
                                           const SizedBox(width: 6),
                                           Text(
                                             l10n.auteurValeur(widget.cantique.auteur!),
-                                            style: const TextStyle(
+                                            style: TextStyle(
                                               fontSize: 13,
                                               fontStyle: FontStyle.italic,
-                                              color: AppColors.textSecondary,
+                                              color: theme.colorScheme.onSurfaceVariant,
                                             ),
                                           ),
                                         ],

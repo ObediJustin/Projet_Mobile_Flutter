@@ -12,17 +12,23 @@ class CantiqueCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
     return Container(
       margin: const EdgeInsets.only(bottom: AppSpacing.sm),
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: theme.colorScheme.surface,
         borderRadius: AppRadius.lgBorder,
-        border: Border.all(color: AppColors.borderLight, width: 1),
-        boxShadow: const [
+        border: Border.all(
+          color: theme.colorScheme.outlineVariant,
+          width: 1,
+        ),
+        boxShadow: [
           BoxShadow(
-            color: Color(0x08000000),
+            color: isDark ? const Color(0x33000000) : const Color(0x08000000),
             blurRadius: 8,
-            offset: Offset(0, 2),
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -52,19 +58,25 @@ class CantiqueCard extends StatelessWidget {
                   height: 44,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: AppColors.primaryLight,
+                    color: isDark
+                        ? theme.colorScheme.primary.withValues(alpha: 0.2)
+                        : AppColors.primaryLight,
                     borderRadius: AppRadius.mdBorder,
                     border: Border.all(
-                      color: AppColors.secondaryLight,
+                      color: isDark
+                          ? theme.colorScheme.primary.withValues(alpha: 0.4)
+                          : AppColors.secondaryLight,
                       width: 1,
                     ),
                   ),
                   child: Text(
                     '${cantique.numero}',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
-                      color: AppColors.primaryDark,
+                      color: isDark
+                          ? theme.colorScheme.primary
+                          : AppColors.primaryDark,
                     ),
                   ),
                 ),
@@ -77,10 +89,10 @@ class CantiqueCard extends StatelessWidget {
                     children: [
                       Text(
                         cantique.titre,
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w700,
-                          color: AppColors.textPrimary,
+                          color: theme.colorScheme.onSurface,
                           letterSpacing: -0.1,
                         ),
                         maxLines: 1,
@@ -92,15 +104,15 @@ class CantiqueCard extends StatelessWidget {
                           Icon(
                             Icons.bookmark_outline_rounded,
                             size: 14,
-                            color: AppColors.textSecondary,
+                            color: theme.colorScheme.onSurfaceVariant,
                           ),
                           const SizedBox(width: 4),
                           Expanded(
                             child: Text(
                               cantique.collection,
-                              style: const TextStyle(
+                              style: TextStyle(
                                 fontSize: 13,
-                                color: AppColors.textSecondary,
+                                color: theme.colorScheme.onSurfaceVariant,
                                 fontWeight: FontWeight.w500,
                               ),
                               maxLines: 1,
@@ -114,9 +126,9 @@ class CantiqueCard extends StatelessWidget {
                 ),
 
                 // Arrow indicator
-                const Icon(
+                Icon(
                   Icons.chevron_right_rounded,
-                  color: AppColors.textMuted,
+                  color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
                   size: 22,
                 ),
               ],

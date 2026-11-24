@@ -72,58 +72,65 @@ class _AppBootstrapState extends State<AppBootstrap> {
   Widget build(BuildContext context) {
     if (_isReady) return const MyApp();
 
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.buildTheme(SettingsService.themeNotifier.value),
-      locale: SettingsService.resolveLocale(
-        SettingsService.languageNotifier.value,
-      ),
-      localizationsDelegates: const [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        AppLocalizations.delegate,
-      ],
-      supportedLocales: AppLocalizations.supportedLocales,
-      home: Builder(
-        builder: (context) {
-          final l10n = AppLocalizations.of(context)!;
-          return Scaffold(
-            body: SafeArea(
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: _startupError == null
-                      ? const CircularProgressIndicator()
-                      : Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.error_outline_rounded, size: 48),
-                            const SizedBox(height: 16),
-                            Text(
-                              l10n.demarrageErreurTitle,
-                              style: Theme.of(context).textTheme.titleLarge,
-                              textAlign: TextAlign.center,
+    return ValueListenableBuilder<ThemeMode>(
+      valueListenable: SettingsService.themeModeNotifier,
+      builder: (context, themeMode, _) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          themeMode: themeMode,
+          theme: AppTheme.buildTheme(SettingsService.themeNotifier.value),
+          darkTheme: AppTheme.buildDarkTheme(SettingsService.themeNotifier.value),
+          locale: SettingsService.resolveLocale(
+            SettingsService.languageNotifier.value,
+          ),
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+            AppLocalizations.delegate,
+          ],
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: Builder(
+            builder: (context) {
+              final l10n = AppLocalizations.of(context)!;
+              return Scaffold(
+                body: SafeArea(
+                  child: Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(24),
+                      child: _startupError == null
+                          ? const CircularProgressIndicator()
+                          : Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.error_outline_rounded, size: 48),
+                                const SizedBox(height: 16),
+                                Text(
+                                  l10n.demarrageErreurTitle,
+                                  style: Theme.of(context).textTheme.titleLarge,
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  l10n.demarrageErreurMessage,
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(height: 24),
+                                FilledButton.icon(
+                                  onPressed: _isInitializing ? null : _initialize,
+                                  icon: const Icon(Icons.refresh_rounded),
+                                  label: Text(l10n.reessayer),
+                                ),
+                              ],
                             ),
-                            const SizedBox(height: 8),
-                            Text(
-                              l10n.demarrageErreurMessage,
-                              textAlign: TextAlign.center,
-                            ),
-                            const SizedBox(height: 24),
-                            FilledButton.icon(
-                              onPressed: _isInitializing ? null : _initialize,
-                              icon: const Icon(Icons.refresh_rounded),
-                              label: Text(l10n.reessayer),
-                            ),
-                          ],
-                        ),
+                    ),
+                  ),
                 ),
-              ),
-            ),
-          );
-        },
-      ),
+              );
+            },
+          ),
+        );
+      },
     );
   }
 }
@@ -190,32 +197,39 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder<AppThemeMode>(
-      valueListenable: SettingsService.themeNotifier,
+    return ValueListenableBuilder<ThemeMode>(
+      valueListenable: SettingsService.themeModeNotifier,
       builder: (context, themeMode, _) {
-        return ValueListenableBuilder<String>(
-          valueListenable: SettingsService.languageNotifier,
-          builder: (context, languagePref, _) {
-            final locale = SettingsService.resolveLocale(languagePref);
+        return ValueListenableBuilder<AppThemeMode>(
+          valueListenable: SettingsService.themeNotifier,
+          builder: (context, colorMode, _) {
+            return ValueListenableBuilder<String>(
+              valueListenable: SettingsService.languageNotifier,
+              builder: (context, languagePref, _) {
+                final locale = SettingsService.resolveLocale(languagePref);
 
-            return MaterialApp(
-              navigatorKey: navigatorKey,
-              title: 'Cantiques du Message',
-              debugShowCheckedModeBanner: false,
-              theme: AppTheme.buildTheme(themeMode),
-              locale: locale,
-              localizationsDelegates: const [
-                GlobalMaterialLocalizations.delegate,
-                GlobalWidgetsLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
-                AppLocalizations.delegate,
-              ],
-              supportedLocales: AppLocalizations.supportedLocales,
-              home: SplashPage(
-                pageAfterSplash: _pageForNotificationPayload(
-                  _initialNotificationPayload,
-                ),
-              ),
+                return MaterialApp(
+                  navigatorKey: navigatorKey,
+                  title: 'Cantiques du Message',
+                  debugShowCheckedModeBanner: false,
+                  themeMode: themeMode,
+                  theme: AppTheme.buildTheme(colorMode),
+                  darkTheme: AppTheme.buildDarkTheme(colorMode),
+                  locale: locale,
+                  localizationsDelegates: const [
+                    GlobalMaterialLocalizations.delegate,
+                    GlobalWidgetsLocalizations.delegate,
+                    GlobalCupertinoLocalizations.delegate,
+                    AppLocalizations.delegate,
+                  ],
+                  supportedLocales: AppLocalizations.supportedLocales,
+                  home: SplashPage(
+                    pageAfterSplash: _pageForNotificationPayload(
+                      _initialNotificationPayload,
+                    ),
+                  ),
+                );
+              },
             );
           },
         );

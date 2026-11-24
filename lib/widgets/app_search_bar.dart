@@ -20,44 +20,46 @@ class AppSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final showClear = controller.text.isNotEmpty;
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
 
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: theme.colorScheme.surface,
         borderRadius: AppRadius.mdBorder,
-        boxShadow: const [
+        boxShadow: [
           BoxShadow(
-            color: Color(0x0A000000),
+            color: isDark ? const Color(0x33000000) : const Color(0x0A000000),
             blurRadius: 10,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
       child: TextField(
         controller: controller,
         onChanged: onChanged,
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 15,
-          color: AppColors.textPrimary,
+          color: theme.colorScheme.onSurface,
           fontWeight: FontWeight.w500,
         ),
         decoration: InputDecoration(
           hintText: hintText,
-          hintStyle: const TextStyle(
-            color: AppColors.textMuted,
+          hintStyle: TextStyle(
+            color: theme.colorScheme.onSurfaceVariant,
             fontSize: 14,
             fontWeight: FontWeight.w400,
           ),
-          prefixIcon: const Icon(
+          prefixIcon: Icon(
             Icons.search_rounded,
-            color: AppColors.primary,
+            color: theme.colorScheme.primary,
             size: 22,
           ),
           suffixIcon: showClear
               ? IconButton(
-                  icon: const Icon(
+                  icon: Icon(
                     Icons.cancel_rounded,
-                    color: AppColors.textMuted,
+                    color: theme.colorScheme.onSurfaceVariant,
                     size: 18,
                   ),
                   onPressed: () {
@@ -68,7 +70,7 @@ class AppSearchBar extends StatelessWidget {
                 )
               : null,
           filled: true,
-          fillColor: AppColors.surface,
+          fillColor: theme.colorScheme.surface,
           contentPadding: const EdgeInsets.symmetric(
             horizontal: 16,
             vertical: 14,

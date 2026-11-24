@@ -21,6 +21,7 @@ class _ParametresPageState extends State<ParametresPage> {
   final SettingsService _settingsService = SettingsService();
 
   bool _isLoading = true;
+  ThemeMode _selectedThemeMode = ThemeMode.system;
   AppThemeMode _selectedTheme = AppThemeMode.green;
   bool _notificationsEnabled = SettingsService.defaultNotificationsEnabled;
   bool _isUpdatingNotifications = false;
@@ -35,6 +36,7 @@ class _ParametresPageState extends State<ParametresPage> {
 
   Future<void> _loadSettings() async {
     final theme = await _settingsService.getTheme();
+    final themeMode = await _settingsService.getThemeMode();
     final language = await _settingsService.getLanguage();
     final notificationsEnabled = await _settingsService
         .getNotificationsEnabled();
@@ -43,11 +45,34 @@ class _ParametresPageState extends State<ParametresPage> {
     if (!mounted) return;
     setState(() {
       _selectedTheme = theme;
+      _selectedThemeMode = themeMode;
       _selectedLanguage = language;
       _notificationsEnabled = notificationsEnabled;
       _fontSize = fontSize;
       _isLoading = false;
     });
+  }
+
+  String _getThemeModeLabel(ThemeMode mode, AppLocalizations? l10n) {
+    switch (mode) {
+      case ThemeMode.light:
+        return l10n?.themeClair ?? 'Thème clair';
+      case ThemeMode.dark:
+        return l10n?.themeSombre ?? 'Thème sombre';
+      case ThemeMode.system:
+        return l10n?.themeSysteme ?? 'Thème du système';
+    }
+  }
+
+  IconData _getThemeModeIcon(ThemeMode mode) {
+    switch (mode) {
+      case ThemeMode.light:
+        return Icons.wb_sunny_rounded;
+      case ThemeMode.dark:
+        return Icons.dark_mode_rounded;
+      case ThemeMode.system:
+        return Icons.smartphone_rounded;
+    }
   }
 
   String _getLanguageLabel(String val, AppLocalizations? l10n) {
@@ -148,12 +173,129 @@ class _ParametresPageState extends State<ParametresPage> {
         ),
         const SizedBox(height: AppSpacing.md),
 
-        // Theme Selection Card
+        // Three Appearance Theme Mode Options: System, Light, Dark
+        Container(
+          padding: const EdgeInsets.all(AppSpacing.md),
+          decoration: BoxDecoration(
+            color: theme.colorScheme.surface,
+            borderRadius: AppRadius.lgBorder,
+            border: Border.all(
+              color: theme.colorScheme.outlineVariant,
+              width: 1,
+            ),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: theme.colorScheme.primaryContainer,
+                      borderRadius: AppRadius.mdBorder,
+                    ),
+                    child: Icon(
+                      _getThemeModeIcon(_selectedThemeMode),
+                      color: theme.colorScheme.primary,
+                      size: 20,
+                    ),
+                  ),
+                  const SizedBox(width: AppSpacing.md),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          l10n?.themeTitle ?? 'Thème',
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                        ),
+                        Text(
+                          _getThemeModeLabel(_selectedThemeMode, l10n),
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: theme.colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.tune_rounded, size: 20),
+                    tooltip: l10n?.choisirTheme ?? 'Choisir le thème',
+                    onPressed: _showThemeModeDialog,
+                  ),
+                ],
+              ),
+              const SizedBox(height: AppSpacing.md),
+              SizedBox(
+                width: double.infinity,
+                child: SegmentedButton<ThemeMode>(
+                  showSelectedIcon: true,
+                  segments: [
+                    ButtonSegment<ThemeMode>(
+                      value: ThemeMode.system,
+                      icon: const Icon(Icons.smartphone_rounded, size: 18),
+                      label: Text(
+                        l10n?.themeSysteme ?? 'Système',
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    ButtonSegment<ThemeMode>(
+                      value: ThemeMode.light,
+                      icon: const Icon(Icons.wb_sunny_rounded, size: 18),
+                      label: Text(
+                        l10n?.themeClair ?? 'Clair',
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                    ButtonSegment<ThemeMode>(
+                      value: ThemeMode.dark,
+                      icon: const Icon(Icons.dark_mode_rounded, size: 18),
+                      label: Text(
+                        l10n?.themeSombre ?? 'Sombre',
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                  selected: {_selectedThemeMode},
+                  onSelectionChanged: (newSelection) async {
+                    final mode = newSelection.first;
+                    setState(() => _selectedThemeMode = mode);
+                    await _settingsService.saveThemeMode(mode);
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+
+        const SizedBox(height: AppSpacing.md),
+
+        // Color Palette Selection Card
         Container(
           decoration: BoxDecoration(
-            color: AppColors.surface,
+            color: theme.colorScheme.surface,
             borderRadius: AppRadius.lgBorder,
-            border: Border.all(color: AppColors.borderLight, width: 1),
+            border: Border.all(
+              color: theme.colorScheme.outlineVariant,
+              width: 1,
+            ),
           ),
           child: ListTile(
             leading: Container(
@@ -168,15 +310,15 @@ class _ParametresPageState extends State<ParametresPage> {
                 size: 20,
               ),
             ),
-            title: Text(
-              l10n?.themeTitle ?? 'Thème',
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            title: const Text(
+              'Couleur d\'accent',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
             ),
             subtitle: Text(
               _getThemeLabel(_selectedTheme, l10n),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13,
-                color: AppColors.textSecondary,
+                color: theme.colorScheme.onSurfaceVariant,
               ),
             ),
             trailing: Row(
@@ -483,6 +625,74 @@ class _ParametresPageState extends State<ParametresPage> {
     }
   }
 
+  void _showThemeModeDialog() {
+    final l10n = AppLocalizations.of(context);
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n?.themeTitle ?? 'Thème'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _themeModeTile(
+              label: l10n?.themeSysteme ?? 'Thème du système',
+              mode: ThemeMode.system,
+              icon: Icons.smartphone_rounded,
+            ),
+            _themeModeTile(
+              label: l10n?.themeClair ?? 'Thème clair',
+              mode: ThemeMode.light,
+              icon: Icons.wb_sunny_rounded,
+            ),
+            _themeModeTile(
+              label: l10n?.themeSombre ?? 'Thème sombre',
+              mode: ThemeMode.dark,
+              icon: Icons.dark_mode_rounded,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _themeModeTile({
+    required String label,
+    required ThemeMode mode,
+    required IconData icon,
+  }) {
+    final isSelected = _selectedThemeMode == mode;
+    final theme = Theme.of(context);
+
+    return ListTile(
+      shape: RoundedRectangleBorder(borderRadius: AppRadius.mdBorder),
+      leading: Icon(
+        icon,
+        color: isSelected
+            ? theme.colorScheme.primary
+            : theme.colorScheme.onSurfaceVariant,
+      ),
+      title: Text(
+        label,
+        style: TextStyle(
+          fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+          color: isSelected
+              ? theme.colorScheme.primary
+              : theme.colorScheme.onSurface,
+        ),
+      ),
+      trailing: isSelected
+          ? Icon(Icons.check_circle_rounded, color: theme.colorScheme.primary)
+          : null,
+      onTap: () async {
+        setState(() => _selectedThemeMode = mode);
+        await _settingsService.saveThemeMode(mode);
+        if (!mounted) return;
+        Navigator.pop(context);
+      },
+    );
+  }
+
   void _showThemeDialog() {
     final l10n = AppLocalizations.of(context);
 
@@ -523,7 +733,7 @@ class _ParametresPageState extends State<ParametresPage> {
         label,
         style: TextStyle(
           fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-          color: isSelected ? theme.colorScheme.primary : AppColors.textPrimary,
+          color: isSelected ? theme.colorScheme.primary : theme.colorScheme.onSurface,
         ),
       ),
       trailing: isSelected
@@ -582,7 +792,7 @@ class _ParametresPageState extends State<ParametresPage> {
         label,
         style: TextStyle(
           fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
-          color: isSelected ? theme.colorScheme.primary : AppColors.textPrimary,
+          color: isSelected ? theme.colorScheme.primary : theme.colorScheme.onSurface,
         ),
       ),
       trailing: isSelected

@@ -5,11 +5,13 @@ import '../theme/app_theme_mode.dart';
 
 class SettingsService {
   static const String themeKey = 'settings_theme';
+  static const String themeModeKey = 'settings_theme_mode';
   static const String languageKey = 'settings_language';
   static const String notificationsKey = 'settings_notifications_enabled';
   static const String lyricsFontSizeKey = 'chant_paroles_font_size';
 
   static const String defaultTheme = 'green';
+  static const ThemeMode defaultThemeMode = ThemeMode.system;
   static const String defaultLanguage = 'Français';
   static const bool defaultNotificationsEnabled = true;
   static const double defaultLyricsFontSize = 16.0;
@@ -24,6 +26,9 @@ class SettingsService {
 
   static final ValueNotifier<AppThemeMode> themeNotifier =
       ValueNotifier<AppThemeMode>(AppThemeMode.green);
+
+  static final ValueNotifier<ThemeMode> themeModeNotifier =
+      ValueNotifier<ThemeMode>(defaultThemeMode);
 
   static final ValueNotifier<String> languageNotifier = ValueNotifier<String>(
     defaultLanguage,
@@ -40,6 +45,9 @@ class SettingsService {
     final theme = await getTheme();
     themeNotifier.value = theme;
 
+    final themeMode = await getThemeMode();
+    themeModeNotifier.value = themeMode;
+
     final lang = await getLanguage();
     languageNotifier.value = lang;
 
@@ -48,6 +56,32 @@ class SettingsService {
 
     final font = await getLyricsFontSize();
     lyricsFontSizeNotifier.value = font;
+  }
+
+  Future<ThemeMode> getThemeMode() async {
+    final prefs = await SharedPreferences.getInstance();
+    final rawKey = prefs.getString(themeModeKey);
+    final mode = parseThemeMode(rawKey);
+    themeModeNotifier.value = mode;
+    return mode;
+  }
+
+  Future<void> saveThemeMode(ThemeMode mode) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(themeModeKey, mode.name);
+    themeModeNotifier.value = mode;
+  }
+
+  static ThemeMode parseThemeMode(String? key) {
+    switch (key) {
+      case 'light':
+        return ThemeMode.light;
+      case 'dark':
+        return ThemeMode.dark;
+      case 'system':
+      default:
+        return ThemeMode.system;
+    }
   }
 
   Future<AppThemeMode> getTheme() async {
