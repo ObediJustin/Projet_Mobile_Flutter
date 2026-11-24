@@ -895,8 +895,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
 
   Future<void> _navigateToPlaylistItem(int targetIndex) async {
     if (widget.playlistContext == null) return;
-    if (targetIndex < 0 || targetIndex >= widget.playlistContext!.length)
+    if (targetIndex < 0 || targetIndex >= widget.playlistContext!.length) {
       return;
+    }
     final targetItem = widget.playlistContext![targetIndex];
     if (!targetItem.isAvailable) return;
 
