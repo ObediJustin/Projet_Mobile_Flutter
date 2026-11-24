@@ -7,6 +7,7 @@ import 'package:share_plus/share_plus.dart';
 import '../l10n/app_localizations.dart';
 import '../models/cantique.dart';
 import '../models/chant_personnel.dart';
+import '../models/playlist_item.dart';
 import '../models/search_scope.dart';
 import '../services/cantique_service.dart';
 import '../services/chant_personnel_service.dart';
@@ -16,13 +17,24 @@ import '../services/settings_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
+import '../widgets/add_to_playlist_sheet.dart';
 import '../widgets/lyrics_zoom_wrapper.dart';
 import '../widgets/reader_speed_dial.dart';
+import 'chant_detail.dart';
 
 class CantiqueDetailPage extends StatefulWidget {
   final Cantique cantique;
+  final List<PlaylistItem>? playlistContext;
+  final int? playlistIndex;
+  final String? playlistTitle;
 
-  const CantiqueDetailPage({super.key, required this.cantique});
+  const CantiqueDetailPage({
+    super.key,
+    required this.cantique,
+    this.playlistContext,
+    this.playlistIndex,
+    this.playlistTitle,
+  });
 
   @override
   State<CantiqueDetailPage> createState() => _CantiqueDetailPageState();
@@ -601,6 +613,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                 SafeArea(
                   child: Column(
                     children: [
+                      if (widget.playlistContext != null &&
+                          widget.playlistIndex != null)
+                        _buildPlaylistNavigationBanner(theme),
                       // Top Header Information Box
                       Container(
                         width: double.infinity,
@@ -796,12 +811,128 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                       label: l10n.mesChants,
                       onTap: _addToPersonalChants,
                     ),
+                    SpeedDialAction(
+                      key: const Key('reader_action_add_to_playlist'),
+                      icon: Icons.playlist_add_rounded,
+                      label: l10n.ajouterALaListe,
+                      onTap: () {
+                        AddToPlaylistSheet.show(
+                          context,
+                          songType: PlaylistItemType.official,
+                          songId: widget.cantique.id,
+                          songTitle: widget.cantique.titre,
+                        );
+                      },
+                    ),
                   ],
                 ),
               ],
             ),
           );
         },
+      ),
+    );
+  }
+
+  Future<void> _navigateToPlaylistItem(int targetIndex) async {
+    if (widget.playlistContext == null) return;
+    if (targetIndex < 0 || targetIndex >= widget.playlistContext!.length) return;
+    final targetItem = widget.playlistContext![targetIndex];
+    if (!targetItem.isAvailable) return;
+
+    if (targetItem.isOfficial) {
+      final cantique = CantiqueService.instance.getCantiqueById(targetItem.songId);
+      if (cantique != null && mounted) {
+        Navigator.pushReplacement(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (ctx, anim, secAnim) => CantiqueDetailPage(
+              cantique: cantique,
+              playlistContext: widget.playlistContext,
+              playlistIndex: targetIndex,
+              playlistTitle: widget.playlistTitle,
+            ),
+            transitionDuration: const Duration(milliseconds: 180),
+            transitionsBuilder: (ctx, anim, secAnim, child) =>
+                FadeTransition(opacity: anim, child: child),
+          ),
+        );
+      }
+    } else {
+      final chant = await _chantPersonnelService.getChantById(targetItem.songId);
+      if (chant != null && mounted) {
+        Navigator.pushReplacement(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (ctx, anim, secAnim) => ChantDetailPage(
+              chant: chant,
+              playlistContext: widget.playlistContext,
+              playlistIndex: targetIndex,
+              playlistTitle: widget.playlistTitle,
+            ),
+            transitionDuration: const Duration(milliseconds: 180),
+            transitionsBuilder: (ctx, anim, secAnim, child) =>
+                FadeTransition(opacity: anim, child: child),
+          ),
+        );
+      }
+    }
+  }
+
+  Widget _buildPlaylistNavigationBanner(ThemeData theme) {
+    final hasPrev = widget.playlistIndex! > 0;
+    final hasNext = widget.playlistIndex! < widget.playlistContext!.length - 1;
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md, vertical: 4),
+      decoration: BoxDecoration(
+        color: theme.colorScheme.primaryContainer.withValues(alpha: 0.6),
+        border: Border(
+          bottom: BorderSide(
+            color: theme.colorScheme.outlineVariant,
+            width: 1,
+          ),
+        ),
+      ),
+      child: Row(
+        children: [
+          IconButton(
+            icon: const Icon(Icons.arrow_back_ios_rounded, size: 16),
+            tooltip: 'Précédent',
+            onPressed: hasPrev ? () => _navigateToPlaylistItem(widget.playlistIndex! - 1) : null,
+          ),
+          Expanded(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (widget.playlistTitle != null && widget.playlistTitle!.isNotEmpty)
+                  Text(
+                    widget.playlistTitle!,
+                    style: const TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                Text(
+                  '${widget.playlistIndex! + 1} / ${widget.playlistContext!.length}',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: theme.colorScheme.primary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.arrow_forward_ios_rounded, size: 16),
+            tooltip: 'Suivant',
+            onPressed: hasNext ? () => _navigateToPlaylistItem(widget.playlistIndex! + 1) : null,
+          ),
+        ],
       ),
     );
   }
