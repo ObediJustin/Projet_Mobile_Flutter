@@ -6,6 +6,7 @@ import 'package:share_plus/share_plus.dart';
 import '../l10n/app_localizations.dart';
 
 import '../services/cantique_service.dart';
+import '../services/app_info_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
@@ -437,10 +438,12 @@ class _HomeState extends State<Home> {
     _accueilKey.currentState?.loadRecents();
   }
 
-  void _showAboutDialog(BuildContext context) {
+  void _showAboutDialog(BuildContext context) async {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context)!;
+    final version = await AppInfoService.instance.getDisplayVersion();
 
+    if (!context.mounted) return;
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -470,9 +473,12 @@ class _HomeState extends State<Home> {
                 ),
               ),
               const SizedBox(height: 4),
-              const Text(
-                "Version 1.0.0",
-                style: TextStyle(fontSize: 13, color: AppColors.textSecondary),
+              Text(
+                "Version $version",
+                style: TextStyle(
+                  fontSize: 13,
+                  color: theme.colorScheme.onSurfaceVariant,
+                ),
               ),
               const SizedBox(height: 12),
               Text(

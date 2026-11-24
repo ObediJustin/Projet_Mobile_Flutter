@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../l10n/app_localizations.dart';
 import '../services/notification_service.dart';
 import '../services/settings_service.dart';
+import '../services/app_info_service.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
@@ -27,6 +28,8 @@ class _ParametresPageState extends State<ParametresPage> {
   bool _isUpdatingNotifications = false;
   String _selectedLanguage = SettingsService.defaultLanguage;
   double _fontSize = SettingsService.defaultLyricsFontSize;
+  String _appVersion = '1.0.5';
+  String _appVersionWithBuild = '1.0.5 (Build 6)';
 
   @override
   void initState() {
@@ -41,6 +44,11 @@ class _ParametresPageState extends State<ParametresPage> {
     final notificationsEnabled = await _settingsService
         .getNotificationsEnabled();
     final fontSize = await _settingsService.getLyricsFontSize();
+    final packageInfo = await AppInfoService.instance.getPackageInfo();
+    final versionStr = packageInfo.version;
+    final buildStr = packageInfo.buildNumber.isNotEmpty
+        ? '${packageInfo.version} (Build ${packageInfo.buildNumber})'
+        : packageInfo.version;
 
     if (!mounted) return;
     setState(() {
@@ -49,6 +57,8 @@ class _ParametresPageState extends State<ParametresPage> {
       _selectedLanguage = language;
       _notificationsEnabled = notificationsEnabled;
       _fontSize = fontSize;
+      _appVersion = versionStr;
+      _appVersionWithBuild = buildStr;
       _isLoading = false;
     });
   }
@@ -151,7 +161,7 @@ class _ParametresPageState extends State<ParametresPage> {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      'Version 1.0.0 (Édition Graphique)',
+                      'Version $_appVersion (Édition Graphique)',
                       style: TextStyle(
                         fontSize: 12,
                         color: theme.colorScheme.primary,
@@ -550,11 +560,11 @@ class _ParametresPageState extends State<ParametresPage> {
                     fontSize: 14,
                   ),
                 ),
-                subtitle: const Text(
-                  '1.0.0 (Build 1)',
+                subtitle: Text(
+                  _appVersionWithBuild,
                   style: TextStyle(
                     fontSize: 13,
-                    color: AppColors.textSecondary,
+                    color: theme.colorScheme.onSurfaceVariant,
                   ),
                 ),
               ),
