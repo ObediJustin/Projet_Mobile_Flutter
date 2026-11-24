@@ -44,11 +44,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     with SingleTickerProviderStateMixin {
   late final FavoriteService _favoriteService;
   final SettingsService _settingsService = SettingsService();
-  late final Future<_CantiqueDetailData> _detailDataFuture;
 
   bool _isFavorite = false;
-  double _fontSize = 16.0;
-  bool _detailDataApplied = false;
+  double _fontSize = SettingsService.defaultLyricsFontSize;
 
   final ChantPersonnelService _chantPersonnelService = ChantPersonnelService();
 
@@ -62,8 +60,9 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     super.initState();
 
     _favoriteService = FavoriteService();
-    _detailDataFuture = _loadData();
+    _fontSize = SettingsService.lyricsFontSizeNotifier.value;
     SettingsService.lyricsFontSizeNotifier.addListener(_syncFontSize);
+    _loadInitialData();
 
     _fadeController = AnimationController(
       vsync: this,
@@ -91,14 +90,18 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
     });
   }
 
-  Future<_CantiqueDetailData> _loadData() async {
-    await RecentCantiqueService.instance.recordView(widget.cantique.id);
-    await _favoriteService.loadFavorites();
-    final isFavorite = _favoriteService.isCantiqueFavorite(widget.cantique.id);
-    final fontSize = await _settingsService.getLyricsFontSize();
-    _isFavorite = isFavorite;
-    _fontSize = fontSize;
-    return _CantiqueDetailData(isFavorite: isFavorite, fontSize: fontSize);
+  Future<void> _loadInitialData() async {
+    try {
+      await RecentCantiqueService.instance.recordView(widget.cantique.id);
+      await _favoriteService.loadFavorites();
+      final isFavorite = _favoriteService.isCantiqueFavorite(widget.cantique.id);
+      final fontSize = await _settingsService.getLyricsFontSize();
+      if (!mounted) return;
+      setState(() {
+        _isFavorite = isFavorite;
+        _fontSize = fontSize;
+      });
+    } catch (_) {}
   }
 
   Future<void> _saveFontSize(double value) async {
@@ -590,19 +593,8 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
           ),
         ],
       ),
-      body: FutureBuilder<_CantiqueDetailData>(
-        future: _detailDataFuture,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState != ConnectionState.done) {
-            return const Center(child: CircularProgressIndicator());
-          }
-
-          if (snapshot.hasData && !_detailDataApplied) {
-            _isFavorite = snapshot.data!.isFavorite;
-            _fontSize = snapshot.data!.fontSize;
-            _detailDataApplied = true;
-          }
-
+      body: Builder(
+        builder: (context) {
           final theme = Theme.of(context);
           final isDark = theme.brightness == Brightness.dark;
 
@@ -936,11 +928,4 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
       ),
     );
   }
-}
-
-class _CantiqueDetailData {
-  final bool isFavorite;
-  final double fontSize;
-
-  const _CantiqueDetailData({required this.isFavorite, required this.fontSize});
 }
