@@ -9,6 +9,7 @@ class SettingsService {
   static const String languageKey = 'settings_language';
   static const String notificationsKey = 'settings_notifications_enabled';
   static const String lyricsFontSizeKey = 'chant_paroles_font_size';
+  static const String worshipScrollSpeedKey = 'worship_scroll_speed';
 
   static const String defaultTheme = 'green';
   static const ThemeMode defaultThemeMode = ThemeMode.system;
@@ -17,6 +18,9 @@ class SettingsService {
   static const double defaultLyricsFontSize = 16.0;
   static const double minLyricsFontSize = 12.0;
   static const double maxLyricsFontSize = 32.0;
+  static const double defaultWorshipScrollSpeed = 28.0;
+  static const double minWorshipScrollSpeed = 8.0;
+  static const double maxWorshipScrollSpeed = 80.0;
 
   static const List<String> supportedLanguages = [
     'Français',
@@ -41,6 +45,9 @@ class SettingsService {
   static final ValueNotifier<double> lyricsFontSizeNotifier =
       ValueNotifier<double>(defaultLyricsFontSize);
 
+  static final ValueNotifier<double> worshipScrollSpeedNotifier =
+      ValueNotifier<double>(defaultWorshipScrollSpeed);
+
   Future<void> initSettings() async {
     final theme = await getTheme();
     themeNotifier.value = theme;
@@ -56,6 +63,9 @@ class SettingsService {
 
     final font = await getLyricsFontSize();
     lyricsFontSizeNotifier.value = font;
+
+    final worshipSpeed = await getWorshipScrollSpeed();
+    worshipScrollSpeedNotifier.value = worshipSpeed;
   }
 
   Future<ThemeMode> getThemeMode() async {
@@ -151,6 +161,21 @@ class SettingsService {
     await saveLyricsFontSize(defaultLyricsFontSize);
   }
 
+  Future<double> getWorshipScrollSpeed() async {
+    final prefs = await SharedPreferences.getInstance();
+    final value = prefs.getDouble(worshipScrollSpeedKey);
+    final sanitized = sanitizeWorshipScrollSpeed(value);
+    worshipScrollSpeedNotifier.value = sanitized;
+    return sanitized;
+  }
+
+  Future<void> saveWorshipScrollSpeed(double value) async {
+    final sanitized = sanitizeWorshipScrollSpeed(value);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setDouble(worshipScrollSpeedKey, sanitized);
+    worshipScrollSpeedNotifier.value = sanitized;
+  }
+
   String sanitizeLanguage(String? language) {
     if (language == null || !supportedLanguages.contains(language)) {
       return defaultLanguage;
@@ -163,6 +188,13 @@ class SettingsService {
       return defaultLyricsFontSize;
     }
     return value.clamp(minLyricsFontSize, maxLyricsFontSize).toDouble();
+  }
+
+  double sanitizeWorshipScrollSpeed(double? value) {
+    if (value == null || value.isNaN || value.isInfinite) {
+      return defaultWorshipScrollSpeed;
+    }
+    return value.clamp(minWorshipScrollSpeed, maxWorshipScrollSpeed).toDouble();
   }
 
   static Locale resolveLocale(String languagePreference) {
