@@ -1,4 +1,4 @@
-package com.example.projet1_tp
+package com.objusdev.boanerges
 
 import io.flutter.embedding.android.FlutterActivity
 
