@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
 
 /// Reusable Section Header Component with title, icon, and optional badge/action.
+/// Fully compatible with dark mode and semantic ColorScheme tokens.
 class AppSectionHeader extends StatelessWidget {
   final String title;
   final IconData? icon;
@@ -21,16 +21,21 @@ class AppSectionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
     return Row(
       children: [
         if (icon != null) ...[
           Container(
             padding: const EdgeInsets.all(6),
             decoration: BoxDecoration(
-              color: AppColors.primaryLight,
+              color: isDark
+                  ? theme.colorScheme.primary.withValues(alpha: 0.18)
+                  : theme.colorScheme.primaryContainer,
               borderRadius: BorderRadius.circular(8),
             ),
-            child: Icon(icon, size: 18, color: AppColors.primary),
+            child: Icon(icon, size: 18, color: theme.colorScheme.primary),
           ),
           const SizedBox(width: AppSpacing.sm),
         ],
@@ -39,10 +44,10 @@ class AppSectionHeader extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: AppColors.textPrimary,
+                  color: theme.colorScheme.onSurface,
                   letterSpacing: -0.2,
                 ),
               ),
@@ -54,15 +59,19 @@ class AppSectionHeader extends StatelessWidget {
                     vertical: 2,
                   ),
                   decoration: BoxDecoration(
-                    color: AppColors.primaryLight,
+                    color: isDark
+                        ? theme.colorScheme.primary.withValues(alpha: 0.18)
+                        : theme.colorScheme.primaryContainer,
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
                     '$countBadge',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
-                      color: AppColors.primaryDark,
+                      color: isDark
+                          ? theme.colorScheme.primary
+                          : theme.colorScheme.onPrimaryContainer,
                     ),
                   ),
                 ),
@@ -80,10 +89,10 @@ class AppSectionHeader extends StatelessWidget {
             ),
             child: Text(
               actionLabel!,
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13,
                 fontWeight: FontWeight.w600,
-                color: AppColors.primary,
+                color: theme.colorScheme.primary,
               ),
             ),
           ),

@@ -394,6 +394,8 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
               minChildSize: 0.5,
               maxChildSize: 0.95,
               builder: (context, scrollController) {
+                final theme = Theme.of(context);
+                final isDark = theme.brightness == Brightness.dark;
                 return Padding(
                   padding: const EdgeInsets.all(AppSpacing.lg),
                   child: Column(
@@ -416,10 +418,10 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                           const SizedBox(width: AppSpacing.sm),
                           Text(
                             l10n.rechercherCantiqueHint,
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              color: AppColors.textPrimary,
+                              color: theme.colorScheme.onSurface,
                             ),
                           ),
                           const Spacer(),
@@ -513,8 +515,8 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                       : l10n.aucunCantiqueDansCollection(
                                           widget.cantique.collection,
                                         ),
-                                  style: const TextStyle(
-                                    color: AppColors.textSecondary,
+                                  style: TextStyle(
+                                    color: theme.colorScheme.onSurfaceVariant,
                                   ),
                                 ),
                               )
@@ -530,30 +532,35 @@ class _CantiqueDetailPageState extends State<CantiqueDetailPage>
                                         vertical: 4,
                                       ),
                                       decoration: BoxDecoration(
-                                        color: AppColors.primaryLight,
+                                        color: isDark
+                                            ? theme.colorScheme.primaryContainer.withValues(alpha: 0.4)
+                                            : AppColors.primaryLight,
                                         borderRadius: AppRadius.smBorder,
                                       ),
                                       child: Text(
                                         'N° ${item.numero}',
-                                        style: const TextStyle(
+                                        style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 12,
-                                          color: AppColors.primaryDark,
+                                          color: isDark
+                                              ? theme.colorScheme.primary
+                                              : AppColors.primaryDark,
                                         ),
                                       ),
                                     ),
                                     title: Text(
                                       item.titre,
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 15,
+                                        color: theme.colorScheme.onSurface,
                                       ),
                                     ),
                                     subtitle: Text(
                                       item.collection,
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 12,
-                                        color: AppColors.textSecondary,
+                                        color: theme.colorScheme.onSurfaceVariant,
                                       ),
                                     ),
                                     onTap: () {

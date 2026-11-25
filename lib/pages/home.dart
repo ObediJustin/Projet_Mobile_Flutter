@@ -396,7 +396,7 @@ class _HomeState extends State<Home> {
           icon,
           color: isSelected
               ? theme.colorScheme.primary
-              : AppColors.textSecondary,
+              : theme.colorScheme.onSurfaceVariant,
         ),
         title: Text(
           label,
@@ -404,7 +404,7 @@ class _HomeState extends State<Home> {
             fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
             color: isSelected
                 ? theme.colorScheme.onPrimaryContainer
-                : AppColors.textPrimary,
+                : theme.colorScheme.onSurface,
           ),
         ),
         onTap: () {

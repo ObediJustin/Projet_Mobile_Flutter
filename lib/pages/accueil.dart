@@ -6,7 +6,6 @@ import '../models/cantique.dart';
 import '../services/cantique_service.dart';
 import '../services/recent_cantique_service.dart';
 import '../services/verse_service.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_assets.dart';

@@ -204,6 +204,7 @@ class _MesChantsPageState extends State<MesChantsPage> {
 
   Widget _buildHeader() {
     final l10n = AppLocalizations.of(context)!;
+    final theme = Theme.of(context);
     return Padding(
       padding: const EdgeInsets.all(AppSpacing.lg),
       child: Column(
@@ -234,17 +235,18 @@ class _MesChantsPageState extends State<MesChantsPage> {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   decoration: BoxDecoration(
-                    color: AppColors.surface,
+                    color: theme.colorScheme.surface,
                     borderRadius: AppRadius.mdBorder,
-                    border: Border.all(color: AppColors.border, width: 1),
+                    border: Border.all(color: theme.colorScheme.outlineVariant, width: 1),
                   ),
                   child: DropdownButtonHideUnderline(
                     child: DropdownButton<bool>(
                       value: _sortNewestFirst,
                       isExpanded: true,
-                      style: const TextStyle(
+                      dropdownColor: theme.colorScheme.surface,
+                      style: TextStyle(
                         fontSize: 14,
-                        color: AppColors.textPrimary,
+                        color: theme.colorScheme.onSurface,
                         fontWeight: FontWeight.w500,
                       ),
                       items: [
@@ -300,13 +302,17 @@ class _MesChantsPageState extends State<MesChantsPage> {
       itemCount: items.length,
       itemBuilder: (context, index) {
         final chant = items[index];
+        final theme = Theme.of(context);
 
         return Container(
           margin: const EdgeInsets.only(bottom: AppSpacing.sm),
           decoration: BoxDecoration(
-            color: AppColors.surface,
+            color: theme.colorScheme.surface,
             borderRadius: AppRadius.lgBorder,
-            border: Border.all(color: AppColors.borderLight, width: 1),
+            border: Border.all(
+              color: theme.colorScheme.outlineVariant.withValues(alpha: 0.5),
+              width: 1,
+            ),
             boxShadow: const [
               BoxShadow(
                 color: Color(0x08000000),
@@ -325,21 +331,21 @@ class _MesChantsPageState extends State<MesChantsPage> {
                 height: 42,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: AppColors.primaryLight,
+                  color: theme.colorScheme.primaryContainer.withValues(alpha: 0.5),
                   borderRadius: AppRadius.mdBorder,
                 ),
-                child: const Icon(
+                child: Icon(
                   Icons.edit_note_rounded,
-                  color: AppColors.primary,
+                  color: theme.colorScheme.primary,
                   size: 22,
                 ),
               ),
               title: Text(
                 chant.titre,
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 15,
-                  color: AppColors.textPrimary,
+                  color: theme.colorScheme.onSurface,
                 ),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
@@ -352,16 +358,16 @@ class _MesChantsPageState extends State<MesChantsPage> {
                     _preview(chant.contenu),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 13,
-                      color: AppColors.textSecondary,
+                      color: theme.colorScheme.onSurfaceVariant,
                     ),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     l10n.modifieLe(_formatDate(chant.dateModification)),
-                    style: const TextStyle(
-                      color: AppColors.textMuted,
+                    style: TextStyle(
+                      color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
                       fontSize: 11,
                       fontWeight: FontWeight.w500,
                     ),

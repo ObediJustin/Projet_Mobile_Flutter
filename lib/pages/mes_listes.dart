@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../l10n/app_localizations.dart';
 import '../models/playlist.dart';
 import '../services/playlist_service.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_radius.dart';
 import '../theme/app_spacing.dart';
 import '../widgets/app_empty_state.dart';
@@ -284,12 +283,14 @@ class _MesListesPageState extends State<MesListesPage> {
                           width: 48,
                           height: 48,
                           decoration: BoxDecoration(
-                            color: AppColors.primaryLight,
+                            color: theme.brightness == Brightness.dark
+                                ? theme.colorScheme.primary.withValues(alpha: 0.18)
+                                : theme.colorScheme.primaryContainer,
                             borderRadius: AppRadius.mdBorder,
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.playlist_play_rounded,
-                            color: AppColors.primary,
+                            color: theme.colorScheme.primary,
                             size: 28,
                           ),
                         ),

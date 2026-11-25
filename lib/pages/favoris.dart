@@ -116,17 +116,20 @@ class _ChantPersonnelFavoriteTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
     return Container(
       margin: const EdgeInsets.only(bottom: AppSpacing.sm),
       decoration: BoxDecoration(
-        color: AppColors.surface,
+        color: theme.colorScheme.surface,
         borderRadius: AppRadius.lgBorder,
-        border: Border.all(color: AppColors.borderLight, width: 1),
-        boxShadow: const [
+        border: Border.all(color: theme.colorScheme.outlineVariant, width: 1),
+        boxShadow: [
           BoxShadow(
-            color: Color(0x08000000),
+            color: isDark ? const Color(0x33000000) : const Color(0x08000000),
             blurRadius: 8,
-            offset: Offset(0, 2),
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -140,21 +143,23 @@ class _ChantPersonnelFavoriteTile extends StatelessWidget {
             height: 42,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              color: AppColors.primaryLight,
+              color: isDark
+                  ? theme.colorScheme.primary.withValues(alpha: 0.18)
+                  : theme.colorScheme.primaryContainer,
               borderRadius: AppRadius.mdBorder,
             ),
-            child: const Icon(
+            child: Icon(
               Icons.edit_note_rounded,
-              color: AppColors.primary,
+              color: theme.colorScheme.primary,
               size: 22,
             ),
           ),
           title: Text(
             chant.titre,
-            style: const TextStyle(
+            style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
-              color: AppColors.textPrimary,
+              color: theme.colorScheme.onSurface,
             ),
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
@@ -163,9 +168,9 @@ class _ChantPersonnelFavoriteTile extends StatelessWidget {
             _preview(chant.contenu),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 13,
-              color: AppColors.textSecondary,
+              color: theme.colorScheme.onSurfaceVariant,
             ),
           ),
           trailing: const Icon(

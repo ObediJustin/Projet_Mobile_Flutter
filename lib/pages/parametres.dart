@@ -134,13 +134,17 @@ class _ParametresPageState extends State<ParametresPage> {
                 height: 56,
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: AppColors.surface,
+                  color: theme.colorScheme.surface,
                   shape: BoxShape.circle,
-                  boxShadow: const [
+                  border: Border.all(
+                    color: theme.colorScheme.outlineVariant,
+                    width: 1,
+                  ),
+                  boxShadow: [
                     BoxShadow(
-                      color: Color(0x0F000000),
+                      color: theme.colorScheme.shadow.withValues(alpha: 0.1),
                       blurRadius: 8,
-                      offset: Offset(0, 3),
+                      offset: const Offset(0, 3),
                     ),
                   ],
                 ),
@@ -369,9 +373,9 @@ class _ParametresPageState extends State<ParametresPage> {
         // Notifications Card
         Container(
           decoration: BoxDecoration(
-            color: AppColors.surface,
+            color: theme.colorScheme.surface,
             borderRadius: AppRadius.lgBorder,
-            border: Border.all(color: AppColors.borderLight, width: 1),
+            border: Border.all(color: theme.colorScheme.outlineVariant, width: 1),
           ),
           child: SwitchListTile(
             secondary: Container(
@@ -393,9 +397,9 @@ class _ParametresPageState extends State<ParametresPage> {
             subtitle: Text(
               l10n?.notificationsSubtitle ??
                   'Recevoir des rappels et édifications quotidiennes',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13,
-                color: AppColors.textSecondary,
+                color: theme.colorScheme.onSurfaceVariant,
               ),
             ),
             value: _notificationsEnabled,
@@ -410,9 +414,9 @@ class _ParametresPageState extends State<ParametresPage> {
         // Language Card
         Container(
           decoration: BoxDecoration(
-            color: AppColors.surface,
+            color: theme.colorScheme.surface,
             borderRadius: AppRadius.lgBorder,
-            border: Border.all(color: AppColors.borderLight, width: 1),
+            border: Border.all(color: theme.colorScheme.outlineVariant, width: 1),
           ),
           child: ListTile(
             leading: Container(
@@ -433,14 +437,14 @@ class _ParametresPageState extends State<ParametresPage> {
             ),
             subtitle: Text(
               _getLanguageLabel(_selectedLanguage, l10n),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13,
-                color: AppColors.textSecondary,
+                color: theme.colorScheme.onSurfaceVariant,
               ),
             ),
-            trailing: const Icon(
+            trailing: Icon(
               Icons.chevron_right_rounded,
-              color: AppColors.textMuted,
+              color: theme.colorScheme.onSurfaceVariant,
             ),
             onTap: _showLanguageDialog,
           ),
@@ -452,9 +456,9 @@ class _ParametresPageState extends State<ParametresPage> {
         Container(
           padding: const EdgeInsets.all(AppSpacing.lg),
           decoration: BoxDecoration(
-            color: AppColors.surface,
+            color: theme.colorScheme.surface,
             borderRadius: AppRadius.lgBorder,
-            border: Border.all(color: AppColors.borderLight, width: 1),
+            border: Border.all(color: theme.colorScheme.outlineVariant, width: 1),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -478,10 +482,10 @@ class _ParametresPageState extends State<ParametresPage> {
                     child: Text(
                       l10n?.tailleParolesDefault ??
                           'Taille des paroles par défaut',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
-                        color: AppColors.textPrimary,
+                        color: theme.colorScheme.onSurface,
                       ),
                     ),
                   ),
@@ -534,9 +538,9 @@ class _ParametresPageState extends State<ParametresPage> {
 
         Container(
           decoration: BoxDecoration(
-            color: AppColors.surface,
+            color: theme.colorScheme.surface,
             borderRadius: AppRadius.lgBorder,
-            border: Border.all(color: AppColors.borderLight, width: 1),
+            border: Border.all(color: theme.colorScheme.outlineVariant, width: 1),
           ),
           child: Column(
             children: [
@@ -568,9 +572,9 @@ class _ParametresPageState extends State<ParametresPage> {
                   ),
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: AppSpacing.lg),
-                child: Divider(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg),
+                child: Divider(color: theme.colorScheme.outlineVariant),
               ),
               ListTile(
                 leading: Container(
@@ -592,11 +596,11 @@ class _ParametresPageState extends State<ParametresPage> {
                     fontSize: 14,
                   ),
                 ),
-                subtitle: const Text(
+                subtitle: Text(
                   'sadikiobedi@outlook.fr',
                   style: TextStyle(
                     fontSize: 13,
-                    color: AppColors.textSecondary,
+                    color: theme.colorScheme.onSurfaceVariant,
                   ),
                 ),
               ),

@@ -5,7 +5,6 @@ import '../models/cantique.dart';
 import '../models/search_scope.dart';
 import '../services/cantique_service.dart';
 import '../services/favorite_service.dart';
-import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_assets.dart';
 import '../widgets/app_empty_state.dart';
@@ -446,6 +445,7 @@ class _CollectionFavorisPageState extends State<CollectionFavorisPage> {
               itemCount: count + 1,
               itemBuilder: (context, index) {
                 if (index == 0) {
+                  final theme = Theme.of(context);
                   return Padding(
                     padding: const EdgeInsets.only(bottom: AppSpacing.md),
                     child: Text(
@@ -453,10 +453,10 @@ class _CollectionFavorisPageState extends State<CollectionFavorisPage> {
                         count,
                         widget.collectionName,
                       ),
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: AppColors.textPrimary,
+                        color: theme.colorScheme.onSurface,
                       ),
                     ),
                   );
